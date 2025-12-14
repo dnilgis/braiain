@@ -36,15 +36,16 @@ jobs:
           git config --global user.name 'Braiain Bot'
           git config --global user.email 'bot@braiain.com'
           
-          # 1. Add the file modified by the probe script
-          git add status.json
+          # 1. Stash the new data (hide it safely)
+          git stash
           
-          # 2. Commit it locally (This fixes the "unstaged changes" error)
-          # The '|| exit 0' prevents failure if there are no changes
-          git commit -m "Auto-update" || exit 0
-          
-          # 3. NOW pull remote changes (Rebase puts our commit on top of any user changes)
+          # 2. Pull latest changes from GitHub
           git pull origin main --rebase || git pull origin master --rebase
           
-          # 4. Push the result
+          # 3. Bring the data back
+          git stash pop
+          
+          # 4. Save and Push
+          git add status.json
+          git commit -m "Auto-update: New Scan Data" || exit 0
           git push
