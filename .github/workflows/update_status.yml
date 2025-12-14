@@ -1,0 +1,39 @@
+name: Update Braiain Status
+
+on:
+  schedule:
+    - cron: '0 */4 * * *' # Every 4 hours
+  workflow_dispatch:      # Manual trigger button
+
+permissions:
+  contents: write
+
+jobs:
+  run-probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.9'
+          
+      - name: Install Libs
+        run: pip install -r requirements.txt
+        
+      - name: Run Probe
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          HF_API_KEY: ${{ secrets.HF_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          COHERE_API_KEY: ${{ secrets.COHERE_API_KEY }}
+        run: python probe.py
+        
+      - name: Save History
+        run: |
+          git config --global user.name 'Braiain Bot'
+          git config --global user.email 'bot@braiain.com'
+          git add status.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update" && git push)
