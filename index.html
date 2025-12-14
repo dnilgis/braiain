@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Braiain.com | AI Weather Report</title>
+    <style>
+        body { background-color: #111; color: #fff; font-family: monospace; text-align: center; }
+        .card { border: 1px solid #333; margin: 20px auto; padding: 20px; width: 300px; border-radius: 10px; }
+        .good { border-color: #0f0; color: #0f0; } /* Green */
+        .bad { border-color: #f00; color: #f00; } /* Red */
+        h1 { letter-spacing: 2px; }
+    </style>
+</head>
+<body>
+    <h1>BRAIAIN VOLATILITY INDEX</h1>
+    <p>Is the AI dumb today?</p>
+    <div id="dashboard">Loading...</div>
+
+    <script>
+        fetch('status.json')
+            .then(response => response.json())
+            .then(data => {
+                const container = document.getElementById('dashboard');
+                container.innerHTML = `<p>Last Scan: ${data.last_updated}</p>`;
+                
+                data.data.forEach(model => {
+                    let statusClass = model.lazy ? 'bad' : 'good';
+                    let statusText = model.lazy ? 'LAZY 🔻' : 'PEAK 🟢';
+                    
+                    // The Affiliate Link Logic
+                    let link = model.model === "GPT-4" ? "https://openai.com" : "https://anthropic.com"; 
+                    
+                    container.innerHTML += `
+                        <div class="card ${statusClass}">
+                            <h2>${model.model}</h2>
+                            <h1>${statusText}</h1>
+                            <p>Speed: ${model.latency}s</p>
+                            <a href="${link}" style="color:white">Switch to this model</a>
+                        </div>
+                    `;
+                });
+            });
+    </script>
+</body>
+</html>
