@@ -16,7 +16,7 @@ jobs:
       
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.11' # UPGRADED from 3.9 to fix dependency errors
+          python-version: '3.11' # FORCE 3.11 to fix importlib error
           
       - name: Install Libs
         run: pip install -r requirements.txt
@@ -35,5 +35,7 @@ jobs:
         run: |
           git config --global user.name 'Braiain Bot'
           git config --global user.email 'bot@braiain.com'
+          # PULL first to avoid "updates were rejected" error
+          git pull origin main --rebase || git pull origin master --rebase
           git add status.json
           git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update" && git push)
