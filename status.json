@@ -1,12 +1,103 @@
 {
-    "last_updated": "System Reset",
+    "last_updated": "2025-12-14 17:24:45 UTC",
     "history": {
-        "Gemini 1.5 Flash": [ { "latency": 0.85, "lazy": false, "status": "Online", "timestamp": "Init" } ],
-        "GPT-4o": [ { "latency": 1.2, "lazy": false, "status": "Online", "timestamp": "Init" } ],
-        "Claude 3.5 Sonnet": [ { "latency": 0.9, "lazy": false, "status": "Online", "timestamp": "Init" } ],
-        "Llama 3 70B (Groq)": [ { "latency": 0.3, "lazy": false, "status": "Online", "timestamp": "Init" } ],
-        "Command R+ (Cohere)": [ { "latency": 0.5, "lazy": false, "status": "Online", "timestamp": "Init" } ],
-        "Mistral 7B (HF)": [ { "latency": 0.4, "lazy": false, "status": "Online", "timestamp": "Init" } ],
-        "Phi-3 Mini (HF)": [ { "latency": 0.2, "lazy": false, "status": "Online", "timestamp": "Init" } ]
+        "Gemini 1.5 Flash": [
+            {
+                "latency": 0.85,
+                "lazy": false,
+                "status": "Online",
+                "timestamp": "Init"
+            },
+            {
+                "latency": 0,
+                "lazy": true,
+                "status": "Error",
+                "timestamp": "Dec-14 17:24"
+            }
+        ],
+        "GPT-4o": [
+            {
+                "latency": 1.2,
+                "lazy": false,
+                "status": "Online",
+                "timestamp": "Init"
+            },
+            {
+                "latency": 0,
+                "lazy": true,
+                "status": "No Key",
+                "timestamp": "Dec-14 17:24"
+            }
+        ],
+        "Claude 3.5 Sonnet": [
+            {
+                "latency": 0.9,
+                "lazy": false,
+                "status": "Online",
+                "timestamp": "Init"
+            },
+            {
+                "latency": 0,
+                "lazy": true,
+                "status": "No Key",
+                "timestamp": "Dec-14 17:24"
+            }
+        ],
+        "Llama 3 70B (Groq)": [
+            {
+                "latency": 0.3,
+                "lazy": false,
+                "status": "Online",
+                "timestamp": "Init"
+            },
+            {
+                "latency": 0,
+                "lazy": true,
+                "status": "Error",
+                "timestamp": "Dec-14 17:24"
+            }
+        ],
+        "Command R+ (Cohere)": [
+            {
+                "latency": 0.5,
+                "lazy": false,
+                "status": "Online",
+                "timestamp": "Init"
+            },
+            {
+                "latency": 0,
+                "lazy": true,
+                "status": "Error",
+                "timestamp": "Dec-14 17:24"
+            }
+        ],
+        "Mistral 7B (HF)": [
+            {
+                "latency": 0.4,
+                "lazy": false,
+                "status": "Online",
+                "timestamp": "Init"
+            },
+            {
+                "latency": 0,
+                "lazy": true,
+                "status": "Error",
+                "timestamp": "Dec-14 17:24"
+            }
+        ],
+        "Phi-3 Mini (HF)": [
+            {
+                "latency": 0.2,
+                "lazy": false,
+                "status": "Online",
+                "timestamp": "Init"
+            },
+            {
+                "latency": 0,
+                "lazy": true,
+                "status": "Error",
+                "timestamp": "Dec-14 17:24"
+            }
+        ]
     }
 }
