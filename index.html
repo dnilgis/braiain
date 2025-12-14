@@ -28,7 +28,7 @@
             color: var(--text);
             font-family: 'JetBrains Mono', monospace;
             margin: 0;
-            padding: 40px 20px;
+            padding: 20px;
             min-height: 100vh;
         }
 
@@ -38,7 +38,7 @@
         }
 
         header {
-            margin-bottom: 60px;
+            margin-bottom: 40px;
             border-bottom: 1px solid var(--border);
             padding-bottom: 20px;
             display: flex;
@@ -49,7 +49,7 @@
         }
 
         h1 {
-            font-size: 3rem;
+            font-size: clamp(2rem, 5vw, 3rem); /* Responsive font size */
             margin: 0;
             letter-spacing: -2px;
             background: linear-gradient(90deg, #fff, #888);
@@ -90,9 +90,26 @@
             100% { box-shadow: 0 0 0 0 rgba(0, 255, 157, 0); }
         }
 
+        /* Methodology Section */
+        .methodology {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 15px 20px;
+            margin-bottom: 40px;
+            font-size: 0.85rem;
+            color: var(--text-dim);
+            line-height: 1.5;
+        }
+
+        .methodology strong {
+            color: var(--text);
+        }
+
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            /* Improved Grid: Fits mobile (280px min) up to desktops */
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 25px;
         }
 
@@ -105,6 +122,8 @@
             transition: transform 0.2s, border-color 0.2s;
             display: flex;
             flex-direction: column;
+            justify-content: space-between; /* Ensures footer aligns at bottom */
+            min-height: 300px;
         }
 
         .card:hover {
@@ -141,6 +160,7 @@
             width: 100%;
             margin-bottom: 20px;
             position: relative;
+            flex-grow: 1; /* Pushes content to fill space */
         }
 
         .metrics {
@@ -218,6 +238,11 @@
             </div>
         </header>
 
+        <div class="methodology">
+            <strong>How we test:</strong> Every 4 hours, an autonomous agent asks each model to write a Python function for the Fibonacci sequence. <br>
+            We measure <strong>Latency</strong> (time to complete) and <strong>Laziness</strong> (whether the model writes the full code or gives a summary).
+        </div>
+
         <div id="grid" class="grid">
             <div class="loading">Initializing Neural Link...</div>
         </div>
@@ -241,6 +266,7 @@
 
         async function init() {
             try {
+                // Fetch Data with timestamp to prevent caching
                 const res = await fetch('status.json?nocache=' + Date.now());
                 if (!res.ok) throw new Error("Failed to load data");
                 const data = await res.json();
@@ -258,6 +284,7 @@
                 for (const [model, history] of Object.entries(data.history)) {
                     if (history.length === 0) continue;
                     
+                    // Get latest data point for status
                     const latest = history[history.length - 1];
                     const isOnline = latest.status === "Online";
                     const isLazy = latest.lazy;
@@ -277,7 +304,7 @@
                         color = "#ff3b3b"; // Red
                     }
 
-                    // Card HTML
+                    // Generate Card HTML
                     const div = document.createElement('div');
                     div.className = 'card';
                     div.innerHTML = `
@@ -304,7 +331,7 @@
                     `;
                     grid.appendChild(div);
 
-                    // Chart Logic
+                    // Initialize Chart.js
                     const ctx = document.getElementById(`chart-${model.replace(/[^a-zA-Z0-9]/g, '')}`).getContext('2d');
                     
                     // Create Gradient
@@ -322,8 +349,8 @@
                                 backgroundColor: gradient,
                                 borderWidth: 2,
                                 fill: true,
-                                tension: 0.4,
-                                pointRadius: 0,
+                                tension: 0.4, // Curve
+                                pointRadius: 0, // Hides dots for a cleaner look
                                 pointHoverRadius: 6
                             }]
                         },
