@@ -96,6 +96,13 @@
       "category_emoji": "🔋",
       "category_subtitle": "Watts up? AI's charged to detect your battery pics.",
       "challenge_file": "challenges/2026-02-18.json"
+  },
+    "2026-02-19": {
+      "day_number": 16,
+      "category": "National Lash Day",
+      "category_emoji": "👁️✨",
+      "category_subtitle": "AI's got an eye for fabulous lashes today!",
+      "challenge_file": "challenges/2026-02-19.json"
   }
 }
 
