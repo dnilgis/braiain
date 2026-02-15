@@ -82,6 +82,13 @@
       "category_emoji": "🇺🇸",
       "category_subtitle": "Honest AI: We Can't Tell a Lie... About Presidents!",
       "challenge_file": "challenges/2026-02-16.json"
+  },
+    "2026-02-17": {
+      "day_number": 14,
+      "category": "Mardi Gras",
+      "category_emoji": "🎭",
+      "category_subtitle": "AI's Mardi Gras Eye: Spot the Beads, Unmask the Fun!",
+      "challenge_file": "challenges/2026-02-17.json"
   }
 }
 
