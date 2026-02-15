@@ -1,0 +1,99 @@
+{
+  "day_number": 16,
+  "date": "2026-02-19",
+  "category": "National Lash Day",
+  "category_emoji": "👁️✨",
+  "rounds": [
+    {
+      "id": "d16r1",
+      "type": "image",
+      "content": "images/d16_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**REPETITIVE PATTERNS:** Scan for identical or mirrored elements, especially in fur textures or intricate iris details, indicating an AI generation.",
+      "_note": "Prompt: A photorealistic photograph of a highly detailed, extreme close-up of a deer's expressive brown eye, showcasing its delicate, naturally long lashes, the subtle reflections on its surface, and the intricate fur texture around it, captured with a macro lens and dappled forest lighting."
+    },
+    {
+      "id": "d16r2",
+      "type": "image",
+      "content": "images/d16_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**UNNATURAL SHARPNESS:** Look for images where every element, even backgrounds, appears too consistently sharp. Real photos have natural focal fall-off.",
+      "_note": "Prompt: A photorealistic photograph of a detailed close-up of a human eye from a slightly oblique angle, focusing on exquisitely curled and lengthened dark eyelashes, with a soft catchlight in the pupil, shot with a prime lens and diffused natural light, crisp focus."
+    },
+    {
+      "id": "d16r3",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/29217264/pexels-photo-29217264.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Bunyamin Cicek on Pexels",
+      "pro_tip": "**IMPERFECT FOCUS:** Real photos often have nuanced depth of field with intentional blurring and subtle imperfections in focus, not uniform sharpness.",
+      "source_url": "https://www.pexels.com/photo/close-up-of-a-deer-s-eye-in-nature-29217264/"
+    },
+    {
+      "id": "d16r4",
+      "type": "image",
+      "content": "images/d16_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**PLASTIC SHEEN:** Notice unnaturally smooth or waxy skin, often lacking subtle pores or realistic texture variations. AI sometimes produces a plastic look.",
+      "_note": "Prompt: A photorealistic photograph of a magnificent giraffe's head in a close-up portrait, its gentle eye highlighted by remarkably long and dark eyelashes, captured during golden hour with a telephoto lens, soft natural lighting."
+    },
+    {
+      "id": "d16r5",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1639629509821-c54cdd984227?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwzfHxMYXNofGVufDB8MHx8fDE3NzExNzM3MTF8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Milky Way Lashes on Unsplash",
+      "pro_tip": "**NATURAL LIGHTING:** Observe realistic shadows, highlights, and environmental reflections that subtly integrate into the scene, showing depth.",
+      "source_url": "https://unsplash.com/photos/a-close-up-of-a-persons-eye-with-long-lashes-GEct9d7zgos"
+    },
+    {
+      "id": "d16r6",
+      "type": "image",
+      "content": "images/d16_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are your pro tips for the AI detection game:",
+      "_note": "Prompt: A photorealistic photograph of a stunning young woman with piercing blue eyes, her perfectly fanned, voluminous black eyelashes creating a dramatic frame, captured with a professional portrait lens and soft studio lighting, shallow depth of field."
+    },
+    {
+      "id": "d16r7",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1656621218331-8c8f9db29c7c?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxNHx8TGFzaHxlbnwwfDB8fHwxNzcxMTczNzExfDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by A M on Unsplash",
+      "pro_tip": "**ORGANIC VARIATION:** Real lashes display natural imperfections, varying thickness, and subtle irregularities in their fanning and curl.",
+      "source_url": "https://unsplash.com/photos/close-up-of-an-eye-D3v_f_wlUa8"
+    },
+    {
+      "id": "d16r8",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1689105167710-db23a762b151?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxOHx8TGFzaHxlbnwwfDB8fHwxNzcxMTczNzExfDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Robert Schwarz on Unsplash",
+      "pro_tip": "**AUTHENTIC TEXTURE:** Look for genuine skin pores, subtle fine lines, or realistic fur with individual hairs and natural variations in texture.",
+      "source_url": "https://unsplash.com/photos/a-close-up-of-a-giraffes-face-and-head-NrlrRS8j3gM"
+    },
+    {
+      "id": "d16r9",
+      "type": "image",
+      "content": "images/d16_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**AI PERFECTION:** Examine eyelashes for unnatural uniformity in length, curl, or spacing. Real lashes have natural imperfections and variations.",
+      "_note": "Prompt: A photorealistic photograph of an extreme macro close-up of a human eye, revealing the intricate details of a bright iris and individual, perfectly separated black eyelashes, captured with a professional macro lens and ring light, ultra-sharp focus."
+    },
+    {
+      "id": "d16r10",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1535310172250-0dcb6b63324e?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxMHx8TGFzaHxlbnwwfDB8fHwxNzcxMTczNzExfDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Tommy van Kessel on Unsplash",
+      "pro_tip": "**LIGHTING GLOW:** Observe unnatural, ethereal glows or perfectly geometric catchlights in the eyes that don't quite align with a real light source.",
+      "source_url": "https://unsplash.com/photos/woman-with-blue-eyes-_tnkR2gu3kw"
+    }
+  ],
+  "category_subtitle": "AI's got an eye for fabulous lashes today!"
+}
