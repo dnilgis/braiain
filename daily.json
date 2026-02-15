@@ -75,6 +75,13 @@
       "category_emoji": "🍿",
       "category_subtitle": "AI's got a buttery craving. Spot the popcorn or get popped!",
       "challenge_file": "challenges/2026-02-15.json"
+  },
+    "2026-02-16": {
+      "day_number": 13,
+      "category": "President's Day",
+      "category_emoji": "🇺🇸",
+      "category_subtitle": "Honest AI: We Can't Tell a Lie... About Presidents!",
+      "challenge_file": "challenges/2026-02-16.json"
   }
 }
 
