@@ -1,0 +1,99 @@
+{
+  "day_number": 13,
+  "date": "2026-02-16",
+  "category": "President's Day",
+  "category_emoji": "🇺🇸",
+  "rounds": [
+    {
+      "id": "d13r1",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1613235832689-999d314d023b?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw4fHx3aGl0ZSUyMGhvdXNlfGVufDB8MHx8fDE3NzExNzExNjN8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Kristina Volgenau on Unsplash",
+      "pro_tip": "**ORGANIC IMPERFECTIONS:** Real close-ups of historical monuments show natural grain, environmental dust, or less artistically perfect shadow play than AI creations.",
+      "source_url": "https://unsplash.com/photos/people-in-front-of-white-and-green-concrete-building-during-daytime-2YJhcaGFujs"
+    },
+    {
+      "id": "d13r2",
+      "type": "image",
+      "content": "images/d13_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are your pro tips for the AI detection game, President's Day themed:",
+      "_note": "Prompt: A photorealistic photograph of Abraham Lincoln delivering an outdoor address from a simple wooden lectern on a clear autumn day, with natural daylight creating soft shadows on his face. Shot with a Canon EOS R5 and a 70-200mm f/2.8 lens, capturing a three-quarter shot from a slightly low angle, emphasizing his resolute expression against a subtly blurred historical backdrop of cheering crowds."
+    },
+    {
+      "id": "d13r3",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1646154332066-474080541c15?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyfHxnZW9yZ2UlMjB3YXNoaW5ndG9ufGVufDB8MHx8fDE3NzExNzA5NTR8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Walter Martin on Unsplash",
+      "pro_tip": "**AUTHENTIC MOMENTS:** Real photos capture subtle imperfections like natural light inconsistencies or genuine, unposed human expressions, unlike AI's often-idealized scenes.",
+      "source_url": "https://unsplash.com/photos/a-statue-of-a-man-riding-on-the-back-of-a-white-horse-bStxXxz-i6w"
+    },
+    {
+      "id": "d13r4",
+      "type": "image",
+      "content": "images/d13_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**UNIFORM LIGHTING:** Look for excessively even, \"vibrant natural light\" that lacks true photographic nuances. Diverse groups can appear too staged, lacking candid authenticity.",
+      "_note": "Prompt: A photorealistic photograph of a candid, warm portrait of Theodore Roosevelt, with a genuine smile, seated comfortably in a rich leather armchair within a wood-paneled study. Shot with a Leica SL2 and a 50mm f/1.4 lens, using soft, warm ambient light filtering in from a large window to create gentle highlights and a shallow depth of field, focusing on his charismatic expression in a medium close-up, slightly off-center composition."
+    },
+    {
+      "id": "d13r5",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/5214875/pexels-photo-5214875.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Gotta Be Worth It on Pexels",
+      "pro_tip": "**ENVIRONMENTAL HINTS:** Look for subtle environmental factors like genuine dust, real-world reflections, or unforced background elements. Real statues show organic wear.",
+      "source_url": "https://www.pexels.com/photo/aged-marble-statue-of-president-in-memorial-5214875/"
+    },
+    {
+      "id": "d13r6",
+      "type": "image",
+      "content": "images/d13_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**EXAGGERATED LIGHTING:** Watch for dramatic backlighting that feels artificial. AI can render hyper-detailed textures like \"weathered patina\" too perfectly, lacking organic imperfections.",
+      "_note": "Prompt: A photorealistic photograph of an extremely close-up, low-angle shot focusing on the weathered granite texture of the eyes and brow of the Abraham Lincoln statue at the Lincoln Memorial. Shot with a Sony Alpha 1 and a 90mm f/2.8 macro lens, under harsh midday sun casting deep, dramatic shadows that highlight every crack and imperfection, filling the frame with the monumental detail."
+    },
+    {
+      "id": "d13r7",
+      "type": "image",
+      "content": "images/d13_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**TEXTURE OVERLOAD:** AI excels at hyper-real textures, making \"every crack and imperfection\" unnaturally prominent. Harsh shadows can also appear too cleanly defined.",
+      "_note": "Prompt: A photorealistic photograph of a diverse group of people standing on the North Lawn, admiring the iconic white facade of the White House during a bright spring afternoon. Shot with a Fujifilm GFX 100S and a 32-64mm f/4 lens, capturing an eye-level perspective with vibrant, even natural light, showcasing the people as foreground interest with the famous building prominently centered under a clear blue sky."
+    },
+    {
+      "id": "d13r8",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxfHxvYmFtYXxlbnwwfDB8fHwxNzcxMTcxMjYxfDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by History in HD on Unsplash",
+      "pro_tip": "**NATURAL VARIANCE:** Real crowds and natural light conditions often have subtle inconsistencies. Photos might show less-than-perfect framing, capturing a moment as-is.",
+      "source_url": "https://unsplash.com/photos/barack-obama-v_e3Hha4EBA"
+    },
+    {
+      "id": "d13r9",
+      "type": "image",
+      "content": "images/d13_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**COMPOSITION PERFECTION:** AI images often boast hyper-specific camera details and unnaturally flawless depth of field, making historical scenes look too pristine or idealized.",
+      "_note": "Prompt: A photorealistic photograph of a majestic bronze equestrian statue of George Washington situated prominently in a sun-drenched public square during golden hour. Shot with a Nikon D850 and a 24-70mm f/2.8 lens, showcasing the statue's intricate details and weathered patina, with dramatic backlighting and a wide-angle perspective revealing a backdrop of historic red-brick buildings."
+    },
+    {
+      "id": "d13r10",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1541872705-1f73c6400ec9?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwzfHxwcmVzaWRlbnR8ZW58MHwwfHx8MTc3MTE3MTExN3ww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by History in HD on Unsplash",
+      "pro_tip": "**IDEALIZED EXPRESSIONS:** AI often generates \"genuine smiles\" that feel generic or overly charismatic. Soft, warm ambient light may appear unnaturally smooth and controlled.",
+      "source_url": "https://unsplash.com/photos/george-w-bush-standing-on-lectern-during-daytime-DhwKbmdlJa0"
+    }
+  ],
+  "category_subtitle": "Honest AI: We Can't Tell a Lie... About Presidents!"
+}
