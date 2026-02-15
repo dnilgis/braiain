@@ -89,6 +89,13 @@
       "category_emoji": "🎭",
       "category_subtitle": "AI's Mardi Gras Eye: Spot the Beads, Unmask the Fun!",
       "challenge_file": "challenges/2026-02-17.json"
+  },
+      "2026-02-18": {
+      "day_number": 15,
+      "category": "National Battery Day",
+      "category_emoji": "🔋",
+      "category_subtitle": "Watts up? AI's charged to detect your battery pics.",
+      "challenge_file": "challenges/2026-02-18.json"
   }
 }
 
