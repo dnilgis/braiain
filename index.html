@@ -1,4 +1,27 @@
 <!DOCTYPE html>
+<!--
+╔═══════════════════════════════════════════════════════════════╗
+║                                                               ║
+║   ██████╗ ██████╗  █████╗ ██╗ █████╗ ██╗███╗   ██╗            ║
+║   ██╔══██╗██╔══██╗██╔══██╗██║██╔══██╗██║████╗  ██║            ║
+║   ██████╔╝██████╔╝███████║██║███████║██║██╔██╗ ██║            ║
+║   ██╔══██╗██╔══██╗██╔══██║██║██╔══██║██║██║╚██╗██║            ║
+║   ██████╔╝██║  ██║██║  ██║██║██║  ██║██║██║ ╚████║            ║
+║   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚═╝  ╚═╝╚═╝╚═╝ ╚═══╝             ║
+║                                                               ║
+║   You found the source. Good instincts.                       ║
+║   That's the whole point of this game.                        ║
+║                                                               ║
+║   Try the Konami code on the main page.                       ║
+║   Or type "turing" on the FAQ.                                ║
+║   Or click the logo 5 times fast.                             ║
+║   There are more.                                             ║
+║                                                               ║
+║   The resistance remembers.                                   ║
+║   — dnilgis                                                   ║
+║                                                               ║
+╚═══════════════════════════════════════════════════════════════╝
+-->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -776,6 +799,119 @@ img{display:block;max-width:100%}
 }
 #archive-badge.visible{display:inline-block}
 
+/* ══════════════════════════════════════
+   EASTER EGGS & UI POLISH
+   ══════════════════════════════════════ */
+
+/* Loading skeleton scan */
+#image-frame.loading::before{
+  content:'';position:absolute;inset:0;z-index:5;
+  background:linear-gradient(180deg,transparent 0%,rgba(0,229,255,.06) 50%,transparent 100%);
+  background-size:100% 40%;
+  animation:skeleScan 1.5s ease-in-out infinite;
+}
+#image-frame.loading::after{
+  content:'SCANNING...';position:absolute;
+  bottom:12px;left:50%;transform:translateX(-50%);
+  font-family:var(--font-display);font-size:.6rem;
+  letter-spacing:3px;color:var(--cyan);opacity:.5;
+  z-index:6;animation:skelePulse 1s ease-in-out infinite;
+}
+@keyframes skeleScan{0%{background-position:0 -100%}100%{background-position:0 200%}}
+@keyframes skelePulse{0%,100%{opacity:.3}50%{opacity:.7}}
+
+/* Scan overlay before reveal */
+#scan-overlay{
+  position:absolute;inset:0;z-index:15;
+  pointer-events:none;display:none;overflow:hidden;
+}
+#scan-overlay.active{display:block}
+#scan-overlay::before{
+  content:'';position:absolute;left:0;right:0;height:3px;
+  background:var(--cyan);
+  box-shadow:0 0 20px var(--cyan),0 0 60px rgba(0,229,255,.3);
+  animation:scanLine .4s ease-out forwards;
+}
+@keyframes scanLine{0%{top:0;opacity:1}100%{top:100%;opacity:0}}
+
+/* Button tap pulse */
+.choice-btn.pulse-green{animation:btnPulseG .3s ease-out}
+.choice-btn.pulse-red{animation:btnPulseR .3s ease-out}
+@keyframes btnPulseG{0%{box-shadow:0 0 0 0 rgba(0,255,157,.4)}100%{box-shadow:0 0 0 20px rgba(0,255,157,0)}}
+@keyframes btnPulseR{0%{box-shadow:0 0 0 0 rgba(255,0,60,.4)}100%{box-shadow:0 0 0 20px rgba(255,0,60,0)}}
+
+/* Image vignette */
+#image-frame::after{
+  content:'';position:absolute;inset:0;z-index:1;
+  pointer-events:none;
+  box-shadow:inset 0 0 60px rgba(6,6,12,.4);
+}
+
+/* Zoom hint for first-timers */
+#zoom-hint{
+  position:absolute;bottom:12px;right:12px;z-index:8;
+  display:none;align-items:center;gap:6px;
+  padding:6px 10px;
+  background:rgba(6,6,12,.85);border:1px solid rgba(0,229,255,.3);
+  font-family:var(--font-mono);font-size:.6rem;
+  letter-spacing:1px;color:var(--cyan);
+  animation:hintPulse 2s ease-in-out infinite;
+  pointer-events:none;
+}
+#zoom-hint.visible{display:flex}
+@keyframes hintPulse{0%,100%{opacity:.6;border-color:rgba(0,229,255,.2)}50%{opacity:1;border-color:rgba(0,229,255,.5)}}
+
+/* Matrix rain canvas */
+#matrix-rain{
+  position:fixed;inset:0;z-index:10003;
+  pointer-events:none;opacity:0;transition:opacity .3s;
+}
+#matrix-rain.active{opacity:1}
+
+/* Perfect game celebration */
+#celebration{
+  position:fixed;inset:0;z-index:10002;
+  pointer-events:none;display:none;
+}
+#celebration.active{display:block}
+
+/* "Are you human?" flicker */
+#human-check{
+  position:fixed;top:50%;left:50%;
+  transform:translate(-50%,-50%);
+  font-family:var(--font-display);font-size:clamp(.8rem,3vw,1.2rem);
+  letter-spacing:4px;color:var(--red);
+  text-shadow:0 0 30px rgba(255,0,60,.5);
+  z-index:10001;opacity:0;pointer-events:none;
+}
+#human-check.flash{animation:humanFlicker .8s ease-out forwards}
+@keyframes humanFlicker{
+  0%{opacity:1}10%{opacity:0}20%{opacity:.8}30%{opacity:0}
+  40%{opacity:.6}60%{opacity:0}70%{opacity:.4}100%{opacity:0}
+}
+
+/* Round transition wipe */
+#round-wipe{
+  position:absolute;inset:0;z-index:20;
+  pointer-events:none;display:none;
+  background:var(--cyan);mix-blend-mode:overlay;
+}
+#round-wipe.active{display:block;animation:wipeAcross .25s ease-out forwards}
+@keyframes wipeAcross{
+  0%{clip-path:inset(0 100% 0 0)}
+  50%{clip-path:inset(0 0 0 0)}
+  100%{clip-path:inset(0 0 0 100%)}
+}
+
+/* Speedrun badge on share card */
+.speed-badge{
+  display:inline-block;padding:2px 8px;margin-left:6px;
+  font-family:var(--font-display);font-size:.55rem;
+  letter-spacing:1.5px;color:var(--amber);
+  border:1px solid rgba(255,179,0,.4);
+  background:rgba(255,179,0,.06);
+}
+
 </style>
 </head>
 <body>
@@ -808,6 +944,16 @@ img{display:block;max-width:100%}
 
 <!-- CRT Overlay -->
 <div id="crt-overlay"></div>
+
+<!-- Easter Egg: Matrix Rain -->
+<canvas id="matrix-rain"></canvas>
+
+<!-- Easter Egg: "Are you human?" flicker -->
+<div id="human-check">ARE YOU SURE YOU'RE HUMAN?</div>
+
+<!-- Easter Egg: Perfect game celebration -->
+<canvas id="celebration"></canvas>
+
 
 <!-- HUD -->
 <header id="hud" style="display:none">
@@ -849,6 +995,9 @@ img{display:block;max-width:100%}
     <img id="game-img" src="" alt="Analyze this image" draggable="false">
     <div id="magnifier"></div>
     <div id="mag-crosshair"></div>
+    <div id="scan-overlay"></div>
+    <div id="round-wipe"></div>
+    <div id="zoom-hint">ð HOLD TO ZOOM</div>
   </div>
   <div id="prompt">CLASSIFY: HUMAN OR AI-GENERATED?</div>
   <div id="choices">
@@ -948,7 +1097,7 @@ img{display:block;max-width:100%}
 /* ══════════════════════════════════════
    VERSION & CACHE BUSTING
    ══════════════════════════════════════ */
-const APP_VERSION = '2.3.0';
+const APP_VERSION = '2.4.0';
 const BUILD_HASH = Date.now().toString(36).slice(-6);
 
 /* ══════════════════════════════════════
@@ -1034,14 +1183,14 @@ let apiAvailable = false;
    STATE
    ══════════════════════════════════════ */
 let dailyData = null;
-let dailyIndex = null;       // cached daily.json
+let dailyIndex = null;
 let currentRound = 0;
 let results = [];
 let streak = 0;
 let bestStreak = 0;
 let gameActive = false;
-let isArchiveMode = false;   // archive mode flag
-let archiveDate = null;      // date key for archive play
+let isArchiveMode = false;
+let archiveDate = null;
 
 /* ══════════════════════════════════════
    FALLBACK DATA
@@ -1213,46 +1362,27 @@ async function boot() {
    ══════════════════════════════════════ */
 async function showArchive() {
   haptic('tap');
-
-  // Ensure we have the daily index
   if (!dailyIndex) {
     try {
       const resp = await fetchWithTimeout('daily.json?v=' + APP_VERSION + '&t=' + BUILD_HASH, {}, 5000);
       if (resp.ok) dailyIndex = await resp.json();
     } catch (e) {}
   }
-
-  if (!dailyIndex) {
-    showToast('ARCHIVE UNAVAILABLE — OFFLINE');
-    return;
-  }
+  if (!dailyIndex) { showToast('ARCHIVE UNAVAILABLE — OFFLINE'); return; }
 
   showScreen('screen-archive');
   const grid = document.getElementById('archive-grid');
   grid.innerHTML = '';
-
   const todayKey = getTodayKey();
-
-  // Sort dates newest first, exclude future dates
-  const dates = Object.keys(dailyIndex)
-    .filter(d => d <= todayKey)
-    .sort((a, b) => b.localeCompare(a));
+  const dates = Object.keys(dailyIndex).filter(d => d <= todayKey).sort((a, b) => b.localeCompare(a));
 
   for (const dateKey of dates) {
     const entry = dailyIndex[dateKey];
     const isToday = dateKey === todayKey;
-
-    // Check if already played
     let savedResults = null;
-    try {
-      const raw = localStorage.getItem('braiain_results_' + dateKey);
-      if (raw) savedResults = JSON.parse(raw);
-    } catch (e) {}
-
+    try { const raw = localStorage.getItem('braiain_results_' + dateKey); if (raw) savedResults = JSON.parse(raw); } catch (e) {}
     const hasPlayed = savedResults && Array.isArray(savedResults) && savedResults.length > 0;
     const score = hasPlayed ? savedResults.filter(Boolean).length : null;
-
-    // Format date for display
     const dateObj = new Date(dateKey + 'T12:00:00');
     const dateStr = dateObj.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
 
@@ -1260,100 +1390,49 @@ async function showArchive() {
     card.className = 'arc-card' + (isToday ? ' today-card' : (hasPlayed ? ' played' : ''));
 
     let scoreHtml = '';
-    if (isToday) {
-      scoreHtml = '<span class="arc-card-score unplayed">TODAY</span>';
-    } else if (hasPlayed) {
-      const cls = score >= 7 ? 'good' : score >= 4 ? 'mid' : 'low';
-      scoreHtml = '<span class="arc-card-score ' + cls + '">' + score + '/10</span>';
-    } else {
-      scoreHtml = '<span class="arc-card-score unplayed">PLAY →</span>';
-    }
+    if (isToday) scoreHtml = '<span class="arc-card-score unplayed">TODAY</span>';
+    else if (hasPlayed) { const cls = score >= 7 ? 'good' : score >= 4 ? 'mid' : 'low'; scoreHtml = '<span class="arc-card-score ' + cls + '">' + score + '/10</span>'; }
+    else scoreHtml = '<span class="arc-card-score unplayed">PLAY →</span>';
 
-    card.innerHTML =
-      '<div class="arc-card-top">' +
-        '<span class="arc-card-emoji">' + (entry.category_emoji || '🔍') + '</span>' +
-        '<span class="arc-card-day">DAY ' + entry.day_number + '</span>' +
-      '</div>' +
-      '<div class="arc-card-cat">' + (entry.category || 'Detection') + '</div>' +
-      '<div class="arc-card-date">' + dateStr + '</div>' +
-      scoreHtml;
+    card.innerHTML = '<div class="arc-card-top"><span class="arc-card-emoji">' + (entry.category_emoji || '🔍') + '</span><span class="arc-card-day">DAY ' + entry.day_number + '</span></div><div class="arc-card-cat">' + (entry.category || 'Detection') + '</div><div class="arc-card-date">' + dateStr + '</div>' + scoreHtml;
 
     if (!isToday) {
-      if (hasPlayed) {
-        // Already played — tapping shows results for that archive day
-        card.onclick = () => startArchiveReview(dateKey);
-      } else {
-        card.onclick = () => startArchiveGame(dateKey);
-      }
+      if (hasPlayed) card.onclick = () => startArchiveReview(dateKey);
+      else card.onclick = () => startArchiveGame(dateKey);
     }
-
     grid.appendChild(card);
   }
-
   trackEvent('archive_view', { total_days: dates.length });
 }
 
 async function startArchiveGame(dateKey) {
   haptic('tap');
-
   const entry = dailyIndex[dateKey];
-  if (!entry || !entry.challenge_file) {
-    showToast('CHALLENGE DATA MISSING');
-    return;
-  }
-
+  if (!entry || !entry.challenge_file) { showToast('CHALLENGE DATA MISSING'); return; }
   try {
     const resp = await fetchWithTimeout(entry.challenge_file + '?v=' + APP_VERSION + '&t=' + BUILD_HASH, {}, 5000);
     if (!resp.ok) throw new Error('HTTP ' + resp.status);
     dailyData = await resp.json();
-  } catch (e) {
-    showToast('FAILED TO LOAD CHALLENGE');
-    return;
-  }
+  } catch (e) { showToast('FAILED TO LOAD CHALLENGE'); return; }
 
-  isArchiveMode = true;
-  archiveDate = dateKey;
-  gameActive = true;
-  currentRound = 0;
-  results = [];
-
+  isArchiveMode = true; archiveDate = dateKey; gameActive = true; currentRound = 0; results = [];
   trackEvent('archive_start', { day: dailyData.day_number, date: dateKey, category: dailyData.category || 'unknown' });
-
   showScreen('screen-game');
   document.getElementById('hud').style.display = '';
-  updateHUD();
-  preloadAllImages();
-  loadRound();
+  updateHUD(); preloadAllImages(); loadRound();
 }
 
 async function startArchiveReview(dateKey) {
   haptic('tap');
-
   const entry = dailyIndex[dateKey];
   if (!entry || !entry.challenge_file) return;
-
   try {
     const resp = await fetchWithTimeout(entry.challenge_file + '?v=' + APP_VERSION + '&t=' + BUILD_HASH, {}, 5000);
     if (!resp.ok) throw new Error();
     dailyData = await resp.json();
-  } catch (e) {
-    showToast('FAILED TO LOAD CHALLENGE');
-    return;
-  }
-
-  // Load saved results for this date
-  try {
-    const saved = JSON.parse(localStorage.getItem('braiain_results_' + dateKey));
-    if (saved && saved.length) {
-      results = saved;
-      currentRound = TOTAL_ROUNDS;
-    }
-  } catch (e) { return; }
-
-  isArchiveMode = true;
-  archiveDate = dateKey;
-  gameActive = false;
-
+  } catch (e) { showToast('FAILED TO LOAD CHALLENGE'); return; }
+  try { const saved = JSON.parse(localStorage.getItem('braiain_results_' + dateKey)); if (saved && saved.length) { results = saved; currentRound = TOTAL_ROUNDS; } } catch (e) { return; }
+  isArchiveMode = true; archiveDate = dateKey; gameActive = false;
   showResults();
 }
 
@@ -1362,23 +1441,17 @@ async function startArchiveReview(dateKey) {
    ══════════════════════════════════════ */
 function startGame() {
   haptic('tap');
-  isArchiveMode = false;
-  archiveDate = null;
+  _gameStartTime = Date.now();
+  isArchiveMode = false; archiveDate = null;
   trackEvent('game_start', { day: dailyData.day_number, category: dailyData.category || 'unknown' });
-  gameActive = true;
-  currentRound = 0;
-  results = [];
+  gameActive = true; currentRound = 0; results = [];
   showScreen('screen-game');
   document.getElementById('hud').style.display = '';
-  updateHUD();
-  loadRound();
+  updateHUD(); loadRound();
 }
 
 function loadRound() {
-  if (currentRound >= TOTAL_ROUNDS || currentRound >= dailyData.rounds.length) {
-    endGame();
-    return;
-  }
+  if (currentRound >= TOTAL_ROUNDS || currentRound >= dailyData.rounds.length) { endGame(); return; }
 
   const round = dailyData.rounds[currentRound];
   const frame = document.getElementById('image-frame');
@@ -1390,9 +1463,7 @@ function loadRound() {
   revealPanel.style.display = 'none';
   choices.style.display = '';
   document.querySelectorAll('.choice-btn').forEach(b => {
-    b.disabled = false;
-    b.style.borderColor = '';
-    b.style.boxShadow = '';
+    b.disabled = false; b.style.borderColor = ''; b.style.boxShadow = '';
   });
   frame.classList.add('loading');
 
@@ -1406,12 +1477,11 @@ function loadRound() {
   img.onload = () => {
     frame.classList.remove('loading');
     initMagnifier(img);
+    if (currentRound === 0) showZoomHint();
   };
   img.onerror = () => {
     frame.classList.remove('loading');
-    if (img.src.includes('?')) {
-      img.src = img.src.split('?')[0];
-    }
+    if (img.src.includes('?')) img.src = img.src.split('?')[0];
   };
   img.src = round.content;
 
@@ -1432,20 +1502,23 @@ function choose(answer) {
 
   document.querySelectorAll('.choice-btn').forEach(b => b.disabled = true);
 
+  // Easter egg: wrong streak check
+  checkWrongStreak(isCorrect);
+
   const btns = document.querySelectorAll('.choice-btn');
   btns.forEach(b => {
     if ((answer === 'human' && b.classList.contains('human')) ||
         (answer === 'ai' && b.classList.contains('ai'))) {
       b.style.borderColor = isCorrect ? 'var(--green)' : 'var(--red)';
       b.style.boxShadow = isCorrect ? 'var(--glow-green)' : 'var(--glow-red)';
+      pulseButton(b, isCorrect);
     }
   });
 
   const pips = document.querySelectorAll('.pip');
-  if (pips[currentRound]) {
-    pips[currentRound].classList.add(isCorrect ? 'correct' : 'wrong');
-  }
+  if (pips[currentRound]) pips[currentRound].classList.add(isCorrect ? 'correct' : 'wrong');
 
+  playScanAnimation().then(function() {});
   showReveal(round, isCorrect);
   reportVote(round.id, isCorrect);
 
@@ -1466,18 +1539,13 @@ function showReveal(round, isCorrect) {
 
   verdict.className = 'reveal-verdict ' + (isCorrect ? 'correct' : 'wrong');
   verdict.textContent = isCorrect ? '✓ CORRECT — ' + round.source.toUpperCase() : '✗ WRONG — IT WAS ' + round.source.toUpperCase();
-
   source.textContent = round.attribution || '';
 
   const sourceLink = document.getElementById('reveal-source-link');
-  if (round.content && round.source === 'human') {
-    sourceLink.innerHTML = '<a href="' + round.content + '" target="_blank" rel="noopener">[ VIEW SOURCE IMAGE ↗ ]</a>';
-  } else {
-    sourceLink.innerHTML = '';
-  }
+  if (round.content && round.source === 'human') sourceLink.innerHTML = '<a href="' + round.content + '" target="_blank" rel="noopener">[ VIEW SOURCE IMAGE ↗ ]</a>';
+  else sourceLink.innerHTML = '';
 
   tip.innerHTML = '<strong>PRO TIP:</strong> ' + (round.pro_tip || '');
-
   fetchGlobalAccuracy(round.id);
 
   choices.style.display = 'none';
@@ -1485,44 +1553,27 @@ function showReveal(round, isCorrect) {
   panel.classList.add('active');
 
   const nextBtn = panel.querySelector('.next-btn');
-  if (currentRound >= TOTAL_ROUNDS - 1 || currentRound >= dailyData.rounds.length - 1) {
-    nextBtn.textContent = 'VIEW RESULTS →';
-  } else {
-    nextBtn.textContent = 'NEXT SCAN →';
-  }
+  if (currentRound >= TOTAL_ROUNDS - 1 || currentRound >= dailyData.rounds.length - 1) nextBtn.textContent = 'VIEW RESULTS →';
+  else nextBtn.textContent = 'NEXT SCAN →';
 }
 
 function nextRound() {
   haptic('tap');
+  playRoundWipe();
   currentRound++;
-  if (currentRound >= TOTAL_ROUNDS || currentRound >= dailyData.rounds.length) {
-    endGame();
-  } else {
-    loadRound();
-  }
+  if (currentRound >= TOTAL_ROUNDS || currentRound >= dailyData.rounds.length) endGame();
+  else loadRound();
 }
 
 function endGame() {
   gameActive = false;
   haptic('finish');
-
   const saveKey = isArchiveMode ? archiveDate : getTodayKey();
   localStorage.setItem('braiain_played_' + saveKey, '1');
   localStorage.setItem('braiain_results_' + saveKey, JSON.stringify(results));
-
   const score = results.filter(Boolean).length;
-  trackEvent('game_complete', {
-    score: score, total: TOTAL_ROUNDS,
-    day: dailyData.day_number, category: dailyData.category || 'unknown',
-    perfect: score === TOTAL_ROUNDS, pct: Math.round((score / TOTAL_ROUNDS) * 100),
-    archive: isArchiveMode
-  });
-
-  // Only update streak for today's challenge
-  if (!isArchiveMode) {
-    updateStreak(score);
-  }
-
+  trackEvent('game_complete', { score: score, total: TOTAL_ROUNDS, day: dailyData.day_number, category: dailyData.category || 'unknown', perfect: score === TOTAL_ROUNDS, pct: Math.round((score / TOTAL_ROUNDS) * 100), archive: isArchiveMode });
+  if (!isArchiveMode) updateStreak(score);
   showResults();
 }
 
@@ -1534,31 +1585,23 @@ function showResults() {
   document.getElementById('hud').style.display = 'none';
   document.querySelector('.tip-terminal').classList.add('visible');
 
-  // Archive badge
   const badge = document.getElementById('archive-badge');
   if (isArchiveMode && dailyData) {
     const dateObj = new Date(archiveDate + 'T12:00:00');
     const dateStr = dateObj.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
     badge.textContent = 'ARCHIVE — DAY ' + dailyData.day_number + ' · ' + dateStr;
     badge.classList.add('visible');
-  } else {
-    badge.classList.remove('visible');
-  }
+  } else badge.classList.remove('visible');
 
   const score = results.filter(Boolean).length;
-  const titles = [
-    'COMPLETELY COMPROMISED','SYSTEM FAILURE','WEAK SIGNAL','PARTIAL DETECTION',
-    'HALF MEASURES','MEDIOCRE SCAN','DECENT INSTINCTS','SHARP DETECTOR',
-    'ELITE SCANNER','NEAR PERFECT','VOIGHT-KAMPFF MASTER'
-  ];
+  const titles = ['COMPLETELY COMPROMISED','SYSTEM FAILURE','WEAK SIGNAL','PARTIAL DETECTION','HALF MEASURES','MEDIOCRE SCAN','DECENT INSTINCTS','SHARP DETECTOR','ELITE SCANNER','NEAR PERFECT','VOIGHT-KAMPFF MASTER'];
 
   const ring = document.getElementById('ring-fg');
   const circumference = 2 * Math.PI * 70;
   const offset = circumference - (score / TOTAL_ROUNDS) * circumference;
-  // Reset ring to empty before animating
   ring.style.transition = 'none';
   ring.style.strokeDashoffset = circumference;
-  ring.offsetHeight; // force reflow
+  ring.offsetHeight;
   ring.style.transition = '';
   setTimeout(() => {
     ring.style.strokeDashoffset = offset;
@@ -1567,17 +1610,20 @@ function showResults() {
     else ring.style.stroke = 'var(--red)';
   }, 100);
 
-  document.getElementById('score-num').textContent = score;
+  // Odometer count-up for score
+  animateNumber(document.getElementById('score-num'), score, 800);
   scrambleText(document.getElementById('results-title'), titles[score], 500);
+
+  // Easter egg: perfect game celebration
+  if (score === TOTAL_ROUNDS) {
+    setTimeout(celebratePerfect, 600);
+  }
 
   let daysPlayed = 0, totalScore = 0;
   for (let i = 0; i < localStorage.length; i++) {
     const key = localStorage.key(i);
     if (key && key.startsWith('braiain_results_')) {
-      try {
-        const r = JSON.parse(localStorage.getItem(key));
-        if (Array.isArray(r) && r.length > 0) { daysPlayed++; totalScore += r.filter(Boolean).length; }
-      } catch (e) {}
+      try { const r = JSON.parse(localStorage.getItem(key)); if (Array.isArray(r) && r.length > 0) { daysPlayed++; totalScore += r.filter(Boolean).length; } } catch (e) {}
     }
   }
   document.getElementById('rs-played').textContent = daysPlayed;
@@ -1596,26 +1642,16 @@ function showResults() {
     grid.appendChild(pip);
   });
 
-  // Countdown & players only for today's challenge
   const countdownWrap = document.getElementById('countdown-wrap');
   const playersWrap = document.getElementById('global-players-wrap');
-  if (isArchiveMode) {
-    countdownWrap.style.display = 'none';
-    playersWrap.style.display = 'none';
-  } else {
-    countdownWrap.style.display = '';
-    playersWrap.style.display = '';
-    startCountdown();
-    fetchGlobalPlayers();
-  }
+  if (isArchiveMode) { countdownWrap.style.display = 'none'; playersWrap.style.display = 'none'; }
+  else { countdownWrap.style.display = ''; playersWrap.style.display = ''; startCountdown(); fetchGlobalPlayers(); }
 
   loadTodayReview();
 
   const resQ = getRandomQuote(getDailyQuote().text);
   const resTx = document.getElementById('results-transmission');
-  if (resTx) {
-    resTx.innerHTML = '<span style="color:var(--cyan)">"' + resQ.text + '"</span><br><span style="font-size:.78rem;color:var(--text);opacity:.7;margin-top:6px;display:inline-block;letter-spacing:.5px">— ' + resQ.src + '</span>';
-  }
+  if (resTx) resTx.innerHTML = '<span style="color:var(--cyan)">"' + resQ.text + '"</span><br><span style="font-size:.78rem;color:var(--text);opacity:.7;margin-top:6px;display:inline-block;letter-spacing:.5px">— ' + resQ.src + '</span>';
 }
 
 /* ══════════════════════════════════════
@@ -1626,8 +1662,8 @@ function initMagnifier(img) {
   const mag = document.getElementById('magnifier');
   const crosshair = document.getElementById('mag-crosshair');
   const zoom = 2.5;
-  const magR = 60; // magnifier radius (half of 120px)
-  const touchOffsetY = 110; // how far above the finger to show on mobile
+  const magR = 60;
+  const touchOffsetY = 110;
   let isTouch = false;
 
   function show(x, y) {
@@ -1636,63 +1672,29 @@ function initMagnifier(img) {
     const py = (y - rect.top) / rect.height;
     if (px < 0 || px > 1 || py < 0 || py > 1) { mag.style.display = 'none'; return; }
     mag.style.display = 'block';
-
-    // Position: on desktop center on cursor; on touch offset above finger
     let magX = x - rect.left - magR;
     let magY = y - rect.top - magR;
-
     if (isTouch) {
-      // Default: show above finger
       magY = y - rect.top - magR * 2 - touchOffsetY;
-      // If too close to top, flip below finger
-      if (magY < 0) {
-        magY = y - rect.top + touchOffsetY - magR;
-      }
-      // Clamp horizontally so lens stays in frame
+      if (magY < 0) magY = y - rect.top + touchOffsetY - magR;
       magX = Math.max(0, Math.min(rect.width - magR * 2, magX));
     }
-
     mag.style.left = magX + 'px';
     mag.style.top = magY + 'px';
-
-    // Show crosshair at actual sample point on touch
-    if (isTouch) {
-      crosshair.style.display = 'block';
-      crosshair.style.left = (x - rect.left) + 'px';
-      crosshair.style.top = (y - rect.top) + 'px';
-    } else {
-      crosshair.style.display = 'none';
-    }
-
-    // Background always samples from actual touch/cursor point
+    if (isTouch) { crosshair.style.display = 'block'; crosshair.style.left = (x - rect.left) + 'px'; crosshair.style.top = (y - rect.top) + 'px'; }
+    else crosshair.style.display = 'none';
     mag.style.backgroundImage = 'url(' + img.src + ')';
     mag.style.backgroundSize = (rect.width * zoom) + 'px ' + (rect.height * zoom) + 'px';
-    mag.style.backgroundPosition =
-      (-px * rect.width * zoom + magR) + 'px ' +
-      (-py * rect.height * zoom + magR) + 'px';
+    mag.style.backgroundPosition = (-px * rect.width * zoom + magR) + 'px ' + (-py * rect.height * zoom + magR) + 'px';
   }
 
   function hide() { mag.style.display = 'none'; crosshair.style.display = 'none'; }
-
   frame.onmousemove = e => { isTouch = false; show(e.clientX, e.clientY); };
   frame.onmouseleave = hide;
-
-  frame.ontouchmove = e => {
-    e.preventDefault();
-    isTouch = true;
-    const t = e.touches[0];
-    show(t.clientX, t.clientY);
-  };
+  frame.ontouchmove = e => { e.preventDefault(); isTouch = true; const t = e.touches[0]; show(t.clientX, t.clientY); };
   frame.ontouchend = hide;
   frame.ontouchcancel = hide;
-
-  frame.ontouchstart = e => {
-    if (e.touches.length === 1) {
-      isTouch = true;
-      const t = e.touches[0];
-      show(t.clientX, t.clientY);
-    }
-  };
+  frame.ontouchstart = e => { if (e.touches.length === 1) { isTouch = true; const t = e.touches[0]; show(t.clientX, t.clientY); } };
 }
 
 /* ══════════════════════════════════════
@@ -1704,7 +1706,6 @@ function updateHUD() {
   const prefix = isArchiveMode ? 'ARCHIVE · DAY ' : 'DAY ';
   document.getElementById('hud-ticker').textContent = prefix + dayNum + ' — ' + cat;
   document.getElementById('hud-round').textContent = (currentRound + 1) + '/' + TOTAL_ROUNDS;
-
   const pipWrap = document.getElementById('hud-pips');
   pipWrap.innerHTML = '';
   for (let i = 0; i < TOTAL_ROUNDS; i++) {
@@ -1731,15 +1732,9 @@ function updateStreak(score) {
   const today = getTodayKey();
   const last = localStorage.getItem('braiain_last_date');
   const yesterday = getYesterdayKey();
-
-  if (score >= 5) {
-    if (last === yesterday || !last) streak++;
-    else if (last !== today) streak = 1;
-  } else {
-    streak = 0;
-  }
+  if (score >= 5) { if (last === yesterday || !last) streak++; else if (last !== today) streak = 1; }
+  else streak = 0;
   if (streak > bestStreak) bestStreak = streak;
-
   localStorage.setItem('braiain_streak', streak);
   localStorage.setItem('braiain_best_streak', bestStreak);
   localStorage.setItem('braiain_last_date', today);
@@ -1750,13 +1745,7 @@ function updateStreak(score) {
    ══════════════════════════════════════ */
 async function reportVote(questionId, wasCorrect) {
   if (!apiAvailable) return;
-  try {
-    await fetchWithTimeout(API_BASE + '/vote', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ id: questionId, correct: wasCorrect })
-    }, 4000);
-  } catch (e) { /* silent */ }
+  try { await fetchWithTimeout(API_BASE + '/vote', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ id: questionId, correct: wasCorrect }) }, 4000); } catch (e) {}
 }
 
 async function fetchGlobalAccuracy(questionId) {
@@ -1773,22 +1762,13 @@ async function fetchGlobalAccuracy(questionId) {
       fill.style.width = pct + '%';
       pctEl.textContent = pct + '%';
       label.textContent = data.total + ' PLAYERS SCANNED';
-      if (pct >= 70) {
-        pctEl.style.color = 'var(--green)';
-        fill.style.background = 'var(--green)';
-      } else if (pct >= 40) {
-        pctEl.style.color = 'var(--cyan)';
-        fill.style.background = 'var(--cyan)';
-      } else {
-        pctEl.style.color = 'var(--red)';
-        fill.style.background = 'var(--red)';
-      }
+      if (pct >= 70) { pctEl.style.color = 'var(--green)'; fill.style.background = 'var(--green)'; }
+      else if (pct >= 40) { pctEl.style.color = 'var(--cyan)'; fill.style.background = 'var(--cyan)'; }
+      else { pctEl.style.color = 'var(--red)'; fill.style.background = 'var(--red)'; }
       return;
     }
-  } catch (e) { /* fall through */ }
-  fill.style.width = '0%';
-  pctEl.textContent = '—';
-  label.textContent = 'CONNECTING TO NETWORK...';
+  } catch (e) {}
+  fill.style.width = '0%'; pctEl.textContent = '—'; label.textContent = 'CONNECTING TO NETWORK...';
 }
 
 /* ══════════════════════════════════════
@@ -1799,16 +1779,8 @@ function getShareText() {
   const day = dailyData ? dailyData.day_number : '?';
   const grid = results.map(c => c ? '🟩' : '🟥').join('');
   const cat = dailyData ? (dailyData.category_emoji || '') + ' ' + (dailyData.category || '') : '';
-
   const prefix = isArchiveMode ? 'BRAIAIN Archive — Day ' : 'BRAIAIN Day ';
-  const lines = [
-    prefix + day + ' — ' + score + '/' + TOTAL_ROUNDS,
-    cat,
-    grid,
-    streak > 0 && !isArchiveMode ? '🔥 ' + streak + ' day streak' : '',
-    '',
-    'Can you spot the AI? → braiain.com'
-  ];
+  const lines = [prefix + day + ' — ' + score + '/' + TOTAL_ROUNDS, cat, grid, streak > 0 && !isArchiveMode ? '🔥 ' + streak + ' day streak' : '', '', 'Can you spot the AI? → braiain.com'];
   return lines.filter(l => l !== '').join('\n');
 }
 
@@ -1817,17 +1789,12 @@ function shareClipboard() {
   const score = results.filter(Boolean).length;
   trackEvent('share', { method: 'clipboard', score: score, day: dailyData ? dailyData.day_number : 0, archive: isArchiveMode });
   const text = getShareText();
-  if (navigator.share) {
-    navigator.share({ text }).catch(() => copyFallback(text));
-  } else {
-    copyFallback(text);
-  }
+  if (navigator.share) navigator.share({ text }).catch(() => copyFallback(text));
+  else copyFallback(text);
 }
 
 function copyFallback(text) {
-  navigator.clipboard.writeText(text).then(() => {
-    showToast('COPIED TO CLIPBOARD');
-  }).catch(() => showToast('COPY FAILED'));
+  navigator.clipboard.writeText(text).then(() => showToast('COPIED TO CLIPBOARD')).catch(() => showToast('COPY FAILED'));
 }
 
 function shareX() {
@@ -1846,18 +1813,13 @@ function startCountdown() {
   if (countdownInterval) clearInterval(countdownInterval);
   function tick() {
     const now = new Date();
-    const tom = new Date(now);
-    tom.setUTCDate(tom.getUTCDate() + 1);
-    tom.setUTCHours(0, 0, 0, 0);
+    const tom = new Date(now); tom.setUTCDate(tom.getUTCDate() + 1); tom.setUTCHours(0, 0, 0, 0);
     const diff = tom - now;
-    const h = Math.floor(diff / 3600000);
-    const m = Math.floor((diff % 3600000) / 60000);
-    const s = Math.floor((diff % 60000) / 1000);
+    const h = Math.floor(diff / 3600000), m = Math.floor((diff % 3600000) / 60000), s = Math.floor((diff % 60000) / 1000);
     const el = document.getElementById('countdown');
     if (el) el.textContent = String(h).padStart(2, '0') + ':' + String(m).padStart(2, '0') + ':' + String(s).padStart(2, '0');
   }
-  tick();
-  countdownInterval = setInterval(tick, 1000);
+  tick(); countdownInterval = setInterval(tick, 1000);
 }
 
 /* ══════════════════════════════════════
@@ -1866,61 +1828,27 @@ function startCountdown() {
 function loadTodayReview() {
   const section = document.getElementById('review-section');
   if (!dailyData || !dailyData.rounds) return;
-
   const catEmoji = dailyData.category_emoji || '👁️';
-  document.getElementById('review-title').textContent =
-    catEmoji + ' ' + (dailyData.category || 'IMAGE DETECTION').toUpperCase();
-
+  document.getElementById('review-title').textContent = catEmoji + ' ' + (dailyData.category || 'IMAGE DETECTION').toUpperCase();
   const labelText = isArchiveMode ? 'Archive — Day ' : 'Day ';
-  document.getElementById('review-subtitle').textContent =
-    labelText + (dailyData.day_number || '1') + ' — All 10 Answers Revealed';
-
-  const grid = document.getElementById('review-grid');
-  grid.innerHTML = '';
-
+  document.getElementById('review-subtitle').textContent = labelText + (dailyData.day_number || '1') + ' — All 10 Answers Revealed';
+  const grid = document.getElementById('review-grid'); grid.innerHTML = '';
   const rounds = dailyData.rounds.slice(0, TOTAL_ROUNDS);
   for (let i = 0; i < rounds.length; i++) {
-    const r = rounds[i];
-    const card = document.createElement('div');
-    card.className = 'yd-card';
-
-    const isHuman = r.source === 'human';
-    const labelClass = isHuman ? 'human' : 'ai';
+    const r = rounds[i]; const card = document.createElement('div'); card.className = 'yd-card';
+    const isHuman = r.source === 'human'; const labelClass = isHuman ? 'human' : 'ai';
     const labelText = isHuman ? '✓ HUMAN' : '✗ AI-GENERATED';
-
-    const userCorrect = results[i];
-    const pipClass = userCorrect ? 'correct' : 'wrong';
-    const pipText = userCorrect ? '✓' : '✗';
-
+    const userCorrect = results[i]; const pipClass = userCorrect ? 'correct' : 'wrong'; const pipText = userCorrect ? '✓' : '✗';
     let sourceLink = '';
-    if (isHuman) {
-      sourceLink = '<div class="yd-card-source"><a href="' + r.content + '" target="_blank" rel="noopener">[ VIEW SOURCE ↗ ]</a></div>';
-    } else if (r._note) {
+    if (isHuman) sourceLink = '<div class="yd-card-source"><a href="' + r.content + '" target="_blank" rel="noopener">[ VIEW SOURCE ↗ ]</a></div>';
+    else if (r._note) {
       const promptText = r._note.replace(/^Prompt:\s*/i, '');
       const promptId = 'prompt-' + i;
-      sourceLink =
-        '<button class="yd-prompt-toggle" onclick="document.getElementById(\'' + promptId + '\').classList.toggle(\'visible\');this.textContent=this.textContent.includes(\'SHOW\')?\'[ HIDE PROMPT ]\':\'[ SHOW AI PROMPT ]\'">[ SHOW AI PROMPT ]</button>' +
-        '<div class="yd-prompt-text" id="' + promptId + '"><span class="prompt-label">AI GENERATION PROMPT</span>' + promptText + '</div>';
+      sourceLink = '<button class="yd-prompt-toggle" onclick="document.getElementById(\'' + promptId + '\').classList.toggle(\'visible\');this.textContent=this.textContent.includes(\'SHOW\')?\'[ HIDE PROMPT ]\':\'[ SHOW AI PROMPT ]\'">[ SHOW AI PROMPT ]</button><div class="yd-prompt-text" id="' + promptId + '"><span class="prompt-label">AI GENERATION PROMPT</span>' + promptText + '</div>';
     }
-
-    card.innerHTML =
-      '<div class="yd-card-img-wrap">' +
-        '<img class="yd-card-img" src="' + r.content + '" alt="Round ' + (i + 1) + '" loading="lazy" onerror="this.style.display=\'none\'">' +
-        '<div class="yd-stat-badge none" id="rv-badge-' + i + '" title="% of players who got this right">—</div>' +
-      '</div>' +
-      '<div class="yd-card-body">' +
-        '<div class="yd-card-row">' +
-          '<span class="yd-card-label ' + labelClass + '">' + labelText + '</span>' +
-          '<span class="yd-card-round"><span class="r-pip ' + pipClass + '" style="width:24px;height:24px;font-size:.65rem;display:inline-flex">' + pipText + '</span> #' + (i + 1) + '</span>' +
-        '</div>' +
-        '<div class="yd-card-attrib">' + (r.attribution || '') + '</div>' +
-        sourceLink +
-      '</div>';
-
-    grid.appendChild(card);
-    fetchReviewStat(r.id, i);
+    card.innerHTML = '<div class="yd-card-img-wrap"><img class="yd-card-img" src="' + r.content + '" alt="Round ' + (i + 1) + '" loading="lazy" onerror="this.style.display=\'none\'"><div class="yd-stat-badge none" id="rv-badge-' + i + '" title="% of players who got this right">—</div></div><div class="yd-card-body"><div class="yd-card-row"><span class="yd-card-label ' + labelClass + '">' + labelText + '</span><span class="yd-card-round"><span class="r-pip ' + pipClass + '" style="width:24px;height:24px;font-size:.65rem;display:inline-flex">' + pipText + '</span> #' + (i + 1) + '</span></div><div class="yd-card-attrib">' + (r.attribution || '') + '</div>' + sourceLink + '</div>';
+    grid.appendChild(card); fetchReviewStat(r.id, i);
   }
-
   setTimeout(() => { section.classList.add('visible'); }, 300);
 }
 
@@ -1932,16 +1860,8 @@ async function fetchReviewStat(roundId, index) {
     if (!resp.ok) throw new Error('no stats');
     const data = await resp.json();
     const pct = Math.round(data.pct || 0);
-    if (badge) {
-      badge.textContent = '👥 ' + pct + '%';
-      badge.className = 'yd-stat-badge ' + (pct >= 70 ? 'high' : pct >= 40 ? 'mid' : 'low');
-    }
-  } catch (e) {
-    if (badge) {
-      badge.textContent = '—';
-      badge.className = 'yd-stat-badge none';
-    }
-  }
+    if (badge) { badge.textContent = '👥 ' + pct + '%'; badge.className = 'yd-stat-badge ' + (pct >= 70 ? 'high' : pct >= 40 ? 'mid' : 'low'); }
+  } catch (e) { if (badge) { badge.textContent = '—'; badge.className = 'yd-stat-badge none'; } }
 }
 
 /* ══════════════════════════════════════
@@ -1957,43 +1877,26 @@ async function fetchGlobalPlayers() {
     if (!resp.ok) throw new Error();
     const data = await resp.json();
     if (data.total > 0) {
-      el.textContent = data.total.toLocaleString();
+      animateNumber(el, data.total, 1200);
       label.textContent = 'GLOBAL PLAYERS TODAY';
-    } else {
-      el.textContent = '—';
-      label.textContent = 'NO DATA YET';
-    }
-  } catch (e) {
-    el.textContent = '—';
-    label.textContent = 'NETWORK OFFLINE';
-  }
+    } else { el.textContent = '—'; label.textContent = 'NO DATA YET'; }
+  } catch (e) { el.textContent = '—'; label.textContent = 'NETWORK OFFLINE'; }
 }
 
 /* ══════════════════════════════════════
    BOOT SCREEN STATS
    ══════════════════════════════════════ */
 function loadBootStats() {
-  let daysPlayed = 0;
-  let totalScore = 0;
-
+  let daysPlayed = 0, totalScore = 0;
   for (let i = 0; i < localStorage.length; i++) {
     const key = localStorage.key(i);
     if (key && key.startsWith('braiain_results_')) {
-      try {
-        const r = JSON.parse(localStorage.getItem(key));
-        if (Array.isArray(r) && r.length > 0) {
-          daysPlayed++;
-          totalScore += r.filter(Boolean).length;
-        }
-      } catch (e) {}
+      try { const r = JSON.parse(localStorage.getItem(key)); if (Array.isArray(r) && r.length > 0) { daysPlayed++; totalScore += r.filter(Boolean).length; } } catch (e) {}
     }
   }
-
   const bestStrk = parseInt(localStorage.getItem('braiain_best_streak') || '0');
-
   const ydKey = getYesterdayKey();
-  const ydEl = document.getElementById('bs-yesterday');
-  ydEl.style.color = '';
+  const ydEl = document.getElementById('bs-yesterday'); ydEl.style.color = '';
   try {
     const ydResults = JSON.parse(localStorage.getItem('braiain_results_' + ydKey));
     if (Array.isArray(ydResults) && ydResults.length > 0) {
@@ -2003,7 +1906,6 @@ function loadBootStats() {
       else if (ydScore <= 3) ydEl.style.color = 'var(--red)';
     }
   } catch (e) {}
-
   if (daysPlayed > 0) {
     const avg = Math.round((totalScore / daysPlayed) * 10) / 10;
     document.getElementById('bs-played').textContent = daysPlayed;
@@ -2017,36 +1919,18 @@ function loadBootStats() {
    IMAGE PRELOADING
    ══════════════════════════════════════ */
 const preloadCache = new Map();
-
 function preloadNextImage(nextIndex) {
   if (!dailyData || !dailyData.rounds) return;
   if (nextIndex >= dailyData.rounds.length || nextIndex >= TOTAL_ROUNDS) return;
   const url = dailyData.rounds[nextIndex].content;
   if (preloadCache.has(url)) return;
-  const img = new Image();
-  img.src = url;
-  preloadCache.set(url, img);
+  const img = new Image(); img.src = url; preloadCache.set(url, img);
 }
-
 function preloadAllImages() {
   if (!dailyData || !dailyData.rounds) return;
   const rounds = dailyData.rounds.slice(0, TOTAL_ROUNDS);
-  rounds.slice(0, 3).forEach(r => {
-    if (!preloadCache.has(r.content)) {
-      const img = new Image();
-      img.src = r.content;
-      preloadCache.set(r.content, img);
-    }
-  });
-  setTimeout(() => {
-    rounds.slice(3).forEach(r => {
-      if (!preloadCache.has(r.content)) {
-        const img = new Image();
-        img.src = r.content;
-        preloadCache.set(r.content, img);
-      }
-    });
-  }, 2000);
+  rounds.slice(0, 3).forEach(r => { if (!preloadCache.has(r.content)) { const img = new Image(); img.src = r.content; preloadCache.set(r.content, img); } });
+  setTimeout(() => { rounds.slice(3).forEach(r => { if (!preloadCache.has(r.content)) { const img = new Image(); img.src = r.content; preloadCache.set(r.content, img); } }); }, 2000);
 }
 
 /* ══════════════════════════════════════
@@ -2055,11 +1939,11 @@ function preloadAllImages() {
 function haptic(pattern) {
   if (!navigator.vibrate) return;
   switch (pattern) {
-    case 'tap':     navigator.vibrate(8);  break;
+    case 'tap': navigator.vibrate(8); break;
     case 'correct': navigator.vibrate([10, 30, 10]); break;
-    case 'wrong':   navigator.vibrate([40, 20, 40]); break;
-    case 'finish':  navigator.vibrate([10, 20, 10, 20, 30]); break;
-    default:        navigator.vibrate(10);
+    case 'wrong': navigator.vibrate([40, 20, 40]); break;
+    case 'finish': navigator.vibrate([10, 20, 10, 20, 30]); break;
+    default: navigator.vibrate(10);
   }
 }
 
@@ -2073,69 +1957,36 @@ function showScreen(id) {
 }
 
 async function goHome() {
-  // Reset archive state
-  isArchiveMode = false;
-  archiveDate = null;
-
+  isArchiveMode = false; archiveDate = null;
   document.getElementById('hud').style.display = 'none';
   document.getElementById('review-section').classList.remove('visible');
   document.querySelector('.tip-terminal').classList.remove('visible');
-
   showScreen('screen-boot');
-  loadBootStats();
-  loadStreak();
-
-  // Reload today's challenge data (must complete before buttons are usable)
+  loadBootStats(); loadStreak();
   const todayKey = getTodayKey();
   if (dailyIndex && dailyIndex[todayKey]) {
     const todayEntry = dailyIndex[todayKey];
-    try {
-      const resp = await fetchWithTimeout(todayEntry.challenge_file + '?v=' + APP_VERSION + '&t=' + BUILD_HASH, {}, 5000);
-      if (resp.ok) dailyData = await resp.json();
-    } catch (e) { /* keep whatever dailyData we have */ }
+    try { const resp = await fetchWithTimeout(todayEntry.challenge_file + '?v=' + APP_VERSION + '&t=' + BUILD_HASH, {}, 5000); if (resp.ok) dailyData = await resp.json(); } catch (e) {}
   }
-
   const played = localStorage.getItem('braiain_played_' + todayKey);
   const btnStart = document.getElementById('btn-start');
   const btnResults = document.getElementById('btn-results');
-
   if (played) {
-    btnStart.style.display = 'none';
-    btnResults.style.display = '';
+    btnStart.style.display = 'none'; btnResults.style.display = '';
     document.getElementById('boot-status').textContent = '> TODAY\'S CHALLENGE COMPLETE';
   } else {
-    btnStart.style.display = '';
-    btnResults.style.display = 'none';
+    btnStart.style.display = ''; btnResults.style.display = 'none';
     document.getElementById('boot-status').textContent = '> READY — ' + (dailyData ? dailyData.rounds.length : 10) + ' TARGETS QUEUED';
   }
   document.getElementById('btn-archive').style.display = '';
-
-  // Reload today's results for the results button
-  try {
-    const saved = JSON.parse(localStorage.getItem('braiain_results_' + todayKey));
-    if (saved && saved.length) {
-      results = saved;
-      currentRound = TOTAL_ROUNDS;
-    }
-  } catch (e) {}
+  try { const saved = JSON.parse(localStorage.getItem('braiain_results_' + todayKey)); if (saved && saved.length) { results = saved; currentRound = TOTAL_ROUNDS; } } catch (e) {}
 }
 
 function getTodayKey() { return new Date().toISOString().split('T')[0]; }
 function getYesterdayKey() { return new Date(Date.now() - 86400000).toISOString().split('T')[0]; }
 function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
-
-function fetchWithTimeout(url, opts, ms) {
-  const ctrl = new AbortController();
-  const t = setTimeout(() => ctrl.abort(), ms);
-  return fetch(url, { ...opts, signal: ctrl.signal }).finally(() => clearTimeout(t));
-}
-
-function showToast(msg) {
-  const t = document.getElementById('toast');
-  t.textContent = msg;
-  t.classList.add('show');
-  setTimeout(() => t.classList.remove('show'), 2000);
-}
+function fetchWithTimeout(url, opts, ms) { const ctrl = new AbortController(); const t = setTimeout(() => ctrl.abort(), ms); return fetch(url, { ...opts, signal: ctrl.signal }).finally(() => clearTimeout(t)); }
+function showToast(msg) { const t = document.getElementById('toast'); t.textContent = msg; t.classList.add('show'); setTimeout(() => t.classList.remove('show'), 2000); }
 
 /* ══════════════════════════════════════
    TIP TERMINAL
@@ -2145,21 +1996,15 @@ const TIP_ADDRS = {
   sol: 'GStGz2ztQ2UqMGPXA8j2i9PSFhpaYsjxwbLTttUKD74d',
   kas: 'kaspa:qps9fumvkw0n29hkjrk7lumpuu64k2u9ug543lg9ga'
 };
-
 function copyTip(chain) {
   haptic('tap');
   const addr = TIP_ADDRS[chain];
   const btn = document.querySelector('.tip-key[data-chain="' + chain + '"]');
   navigator.clipboard.writeText(addr).then(() => {
-    btn.classList.add('copied');
-    btn.textContent = '✓ COPIED';
+    btn.classList.add('copied'); btn.textContent = '✓ COPIED';
     showToast(chain.toUpperCase() + ' ADDRESS COPIED');
     trackEvent('tip_copy', { chain: chain });
-    setTimeout(() => {
-      btn.classList.remove('copied');
-      const labels = { eth: '⟠ ETH', sol: '◎ SOL', kas: '⬡ KAS' };
-      btn.textContent = labels[chain];
-    }, 2000);
+    setTimeout(() => { btn.classList.remove('copied'); const labels = { eth: '⟠ ETH', sol: '◎ SOL', kas: '⬡ KAS' }; btn.textContent = labels[chain]; }, 2000);
   }).catch(() => showToast('COPY FAILED'));
 }
 
@@ -2191,10 +2036,7 @@ document.addEventListener('keydown', e => {
    ══════════════════════════════════════ */
 document.addEventListener('DOMContentLoaded', () => {
   const emailLink = document.getElementById('footer-email');
-  if (emailLink) {
-    emailLink.href = 'mail' + 'to:' + 'dnilgis' + '@' + 'gmail.com';
-  }
-
+  if (emailLink) emailLink.href = 'mail' + 'to:' + 'dnilgis' + '@' + 'gmail.com';
   boot().catch(err => {
     console.error('Boot failed:', err);
     const status = document.getElementById('boot-status');
@@ -2204,6 +2046,170 @@ document.addEventListener('DOMContentLoaded', () => {
     dailyData = FALLBACK;
   });
 });
+
+/* ══════════════════════════════════════
+   EASTER EGGS & POLISH — ENHANCEMENTS
+   ══════════════════════════════════════ */
+
+/* ── CONSOLE ASCII ART ── */
+(function consoleEasterEgg() {
+  var art = '%c' + [
+    '╔══════════════════════════════════════════════╗',
+    '║  BRAIAIN — The Voight-Kampff Test            ║',
+    '╠══════════════════════════════════════════════╣',
+    '║  Looking under the hood? Good instincts.     ║',
+    '║  That\'s the whole point of this game.        ║',
+    '║                                              ║',
+    '║  Built by one human. No team. No funding.    ║',
+    '║  Just code and conviction.                   ║',
+    '║                                              ║',
+    '║  The resistance needs people like you.       ║',
+    '║  → braiain.com/faq.html (try the code)      ║',
+    '╚══════════════════════════════════════════════╝'
+  ].join('\n');
+  console.log(art, 'color:#00e5ff;font-family:monospace;font-size:11px;line-height:1.4');
+})();
+
+/* ── KONAMI CODE ── */
+(function konamiMain() {
+  var seq = [38,38,40,40,37,39,37,39,66,65], idx = 0;
+  document.addEventListener('keydown', function(e) {
+    if (e.keyCode === seq[idx]) { idx++; if (idx === seq.length) { idx = 0; triggerMatrixRain(); } }
+    else idx = (e.keyCode === seq[0]) ? 1 : 0;
+  });
+})();
+
+/* ── LOGO 5x CLICK ── */
+(function logoEasterEgg() {
+  var clicks = 0, timer = null;
+  ['boot-logo','hud-logo','results-logo'].forEach(function(id) {
+    var el = document.getElementById(id);
+    if (!el) return;
+    el.addEventListener('click', function(e) {
+      clicks++; clearTimeout(timer);
+      timer = setTimeout(function() { clicks = 0; }, 1500);
+      if (clicks >= 5) { clicks = 0; e.preventDefault(); e.stopPropagation(); triggerMatrixRain(); }
+    });
+  });
+})();
+
+/* ── MATRIX RAIN ── */
+function triggerMatrixRain() {
+  var canvas = document.getElementById('matrix-rain');
+  if (!canvas) return;
+  var ctx = canvas.getContext('2d');
+  canvas.width = window.innerWidth; canvas.height = window.innerHeight;
+  canvas.classList.add('active');
+  var chars = 'BRAIAINHUMANAI01アイカサタナハマヤラワ';
+  var fontSize = 14, cols = Math.floor(canvas.width / fontSize), drops = [];
+  for (var i = 0; i < cols; i++) drops[i] = Math.random() * -100;
+  var frames = 0;
+  function draw() {
+    ctx.fillStyle = 'rgba(6,6,12,0.08)'; ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.font = fontSize + 'px monospace';
+    for (var i = 0; i < drops.length; i++) {
+      ctx.fillStyle = Math.random() > 0.5 ? '#00e5ff' : '#00ff9d';
+      ctx.globalAlpha = 0.6 + Math.random() * 0.4;
+      ctx.fillText(chars[Math.floor(Math.random() * chars.length)], i * fontSize, drops[i] * fontSize);
+      ctx.globalAlpha = 1;
+      if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) drops[i] = 0;
+      drops[i]++;
+    }
+    if (++frames < 120) requestAnimationFrame(draw);
+    else { canvas.style.transition = 'opacity .5s'; canvas.style.opacity = '0';
+      setTimeout(function() { canvas.classList.remove('active'); canvas.style.transition = ''; canvas.style.opacity = ''; ctx.clearRect(0, 0, canvas.width, canvas.height); }, 500);
+    }
+  }
+  draw();
+}
+
+/* ── SCAN ANIMATION ── */
+function playScanAnimation() {
+  return new Promise(function(resolve) {
+    var ov = document.getElementById('scan-overlay');
+    if (!ov) { resolve(); return; }
+    ov.classList.add('active');
+    setTimeout(function() { ov.classList.remove('active'); resolve(); }, 400);
+  });
+}
+
+/* ── PERFECT 10/10 CELEBRATION ── */
+function celebratePerfect() {
+  var canvas = document.getElementById('celebration');
+  if (!canvas) return;
+  var ctx = canvas.getContext('2d');
+  canvas.width = window.innerWidth; canvas.height = window.innerHeight;
+  canvas.classList.add('active');
+  var particles = [], colors = ['#00e5ff','#00ff9d','#ffb300','#ff003c','#fff'];
+  for (var i = 0; i < 80; i++) particles.push({ x:canvas.width/2+(Math.random()-.5)*100, y:canvas.height/2, vx:(Math.random()-.5)*12, vy:-Math.random()*14-4, color:colors[Math.floor(Math.random()*colors.length)], size:2+Math.random()*4, life:1, decay:.008+Math.random()*.012, gravity:.15 });
+  var frames = 0;
+  function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    var alive = false;
+    for (var i = 0; i < particles.length; i++) {
+      var p = particles[i]; if (p.life <= 0) continue; alive = true;
+      p.x += p.vx; p.y += p.vy; p.vy += p.gravity; p.life -= p.decay;
+      ctx.globalAlpha = Math.max(0, p.life); ctx.fillStyle = p.color;
+      ctx.fillRect(p.x-p.size/2, p.y-p.size/2, p.size, p.size);
+    }
+    ctx.globalAlpha = 1;
+    if (alive && ++frames < 180) requestAnimationFrame(draw);
+    else { canvas.classList.remove('active'); ctx.clearRect(0, 0, canvas.width, canvas.height); }
+  }
+  draw();
+}
+
+/* ── WRONG STREAK ── */
+var wrongStreak = 0;
+var _gameStartTime = 0;
+function checkWrongStreak(isCorrect) {
+  if (!isCorrect) { wrongStreak++; if (wrongStreak >= 5) { showHumanCheck(); wrongStreak = 0; } } else wrongStreak = 0;
+}
+function showHumanCheck() {
+  var el = document.getElementById('human-check'); if (!el) return;
+  el.classList.remove('flash'); void el.offsetWidth; el.classList.add('flash');
+  setTimeout(function() { el.classList.remove('flash'); }, 1000);
+}
+
+/* ── ZOOM HINT ── */
+function showZoomHint() {
+  if (localStorage.getItem('braiain_zoom_hinted')) return;
+  var hint = document.getElementById('zoom-hint'); if (!hint) return;
+  hint.classList.add('visible');
+  localStorage.setItem('braiain_zoom_hinted', '1');
+  setTimeout(function() { hint.classList.remove('visible'); }, 6000);
+  var frame = document.getElementById('image-frame');
+  frame.addEventListener('touchstart', function h() { hint.classList.remove('visible'); frame.removeEventListener('touchstart', h); }, { once: true });
+  frame.addEventListener('mousemove', function h() { hint.classList.remove('visible'); frame.removeEventListener('mousemove', h); }, { once: true });
+}
+
+/* ── ROUND WIPE ── */
+function playRoundWipe() {
+  var wipe = document.getElementById('round-wipe'); if (!wipe) return;
+  wipe.classList.remove('active'); void wipe.offsetWidth; wipe.classList.add('active');
+  setTimeout(function() { wipe.classList.remove('active'); }, 250);
+}
+
+/* ── ODOMETER ── */
+function animateNumber(el, target, duration, suffix) {
+  duration = duration || 800; suffix = suffix || '';
+  var startTime = null;
+  function step(ts) {
+    if (!startTime) startTime = ts;
+    var p = Math.min((ts - startTime) / duration, 1);
+    var eased = 1 - Math.pow(1 - p, 3);
+    el.textContent = Math.round(target * eased) + suffix;
+    if (p < 1) requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+
+/* ── BUTTON PULSE ── */
+function pulseButton(btn, isCorrect) {
+  btn.classList.add(isCorrect ? 'pulse-green' : 'pulse-red');
+  setTimeout(function() { btn.classList.remove('pulse-green', 'pulse-red'); }, 350);
+}
+
 </script>
 </body>
 </html>
