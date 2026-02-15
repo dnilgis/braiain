@@ -1,0 +1,99 @@
+{
+  "day_number": 14,
+  "date": "2026-02-17",
+  "category": "Mardi Gras",
+  "category_emoji": "🎭",
+  "rounds": [
+    {
+      "id": "d14r1",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1703145217874-47c91be335e0?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxfHxNYXJkaSUyMEdyYXN8ZW58MHwwfHx8MTc3MTE3MjAwN3ww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Library of Congress on Unsplash",
+      "pro_tip": "**OVERLY FLAWLESS DETAIL:** Observe overall clarity. AI images often possess an unnaturally uniform sharpness, with every element in perfect focus, lacking natural visual imperfections.",
+      "source_url": "https://unsplash.com/photos/mardi-gras-parade-new-orleans-louisiana-Yhobvl4y-Hk"
+    },
+    {
+      "id": "d14r2",
+      "type": "image",
+      "content": "images/d14_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**INCONSISTENT PHYSICS:** Scan for shadows that don't match light sources, bizarre reflections, or objects merging unnaturally into the background. Physics can be wonky.",
+      "_note": "Prompt: A photorealistic photograph of a stunning woman posing confidently in an elaborate, fantastical green and pink Mardi Gras costume, featuring iridescent fabrics, dramatic feathered wings, and sparkling gems, set against a softly blurred background of festive street decorations. This three-quarter body shot is taken with a professional DSLR and an 85mm lens, utilizing a large softbox for even, studio-like illumination that accentuates the textures and vibrant colors of her attire."
+    },
+    {
+      "id": "d14r3",
+      "type": "image",
+      "content": "images/d14_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are pro tips for the AI detection game, Mardi Gras style!",
+      "_note": "Prompt: A photorealistic photograph of a vibrant Mardi Gras parade in New Orleans, featuring an elaborate, gold and purple float shaped like a pirate ship, surrounded by a dense, cheering crowd reaching for thrown beads. The scene is captured with a wide-angle lens from an elevated perspective, bathed in bright, clear daylight with a subtle fill flash to illuminate facial expressions and details on the float."
+    },
+    {
+      "id": "d14r4",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/9391698/pexels-photo-9391698.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Mikhail Nilov on Pexels",
+      "pro_tip": "**ORGANIC LIGHTING:** Notice how light interacts naturally with the scene, creating realistic shadows, flares, and varying brightness. AI often smooths these out.",
+      "source_url": "https://www.pexels.com/photo/woman-with-curly-hair-wearing-a-mask-9391698/"
+    },
+    {
+      "id": "d14r5",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1574724713425-fee7e2eacf84?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwzfHxNYXJkaSUyMEdyYXN8ZW58MHwwfHx8MTc3MTE3MjAwN3ww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Ugur Arpaci on Unsplash",
+      "pro_tip": "**NATURAL TEXTURES:** Real fabrics show organic folds, creases, and subtle variations in sheen. Hand-crafted items display slight irregularities, not perfect repetition.",
+      "source_url": "https://unsplash.com/photos/a-woman-in-a-green-and-pink-costume-U18V0ToioFU"
+    },
+    {
+      "id": "d14r6",
+      "type": "image",
+      "content": "images/d14_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**UNNATURAL FACES:** Look for distorted or generic faces in crowds; AI often struggles with realistic, unique expressions and details, especially in background figures.",
+      "_note": "Prompt: A photorealistic photograph of a large, diverse group of people joyfully walking down a historic street during a Mardi Gras Second Line. Many are wearing festive costumes and holding decorated umbrellas, their faces animated with smiles and laughter. Shot from eye-level with a standard 50mm lens, the warm, late afternoon golden hour light casts long shadows and highlights the movement and energy of the crowd."
+    },
+    {
+      "id": "d14r7",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1610746799307-e5b7872b6537?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyfHxNYXJkaSUyMEdyYXN8ZW58MHwwfHx8MTc3MTE3MjAwN3ww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Thomas Park on Unsplash",
+      "pro_tip": "**RANDOM REALISM:** Look for unique, unplanned details in crowds or backgrounds: varied expressions, accidental blurs, or unexpected objects. Life isn't always posed.",
+      "source_url": "https://unsplash.com/photos/woman-in-purple-and-white-dress-holding-umbrella-den6EylZH9w"
+    },
+    {
+      "id": "d14r8",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1621100819796-9035a9120965?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxMnx8TWFyZGklMjBHcmFzfGVufDB8MHx8fDE3NzExNzIwMDd8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Kamakshi subramani on Unsplash",
+      "pro_tip": "**AUTHENTIC IMPERFECTIONS:** Seek out natural blemishes like skin pores, stray hairs, or slight wear on costumes. Real photos embrace human and material flaws.",
+      "source_url": "https://unsplash.com/photos/a-large-group-of-people-walking-down-a-street-qAsrQN5SokA"
+    },
+    {
+      "id": "d14r9",
+      "type": "image",
+      "content": "images/d14_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**SYNTHETIC TEXTURES:** Examine fabrics, feathers, or glitter. AI can create hyper-detailed but slightly \"plastic\" or unnaturally smooth textures that lack real-world imperfections.",
+      "_note": "Prompt: A photorealistic photograph of a graceful woman in a flowing purple and white satin dress, embellished with sequins and beads, holding a large, elaborately decorated parasol high above her head as she dances in a Mardi Gras procession. Captured from a slightly low angle with a medium telephoto lens, emphasizing her elegant posture and the intricate details of her attire and umbrella, under bright, diffused daylight with subtle rim lighting."
+    },
+    {
+      "id": "d14r10",
+      "type": "image",
+      "content": "images/d14_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**PERFECT SYMMETRY:** Check elaborate costumes and masks for too-perfect patterns or symmetry that seems unnatural for handcrafted items. Flawless repetition is a tell.",
+      "_note": "Prompt: A photorealistic photograph of a captivating woman wearing an intricately designed, colorful masquerade mask adorned with peacock feathers and glitter, smiling joyfully and looking directly at the camera at a lively carnival event. The image is captured with a prime lens at a wide aperture, creating a shallow depth of field that sharply focuses on her eyes and the mask's details, illuminated by soft, flattering off-camera strobe lighting."
+    }
+  ],
+  "category_subtitle": "AI's Mardi Gras Eye: Spot the Beads, Unmask the Fun!"
+}
