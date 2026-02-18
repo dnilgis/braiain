@@ -103,6 +103,13 @@
       "category_emoji": "👁️✨",
       "category_subtitle": "AI's got an eye for fabulous lashes today!",
       "challenge_file": "challenges/2026-02-19.json"
+  },
+    "2026-02-20": {
+      "day_number": 17,
+      "category": "Clean Out Your Computer Day",
+      "category_emoji": "💻🧹",
+      "category_subtitle": "Digital Declutter Day: Let AI Spot the Pixel Pile-Up!",
+      "challenge_file": "challenges/2026-02-20.json"
   }
 }
 
