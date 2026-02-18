@@ -110,6 +110,13 @@
       "category_emoji": "💻🧹",
       "category_subtitle": "Digital Declutter Day: Let AI Spot the Pixel Pile-Up!",
       "challenge_file": "challenges/2026-02-20.json"
+  },
+    "2026-02-21": {
+      "day_number": 18,
+      "category": "National Supermarket Employee Day",
+      "category_emoji": "🛒",
+      "category_subtitle": "No price check needed! Our AI spots employees faster than a cashier.",
+      "challenge_file": "challenges/2026-02-21.json"
   }
 }
 
