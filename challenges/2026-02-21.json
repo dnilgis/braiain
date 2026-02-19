@@ -1,0 +1,99 @@
+{
+  "day_number": 18,
+  "date": "2026-02-21",
+  "category": "National Supermarket Employee Day",
+  "category_emoji": "🛒",
+  "rounds": [
+    {
+      "id": "d18r1",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/8476596/pexels-photo-8476596.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Kampus Production on Pexels",
+      "pro_tip": "AUTHENTIC IMPERFECTIONS: Observe subtle dust, fingerprints, or cable clutter that feels genuinely organic, not strategically placed or perfectly clean.",
+      "source_url": "https://www.pexels.com/photo/man-fixing-the-vegetables-in-the-stand-8476596/"
+    },
+    {
+      "id": "d18r2",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/7883930/pexels-photo-7883930.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Garrison Gao on Pexels",
+      "pro_tip": "NATURAL ACTION & LIGHTING: Real actions, like cleaning, appear less dramatically staged. Lighting is often ambient or functional, without exaggerated highlights on dust.",
+      "source_url": "https://www.pexels.com/photo/people-at-a-meat-shop-7883930/"
+    },
+    {
+      "id": "d18r3",
+      "type": "image",
+      "content": "images/d18_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are pro tips for the AI detection game, themed \"Clean Out Your Computer Day\":",
+      "_note": "Prompt: A photorealistic photograph of a friendly male supermarket employee with kind eyes, meticulously bagging fresh produce at a brightly lit checkout counter. His hands are in motion, placing a bunch of bananas into a reusable grocery bag. The background is slightly blurred, showing other customers and typical supermarket aisles. Shot with a Canon EOS R5, 50mm lens, f/2.8, warm LED overhead lighting, natural colors, eye-level perspective."
+    },
+    {
+      "id": "d18r4",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1753354868590-81ed82047c4f?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxfHxTdXBlcm1hcmtldCUyMEVtcGxveWVlfGVufDB8MHx8fDE3NzE0NTg3NDd8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Vitaly Gariev on Unsplash",
+      "pro_tip": "REAL SOFTWARE IDENTIFIERS: Look for recognizable, branded software applications (like \"Teams\") with authentic logos, unique UI elements, and user-generated content.",
+      "source_url": "https://unsplash.com/photos/a-grocery-store-worker-holds-a-box-of-tomatoes-xSdL0ze7Qqc"
+    },
+    {
+      "id": "d18r5",
+      "type": "image",
+      "content": "images/d18_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "CONTROLLED IMPERFECTIONS: AI often adds minor \"realistic\" flaws like specific \"stray dust motes,\" but the overall scene, including GUI elements, remains perfectly composed and narrative-driven.",
+      "_note": "Prompt: A photorealistic photograph of a focused supermarket employee, wearing a green apron, meticulously arranging vibrant red tomatoes and crisp green lettuce on a misted produce display. Their hands are carefully positioning the vegetables to create an inviting presentation. The background features other colorful fruits and vegetables, creating a sense of abundance. Shot with a Nikon D850, 85mm lens, f/2.0, soft diffused overhead lighting, rich colors, close-up shot focusing on the hands and produce."
+    },
+    {
+      "id": "d18r6",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1753354868617-96dc9184320f?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyfHxTdXBlcm1hcmtldCUyMEVtcGxveWVlfGVufDB8MHx8fDE3NzE0NTg3NDd8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Vitaly Gariev on Unsplash",
+      "pro_tip": "MULTI-TASKING NARRATIVE: AI loves constructing scenes with multiple individuals performing distinct, perfectly clear tasks, each contributing to a clear theme, often in an immaculately organized setting.",
+      "source_url": "https://unsplash.com/photos/man-is-bagging-food-items-at-a-grocery-store-FWwiKyBXvIE"
+    },
+    {
+      "id": "d18r7",
+      "type": "image",
+      "content": "images/d18_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "DRAMATICALLY STAGED ACTION: Notice theatrically perfect dust plumes or action frozen in a dramatic, almost hyper-real way, often with exaggerated lighting effects emphasizing the moment.",
+      "_note": "Prompt: A photorealistic photograph of a bustling meat and deli counter within a large supermarket. Several energetic employees in clean white coats and hairnets are actively serving a line of diverse customers. One employee gestures towards a display of beautifully cut steaks, while another is weighing sliced deli meat. The counter is meticulously clean, showcasing a wide array of fresh meats and cheeses under bright, focused spotlights. Shot with a Canon EOS 5D Mark IV, 24-70mm lens, f/5.6, crisp fluorescent and spot lighting, deep depth of field capturing the entire scene, dynamic candid wide shot."
+    },
+    {
+      "id": "d18r8",
+      "type": "image",
+      "content": "images/d18_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "COMPOSITIONAL PERFECTION: Look for hyper-specific staging like perfectly placed cleaning supplies and highlighted 'temp' folders, implying a narrative rather than capturing a moment.",
+      "_note": "Prompt: A photorealistic photograph of a diligent Asian male supermarket employee, wearing a vibrant red uniform jacket and a protective face mask, organizing a line of metal shopping carts near the store entrance. His gaze is focused, and the store interior is visible in the background with bright fluorescent lights reflecting off the polished floor. Shot with a Sony Alpha 7 IV, 35mm lens, f/4.0, cool fluorescent store lighting, slight motion blur on his hands, medium shot from a slightly elevated angle."
+    },
+    {
+      "id": "d18r9",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/25461765/pexels-photo-25461765.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Greece-China  News on Pexels",
+      "pro_tip": "UNSTAGED REALITY: Real photos often capture simple, unposed setups without a forced narrative or perfectly arranged cleaning items, showing everyday use.",
+      "source_url": "https://www.pexels.com/photo/man-in-red-jacket-standing-among-shopping-carts-at-store-25461765/"
+    },
+    {
+      "id": "d18r10",
+      "type": "image",
+      "content": "images/d18_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "GENERIC GUI PERFECTION: Observe crisp, perfectly legible GUI details on screens, often featuring generic but plausible app interfaces and text without actual software branding or subtle real-world OS quirks.",
+      "_note": "Prompt: A photorealistic photograph of a friendly young female supermarket employee with a warm smile, confidently holding a brown cardboard box overflowing with ripe, red tomatoes. She is looking directly at the camera, standing in a brightly lit stockroom aisle with shelves of goods blurred in the background. Shot with a Fujifilm GFX 100S, 110mm lens, f/1.8, soft ambient light from a large window combined with overhead LEDs, shallow depth of field, natural skin tones, eye-level portrait."
+    }
+  ],
+  "category_subtitle": "No price check needed! Our AI spots employees faster than a cashier."
+}
