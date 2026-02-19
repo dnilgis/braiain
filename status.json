@@ -1,13 +1,7 @@
 {
-    "last_updated": "2026-02-18 20:46:13 UTC",
+    "last_updated": "2026-02-19 02:37:35 UTC",
     "history": {
         "Gemini 1.5 Flash": [
-            {
-                "latency": 0,
-                "lazy": true,
-                "status": "Error",
-                "timestamp": "Jan-19 20:29"
-            },
             {
                 "latency": 0,
                 "lazy": true,
@@ -1081,6 +1075,12 @@
                 "lazy": true,
                 "status": "Error",
                 "timestamp": "Feb-18 20:46"
+            },
+            {
+                "latency": 0,
+                "lazy": true,
+                "status": "Error",
+                "timestamp": "Feb-19 02:37"
             }
         ],
         "GPT-4o": [
@@ -1088,12 +1088,6 @@
                 "latency": 0,
                 "lazy": true,
                 "status": "No Key",
-                "timestamp": "Jan-19 20:29"
-            },
-            {
-                "latency": 0,
-                "lazy": true,
-                "status": "No Key",
                 "timestamp": "Jan-20 02:05"
             },
             {
@@ -2163,6 +2157,12 @@
                 "lazy": true,
                 "status": "No Key",
                 "timestamp": "Feb-18 20:46"
+            },
+            {
+                "latency": 0,
+                "lazy": true,
+                "status": "No Key",
+                "timestamp": "Feb-19 02:37"
             }
         ],
         "Claude 3.5 Sonnet": [
@@ -2170,12 +2170,6 @@
                 "latency": 0,
                 "lazy": true,
                 "status": "No Key",
-                "timestamp": "Jan-19 20:29"
-            },
-            {
-                "latency": 0,
-                "lazy": true,
-                "status": "No Key",
                 "timestamp": "Jan-20 02:05"
             },
             {
@@ -3245,6 +3239,12 @@
                 "lazy": true,
                 "status": "No Key",
                 "timestamp": "Feb-18 20:46"
+            },
+            {
+                "latency": 0,
+                "lazy": true,
+                "status": "No Key",
+                "timestamp": "Feb-19 02:37"
             }
         ],
         "Llama 3 70B (Groq)": [
@@ -3252,12 +3252,6 @@
                 "latency": 0,
                 "lazy": true,
                 "status": "Error",
-                "timestamp": "Jan-19 20:29"
-            },
-            {
-                "latency": 0,
-                "lazy": true,
-                "status": "Error",
                 "timestamp": "Jan-20 02:05"
             },
             {
@@ -4327,6 +4321,12 @@
                 "lazy": true,
                 "status": "Error",
                 "timestamp": "Feb-18 20:46"
+            },
+            {
+                "latency": 0,
+                "lazy": true,
+                "status": "Error",
+                "timestamp": "Feb-19 02:37"
             }
         ],
         "Command R+ (Cohere)": [
@@ -4334,12 +4334,6 @@
                 "latency": 0,
                 "lazy": true,
                 "status": "Error",
-                "timestamp": "Jan-19 20:29"
-            },
-            {
-                "latency": 0,
-                "lazy": true,
-                "status": "Error",
                 "timestamp": "Jan-20 02:05"
             },
             {
@@ -5409,6 +5403,12 @@
                 "lazy": true,
                 "status": "Error",
                 "timestamp": "Feb-18 20:46"
+            },
+            {
+                "latency": 0,
+                "lazy": true,
+                "status": "Error",
+                "timestamp": "Feb-19 02:37"
             }
         ],
         "Mistral 7B (HF)": [
@@ -5416,12 +5416,6 @@
                 "latency": 0,
                 "lazy": true,
                 "status": "Error",
-                "timestamp": "Jan-19 20:29"
-            },
-            {
-                "latency": 0,
-                "lazy": true,
-                "status": "Error",
                 "timestamp": "Jan-20 02:05"
             },
             {
@@ -6491,6 +6485,12 @@
                 "lazy": true,
                 "status": "Error",
                 "timestamp": "Feb-18 20:46"
+            },
+            {
+                "latency": 0,
+                "lazy": true,
+                "status": "Error",
+                "timestamp": "Feb-19 02:37"
             }
         ],
         "Phi-3 Mini (HF)": [
@@ -6498,12 +6498,6 @@
                 "latency": 0,
                 "lazy": true,
                 "status": "Error",
-                "timestamp": "Jan-19 20:29"
-            },
-            {
-                "latency": 0,
-                "lazy": true,
-                "status": "Error",
                 "timestamp": "Jan-20 02:05"
             },
             {
@@ -7573,6 +7567,12 @@
                 "lazy": true,
                 "status": "Error",
                 "timestamp": "Feb-18 20:46"
+            },
+            {
+                "latency": 0,
+                "lazy": true,
+                "status": "Error",
+                "timestamp": "Feb-19 02:37"
             }
         ]
     }
