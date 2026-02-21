@@ -117,6 +117,13 @@
       "category_emoji": "🛒",
       "category_subtitle": "No price check needed! Our AI spots employees faster than a cashier.",
       "challenge_file": "challenges/2026-02-21.json"
+  },
+    "2026-02-22": {
+      "day_number": 19,
+      "category": "National Margarita Day",
+      "category_emoji": "🍹",
+      "category_subtitle": "Spot the perfect Margarita before AI gets tipsy.",
+      "challenge_file": "challenges/2026-02-22.json"
   }
 }
 
