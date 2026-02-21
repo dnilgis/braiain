@@ -1,0 +1,99 @@
+{
+  "day_number": 20,
+  "date": "2026-02-23",
+  "category": "National Dog Biscuit Day",
+  "category_emoji": "🦴",
+  "rounds": [
+    {
+      "id": "d20r1",
+      "type": "image",
+      "content": "images/d20_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are pro tips for the AI detection game:",
+      "_note": "Prompt: A photorealistic photograph of a golden retriever sitting patiently on a polished hardwood floor, a small pile of bone-shaped dog biscuits neatly arranged in front of its paws. The dog's gaze is directed slightly upwards towards the viewer, with soft, happy eyes. Shot with a Canon EOS R5, 50mm f/1.4 lens, natural window light from the left, shallow depth of field, warm and inviting tones."
+    },
+    {
+      "id": "d20r2",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1592468257654-74160c844866?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyMHx8RG9nJTIwdHJlYXR8ZW58MHwwfHx8MTc3MTcwNTk4NHww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by James Lacy on Unsplash",
+      "pro_tip": "**REAL: NUANCED EXPRESSION:** Real dogs convey genuine emotions that are not overly exaggerated or idealized. Their eyes and posture show true, natural feeling.",
+      "source_url": "https://unsplash.com/photos/brown-short-coated-dog-on-brown-wooden-table-Evbn9CU12UU"
+    },
+    {
+      "id": "d20r3",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1609075689223-58f5120b3d96?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw2fHxEb2clMjBCaXNjdWl0fGVufDB8MHx8fDE3NzE3MDU5NTZ8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Elisa Kennemer on Unsplash",
+      "pro_tip": "**AI: UNIFORM TEXTURES:** Backgrounds or surfaces like \"rustic wood\" or \"seamless studio\" can appear too perfect, repetitive, or lack authentic, natural imperfections.",
+      "source_url": "https://unsplash.com/photos/golden-retriever-sitting-on-floor-ptN5C6BN5Hc"
+    },
+    {
+      "id": "d20r4",
+      "type": "image",
+      "content": "images/d20_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**AI: UNCANNY EMOTION:** Dog expressions can be too idealized or uniformly \"happy/alert,\" lacking genuine nuance. Look for subtle unnaturalness in their gaze.",
+      "_note": "Prompt: A photorealistic photograph of an adorable English Bulldog sitting patiently at a rustic wooden desk indoors, its wrinkled face intently focused on a small platter of gourmet, homemade dog biscuits placed next to a steaming mug of coffee. The scene is lit by soft, warm ambient light from a nearby window, creating a cozy and inviting atmosphere. Shot with a Sony Alpha 7 IV, 35mm f/2.8 lens, shallow depth of field blurring the background slightly, emphasizing the dog's longing expression."
+    },
+    {
+      "id": "d20r5",
+      "type": "image",
+      "content": "images/d20_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**AI: GENERIC DETAIL BLOAT:** Ignore overly specific camera gear, lens info, or studio lighting in prompts. AI often uses this boilerplate language to sound realistic.",
+      "_note": "Prompt: A photorealistic photograph of a muscular brown and white short-coated dog, possibly a Pitbull mix, vigorously biting into a large, sturdy 'chew stick' dog biscuit outdoors in a sunlit grassy park. Its powerful jaws are visible, and crumbs are flying slightly. Shot with a Canon EOS 1DX Mark III, 70-200mm f/2.8 lens at 1/1000s shutter speed to freeze motion, bright natural sunlight casting defined shadows, sharp focus on the dog's mouth and the biscuit."
+    },
+    {
+      "id": "d20r6",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/230785/pexels-photo-230785.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by bill emrich on Pexels",
+      "pro_tip": "**REAL: NATURAL IMPERFECTIONS:** Look for slight, natural blur, subtle dust, or realistic wear and tear on surfaces. Real photos embrace genuine blemishes.",
+      "source_url": "https://www.pexels.com/photo/black-and-tan-yorkshire-terrier-puppy-230785/"
+    },
+    {
+      "id": "d20r7",
+      "type": "image",
+      "content": "images/d20_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**AI: FLAWED PHYSICS:** Observe active scenes like biting or pouncing. \"Flying crumbs\" or dynamic fur can look strangely static or unnaturally uniform, defying real physics.",
+      "_note": "Prompt: A photorealistic photograph of a sleek brown short-coated dog, perhaps a Vizsla, standing majestically on a rich, dark brown wooden table, a meticulously arranged pyramid of various artisanal dog biscuits positioned elegantly in front of it. The dog's posture is poised and alert, looking directly at the camera. The scene is illuminated by soft, diffused studio lighting, highlighting the dog's smooth coat and the textures of the biscuits and table. Shot with a Hasselblad X2D 100C, 100mm f/2.5 lens, medium depth of field, showcasing fine details."
+    },
+    {
+      "id": "d20r8",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1592468254646-bb599a5174ad?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwzfHxEb2clMjB0cmVhdHxlbnwwfDB8fHwxNzcxNzA1OTg0fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by James Lacy on Unsplash",
+      "pro_tip": "**REAL: UNEXPECTED ELEMENTS:** A real photo might feature a simple \"wooden stick\" instead of a described \"biscuit.\" Genuine scenes often have less-than-perfect props.",
+      "source_url": "https://unsplash.com/photos/brown-and-white-short-coated-dog-biting-brown-wooden-stick-5w3oIN-0Lzs"
+    },
+    {
+      "id": "d20r9",
+      "type": "image",
+      "content": "images/d20_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**AI: PERFECT PLACEMENT:** Notice objects like biscuits arranged too meticulously, often in unnatural piles or formations. Real-life spontaneity is messy.",
+      "_note": "Prompt: A photorealistic photograph of three adorable Yorkshire Terrier puppies playfully pouncing on a scattering of bone-shaped dog biscuits on a soft, light grey studio seamless background. One puppy is mid-leap, another is nibbling a biscuit, and the third is watching. Shot with a Nikon Z9, 85mm f/1.8 lens, dual softbox lighting from front-sides, crisp focus on the puppies' fur and biscuits, vibrant and cheerful mood."
+    },
+    {
+      "id": "d20r10",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/688961/pexels-photo-688961.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by freestocks.org on Pexels",
+      "pro_tip": "**REAL: AUTHENTIC BEHAVIOR:** Dog actions and interactions are often less \"perfectly posed\" or balanced. Seek out candid, spontaneous moments and unforced postures.",
+      "source_url": "https://www.pexels.com/photo/white-and-black-english-bulldog-stands-in-front-of-crackers-on-bowl-at-daytime-688961/"
+    }
+  ],
+  "category_subtitle": "This AI's got a nose for biscuits. Woof!"
+}
