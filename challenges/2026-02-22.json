@@ -1,0 +1,99 @@
+{
+  "day_number": 19,
+  "date": "2026-02-22",
+  "category": "National Margarita Day",
+  "category_emoji": "🍹",
+  "rounds": [
+    {
+      "id": "d19r1",
+      "type": "image",
+      "content": "images/d19_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**LIQUID HYPERREALISM:** Watch for liquids that appear unnaturally vibrant, perfectly smooth, or impossibly frozen mid-pour. They often lack realistic flow or texture.",
+      "_note": "Prompt: A photorealistic photograph of a joyous group of friends clinking margarita glasses, smiling and laughing while enjoying a lively mariachi band performing in the background of a bustling, vibrantly decorated Mexican restaurant, captured with a wide-angle lens (e.g., Nikon Z 24-70mm f/2.8 S) under warm, ambient restaurant lighting, showcasing dynamic interactions and the festive atmosphere."
+    },
+    {
+      "id": "d19r2",
+      "type": "image",
+      "content": "images/d19_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**BACKGROUND INCONSISTENCIES:** Check blurred backgrounds for garbled text on bottles or repetitive, unconvincing patterns in décor like papel picado.",
+      "_note": "Prompt: A photorealistic photograph of a bartender's steady hands, focused and precise, pouring a vibrant green margarita from a shaker into a salt-rimmed glass, with liquid gracefully mid-air, behind a polished wooden bar counter, illuminated by subtle rim lighting and soft ambient bar light, captured with a Canon EOS R6 and a 100mm f/2.8 Macro lens, using a fast shutter speed to freeze the pour and a shallow depth of field for artistic blur."
+    },
+    {
+      "id": "d19r3",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1647403273872-8737fda406f6?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxM3x8TWFyZ2FyaXRhJTIwYmFyfGVufDB8MHx8fDE3NzE3MDUzODZ8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Hybrid Storytellers on Unsplash",
+      "pro_tip": "**SPONTANEOUS EXPRESSIONS:** Observe varied, authentic facial expressions and dynamic, unposed interactions that convey genuine human connection.",
+      "source_url": "https://unsplash.com/photos/a-man-is-making-a-drink-at-a-bar-0HFIXnaNV6k"
+    },
+    {
+      "id": "d19r4",
+      "type": "image",
+      "content": "images/d19_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are pro tips for the AI detection game:",
+      "_note": "Prompt: A photorealistic photograph of a hand gently holding a frosted margarita glass, adorned with a vibrant lime wedge and a salted rim, against a softly blurred background of colorful Mexican papel picado decorations and warm ambient lights, captured with a Canon EOS R5 and a 50mm f/1.4 lens, using natural warm light and a shallow depth of field."
+    },
+    {
+      "id": "d19r5",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/5433740/pexels-photo-5433740.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by LAVA on Pexels",
+      "pro_tip": "**GENUINE IMPERFECTIONS:** Look for natural variations in salt, slight smudges on glass, or realistic wear and tear. Authentic details signal a real photo.",
+      "source_url": "https://www.pexels.com/photo/close-up-photo-of-strawberry-cocktail-5433740/"
+    },
+    {
+      "id": "d19r6",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/7772333/pexels-photo-7772333.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Los Muertos Crew on Pexels",
+      "pro_tip": "**TANGIBLE TEXTURE:** Identify realistic condensation, nuanced textures of garnishes, and a palpable depth of field that feels naturally captured.",
+      "source_url": "https://www.pexels.com/photo/group-of-friends-eating-while-listening-to-mariachi-band-7772333/"
+    },
+    {
+      "id": "d19r7",
+      "type": "image",
+      "content": "images/d19_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**ANATOMICAL ANOMALIES:** Scrutinize hands for odd angles or subtle distortions. Faces in crowds might show repetitive expressions or slight inconsistencies.",
+      "_note": "Prompt: A photorealistic photograph of a skilled male bartender, mid-action, expertly shaking a cocktail shaker over a dark marble bar counter, with various liquor bottles subtly blurred in the background, illuminated by dramatic overhead spotlights and soft ambient bar lighting, captured with a fast shutter speed (e.g., 1/250s) on a Fujifilm GFX 100S with an 80mm f/1.7 lens to emphasize crisp detail and purposeful movement."
+    },
+    {
+      "id": "d19r8",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1756522074787-c750cae5e6aa?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw2fHxNYXJnYXJpdGElMjBiYXJ8ZW58MHwwfHx8MTc3MTcwNTM4Nnww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Hybrid Storytellers on Unsplash",
+      "pro_tip": "**ENVIRONMENTAL INTEGRATION:** Spot natural clutter, realistic wear on surfaces, and lighting that organically blends with the scene, not manufactured.",
+      "source_url": "https://unsplash.com/photos/bartender-pouring-drink-behind-a-bar-counter-A46MdXV1H_0"
+    },
+    {
+      "id": "d19r9",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/7772193/pexels-photo-7772193.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Los Muertos Crew on Pexels",
+      "pro_tip": "**UNNATURAL LIGHTING/REFLECTIONS:** Detect overly dramatic, perfectly placed spotlights or reflections that don't logically align with the scene's environment.",
+      "source_url": "https://www.pexels.com/photo/person-holding-a-cocktail-drink-7772193/"
+    },
+    {
+      "id": "d19r10",
+      "type": "image",
+      "content": "images/d19_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**EXCESSIVE PERFECTION:** Spot flawless skin, unnaturally uniform salt rims, or impeccably pristine garnishes. Real images show natural imperfections and variations.",
+      "_note": "Prompt: A photorealistic photograph of a perfectly crafted strawberry margarita cocktail, glistening with condensation, garnished with a pristine lime wheel and a delicate salt rim, rendered with exquisite detail to showcase the premium liquid ingredients, captured from a low angle with a macro lens (e.g., Sony FE 90mm f/2.8 Macro G OSS) under soft, diffused studio lighting, emphasizing vibrant colors and sharp focus on the frosty glass."
+    }
+  ],
+  "category_subtitle": "Spot the perfect Margarita before AI gets tipsy."
+}
