@@ -124,6 +124,13 @@
       "category_emoji": "🍹",
       "category_subtitle": "Spot the perfect Margarita before AI gets tipsy.",
       "challenge_file": "challenges/2026-02-22.json"
+  },
+    "2026-02-23": {
+      "day_number": 20,
+      "category": "National Dog Biscuit Day",
+      "category_emoji": "🦴",
+      "category_subtitle": "This AI's got a nose for biscuits. Woof!",
+      "challenge_file": "challenges/2026-02-23.json"
   }
 }
 
