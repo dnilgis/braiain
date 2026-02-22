@@ -1,0 +1,99 @@
+{
+  "day_number": 22,
+  "date": "2026-02-25",
+  "category": "International Cochlear Implant Day",
+  "category_emoji": "👂",
+  "rounds": [
+    {
+      "id": "d22r1",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1639195613125-f4b6b838bf4e?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw1fHxDb2NobGVhciUyMEltcGxhbnR8ZW58MHwwfHx8MTc3MTc5ODM1N3ww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Mark Paton on Unsplash",
+      "pro_tip": "**AI: EXAGGERATED EMOTIONS:** Some AI images feature emotions that appear slightly forced or over-the-top, lacking nuanced human subtlety. Even a \"comforting atmosphere\" can feel contrived.",
+      "source_url": "https://unsplash.com/photos/a-close-up-of-a-man-with-ear-buds-on-his-ears-dn6KOZXmISw"
+    },
+    {
+      "id": "d22r2",
+      "type": "image",
+      "content": "images/d22_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**AI: IMPECCABLE PERFECTION:** Look for flawless composition, hyper-realistic textures, and uniform lighting. AI often lacks subtle imperfections, leading to an overly polished, idealized look.",
+      "_note": "Prompt: A photorealistic photograph of a woman in her 50s, with subtle makeup and sophisticated silver-framed eyeglasses, looking directly at the camera with a confident expression. A modern, beige-colored cochlear implant processor is elegantly integrated behind her left ear, complementing her appearance. This is a medium close-up portrait, captured with a Sony a7 IV and a 50mm f/1.8 lens, using soft, diffused studio lighting from the front to create even illumination and sharp details on her face and the implant."
+    },
+    {
+      "id": "d22r3",
+      "type": "image",
+      "content": "images/d22_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**AI: UNCANNY UNIFORMITY:** Notice subjects with overly smooth skin, perfectly symmetrical features, or a slightly plastic sheen. Expressions can seem generic or too ideally posed.",
+      "_note": "Prompt: A photorealistic photograph of a highly focused surgical team of three, performing a cochlear implant surgery in a brightly lit, state-of-the-art operating room. The primary surgeon's gloved hands are precisely positioned over the patient's draped head, with an assistant surgeon and an anesthesiologist observing intently in the background. The composition is a dynamic wide shot, emphasizing the sterile environment and the teamwork. Shot with a Nikon D850 and a 24-70mm f/2.8 lens, under intense, cool surgical lighting, revealing crisp details of instruments and surgical drapes."
+    },
+    {
+      "id": "d22r4",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/5206942/pexels-photo-5206942.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by www.kaboompics.com on Pexels",
+      "pro_tip": "**REAL: GENUINE INTERACTIONS:** Observe natural, less posed human expressions and subtle, realistic body language during collaboration. Real teams show authentic, unplanned moments.",
+      "source_url": "https://www.pexels.com/photo/a-doctor-doing-an-ear-examination-5206942/"
+    },
+    {
+      "id": "d22r5",
+      "type": "image",
+      "content": "images/d22_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**AI: ARTIFICIAL ATMOSPHERE:** Check for unnaturally clean or sterile environments without real-world wear. Shadows and highlights often appear too sharp or perfectly defined.",
+      "_note": "Prompt: A photorealistic photograph of an audiologist, wearing a white lab coat, gently adjusting a child's cochlear implant processor. The child, about 7 years old, looks up at the audiologist with a slight smile. The image is a close-up, focusing on the audiologist's gloved hands and the child's ear with the device, conveying a sense of care and precision. Photographed with a Canon 5D Mark IV and a 100mm f/2.8 macro lens, illuminated by soft, diffused examination room lighting from above, creating a warm, comforting atmosphere."
+    },
+    {
+      "id": "d22r6",
+      "type": "image",
+      "content": "images/d22_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are 10 pro tips for the AI detection game:",
+      "_note": "Prompt: A photorealistic photograph of a young man, aged late 20s, with a modern cochlear implant processor clearly visible and perfectly fitted behind his right ear. He is looking slightly off-camera with a gentle smile. The image is a tight close-up, with a shallow depth of field blurring out the background. Shot with a Canon EOS R5 and a 85mm f/1.2 lens, bathed in soft, natural window light from the left, highlighting the textures of his skin and the sleek design of the implant."
+    },
+    {
+      "id": "d22r7",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/32828952/pexels-photo-32828952.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Zeynep Özata on Pexels",
+      "pro_tip": "**REAL: MISSING KEY FOCUS:** Real photos might capture a broad theme but omit crucial elements, like only showing eyeglasses when a specific medical device was the intended focus.",
+      "source_url": "https://www.pexels.com/photo/surgical-team-performing-operation-in-theater-32828952/"
+    },
+    {
+      "id": "d22r8",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1596088728260-08a654466a00?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwzfHxDb2NobGVhciUyMEltcGxhbnR8ZW58MHwwfHx8MTc3MTc5ODM1N3ww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Mark Paton on Unsplash",
+      "pro_tip": "**REAL: UNEXPECTED ELEMENTS:** Real photos often include unrelated objects or devices not mentioned in an ideal prompt, like standard earbuds instead of a cochlear implant.",
+      "source_url": "https://unsplash.com/photos/person-wearing-silver-framed-eyeglasses-bmzkW_nN0pQ"
+    },
+    {
+      "id": "d22r9",
+      "type": "image",
+      "content": "images/d22_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**AI: PROMPT-PERFECT DETAILS:** Observe the exact replication of specific details like the implant's sleek design or specific lens effects. AI excels at literal interpretation of complex prompts.",
+      "_note": "Prompt: A photorealistic photograph of a medical team in a sterile operating room, captured from a slightly elevated perspective, showcasing their collaborative efforts during a cochlear implant procedure. Two surgeons are communicating silently through gestures, focused on the surgical site, while a scrub nurse meticulously organizes instruments on the side. The scene is a medium shot, highlighting professional collaboration and the sterile, high-tech surroundings. Captured with a Fujifilm GFX 100S and an 80mm f/1.7 lens, bathed in overhead LED surgical lights that cast sharp, defined shadows, emphasizing texture and depth."
+    },
+    {
+      "id": "d22r10",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/13548722/pexels-photo-13548722.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Skip Class on Pexels",
+      "pro_tip": "**REAL: NATURAL IMPERFECTIONS:** Look for authentic, subtle flaws like slight variations in focus, less uniform lighting, or natural wrinkles in drapes that AI often smooths out.",
+      "source_url": "https://www.pexels.com/photo/surgeons-inside-an-operating-room-13548722/"
+    }
+  ],
+  "category_subtitle": "Listen with your eyes: AI detection, amplified!"
+}
