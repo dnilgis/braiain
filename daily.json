@@ -131,6 +131,13 @@
       "category_emoji": "🦴",
       "category_subtitle": "This AI's got a nose for biscuits. Woof!",
       "challenge_file": "challenges/2026-02-23.json"
+  },
+    "2026-02-24": {
+      "day_number": 21,
+      "category": "National Tortilla Chip Day",
+      "category_emoji": "🌮",
+      "category_subtitle": "No time to guac around! AI's crunching chips.",
+      "challenge_file": "challenges/2026-02-24.json"
   }
 }
 
