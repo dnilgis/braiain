@@ -1,0 +1,99 @@
+{
+  "day_number": 21,
+  "date": "2026-02-24",
+  "category": "National Tortilla Chip Day",
+  "category_emoji": "🌮",
+  "rounds": [
+    {
+      "id": "d21r1",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/1582482/pexels-photo-1582482.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Craig Adderley on Pexels",
+      "pro_tip": "UNPRETENTIOUS TOPPINGS: Observe less exaggerated cheese and toppings. Real food often has a more casual, less \"glistening mountain\" appearance and natural imperfections.",
+      "source_url": "https://www.pexels.com/photo/tortilla-chips-on-table-1582482/"
+    },
+    {
+      "id": "d21r2",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/6004184/pexels-photo-6004184.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by RDNE Stock project on Pexels",
+      "pro_tip": "BRAND AUTHENTICITY: Look for multiple specific, real-world brand names like \"Kevita drink.\" AI often struggles with accurate, consistent brand placements.",
+      "source_url": "https://www.pexels.com/photo/a-person-holding-a-corn-chip-6004184/"
+    },
+    {
+      "id": "d21r3",
+      "type": "image",
+      "content": "images/d21_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "ARTIFICIAL PERFECTION: Watch for overly manicured hands or unnaturally vibrant, glossy dips. AI often perfects minute details beyond reality, lacking natural flaws.",
+      "_note": "Prompt: A photorealistic photograph of an extreme close-up, overhead shot looking down onto a mountain of crispy tortilla chips drenched in glistening, bubbling melted cheddar and Monterey Jack cheese. Abundant crispy, crumbled bacon bits and finely chopped green chives are generously scattered across the top. A hint of steam rises gently from the warm dish, illuminated by soft, diffused studio lighting from above, creating a mouth-watering texture. Shot with a Nikon Z7, 100mm macro lens, f/4, ISO 200, shutter speed 1/160s."
+    },
+    {
+      "id": "d21r4",
+      "type": "image",
+      "content": "images/d21_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "IMPECCABLE ARRANGEMENT: Notice \"perfect piles\" of chips and \"artfully arranged\" ingredients. AI creates sterile, faultless flat lays with unnaturally crisp light.",
+      "_note": "Prompt: A photorealistic photograph of a close-up, slightly angled shot capturing a person's hand with a subtle spice dusting on their fingertips, expertly plucking a dark red, chili-dusted tortilla chip from a rustic, dark wooden serving platter. The platter is artfully arranged with various tortilla chips, including white corn, blue corn, and jalapeño-flavored, alongside small bowls of creamy queso, vibrant guacamole, and chunky salsa. The scene is lit by warm, inviting ambient light, creating soft shadows and a cozy atmosphere, with a shallow depth of field that keeps the focus sharply on the hand and the chosen chip. Photographed with a Fujifilm GFX 100S, 80mm f/2.8 lens, ISO 320, shutter speed 1/100s."
+    },
+    {
+      "id": "d21r5",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/5738203/pexels-photo-5738203.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by RDNE Stock project on Pexels",
+      "pro_tip": "ORGANIC INTERACTION: A simple \"hand picks a spicy chip\" from a platter indicates real life. Focus on raw, unforced action, not \"expert plucking.\"",
+      "source_url": "https://www.pexels.com/photo/a-woman-in-tube-top-giving-food-to-a-woman-in-brown-hat-5738203/"
+    },
+    {
+      "id": "d21r6",
+      "type": "image",
+      "content": "images/d21_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "FLAWLESS INTERACTION: Check for hands \"expertly plucking\" with precise spice dusting. AI often creates unnaturally perfect interactions and too-shallow depth of field.",
+      "_note": "Prompt: A photorealistic photograph of a wide-angle, candid photograph capturing a diverse group of four friends laughing and enjoying a lively outdoor picnic on a sunny afternoon. They are gathered around a checkered blanket spread on lush green grass, with bowls of tortilla chips, fresh salsa, and guacamole scattered amongst other picnic items. A large, vibrant bouquet of sunflowers stands prominently in a vase nearby, catching the warm, golden hour light that baths the entire scene, creating a joyful and relaxed atmosphere. Shot with a Canon 5D Mark IV, 24-70mm f/2.8 lens at 35mm, ISO 160, shutter speed 1/250s."
+    },
+    {
+      "id": "d21r7",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1768252688649-13d169feadc0?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw4fHxUb3J0aWxsYSUyMENoaXB8ZW58MHwwfHx8MTc3MTc5NzU3Nnww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by lap lap on Unsplash",
+      "pro_tip": "AUTHENTIC MOMENT: Real photos capture natural, unforced actions like simply \"serving salsa\" from a platter on a regular kitchen counter. Look for everyday realism.",
+      "source_url": "https://unsplash.com/photos/nachos-topped-with-melted-cheese-bacon-and-chives-5PkRWJ3ndOw"
+    },
+    {
+      "id": "d21r8",
+      "type": "image",
+      "content": "images/d21_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are 10 pro tips for the AI detection game:",
+      "_note": "Prompt: A photorealistic photograph of a close-up shot of a hand with neatly manicured nails scooping vibrant red salsa from a rustic ceramic bowl with a silver spoon, positioned on a large wooden platter. The platter is overflowing with various golden tortilla chips, creamy guacamole, and white queso, all arranged on a polished granite kitchen counter. The scene is bathed in soft, inviting natural light filtering in from a nearby window, creating gentle reflections on the counter and emphasizing the textures of the dips. Shot with a Canon EOS R5, 50mm f/1.8 lens, ISO 400, shutter speed 1/125s."
+    },
+    {
+      "id": "d21r9",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/6004785/pexels-photo-6004785.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by RDNE Stock project on Pexels",
+      "pro_tip": "STAGED CANDID: Be wary of \"candid\" group shots with generic \"diverse\" faces. AI's perfect \"golden hour\" lighting can also appear manufactured.",
+      "source_url": "https://www.pexels.com/photo/hand-of-a-person-holding-spoon-with-sauce-6004785/"
+    },
+    {
+      "id": "d21r10",
+      "type": "image",
+      "content": "images/d21_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "HYPER-STYLIZED FOOD: Look for \"mountain\" formations, unnaturally glistening cheese, or perfectly scattered toppings under flawless studio light. It often feels too ideal.",
+      "_note": "Prompt: A photorealistic photograph of a vibrant, brightly lit flat lay composition of an assortment of healthy, organic snacks. In the center, a clear glass bottle of sparkling kombucha sits next to an open bag of Tostitos Scoops tortilla chips, spilling out a perfect pile of golden, crispy chips. Surrounding these are fresh, colorful ingredients like ripe avocado halves, cherry tomatoes, sliced bell peppers, and cilantro sprigs, all artfully arranged on a light wooden background. The scene is illuminated by crisp, natural daylight, highlighting the fresh textures and vibrant colors. Shot with a Sony Alpha 7 III, 35mm f/2.8 lens, ISO 100, shutter speed 1/200s."
+    }
+  ],
+  "category_subtitle": "No time to guac around! AI's crunching chips."
+}
