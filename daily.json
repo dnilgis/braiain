@@ -138,6 +138,13 @@
       "category_emoji": "🌮",
       "category_subtitle": "No time to guac around! AI's crunching chips.",
       "challenge_file": "challenges/2026-02-24.json"
+  },
+    "2026-02-25": {
+      "day_number": 22,
+      "category": "International Cochlear Implant Day",
+      "category_emoji": "👂",
+      "category_subtitle": "Listen with your eyes: AI detection, amplified!",
+      "challenge_file": "challenges/2026-02-25.json"
   }
 }
 
