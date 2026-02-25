@@ -159,6 +159,13 @@
       "category_emoji": "🍓",
       "category_subtitle": "Get ready to be berried: AI's strawberry spotting spree!",
       "challenge_file": "challenges/2026-02-27.json"
+  },
+    "2026-02-28": {
+      "day_number": 25,
+      "category": "National Floral Design Day",
+      "category_emoji": "💐",
+      "category_subtitle": "National Floral Design Day: Don't let the AI plant a fake!",
+      "challenge_file": "challenges/2026-02-28.json"
   }
 }
 
