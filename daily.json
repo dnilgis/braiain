@@ -152,6 +152,13 @@
       "category_emoji": "👖",
       "category_subtitle": "Riveting AI Challenge: Are These Genes or Just AI Dreams?",
       "challenge_file": "challenges/2026-02-26.json"
+  },
+    "2026-02-27": {
+      "day_number": 24,
+      "category": "National Strawberry Day",
+      "category_emoji": "🍓",
+      "category_subtitle": "Get ready to be berried: AI's strawberry spotting spree!",
+      "challenge_file": "challenges/2026-02-27.json"
   }
 }
 
