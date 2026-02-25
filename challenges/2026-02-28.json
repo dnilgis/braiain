@@ -1,0 +1,99 @@
+{
+  "day_number": 25,
+  "date": "2026-02-28",
+  "category": "National Floral Design Day",
+  "category_emoji": "💐",
+  "rounds": [
+    {
+      "id": "d25r1",
+      "type": "image",
+      "content": "images/d25_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**OVER-SPECIFICITY:** Watch for images perfectly aligning with overly specific prompt details, like a \"serene expression\" or \"scattering of petals\" that feel too staged and less spontaneous than real life.",
+      "_note": "Prompt: A photorealistic photograph of a skilled florist, wearing a linen apron, expertly crafting a lush, multi-textured bouquet from a colorful array of fresh flowers in a bustling, well-lit floral boutique. Bright fluorescent and natural light illuminates the vibrant petals and green foliage. Taken with a Nikon D850, 70-200mm lens at 100mm, f/4, ISO 400, utilizing bright overhead shop lighting mixed with natural light from a storefront window, ensuring sharp focus and vivid colors across the scene."
+    },
+    {
+      "id": "d25r2",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1698103183375-068b53377486?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxM3x8ZmxvcmFsJTIwc2hvcHxlbnwwfDB8fHwxNzcxOTc5NDE2fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Marcos Llerena on Unsplash",
+      "pro_tip": "**LIVED-IN ENVIRONMENTS:** Real settings, like a floral shop or kitchen, often include subtle clutter, signs of use, or less polished backgrounds. The scene feels genuinely lived-in, not pristine.",
+      "source_url": "https://unsplash.com/photos/a-motorcycle-parked-in-front-of-a-flower-shop-zkG8f8Bq7f8"
+    },
+    {
+      "id": "d25r3",
+      "type": "image",
+      "content": "images/d25_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**HYPER-REAL LIGHTING:** AI can render lighting *too* perfectly or dramatically. Mixed light sources may lack natural imperfections, making the scene feel artificially bright, clean, or colors unnaturally vivid.",
+      "_note": "Prompt: A photorealistic photograph of a concentrated East Asian female florist, with delicate movements, meticulously assembling a complex, artful bouquet of seasonal blooms and unusual greens at a sturdy workbench in a busy, artisan floral studio. Her brow is slightly furrowed in deep focus. Shot with a Fujifilm GFX 100S, 110mm lens, f/2.0, ISO 160, with soft, directional studio lighting from above and slightly to the side, highlighting her hands and the intricate details of the flowers, creating a painterly effect."
+    },
+    {
+      "id": "d25r4",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/5410124/pexels-photo-5410124.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Amina Filkins on Pexels",
+      "pro_tip": "**NATURAL LIGHTING:** Observe lighting that is less dramatic or perfectly diffused. Real window light or ambient indoor lighting will have more organic shadows and highlights, feeling less \"produced.\"",
+      "source_url": "https://www.pexels.com/photo/woman-making-floral-bouquet-in-shop-5410124/"
+    },
+    {
+      "id": "d25r5",
+      "type": "image",
+      "content": "images/d25_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**UNIQUE ELEMENTS:** AI thrives on specific aesthetic instructions. If \"unusual greens,\" \"painterly effect,\" or specific \"furrowed brow\" details are perfectly executed, it's a strong AI tell.",
+      "_note": "Prompt: A photorealistic photograph of a vintage black cafe racer motorcycle, gleaming under late afternoon sun, neatly parked on a cobblestone street directly in front of a charming, old-fashioned flower shop with an overflowing display of potted plants and colorful bouquets spilling onto the sidewalk. A classic hand-painted sign reads \"Petal & Bloom.\" Captured with a Leica M10-R, 35mm lens, f/8, ISO 100, utilizing golden hour natural light, providing rich, warm tones and sharp details across the street scene and the shop's facade."
+    },
+    {
+      "id": "d25r6",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/5894088/pexels-photo-5894088.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Anna Shvets on Pexels",
+      "pro_tip": "**AUTHENTIC IMPERFECTIONS:** Real photos often show subtle imperfections: a slight blur, natural reflections, or less-than-critical focus in certain areas. The composition might feel more spontaneous and less staged.",
+      "source_url": "https://www.pexels.com/photo/a-woman-arranging-flowers-5894088/"
+    },
+    {
+      "id": "d25r7",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/7858789/pexels-photo-7858789.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Greta Hoffman on Pexels",
+      "pro_tip": "**SET-LIKE COMPOSITION:** AI often crafts scenes that feel like a meticulous movie set. Look for perfectly placed, highly specific objects like a \"vintage cafe racer\" or \"cobblestone street\" that seem overly ideal.",
+      "source_url": "https://www.pexels.com/photo/a-woman-arranging-flowers-7858789/"
+    },
+    {
+      "id": "d25r8",
+      "type": "image",
+      "content": "images/d25_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are pro tips for distinguishing AI-generated images from real photographs in the \"National Floral Design Day\" game:",
+      "_note": "Prompt: A photorealistic photograph of a refined, expert florist, hands gracefully shaping a vibrant, architectural floral arrangement in an elegant, clear glass vase, filled with exotic blooms. The setting is a chic, sunlit interior design studio with soft, diffused natural light streaming from a large window. Shot with a Canon EOS R5, f/2.8, 85mm lens, ISO 100, capturing exquisite detail and a shallow depth of field, with soft, directional key lighting emphasizing the flowers' textures and the florist's hands."
+    },
+    {
+      "id": "d25r9",
+      "type": "image",
+      "content": "images/d25_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**PERFECTION:** AI often creates hyper-detailed, flawlessly composed scenes. Look for unnaturally perfect hands, sterile compositions, or exotic blooms appearing too pristine, lacking natural variation.",
+      "_note": "Prompt: A photorealistic photograph of a young woman with a serene expression, meticulously arranging freshly cut garden flowers into a rustic ceramic vase on a natural wooden kitchen table. A scattering of petals and leaves lies nearby, illuminated by warm morning light. Captured with a Sony A7 III, 50mm lens, f/1.8, ISO 200, employing soft, ambient window light from the left, creating gentle shadows and a bright, inviting atmosphere."
+    },
+    {
+      "id": "d25r10",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1642751652611-bb9a7cad58a3?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwzfHxGbG9yYWwlMjBEZXNpZ258ZW58MHwwfHx8MTc3MTk3OTM1MHww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Oxana Melis on Unsplash",
+      "pro_tip": "**Real Photo Tips:**",
+      "source_url": "https://unsplash.com/photos/a-woman-arranging-flowers-in-a-vase-on-a-table-X_7Qb2Tg_6g"
+    }
+  ],
+  "category_subtitle": "National Floral Design Day: Don't let the AI plant a fake!"
+}
