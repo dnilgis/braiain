@@ -145,6 +145,13 @@
       "category_emoji": "👂",
       "category_subtitle": "Listen with your eyes: AI detection, amplified!",
       "challenge_file": "challenges/2026-02-25.json"
+  },
+    "2026-02-26": {
+      "day_number": 23,
+      "category": "Levi Strauss Day",
+      "category_emoji": "👖",
+      "category_subtitle": "Riveting AI Challenge: Are These Genes or Just AI Dreams?",
+      "challenge_file": "challenges/2026-02-26.json"
   }
 }
 
