@@ -1,0 +1,99 @@
+{
+  "day_number": 24,
+  "date": "2026-02-27",
+  "category": "National Strawberry Day",
+  "category_emoji": "🍓",
+  "rounds": [
+    {
+      "id": "d24r1",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/25324696/pexels-photo-25324696.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Ilidio  De Fátimo da silva on Pexels",
+      "pro_tip": "**ORGANIC TEXTURES:** Look for varied and authentic textures in fabric, hay, or plant leaves. Real photos show natural, non-uniform material details.",
+      "source_url": "https://www.pexels.com/photo/strawberry-farm-and-a-food-stand-in-a-street-in-japan-25324696/"
+    },
+    {
+      "id": "d24r2",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1734313237467-1f93eb3abbe0?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxfHxTdHJhd2JlcnJ5JTIwZmFybXxlbnwwfDB8fHwxNzcxOTc4OTA2fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Hailey Tong on Unsplash",
+      "pro_tip": "**NATURAL IMPERFECTIONS:** Seek out slight blemishes on strawberries, natural skin pores, or subtle dirt on hands. Real photos capture authentic, imperfect details.",
+      "source_url": "https://unsplash.com/photos/a-person-holding-a-container-of-strawberries-in-their-hands-8BePym2KiqE"
+    },
+    {
+      "id": "d24r3",
+      "type": "image",
+      "content": "images/d24_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are your pro tips for the AI detection game, \"National Strawberry Day\":",
+      "_note": "Prompt: A photorealistic photograph of a woman, dressed in a straw hat and light linen shirt, gently plucking ripe strawberries from a lush green plant on an organic farm. The composition is a mid-shot, emphasizing her hands and the berries, with rows of strawberry plants receding into a soft bokeh background. Captured with a Canon EOS R5 and a 85mm f/1.4 lens, using natural golden hour light, exhibiting shallow depth of field and warm, inviting tones."
+    },
+    {
+      "id": "d24r4",
+      "type": "image",
+      "content": "images/d24_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**PERFECTION OVERLOAD:** Notice if strawberries are unnaturally uniform in shape, color, and shine. AI often produces overly idealized and flawless produce.",
+      "_note": "Prompt: A photorealistic photograph of the entrance to a modern Japanese strawberry farm, featuring a sleek, translucent greenhouse structure and a distinct, brightly colored strawberry vending machine beside the main pathway. The scene is captured as a wide exterior shot under a clear blue sky, showcasing the clean lines of the architecture and the surrounding manicured landscape. Photographed with a Canon EOS R6 and a 24-70mm f/2.8 lens at 24mm, utilizing bright, direct sunlight to create crisp details and vibrant colors across the scene."
+    },
+    {
+      "id": "d24r5",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1585254589738-aff16702b974?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw3fHxTdHJhd2JlcnJ5JTIwZmFybXxlbnwwfDB8fHwxNzcxOTc4OTA2fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Mick Haupt on Unsplash",
+      "pro_tip": "**GENUINE EXPRESSIONS:** Observe the human subject's face for nuanced, unforced emotions or genuine candidness. Real human expressions are rarely perfectly posed.",
+      "source_url": "https://unsplash.com/photos/boy-in-gray-crew-neck-t-shirt-holding-white-plastic-bucket-with-strawberries-oOQsLhnMHKY"
+    },
+    {
+      "id": "d24r6",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/7456782/pexels-photo-7456782.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Kindel Media on Pexels",
+      "pro_tip": "**ENVIRONMENTAL CONSISTENCY:** Verify shadows and light sources interact realistically with all elements. Real photos naturally capture consistent ambient conditions.",
+      "source_url": "https://www.pexels.com/photo/close-up-shot-of-a-man-looking-at-potted-strawberry-plants-7456782/"
+    },
+    {
+      "id": "d24r7",
+      "type": "image",
+      "content": "images/d24_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**UNNATURAL TEXTURES:** Examine strawberry surfaces or fabrics for repetitive patterns or a plastic-like sheen. AI can over-render textures, making them look artificial.",
+      "_note": "Prompt: A photorealistic photograph of a smiling young boy, wearing a plain gray crew neck t-shirt, holding a small white plastic bucket filled to the brim with freshly picked, bright red strawberries. The shot is composed as an upper body portrait, capturing his joyful expression and the full bucket, set against a subtly blurred rural background of green foliage. Taken with a Nikon D850 and a 105mm f/2.8 macro lens, under bright, soft overcast daylight, creating crisp details and vibrant colors."
+    },
+    {
+      "id": "d24r8",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/7457195/pexels-photo-7457195.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Kindel Media on Pexels",
+      "pro_tip": "**GIBBERISH TEXT:** Zoom in on any text, like on a vending machine or sign. AI frequently renders text as unreadable, nonsensical symbols or garbled letters.",
+      "source_url": "https://www.pexels.com/photo/a-woman-wearing-garden-gloves-touching-the-leaves-of-strawberry-plant-7457195/"
+    },
+    {
+      "id": "d24r9",
+      "type": "image",
+      "content": "images/d24_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**BOKEH ARTIFACTS:** Check the blurred background for painterly smears or overly smooth transitions. AI's depth of field can appear artificial or inconsistent with light.",
+      "_note": "Prompt: A photorealistic photograph of a thoughtful middle-aged man, with a slight stubble, closely examining a vibrant green strawberry plant in a terracotta pot. He is at an outdoor market stall, with other potted plants and rustic hay bales partially visible in the softly blurred background. Shot with a Fujifilm GFX 100S and a 110mm f/2 lens, utilizing bright, natural midday sun with subtle shadows, creating a clear and engaging composition with a focus on observation."
+    },
+    {
+      "id": "d24r10",
+      "type": "image",
+      "content": "images/d24_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**ANATOMICAL ODDITIES:** Look for unnaturally smooth skin, inconsistent hand proportions, or slightly distorted fingers. AI often struggles with realistic human anatomy.",
+      "_note": "Prompt: A photorealistic photograph of a person's hands delicately holding a clear plastic punnet overflowing with perfectly ripe, glistening red strawberries. The shallow depth of field keeps the strawberries and hands in sharp focus, blurring the indistinct background. Shot with a Sony A7 III and a 50mm f/1.8 lens, using soft, diffused natural light from a window, highlighting the texture and freshness of the fruit."
+    }
+  ],
+  "category_subtitle": "Get ready to be berried: AI's strawberry spotting spree!"
+}
