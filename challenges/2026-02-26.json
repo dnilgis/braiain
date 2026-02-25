@@ -1,0 +1,99 @@
+{
+  "day_number": 23,
+  "date": "2026-02-26",
+  "category": "Levi Strauss Day",
+  "category_emoji": "👖",
+  "rounds": [
+    {
+      "id": "d23r1",
+      "type": "image",
+      "content": "images/d23_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**UNSETTLING SUBJECTS:** AI might show unnaturally smooth skin, symmetrical faces, or subtle anatomical inconsistencies in human subjects, creating an \"uncanny valley\" effect.",
+      "_note": "Prompt: A photorealistic photograph of a stylish young man in his early 20s, with a relaxed expression, wearing a crisp white Levi's logo t-shirt and modern aviator sunglasses. He is positioned slightly off-center against a seamless, bright white studio background. Lit with balanced, diffused studio strobes from both sides, ensuring soft, even illumination and minimal shadows. Shot with a prime lens (85mm) at f/4.0 for a flattering portrait with sharp detail on the subject."
+    },
+    {
+      "id": "d23r2",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/20525730/pexels-photo-20525730.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by YESENIA MORA on Pexels",
+      "pro_tip": "**GENUINE EXPRESSION:** Observe natural skin textures, authentic expressions, and unique human nuances, creating a relatable and believable subject.",
+      "source_url": "https://www.pexels.com/photo/man-in-white-t-shirt-and-eyeglasses-20525730/"
+    },
+    {
+      "id": "d23r3",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/16729453/pexels-photo-16729453.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Anastasiya Badun on Pexels",
+      "pro_tip": "**ORGANIC CLUTTER:** Real photos often contain natural clutter, slight imperfections, or less-than-perfect lighting, reflecting genuine, unstaged moments.",
+      "source_url": "https://www.pexels.com/photo/close-up-of-clothes-with-price-tags-hanging-on-a-clothing-rack-at-a-flea-market-16729453/"
+    },
+    {
+      "id": "d23r4",
+      "type": "image",
+      "content": "images/d23_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**FLAWLESS FORM:** Look for items that are 'perfectly folded' or 'artfully arranged' with unnatural precision, showing no genuine creases or real-world imperfections.",
+      "_note": "Prompt: A photorealistic photograph of a pair of perfectly folded, dark wash blue Levi's denim jeans artfully arranged on a textured black canvas fabric. The fabric's subtle wrinkles and the jean's rugged texture are emphasized. Soft, even overhead studio lighting casts gentle shadows, enhancing the dimensionality of the denim. Shot from a high angle (flat lay style) with a standard lens (50mm) at f/8.0 for crisp focus across the entire composition."
+    },
+    {
+      "id": "d23r5",
+      "type": "image",
+      "content": "images/d23_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**HYPER TEXTURE:** Watch for exaggerated or repetitive fabric textures and logos that appear unnaturally crisp and detailed, lacking organic imperfections or wear.",
+      "_note": "Prompt: A photorealistic photograph of an extreme close-up detail shot of the iconic brass button and textured leather patch on a pair of deep indigo Levi Strauss denim jeans. The stitching around the button and the embossed logo on the patch are in razor-sharp focus. Lit with a single softbox from the left, creating subtle shadows that enhance the fabric's weave and metal's sheen. Shot with a macro lens (100mm) at f/2.8 for incredibly shallow depth of field."
+    },
+    {
+      "id": "d23r6",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1605518215584-5ba74df5dfd8?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwzfHxMZXZpc3xlbnwwfDB8fHwxNzcxOTc4NDE1fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Eduardo Pastor on Unsplash",
+      "pro_tip": "**NATURAL FOLDS:** Real textiles exhibit organic, less uniform folds and wrinkles from handling or movement, rather than unnaturally arranged perfection.",
+      "source_url": "https://unsplash.com/photos/blue-denim-jeans-on-black-textile-sWcDEaemw14"
+    },
+    {
+      "id": "d23r7",
+      "type": "image",
+      "content": "images/d23_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**AI PERFECTION:** AI images often feature 'too perfect' arrangements and flawless lighting, making bustling scenes feel unnaturally pristine and meticulously staged.",
+      "_note": "Prompt: A photorealistic photograph of a bustling outdoor flea market stall in downtown Los Angeles, CA, showcasing a meticulously arranged rack filled with various shades of vintage Levi's denim jeans and classic work shirts. Soft, golden hour natural light bathes the scene, highlighting textures. Shot with a wide-angle lens (24mm) at f/5.6 for a broad depth of field, capturing the lively atmosphere with natural shadows."
+    },
+    {
+      "id": "d23r8",
+      "type": "image",
+      "content": "images/d23_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**GLITCHED BLUR:** Examine blurred backgrounds for strange distortions, inconsistent bokeh, or artifacts that don't logically cohere, betraying a synthetic origin.",
+      "_note": "Prompt: A photorealistic photograph of a fashionable woman in her late 20s, captured mid-stride on a sun-drenched urban sidewalk. She is wearing a classic white long-sleeve button-down shirt tucked into a pair of perfectly fitting blue Levi's straight-leg jeans. The background features blurred city architecture and lush green trees under bright midday sun. Shot with a telephoto lens (70mm) at f/2.0 to create a beautiful bokeh effect, separating the subject from the vibrant street scene."
+    },
+    {
+      "id": "d23r9",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1614788650841-e99d5f181137?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxNHx8TGV2aXN8ZW58MHwwfHx8MTc3MTk3ODQxNXww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Leon Seibert on Unsplash",
+      "pro_tip": "**COHERENT REALITY:** Real scenes maintain consistent interaction between subjects, backgrounds, and light, showing natural depth and realistic imperfections.",
+      "source_url": "https://unsplash.com/photos/woman-in-white-long-sleeve-shirt-and-blue-denim-jeans-standing-on-sidewalk-during-daytime-iqRwqT_gklM"
+    },
+    {
+      "id": "d23r10",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/5729403/pexels-photo-5729403.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Garreth Brown on Pexels",
+      "pro_tip": "**AUTHENTIC WEAR:** Seek natural wear-and-tear, unique stitching variations, or subtle material imperfections that signal a real, tangible product's history.",
+      "source_url": "https://www.pexels.com/photo/close-up-of-denim-trousers-5729403/"
+    }
+  ],
+  "category_subtitle": "Riveting AI Challenge: Are These Genes or Just AI Dreams?"
+}
