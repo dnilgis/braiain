@@ -166,6 +166,13 @@
       "category_emoji": "💐",
       "category_subtitle": "National Floral Design Day: Don't let the AI plant a fake!",
       "challenge_file": "challenges/2026-02-28.json"
+  },
+    "2026-03-01": {
+      "day_number": 26,
+      "category": "National Pig Day",
+      "category_emoji": "🐷",
+      "category_subtitle": "Our AI's ready to root out every pig today!",
+      "challenge_file": "challenges/2026-03-01.json"
   }
 }
 
