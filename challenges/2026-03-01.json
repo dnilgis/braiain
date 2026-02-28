@@ -1,0 +1,99 @@
+{
+  "day_number": 26,
+  "date": "2026-03-01",
+  "category": "National Pig Day",
+  "category_emoji": "🐷",
+  "rounds": [
+    {
+      "id": "d26r1",
+      "type": "image",
+      "content": "images/d26_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**EMOTIONAL CUES:** Watch for animals displaying overly human-like or idealized emotions (\"pure delight,\" \"intelligent expression\") that feel slightly off or staged.",
+      "_note": "Prompt: A photorealistic photograph of a small, inquisitive brown pig standing attentively alongside a weathered wooden farm fence, peering through a gap in the planks with a curious, intelligent expression. Photographed with a Canon 5D Mark IV, 70-200mm lens at 100mm, f/5.6, 1/400s, under late afternoon sun, casting long, soft shadows and highlighting the rustic texture of the fence and the pig's fur."
+    },
+    {
+      "id": "d26r2",
+      "type": "image",
+      "content": "images/d26_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**CAMERA SPECIFICS:** Observe if the image perfectly embodies every detailed camera setting (lens, aperture, shutter speed) mentioned, often resulting in an idealized \"shot.\"",
+      "_note": "Prompt: A photorealistic photograph of an adorable, tiny spotted KuneKune piglet standing curiously on a textured concrete floor, with a scattering of clean, yellow straw around its hooves, highlighting its unique black and white patches. Taken with a Sony Alpha 7 IV, 35mm lens, f/4.0, 1/160s, illuminated by bright, directional window light creating subtle shadows and sharp details."
+    },
+    {
+      "id": "d26r3",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/7265838/pexels-photo-7265838.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Alexas Fotos on Pexels",
+      "pro_tip": "**LIGHTING FLAWLESSNESS:** Detect unnaturally perfect or overly dramatic lighting (e.g., flawless golden hour, perfectly diffused studio light) that lacks real-world imperfections or nuances.",
+      "source_url": "https://www.pexels.com/photo/piglets-on-brown-grass-7265838/"
+    },
+    {
+      "id": "d26r4",
+      "type": "image",
+      "content": "images/d26_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**EXAGGERATED EMOTION:** AI pigs often display unnaturally intense joy or human-like intelligence, making expressions appear too perfect or staged.",
+      "_note": "Prompt: A photorealistic photograph of two fluffy pink piglets joyfully chasing each other through a sun-dappled grassy field, one playfully nipping at the other's ear, showcasing their pure delight. Shot with a Canon EOS R5, 85mm lens, f/2.0, 1/1000s, bathed in soft golden hour sunlight, with a bokeh-rich background of blurred green foliage."
+    },
+    {
+      "id": "d26r5",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1630786784278-e1624802a3a9?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxNHx8UGlnfGVufDB8MHx8fDE3NzIzMTk5MzJ8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Stefanie Poepken on Unsplash",
+      "pro_tip": "**NATURAL VARIATION:** Real photos often exhibit subtle imperfections, organic randomness in textures like hay or fur, and less uniform details than AI.",
+      "source_url": "https://unsplash.com/photos/white-pig-on-brown-hay-9tSzeU5ZSLQ"
+    },
+    {
+      "id": "d26r6",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/6137262/pexels-photo-6137262.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Jiří Mikoláš on Pexels",
+      "pro_tip": "**AUTHENTIC MOMENTS:** Look for spontaneous, less staged interactions or natural poses that capture genuine animal behavior rather than an idealized portrayal.",
+      "source_url": "https://www.pexels.com/photo/mini-pig-standing-with-eyes-closed-6137262/"
+    },
+    {
+      "id": "d26r7",
+      "type": "image",
+      "content": "images/d26_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**TEXTURE EXAGGERATION:** AI excels at rendering textures like fur, straw, or wood with an unnatural, almost uniform crispness or hyper-real quality that feels artificial.",
+      "_note": "Prompt: A photorealistic photograph of a tiny, curious white piglet in a tight close-up, mouth open and actively chewing a strand of fresh green hay, bits of it visible around its snout, conveying its focused attention. Shot with a Fujifilm GFX 100S, 120mm macro lens, f/3.2, 1/500s, under bright, soft studio lighting from above, with extreme shallow depth of field focusing solely on the piglet's chewing action."
+    },
+    {
+      "id": "d26r8",
+      "type": "image",
+      "content": "images/d26_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**HYPER-PERFECTION:** AI often renders scenes with flawless lighting, composition, and impossibly sharp details throughout. Look for an overall \"too good to be true\" aesthetic.",
+      "_note": "Prompt: A photorealistic photograph of a pristine white sow resting peacefully on a thick bed of golden-brown straw inside a well-lit barn, her eyes gently closed in contentment. Captured with a Nikon Z7, 50mm lens, f/2.8, 1/250s, using soft, diffused overhead natural light filtering from a skylight, emphasizing the texture of the hay and the pig's smooth skin."
+    },
+    {
+      "id": "d26r9",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1716140238774-42cc9572c2a4?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxOHx8UGlnfGVufDB8MHx8fDE3NzIzMTk5MzJ8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by B Cole on Unsplash",
+      "pro_tip": "**FOCUS IMPERFECTIONS:** Real photography often has natural fall-off in focus, less uniform sharpness, or bokeh that feels organic rather than digitally perfected.",
+      "source_url": "https://unsplash.com/photos/a-small-pig-standing-next-to-a-fence-tZDQqzD3EqI"
+    },
+    {
+      "id": "d26r10",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1516467508483-a7212febe31a?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxfHxQaWd8ZW58MHwwfHx8MTc3MjMxOTkzMnww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Christopher Carson on Unsplash",
+      "pro_tip": "**REALISTIC LIGHTING:** Expect lighting to have natural nuances, subtle shadows, and less \"perfect\" diffusion or dramatic effects often seen in AI-generated images.",
+      "source_url": "https://unsplash.com/photos/white-piglet-chewing-hay-i4XLJmlYit4"
+    }
+  ],
+  "category_subtitle": "Our AI's ready to root out every pig today!"
+}
