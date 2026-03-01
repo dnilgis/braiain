@@ -173,6 +173,13 @@
       "category_emoji": "🐷",
       "category_subtitle": "Our AI's ready to root out every pig today!",
       "challenge_file": "challenges/2026-03-01.json"
+  },
+    "2026-03-02": {
+      "day_number": 27,
+      "category": "Old Stuff Day",
+      "category_emoji": "🕰️",
+      "category_subtitle": "Our AI's gone antiquing; find the relics before they crumble!",
+      "challenge_file": "challenges/2026-03-02.json"
   }
 }
 
