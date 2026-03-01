@@ -1,0 +1,99 @@
+{
+  "day_number": 27,
+  "date": "2026-03-02",
+  "category": "Old Stuff Day",
+  "category_emoji": "🕰️",
+  "rounds": [
+    {
+      "id": "d27r1",
+      "type": "image",
+      "content": "images/d27_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**UNIFORM WEAR:** Check for dust or discoloration that is too evenly distributed or repetitive across individual keys. Real wear is organic and unique, not systematic.",
+      "_note": "Prompt: A photorealistic photograph of a luxurious vintage interior, showcasing an elaborately carved dark wood armchair positioned beside a large, sunlit window. On a nearby side table sit old leather-bound books and a bronze antique clock. Shot with a wide-angle lens, bathed in soft, warm natural light filtering through the window, creating gentle shadows and an inviting, classic ambiance."
+    },
+    {
+      "id": "d27r2",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1631515997968-f282ea759bce?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxfHxPbGQlMjBTdHVmZnxlbnwwfDB8fHwxNzcyNDA1MTcxfDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Irvin Zheng on Unsplash",
+      "pro_tip": "**OVERLOAD CLONES:** In densely packed scenes, look for repetitive patterns in objects or textures, like similar figurines or indistinguishable metal tarnishing.",
+      "source_url": "https://unsplash.com/photos/brown-and-beige-rotary-phone-POI8Oe_00Z8"
+    },
+    {
+      "id": "d27r3",
+      "type": "image",
+      "content": "images/d27_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**ANATOMY ODDITIES:** Inspect human hands, especially fingers, and subtle facial expressions. AI can distort human anatomy or create unnatural interactions, even in motion.",
+      "_note": "Prompt: A photorealistic photograph of a densely packed, treasure-trove antique shop interior, filled wall-to-wall with an eclectic assortment of vintage items: old books, faded paintings, ceramic figurines, and tarnished metal objects on overflowing shelves and tables. Taken with a wide-angle lens, under mixed overhead fluorescent and soft spotlighting, ensuring deep depth of field to showcase the myriad details and the overwhelming quantity of 'old stuff'."
+    },
+    {
+      "id": "d27r4",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/2168227/pexels-photo-2168227.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Teddy Yang on Pexels",
+      "pro_tip": "**UNIQUE IMPERFECTIONS:** Observe distinct, non-repeating wear and tear on individual keys. Natural use creates specific, asymmetrical fading and scratches, not uniform ones.",
+      "source_url": "https://www.pexels.com/photo/brown-wooden-armchair-2168227/"
+    },
+    {
+      "id": "d27r5",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1703868672118-7e6643590c7c?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyMHx8T2xkJTIwU3R1ZmZ8ZW58MHwwfHx8MTc3MjQwNTE3MXww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by William Warby on Unsplash",
+      "pro_tip": "**AUTHENTIC AGING:** Seek genuine, non-uniform dust accumulation and subtle, organic imperfections on surfaces. Real items naturally show varied, unique signs of age.",
+      "source_url": "https://unsplash.com/photos/a-close-up-of-a-keyboard-on-a-computer-uUy0qUoKHeo"
+    },
+    {
+      "id": "d27r6",
+      "type": "image",
+      "content": "images/d27_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**FLAWLESS REFLECTIONS:** Look for reflections on glossy surfaces like Bakelite that appear too perfect, uniform, or unnaturally clean despite the object being described as dusty.",
+      "_note": "Prompt: A photorealistic photograph of an extreme close-up of a few discolored, worn keys on a retro computer keyboard from the 1980s. Captured with a sharp macro lens, using directional studio lighting from above to highlight the texture and slight dust accumulation, featuring crisp detail and a high-contrast focus."
+    },
+    {
+      "id": "d27r7",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/6826765/pexels-photo-6826765.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Tima Miroshnichenko on Pexels",
+      "pro_tip": "**CREDIBLE DETAILS:** Verify that book titles and intricate carvings appear coherent and naturally imperfect. Real photos maintain consistent, readable text and distinct features.",
+      "source_url": "https://www.pexels.com/photo/people-walking-inside-an-antique-shop-6826765/"
+    },
+    {
+      "id": "d27r8",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1739134472568-f34f088eb7f1?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyNHx8YW50aXF1ZXMlMjBzdG9yZXxlbnwwfDB8fHwxNzcyNDA1MjU4fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Zoshua Colah on Unsplash",
+      "pro_tip": "**NATURAL INTERACTIONS:** Focus on realistic human gestures, expressions, and clothing drape. Real people exhibit fluid, authentic movements and natural fabric wrinkles.",
+      "source_url": "https://unsplash.com/photos/a-store-filled-with-lots-of-different-types-of-items-nFDx6LxnxSY"
+    },
+    {
+      "id": "d27r9",
+      "type": "image",
+      "content": "images/d27_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**GIBBERISH TEXT:** Examine books closely for unreadable or nonsensical titles and authors on spines. AI frequently generates garbled or distorted text that doesn't make sense.",
+      "_note": "Prompt: A photorealistic photograph of two fashionable young adults, one pointing, browsing through a collection of ornate vintage wooden furniture inside a warmly lit antique store. The scene is captured with a standard prime lens, using soft, ambient incandescent lighting that casts a nostalgic glow, with a slightly shallow depth of field to keep the friends in sharp focus amidst the background of curios."
+    },
+    {
+      "id": "d27r10",
+      "type": "image",
+      "content": "images/d27_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Look for natural imperfections — real photos have dust, slight blur, and uneven lighting.",
+      "_note": "Prompt: A photorealistic photograph of a vintage brown and beige rotary telephone, slightly dusty, resting on a polished wooden surface. Shot with a macro lens, utilizing soft, diffused natural light from a nearby window, creating gentle reflections on the Bakelite, with a shallow depth of field blurring the background."
+    }
+  ],
+  "category_subtitle": "Our AI's gone antiquing; find the relics before they crumble!"
+}
