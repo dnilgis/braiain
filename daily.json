@@ -180,6 +180,13 @@
       "category_emoji": "🕰️",
       "category_subtitle": "Our AI's gone antiquing; find the relics before they crumble!",
       "challenge_file": "challenges/2026-03-02.json"
+  },
+    "2026-03-03": {
+      "day_number": 28,
+      "category": "World Wildlife Day",
+      "category_emoji": "🌍🐘🌳",
+      "category_subtitle": "World Wildlife Day: AI's on a safari, can you beat it?",
+      "challenge_file": "challenges/2026-03-03.json"
   }
 }
 
