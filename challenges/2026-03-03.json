@@ -1,0 +1,99 @@
+{
+  "day_number": 28,
+  "date": "2026-03-03",
+  "category": "World Wildlife Day",
+  "category_emoji": "🌍🐘🌳",
+  "rounds": [
+    {
+      "id": "d28r1",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1564760055775-d63b17a55c44?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxNHx8V2lsZGxpZmV8ZW58MHwwfHx8MTc3MjQ5MjMwMXww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Mylon Ollila on Unsplash",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://unsplash.com/photos/two-grey-elephants-on-grass-plains-during-sunset-j4ocWYAP_cs"
+    },
+    {
+      "id": "d28r2",
+      "type": "image",
+      "content": "images/d28_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Check edges carefully — AI often produces halos or unnatural blending where objects meet.",
+      "_note": "Prompt: A photorealistic photograph of a solitary red fox with rich russet fur, standing poised on a pristine, snow-covered field. Soft, diffused daylight illuminates the scene, emphasizing the delicate details of its fur and the sparkle of the fresh snow. Captured with a professional DSLR (e.g., Nikon D850) and a fast prime lens (e.g., Sigma 105mm f/1.4 Art) at f/1.8, creating a sharp focus on the fox's alert eyes and a creamy, out-of-focus snowy background."
+    },
+    {
+      "id": "d28r3",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1589656966895-2f33e7653819?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw1fHxXaWxkbGlmZXxlbnwwfDB8fHwxNzcyNDkyMzAxfDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Hans-Jurgen Mager on Unsplash",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://unsplash.com/photos/polar-bear-on-snow-covered-ground-during-daytime-qQWV91TTBrE"
+    },
+    {
+      "id": "d28r4",
+      "type": "image",
+      "content": "images/d28_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Look at reflections — real reflections match the environment, AI reflections are often random.",
+      "_note": "Prompt: A photorealistic photograph of a graceful brown deer standing amidst a dense thicket of green foliage and wildflowers in a sun-dappled forest. Gentle, natural light filters through the canopy, creating soft highlights and shadows on its velvety fur and the surrounding plants. Shot with a full-frame mirrorless camera (e.g., Fujifilm GFX 100S) and a versatile prime lens (e.g., Fujinon GF 80mm f/1.7 R WR) at f/2.0, capturing intricate details of the deer's coat and the lush forest environment with a natural, earthy color palette."
+    },
+    {
+      "id": "d28r5",
+      "type": "image",
+      "content": "images/d28_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Look for natural imperfections — real photos have dust, slight blur, and uneven lighting.",
+      "_note": "Prompt: A photorealistic photograph of two majestic African elephants traversing a vast, sun-drenched savanna at sunset. The low, warm golden light casts long, dramatic shadows across the dry grass, highlighting the texture of their wrinkled grey skin. Shot with a telephoto lens (e.g., Canon EF 400mm f/2.8L IS II USM) at a wide aperture (f/3.5) for a shallow depth of field, with cinematic bokeh in the background and a subtle lens flare from the setting sun."
+    },
+    {
+      "id": "d28r6",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1497752531616-c3afd9760a11?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxM3x8V2lsZGxpZmV8ZW58MHwwfHx8MTc3MjQ5MjMwMXww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Gary Bendig on Unsplash",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://unsplash.com/photos/raccoon-walking-on-lawn-grass-6GMq7AGxNbE"
+    },
+    {
+      "id": "d28r7",
+      "type": "image",
+      "content": "images/d28_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Check for symmetry — AI tends to make things too perfect and symmetrical.",
+      "_note": "Prompt: A photorealistic photograph of a mischievous raccoon in mid-stride, cautiously walking across a freshly mown, vibrant green lawn in an urban park. The early morning light casts soft, even illumination, highlighting the raccoon's masked face and striped tail. Captured from a low, eye-level perspective with a high-end camera (e.g., Canon EOS R3) and a fast telephoto zoom lens (e.g., Canon RF 70-200mm f/2.8L IS USM) at 120mm, f/4, resulting in a sharp subject against a softly blurred grassy background with natural, bright greens."
+    },
+    {
+      "id": "d28r8",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1545063914-a1a6ec821c88?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyfHxXaWxkbGlmZXxlbnwwfDB8fHwxNzcyNDkyMzAxfDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Scott Carroll on Unsplash",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://unsplash.com/photos/brown-deer-beside-plants-favQn8WgRyk"
+    },
+    {
+      "id": "d28r9",
+      "type": "image",
+      "content": "images/d28_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Examine text and labels — AI struggles with readable, consistent lettering.",
+      "_note": "Prompt: A photorealistic photograph of a powerful polar bear walking confidently across expansive, ice-covered terrain under a bright, clear Arctic daytime sky. The stark white environment creates a high-contrast scene, with crisp details on the bear's thick, white fur. Taken with a weather-sealed mirrorless camera (e.g., Sony Alpha 1) and a wide-angle zoom lens (e.g., Sony FE 16-35mm f/2.8 GM) at f/8 for environmental context, with sharp focus throughout and cool, natural lighting."
+    },
+    {
+      "id": "d28r10",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1474511320723-9a56873867b5?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw4fHxXaWxkbGlmZXxlbnwwfDB8fHwxNzcyNDkyMzAxfDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Ray Hennessy on Unsplash",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://unsplash.com/photos/brown-fox-on-snow-field-xUUZcpQlqpM"
+    }
+  ],
+  "category_subtitle": "World Wildlife Day: AI's on a safari, can you beat it?"
+}
