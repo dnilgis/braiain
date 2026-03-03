@@ -1,0 +1,99 @@
+{
+  "day_number": 29,
+  "date": "2026-03-04",
+  "category": "March Forth and Do Something Day!",
+  "category_emoji": "🚀✨",
+  "rounds": [
+    {
+      "id": "d29r1",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1516880711640-ef7db81be3e1?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxfHxidWlsZCUyMGElMjBob3VzZXxlbnwwfDB8fHwxNzcyNTY0MzkzfDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Randy Fath on Unsplash",
+      "pro_tip": "**DYNAMIC LIGHTING:** Real scenes present realistic, often uneven shadows and highlights. Light interacts authentically with diverse surfaces, showing nuanced reflections and textures.",
+      "source_url": "https://unsplash.com/photos/people-building-structure-during-daytime-ymf4_9Y9S_A"
+    },
+    {
+      "id": "d29r2",
+      "type": "image",
+      "content": "images/d29_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**REPETITION & PATTERNS:** Examine backgrounds, textures, or scattered objects. AI can generate repetitive patterns or unnaturally uniform elements lacking organic variation.",
+      "_note": "Prompt: A photorealistic photograph of a diverse group of smiling individuals, ranging in age and ethnicity, standing shoulder-to-shoulder, looking directly at the camera with confident and hopeful expressions. They are dressed in casual, brightly colored attire, with subtle \"March Forth\" pins visible on some. The setting is an outdoor community square under soft, golden hour light, creating a warm and inviting atmosphere. Shot with a Canon EOS 5D Mark IV, 35mm lens, f/2.0, 1/160s, ISO 400. Close-up group portrait, eye-level, emphasizing their unity and readiness for action, with a very shallow depth of field."
+    },
+    {
+      "id": "d29r3",
+      "type": "image",
+      "content": "images/d29_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**UNCANNY VALLEYS:** Observe faces, hands, and eyes closely; they might seem too perfect or subtly \"off.\" Details like fingers or teeth often lack genuine, natural imperfection.",
+      "_note": "Prompt: A photorealistic photograph of a large, diverse group of volunteers diligently participating in a beach cleanup. They are wearing gloves and carrying trash bags, stooping to pick up debris along the shoreline. The sky is bright and clear, reflecting off the damp sand, with the ocean waves gently rolling in the background. Shot with a Fujifilm GFX 100S, 63mm lens, f/8, 1/500s, ISO 100. Wide shot, panoramic feel, capturing the expanse of the beach and the scattered volunteers, with a vibrant, natural color palette."
+    },
+    {
+      "id": "d29r4",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/6646914/pexels-photo-6646914.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by RDNE Stock project on Pexels",
+      "pro_tip": "**OBJECT REALISM:** Tools, aid packages, or environmental elements may appear too clean, generic, or unnaturally placed. Look for simplified or distorted object details.",
+      "source_url": "https://www.pexels.com/photo/volunteers-assisting-an-old-man-on-a-wheelchair-6646914/"
+    },
+    {
+      "id": "d29r5",
+      "type": "image",
+      "content": "images/d29_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**TEXT ARTIFACTS:** Scrutinize any visible text on pins or labels. AI frequently garbles words, uses inconsistent fonts, or displays unnatural letter spacing.",
+      "_note": "Prompt: A photorealistic photograph of three enthusiastic teenagers, one girl and two boys, working together to assemble a new community garden planter box. They are laughing and focused, surrounded by gardening tools and bags of soil. The setting is a sunny afternoon in a vibrant community garden, with warm, direct sunlight casting gentle shadows. Shot with a Nikon Z7, 24-70mm lens at 35mm, f/4.0, 1/400s, ISO 200. Wide-angle shot, slightly low angle, capturing their full figures and the dynamic interaction, with the freshly built planter in the foreground."
+    },
+    {
+      "id": "d29r6",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1610928712141-a292b96f43e8?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxNXx8aGVscGluZ3xlbnwwfDB8fHwxNzcyNTY0NDgxfDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Maria Thalassinou on Unsplash",
+      "pro_tip": "**UNPREDICTABLE DETAILS:** Real environments feature natural clutter, unique textures, and a slightly chaotic arrangement of objects or people, not a perfectly composed scene.",
+      "source_url": "https://unsplash.com/photos/text-D1E7W9AHE40"
+    },
+    {
+      "id": "d29r7",
+      "type": "image",
+      "content": "images/d29_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**LIGHTING & SHADOWS:** AI images often boast unnaturally perfect, even lighting or overly stylized reflections. Real scenes exhibit more complex and varied light interaction.",
+      "_note": "Prompt: A photorealistic photograph of a small team of community volunteers collaboratively constructing a wooden bench for a local park. They are using power tools and hand tools, with sawdust visible in the air, under the clear bright light of a spring daytime. The background features blurred greenery and other park elements. Shot with a Sony Alpha 7 IV, 85mm lens, f/5.6, 1/320s, ISO 160. Medium-wide shot, capturing the full scope of their activity and the partially built bench, from a slightly elevated perspective."
+    },
+    {
+      "id": "d29r8",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/10505928/pexels-photo-10505928.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by cottonbro studio on Pexels",
+      "pro_tip": "**AUTHENTIC IMPERFECTIONS:** Real photos showcase natural blemishes, wrinkles, or wear on clothing and objects. Expect subtle imperfections like stray hairs or worn textures.",
+      "source_url": "https://www.pexels.com/photo/boys-repairing-a-bike-chain-10505928/"
+    },
+    {
+      "id": "d29r9",
+      "type": "image",
+      "content": "images/d29_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Look at reflections — real reflections match the environment, AI reflections are often random.",
+      "_note": "Prompt: A photorealistic photograph of a diverse group of smiling volunteers, dressed in casual work clothes, kneeling to speak with and hand aid packages to a senior adult in a wheelchair. The scene is outdoors on a bright, slightly overcast spring morning in a community park, with soft, even natural light illuminating their faces. Shot with a Canon EOS R5, 50mm lens, f/2.8, 1/250s, ISO 100. Medium shot, eye-level perspective, shallow depth of field with the background subtly blurred, emphasizing the connection between the volunteers and the senior."
+    },
+    {
+      "id": "d29r10",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1618477462041-2b6b1920e073?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyMXx8Y2xlYW51cHxlbnwwfDB8fHwxNzcyNTY0NDE1fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by OCG Saving The Ocean on Unsplash",
+      "pro_tip": "**GENUINE EXPRESSIONS:** Seek nuanced, natural expressions that aren't perfectly symmetrical. Real emotions appear spontaneous and varied, not like a manufactured \"stock photo\" smile.",
+      "source_url": "https://unsplash.com/photos/group-of-people-on-beach-during-daytime-uXfYLTmF6fo"
+    }
+  ],
+  "category_subtitle": "March Forth! Today, actually *do* something: detect AI!"
+}
