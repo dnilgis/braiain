@@ -194,6 +194,13 @@
       "category_emoji": "🚀✨",
       "category_subtitle": "March Forth! Today, actually *do* something: detect AI!",
       "challenge_file": "challenges/2026-03-04.json"
+  },
+    "2026-03-05": {
+      "day_number": 30,
+      "category": "National Cheese Doodle Day",
+      "category_emoji": "🧀",
+      "category_subtitle": "Don't get caught orange-handed! AI knows cheese.",
+      "challenge_file": "challenges/2026-03-05.json"
   }
 }
 
