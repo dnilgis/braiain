@@ -1,0 +1,99 @@
+{
+  "day_number": 30,
+  "date": "2026-03-05",
+  "category": "National Cheese Doodle Day",
+  "category_emoji": "🧀",
+  "rounds": [
+    {
+      "id": "d30r1",
+      "type": "image",
+      "content": "images/d30_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "FLAWLESS PACKAGING: AI often renders snack bags too perfectly. Look for unnaturally pristine surfaces, uniform crinkles, or a complete lack of branding imperfections on the bag.",
+      "_note": "Prompt: A photorealistic photograph of a vast and vibrant retail store display aisle, densely packed from eye-level to floor with hundreds of colorful snack bags, with a prominent focus on a section overflowing with various cheese doodle brands and sizes. The scene is illuminated by typical bright fluorescent overhead store lighting, creating a high-key look, showcasing the immense abundance of products. Shot with a wide-angle lens (e.g., 16-35mm f/4) on a Fujifilm GFX 100S, ISO 400, f/8, capturing the depth and scale of the merchandising."
+    },
+    {
+      "id": "d30r2",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/9456721/pexels-photo-9456721.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Erik Mclean on Pexels",
+      "pro_tip": "ORGANIC CRINKLES: Real snack bags feature natural, asymmetrical crinkles and nuanced reflections. Look for subtle wear, authentic light play, and true-to-life folds on the packaging.",
+      "source_url": "https://www.pexels.com/photo/close-up-of-a-box-of-cheetos-9456721/"
+    },
+    {
+      "id": "d30r3",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/15475390/pexels-photo-15475390.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Liam Lyons on Pexels",
+      "pro_tip": "GENERIC BACKGROUNDS: AI retail displays often lack real-world clutter. Look for unnaturally perfect product alignment, absence of price tags, or subtly repetitive background elements in the aisle.",
+      "source_url": "https://www.pexels.com/photo/cheese-puffs-in-a-container-15475390/"
+    },
+    {
+      "id": "d30r4",
+      "type": "image",
+      "content": "images/d30_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "REPETITIVE PATTERNS: AI struggles with natural variation in groups. Observe identical crinkles, uniform bag puffiness, or subtly distorted text on the Cheetos Baked bags in the lot.",
+      "_note": "Prompt: A photorealistic photograph of a close-up on a bold, brightly colored Cheetos Mac'N Cheese box, prominently featuring its iconic branding and product imagery, resting on a polished, dark marble kitchen counter. The focus is tack-sharp on the intricate details of the packaging, with an extremely shallow depth of field subtly blurring background elements of the kitchen. Warm, directional light from an unseen window to the left highlights the textures and gloss of the cardboard. Taken with a mirrorless camera (e.g., Canon EOS R6), 100mm macro lens, ISO 100, f/2.8, emphasizing the product's visual appeal."
+    },
+    {
+      "id": "d30r5",
+      "type": "image",
+      "content": "images/d30_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "UNCANNY ANATOMY: Check the hand’s realism. AI hands reaching into doodle bowls can have unnatural joints, too-smooth skin, or odd finger proportions.",
+      "_note": "Prompt: A photorealistic photograph of a 'lot' or small mound of multiple, distinct Cheetos Baked chip bags, predominantly orange and yellow, arranged casually on a mottled concrete surface. The bags are brightly illuminated by a studio strobe with a parabolic softbox from the front, bringing out the glossy sheen and detailed branding of each package. Captured with a Nikon D850, 24-70mm f/2.8 lens, ISO 160, f/5.6, creating a clean product shot aesthetic with subtle texture."
+    },
+    {
+      "id": "d30r6",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1566478989037-eec170784d0b?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyfHxjaGVldG9zfGVufDB8MHx8fDE3NzI2NjY2Mjh8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Ryan Quintal on Unsplash",
+      "pro_tip": "**For Real Photos (Based on Real photos 1-5):**",
+      "source_url": "https://unsplash.com/photos/cheetos-baked-chip-bag-lot-GEpzcRu5QGA"
+    },
+    {
+      "id": "d30r7",
+      "type": "image",
+      "content": "images/d30_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Check edges carefully — AI often produces halos or unnatural blending where objects meet.",
+      "_note": "Prompt: A photorealistic photograph of a human hand, with slightly orange-dusted fingertips, reaching into an antique ceramic bowl overflowing with irregularly shaped, vivid orange cheese doodles, resting on a textured wooden cutting board. Shot with a high-angle overhead view, soft, natural window light from the left highlights the crispy texture of the snacks and casts gentle shadows. Taken with a Canon EOS R5, 50mm f/1.8 lens, ISO 200, f/2.8."
+    },
+    {
+      "id": "d30r8",
+      "type": "image",
+      "content": "images/d30_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**For AI-Generated Images (Based on prompts 1-5):**",
+      "_note": "Prompt: A photorealistic photograph of a single, unbranded orange and yellow plastic snack bag, slightly crinkled, containing cheese doodles, laid flat and perfectly centered on a clean, stark white minimalist table surface. The lighting is even and diffused, coming from an overhead softbox, casting minimal shadows and emphasizing the vibrant colors of the packaging against the pristine white. Shot with a Sony Alpha A7 III, 85mm f/1.4 lens, ISO 100, f/2.0, with a very shallow depth of field."
+    },
+    {
+      "id": "d30r9",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1688217170693-e821c6e18d72?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw4fHxjaGlwc3xlbnwwfDB8fHwxNzcyNjY2ODQ4fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Di Weng on Unsplash",
+      "pro_tip": "AUTHENTIC TEXTURES: Real images show genuine texture. Observe natural skin pores, varied orange dust on fingertips, and truly unique, irregularly shaped cheese doodles in the bowl.",
+      "source_url": "https://unsplash.com/photos/a-display-in-a-store-filled-with-lots-of-chips-2lu4hpLgBxY"
+    },
+    {
+      "id": "d30r10",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1581533940608-d2973792f542?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxfHxjaGVldG9zfGVufDB8MHx8fDE3NzI2NjY2Mjh8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Giorgio Trovato on Unsplash",
+      "pro_tip": "TEXT ARTIFACTS: AI struggles with legible text. Examine the Cheetos Mac'N Cheese box branding closely for subtly warped, nonsensical, or perfectly uniform lettering, even if the overall image looks sharp.",
+      "source_url": "https://unsplash.com/photos/orange-and-yellow-plastic-pack-on-white-table-Xw4AGbhLKo0"
+    }
+  ],
+  "category_subtitle": "Don't get caught orange-handed! AI knows cheese."
+}
