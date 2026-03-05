@@ -201,6 +201,13 @@
       "category_emoji": "🧀",
       "category_subtitle": "Don't get caught orange-handed! AI knows cheese.",
       "challenge_file": "challenges/2026-03-05.json"
+  },
+    "2026-03-06": {
+      "day_number": 31,
+      "category": "National Dentist's Day",
+      "category_emoji": "🦷",
+      "category_subtitle": "Minty fresh AI — can you spot the digital plaque?",
+      "challenge_file": "challenges/2026-03-06.json"
   }
 }
 
