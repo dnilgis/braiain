@@ -1,0 +1,99 @@
+{
+  "day_number": 31,
+  "date": "2026-03-06",
+  "category": "National Dentist's Day",
+  "category_emoji": "🦷",
+  "rounds": [
+    {
+      "id": "d31r1",
+      "type": "image",
+      "content": "images/d31_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Look at reflections — real reflections match the environment, AI reflections are often random.",
+      "_note": "Prompt: A photorealistic photograph of a friendly male dentist, wearing a crisp white coat, gesturing towards an intricate, illuminated 3D dental model on a brightly lit desk, explaining its details to an attentive female patient. The scene is set in a modern, sunlit dental consultation room with large windows, captured with a Canon EOS R5 and a 50mm f/1.4 lens, using soft natural daylight filtering from the left, emphasizing their engaged expressions and the model's detail. Medium shot, eye-level perspective."
+    },
+    {
+      "id": "d31r2",
+      "type": "image",
+      "content": "images/d31_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**HANDS & INSTRUMENTS:** Look for odd finger counts, distorted shapes, or instruments merging with hands. AI often struggles with complex fine motor details.",
+      "_note": "Prompt: A photorealistic photograph of a focused female dentist, wearing a light blue scrub top and medical gloves, gently performing a routine dental checkup on a male patient reclined in a modern dental chair, who is wearing clear protective eyewear. The dentist is holding a dental mirror and explorer, illuminated by the bright, directional overhead operatory light. Shot with a Sony A7 III and a 85mm f/1.8 lens, using a slightly low angle, capturing the intensity of the procedure with clinical precision."
+    },
+    {
+      "id": "d31r3",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1758205308181-d52b41e00cef?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw2fHxEZW50aXN0JTI3c3xlbnwwfDB8fHwxNzcyNzQ4MDU2fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Navy Medicine on Unsplash",
+      "pro_tip": "**NATURAL LIGHTING:** Observe complex light interactions, varied shadow depths, and realistic highlights. Real scenes have nuanced illumination.",
+      "source_url": "https://unsplash.com/photos/dentist-examining-a-patients-teeth-with-assistant-w6Zs36LExxI"
+    },
+    {
+      "id": "d31r4",
+      "type": "image",
+      "content": "images/d31_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**UNNATURAL TEXTURES:** Check for overly smooth skin, uniform fabric, or overly 'plastic' reflections on equipment. Real-world textures have subtle variations.",
+      "_note": "Prompt: A photorealistic photograph of a kind female dentist, wearing purple gloves and a friendly smile, gently giving a routine dental checkup to an excited young boy, approximately 7 years old, who is sitting upright in a colorful pediatric dental chair. The dentist is holding a small dental mirror, making eye contact with the boy. The bright, warm lighting from an overhead light source creates a welcoming atmosphere in the modern, subtly decorated clinic. Captured with a Fujifilm GFX 100S and a 63mm f/2.8 lens, employing a wide-angle, slightly low perspective to emphasize the child's perspective."
+    },
+    {
+      "id": "d31r5",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/31017708/pexels-photo-31017708.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by The Row Dental on Pexels",
+      "pro_tip": "**LIGHTING & SHADOWS:** Spot inconsistencies. AI might produce shadows that don't match the light source, or reflections that defy physics.",
+      "source_url": "https://www.pexels.com/photo/dental-consultation-with-3d-model-display-31017708/"
+    },
+    {
+      "id": "d31r6",
+      "type": "image",
+      "content": "images/d31_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**PERFECT SYMMETRY:** Observe faces and objects. AI can create uncanny symmetry, making details seem unnaturally flawless or too mirrored.",
+      "_note": "Prompt: A photorealistic photograph of a diligent male dentist, in a white lab coat and blue gloves, meticulously examining a patient's open mouth with a dental mirror, while a female dental assistant, in matching blue scrubs, stands ready beside him, holding a suction tool. The patient is reclined in a white dental chair, out of focus in the foreground, with the focus sharply on the dentist's and assistant's hands and the patient's mouth. The scene is brightly lit by a cool, diffused LED dental light from above, captured with a Nikon D850 and a 105mm f/2.8 macro lens for extreme detail, from a slightly elevated perspective."
+    },
+    {
+      "id": "d31r7",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/8224659/pexels-photo-8224659.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Lakhinandan Borah on Pexels",
+      "pro_tip": "**CONTEXTUAL CLUES:** Spot specific brand logos, realistic wear on equipment, or regional details like architecture. These ground the image in reality.",
+      "source_url": "https://www.pexels.com/photo/person-wearing-a-latex-gloves-8224659/"
+    },
+    {
+      "id": "d31r8",
+      "type": "image",
+      "content": "images/d31_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**GIBBERISH TEXT:** Examine any visible text on equipment, posters, or screens. AI-generated text is often garbled, warped, or nonsensical.",
+      "_note": "Prompt: A photorealistic photograph of an immaculately clean and organized modern dental operatory, featuring a prominent, ergonomic bright blue dental chair positioned centrally, surrounded by an array of gleaming, state-of-the-art dental equipment including an overhead lamp, a monitor arm, and various instruments on a mobile tray. The room boasts minimalist decor with light-colored walls and flooring, illuminated by crisp, shadowless overhead LED panel lighting, creating a sterile yet inviting atmosphere. Shot with a Canon EOS 5D Mark IV and a 24-70mm f/2.8 lens, utilizing a wide-angle, slightly elevated perspective to showcase the entire room's preparedness."
+    },
+    {
+      "id": "d31r9",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1643660527071-52e37cf7c7ea?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxOXx8RGVudGlzdCUyN3N8ZW58MHwwfHx8MTc3Mjc0ODA1Nnww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Ozkan Guner on Unsplash",
+      "pro_tip": "**ORGANIC TEXTURE:** Notice realistic pores, varied fabric weaves, and natural reflections with slight distortions. Real textures are diverse and detailed.",
+      "source_url": "https://unsplash.com/photos/a-dental-room-with-a-blue-chair-and-dental-equipment-AQG6C_xYEpA"
+    },
+    {
+      "id": "d31r10",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/6627420/pexels-photo-6627420.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by www.kaboompics.com on Pexels",
+      "pro_tip": "**AUTHENTIC IMPERFECTIONS:** Look for natural wrinkles in clothing, stray hairs, or subtle smudges on surfaces. Real life is rarely perfectly pristine.",
+      "source_url": "https://www.pexels.com/photo/a-patient-getting-a-dental-checkup-6627420/"
+    }
+  ],
+  "category_subtitle": "Minty fresh AI — can you spot the digital plaque?"
+}
