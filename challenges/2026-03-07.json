@@ -1,0 +1,99 @@
+{
+  "day_number": 32,
+  "date": "2026-03-07",
+  "category": "National Flapjack Day",
+  "category_emoji": "🥞",
+  "rounds": [
+    {
+      "id": "d32r1",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1664350471028-34a1d2651366?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxOXx8RmxhcGphY2t8ZW58MHwwfHx8MTc3MjgzODY5N3ww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Nima Naseri on Unsplash",
+      "pro_tip": "**EXAGGERATED REALISM:** Be wary of objects rendered with exaggerated qualities, like syrup that cascades too perfectly or stacks that defy gravity, often under flawless studio light.",
+      "source_url": "https://unsplash.com/photos/a-person-cutting-a-cake-8jNWR7pB4B0"
+    },
+    {
+      "id": "d32r2",
+      "type": "image",
+      "content": "images/d32_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Check for symmetry — AI tends to make things too perfect and symmetrical.",
+      "_note": "Prompt: A photorealistic photograph of a hand gently slicing into a towering stack of golden-brown flapjacks with a silver knife, a small pat of melting butter glistening on top. The scene is bathed in soft, warm morning light streaming from a nearby window, creating a beautiful bokeh in the blurred background of a rustic kitchen. Shot with a Canon EOS 5D Mark IV, 50mm f/1.4 lens, ISO 200, shutter speed 1/125s, shallow depth of field."
+    },
+    {
+      "id": "d32r3",
+      "type": "image",
+      "content": "images/d32_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**UNNATURAL ARRANGEMENT:** Notice elements arranged too precisely or uniformly. Food may appear sterile, lacking the slight disarray of a naturally captured scene.",
+      "_note": "Prompt: A photorealistic photograph of a single, freshly cooked golden-brown flapjack resting in a well-seasoned, dark cast iron skillet, its slightly crisp edges and soft interior texture perfectly visible. A faint wisp of steam rises from the warm surface. The lighting is dramatic and directional, coming from the side to create subtle shadows and highlight the rich, warm tones against the dark background of the pan and surrounding stovetop. Shot with a Nikon D850, 85mm f/1.8 lens, f/2.0, ISO 400, shutter speed 1/100s, emphasizing depth and texture."
+    },
+    {
+      "id": "d32r4",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/19083549/pexels-photo-19083549.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Wil Carranza on Pexels",
+      "pro_tip": "**NATURAL COMPOSITION:** Seek out compositions with natural clutter or slight asymmetries. Lighting might be less theatrical, showing authentic, varied interactions.",
+      "source_url": "https://www.pexels.com/photo/pancakes-with-maple-syrup-19083549/"
+    },
+    {
+      "id": "d32r5",
+      "type": "image",
+      "content": "images/d32_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**HYPER-PERFECTION:** Look for impossibly perfect food presentation and flawless textures, like butter melting just so or syrup glistening uniformly, often lacking natural imperfections.",
+      "_note": "Prompt: A photorealistic photograph of a perfectly arranged stack of three fluffy flapjacks on a pristine white ceramic plate, adorned with a generous scattering of fresh, glossy blueberries and a light dusting of powdered sugar. A gentle drizzle of amber maple syrup glistens over the top. The image is taken from a slightly elevated eye-level angle, illuminated by bright, diffused natural light from a north-facing window, highlighting the texture and freshness. Shot with a Sony Alpha a7R IV, 100mm macro lens, f/2.8, ISO 100, shutter speed 1/160s, crisp focus on the flapjacks."
+    },
+    {
+      "id": "d32r6",
+      "type": "image",
+      "content": "images/d32_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**ARTIFICIAL LIGHTING:** Observe lighting that feels overly controlled or theatrical, creating shadows that are too clean or uniform, making textures pop unnaturally.",
+      "_note": "Prompt: A photorealistic photograph of a picturesque outdoor breakfast scene on a sun-dappled patio, featuring a plate of warm flapjacks drizzled with syrup, a glass of freshly squeezed orange juice, and a steaming cup of coffee. The table is rustic, adorned with a checkered cloth and surrounded by lush green foliage, suggesting a relaxed, cozy ambiance. The scene is illuminated by the soft, warm glow of early morning sunlight filtering through trees, creating beautiful dappled light and long, gentle shadows. Shot with a Fujifilm GFX 100S, 80mm f/1.7 lens, f/2.2, ISO 160, shutter speed 1/200s, capturing a wide, inviting perspective."
+    },
+    {
+      "id": "d32r7",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/1861784/pexels-photo-1861784.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Helena Lopes on Pexels",
+      "pro_tip": "**AUTHENTIC WEAR & TEAR:** Identify signs of real-world use, such as subtle scuffs on a pan or uneven textures in food, which AI often omits.",
+      "source_url": "https://www.pexels.com/photo/two-people-eating-1861784/"
+    },
+    {
+      "id": "d32r8",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1630441508966-431c08536d1b?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwzfHxwYW5jYWtlJTIwYmF0dGVyfGVufDB8MHx8fDE3NzI4Mzg3ODZ8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Brian Wangenheim on Unsplash",
+      "pro_tip": "**ORGANIC IMPERFECTIONS:** Look for slight natural variations in fruit shape or syrup pooling, and minor wear on objects like plates, hinting at authenticity.",
+      "source_url": "https://unsplash.com/photos/brown-and-black-pastry-on-black-pan-nHdn0VNJKQo"
+    },
+    {
+      "id": "d32r9",
+      "type": "image",
+      "content": "images/d32_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**SYNTHETIC AMBIANCE:** Check for environments that feel generic or too idyllic. Dappled light and shadows might appear repetitive or unnaturally sharp without true depth.",
+      "_note": "Prompt: A photorealistic photograph of an impossibly tall and fluffy stack of golden-brown flapjacks, generously drenched in glistening, amber maple syrup that cascades down the sides, collecting in a small pool at the base. A small square of butter slowly melts on the very top, adding to the richness. The background is softly blurred to keep full focus on the flapjack stack, which is bathed in bright, even studio lighting designed to make the syrup shine and the texture of the flapjacks pop. Shot with a Canon R5, 70-200mm f/2.8 lens at 100mm, f/3.2, ISO 100, shutter speed 1/125s, emphasizing the deliciousness and visual appeal."
+    },
+    {
+      "id": "d32r10",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1619592982904-ef0a0da5b7e6?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxNnx8RmxhcGphY2t8ZW58MHwwfHx8MTc3MjgzODY5N3ww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Mikki Speid on Unsplash",
+      "pro_tip": "**SUBJECT DISCREPANCY:** Notice if the central subject significantly deviates from the prompt's description, for instance, a cake instead of flapjacks.",
+      "source_url": "https://unsplash.com/photos/pancakes-with-black-berries-on-white-ceramic-plate-NAORMjpT4dw"
+    }
+  ],
+  "category_subtitle": "National Flapjack Day: Don't let AI butter you up!"
+}
