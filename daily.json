@@ -208,6 +208,13 @@
       "category_emoji": "🦷",
       "category_subtitle": "Minty fresh AI — can you spot the digital plaque?",
       "challenge_file": "challenges/2026-03-06.json"
+  },
+    "2026-03-07": {
+      "day_number": 32,
+      "category": "National Flapjack Day",
+      "category_emoji": "🥞",
+      "category_subtitle": "National Flapjack Day: Don't let AI butter you up!",
+      "challenge_file": "challenges/2026-03-07.json"
   }
 }
 
