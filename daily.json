@@ -215,6 +215,13 @@
       "category_emoji": "🥞",
       "category_subtitle": "National Flapjack Day: Don't let AI butter you up!",
       "challenge_file": "challenges/2026-03-07.json"
+  },
+    "2026-03-08": {
+      "day_number": 33,
+      "category": "Daylight Saving Time Begins (Spring Forward)",
+      "category_emoji": "⏰",
+      "category_subtitle": "Spring forward! Our AI's already seen tomorrow's images.",
+      "challenge_file": "challenges/2026-03-08.json"
   }
 }
 
