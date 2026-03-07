@@ -1,0 +1,99 @@
+{
+  "day_number": 33,
+  "date": "2026-03-08",
+  "category": "Daylight Saving Time Begins (Spring Forward)",
+  "category_emoji": "⏰",
+  "rounds": [
+    {
+      "id": "d33r1",
+      "type": "image",
+      "content": "images/d33_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**FLAWLESS DEW**: Look for perfectly spherical, evenly distributed dew drops on petals and leaves, often glistening unnaturally under ideal soft light. The texture might seem too smooth.",
+      "_note": "Prompt: A photorealistic photograph of a sprawling cluster of delicate white snowdrops scattered across a dew-kissed, vibrant green grass field, reaching towards the soft, diffused light of an early spring morning. Shot with a wide-angle lens (e.g., 24mm) at eye-level, capturing the expansive field with sharp focus on the foreground flowers and a slight natural vignette, bathed in the cool, crisp light of dawn."
+    },
+    {
+      "id": "d33r2",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1709459991438-fabb89f2873c?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxOXx8ZGF5bGlnaHQlMjBzYXZpbmdzJTIwdGltZXxlbnwwfDB8fHwxNzcyODk2NjczfDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Darth Liu on Unsplash",
+      "pro_tip": "**VARIED GRASS**: Look for a less uniform grass texture with varying shades of green, natural inconsistencies in dew distribution, or slight imperfections in the flowers' growth.",
+      "source_url": "https://unsplash.com/photos/a-clock-on-a-pole-in-front-of-a-tree-jwsBqonW7S0"
+    },
+    {
+      "id": "d33r3",
+      "type": "image",
+      "content": "images/d33_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**PERFECT LINES**: Note the unnaturally smooth asphalt, perfectly uniform daffodil field, and shadows that seem ideally placed to guide the eye without any real-world imperfections.",
+      "_note": "Prompt: A photorealistic photograph of a young woman, illuminated by the soft, diffused light of an early spring morning streaming through a sheer curtain, gently stretching while seated on a crisp white duvet. Her posture conveys a mix of morning wakefulness and the slight disorientation of 'springing forward'. Captured with a prime lens (e.g., 85mm) at f/2.0, creating a dreamy shallow depth of field with gentle bokeh, emphasizing the intimate moment of adjusting to the new, earlier light in a tranquil bedroom setting."
+    },
+    {
+      "id": "d33r4",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1681397133807-da0964048e8c?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyfHxzcHJpbmclMjBmb3J3YXJkfGVufDB8MHx8fDE3NzI4OTY2MTF8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by EVGEN SLAVIN on Unsplash",
+      "pro_tip": "**NATURAL IMPERFECTIONS**: Search for slight blemishes on petals, irregular water droplets, or natural debris around the flower, indicating real-world grit and authenticity.",
+      "source_url": "https://unsplash.com/photos/a-group-of-white-flowers-sitting-on-top-of-a-grass-covered-field-3SrE9bCkVtc"
+    },
+    {
+      "id": "d33r5",
+      "type": "image",
+      "content": "images/d33_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Look at reflections — real reflections match the environment, AI reflections are often random.",
+      "_note": "Prompt: A photorealistic photograph of a single, vibrant purple crocus pushing its way through a crack in an old concrete sidewalk, its petals glistening with morning dew. The sunlight, soft and golden from an early spring sunrise, casts a gentle warmth. Shot with a macro lens at f/2.8, creating a shallow depth of field with creamy bokeh in the background, highlighting the flower's resilience against the urban texture."
+    },
+    {
+      "id": "d33r6",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1686343976433-d0a2ed5deac8?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw5fHxzcHJpbmclMjBhaGVhZHxlbnwwfDB8fHwxNzcyODk2NzIzfDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Kingsuk Pasari on Unsplash",
+      "pro_tip": "**REAL WEAR**: Identify genuine signs of age like rust, peeling paint, or slight imperfections on the clock face or pole that indicate true weathering, not artificial \"antique\" details.",
+      "source_url": "https://unsplash.com/photos/a-road-with-a-field-of-yellow-flowers-next-to-it-Qd0nrhNnz0M"
+    },
+    {
+      "id": "d33r7",
+      "type": "image",
+      "content": "images/d33_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**EXACT TIME**: Check for clock hands positioned *too* precisely at the specific time (e.g., 8:05 AM) without any slight variation or blur, implying a forced perfect scenario.",
+      "_note": "Prompt: A photorealistic photograph of a quiet, sun-drenched asphalt country road gently curving into the distance, bordered on one side by an expansive, vibrant field of brilliant yellow daffodils in full bloom. The early morning sun, warm and clear, casts long shadows from a few roadside trees across the pavement. Shot with a wide-angle lens (e.g., 35mm) from a low perspective, creating a strong leading line with the road and emphasizing the cheerful explosion of spring color under a bright blue sky."
+    },
+    {
+      "id": "d33r8",
+      "type": "image",
+      "content": "images/d33_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**UNIFORM CLUSTERS**: Observe unnaturally even distribution and identical vibrancy across all flowers and grass. The dew coverage might appear too perfect and consistent everywhere.",
+      "_note": "Prompt: A photorealistic photograph of an antique, wrought-iron public clock mounted high on a weathered metal pole, its hands clearly indicating 8:05 AM, representing the 'spring forward' adjustment. In the background, a large, budding oak tree with new green leaves provides a natural frame. Captured with a 50mm prime lens at f/4, under crisp, clear morning sunlight, highlighting the intricate details of the clock face and the emerging spring foliage with a deep, natural contrast."
+    },
+    {
+      "id": "d33r9",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1552650272-b8a34e21bc4b?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxfHx3YWtlJTIwdXB8ZW58MHwwfHx8MTc3Mjg5Njc2Mnww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by bruce mars on Unsplash",
+      "pro_tip": "**UNEVEN PATTERNS**: Observe natural inconsistencies in the daffodil field, less perfectly manicured road edges, or shadows that fall more organically, showing true environmental conditions.",
+      "source_url": "https://unsplash.com/photos/woman-sitting-on-white-bed-while-stretching-wBuPCQiweuA"
+    },
+    {
+      "id": "d33r10",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1648412858718-f213a48d6383?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxMnx8c3ByaW5nJTIwZm9yd2FyZHxlbnwwfDB8fHwxNzcyODk2NjExfDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by John Carney on Unsplash",
+      "pro_tip": "**DREAMY BOKEH**: Spot overly smooth skin, a hyper-perfect 'dreamy' background blur (bokeh), and light that diffuses too ideally, often lacking real-world light variations.",
+      "source_url": "https://unsplash.com/photos/a-purple-flower-sitting-on-top-of-a-sidewalk-bCIwxue6IyM"
+    }
+  ],
+  "category_subtitle": "Spring forward! Our AI's already seen tomorrow's images."
+}
