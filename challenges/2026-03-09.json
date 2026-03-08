@@ -1,0 +1,99 @@
+{
+  "day_number": 34,
+  "date": "2026-03-09",
+  "category": "National Meatball Day",
+  "category_emoji": "🍝",
+  "rounds": [
+    {
+      "id": "d34r1",
+      "type": "image",
+      "content": "images/d34_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**EXAGGERATED GLOSS:** Watch for overly glistening surfaces and perfect, static steam that looks generated rather than naturally dissipating. Realism is often less shiny.",
+      "_note": "Prompt: A photorealistic photograph of a happy couple toasting with glasses of red wine at a dimly lit, cozy Italian restaurant, with a plate of gourmet meatballs and pasta visible in soft focus on their candlelit table, captured with an 85mm prime lens at f/1.8, creating beautiful bokeh and a warm, intimate ambiance."
+    },
+    {
+      "id": "d34r2",
+      "type": "image",
+      "content": "images/d34_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Look at reflections — real reflections match the environment, AI reflections are often random.",
+      "_note": "Prompt: A photorealistic photograph of a close-up, top-down view of perfectly browned, sauceless meatballs piled high in a clean white ceramic serving bowl, illuminated by soft, natural overhead light, captured with a macro lens and a shallow depth of field, emphasizing the crisp exterior texture."
+    },
+    {
+      "id": "d34r3",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1674456720401-1557c76bf72c?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxOHx8c3BhZ2hldHRpJTIwYW5kJTIwTWVhdGJhbGxzfGVufDB8MHx8fDE3NzI5ODY4NDJ8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Elena Leya on Unsplash",
+      "pro_tip": "**NATURAL MESSINESS:** Look for subtle, realistic imperfections like a stray sauce drop or slightly uneven pasta twirl. Hand gestures appear more natural, not hyper-idealized.",
+      "source_url": "https://unsplash.com/photos/a-plate-of-spaghetti-with-meatballs-and-sauce-ptJf7Aqq16I"
+    },
+    {
+      "id": "d34r4",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/6248902/pexels-photo-6248902.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Gary  Barnes on Pexels",
+      "pro_tip": "**GENUINE EXPRESSIONS:** People in real photos exhibit natural, less posed expressions and body language. Background elements often show subtle, unforced chaos.",
+      "source_url": "https://www.pexels.com/photo/crop-unrecognizable-woman-eating-delicious-pasta-with-meat-balls-6248902/"
+    },
+    {
+      "id": "d34r5",
+      "type": "image",
+      "content": "images/d34_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**ARTIFICIAL AMBIANCE:** Background bokeh or character faces might appear too smooth or subtly distorted. The overall \"cozy\" feeling can feel manufactured.",
+      "_note": "Prompt: A photorealistic photograph of a tight close-up crop of an anonymous person's hand twirling spaghetti with a large meatball onto a fork, about to take a bite, with a glass of white wine in soft focus in the background at a stylish restaurant, taken with a 50mm lens under soft, flattering interior lighting, capturing the anticipation and enjoyment."
+    },
+    {
+      "id": "d34r6",
+      "type": "image",
+      "content": "images/d34_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**UNNATURAL PERFECTION:** AI images often show food that's too flawless, lacking slight imperfections in texture, shape, or browning. Look for unnaturally pristine surfaces.",
+      "_note": "Prompt: A photorealistic photograph of a rustic cast-iron skillet filled with juicy, glistening meatballs simmering in a rich tomato sauce, just pulled from the oven with visible steam rising, captured with a prime lens under warm, directional kitchen lighting and a medium depth of field."
+    },
+    {
+      "id": "d34r7",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/6248881/pexels-photo-6248881.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Gary  Barnes on Pexels",
+      "pro_tip": "**AUTHENTIC IMPERFECTIONS:** Real food photos show natural variations in cooking, browning, and surface textures. Steam often appears more dynamic and less perfectly rendered.",
+      "source_url": "https://www.pexels.com/photo/couple-having-date-in-restaurant-while-clinking-wineglasses-6248881/"
+    },
+    {
+      "id": "d34r8",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1745031601345-30fb3f97b118?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxM3x8TWVhdGJhbGx8ZW58MHwwfHx8MTc3Mjk4Njc1Mnww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Brad on Unsplash",
+      "pro_tip": "**SUBJECT DIVERSITY:** Real photos can feature unexpected items or be less on-theme than prompts suggest. Look for less \"food-porn\" styling and natural variations.",
+      "source_url": "https://unsplash.com/photos/meatballs-are-fresh-out-of-the-oven-ready-to-eat-3PjDB-4OGF0"
+    },
+    {
+      "id": "d34r9",
+      "type": "image",
+      "content": "images/d34_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**ANATOMICAL ODDITIES:** Hands and fingers can subtly bend unnaturally or have too many/few digits. Spaghetti twirls might be too perfect or uniform.",
+      "_note": "Prompt: A photorealistic photograph of a meticulously plated serving of spaghetti with three perfectly arranged, sauce-covered meatballs and fresh basil, resting on a rustic wooden table, illuminated by bright, diffused natural light from a window, shot from a slightly elevated angle with a 100mm macro lens to highlight texture and detail."
+    },
+    {
+      "id": "d34r10",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1605333409672-4f7db57ba3a2?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyMnx8TWVhdGJhbGx8ZW58MHwwfHx8MTc3Mjk4Njc1Mnww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Jermaine Ee on Unsplash",
+      "pro_tip": "**OVER-STYLED PRESENTATION:** Food plating can be unnaturally symmetrical, with pristine garnishes and sauces that are too uniform. Details feel artificially enhanced.",
+      "source_url": "https://unsplash.com/photos/brown-chips-on-white-ceramic-bowl-HVjuen9ik-U"
+    }
+  ],
+  "category_subtitle": "Saucy AI: Don't Get Fooled by Faux Meatballs!"
+}
