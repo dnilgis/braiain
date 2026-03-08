@@ -222,6 +222,13 @@
       "category_emoji": "⏰",
       "category_subtitle": "Spring forward! Our AI's already seen tomorrow's images.",
       "challenge_file": "challenges/2026-03-08.json"
+  },
+    "2026-03-09": {
+      "day_number": 34,
+      "category": "National Meatball Day",
+      "category_emoji": "🍝",
+      "category_subtitle": "Saucy AI: Don't Get Fooled by Faux Meatballs!",
+      "challenge_file": "challenges/2026-03-09.json"
   }
 }
 
