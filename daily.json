@@ -229,6 +229,13 @@
       "category_emoji": "🍝",
       "category_subtitle": "Saucy AI: Don't Get Fooled by Faux Meatballs!",
       "challenge_file": "challenges/2026-03-09.json"
+  },
+    "2026-03-10": {
+      "day_number": 35,
+      "category": "Mario Day",
+      "category_emoji": "🍄🎮",
+      "category_subtitle": "MAR10 Day: Don't let Bowser trick your AI!",
+      "challenge_file": "challenges/2026-03-10.json"
   }
 }
 
