@@ -1,0 +1,99 @@
+{
+  "day_number": 35,
+  "date": "2026-03-10",
+  "category": "Mario Day",
+  "category_emoji": "🍄🎮",
+  "rounds": [
+    {
+      "id": "d35r1",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/14823949/pexels-photo-14823949.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Suki Lee on Pexels",
+      "pro_tip": "**GENUINE EXPRESSIONS:** Observe nuanced, un-staged human emotions and reactions beyond just a perfect smile. Real interactions often show varied feelings.",
+      "source_url": "https://www.pexels.com/photo/mario-bros-built-with-blocks-14823949/"
+    },
+    {
+      "id": "d35r2",
+      "type": "image",
+      "content": "images/d35_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**SURGICAL FOCUS:** Notice incredibly precise focus and blur. AI often isolates subjects with a \"studio product shot\" feel, even in dynamic, complex scenes.",
+      "_note": "Prompt: A photorealistic photograph of a lively group of diverse individuals intensely engaged in playing video games at a bustling \"Mario Day\" themed Nintendo event. Multiple brightly lit screens display colorful Mario Kart races, casting dynamic glows on the players' faces. The atmosphere is electric, filled with vibrant event banners and subtle background blurs of other attendees. Captured with a wide-angle lens at f/3.5, using ambient overhead lighting and screen glow to illuminate the scene."
+    },
+    {
+      "id": "d35r3",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/3162044/pexels-photo-3162044.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Caleb Oquendo on Pexels",
+      "pro_tip": "**SUBTLE ANOMALIES:** Watch for minor inconsistencies in reflections, text, or background elements upon close inspection. A general \"uncanny valley\" feel is often a tell.",
+      "source_url": "https://www.pexels.com/photo/shallow-focus-photo-of-gameboy-console-3162044/"
+    },
+    {
+      "id": "d35r4",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/15587702/pexels-photo-15587702.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Toni Canaj on Pexels",
+      "pro_tip": "**AUTHENTIC WEAR:** Look for natural imperfections like dust, scratches, or wear on surfaces and objects. Real life isn't always pristine.",
+      "source_url": "https://www.pexels.com/photo/men-in-super-mario-costumes-15587702/"
+    },
+    {
+      "id": "d35r5",
+      "type": "image",
+      "content": "images/d35_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**HYPER-PERFECTION:** Look for details that are *too* perfect – immaculate textures, flawless skin, or block-toy connections without any visible wear or smudges.",
+      "_note": "Prompt: A photorealistic photograph of a meticulously constructed block-toy figure, clearly resembling Super Mario in his iconic red and blue overalls, striking a dynamic, mid-jump pose. The vibrant primary colors of the blocks are enhanced by clean, soft studio lighting, highlighting every intricate detail and connection point. Shot with a macro lens at f/5.6, against a smoothly gradient blue background, creating a sense of depth and focus on the toy."
+    },
+    {
+      "id": "d35r6",
+      "type": "image",
+      "content": "images/d35_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Check for symmetry — AI tends to make things too perfect and symmetrical.",
+      "_note": "Prompt: A photorealistic photograph of a pair of hands, slightly weathered, tightly gripping a vintage handheld game console with a bright, pixelated Super Mario Bros. level displayed on its screen. The scene is bathed in soft, late afternoon sunlight, casting gentle shadows across the hands and the console. Shot with a prime lens, f/2.8 aperture, creating a shallow depth of field that blurs the green grass background."
+    },
+    {
+      "id": "d35r7",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/4503100/pexels-photo-4503100.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Mateusz Dach on Pexels",
+      "pro_tip": "**ORGANIC CLUTTER:** Spot natural background messiness, random objects, or less-than-perfect arrangements that suggest an un-staged, authentic moment.",
+      "source_url": "https://www.pexels.com/photo/aged-game-console-with-cassette-in-house-4503100/"
+    },
+    {
+      "id": "d35r8",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/19228377/pexels-photo-19228377.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Vladimir Srajber on Pexels",
+      "pro_tip": "**NATURAL LIGHTING:** Identify realistic lighting with potential harsh shadows, unexpected glares, or uneven illumination, typical of real-world environments.",
+      "source_url": "https://www.pexels.com/photo/children-during-gaming-event-19228377/"
+    },
+    {
+      "id": "d35r9",
+      "type": "image",
+      "content": "images/d35_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**PERFECT LIGHTING:** Observe unnaturally ideal lighting, like flawless soft glows or dramatic rim lights. AI often renders light without real-world imperfections or randomness.",
+      "_note": "Prompt: A photorealistic photograph of two smiling men, one dressed as Mario and the other as Luigi, posing confidently at a vibrant \"Mario Day\" themed cosplay convention. Their detailed costumes pop under bright, diffused event lighting, with subtle rim lighting from background stage lights. A bustling, slightly out-of-focus crowd provides a dynamic backdrop. Shot with a telephoto lens, f/4, capturing the energy of the moment."
+    },
+    {
+      "id": "d35r10",
+      "type": "image",
+      "content": "images/d35_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**TOO POSED:** Identify scenes that feel overly composed or staged, even in candid moments. Group interactions might seem slightly unnatural or perfectly choreographed.",
+      "_note": "Prompt: A photorealistic photograph of a classic, grey vintage video game console, reminiscent of an NES, resting on a polished dark wooden floor. A colorful Super Mario Bros. game cartridge with its bright label is partially inserted into the console's slot, catching the soft, diffused light from an overhead window. Shot with a standard lens at f/4.5, with a gentle focus fall-off into the textured wood grain, emphasizing the console as an artifact of gaming history."
+    }
+  ],
+  "category_subtitle": "MAR10 Day: Don't let Bowser trick your AI!"
+}
