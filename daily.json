@@ -236,6 +236,13 @@
       "category_emoji": "🍄🎮",
       "category_subtitle": "MAR10 Day: Don't let Bowser trick your AI!",
       "challenge_file": "challenges/2026-03-10.json"
+  },
+    "2026-03-11": {
+      "day_number": 36,
+      "category": "National Worship of Tools Day",
+      "category_emoji": "🛠️",
+      "category_subtitle": "National Tool Worship Day: AI's turning the screws on images.",
+      "challenge_file": "challenges/2026-03-11.json"
   }
 }
 
