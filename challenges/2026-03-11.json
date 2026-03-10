@@ -1,0 +1,99 @@
+{
+  "day_number": 36,
+  "date": "2026-03-11",
+  "category": "National Worship of Tools Day",
+  "category_emoji": "🛠️",
+  "rounds": [
+    {
+      "id": "d36r1",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/20744242/pexels-photo-20744242.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Trudin Photography on Pexels",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://www.pexels.com/photo/glasses-and-a-lot-of-mechanical-equipment-hanging-on-the-wall-in-a-basement-20744242/"
+    },
+    {
+      "id": "d36r2",
+      "type": "image",
+      "content": "images/d36_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Look for natural imperfections — real photos have dust, slight blur, and uneven lighting.",
+      "_note": "Prompt: A photorealistic photograph of a rustic wooden workshop wall with a variety of well-used hand tools, including hammers, wrenches, and screwdrivers, hanging haphazardly on hooks. Shot with a Canon EOS R5, f/4.0, ISO 200, 50mm lens, capturing the soft, diffused natural light streaming in from a nearby window, highlighting the dust motes and worn textures."
+    },
+    {
+      "id": "d36r3",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1731694411560-050e5b91e943?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxM3x8V29yc2hpcCUyMG9mJTIwVG9vbHN8ZW58MHwwfHx8MTc3MzE3NDI2MHww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Anton Savinov on Unsplash",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://unsplash.com/photos/a-bunch-of-tools-hanging-up-on-a-wall-lDwKKjlHL2Y"
+    },
+    {
+      "id": "d36r4",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1426927308491-6380b6a9936f?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxfHx0b29sYm94fGVufDB8MHx8fDE3NzMxNzQyODJ8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Barn Images on Unsplash",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://unsplash.com/photos/assorted-handheld-tools-in-tool-rack-t5YUoHW6zRo"
+    },
+    {
+      "id": "d36r5",
+      "type": "image",
+      "content": "images/d36_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Check for symmetry — AI tends to make things too perfect and symmetrical.",
+      "_note": "Prompt: A photorealistic photograph of a premium black and silver hand tool set, including ratchets, sockets, and extension bars, artfully arranged in a flat lay composition on a sleek, dark grey textured surface. Captured with a Phase One XF IQ4, f/11, ISO 50, 70mm lens, utilizing softbox studio lighting from above and side fill lights to enhance the metallic sheen and deep black finishes, creating a professional product photography aesthetic."
+    },
+    {
+      "id": "d36r6",
+      "type": "image",
+      "content": "images/d36_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Examine text and labels — AI struggles with readable, consistent lettering.",
+      "_note": "Prompt: A photorealistic photograph of a meticulously well-organized array of gleaming metal and plastic tools on a light grey pegboard wall in a modern carpentry workshop. Hammers, saws, drills, and measuring tapes are perfectly aligned, showcasing a vibrant display ready for DIY projects. Captured with a Nikon Z7 II, f/8.0, ISO 100, 35mm lens, using studio strobe lighting to achieve even illumination and deep depth of field across the entire wall."
+    },
+    {
+      "id": "d36r7",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/7585026/pexels-photo-7585026.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by cottonbro studio on Pexels",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://www.pexels.com/photo/gray-metal-tool-on-white-table-7585026/"
+    },
+    {
+      "id": "d36r8",
+      "type": "image",
+      "content": "images/d36_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Check edges carefully — AI often produces halos or unnatural blending where objects meet.",
+      "_note": "Prompt: A photorealistic photograph of an assorted collection of colorful handheld tools, like pliers, cutters, and small screwdrivers, neatly organized in a bright red plastic tool rack on a workbench. Shot with a Sony Alpha 7 IV, f/5.6, ISO 400, 85mm lens, under crisp, even LED workshop lighting, providing sharp detail and no harsh shadows, at an eye-level perspective."
+    },
+    {
+      "id": "d36r9",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1615746363486-92cd8c5e0a90?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw4fHxvcmdhbnppZWQlMjB0b29sc3xlbnwwfDB8fHwxNzczMTc0MzU5fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Elena Mozhvilo on Unsplash",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://unsplash.com/photos/black-and-silver-hand-tool-set-RhXAO8OXyDY"
+    },
+    {
+      "id": "d36r10",
+      "type": "image",
+      "content": "images/d36_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Look at reflections — real reflections match the environment, AI reflections are often random.",
+      "_note": "Prompt: A photorealistic photograph of an extreme close-up of various pristine, polished silver surgical instruments, including scalpels, forceps, and clamps, meticulously laid out on a vibrant blue sterile surgical sheet. Shot with a macro lens on a Fujifilm GFX 100S, f/2.8, ISO 200, 100mm macro lens, under bright, focused operating room lights, creating a shallow depth of field that highlights the intricate details and reflective surfaces of the instruments against the soft texture of the sheet."
+    }
+  ],
+  "category_subtitle": "National Tool Worship Day: AI's turning the screws on images."
+}
