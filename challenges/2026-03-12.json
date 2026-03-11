@@ -1,0 +1,99 @@
+{
+  "day_number": 37,
+  "date": "2026-03-12",
+  "category": "National K-9 Veterans Day",
+  "category_emoji": "🐕‍🦺",
+  "rounds": [
+    {
+      "id": "d37r1",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1661552066736-935e0cad1782?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw2fHxzZXJ2aWNlJTIwZG9nfGVufDB8MHx8fDE3NzMyNzA3NTV8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Joshua Jen on Unsplash",
+      "pro_tip": "**UNPOSED INTERACTIONS:** Look for genuine, unscripted moments between subjects, showing natural stances and less dramatic, everyday interactions.",
+      "source_url": "https://unsplash.com/photos/a-dog-on-a-leash-PIgkmAI4bLk"
+    },
+    {
+      "id": "d37r2",
+      "type": "image",
+      "content": "images/d37_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "AI prompts often include hyper-specific camera and lens data. Images may show text on patches that's too perfect or slightly distorted.",
+      "_note": "Prompt: A photorealistic photograph of a retired Labrador Retriever K-9 veteran, comfortably lying in a sun-dappled field of tall green grass, wearing a worn but proud service vest. The late afternoon sunlight filters through nearby trees, creating soft bokeh in the background and gentle illumination on the dog's serene face. Taken with a Sony Alpha 7 IV, 50mm lens, f/4.0, ISO 100, shallow depth of field."
+    },
+    {
+      "id": "d37r3",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/14804331/pexels-photo-14804331.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Jozef Fehér on Pexels",
+      "pro_tip": "**AUTHENTIC IMPERFECTIONS:** Real photos often feature subtle blurs, natural light variations, slight dirt, or realistic wear and tear.",
+      "source_url": "https://www.pexels.com/photo/police-officers-training-a-police-dog-14804331/"
+    },
+    {
+      "id": "d37r4",
+      "type": "image",
+      "content": "images/d37_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**IDEALIZED TEXTURES:** AI often creates unnaturally perfect fur, grass, or fabric textures, lacking realistic wear, random strands, or natural imperfections.",
+      "_note": "Prompt: A photorealistic photograph of a distinguished Golden Retriever K-9 veteran, wearing a commemorative service bandana, being walked on a sturdy leather leash by a civilian down a quiet suburban street lined with vibrant autumn trees. The warm, late afternoon sunlight bathes the scene, creating a peaceful atmosphere and highlighting the dog's grey muzzle. Taken at eye-level with a Leica M10-P, 35mm lens, f/2.0, ISO 160, with natural bokeh from the foliage."
+    },
+    {
+      "id": "d37r5",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1725244838877-61b654fbe41f?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw2fHxLLTl8ZW58MHwwfHx8MTc3MzI3MDU5OXww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Martin Podsiad on Unsplash",
+      "pro_tip": "**OVERT EMOTION:** Identify expressions and poses that are too literally \"stoic\" or \"serene,\" perfectly matching prompt-driven emotional cues.",
+      "source_url": "https://unsplash.com/photos/a-police-dog-sitting-on-the-back-of-a-police-car-72sQu7ICCJM"
+    },
+    {
+      "id": "d37r6",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1743616288254-be688ab6d2b6?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxMXx8Sy05fGVufDB8MHx8fDE3NzMyNzA1OTl8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Viorel Vașadi on Unsplash",
+      "pro_tip": "**Real Photograph Pro Tips:**",
+      "source_url": "https://unsplash.com/photos/a-police-dog-is-on-duty-with-its-handler-H-vCfOYIUYE"
+    },
+    {
+      "id": "d37r7",
+      "type": "image",
+      "content": "images/d37_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**PERFECT LIGHTING:** Look for unnaturally ideal lighting conditions, like flawless golden hour effects or perfectly uniform sun-dappled scenes.",
+      "_note": "Prompt: A photorealistic photograph of a powerful German Shepherd K-9, a celebrated veteran during its active service, dynamically leaping over a low snowdrift in a winter training ground, with two uniformed police officers observing in the blurred background. The diffused light from an overcast winter sky highlights the dog's focused expression and the swirling snow. Captured with a high-speed Fujifilm GFX 100S, 80mm lens, f/2.8, 1/1000s shutter speed, ISO 800, emphasizing motion and resilience."
+    },
+    {
+      "id": "d37r8",
+      "type": "image",
+      "content": "images/d37_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**PROMPT PRECISION:** AI prompts often include hyper-specific camera and lens data. Images may show text on patches that's too perfect or slightly distorted.",
+      "_note": "Prompt: A photorealistic photograph of a stoic Belgian Malinois K-9 veteran standing respectfully beside its proud handler, a police officer in uniform, in a quiet city park. The handler's hand gently rests on the dog's head, conveying a deep, lasting bond. The mid-morning sun illuminates their profiles, casting soft, defined shadows. Shot from a medium distance with a Nikon D850, 70-200mm lens at 100mm, f/5.6, ISO 250."
+    },
+    {
+      "id": "d37r9",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1682005975778-fe9a33b495d0?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxMHx8Sy05fGVufDB8MHx8fDE3NzMyNzA1OTl8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Elianna Gill on Unsplash",
+      "pro_tip": "**UNNATURAL BOKEH/MOTION:** Observe background blur that feels too uniform or \"painted.\" Dynamic motion like snow might appear artificially frozen or too perfectly swirled.",
+      "source_url": "https://unsplash.com/photos/a-dog-laying-in-the-grass-wearing-a-vest-pc3Z4P8oxko"
+    },
+    {
+      "id": "d37r10",
+      "type": "image",
+      "content": "images/d37_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "AI often creates unnaturally perfect fur, grass, or fabric textures, lacking realistic wear, random strands, or natural imperfections.",
+      "_note": "Prompt: A photorealistic photograph of a seasoned German Shepherd K-9 veteran, wearing a service vest with a \"Retired K-9\" patch, sitting alertly on the trunk lid of a vintage police cruiser at sunset. The low golden hour light casts long shadows and highlights the dog's fur, with the squad car's reflective surface subtly glinting. Shot with a Canon EOS R5, 85mm lens, f/2.8, ISO 200, emphasizing a warm, nostalgic mood."
+    }
+  ],
+  "category_subtitle": "K-9 Veterans Day: Even AI wants to be a good boy!"
+}
