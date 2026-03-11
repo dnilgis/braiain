@@ -243,6 +243,13 @@
       "category_emoji": "🛠️",
       "category_subtitle": "National Tool Worship Day: AI's turning the screws on images.",
       "challenge_file": "challenges/2026-03-11.json"
+  },
+    "2026-03-12": {
+      "day_number": 37,
+      "category": "National K-9 Veterans Day",
+      "category_emoji": "🐕‍🦺",
+      "category_subtitle": "K-9 Veterans Day: Even AI wants to be a good boy!",
+      "challenge_file": "challenges/2026-03-12.json"
   }
 }
 
