@@ -1,0 +1,99 @@
+{
+  "day_number": 38,
+  "date": "2026-03-13",
+  "category": "World Sleep Day",
+  "category_emoji": "😴",
+  "rounds": [
+    {
+      "id": "d38r1",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1563301141-3fb8b3b2df9e?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxMnx8U2xlZXBpbmd8ZW58MHwwfHx8MTc3MzM0NTEwM3ww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Simon Infanger on Unsplash",
+      "pro_tip": "**SUBTLE DUST/GRIME:** Real environments include dust, dirt, or slight imperfections on subjects or surroundings, often missing in AI's pristine depictions of sleep.",
+      "source_url": "https://unsplash.com/photos/animal-on-tree-branch-hgdh6IwKi7Y"
+    },
+    {
+      "id": "d38r2",
+      "type": "image",
+      "content": "images/d38_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**ANATOMICAL BLURS:** AI can struggle with subtle anatomy; check for slightly distorted limbs, ears, or facial features that feel \"almost right\" but are subtly off in their sleep posture.",
+      "_note": "Prompt: A photorealistic photograph of an adorable koala soundly sleeping, perfectly nestled and clinging to a sturdy eucalyptus tree branch in a dense, sun-dappled forest. Dappled sunlight filters through the canopy, creating soft highlights on its grey fur and the rough texture of the bark. Captured with a Canon EOS 5D Mark IV and a 200mm f/2.8 telephoto lens, using a medium shot from a slightly low angle, emphasizing the koala's secure grip and the natural forest environment, with a shallow depth of field to isolate the subject."
+    },
+    {
+      "id": "d38r3",
+      "type": "image",
+      "content": "images/d38_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**LIGHTING UNIFORMITY:** Notice AI's tendency for overly perfect or generic lighting that lacks the nuanced interplay of shadows and highlights seen in natural sleep environments.",
+      "_note": "Prompt: A photorealistic photograph of a magnificent red fox curled up in a serene sleep on a weathered wooden porch railing, its bushy tail draped gracefully over the edge. Bright, warm midday sunlight bathes the scene, creating sharp yet soft highlights on its vibrant reddish-orange fur and casting distinct shadows. Shot with a Fujifilm GFX 100S and a 110mm f/2 lens, capturing a medium telephoto shot from eye-level, highlighting the intricate details of its fur and the texture of the wood, with a slightly golden hour feel."
+    },
+    {
+      "id": "d38r4",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1688383454417-b11a123846e9?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyM3x8U2xlZXB8ZW58MHwwfHx8MTc3MzM0NTA4MHww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Slaapwijsheid.nl on Unsplash",
+      "pro_tip": "**ENVIRONMENTAL STERILITY:** AI backgrounds or props often appear generic, unnaturally clean, or lack the specific clutter and imperfections of a real-world setting where sleep occurs.",
+      "source_url": "https://unsplash.com/photos/a-young-girl-sleeping-in-a-bed-with-white-sheets-mHWmTL_EtLQ"
+    },
+    {
+      "id": "d38r5",
+      "type": "image",
+      "content": "images/d38_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**PERFECTION:** AI images often display unnaturally flawless skin, perfectly placed hair, or immaculate environments that lack any real-world imperfections in the sleep scene.",
+      "_note": "Prompt: A photorealistic photograph of a charming brown and white dog curled up in a deep, peaceful sleep on a plush, light-grey fabric couch. Warm, soft afternoon sunlight from a nearby window gently illuminates its fur, casting subtle, elongated shadows on the cushions. Captured with a Sony a7 III and a 50mm f/1.8 lens, using a slightly high-angle medium shot to showcase the dog's relaxed posture and the texture of the couch, with natural room lighting and a balanced exposure."
+    },
+    {
+      "id": "d38r6",
+      "type": "image",
+      "content": "images/d38_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are pro tips for the AI detection game, themed \"World Sleep Day\":",
+      "_note": "Prompt: A photorealistic photograph of a tranquil young girl sleeping soundly in a pristine white bed, her hair gently spread across the pillow and a faint smile on her lips. Soft, diffused morning light streams in from a window to the left, gently illuminating her face and highlighting the delicate textures of the white linen sheets. Shot with a Canon EOS R5 and an 85mm f/1.4 lens, creating a very shallow depth of field with the focus on her peaceful expression, a subtle bokeh effect in the background."
+    },
+    {
+      "id": "d38r7",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1645375239728-a7ef8b96c27a?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxMXx8YW5pbWFscyUyMHNsZWVwaW5nfGVufDB8MHx8fDE3NzMzNDUxMjN8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Abhinav Anand on Unsplash",
+      "pro_tip": "**NATURAL FLAWS:** Real photos show authentic wrinkles in bedding, flyaway hairs, or slight facial asymmetries, revealing a genuine, imperfectly peaceful sleep.",
+      "source_url": "https://unsplash.com/photos/a-brown-and-white-dog-sleeping-on-top-of-a-couch-rTzqeQe_nJ4"
+    },
+    {
+      "id": "d38r8",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/2121799/pexels-photo-2121799.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Joseph Yu on Pexels",
+      "pro_tip": "**LIGHTING NUANCE:** Authentic lighting displays complex interactions with surfaces, creating varied reflections, soft glows, and natural shadows that AI struggles to replicate.",
+      "source_url": "https://www.pexels.com/photo/close-up-photo-of-sleeping-fox-2121799/"
+    },
+    {
+      "id": "d38r9",
+      "type": "image",
+      "content": "images/d38_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**TEXTURE REPETITION:** Look for uncanny, repetitive patterns in fur or overly smooth fabric textures, indicating an AI-generated attempt at realistic softness during sleep.",
+      "_note": "Prompt: A photorealistic photograph of a pristine white cat peacefully sleeping, mostly hidden under a thick, fluffy white comforter, with just its delicate ears and the tip of its nose peeking out from the folds. The scene is bathed in very soft, ambient bedroom lighting, emphasizing the seamless blending of the cat's fur with the white bedding. Taken with a Nikon D850 and a 105mm f/2.8 macro lens, utilizing a low-angle close-up composition to capture the intimate detail and the luxurious texture of the comforter, with a slightly warm color temperature."
+    },
+    {
+      "id": "d38r10",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxfHxTbGVlcHxlbnwwfDB8fHwxNzczMzQ1MDgwfDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Kate Stone Matheson on Unsplash",
+      "pro_tip": "**ORGANIC TEXTURES:** Observe individual fur strands, natural wear on surfaces, and realistic fabric folds that convey genuine tactile depth in a sleeping subject.",
+      "source_url": "https://unsplash.com/photos/white-cat-sleeps-under-white-comforter-uy5t-CJuIK4"
+    }
+  ],
+  "category_subtitle": "Spot the snooze-worthy; AI's keeping you awake!"
+}
