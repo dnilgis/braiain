@@ -257,6 +257,13 @@
       "category_emoji": "😴",
       "category_subtitle": "Spot the snooze-worthy; AI's keeping you awake!",
       "challenge_file": "challenges/2026-03-13.json"
+  },
+    "2026-03-14": {
+      "day_number": 39,
+      "category": "National Save a Spider Day",
+      "category_emoji": "🕷️",
+      "category_subtitle": "AI's Web-Wise Watch: Saving Spiders, Pixel by Pixel!",
+      "challenge_file": "challenges/2026-03-14.json"
   }
 }
 
