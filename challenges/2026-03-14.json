@@ -1,0 +1,99 @@
+{
+  "day_number": 39,
+  "date": "2026-03-14",
+  "category": "National Save a Spider Day",
+  "category_emoji": "🕷️",
+  "rounds": [
+    {
+      "id": "d39r1",
+      "type": "image",
+      "content": "images/d39_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are 10 pro tips for the AI detection game:",
+      "_note": "Prompt: A photorealistic photograph of a robust black and white zebra jumping spider (Salticus scenicus) carefully traversing the smooth, dark surface of a modern \"National Save a Spider Day\" speaker. The composition is a medium close-up, sharply focused on the spider with a shallow depth of field, rendering the speaker's texture just soft. Shot with a Sony Alpha a7R IV, 90mm macro lens, f/5.6, ISO 400, illuminated by soft, natural window light from the right, creating subtle reflections on the speaker's surface."
+    },
+    {
+      "id": "d39r2",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1506019162706-2459e35cc663?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxfHxTYXZlJTIwYSUyMFNwaWRlcnxlbnwwfDB8fHwxNzczNDI3MjE1fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Road Trip with Raj on Unsplash",
+      "pro_tip": "**CATEGORY: FLAWLESS BOKEH**",
+      "source_url": "https://unsplash.com/photos/great-wall-of-china-aa4sXii77zI"
+    },
+    {
+      "id": "d39r3",
+      "type": "image",
+      "content": "images/d39_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Examine dewdrops for unnatural uniformity in size or spacing. AI renders these perfectly, lacking organic randomness or slight imperfections.",
+      "_note": "Prompt: A photorealistic photograph of a robust Agelena labyrinthica (Labyrinth spider), a type of funnel-web spider, poised watchfully at the intricate entrance of its sheet web, constructed amidst dense, dewy foliage in an authentic Estonian garden. This close-up shot meticulously captures the textured, silken funnel and the spider's vigilant posture, its bristly legs catching dappled sunlight filtering through overhead leaves. Shot with a Panasonic Lumix S5, Sigma 105mm macro lens, f/9, ISO 800, utilizing available natural light to create a serene, yet detailed, portrayal of garden life on \"National Save a Spider Day\"."
+    },
+    {
+      "id": "d39r4",
+      "type": "image",
+      "content": "images/d39_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**CATEGORY: HYPER-REAL DEW**",
+      "_note": "Prompt: A photorealistic photograph of a magnificent Argiope bruennichi (Wasp spider) meticulously resting on its stabilimentum-decorated orb web, glistening with morning dew in a sun-drenched wildflower meadow near Valencia, Spain. This detailed macro shot perfectly captures the spider's striking yellow and black striped abdomen and the intricate, zig-zag pattern of its web. A shallow depth of field creates a beautiful bokeh background of colorful, out-of-focus wildflowers, celebrating biodiversity. Captured with a Fujifilm GFX 100S, 120mm macro lens, f/10, ISO 160, bathed in soft, diffused natural sunlight."
+    },
+    {
+      "id": "d39r5",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1655466076355-59ab6b736d26?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyMXx8U2F2ZSUyMGElMjBTcGlkZXJ8ZW58MHwwfHx8MTc3MzQyNzIxNXww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Wild Spirit on Unsplash",
+      "pro_tip": "**CATEGORY: SCALE INCONSISTENCY**",
+      "source_url": "https://unsplash.com/photos/a-black-and-white-spider-on-a-black-speaker-cqdPJ3HbEB0"
+    },
+    {
+      "id": "d39r6",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/34233097/pexels-photo-34233097.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Rafael Minguet Delgado on Pexels",
+      "pro_tip": "Look for overly smooth, 'painterly' bokeh that lacks the subtle imperfections or realistic light interactions of real camera lenses.",
+      "source_url": "https://www.pexels.com/photo/close-up-of-argiope-lobata-spider-in-web-34233097/"
+    },
+    {
+      "id": "d39r7",
+      "type": "image",
+      "content": "images/d39_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**CATEGORY: LOGO ANOMALIES**",
+      "_note": "Prompt: A photorealistic photograph of a glistening European garden spider (Araneus diadematus) meticulously repairing its orb web, illuminated by the soft, warm glow of a distant \"National Save a Spider Day\" commemorative lantern hanging in a moonlit garden. This detailed macro shot captures individual dewdrops clinging to the intricate silk strands and the spider's iridescent markings, with a dark, dreamy bokeh background of nocturnal foliage. Taken with a Nikon D850, 105mm macro lens, f/13, ISO 3200, utilizing a subtle, diffused LED light panel to highlight the web, creating a magical nighttime atmosphere."
+    },
+    {
+      "id": "d39r8",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/3761419/pexels-photo-3761419.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Erik Karits on Pexels",
+      "pro_tip": "**CATEGORY: REPETITIVE FOLIAGE**",
+      "source_url": "https://www.pexels.com/photo/brown-spider-on-spider-web-3761419/"
+    },
+    {
+      "id": "d39r9",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/34378357/pexels-photo-34378357.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Rafael Minguet Delgado on Pexels",
+      "pro_tip": "Observe how disparate elements, like a tiny spider on the vast Great Wall, merge. AI can achieve unrealistic, perfect focus and seamless integration.",
+      "source_url": "https://www.pexels.com/photo/close-up-of-european-garden-spider-in-web-34378357/"
+    },
+    {
+      "id": "d39r10",
+      "type": "image",
+      "content": "images/d39_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Look for distorted, inconsistent, or unnaturally placed text or logos, especially the \"National Save a Spider Day\" on the speaker. Reflections might be too perfect.",
+      "_note": "Prompt: A photorealistic photograph of a minuscule, vibrant green lynx spider (Peucetia viridans) perched delicately on a lichen-covered stone, part of the ancient Great Wall of China, its eight eyes glinting in the morning sun. The spider is in sharp, intricate focus in the foreground, with the iconic, winding wall receding into a soft, hazy background of distant mountains under a clear blue sky, emphasizing its vast scale. This wide-angle landscape shot (captured with a Canon EOS 5D Mark IV, 24-70mm lens at 35mm, f/16, ISO 100) contrasts the tiny life with monumental human history, subtly promoting universal appreciation on \"National Save a Spider Day\"."
+    }
+  ],
+  "category_subtitle": "AI's Web-Wise Watch: Saving Spiders, Pixel by Pixel!"
+}
