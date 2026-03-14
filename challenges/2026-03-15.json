@@ -1,0 +1,99 @@
+{
+  "day_number": 40,
+  "date": "2026-03-15",
+  "category": "World Contact Day",
+  "category_emoji": "👽📡",
+  "rounds": [
+    {
+      "id": "d40r1",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1690950397849-d93d8914cec5?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxOXx8c2F0ZWxsaXRlc3xlbnwwfDB8fHwxNzczNTIyMTY0fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Haydn on Unsplash",
+      "pro_tip": "**VARIED DETAIL:** Look for natural inconsistencies in foliage or subtle blemishes on surfaces; real environments rarely achieve AI's level of \"pristine\" perfection.",
+      "source_url": "https://unsplash.com/photos/a-large-satellite-dish-sitting-on-top-of-a-lush-green-field-BP83q_GywRw"
+    },
+    {
+      "id": "d40r2",
+      "type": "image",
+      "content": "images/d40_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**ARTIFICIAL ATMOSPHERE:** Watch for skies \"painted\" with perfect, vibrant hues and excessive lens flare; AI often stylizes dramatic lighting beyond natural limits.",
+      "_note": "Prompt: A photorealistic photograph of a figure wearing a highly detailed, realistic grey alien mask and a bright orange retro-futuristic astronaut suit, standing confidently on a bustling urban city street in broad daylight. Shot from a medium distance (e.g., 50mm f/4) with natural, crisp sunlight illuminating the textures of the suit and mask. The background shows blurred city life – traffic, pedestrians, and modern skyscrapers – suggesting an extraordinary presence in an ordinary setting."
+    },
+    {
+      "id": "d40r3",
+      "type": "image",
+      "content": "images/d40_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**IDEALIZED SCENERY:** Look for \"impossibly clear\" skies, \"emerald\" foliage, and spotless surfaces; AI often renders idealized, blemish-free environments with perfect curves.",
+      "_note": "Prompt: A photorealistic photograph of a vast, modern satellite dish, its smooth grey surface contrasting with the vibrant natural surroundings, resting gently on a sprawling, intensely lush green field under a soft, diffused sky. The grass appears recently mowed, leading up to the dish's impressive base. Captured with a standard prime lens (e.g., 50mm f/2.8) from eye-level, allowing the viewer to feel present in the scene. The lighting is gentle and even, characteristic of an overcast day, highlighting the rich textures of the grass and the smooth, alien-like surface of the dish without harsh shadows."
+    },
+    {
+      "id": "d40r4",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1743412059152-d577187040c1?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxMXx8YWxpZW4lMjBjb250YWN0fGVufDB8MHx8fDE3NzM1MjIwNTJ8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Svetogor Maliugin on Unsplash",
+      "pro_tip": "**OVER-MANICURED NATURE:** Note unnaturally lush, uniformly mowed fields or perfectly smooth, alien-like surfaces; AI generates idealized, flawless natural textures.",
+      "source_url": "https://unsplash.com/photos/a-radio-telescope-silhouetted-against-the-sky-QZKrCqDzCC0"
+    },
+    {
+      "id": "d40r5",
+      "type": "image",
+      "content": "images/d40_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**IMPOSSIBLE CONGRUITY:** Spot objects perfectly placed in incongruous settings; AI can generate impossibly balanced structures with too-perfect weathering or repetition.",
+      "_note": "Prompt: A photorealistic photograph of a gleaming white, parabolic satellite dish standing majestically against an impossibly clear, vibrant azure blue sky. Lush, emerald green foliage and gently rolling hills surround the base of the dish, hinting at a remote, pristine natural location. Shot with a medium telephoto lens (e.g., 85mm f/5.6) from a low angle, emphasizing its height and clean lines. The lighting is bright and even, casting subtle shadows that define the dish's perfect curve and texture."
+    },
+    {
+      "id": "d40r6",
+      "type": "image",
+      "content": "images/d40_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**UNNATURAL PERFECTION:** Examine highly detailed masks or costumes for uncanny uniformity or flawless textures, especially when integrated into bustling, realistic scenes.",
+      "_note": "Prompt: A photorealistic photograph of an enormous, weathered metallic satellite dish, its surface reflecting the midday sun, incongruously perched directly on top of a set of rusty, disused train tracks stretching into the distance. Captured with a wide-angle lens (e.g., 28mm f/8) from a slightly elevated perspective, showcasing the stark juxtaposition. The lighting is harsh and clear, creating deep shadows under the dish and highlighting the industrial details of the tracks and gravel."
+    },
+    {
+      "id": "d40r7",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/29013595/pexels-photo-29013595.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Stephen Leonardi on Pexels",
+      "pro_tip": "**NATURAL IMPERFECTIONS:** Observe skies for natural variations, haze, or less stylized lighting; real photos often capture more authentic atmospheric subtleties.",
+      "source_url": "https://www.pexels.com/photo/alien-in-astronaut-suit-on-city-street-29013595/"
+    },
+    {
+      "id": "d40r8",
+      "type": "image",
+      "content": "images/d40_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are 10 pro tips for the AI detection game on \"World Contact Day\":",
+      "_note": "Prompt: A photorealistic photograph of a massive radio telescope, its intricate steel framework and dish silhouetted sharply against a dramatic twilight sky painted with hues of deep orange and purple. Shot with a wide-angle lens (e.g., 24mm f/2.8) on a full-frame DSLR, capturing the immense scale and stark contrast. The atmospheric, low lighting emphasizes the telescope's dark form against the subtly glowing horizon, with subtle lens flare."
+    },
+    {
+      "id": "d40r9",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1702485665912-0c79685081e1?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxOXx8c2F0ZWxsaXRlfGVufDB8MHx8fDE3NzM1MjIxMTR8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Raychel Sanner on Unsplash",
+      "pro_tip": "**ORGANIC INTEGRATION:** Check for natural wrinkles, varied textures, and believable interaction within the scene; real-world elements often show nuanced wear and tear.",
+      "source_url": "https://unsplash.com/photos/a-very-large-satellite-dish-sitting-on-top-of-a-train-track-FGvx38Jx4z4"
+    },
+    {
+      "id": "d40r10",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/11097710/pexels-photo-11097710.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by CARLOSCRUZ ARTEGRAFIA on Pexels",
+      "pro_tip": "**REALISTIC PLACEMENT:** Seek natural physics and plausible object interactions; real scenes typically have subtle misalignments or less perfectly 'designed' incongruity.",
+      "source_url": "https://www.pexels.com/photo/a-satellite-dish-use-for-transmission-11097710/"
+    }
+  ],
+  "category_subtitle": "World Contact Day: Close encounters of the AI kind!"
+}
