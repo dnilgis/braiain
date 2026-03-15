@@ -271,6 +271,13 @@
       "category_emoji": "👽📡",
       "category_subtitle": "World Contact Day: Close encounters of the AI kind!",
       "challenge_file": "challenges/2026-03-15.json"
+  },
+    "2026-03-16": {
+      "day_number": 41,
+      "category": "National Panda Day",
+      "category_emoji": "🐼",
+      "category_subtitle": "Panda Day: AI's ready to roll... and find those adorable roly-polies!",
+      "challenge_file": "challenges/2026-03-16.json"
   }
 }
 
