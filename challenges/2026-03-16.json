@@ -1,0 +1,99 @@
+{
+  "day_number": 41,
+  "date": "2026-03-16",
+  "category": "National Panda Day",
+  "category_emoji": "🐼",
+  "rounds": [
+    {
+      "id": "d41r1",
+      "type": "image",
+      "content": "images/d41_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**ENVIRONMENTAL FLAWLESSNESS:** Background elements like leaves, branches, or grass might show repetitive patterns, perfect symmetry, or a lack of organic randomness.",
+      "_note": "Prompt: A photorealistic photograph of a solitary white and black giant panda sitting calmly atop a weathered, dark brown wooden fence post. Medium close-up, focusing on the panda's thoughtful expression and the contrasting textures of its fur and the old wood. Photographed with a Fujifilm GFX 100S, 80mm f/1.7 lens, f/2.8, ISO 200, 1/320s. Direct, warm midday sun creating clear highlights and shadows on the panda and the fence, with high detail on the wood grain and individual strands of fur, and a shallow depth of field."
+    },
+    {
+      "id": "d41r2",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/1661535/pexels-photo-1661535.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Diana Silaraja on Pexels",
+      "pro_tip": "**ORGANIC IMPERFECTIONS:** Look for natural variations like slightly out-of-focus elements, lens flares, or minute camera shake, common in authentic photography.",
+      "source_url": "https://www.pexels.com/photo/photo-of-panda-and-cub-playing-1661535/"
+    },
+    {
+      "id": "d41r3",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/11955690/pexels-photo-11955690.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Mehmet Turgut  Kirkgoz on Pexels",
+      "pro_tip": "**NATURAL LIGHTING VARIATIONS:** Real outdoor lighting will have subtle inconsistencies, varied shadow edges, and less uniform illumination than AI often produces.",
+      "source_url": "https://www.pexels.com/photo/pandas-eating-bamboo-11955690/"
+    },
+    {
+      "id": "d41r4",
+      "type": "image",
+      "content": "images/d41_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are 10 pro tips for the AI detection game on National Panda Day:",
+      "_note": "Prompt: A photorealistic photograph of a giant panda perched comfortably on a thick, mossy tree branch, slightly wide shot capturing its full body and some surrounding foliage. Taken with a Canon EOS R5, 70-200mm f/2.8 lens at 100mm, f/4, ISO 400, 1/500s. Soft, dappled sunlight filtering through the canopy during a bright afternoon, with sharp focus on the panda's fur and intelligent eyes, background slightly blurred for depth."
+    },
+    {
+      "id": "d41r5",
+      "type": "image",
+      "content": "images/d41_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**HYPER-REALISM:** Look for unnaturally pristine fur or overly perfect textures. AI often renders surfaces with excessive, uniform detail, lacking natural imperfections.",
+      "_note": "Prompt: A photorealistic photograph of two fluffy white-and-black giant pandas lying relaxed side-by-side on a bed of green grass and scattered leaves. Eye-level perspective, one possibly resting its head on the other. Shot with a Nikon Z9, 24-70mm f/2.8 lens at 50mm, f/3.5, ISO 320, 1/400s. Even, natural daylight under a slightly overcast sky, highlighting their pristine fur and showcasing their peaceful expressions and the texture of the ground."
+    },
+    {
+      "id": "d41r6",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1597953601374-1ff2d5640c85?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxfHxQYW5kYXxlbnwwfDB8fHwxNzczNjE2OTc1fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Lukas W. on Unsplash",
+      "pro_tip": "**GENUINE EXPRESSIONS:** Authentic panda expressions tend to be un-posed, sometimes goofy or messy, reflecting genuine animal behavior, not staged perfection.",
+      "source_url": "https://unsplash.com/photos/white-and-black-panda-on-brown-wooden-fence-during-daytime-e3mu-MTj7Xk"
+    },
+    {
+      "id": "d41r7",
+      "type": "image",
+      "content": "images/d41_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**UNNATURAL EXPRESSIONS:** Check if the panda's eyes or facial expressions seem too human-like, uncanny, or strangely \"posed\" for a candid animal shot.",
+      "_note": "Prompt: A photorealistic photograph of an adorable giant panda cub playfully tumbling down a gentle grassy slope, with a larger adult panda watching nearby. Dynamic action shot, capturing motion and energy from a low angle. Captured with a Sony Alpha 1, 100-400mm f/4.5-5.6 lens at 200mm, f/5, ISO 640, 1/800s. Bright morning sun, casting subtle shadows and illuminating their active movement, with crisp focus on the cub mid-tumble and a background of lush bamboo forest slightly out of focus."
+    },
+    {
+      "id": "d41r8",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1617500756598-a0ee57567ac8?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxM3x8UGFuZGF8ZW58MHwwfHx8MTc3MzYxNjk3NXww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Stone Wang on Unsplash",
+      "pro_tip": "**IMPOSSIBLE FOCUS:** Observe if every subject detail is unnaturally sharp across varying distances, or if depth of field is flawless, as if computationally enhanced.",
+      "source_url": "https://unsplash.com/photos/panda-bear-on-tree-branch-during-daytime-0wk7m5SVPsM"
+    },
+    {
+      "id": "d41r9",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1540126034813-121bf29033d2?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwzfHxQYW5kYXxlbnwwfDB8fHwxNzczNjE2OTc1fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Pascal Müller on Unsplash",
+      "pro_tip": "**IMPERFECT TEXTURES:** Real photos often show subtle dirt, messy fur, or natural wear on surfaces, indicating genuine interaction with the environment.",
+      "source_url": "https://unsplash.com/photos/two-white-and-black-pandas-lying-on-floor-during-daytime-4EajIuUxgAQ"
+    },
+    {
+      "id": "d41r10",
+      "type": "image",
+      "content": "images/d41_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**EXACTING LIGHTING:** Notice if the lighting, shadows, and reflections are almost *too* perfectly placed or consistent, lacking the subtle variations of natural light.",
+      "_note": "Prompt: A photorealistic photograph of two majestic giant pandas engrossed in eating fresh bamboo shoots, seated amidst a dense bamboo grove. A candid, wide-angle shot, capturing both pandas in their natural habitat, one perhaps looking towards the camera while chewing. Taken with a Hasselblad X1D II 50C, 45mm f/3.5 lens, f/4, ISO 250, 1/250s. Soft, ambient light under a leafy canopy during a serene afternoon, creating a serene mood, with focus on the pandas' expressions and the crisp details of the bamboo leaves and stalks."
+    }
+  ],
+  "category_subtitle": "Panda Day: AI's ready to roll... and find those adorable roly-polies!"
+}
