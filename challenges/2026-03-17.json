@@ -1,0 +1,99 @@
+{
+  "day_number": 42,
+  "date": "2026-03-17",
+  "category": "St. Patrick's Day",
+  "category_emoji": "🍀",
+  "rounds": [
+    {
+      "id": "d42r1",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1665245597546-1dc359a63231?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxMXx8U3QuJTIwUGF0cmljayUyN3N8ZW58MHwwfHx8MTc3MzY4NTQ0Mnww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Jon Sailer on Unsplash",
+      "pro_tip": "SIMPLE TATTOO DESIGNS: Real tattoos may appear less intricate, with simpler designs or imperfect placement compared to AI's elaborate, perfectly rendered knotwork.",
+      "source_url": "https://unsplash.com/photos/a-person-wearing-a-green-shirt-with-a-tattoo-on-it-afxZRiWpnRc"
+    },
+    {
+      "id": "d42r2",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1665245597299-10ec682436c2?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxNXx8U3QuJTIwUGF0cmljayUyN3MlMjBkYXl8ZW58MHwwfHx8MTc3MzY4NTQ3NHww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Jon Sailer on Unsplash",
+      "pro_tip": "ORGANIC ARRANGEMENT: Real-life still-lifes or product shots may show subtle imperfections, less pristine surfaces, or more natural, slightly less \"perfectly placed\" items.",
+      "source_url": "https://unsplash.com/photos/a-basket-of-french-fries-and-bottles-of-beer-3hA-PoDIRdU"
+    },
+    {
+      "id": "d42r3",
+      "type": "image",
+      "content": "images/d42_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "PERFECTED FEATURES: AI subjects often have flawless skin, sparkling eyes, and unnaturally perfect features. Accessories like hats and ties are always pristine.",
+      "_note": "Prompt: A photorealistic photograph of a young woman with fiery red hair, a mischievous grin, and freckles, wearing a shiny bright green top hat adorned with a gold buckle and a festive green velvet bow tie. Her eyes sparkle with Irish cheer. Shot as a tight headshot portrait with a Nikon D850 and a 105mm f/1.8 macro lens, lit by soft rim light from a key light and a diffused fill light, creating a clean, slightly blurry bokeh background, crisp focus on her eyes and accessories."
+    },
+    {
+      "id": "d42r4",
+      "type": "image",
+      "content": "images/d42_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "FLAWLESS TATTOOS: AI often renders impossibly intricate Celtic knot tattoos, perfectly intertwined with shamrocks, appearing too crisp and ideally placed on the skin.",
+      "_note": "Prompt: A photorealistic photograph of an elderly Irish man, his face weathered with character, smiling subtly. He wears a vibrant emerald green wool sweater. His forearm, visible below the sleeve, reveals a detailed Celtic knot tattoo intertwined with a shamrock. Shot with a Canon EOS R5 and an 85mm f/1.4 lens, natural soft morning light filtering from a window, shallow depth of field, focus sharply on the tattoo and his gentle smile."
+    },
+    {
+      "id": "d42r5",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1616011224441-f652db413327?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxMnx8U3QuJTIwUGF0cmljayUyN3MlMjBkYXl8ZW58MHwwfHx8MTc3MzY4NTQ3NHww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Pascal Bernardon on Unsplash",
+      "pro_tip": "EVERYDAY VEHICLES: Real trucks might lack specific thematic decorations, appearing in practical, less idealized settings like on a trailer, not a perfectly staged street.",
+      "source_url": "https://unsplash.com/photos/green-and-white-truck-on-trailer-truck-CRAkD39coew"
+    },
+    {
+      "id": "d42r6",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1634694785062-cfaf94199001?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxMHx8U3QuJTIwUGF0cmljayUyN3MlMjBkYXl8ZW58MHwwfHx8MTc3MzY4NTQ3NHww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Skyler Gerald on Unsplash",
+      "pro_tip": "CASUAL ATTIRE: Look for less elaborate, more common hats and ties. Real photos show everyday green attire rather than overly shiny, pristine, or perfectly buckled accessories.",
+      "source_url": "https://unsplash.com/photos/a-man-wearing-a-green-hat-and-a-green-bow-tie-jz8t1slubEU"
+    },
+    {
+      "id": "d42r7",
+      "type": "image",
+      "content": "images/d42_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "OVERLY STAGED GROUPS: Look for groups with highly idealized interactions, every person perfectly posed, laughing, and holding instruments precisely for a flawless composition.",
+      "_note": "Prompt: A photorealistic photograph of a lively group of three Irish musicians – two men and one woman – in their early 30s, dressed in traditional attire with modern twists (green tweed vests, white shirts, festive sashes), standing casually on the sidewalk beside a bustling street during a St. Patrick's Day parade. One man holds a bodhrán, the other a tin whistle, and the woman has an accordion. They are laughing and interacting. Captured with a Fujifilm GFX 100S and a 45mm f/2.8 lens, bright overcast afternoon light, medium depth of field showing the parade crowd blurring in the background, vibrant color rendition."
+    },
+    {
+      "id": "d42r8",
+      "type": "image",
+      "content": "images/d42_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "SHOWROOM PRODUCT SHOTS: AI renders product shots with absolute perfection: pristine foam, perfectly arranged shamrocks and coins on an immaculate surface.",
+      "_note": "Prompt: A photorealistic photograph of a frothy pint of Guinness beer perfectly poured, sitting on a polished dark wood bar counter. Beside it, a small cluster of vibrant green shamrocks and a vintage gold coin with a Celtic design. The background is softly blurred, showing ambient pub lighting and a hint of other patrons. Shot with a Leica Q2 and a 28mm f/1.7 lens, warm, low-key indoor lighting from overhead pub lamps, shallow depth of field, impeccable focus on the beer's head and the shamrocks."
+    },
+    {
+      "id": "d42r9",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1679072765523-2ec3657a9185?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw1fHxTdC4lMjBQYXRyaWNrJTI3cyUyMGRheXxlbnwwfDB8fHwxNzczNjg1NDc0fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Sophie Popplewell on Unsplash",
+      "pro_tip": "UNPLANNED GROUPINGS: Real groups often appear less posed or coordinated. They might just be standing without specific instruments or \"laughing and interacting\" overtly.",
+      "source_url": "https://unsplash.com/photos/a-group-of-people-standing-on-the-side-of-a-road-B3bILrPA3J4"
+    },
+    {
+      "id": "d42r10",
+      "type": "image",
+      "content": "images/d42_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "IMMACULATE PROPS: Spot AI by excessively pristine vehicles with unnaturally shimmering decals and banners. They look *too* perfectly restored and ideally placed.",
+      "_note": "Prompt: A photorealistic photograph of a vintage, meticulously restored dark green delivery truck, decorated with shimmering gold shamrock decals and a banner that reads 'Happy St. Patrick's Day'. The truck is parked on a historic city street, slightly angled towards the viewer, with cobblestones and old brick buildings in the background. Taken with a Sony a7 III and a 24-70mm f/2.8 lens, bright diffused midday sunlight, balanced exposure, sharp details throughout."
+    }
+  ],
+  "category_subtitle": "Green with AI: Find the fakes before they pinch you!"
+}
