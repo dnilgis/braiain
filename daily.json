@@ -278,6 +278,13 @@
       "category_emoji": "🐼",
       "category_subtitle": "Panda Day: AI's ready to roll... and find those adorable roly-polies!",
       "challenge_file": "challenges/2026-03-16.json"
+  },
+    "2026-03-17": {
+      "day_number": 42,
+      "category": "St. Patrick's Day",
+      "category_emoji": "🍀",
+      "category_subtitle": "Green with AI: Find the fakes before they pinch you!",
+      "challenge_file": "challenges/2026-03-17.json"
   }
 }
 
