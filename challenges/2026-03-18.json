@@ -1,0 +1,99 @@
+{
+  "day_number": 43,
+  "date": "2026-03-18",
+  "category": "Global Recycling Day",
+  "category_emoji": "♻️",
+  "rounds": [
+    {
+      "id": "d43r1",
+      "type": "image",
+      "content": "images/d43_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**ARTIFICIAL LIGHT/BOKEH:** Observe light that seems \"painted on\" or unnaturally uniform. Bokeh can appear overly smooth or synthetically blurred in the background.",
+      "_note": "Prompt: A photorealistic photograph of an impeccably organized indoor recycling collection point, filled with neatly stacked bales and bins of various cardboard and paper materials. Shot with a slightly elevated wide-angle lens, the bright, uniform fluorescent lighting accentuates the crisp edges of the recycled paper and the clean, sustainable aesthetic of the facility, emphasizing order and efficiency."
+    },
+    {
+      "id": "d43r2",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1758599669317-efd787d954ef?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxNHx8R2xvYmFsJTIwUmVjeWNsaW5nfGVufDB8MHx8fDE3NzM3ODk5OTl8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Vitaly Gariev on Unsplash",
+      "pro_tip": "**LIVED-IN DETAILS:** Observe genuine wrinkles on clothes/bags, varied transparency in plastics, or spontaneous, non-idealized arrangements, reflecting real-world context.",
+      "source_url": "https://unsplash.com/photos/man-holding-trash-bags-with-volunteers-cleaning-beach-GFb7OjzFlE0"
+    },
+    {
+      "id": "d43r3",
+      "type": "image",
+      "content": "images/d43_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**HYPER-PERFECTION:** Look for unnaturally pristine surfaces, uniform textures, or flawless symmetry. Labels often appear too crisp without any realistic wear.",
+      "_note": "Prompt: A photorealistic photograph of a vibrant trio of red, yellow, and green recycling bins, meticulously labeled for plastic, paper, and glass, standing on a paved walkway in a sun-drenched urban park. Shot at eye-level with a 35mm lens, the natural daylight casts soft shadows, highlighting the bins' clean surfaces and the surrounding lush greenery."
+    },
+    {
+      "id": "d43r4",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/12492301/pexels-photo-12492301.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Robert So on Pexels",
+      "pro_tip": "**REALISTIC INTERACTION:** Check for natural human expressions, credible interactions with objects and environment, and nuanced, gradual depth of field.",
+      "source_url": "https://www.pexels.com/photo/garbage-containers-with-recycling-only-sign-12492301/"
+    },
+    {
+      "id": "d43r5",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/5441310/pexels-photo-5441310.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Tom Fisk on Pexels",
+      "pro_tip": "**ORGANIC CHAOS:** Look for natural clutter, subtle disarray, or materials with varied textures and realistic, non-uniform stacking, not idealized perfection.",
+      "source_url": "https://www.pexels.com/photo/drone-shot-of-landfill-5441310/"
+    },
+    {
+      "id": "d43r6",
+      "type": "image",
+      "content": "images/d43_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**UNNATURAL FEATURES:** Check human faces, hands, or limbs for uncanny valley effects, overly perfect smiles, or slight anatomical oddities.",
+      "_note": "Prompt: A photorealistic photograph of a diverse group of enthusiastic volunteers participating in a beach cleanup, with a focus on a smiling man in the foreground holding several full trash bags. The late afternoon golden hour sun bathes the scene in warm light, reflecting off the ocean waves in the background, captured at eye-level with a 50mm lens creating a gentle bokeh effect, highlighting community effort."
+    },
+    {
+      "id": "d43r7",
+      "type": "image",
+      "content": "images/d43_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**PATTERN REPETITION:** Examine intricate details like waste piles, lush greenery, or stacked materials; AI can show subtle, repetitive textures or unnatural regularity.",
+      "_note": "Prompt: A photorealistic photograph showcasing towering, meticulously stacked bales of compressed clear plastic bottles within the cavernous interior of a modern recycling facility. Shot with a medium telephoto lens from a slightly low angle, the natural light filtering through high warehouse windows illuminates the dense textures of the compacted plastic, conveying readiness for processing with a shallow depth of field focusing on the foreground bales."
+    },
+    {
+      "id": "d43r8",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/14370990/pexels-photo-14370990.png?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Gaurav Ranjitkar on Pexels",
+      "pro_tip": "**ENVIRONMENTAL NUANCES:** Spot authentic atmospheric haze, natural water reflections with subtle variations, or realistic light fall-off and nuanced shadows.",
+      "source_url": "https://www.pexels.com/photo/plastic-bottles-pressed-into-cubes-14370990/"
+    },
+    {
+      "id": "d43r9",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1611284446314-60a58ac0deb9?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyM3x8R2xvYmFsJTIwUmVjeWNsaW5nfGVufDB8MHx8fDE3NzM3ODk5OTl8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Nareeta Martin on Unsplash",
+      "pro_tip": "**AUTHENTIC GRIT:** Real photos often feature natural dust, grime, wear, or slight imperfections on surfaces and objects, reflecting their genuine use and environment.",
+      "source_url": "https://unsplash.com/photos/red-yellow-and-green-trash-bins-FoG7PKNYjpM"
+    },
+    {
+      "id": "d43r10",
+      "type": "image",
+      "content": "images/d43_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**VISUAL INCONSISTENCIES:** Spot illogical shadows, reflections that don't quite match, or subtle distortions in complex scenes like vast landscapes or industrial machinery.",
+      "_note": "Prompt: A photorealistic photograph capturing a vast, sprawling landfill site in the hilly terrain of West Java, Indonesia, seen from a high aerial perspective. Dump trucks appear as tiny specks, actively depositing waste, while excavators sort material amidst immense mountains of refuse under a soft, overcast sky, emphasizing the site's immense scale with a wide-angle drone lens."
+    }
+  ],
+  "category_subtitle": "Zero Waste Hero: AI's saving the planet, pixel by pixel!"
+}
