@@ -285,6 +285,13 @@
       "category_emoji": "🍀",
       "category_subtitle": "Green with AI: Find the fakes before they pinch you!",
       "challenge_file": "challenges/2026-03-17.json"
+  },
+    "2026-03-18": {
+      "day_number": 43,
+      "category": "Global Recycling Day",
+      "category_emoji": "♻️",
+      "category_subtitle": "Zero Waste Hero: AI's saving the planet, pixel by pixel!",
+      "challenge_file": "challenges/2026-03-18.json"
   }
 }
 
