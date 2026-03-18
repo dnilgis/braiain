@@ -1,0 +1,99 @@
+{
+  "day_number": 44,
+  "date": "2026-03-19",
+  "category": "National Let's Laugh Day",
+  "category_emoji": "😂",
+  "rounds": [
+    {
+      "id": "d44r1",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/908602/pexels-photo-908602.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Daniel Xavier on Pexels",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://www.pexels.com/photo/two-women-smiling-908602/"
+    },
+    {
+      "id": "d44r2",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/2761832/pexels-photo-2761832.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Natasha Babenko on Pexels",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://www.pexels.com/photo/photo-of-boy-lying-on-sand-2761832/"
+    },
+    {
+      "id": "d44r3",
+      "type": "image",
+      "content": "images/d44_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Look for natural imperfections — real photos have dust, slight blur, and uneven lighting.",
+      "_note": "Prompt: A photorealistic photograph of two diverse young women, mid-laugh, embracing warmly by the calm waters of a sunlit lake. The golden hour light bathes them in a warm glow, highlighting their genuine joy. Shot on a Canon EOS R5 with an 85mm f/1.4 lens, using natural, soft backlighting, with a shallow depth of field blurring the distant trees and water."
+    },
+    {
+      "id": "d44r4",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/1940547/pexels-photo-1940547.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by kelvin  agustinus on Pexels",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://www.pexels.com/photo/group-of-women-with-hijabs-1940547/"
+    },
+    {
+      "id": "d44r5",
+      "type": "image",
+      "content": "images/d44_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Check edges carefully — AI often produces halos or unnatural blending where objects meet.",
+      "_note": "Prompt: A photorealistic photograph of a multi-ethnic man and woman collapsing in joyful laughter, sitting cross-legged amidst a lush, vibrant green field of grass. Their faces are beaming with authentic amusement under the bright, clear midday sun. Shot with a Sony Alpha 7 IV, 50mm f/1.8 lens, natural daylight, sharp focus on their expressions, wide aperture creating a creamy bokeh of the background grass."
+    },
+    {
+      "id": "d44r6",
+      "type": "image",
+      "content": "images/d44_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Check for symmetry — AI tends to make things too perfect and symmetrical.",
+      "_note": "Prompt: A photorealistic photograph of a radiant, natural-looking woman with a genuine, heartfelt smile, standing amidst a field of towering, sun-kissed sunflowers. The golden hour light casts long shadows and highlights the vibrant yellows and greens of the scene. Taken on a Canon 5D Mark IV with a 70-200mm f/2.8 lens, shot slightly from a low angle, capturing the scale of the sunflowers, with a beautiful bokeh effect blurring the distant flowers."
+    },
+    {
+      "id": "d44r7",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1513906029980-32d13afe6d8c?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxNHx8TGF1Z2h8ZW58MHwwfHx8MTc3Mzg3NzYyMXww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Vince Fleming on Unsplash",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://unsplash.com/photos/man-and-woman-laughing-surrounded-with-green-grass-during-daytime-GvIZU9SvrKg"
+    },
+    {
+      "id": "d44r8",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1572649296690-818ec9afcf25?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxMHx8TGF1Z2h8ZW58MHwwfHx8MTc3Mzg3NzYyMXww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Brooke Cagle on Unsplash",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://unsplash.com/photos/smiling-woman-standing-beside-sunflowers-MN3I0v9k_f4"
+    },
+    {
+      "id": "d44r9",
+      "type": "image",
+      "content": "images/d44_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Examine text and labels — AI struggles with readable, consistent lettering.",
+      "_note": "Prompt: A photorealistic photograph of an adorable toddler, lying on their stomach on the damp, textured sand of a tranquil, foggy beach, a wide, innocent smile spreading across their face. The diffused light from the overcast sky creates a soft, gentle atmosphere. Shot on a Nikon D850 with a 35mm f/2.8 lens, low angle capturing the child's joyful expression, with the misty ocean horizon subtly blurred in the background."
+    },
+    {
+      "id": "d44r10",
+      "type": "image",
+      "content": "images/d44_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Look at reflections — real reflections match the environment, AI reflections are often random.",
+      "_note": "Prompt: A photorealistic photograph of a diverse group of four joyful young women wearing vibrantly colored hijabs and graduation caps, erupting in shared laughter and high-fives as they celebrate their achievement outdoors. The bright, late afternoon sun casts a celebratory glow, with dynamic movement captured. Shot on a Fujifilm GFX 100S with an 110mm f/2 lens, natural light, capturing genuine emotion and interaction, with a shallow depth of field isolating the group against a softly blurred university campus background."
+    }
+  ],
+  "category_subtitle": "Laugh Day: AI's digital comedy, spot the punchline!"
+}
