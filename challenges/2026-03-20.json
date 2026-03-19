@@ -1,0 +1,99 @@
+{
+  "day_number": 45,
+  "date": "2026-03-20",
+  "category": "National Proposal Day",
+  "category_emoji": "💍",
+  "rounds": [
+    {
+      "id": "d45r1",
+      "type": "image",
+      "content": "images/d45_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**AI: ANATOMY & TEXTURE:** Scrutinize facial profiles for subtle distortions in ears, noses, or eyes that don't align naturally. Clothing textures might appear too uniform or plastic-like.",
+      "_note": "Prompt: A photorealistic photograph of a comforting hug between a man in a plain white crew neck t-shirt and a woman in blue denim shorts. They are embracing warmly on a sun-drenched pier, with the sparkling ocean and a clear sky in the softly blurred background, conveying genuine affection. Shot with a Nikon Z7 II and a 35mm f/1.4 lens, bright outdoor sunlight, slightly low angle, full body medium shot."
+    },
+    {
+      "id": "d45r2",
+      "type": "image",
+      "content": "images/d45_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**AI: LIGHT ARTIFACTS:** Observe unnatural light bloom around sources like string lights. AI often creates repetitive, unvaried patterns in decorative elements or background textures.",
+      "_note": "Prompt: A photorealistic photograph of an intimate moment where a man in blue denim jeans is tenderly kissing a woman in a casual white button-up shirt. Their faces are in profile, capturing the soft light on their skin in a warmly lit, slightly blurred outdoor cafe setting. Taken with a Fujifilm GFX 100S and a 110mm f/2 lens, natural diffused daylight, a tight medium close-up, slightly off-center composition."
+    },
+    {
+      "id": "d45r3",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/6549798/pexels-photo-6549798.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Pavel Danilyuk on Pexels",
+      "pro_tip": "**REAL: NATURAL ENVIRONMENT:** See genuine body language and natural interaction. Environmental elements like water and sky will show authentic variation and depth.",
+      "source_url": "https://www.pexels.com/photo/a-person-holding-a-ring-box-while-doing-a-marriage-proposal-6549798/"
+    },
+    {
+      "id": "d45r4",
+      "type": "image",
+      "content": "images/d45_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**AI: OVER-PERFECTION:** Look for unnatural skin smoothness or warped background elements despite detailed camera prompts. Check for overly perfect reflections or distorted jewelry.",
+      "_note": "Prompt: A photorealistic photograph of a joyous proposal unfolding at dusk under a beautifully adorned garden gazebo. The man is on one knee, holding a ring box, while the woman covers her mouth in delighted surprise, illuminated by warm string lights and decorative flowers overhead. Shot with a Sony a7 III and a 50mm f/1.8 lens, artificial warm ambient light, shallow depth of field, medium shot, slightly from below to emphasize the gazebo's structure."
+    },
+    {
+      "id": "d45r5",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1611075099808-e3af7993333a?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxMnx8ZW5nYWdlbWVudHxlbnwwfDB8fHwxNzczOTQ1MjM4fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Natalie Runnerstrom on Unsplash",
+      "pro_tip": "**REAL: AUTHENTIC LIGHT:** Observe authentic light spillage and organic glow from light sources, alongside natural, varied textures in fabrics and skin.",
+      "source_url": "https://unsplash.com/photos/man-in-blue-denim-jeans-kissing-woman-in-white-shirt-ciUUTJfFmI0"
+    },
+    {
+      "id": "d45r6",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/30854655/pexels-photo-30854655.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by amine photographe on Pexels",
+      "pro_tip": "**AI: UNCANNY EMOTION:** Examine the ring box and ring for uncanny textures or unrealistic reflections. Emotions can seem exaggerated or fall into the uncanny valley, lacking genuine nuance.",
+      "source_url": "https://www.pexels.com/photo/romantic-proposal-by-the-riverside-30854655/"
+    },
+    {
+      "id": "d45r7",
+      "type": "image",
+      "content": "images/d45_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**AI: INTERACTION FLAWS:** Inspect hands and arms for unnatural joins or extra digits within the embrace. Background elements like water or sky may lack authentic variation or detail.",
+      "_note": "Prompt: A photorealistic photograph of an emotional indoor proposal. A man, seated at a cozy cafe table, presents a striking red velvet ring box to his girlfriend, capturing her immediate look of surprise and dawning joy. The focus is sharp on their hands and faces, with warm, soft natural light streaming from a large window. Captured with a Leica M10-P and a 50mm f/0.95 Noctilux lens, very shallow depth of field, close-up, slightly Dutch tilt."
+    },
+    {
+      "id": "d45r8",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1601162275327-4b4ae1c4b3ae?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw2fHxlbmdhZ2VtZW50fGVufDB8MHx8fDE3NzM5NDUyMzh8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by NATHAN MULLET on Unsplash",
+      "pro_tip": "**REAL: GENUINE EXPRESSION:** Check for perfectly natural facial features and expressions, capturing nuanced human emotion without uncanny valley effects.",
+      "source_url": "https://unsplash.com/photos/man-in-white-crew-neck-t-shirt-hugging-woman-in-blue-denim-shorts-U8KugxmH-j8"
+    },
+    {
+      "id": "d45r9",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/13978471/pexels-photo-13978471.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Stiven Rivera on Pexels",
+      "pro_tip": "**REAL: ORGANIC DETAIL:** Look for natural imperfections like varied leaf shapes, subtle dust, or realistic reflections on water that aren't perfectly uniform.",
+      "source_url": "https://www.pexels.com/photo/man-kneeling-before-a-woman-making-a-marriage-proposal-13978471/"
+    },
+    {
+      "id": "d45r10",
+      "type": "image",
+      "content": "images/d45_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are your pro tips for the AI detection game:",
+      "_note": "Prompt: A photorealistic photograph of a romantic proposal taking place by a serene river at golden hour. A man, elegantly dressed, is on one knee presenting a diamond ring to his delighted partner, with soft sunlight reflecting off the tranquil water and lush trees in the background. Captured with a Canon EOS R5 and a 85mm f/1.4 lens, natural soft backlight, slightly wide aperture for a dreamy bokeh, eye-level perspective."
+    }
+  ],
+  "category_subtitle": "Put a Ring on It! AI's Spotting Proposals."
+}
