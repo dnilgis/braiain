@@ -299,6 +299,13 @@
       "category_emoji": "😂",
       "category_subtitle": "Laugh Day: AI's digital comedy, spot the punchline!",
       "challenge_file": "challenges/2026-03-19.json"
+  },
+    "2026-03-20": {
+      "day_number": 45,
+      "category": "National Proposal Day",
+      "category_emoji": "💍",
+      "category_subtitle": "Put a Ring on It! AI's Spotting Proposals.",
+      "challenge_file": "challenges/2026-03-20.json"
   }
 }
 
