@@ -1,0 +1,99 @@
+{
+  "day_number": 46,
+  "date": "2026-03-21",
+  "category": "International Day of Forests",
+  "category_emoji": "🌳",
+  "rounds": [
+    {
+      "id": "d46r1",
+      "type": "image",
+      "content": "images/d46_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Look at reflections — real reflections match the environment, AI reflections are often random.",
+      "_note": "Prompt: A photorealistic photograph of a solitary, intricately detailed mushroom, its cap slightly dewy, nestled prominently on a richly textured, vibrant emerald green moss-covered forest floor. The scene is illuminated by soft, diffused natural light filtering through the dense canopy above. Captured with a macro lens from a very low angle, creating a shallow depth of field that sharply focuses on the mushroom while gently blurring the surrounding moss, enhancing its delicate presence."
+    },
+    {
+      "id": "d46r2",
+      "type": "image",
+      "content": "images/d46_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Examine text and labels — AI struggles with readable, consistent lettering.",
+      "_note": "Prompt: A photorealistic photograph of a tranquil, immersive view looking deep into a dense evergreen coniferous forest. Towering pine and fir trees stand sentinel, their dark green needles catching pockets of crisp, clear daylight that filter through the canopy, creating a play of light and shadow on the forest floor. Shot with a wide-angle lens at mid-morning, capturing the immense verticality of the trees and the profound depth of the forest, with a slight haze in the background enhancing the sense of atmosphere."
+    },
+    {
+      "id": "d46r3",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1696324812249-01c21d0af332?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxMXx8RGF5JTIwb2YlMjBGb3Jlc3RzfGVufDB8MHx8fDE3NzQwMzkxMDZ8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Eyforis Lurt on Unsplash",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://unsplash.com/photos/a-mushroom-sitting-on-top-of-a-moss-covered-forest-floor-mFPCClGY6h0"
+    },
+    {
+      "id": "d46r4",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1559048065-95235a221016?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyMHx8RGF5JTIwb2YlMjBGb3Jlc3RzfGVufDB8MHx8fDE3NzQwMzkxMDZ8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Anastasiya Romanova on Unsplash",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://unsplash.com/photos/green-leafed-trees-nEU-sGqx3Sw"
+    },
+    {
+      "id": "d46r5",
+      "type": "image",
+      "content": "images/d46_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Check for symmetry — AI tends to make things too perfect and symmetrical.",
+      "_note": "Prompt: A photorealistic photograph of a serene natural landscape, where a dense stand of towering green pine trees gracefully lines the meandering banks of a calm, crystal-clear river. The tranquil water perfectly reflects the majestic trees and the expansive, soft grey cloudy sky overhead, creating a symmetrical, peaceful scene. Shot with a wide-angle landscape lens on an overcast daytime, providing consistent, soft illumination across the entire scene, capturing the stillness and grandeur of the forest meeting the water."
+    },
+    {
+      "id": "d46r6",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1629316583544-7d83debbc4ad?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw1fHxGb3Jlc3RzfGVufDB8MHx8fDE3NzQwMzkxNjZ8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Dmytro Bukhantsov on Unsplash",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://unsplash.com/photos/green-pine-trees-beside-river-under-cloudy-sky-during-daytime-ESLWcO_qd8A"
+    },
+    {
+      "id": "d46r7",
+      "type": "image",
+      "content": "images/d46_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Check edges carefully — AI often produces halos or unnatural blending where objects meet.",
+      "_note": "Prompt: A photorealistic photograph of a serene, winding dirt path cutting through the heart of a mature, verdant forest. The path, lined with mossy rocks and ferns, gently curves out of sight into the dense trees, inviting exploration. Captured on an overcast day, providing soft, even natural light that accentuates the rich textures of the soil and surrounding foliage. Shot with a medium telephoto lens, emphasizing the leading lines of the path disappearing into the distance, with sharp focus throughout."
+    },
+    {
+      "id": "d46r8",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/18958462/pexels-photo-18958462.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Victoria Bowers on Pexels",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://www.pexels.com/photo/evergreen-coniferous-forest-18958462/"
+    },
+    {
+      "id": "d46r9",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1652868965915-15d28e26b6a5?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxNHx8RGF5JTIwb2YlMjBGb3Jlc3RzfGVufDB8MHx8fDE3NzQwMzkxMDZ8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Datingscout on Unsplash",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://unsplash.com/photos/a-dirt-path-in-the-middle-of-a-forest-04edjCzMupU"
+    },
+    {
+      "id": "d46r10",
+      "type": "image",
+      "content": "images/d46_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Look for natural imperfections — real photos have dust, slight blur, and uneven lighting.",
+      "_note": "Prompt: A photorealistic photograph of a vibrant, dense canopy of various green-leafed deciduous trees, illuminated by the warm, diffuse light of a late afternoon. Sunlight filters through the lush foliage, creating a beautiful play of light and shadow on the unseen forest floor below. Shot with a wide-angle lens, emphasizing the expansive green expanse, with a soft bokeh effect in the distant background."
+    }
+  ],
+  "category_subtitle": "International Day of Forests: Does AI see green?"
+}
