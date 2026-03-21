@@ -313,6 +313,13 @@
       "category_emoji": "🌳",
       "category_subtitle": "International Day of Forests: Does AI see green?",
       "challenge_file": "challenges/2026-03-21.json"
+  },
+    "2026-03-22": {
+      "day_number": 47,
+      "category": "National Cereal Day",
+      "category_emoji": "🥣",
+      "category_subtitle": "Is that AI spotting the actual cereal killer?",
+      "challenge_file": "challenges/2026-03-22.json"
   }
 }
 
