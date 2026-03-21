@@ -1,0 +1,99 @@
+{
+  "day_number": 47,
+  "date": "2026-03-22",
+  "category": "National Cereal Day",
+  "category_emoji": "🥣",
+  "rounds": [
+    {
+      "id": "d47r1",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1517456944721-229d38679dfa?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxOHx8Q2VyZWFsfGVufDB8MHx8fDE3NzQxMjM1OTF8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Samantha Gades on Unsplash",
+      "pro_tip": "**ORGANIC VARIATIONS:** Look for natural, less uniform textures, subtle dust, slight wear on packaging, or realistic inconsistencies in food items.",
+      "source_url": "https://unsplash.com/photos/assorted-open-boxes-HlnTtGV0Yfg"
+    },
+    {
+      "id": "d47r2",
+      "type": "image",
+      "content": "images/d47_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**IDEALIZED PERFECTION:** AI scenes are *too* perfect: flawless subjects, pristine environments, and unnaturally vibrant colors without real imperfections.",
+      "_note": "Prompt: A photorealistic photograph of an arrangement of three assorted, open cereal boxes on a minimalist white kitchen counter, with some cereal varieties gently spilling out onto the surface, revealing their contents. Captured from a slightly elevated angle with a Sony α7 IV and a 35mm f/2.8 lens, using soft, diffused overhead lighting to emphasize the textures of the cereals and the matte finish of the cardboard boxes, creating a clean and detailed still life."
+    },
+    {
+      "id": "d47r3",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1748370973875-4f75b2f3d4db?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyMXx8Y2VyZWFsJTIwYm93bHxlbnwwfDB8fHwxNzc0MTIzNjQ2fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Tuccera LLC on Unsplash",
+      "pro_tip": "**FOCUS FALLOFF:** Macro shots may have a natural, less uniform depth of field, with slight blurring or less sharp details towards the edges.",
+      "source_url": "https://unsplash.com/photos/cornflakes-and-milk-sit-in-a-bowl-xvc4m8GCibY"
+    },
+    {
+      "id": "d47r4",
+      "type": "image",
+      "content": "images/d47_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**TECHNICAL SPECIFICITY:** AI prompts often list hyper-detailed camera models, lenses, and settings. Look for this explicit, lengthy photographic jargon.",
+      "_note": "Prompt: A photorealistic photograph of a diverse collection of vintage and modern cereal boxes, stacked neatly in a retail display or 'lot' setting, showcasing their vibrant labels and distinct branding. Shot at eye-level with a Nikon D850 and a 50mm f/1.8 lens, under bright, even studio lighting with a slightly wide aperture to ensure sharp focus across the entire display, highlighting the glossy textures of the packaging."
+    },
+    {
+      "id": "d47r5",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1556767576-cf0a4a80e5b8?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxMXx8Q2VyZWFsfGVufDB8MHx8fDE3NzQxMjM1OTF8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Franki Chamaki on Unsplash",
+      "pro_tip": "**AUTHENTIC IMPERFECTIONS:** Real photos often contain natural blemishes, slight messiness, or genuine, unposed expressions on subjects.",
+      "source_url": "https://unsplash.com/photos/labeled-box-lot-wkvKZR4e2OI"
+    },
+    {
+      "id": "d47r6",
+      "type": "image",
+      "content": "images/d47_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**AI-GENERATED FACES/TEXTURES:** Look for overly smooth skin, uncanny facial symmetry, or repetitive food patterns that lack natural variation in elements like fruit or oats.",
+      "_note": "Prompt: A photorealistic photograph of a happy young girl with braided hair, smiling gently as she enjoys a bowl of colorful fruit-and-oat cereal with milk at a rustic wooden breakfast table, illuminated by soft morning light streaming in from a large window. Captured with a Canon EOS R5 and an 85mm f/1.4 lens, using a shallow depth of field to softly blur the cozy kitchen background, creating a warm, inviting atmosphere with natural, diffused light."
+    },
+    {
+      "id": "d47r7",
+      "type": "image",
+      "content": "images/d47_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**UNIFORM SHARPNESS:** Macro AI shots exhibit incredible, uniform sharpness across the entire subject, capturing every detail without natural focus falloff.",
+      "_note": "Prompt: A photorealistic photograph of a simple, elegant white bowl of classic golden cornflakes immersed in fresh milk, placed on a subtly textured light grey tablecloth. Captured at a slightly elevated, eye-level perspective with a Canon EOS 5D Mark IV and a 100mm f/2.8 macro lens, under soft, natural window light from the left, creating gentle shadows and a pleasing bokeh in the clean, blurred background to emphasize the simplicity and freshness."
+    },
+    {
+      "id": "d47r8",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/5893578/pexels-photo-5893578.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by cottonbro studio on Pexels",
+      "pro_tip": "**OVER-ART DIRECTED:** AI frequently presents scenes with elements like \"gently spilling\" or \"pleasing bokeh\" that feel meticulously, unnaturally curated.",
+      "source_url": "https://www.pexels.com/photo/person-pouring-milk-on-cereals-5893578/"
+    },
+    {
+      "id": "d47r9",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/4964560/pexels-photo-4964560.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by www.kaboompics.com on Pexels",
+      "pro_tip": "**NATURAL LIGHTING FLAWS:** Real photography can show less idealized lighting, with harsher shadows, uneven illumination, or natural glare/reflections.",
+      "source_url": "https://www.pexels.com/photo/close-up-shot-of-bowl-with-cereal-and-milk-4964560/"
+    },
+    {
+      "id": "d47r10",
+      "type": "image",
+      "content": "images/d47_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**FLAWLESS LIGHTING:** AI generates perfectly even, diffused, or \"studio\" lighting, creating ideal shadows and highlights that rarely occur naturally.",
+      "_note": "Prompt: A photorealistic photograph of a tightly framed, overhead close-up view of a ceramic bowl filled with crunchy oat and wheat flake cereal with fresh white milk, showing individual flakes, ripples, and small bubbles at the surface. Shot directly from above (flat lay) with a Fujifilm GFX 100S and a 120mm macro lens, utilizing crisp, even studio lighting to bring out every detail and texture, with sharp focus throughout the entire bowl."
+    }
+  ],
+  "category_subtitle": "Is that AI spotting the actual cereal killer?"
+}
