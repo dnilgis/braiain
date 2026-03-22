@@ -1,0 +1,99 @@
+{
+  "day_number": 48,
+  "date": "2026-03-23",
+  "category": "National Puppy Day",
+  "category_emoji": "🐶",
+  "rounds": [
+    {
+      "id": "d48r1",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxfHxQdXBweXxlbnwwfDB8fHwxNzc0MjE4NDc0fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Berkay Gumustekin on Unsplash",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://unsplash.com/photos/selective-focus-photography-of-short-coated-brown-puppy-facing-right-side-ngqyo2AYYnE"
+    },
+    {
+      "id": "d48r2",
+      "type": "image",
+      "content": "images/d48_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Examine text and labels — AI struggles with readable, consistent lettering.",
+      "_note": "Prompt: A photorealistic photograph of an inquisitive short-coated tan and black puppy, captured in an extreme close-up, focusing sharply on its adorable face, soulful eyes, and the delicate texture of its nose. Lit with a softbox and reflector to bring out intricate fur details, shot with a macro lens at f/4 on a mirrorless camera, creating a very shallow depth of field."
+    },
+    {
+      "id": "d48r3",
+      "type": "image",
+      "content": "images/d48_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Look at reflections — real reflections match the environment, AI reflections are often random.",
+      "_note": "Prompt: A photorealistic photograph of a fluffy white Shih Tzu puppy in mid-stride, joyfully running across a vibrant green lawn. Captured with a fast shutter speed (1/1250s) and a telephoto lens at f/2.8 to achieve a dynamic shallow focus, isolating the puppy from the beautifully blurred grassy background, under bright, natural outdoor sunlight."
+    },
+    {
+      "id": "d48r4",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1606833694770-40a04762ac16?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyM3x8UHVwcHl8ZW58MHwwfHx8MTc3NDIxODQ3NHww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Ben Michel on Unsplash",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://unsplash.com/photos/white-and-brown-short-coated-puppy-lying-on-brown-wooden-floor-Uyn3kXAaZX8"
+    },
+    {
+      "id": "d48r5",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1625794084867-8ddd239946b1?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyMnx8UHVwcHl8ZW58MHwwfHx8MTc3NDIxODQ3NHww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Taylor Sondgeroth on Unsplash",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://unsplash.com/photos/golden-retriever-puppy-lying-on-white-textile-ltsKOg_q_Gc"
+    },
+    {
+      "id": "d48r6",
+      "type": "image",
+      "content": "images/d48_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Check for symmetry — AI tends to make things too perfect and symmetrical.",
+      "_note": "Prompt: A photorealistic photograph of a sweet Golden Retriever puppy, gently resting and lying down on a soft, pristine white knitted textile. Taken with a standard zoom lens at a medium aperture (f/5.6) for balanced focus, bathed in diffused studio lighting to emphasize the puppy's soft golden fur and the cozy texture of the fabric, with a clean, minimalist aesthetic."
+    },
+    {
+      "id": "d48r7",
+      "type": "image",
+      "content": "images/d48_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Look for natural imperfections — real photos have dust, slight blur, and uneven lighting.",
+      "_note": "Prompt: A photorealistic photograph of a short-coated chocolate brown puppy, head turned slightly to the right with bright, alert eyes, captured with selective focus using a full-frame DSLR and a prime lens at f/1.8, under soft natural window light, creating a beautiful bokeh background."
+    },
+    {
+      "id": "d48r8",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1546527868-ccb7ee7dfa6a?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyfHxQdXBweXxlbnwwfDB8fHwxNzc0MjE4NDc0fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by hannah grace on Unsplash",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://unsplash.com/photos/short-coated-tan-and-black-puppy-close-up-photography-fk4tiMlDFF0"
+    },
+    {
+      "id": "d48r9",
+      "type": "image",
+      "content": "images/d48_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Check edges carefully — AI often produces halos or unnatural blending where objects meet.",
+      "_note": "Prompt: A photorealistic photograph of a serene white and tan short-coated puppy, peacefully curled up and lying flat on a warm, polished dark brown wooden floor. Shot at eye level with a standard prime lens, using soft overhead ambient light to showcase its relaxed posture and the natural grain of the wood, with a subtly diffused background."
+    },
+    {
+      "id": "d48r10",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1534361960057-19889db9621e?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw2fHxQdXBweXxlbnwwfDB8fHwxNzc0MjE4NDc0fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Joe Caione on Unsplash",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://unsplash.com/photos/shallow-focus-photography-of-white-shih-tzu-puppy-running-on-the-grass-qO-PIF84Vxg"
+    }
+  ],
+  "category_subtitle": "Don't be fooled by puppy eyes—spot the AI fakes!"
+}
