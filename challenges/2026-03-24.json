@@ -1,0 +1,99 @@
+{
+  "day_number": 49,
+  "date": "2026-03-24",
+  "category": "National Ag Day",
+  "category_emoji": "🚜",
+  "rounds": [
+    {
+      "id": "d49r1",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1695393375542-5ad41921c85b?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxNXx8QWd8ZW58MHwwfHx8MTc3NDMwMjkwOXww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Hannah Shedrow on Unsplash",
+      "pro_tip": "**NATURAL IMPERFECTIONS:** Real photos often contain slight lens flares, sensor dust, or less-than-perfect focus. Look for organic, unpredictable light and shadows.",
+      "source_url": "https://unsplash.com/photos/a-red-combine-truck-driving-through-a-wheat-field-M_nJfqq5Jz8"
+    },
+    {
+      "id": "d49r2",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1454179083322-198bb4daae41?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw3fHxmYXJtfGVufDB8MHx8fDE3NzQzMDI5ODR8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Annie Spratt on Unsplash",
+      "pro_tip": "**FACIAL AVOIDANCE & HANDS:** AI frequently avoids clear human faces, often turning them away or obscuring them. Check for subtle irregularities in hands or props.",
+      "source_url": "https://unsplash.com/photos/cows-at-farm-JMjNnQ2xFoY"
+    },
+    {
+      "id": "d49r3",
+      "type": "image",
+      "content": "images/d49_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**DRAMATIC ELEMENTS:** Look for overly dramatic, perfectly rendered dust plumes or atmospheric effects. Composition often follows precise leading lines to a focal point.",
+      "_note": "Prompt: A photorealistic photograph of a single, vibrant green seedling, delicately emerging from rich, dark brown soil. Tiny droplets of morning dew cling to its unfurling leaves, reflecting the soft, diffused light from an overcast sky. Captured with a macro lens (e.g., 100mm f/2.8) at f/2.8, creating an extremely shallow depth of field that isolates the plant and highlights the intricate textures of the soil and leaves. The composition is a low-angle, centered shot, focusing intently on the miracle of new growth."
+    },
+    {
+      "id": "d49r4",
+      "type": "image",
+      "content": "images/d49_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are your pro tips for the AI detection game:",
+      "_note": "Prompt: A photorealistic photograph of a herd of Black Angus cattle grazing peacefully in a sun-drenched green pasture on a family farm. The golden hour sunlight casts long shadows, illuminating the texture of their coats and the dewy grass. Shot with a telephoto lens (e.g., 70-200mm f/2.8) at f/4, creating a shallow depth of field that blurs the distant barn and rolling hills, emphasizing the cows in the mid-ground. The composition uses the rule of thirds, with a few cows positioned slightly off-center."
+    },
+    {
+      "id": "d49r5",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1524486361537-8ad15938e1a3?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxM3x8QWdyaWN1bHR1cmV8ZW58MHwwfHx8MTc3NDMwMjkyNXww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Erwan Hesry on Unsplash",
+      "pro_tip": "**ORGANIC DETAIL:** Real close-ups often show natural debris, less uniform textures, or irregular dew placement. Bokeh may have slight imperfections.",
+      "source_url": "https://unsplash.com/photos/green-plants-1q75BReKpms"
+    },
+    {
+      "id": "d49r6",
+      "type": "image",
+      "content": "images/d49_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**GEOMETRIC UNIFORMITY:** Observe flawless, repetitive patterns and perfectly uniform plant rows. AI often renders an artificial \"compressed perspective\" or stylized atmospheric haze.",
+      "_note": "Prompt: A photorealistic photograph of an agricultural worker, wearing a simple gray hoodie and black pants, carefully holding a brown cardboard box filled with freshly picked produce. The scene takes place inside a sunlit greenhouse, with rows of vibrant green plants visible in the softly blurred background. Shot with a standard lens (e.g., 50mm f/3.5) under natural, diffused light streaming from overhead, providing even illumination. The composition is a medium close-up, focusing on the worker's hands and the box, with their face slightly turned away, emphasizing the task at hand."
+    },
+    {
+      "id": "d49r7",
+      "type": "image",
+      "content": "images/d49_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**MACRO PERFECTION:** AI excels at unnaturally perfect dew droplets and hyper-detailed macro textures. Extreme, flawless shallow depth of field often isolates the subject precisely.",
+      "_note": "Prompt: A photorealistic photograph of a vast, meticulously planted field of young, lush green cornstalks stretching towards a hazy horizon under an early morning sky. The rows of plants create a striking geometric pattern, with sunlight just beginning to highlight the dew-kissed leaves. Taken with a medium telephoto lens (e.g., 85mm f/5.6) for a compressed perspective, ensuring sharp focus across the mid-ground rows. The composition uses a strong horizon line, with the patterned crops dominating the lower two-thirds of the frame."
+    },
+    {
+      "id": "d49r8",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwzfHxBZ3JpY3VsdHVyZXxlbnwwfDB8fHwxNzc0MzAyOTI1fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Steven Weeks on Unsplash",
+      "pro_tip": "**UNSTAGED CHAOS:** Genuine dust or water splashes appear more random and less artfully composed. Real action shots can feel less \"cinematic\" than AI versions.",
+      "source_url": "https://unsplash.com/photos/green-plant-on-brown-soil-DUPFowqI6oI"
+    },
+    {
+      "id": "d49r9",
+      "type": "image",
+      "content": "images/d49_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**LIGHTING & FOCUS:** AI often shows flawless golden hour lighting with perfect bokeh. Observe precise light on textures and deliberately blurred backgrounds.",
+      "_note": "Prompt: A photorealistic photograph of a vibrant red combine harvester, churning through a vast field of golden ripe wheat under a clear blue sky. Dust billows dramatically behind the machine, caught in the bright mid-afternoon sun. Shot with a wide-angle lens (e.g., 24mm f/8) to capture the expansive field, with a slight upward angle emphasizing the combine's scale against the horizon. The composition utilizes leading lines of the crop rows drawing the eye towards the powerful machine in the distance."
+    },
+    {
+      "id": "d49r10",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1605000797499-95a51c5269ae?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxfHxmYXJtZXJzfGVufDB8MHx8fDE3NzQzMDMwNDR8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Tim Mossholder on Unsplash",
+      "pro_tip": "**SUBTLE VARIATIONS:** Real crop fields show slight inconsistencies in growth, row alignment, or soil texture. Look for natural, minor flaws in patterns.",
+      "source_url": "https://unsplash.com/photos/man-in-gray-hoodie-and-black-pants-holding-brown-cardboard-box-xDwEa2kaeJA"
+    }
+  ],
+  "category_subtitle": "AI's Daily Harvest: Spotting Spuds and Digital Duds!"
+}
