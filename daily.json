@@ -327,6 +327,13 @@
       "category_emoji": "🐶",
       "category_subtitle": "Don't be fooled by puppy eyes—spot the AI fakes!",
       "challenge_file": "challenges/2026-03-23.json"
+  },
+    "2026-03-24": {
+      "day_number": 49,
+      "category": "National Ag Day",
+      "category_emoji": "🚜",
+      "category_subtitle": "AI's Daily Harvest: Spotting Spuds and Digital Duds!",
+      "challenge_file": "challenges/2026-03-24.json"
   }
 }
 
