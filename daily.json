@@ -334,6 +334,13 @@
       "category_emoji": "🚜",
       "category_subtitle": "AI's Daily Harvest: Spotting Spuds and Digital Duds!",
       "challenge_file": "challenges/2026-03-24.json"
+  },
+    "2026-03-25": {
+      "day_number": 50,
+      "category": "National Sing-Out Day",
+      "category_emoji": "🎤",
+      "category_subtitle": "Sing your heart out! Can AI spot the mic drop?",
+      "challenge_file": "challenges/2026-03-25.json"
   }
 }
 
