@@ -1,0 +1,99 @@
+{
+  "day_number": 50,
+  "date": "2026-03-25",
+  "category": "National Sing-Out Day",
+  "category_emoji": "🎤",
+  "rounds": [
+    {
+      "id": "d50r1",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/4387718/pexels-photo-4387718.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Starter Cam on Pexels",
+      "pro_tip": "**AUTHENTIC IMPERFECTIONS:** Look for genuine effort in expressions, not idealized beauty. Studio environments might show signs of real use, like slight wear or less perfect cable management.",
+      "source_url": "https://www.pexels.com/photo/woman-in-gray-crew-neck-shirt-singing-while-wearing-black-headphones-4387718/"
+    },
+    {
+      "id": "d50r2",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1771340591023-45a8d897e7ae?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxNnx8U2luZy1PdXR8ZW58MHwwfHx8MTc3NDM5MTA5MHww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Olek Buzunov on Unsplash",
+      "pro_tip": "**UNFORCED EXPRESSIONS:** Observe genuine, unforced expressions and posture. Lighting might be less perfectly flattering, and details like dress folds show natural movement.",
+      "source_url": "https://unsplash.com/photos/a-woman-in-a-blue-dress-sings-into-a-microphone-2jKthChJI4c"
+    },
+    {
+      "id": "d50r3",
+      "type": "image",
+      "content": "images/d50_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**HYPER-FOCUSED LIGHTING:** Notice complex, perfectly placed spotlights and backlighting. Objects like microphones often show unnaturally crisp, intricate details. Emotions can seem forced.",
+      "_note": "Prompt: A photorealistic photograph of a dedicated female vocalist, mid-30s, passionately belting out a note into a high-quality condenser microphone within a dimly lit, soundproof professional recording studio on National Sing-Out Day. A focused LED spotlight illuminates her face, highlighting the intense emotion, while subtle blue backlighting separates her from the sound-dampening panels. Captured with a Sony a7 III and an 85mm f/1.8 lens, a tight medium close-up that emphasizes her expressive features and the microphone's intricate details."
+    },
+    {
+      "id": "d50r4",
+      "type": "image",
+      "content": "images/d50_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**PERFECT AMBIANCE:** Look for flawless golden hour lighting and consistently soft shadows. Background blur often appears unnaturally smooth, isolating subjects too perfectly.",
+      "_note": "Prompt: A photorealistic photograph of two friends, a man and a woman in their late 20s, strumming an acoustic guitar and singing cheerfully on a sun-drenched urban rooftop on National Sing-Out Day. The scene is bathed in warm, golden hour light, casting soft shadows. Shot with a Canon EOS R5 and a 50mm f/1.4 lens, from a slightly elevated medium shot, capturing their joyful expressions and the city skyline blurred in the background, creating a sense of casual bonding and celebration."
+    },
+    {
+      "id": "d50r5",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1759315896446-23507335bd08?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxMHx8U2luZy1PdXR8ZW58MHwwfHx8MTc3NDM5MTA5MHww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by nobleseed nobleseed on Unsplash",
+      "pro_tip": "**UNPREDICTABLE REALITY:** Expect less uniform lighting and dynamic range, with some areas under or overexposed. Audience interactions often appear less stylized or perfectly framed.",
+      "source_url": "https://unsplash.com/photos/a-band-performs-music-for-an-audience-at-night-88-x0RrgBHE"
+    },
+    {
+      "id": "d50r6",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/4874575/pexels-photo-4874575.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by cottonbro studio on Pexels",
+      "pro_tip": "**NATURAL INTERACTION:** Seek out spontaneous, less-than-perfect poses or expressions. Lighting might have natural inconsistencies, and backgrounds show authentic urban grit.",
+      "source_url": "https://www.pexels.com/photo/woman-in-white-tank-top-and-black-pants-playing-ukulele-4874575/"
+    },
+    {
+      "id": "d50r7",
+      "type": "image",
+      "content": "images/d50_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**EXAGGERATED VIBRANCY:** Watch for overly dynamic, perfectly composed stage lighting with distinct color separation. Crowd phone screens might glow uniformly or appear too stylized.",
+      "_note": "Prompt: A photorealistic photograph of a vibrant indie band performing live on an outdoor stage at night for a lively crowd, celebrating National Sing-Out Day. Dynamic, colorful stage lights, including magenta and cyan spotlights, cut through the night, illuminating the lead singer as they passionately address the audience. Shot with a Nikon D850 and a 24-70mm f/2.8 lens, a wide-angle medium shot from the front row, capturing the band's energetic presence, the glowing phone screens of the audience, and the overall electric atmosphere."
+    },
+    {
+      "id": "d50r8",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1699007770634-7db1b1be66f2?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyMHx8U2luZy1PdXR8ZW58MHwwfHx8MTc3NDM5MTA5MHww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Simona Toma on Unsplash",
+      "pro_tip": "**ORGANIC TEXTURE/GRAIN:** Notice natural film grain or digital noise in black and white. Lighting may be less dramatically sculpted, creating softer, more nuanced shadow transitions.",
+      "source_url": "https://unsplash.com/photos/a-woman-singing-into-a-microphone-in-a-black-and-white-photo-ERXksm3zVEE"
+    },
+    {
+      "id": "d50r9",
+      "type": "image",
+      "content": "images/d50_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**IDEALIZED BEAUTY:** Observe flawless styling, pristine vibrant colors, and subtle, perfect sheen on objects. Expressions are often unnaturally serene or elegant, lacking natural micro-expressions.",
+      "_note": "Prompt: A photorealistic photograph of an elegant woman, late 20s, in a stunning cerulean blue evening gown, gracefully holding a sleek chrome microphone and singing with poise on a softly lit stage for National Sing-Out Day. Soft, flattering warm stage lights illuminate her from the front, bringing out the vibrant color of her dress and the subtle sheen of the microphone. Taken with a Fujifilm GFX 100S and a 110mm f/2.0 lens, a refined medium shot that highlights her graceful posture, the flow of her dress, and her serene expression, with a gently blurred audience in the background."
+    },
+    {
+      "id": "d50r10",
+      "type": "image",
+      "content": "images/d50_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**DRAMATIC PERFECTION:** Examine extreme high-contrast black and white, featuring perfectly sculpted shadows and highlights. Exaggerated \"raw emotion\" can often look posed or artificial.",
+      "_note": "Prompt: A photorealistic photograph of a soulful woman, early 40s, closing her eyes in concentration as she sings into a vintage silver microphone, rendered in dramatic high-contrast black and white on National Sing-Out Day. A sharp, overhead spotlight creates deep shadows and highlights every contour of her face and the texture of the microphone. Captured with a Leica M10 Monochrom and a 75mm f/2.0 lens, presented as a classic, timeless medium close-up portrait with a shallow depth of field, emphasizing raw emotion."
+    }
+  ],
+  "category_subtitle": "Sing your heart out! Can AI spot the mic drop?"
+}
