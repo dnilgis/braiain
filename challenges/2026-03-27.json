@@ -1,0 +1,99 @@
+{
+  "day_number": 52,
+  "date": "2026-03-27",
+  "category": "World Theatre Day",
+  "category_emoji": "🎭",
+  "rounds": [
+    {
+      "id": "d52r1",
+      "type": "image",
+      "content": "images/d52_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**CONTROLLED CHAOS:** Busy street scenes with moving elements (cars, pedestrians) appear perfectly composed, with precise reflections and ideal placement.",
+      "_note": "Prompt: A photorealistic photograph of a diverse audience attentively seated in rows of plush, deep red velvet theatre chairs inside a grand, dimly lit auditorium, just before a performance begins. The house lights are low, casting soft shadows, and a subtle golden glow emanates from the edge of the stage, creating an atmosphere of palpable anticipation. Shot with a Fujifilm GFX 100S, 70mm lens, f/4, ISO 1600, from the upper balcony, capturing the vastness of the theatre and the collective focus of the spectators."
+    },
+    {
+      "id": "d52r2",
+      "type": "image",
+      "content": "images/d52_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**IMMACULATE TEXT:** Text on signs or marquees will be perfectly legible, crisp, and flawlessly integrated, even when reflecting on wet surfaces.",
+      "_note": "Prompt: A photorealistic photograph of the majestic Chicago Theatre facade dominating a bustling downtown Chicago street during a vibrant late afternoon. Pedestrians walk by and classic yellow taxis stream past, their reflections visible on the polished wet street after a recent rain. The iconic vertical marquee, adorned with its signature \"C-H-I-C-A-G-O\" script, glows with anticipation, bathed in the golden hour sunlight. Captured with a Nikon D850, 24mm wide-angle lens, f/8, ISO 100, showcasing the intricate architectural details and the dynamic urban energy."
+    },
+    {
+      "id": "d52r3",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1585699324551-f6c309eedeca?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxNXx8VGhlYXRyZXxlbnwwfDB8fHwxNzc0NTUyMTE0fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Erik Mclean on Unsplash",
+      "pro_tip": "**NATURAL FLAWS:** Spot minor imperfections: subtle blur, less-than-perfect focus on distant elements, or authentic, less idealized expressions in individuals.",
+      "source_url": "https://unsplash.com/photos/people-standing-on-stage-with-lights-turned-on-during-nighttime-PFfA3xlHFbQ"
+    },
+    {
+      "id": "d52r4",
+      "type": "image",
+      "content": "images/d52_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**PERFECT LIGHTING:** Observe complex, multi-source lighting, creating dramatic effects, precise shadows, and consistent glows, appearing almost too ideal.",
+      "_note": "Prompt: A photorealistic photograph of the iconic Orpheum Theatre marquee in downtown Los Angeles, viewed from a slight low-angle perspective, captured in striking black and white. The intricate neon lights of the marquee, displaying \"World Theatre Day Gala Tonight\" and \"Sold Out\", glow brilliantly against the dark sky, reflecting subtly on the wet street pavement below. Shot with a Leica M10 Monochrom, 50mm lens, f/5.6, ISO 200, emphasizing sharp details of the architectural facade and the luminous marquee text."
+    },
+    {
+      "id": "d52r5",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1597953066321-9bf0e32348fb?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyNHx8VGhlYXRyZXxlbnwwfDB8fHwxNzc0NTUyMTE0fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Kenny Filiaert on Unsplash",
+      "pro_tip": "**UNPREDICTABLE REALITY:** Urban scenes show genuine, un-staged activity. Reflections or crowd arrangements might be less precise and more organic.",
+      "source_url": "https://unsplash.com/photos/people-sitting-on-red-chairs-inside-building-Q91Ew2U78oY"
+    },
+    {
+      "id": "d52r6",
+      "type": "image",
+      "content": "images/d52_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**HYPER-DETAIL:** Look for immaculate, flawless details, like perfect textures on costumes or intricate architectural embellishments, often specified by camera settings.",
+      "_note": "Prompt: A photorealistic photograph of an ensemble cast of diverse actors, dressed in contemporary casual attire, standing united in a line across a brightly lit, empty stage, taking a collective bow during a curtain call. The vibrant, multi-colored LED stage lights create dramatic backlighting and cast long shadows on the polished wooden floor. Shot with a Sony A7 III, 35mm lens, f/4, ISO 800, capturing the ambient glow and appreciative expressions, from a wide-angle perspective in the orchestra pit."
+    },
+    {
+      "id": "d52r7",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/6813301/pexels-photo-6813301.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Dalila Dalprat on Pexels",
+      "pro_tip": "**ORGANIC LIGHTING:** Lighting often appears more natural, less dramatically controlled, and may show variations or less-than-perfect transitions and reflections.",
+      "source_url": "https://www.pexels.com/photo/the-orpheum-theatre-reader-board-6813301/"
+    },
+    {
+      "id": "d52r8",
+      "type": "image",
+      "content": "images/d52_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are 10 pro tips for the AI detection game, themed \"World Theatre Day\":",
+      "_note": "Prompt: A photorealistic photograph of a seasoned actress in a richly detailed Victorian-era gown, captured mid-dramatic monologue on a darkened stage, one hand gracefully extended towards the audience, bathed in a warm, focused spotlight from above. Shot with a Canon EOS R5, f/2.8, ISO 400, 85mm lens, showcasing subtle stage smoke and the intense emotion in her eyes, with a shallow depth of field blurring the background elements."
+    },
+    {
+      "id": "d52r9",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/2869205/pexels-photo-2869205.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Kelly on Pexels",
+      "pro_tip": "**IMPERFECT TEXT:** Text on marquees might exhibit slight distortions, uneven lighting, or minor wear and tear, reflecting real-world conditions.",
+      "source_url": "https://www.pexels.com/photo/chicago-theater-building-2869205/"
+    },
+    {
+      "id": "d52r10",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/6899773/pexels-photo-6899773.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by cottonbro studio on Pexels",
+      "pro_tip": "**ATMOSPHERIC PERFECTION:** Subtle atmospheric effects like smoke or specific emotions are rendered with ideal, consistent precision, leaving no room for natural variation.",
+      "source_url": "https://www.pexels.com/photo/woman-in-white-lace-dress-6899773/"
+    }
+  ],
+  "category_subtitle": "Break a leg! Find the AI in this digital masquerade."
+}
