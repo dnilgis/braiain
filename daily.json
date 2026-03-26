@@ -341,6 +341,13 @@
       "category_emoji": "🎤",
       "category_subtitle": "Sing your heart out! Can AI spot the mic drop?",
       "challenge_file": "challenges/2026-03-25.json"
+  },
+    "2026-03-26": {
+      "day_number": 51,
+      "category": "National Spinach Day",
+      "category_emoji": "🥬",
+      "category_subtitle": "Popeye vs. AI: Who spots the spinach first?",
+      "challenge_file": "challenges/2026-03-26.json"
   }
 }
 
