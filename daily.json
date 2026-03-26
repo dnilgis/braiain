@@ -348,6 +348,13 @@
       "category_emoji": "🥬",
       "category_subtitle": "Popeye vs. AI: Who spots the spinach first?",
       "challenge_file": "challenges/2026-03-26.json"
+  },
+    "2026-03-27": {
+      "day_number": 52,
+      "category": "World Theatre Day",
+      "category_emoji": "🎭",
+      "category_subtitle": "Break a leg! Find the AI in this digital masquerade.",
+      "challenge_file": "challenges/2026-03-27.json"
   }
 }
 
