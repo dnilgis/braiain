@@ -1,0 +1,99 @@
+{
+  "day_number": 51,
+  "date": "2026-03-26",
+  "category": "National Spinach Day",
+  "category_emoji": "🥬",
+  "rounds": [
+    {
+      "id": "d51r1",
+      "type": "image",
+      "content": "images/d51_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**GENERIC ELEMENTS:** Check for generic or slightly uncanny hands. AI often struggles with realistic human features or fluid motion.",
+      "_note": "Prompt: A photorealistic photograph of a close-up, almost abstract view of a single, large, dark green spinach leaf. The intricate texture of its veins and slight crinkling is sharply defined, with small dew drops clinging to its surface. The leaf fills the frame, showcasing its healthy, glossy appearance. Shot with a dedicated macro lens (e.g., Laowa 100mm f/2.8 2X Ultra Macro APO) at f/5.6, using a ring light for even, shadowless illumination, highlighting every detail and natural vibrant color."
+    },
+    {
+      "id": "d51r2",
+      "type": "image",
+      "content": "images/d51_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are your pro tips for the AI detection game:",
+      "_note": "Prompt: A photorealistic photograph of a rustic wooden sign, weathered with green moss, displaying the hand-painted word 'Spinach' in elegant script. The sign stands prominently amidst a vibrant, sun-drenched organic farm landscape, with rows of lush green spinach plants stretching into the distance under a clear blue sky. Shot with a wide-angle lens (e.g., Canon EF 16-35mm f/2.8L III USM), capturing deep depth of field, under soft morning sunlight, naturalistic colors."
+    },
+    {
+      "id": "d51r3",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/7129393/pexels-photo-7129393.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Michael Burrows on Pexels",
+      "pro_tip": "**AUTHENTIC PRESENTATION:** Observe natural food plating and realistic parmesan texture. Real dishes have a less 'styled,' more organic appearance.",
+      "source_url": "https://www.pexels.com/photo/faceless-ethnic-man-cutting-spinach-leaves-in-house-kitchen-7129393/"
+    },
+    {
+      "id": "d51r4",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1565489348099-73ff648c76ab?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxNnx8U3BpbmFjaHxlbnwwfDB8fHwxNzc0NDgzODI5fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Duyet Le on Unsplash",
+      "pro_tip": "**HUMAN NUANCES:** Look for subtle imperfections in hand gestures or kitchen elements. Real actions often have a less rigid, more spontaneous feel.",
+      "source_url": "https://unsplash.com/photos/green-leafed-plant-vS_ST319CdA"
+    },
+    {
+      "id": "d51r5",
+      "type": "image",
+      "content": "images/d51_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**PERFECTION:** Observe the hyper-realistic detail on the sign and plants. AI often creates scenes that are too perfect and unnaturally vibrant.",
+      "_note": "Prompt: A photorealistic photograph of a pristine white ceramic plate holding a generous serving of freshly prepared spinach gnocchi, glistening slightly from a light butter sauce. Each plump gnocchi piece is generously topped with finely grated parmesan cheese, some delicate flakes still visible. A single sprig of fresh basil garnishes the dish. Shot with a macro lens (e.g., Sigma 105mm f/2.8 DG DN Art) at f/2.8, shallow depth of field, bathed in soft, diffused overhead studio lighting, inviting warm tones."
+    },
+    {
+      "id": "d51r6",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1592419391068-9bd09dd58510?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw5fHxTcGluYWNofGVufDB8MHx8fDE3NzQ0ODM4Mjl8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Compagnons on Unsplash",
+      "pro_tip": "**ORGANIC VARIATIONS:** Notice natural leaf irregularities, slight discoloration, or subtle light variations. Real plants are rarely perfectly uniform.",
+      "source_url": "https://unsplash.com/photos/green-plant-on-brown-soil-hlC6OwRSQFs"
+    },
+    {
+      "id": "d51r7",
+      "type": "image",
+      "content": "images/d51_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**EXCESSIVE DETAIL:** Notice unnaturally sharp details everywhere, like perfectly rendered dew drops or symmetrical veins. AI often over-renders micro-details.",
+      "_note": "Prompt: A photorealistic photograph of a young, healthy spinach plant firmly rooted in rich, dark brown soil. The plant features several vibrant green leaves fanning out from a central stem, with visible soil particles and perhaps a tiny hint of moisture around the base. The composition is a low-angle shot, making the plant feel sturdy and alive, against a soft, blurred background of a garden bed. Shot with a standard prime lens (e.g., Nikon AF-S NIKKOR 50mm f/1.8G) at f/4, under bright natural daylight, emphasizing the organic connection between plant and earth."
+    },
+    {
+      "id": "d51r8",
+      "type": "image",
+      "content": "images/d51_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**TEXTURE & SHEEN:** Look for overly uniform textures and artificial sheen on food. AI food can appear unnaturally perfect or plastic-like.",
+      "_note": "Prompt: A photorealistic photograph of an unrecognizable person's hands diligently chopping a large bunch of fresh, vibrant green spinach on a light wooden cutting board. The hands are strong and purposeful, with a sharp chef's knife in mid-motion. The background shows a clean, modern kitchen with stainless steel appliances and minimalist cabinetry, slightly out of focus. Shot with a prime lens (e.g., Sony FE 85mm f/1.4 GM) at f/2.0, natural ambient kitchen light supplemented by overhead task lighting, crisp focus on the action."
+    },
+    {
+      "id": "d51r9",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/6659557/pexels-photo-6659557.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by www.kaboompics.com on Pexels",
+      "pro_tip": "**NATURAL IMPERFECTIONS:** Look for subtle, authentic wear and tear on the sign. Real outdoor scenes show natural, unpredictable imperfections.",
+      "source_url": "https://www.pexels.com/photo/a-person-holding-a-plate-and-a-fork-with-green-food-6659557/"
+    },
+    {
+      "id": "d51r10",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/7457486/pexels-photo-7457486.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Kindel Media on Pexels",
+      "pro_tip": "**IDEALIZED NATURALISM:** Spot plants that are too pristine or perfectly composed. AI frequently creates idealized versions of nature, lacking subtle imperfections.",
+      "source_url": "https://www.pexels.com/photo/wooden-signage-with-a-word-spinach-7457486/"
+    }
+  ],
+  "category_subtitle": "Popeye vs. AI: Who spots the spinach first?"
+}
