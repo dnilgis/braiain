@@ -362,6 +362,13 @@
       "category_emoji": "🎹",
       "category_subtitle": "Grand or Upright? AI's Got the Key!",
       "challenge_file": "challenges/2026-03-28.json"
+  },
+    "2026-03-29": {
+      "day_number": 54,
+      "category": "Smoke and Mirrors Day",
+      "category_emoji": "✨",
+      "category_subtitle": "Smoke and Mirrors: Your AI's reality check starts now!",
+      "challenge_file": "challenges/2026-03-29.json"
   }
 }
 
