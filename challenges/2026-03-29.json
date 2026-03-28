@@ -1,0 +1,99 @@
+{
+  "day_number": 53,
+  "date": "2026-03-29",
+  "category": "World Piano Day",
+  "category_emoji": "🎹",
+  "rounds": [
+    {
+      "id": "d53r1",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1452724931113-5ab6340ce080?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyNHx8UGlhbm98ZW58MHwwfHx8MTc3NDY1NzA0N3ww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Gabriel Gurrola on Unsplash",
+      "pro_tip": "**SPONTANEOUS ELEMENTS:** Real photos include unexpected background details, slight distortions in reflections, or less \"perfect\" arrangements, reflecting a natural scene.",
+      "source_url": "https://unsplash.com/photos/person-playing-piano-tdo2GLH18Ls"
+    },
+    {
+      "id": "d53r2",
+      "type": "image",
+      "content": "images/d53_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are 10 pro tips for the AI detection game, themed \"World Piano Day\":",
+      "_note": "Prompt: A photorealistic photograph of a young woman with short curly hair, gently playing a vintage matte black upright piano in a warmly lit, cozy living room. Her hands are poised over the ivory keys, illuminated by soft, golden light from a nearby table lamp. Shot with a Sony Alpha a7R IV, 50mm lens, f/2.8, ISO 400, capturing a warm, intimate medium shot with a shallow depth of field."
+    },
+    {
+      "id": "d53r3",
+      "type": "image",
+      "content": "images/d53_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**FLAWLESS TEXTURES:** Look for idealized, uniform textures in skin, wood, or metal. They might lack genuine wear, subtle imperfections, or organic depth.",
+      "_note": "Prompt: A photorealistic photograph of a gleaming black concert grand piano positioned perfectly in front of an expansive, floor-to-ceiling window. The soft morning light bathes the polished surface, reflecting the serene outdoor landscape of rolling hills and a clear blue sky. A single, elegant music stand with a vintage score rests on the piano. Taken with a Nikon Z9, 24-70mm lens at 35mm, f/4, ISO 100, highlighting the grandeur of the piano against the stunning panoramic view with excellent dynamic range."
+    },
+    {
+      "id": "d53r4",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1679936340166-5b9d490a29db?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyMHx8UGlhbm98ZW58MHwwfHx8MTc3NDY1NzA0N3ww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Oswald on Unsplash",
+      "pro_tip": "**AUTHENTIC TEXTURES:** Notice varied, non-uniform textures in skin, wood, or fabric, showing natural wear, scratches, or organic patina. Details aren't always pristine.",
+      "source_url": "https://unsplash.com/photos/a-grand-piano-in-front-of-a-large-window-Iu2pgfqkK2g"
+    },
+    {
+      "id": "d53r5",
+      "type": "image",
+      "content": "images/d53_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**ARTIFICIAL LIGHTING:** Observe lighting that feels overly controlled or dramatically perfect. Shadows or highlights may seem too clean or unnaturally emphasized.",
+      "_note": "Prompt: A photorealistic photograph of an intricate, detailed close-up of the open lid of a vintage upright piano, revealing its inner mechanics. The felt hammers, brass strings, and wooden dampers are sharply in focus, showing signs of age and meticulous craftsmanship. A classic, dark wooden piano stool with a subtle patina sits invitingly to the left. Shot with a Fujifilm GFX 100S, 120mm macro lens, f/11, ISO 800, under soft, directional studio lighting emphasizing textures and shadows. A captivating, high-detail macro shot, showcasing complex engineering."
+    },
+    {
+      "id": "d53r6",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1612016410921-264f6afed556?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxMHx8UGlhbm98ZW58MHwwfHx8MTc3NDY1NzA0N3ww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Claude Gabriel on Unsplash",
+      "pro_tip": "**IDEALIZED COMPOSITION:** AI often creates perfectly balanced, \"magazine-ready\" compositions. Elements might feel too conveniently placed or overly staged.",
+      "source_url": "https://unsplash.com/photos/person-playing-black-upright-piano-yvEVMyTzMO4"
+    },
+    {
+      "id": "d53r7",
+      "type": "image",
+      "content": "images/d53_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**SUBTLE DISTORTIONS:** Examine intricate details like hands, keys, or reflections for slight uniformity, repetitive flaws, or uncanny valley effects.",
+      "_note": "Prompt: A photorealistic photograph of a male jazz musician, mid-performance, intensely focused on playing a modern digital stage piano. His hands blur slightly as he improvises, with vibrant stage lights casting dynamic blue and purple hues across the keys and his profile. Microphone stands are subtly visible in the background. Captured with a Sony Alpha a1, 70-200mm lens at 100mm, f/2.8, ISO 1600, using low-light stage lighting with strong spotlights. A dynamic, candid medium shot from the audience's perspective, capturing the energy and passion of the performance."
+    },
+    {
+      "id": "d53r8",
+      "type": "image",
+      "content": "images/d53_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**HYPER-REALISM:** Notice scenes that are *too* perfect; reflections may be unnaturally clear or details excessively sharp without natural imperfections or noise.",
+      "_note": "Prompt: A photorealistic photograph of an elegant woman in a navy dress gracefully playing a polished black Yamaha grand piano. Her fingers are in motion, creating a subtle blur on the keys, with sheet music subtly reflected on the piano's lacquered surface. Captured with a Canon EOS R5, 85mm lens, f/1.8, ISO 200, under diffused natural light streaming from large windows in a modern minimalist studio. A close-up, slightly elevated shot, emphasizing her focused profile and the sleek design of the Yamaha."
+    },
+    {
+      "id": "d53r9",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/7521178/pexels-photo-7521178.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Pavel Danilyuk on Pexels",
+      "pro_tip": "**NATURAL LIGHTING:** Observe less controlled, more nuanced lighting. Shadows might be softer, less defined, or highlights less uniform, creating complex interactions.",
+      "source_url": "https://www.pexels.com/photo/black-wooden-piano-and-a-stool-7521178/"
+    },
+    {
+      "id": "d53r10",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1552422535-c45813c61732?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyfHxQaWFub3xlbnwwfDB8fHwxNzc0NjU3MDQ3fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Jordan Whitfield on Unsplash",
+      "pro_tip": "**ORGANIC IMPERFECTIONS:** Look for genuine dust, smudges, subtle lens flares, or minor compositional quirks. Real photos capture authentic wear and natural randomness.",
+      "source_url": "https://unsplash.com/photos/woman-playing-yamaha-piano-BhfE1IgcsA8"
+    }
+  ],
+  "category_subtitle": "Grand or Upright? AI's Got the Key!"
+}
