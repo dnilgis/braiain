@@ -1,0 +1,99 @@
+{
+  "day_number": 54,
+  "date": "2026-03-29",
+  "category": "Smoke and Mirrors Day",
+  "category_emoji": "✨",
+  "rounds": [
+    {
+      "id": "d54r1",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/11508664/pexels-photo-11508664.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Carla Nuñez on Pexels",
+      "pro_tip": "ARTIFICIAL GRIME (AI): Look for contrived \"grimy\" streaks or too-perfect reflections despite mirror flaws. Dramatic shadows might appear overly theatrical.",
+      "source_url": "https://www.pexels.com/photo/a-woman-reflection-over-a-mirror-11508664/"
+    },
+    {
+      "id": "d54r2",
+      "type": "image",
+      "content": "images/d54_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "FLAWLESS LIGHTING (AI): Observe perfect, seamless light transitions on the face or reflection. Smoke tendrils might seem too perfectly shaped and distinct.",
+      "_note": "Prompt: A photorealistic photograph of a man's intense, focused eyes and the smoldering tip of a cigarette, captured in a sharp, detailed close-up reflection in a car's rear-view mirror. The surrounding car interior is softly blurred in the background, with faint city lights reflecting off the dashboard. Captured with a Fujifilm GFX 100S and a 110mm f/2 lens, using low, ambient light from the street outside and subtle internal cabin lighting. The composition is an extreme close-up, filling the frame with the mirror's reflection, emphasizing the gritty texture of the mirror glass and the man's expression."
+    },
+    {
+      "id": "d54r3",
+      "type": "image",
+      "content": "images/d54_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are your pro tips for the AI detection game on \"Smoke and Mirrors Day\":",
+      "_note": "Prompt: A photorealistic photograph of an enigmatic woman in a flowing silk gown, her silhouette softened by plumes of ethereal smoke coiling around her as she gracefully gazes into an antique, ornate gilt mirror. Captured with a Canon EOS R5 and a 85mm f/1.2 lens, utilizing soft, dramatic Rembrandt lighting from the side, creating deep shadows and highlights. The composition is a medium shot, framing the woman and her reflection in a harmonious, mysterious balance, shot in a dimly lit, opulent room."
+    },
+    {
+      "id": "d54r4",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/4786959/pexels-photo-4786959.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by cottonbro studio on Pexels",
+      "pro_tip": "MIRROR DISTORTION (REAL): Expect subtle lens flares, dust, or natural distortions common in real-world mirrors. Smoke will billow imperfectly.",
+      "source_url": "https://www.pexels.com/photo/woman-in-beige-coat-holding-her-hair-4786959/"
+    },
+    {
+      "id": "d54r5",
+      "type": "image",
+      "content": "images/d54_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "IDEALIZED IMPERFECTIONS (AI): \"Gritty\" mirror textures or reflections might look applied, rather than naturally random. The smoke's curl can seem too deliberate.",
+      "_note": "Prompt: A photorealistic photograph of a sophisticated woman in a classic beige trench coat, casually holding a cigarette, her full figure reflected in a grimy, streaked mirror. The mirror leans against a distressed, industrial brick wall, revealing layers of old paint and rough mortar. Captured with a Nikon Z7 II and a 70-200mm f/2.8 lens at 100mm, utilizing moody, low-key lighting from a single overhead bare bulb, casting long shadows and dramatic highlights. The composition is a medium full-body shot of the reflection, showcasing the contrast between her elegance and the raw, unrefined background."
+    },
+    {
+      "id": "d54r6",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1568667566352-0d78d6052a01?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxOXx8U21va2UlMjBhbmQlMjBNaXJyb3JzfGVufDB8MHx8fDE3NzQ3MzQ2NTV8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Alexiz Mora on Unsplash",
+      "pro_tip": "AUTHENTIC TEXTURES (REAL): Seek genuine, irregular details in wall textures. Look for natural film grain or digital noise and organic shadow play.",
+      "source_url": "https://unsplash.com/photos/grayscale-photo-of-woman-smoking-while-looking-at-mirror-onLbTBecg8A"
+    },
+    {
+      "id": "d54r7",
+      "type": "image",
+      "content": "images/d54_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "HYPER-TEXTURES (AI): Look for unnaturally crisp or exaggerated wall textures. Smoke often appears too uniform or stylized, lacking organic random flow from exhalation.",
+      "_note": "Prompt: A photorealistic photograph of a contemplative woman, holding a lit cigarette, her gaze fixed on her own reflection in a vintage vanity mirror. The entire image is in a nuanced grayscale, emphasizing subtle tones and shadows. Captured with a Sony A7 IV and a 35mm f/1.8 lens, using natural window light filtering softly from the left, highlighting the contours of her face and the faint smoke tendrils. The composition is an intimate over-the-shoulder shot, showing her profile and the clear, focused reflection in the mirror."
+    },
+    {
+      "id": "d54r8",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/17833812/pexels-photo-17833812.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Sercan Koyuncu on Pexels",
+      "pro_tip": "ORGANIC SMOKE (REAL): Observe smoke with natural, unpredictable wisps and subtle dissipation. Reflections may show minor distortions or environmental depth.",
+      "source_url": "https://www.pexels.com/photo/a-man-smoking-a-cigarette-17833812/"
+    },
+    {
+      "id": "d54r9",
+      "type": "image",
+      "content": "images/d54_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "UNCANNY PERFECTION (AI): Spot flawless skin or unnaturally perfect reflections. Ethereal smoke often appears too artfully rendered, lacking organic unpredictability.",
+      "_note": "Prompt: A photorealistic photograph of a rugged man, his face etched with contemplation, exhaling a stream of smoke. The scene is rendered in stark black and white, shot against a heavily weathered concrete wall with peeling paint and visible cracks. Captured with a Leica M11 and a 50mm f/1.4 lens, using harsh, directional studio lighting from the top-left to accentuate textures and create strong contrast. The composition is a tight chest-up portrait, slightly off-center, focusing intently on his expression and the smoke."
+    },
+    {
+      "id": "d54r10",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/7531212/pexels-photo-7531212.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Mehmet Ali Turan on Pexels",
+      "pro_tip": "NATURAL GAZE (REAL): Notice genuine emotional depth in the gaze and subtle imperfections in the mirror. Light fall-off is often more organic, less calculated.",
+      "source_url": "https://www.pexels.com/photo/man-smoking-cigarette-inside-a-car-7531212/"
+    }
+  ],
+  "category_subtitle": "Smoke and Mirrors: Your AI's reality check starts now!"
+}
