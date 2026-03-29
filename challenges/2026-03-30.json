@@ -1,0 +1,99 @@
+{
+  "day_number": 55,
+  "date": "2026-03-30",
+  "category": "National Doctor's Day",
+  "category_emoji": "🩺",
+  "rounds": [
+    {
+      "id": "d55r1",
+      "type": "image",
+      "content": "images/d55_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**HANDS & ANATOMY:** Closely inspect hands and fingers for anatomical inconsistencies, extra digits, abnormal joint placement, or unnatural poses.",
+      "_note": "Prompt: A photorealistic photograph of a cheerful male doctor in his 30s, dressed in royal blue scrubs, smiling genuinely while standing in his clean, well-appointed clinic. Behind him, a wall is adorned with several neatly arranged framed medical certifications. Shot with a Fujifilm GFX 100S, 63mm f/2.8 lens, under even overhead LED lighting supplemented by a soft fill light, ISO 250, medium shot with sharp detail on both the doctor and the certifications, and vibrant colors."
+    },
+    {
+      "id": "d55r2",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1612349316228-5942a9b489c2?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyMnx8RG9jdG9yfGVufDB8MHx8fDE3NzQ4MTUzMjV8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Usman Yousaf on Unsplash",
+      "pro_tip": "**IMPERFECTIONS:** Identify subtle, natural skin imperfections like pores, moles, or natural lines. Observe realistic stray hair strands or minor fabric imperfections.",
+      "source_url": "https://unsplash.com/photos/man-in-white-dress-shirt-wearing-black-framed-eyeglasses-SakqLf78KVo"
+    },
+    {
+      "id": "d55r3",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/4173251/pexels-photo-4173251.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Gustavo Fring on Pexels",
+      "pro_tip": "**OBJECTS & REALISM:** Look for illogical or non-functional design elements in complex objects like scientific instruments, and inconsistent reflections in glassware.",
+      "source_url": "https://www.pexels.com/photo/crop-doctor-in-medical-uniform-with-stethoscope-standing-in-clinic-corridor-4173251/"
+    },
+    {
+      "id": "d55r4",
+      "type": "image",
+      "content": "images/d55_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**SKIN & FEATURES:** Examine facial skin for an unnatural, overly smooth, or plastic-like texture. Look for perfectly symmetrical features that lack human nuance.",
+      "_note": "Prompt: A photorealistic photograph of a distinguished male doctor in his early 50s, wearing a crisp white dress shirt and stylish black-framed eyeglasses. He looks directly at the camera with a gentle, reassuring expression. Shot as a tight headshot with a Sony A7 III, 50mm f/1.8 lens, under even studio lighting with a large softbox, ISO 100, tack-sharp focus on the eyes, and neutral white balance."
+    },
+    {
+      "id": "d55r5",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1527613426441-4da17471b66d?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw2fHxEb2N0b3JzfGVufDB8MHx8fDE3NzQ4MTU0MjV8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Ani Kolleshi on Unsplash",
+      "pro_tip": "**DETAILS & TEXT:** Confirm all text, like on certifications or labels, is perfectly legible, grammatically correct, and makes logical sense.",
+      "source_url": "https://unsplash.com/photos/woman-inside-laboratory-7jjnJ-QA9fY"
+    },
+    {
+      "id": "d55r6",
+      "type": "image",
+      "content": "images/d55_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are pro tips for the AI detection game:",
+      "_note": "Prompt: A photorealistic photograph of a confident, smiling female doctor in her late 30s, with arms casually crossed over her chest and a stethoscope draped around her neck. She stands in a softly lit hospital corridor, the background slightly blurred. Shot with a Canon EOS R5, 85mm f/1.4 lens, using natural window light from the side, ISO 200, shallow depth of field, and warm color grading."
+    },
+    {
+      "id": "d55r7",
+      "type": "image",
+      "content": "images/d55_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**GLASSES & EYES:** Scrutinize eyeglasses for distorted reflections, odd light refractions, or unnatural warping. Check eyes for an uncanny, empty stare or overly perfect shine.",
+      "_note": "Prompt: A photorealistic photograph of an empathetic female doctor in her 40s, leaning forward slightly as she consults with a male patient in a bright, modern medical office. They are seated opposite each other, and the doctor is making a reassuring gesture. Shot with a Nikon Z7 II, 35mm f/2.0 lens, utilizing bright ambient light filtering through large windows, ISO 400, capturing the natural interaction with a slightly wider perspective."
+    },
+    {
+      "id": "d55r8",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/7579823/pexels-photo-7579823.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by cottonbro studio on Pexels",
+      "pro_tip": "**LIGHT & REFLECTION:** Check for natural, directional light reflections on surfaces, especially eyeglasses, consistent with a clear light source.",
+      "source_url": "https://www.pexels.com/photo/woman-in-white-suit-with-stethoscope-talking-to-a-person-7579823/"
+    },
+    {
+      "id": "d55r9",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/8460158/pexels-photo-8460158.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Los Muertos Crew on Pexels",
+      "pro_tip": "**INTERACTION & EMOTION:** Observe nuanced, authentic human body language and genuine expressions that convey natural emotion and interaction.",
+      "source_url": "https://www.pexels.com/photo/a-doctor-wearing-blue-scrub-suit-8460158/"
+    },
+    {
+      "id": "d55r10",
+      "type": "image",
+      "content": "images/d55_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**TEXT & LOGOS:** Verify all visible text, such as on certifications or signs, for garbled characters, misspellings, or inconsistent fonts/sizing.",
+      "_note": "Prompt: A photorealistic photograph of a focused female medical researcher in her late 20s, wearing a white lab coat and safety glasses, meticulously pipetting a sample in a sterile, brightly lit laboratory. Various scientific instruments and glassware are visible on the workbench around her. Shot with a Leica Q2, 28mm f/1.7 lens, under crisp overhead fluorescent lighting, ISO 800, with a clear depth of field, capturing the intricate details of the lab work, and cool color tones."
+    }
+  ],
+  "category_subtitle": "Our AI's pixel-sick! Time for your expert image diagnosis."
+}
