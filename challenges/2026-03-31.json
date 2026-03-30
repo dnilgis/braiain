@@ -1,0 +1,99 @@
+{
+  "day_number": 56,
+  "date": "2026-03-31",
+  "category": "Eiffel Tower Day",
+  "category_emoji": "🗼",
+  "rounds": [
+    {
+      "id": "d56r1",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/32398707/pexels-photo-32398707.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Masood Aslami on Pexels",
+      "pro_tip": "**FLAWLESS LIGHTING:** Observe light that is unnaturally \"even\" or perfectly \"dappled\" across complex scenes. AI often produces overly consistent illumination.",
+      "source_url": "https://www.pexels.com/photo/people-walking-beneath-eiffel-tower-structure-32398707/"
+    },
+    {
+      "id": "d56r2",
+      "type": "image",
+      "content": "images/d56_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**TECHNICAL PERFECTION:** Images perfectly replicating specified camera settings (lens, f-stop) and uniformly sharp details across depth often indicate AI.",
+      "_note": "Prompt: A photorealistic photograph of tourists marveling on a bustling viewing platform of the Eiffel Tower, their faces lit by soft morning light filtering through the structure. Above them, the intricate, riveted iron lattice of the tower's upper sections soars dramatically, creating a mesmerizing pattern against a clear blue sky. Captured with a Sony a7 III and a 50mm lens at f/5.6, using a slight upward angle to emphasize the tower's towering internal structure and the sense of height."
+    },
+    {
+      "id": "d56r3",
+      "type": "image",
+      "content": "images/d56_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**GENERIC HUMANITY:** Scan crowds for repetitive faces, unnatural expressions, or subtle distortions. AI struggles with spontaneous, truly diverse human features.",
+      "_note": "Prompt: A photorealistic photograph of a bustling crowd of tourists gathered on the Champ de Mars, gazing up at the iconic Eiffel Tower in Paris on a soft, overcast day. The diffused light from the cloud-covered sky creates even illumination, highlighting the intricate details of the tower's ironwork and the diverse expressions of the visitors. Taken with a Canon EOS 5D Mark IV and a 28mm lens at f/7.1, from a slightly elevated position, capturing the vastness of the crowd and the grandeur of the tower under a muted sky."
+    },
+    {
+      "id": "d56r4",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/6479194/pexels-photo-6479194.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Jorge Samper on Pexels",
+      "pro_tip": "**SPONTANEOUS HUMANITY:** Identify varied, unposed interactions and genuine, unique expressions within crowds. Real people exhibit natural, unpredictable behaviors.",
+      "source_url": "https://www.pexels.com/photo/photo-of-the-eiffel-tower-under-a-blue-sky-6479194/"
+    },
+    {
+      "id": "d56r5",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/30662605/pexels-photo-30662605.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Travel with  Lenses on Pexels",
+      "pro_tip": "**ORGANIC COMPOSITION:** Seek out compositions that feel naturally observed or captured, perhaps with less deliberate framing. Real scenes often have raw authenticity.",
+      "source_url": "https://www.pexels.com/photo/eiffel-tower-view-from-the-seine-river-in-paris-30662605/"
+    },
+    {
+      "id": "d56r6",
+      "type": "image",
+      "content": "images/d56_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**IDEALIZED COMPOSITION:** Notice overly balanced, \"postcard-perfect\" scenes with deliberate framing. AI excels at engineered perfection, lacking genuine candidness.",
+      "_note": "Prompt: A photorealistic photograph of the Eiffel Tower elegantly positioned alongside the shimmering, reflective waters of the Seine River on a bright, sunny day in Paris. A traditional Bateau-Mouche glides gently downriver, adding a touch of movement, while a classic stone bridge spans the foreground. Captured with a Fujifilm GFX 100S and a 35mm lens at f/10, providing a wide, expansive view with perfect clarity and deep blues and greens under natural daylight."
+    },
+    {
+      "id": "d56r7",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/32603621/pexels-photo-32603621.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Antonio Miralles Andorra on Pexels",
+      "pro_tip": "**NATURAL IMPERFECTIONS:** Look for authentic atmospheric elements like haze, subtle lens flares, or slight natural blur. Real photos embrace environmental honesty.",
+      "source_url": "https://www.pexels.com/photo/looking-up-at-tour-eiffel-from-viewing-deck-32603621/"
+    },
+    {
+      "id": "d56r8",
+      "type": "image",
+      "content": "images/d56_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are your pro tips for the AI detection game:",
+      "_note": "Prompt: A photorealistic photograph of a diverse group of adults and children strolling casually on the cobblestone path directly beneath the colossal iron arches of the Eiffel Tower in Paris, France. The midday sun casts dappled light and long shadows, creating a dynamic scene. Shot with a Canon EOS R5 and a 24mm wide-angle lens at f/8, capturing sharp details of both the crowd and the intricate tower structure from an eye-level perspective."
+    },
+    {
+      "id": "d56r9",
+      "type": "image",
+      "content": "images/d56_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**HYPERREALISTIC DETAIL:** Look for details that are *too* crisp or patterns *too* mesmerizing and flawless. AI often exaggerates textures beyond natural photography.",
+      "_note": "Prompt: A photorealistic photograph of the majestic Eiffel Tower bathed in the warm, golden light of a late afternoon on a sunny day in Paris. The iconic iron structure stands proudly against a brilliant azure sky, with the elegant grey rooftops of classic Haussmann buildings subtly framing its base. Shot with a Nikon D850 and a 70-200mm telephoto lens at f/11 from Trocadéro, ensuring crisp detail across the entire frame and a vibrant, postcard-perfect clarity."
+    },
+    {
+      "id": "d56r10",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/1694498/pexels-photo-1694498.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Maurijn Pach on Pexels",
+      "pro_tip": "**AUTHENTIC LIGHT & SHADOW:** Notice subtle variations, true depth, and realistic interplay of light and shadow. Real photos show natural light's unpredictable beauty.",
+      "source_url": "https://www.pexels.com/photo/people-walking-on-the-street-1694498/"
+    }
+  ],
+  "category_subtitle": "Eiffel-ing good at detection? Prove it to the AI!"
+}
