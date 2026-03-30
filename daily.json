@@ -376,6 +376,13 @@
       "category_emoji": "🩺",
       "category_subtitle": "Our AI's pixel-sick! Time for your expert image diagnosis.",
       "challenge_file": "challenges/2026-03-30.json"
+  },
+    "2026-03-31": {
+      "day_number": 56,
+      "category": "Eiffel Tower Day",
+      "category_emoji": "🗼",
+      "category_subtitle": "Eiffel-ing good at detection? Prove it to the AI!",
+      "challenge_file": "challenges/2026-03-31.json"
   }
 }
 
