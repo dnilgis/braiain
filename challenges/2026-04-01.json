@@ -1,0 +1,99 @@
+{
+  "day_number": 57,
+  "date": "2026-04-01",
+  "category": "International Hug A Librarian Day",
+  "category_emoji": "📚🤗",
+  "rounds": [
+    {
+      "id": "d57r1",
+      "type": "image",
+      "content": "images/d57_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**AI ARTIFACTS:** Look for subtle distortions in human features like hands or eyes, or uncanny symmetry. AI often struggles with realistic anatomy.",
+      "_note": "Prompt: A photorealistic photograph of a wise, elderly male librarian with a warm smile, meticulously reviewing a historical manuscript at a mahogany desk, a vintage Remington typewriter and a stack of leather-bound books visible behind him. Shot with a Nikon D850 and an 85mm f/1.8 lens, lit by a soft, warm desk lamp and subtle ambient overhead light, creating deep shadows and highlights."
+    },
+    {
+      "id": "d57r2",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/6334870/pexels-photo-6334870.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by cottonbro studio on Pexels",
+      "pro_tip": "**REAL-WORLD OBJECTS:** Look for everyday objects like smartphones (vs. e-readers) or specific brands. Observe realistic wear, dust, or legible text on documents.",
+      "source_url": "https://www.pexels.com/photo/man-in-brown-coat-reading-book-6334870/"
+    },
+    {
+      "id": "d57r3",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/7967585/pexels-photo-7967585.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Ron Lach on Pexels",
+      "pro_tip": "**AUTHENTIC IMPERFECTIONS:** Spot natural variations like wrinkles, stray hairs, subtle skin blemishes, or slightly asymmetrical facial features. Reality isn't always polished.",
+      "source_url": "https://www.pexels.com/photo/typewriter-on-desk-of-elderly-woman-7967585/"
+    },
+    {
+      "id": "d57r4",
+      "type": "image",
+      "content": "images/d57_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**UNNATURAL PERFECTION:** Be wary of scenes that appear too perfect or idealized, with unnaturally smooth skin or flawless environments. Real life has imperfections.",
+      "_note": "Prompt: A photorealistic photograph of a thoughtful male librarian in his 40s, with a gentle expression, quietly overseeing students diligently focused on their books at wooden tables in a classic, dimly lit university library, lined with towering antique bookshelves. Shot with a Fujifilm GFX 100S and a 110mm f/2 lens, illuminated by warm, localized task lighting on desks and subtle ambient incandescent light, creating a deep, contemplative atmosphere with a shallow depth of field."
+    },
+    {
+      "id": "d57r5",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/9572540/pexels-photo-9572540.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Tima Miroshnichenko on Pexels",
+      "pro_tip": "**ORGANIC ENVIRONMENT:** Seek varied background details like unique book titles, realistic clutter, and authentic imperfections in furniture or decor. Real spaces are diverse.",
+      "source_url": "https://www.pexels.com/photo/people-at-a-library-9572540/"
+    },
+    {
+      "id": "d57r6",
+      "type": "image",
+      "content": "images/d57_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are pro tips for the AI detection game, themed \"International Hug A Librarian Day\":",
+      "_note": "Prompt: A photorealistic photograph of a friendly female librarian in her late 20s, wearing a stylish blue denim jacket and glasses, holding a black e-reader in one hand and gesturing invitingly with the other, standing cheerfully in a brightly lit, modern library foyer. Shot with a Canon EOS R5 and a 50mm f/1.4 lens, natural window light from the left, slightly overexposed for a soft, welcoming glow."
+    },
+    {
+      "id": "d57r7",
+      "type": "image",
+      "content": "images/d57_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**BACKGROUND CHAOS:** Examine backgrounds for repeating patterns, nonsensical text on books, or blurred, inconsistent details. AI backgrounds can lack coherence.",
+      "_note": "Prompt: A photorealistic photograph of a diverse group of adults of varying ages and ethnicities studying and collaborating around large tables in a spacious, sun-drenched modern library, with a kind female librarian of South Asian descent standing centrally, smiling warmly towards the camera, her arms gently crossed. Shot with a Sony Alpha 7 IV and a 24-70mm f/2.8 lens, bathed in bright, diffused natural light pouring through large windows, capturing a wide, bustling scene from a medium-low angle."
+    },
+    {
+      "id": "d57r8",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1617262123295-d31783c32448?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyfHxMaWJyYXJpYW58ZW58MHwwfHx8MTc3NDk5NDg4Mnww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Alexei Maridashvili on Unsplash",
+      "pro_tip": "**LIGHTING LOGIC:** Observe shadows and light sources; AI can produce inconsistencies, making light fall unnaturally or failing to cast accurate shadows.",
+      "source_url": "https://unsplash.com/photos/woman-in-blue-denim-jacket-holding-black-smartphone-gqk2hoqGAL0"
+    },
+    {
+      "id": "d57r9",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/9572338/pexels-photo-9572338.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Tima Miroshnichenko on Pexels",
+      "pro_tip": "**GENUINE INTERACTIONS:** Notice believable human body language, natural expressions, and varied poses within groups. Real people interact uniquely.",
+      "source_url": "https://www.pexels.com/photo/students-sitting-at-the-table-9572338/"
+    },
+    {
+      "id": "d57r10",
+      "type": "image",
+      "content": "images/d57_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**TEXTURE ODDITIES:** Check textures like clothing, paper, or wood for areas that seem too smooth, too repetitive, or lack realistic wear and tear. AI can falter here.",
+      "_note": "Prompt: A photorealistic photograph of an approachable female librarian, mid-30s, with an inviting smile, standing comfortably near a plush armchair in a cozy library nook, surrounded by full bookshelves and a small group of students quietly reading and chatting. Shot with a Leica SL2 and a 75mm f/2 lens, utilizing soft, warm LED lighting from floor lamps and natural window light, creating an intimate and inviting ambiance from a slightly elevated eye-level perspective."
+    }
+  ],
+  "category_subtitle": "AI: Detecting overdue international librarian hugs. Shhh!"
+}
