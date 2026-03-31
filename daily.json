@@ -383,6 +383,13 @@
       "category_emoji": "🗼",
       "category_subtitle": "Eiffel-ing good at detection? Prove it to the AI!",
       "challenge_file": "challenges/2026-03-31.json"
+  },
+    "2026-04-01": {
+      "day_number": 57,
+      "category": "International Hug A Librarian Day",
+      "category_emoji": "📚🤗",
+      "category_subtitle": "AI: Detecting overdue international librarian hugs. Shhh!",
+      "challenge_file": "challenges/2026-04-01.json"
   }
 }
 
