@@ -1,0 +1,99 @@
+{
+  "day_number": 58,
+  "date": "2026-04-02",
+  "category": "National Ferret Day",
+  "category_emoji": "🦦",
+  "rounds": [
+    {
+      "id": "d58r1",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/5403275/pexels-photo-5403275.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Serena Koi on Pexels",
+      "pro_tip": "**NATURAL LIGHTING:** Look for nuanced light variations and shadows that feel spontaneous. Real lens flare, if present, integrates naturally rather than looking superimposed.",
+      "source_url": "https://www.pexels.com/photo/person-holding-ferret-5403275/"
+    },
+    {
+      "id": "d58r2",
+      "type": "image",
+      "content": "images/d58_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**TEXTURE AND HANDS:** Check for a sterile, overly perfect fur texture lacking natural variation. AI often struggles with realistic human hand anatomy and detail.",
+      "_note": "Prompt: A photorealistic photograph of a person's hands offering a small, crunchy treat to a curious dark-eyed ferret from a kneeling position on a patch of vibrant green grass. The scene is set in a sunlit backyard on a clear day, with sunlight dappling through nearby leaves, creating soft highlights on the ferret's fur and the person's hands. Shot with a standard lens (50mm f/1.8) at eye level with the ferret."
+    },
+    {
+      "id": "d58r3",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1571941727012-783f3768de46?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw4fHxGZXJyZXR8ZW58MHwwfHx8MTc3NTA3MDk5N3ww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Pharma Hemp Complex on Unsplash",
+      "pro_tip": "**REALISTIC TEXTURE:** Observe fur with varied strands and minor imperfections, reflecting natural animal characteristics. Human hands show authentic skin texture and creases.",
+      "source_url": "https://unsplash.com/photos/person-feeding-ferret-QTQscp2qQ-Y"
+    },
+    {
+      "id": "d58r4",
+      "type": "image",
+      "content": "images/d58_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**SATURATION & GAZE:** Observe overly vibrant colors, especially clothing. An animal looking too perfectly or directly at the camera can be an AI tell.",
+      "_note": "Prompt: A photorealistic photograph of a young woman with a gentle smile, cradling a playful cinnamon ferret against her chest, looking down at it affectionately. Bathed in the warm, soft glow of golden hour sunlight filtering through trees in an outdoor park setting, creating subtle lens flare and beautiful rim lighting on her hair and the ferret's fur. Shot with a DSLR (50mm f/1.4)."
+    },
+    {
+      "id": "d58r5",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/9083453/pexels-photo-9083453.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Evgeniya Litovchenko on Pexels",
+      "pro_tip": "**AUTHENTIC EXPRESSION:** Genuine human and animal expressions appear less posed or generic. Natural light often creates varied, less \"perfect\" illumination.",
+      "source_url": "https://www.pexels.com/photo/woman-holding-brown-and-white-animal-9083453/"
+    },
+    {
+      "id": "d58r6",
+      "type": "image",
+      "content": "images/d58_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**ARTIFICIAL LIGHTING:** Watch for unnaturally strong or uniform rim lighting and lens flare. AI often overdoes \"golden hour\" warmth, making it feel synthetic.",
+      "_note": "Prompt: A photorealistic photograph of a sleek, fluffy ferret, its soft fur highlighted, being gently supported by a human hand, its paws delicately resting. Captured outdoors under bright, diffused daylight, perhaps beneath an overcast sky, ensuring even illumination that accentuates the texture and sheen of its coat. Shot with a telephoto macro lens (105mm f/2.8) for extreme detail and a shallow depth of field."
+    },
+    {
+      "id": "d58r7",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/15470444/pexels-photo-15470444.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Nikolett Emmert on Pexels",
+      "pro_tip": "**ENVIRONMENTAL CONSISTENCY:** Examine exaggerated \"vibrant green grass\" or unnaturally uniform dappled sunlight. Hands may appear distorted or too smooth.",
+      "source_url": "https://www.pexels.com/photo/woman-feeding-mouse-15470444/"
+    },
+    {
+      "id": "d58r8",
+      "type": "image",
+      "content": "images/d58_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are 10 pro tips for the AI detection game, National Ferret Day style:",
+      "_note": "Prompt: A photorealistic photograph of a pristine white ferret, its tiny pink nose twitching as it gently accepts a treat from a human hand, isolated against an inky black studio background. Shot with a macro lens (100mm f/2.8) and softbox lighting from the front-left, creating dramatic shadows and highlighting the ferret's fur details."
+    },
+    {
+      "id": "d58r9",
+      "type": "image",
+      "content": "images/d58_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**UNCANNY PERFECTION:** Look for hyper-detailed fur with unnatural sheen. A perfectly uniform \"inky black\" background often signifies AI rendering.",
+      "_note": "Prompt: A photorealistic photograph of a smiling child, wearing a vibrant blue t-shirt, holding a curious sable ferret close to their face. The ferret looks directly at the camera with bright eyes. Taken outdoors on a sunny afternoon, with soft natural light illuminating their faces and a creamy bokeh background of green foliage. Shot with a prime lens (85mm f/1.8)."
+    },
+    {
+      "id": "d58r10",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/27046437/pexels-photo-27046437.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Magda Ehlers on Pexels",
+      "pro_tip": "**ORGANIC IMPERFECTION:** Notice subtle fur irregularities, natural whisker placement, and realistic interaction. The black background may show slight light spill or texture.",
+      "source_url": "https://www.pexels.com/photo/boy-holding-a-ferret-27046437/"
+    }
+  ],
+  "category_subtitle": "National Ferret Day: AI's Noodle-Finding Foto Frenzy!"
+}
