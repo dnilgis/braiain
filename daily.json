@@ -390,6 +390,13 @@
       "category_emoji": "📚🤗",
       "category_subtitle": "AI: Detecting overdue international librarian hugs. Shhh!",
       "challenge_file": "challenges/2026-04-01.json"
+  },
+    "2026-04-02": {
+      "day_number": 58,
+      "category": "National Ferret Day",
+      "category_emoji": "🦦",
+      "category_subtitle": "National Ferret Day: AI's Noodle-Finding Foto Frenzy!",
+      "challenge_file": "challenges/2026-04-02.json"
   }
 }
 
