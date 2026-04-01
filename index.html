@@ -502,7 +502,7 @@ img{display:block;max-width:100%}
 }
 .share-btn:hover{border-color:var(--cyan);color:var(--cyan)}
 
-/* NEW: Global players counter on results screen */
+/* Global players counter on results screen */
 #global-players-wrap{
   display:flex;flex-direction:column;align-items:center;gap:4px;
   padding:16px 20px;margin-top:4px;
@@ -519,7 +519,7 @@ img{display:block;max-width:100%}
   letter-spacing:2px;color:var(--muted);
 }
 
-/* NEW: Prompt reveal in review cards */
+/* Prompt reveal in review cards */
 .yd-prompt-toggle{
   display:inline-block;margin-top:6px;
   font-family:var(--font-mono);font-size:.65rem;
@@ -647,6 +647,7 @@ img{display:block;max-width:100%}
   0%,100%{opacity:1}
   50%{opacity:.6}
 }
+
 /* ══════════════════════════════════════
    TODAY'S REVIEW
    ══════════════════════════════════════ */
@@ -715,9 +716,7 @@ img{display:block;max-width:100%}
   font-size:.7rem;color:var(--muted);
   margin-top:4px;line-height:1.4;
 }
-.yd-card-source{
-  margin-top:5px;
-}
+.yd-card-source{margin-top:5px;}
 .yd-card-source a{
   font-family:var(--font-mono);font-size:.65rem;
   color:var(--cyan);opacity:.7;text-decoration:none;letter-spacing:.5px;
@@ -911,7 +910,6 @@ img{display:block;max-width:100%}
   border:1px solid rgba(255,179,0,.4);
   background:rgba(255,179,0,.06);
 }
-
 </style>
 </head>
 <body>
@@ -938,7 +936,7 @@ img{display:block;max-width:100%}
       <li>100% free, no signup required</li>
     </ul>
     <p>JavaScript is required to play BRAIAIN. Please enable JavaScript in your browser settings.</p>
-    <p><a href="https://braiain.com">Visit braiain.com</a> · <a href="https://braiain.com/guide.html">How to Spot AI-Generated Images</a> · <a href="https://braiain.com/faq.html">FAQ</a></p>
+    <p><a href="https://braiain.com">Visit braiain.com</a> · <a href="https://braiain.com/guide.html">How to Spot AI-Generated Images</a> · <a href="https://braiain.com/faq.html">FAQ</a> · <a href="https://braiain.com/educators.html">For Educators</a></p>
   </div>
 </noscript>
 
@@ -997,7 +995,7 @@ img{display:block;max-width:100%}
     <div id="mag-crosshair"></div>
     <div id="scan-overlay"></div>
     <div id="round-wipe"></div>
-    <div id="zoom-hint">ð HOLD TO ZOOM</div>
+    <div id="zoom-hint">ð HOLD TO ZOOM</div>
   </div>
   <div id="prompt">CLASSIFY: HUMAN OR AI-GENERATED?</div>
   <div id="choices">
@@ -1086,6 +1084,8 @@ img{display:block;max-width:100%}
     <span><a href="/faq.html" class="faq-glow-link">FAQ</a></span>
     <span class="sep">&middot;</span>
     <span><a href="/guide.html" style="opacity:.7;transition:opacity .3s" onmouseover="this.style.opacity='.9'" onmouseout="this.style.opacity='.7'">GUIDE</a></span>
+    <span class="sep">&middot;</span>
+    <span><a href="/educators.html" style="opacity:.7;transition:opacity .3s" onmouseover="this.style.opacity='.9'" onmouseout="this.style.opacity='.7'">EDUCATORS</a></span>
     <span class="sep">&middot;</span>
     <span>SYSTEM <a href="/404.html" class="breach-trigger">SECURE</a></span>
     <span class="sep">&middot;</span>
@@ -1502,7 +1502,6 @@ function choose(answer) {
 
   document.querySelectorAll('.choice-btn').forEach(b => b.disabled = true);
 
-  // Easter egg: wrong streak check
   checkWrongStreak(isCorrect);
 
   const btns = document.querySelectorAll('.choice-btn');
@@ -1610,11 +1609,9 @@ function showResults() {
     else ring.style.stroke = 'var(--red)';
   }, 100);
 
-  // Odometer count-up for score
   animateNumber(document.getElementById('score-num'), score, 800);
   scrambleText(document.getElementById('results-title'), titles[score], 500);
 
-  // Easter egg: perfect game celebration
   if (score === TOTAL_ROUNDS) {
     setTimeout(celebratePerfect, 600);
   }
@@ -2209,7 +2206,6 @@ function pulseButton(btn, isCorrect) {
   btn.classList.add(isCorrect ? 'pulse-green' : 'pulse-red');
   setTimeout(function() { btn.classList.remove('pulse-green', 'pulse-red'); }, 350);
 }
-
 </script>
 </body>
 </html>

@@ -9,10 +9,18 @@
 <link rel="canonical" href="https://braiain.com/faq.html">
 
 <!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BRAIAIN">
 <meta property="og:title" content="BRAIAIN — Intel Briefing (FAQ)">
 <meta property="og:description" content="How BRAIAIN works — learn the rules, scoring, and how we curate daily AI detection challenges.">
 <meta property="og:url" content="https://braiain.com/faq.html">
 <meta property="og:image" content="https://braiain.com/og-image.png">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="BRAIAIN — Intel Briefing (FAQ)">
+<meta name="twitter:description" content="How BRAIAIN works — learn the rules, scoring, and how we curate daily AI detection challenges.">
+<meta name="twitter:image" content="https://braiain.com/og-image.png">
 
 <!-- Favicons -->
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -20,6 +28,10 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <meta name="theme-color" content="#00e5ff">
 <meta name="x-clearance" content="pending — enter the code">
+
+<!-- GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3B3ZCE62NW"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-3B3ZCE62NW');</script>
 
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -240,6 +252,7 @@ body{
   transition:color .2s;
 }
 .faq-footer a:hover{color:var(--cyan)}
+.faq-footer .sep{margin:0 6px;opacity:.4}
 .faq-footer-build{
   opacity:.3;font-size:.65rem;cursor:default;
   transition:opacity .3s;
@@ -512,8 +525,8 @@ body{
       </div>
       <div class="faq-a">
         <p>BRAIAIN was built as a public tool for AI literacy, but we're open to conversations about <strong>licensing, partnerships, white-label integration,</strong> or <strong>acquisition</strong> with the right organization.</p>
-        <p>If you're a newsroom, edtech company, media platform, or anyone building AI literacy programs — we should talk.</p>
-        <p>Reach out: <a href="mailto:dnilgis@gmail.com" style="color:var(--cyan);text-decoration:none;border-bottom:1px solid rgba(0,229,255,.3)">dnilgis@gmail.com</a></p>
+        <p>If you're a newsroom, edtech company, media platform, or anyone building AI literacy programs — we should talk. See the <a href="/educators.html" style="color:var(--cyan);text-decoration:none;border-bottom:1px solid rgba(0,229,255,.3)">Educators page</a> for classroom-specific information including Classroom Challenge Mode.</p>
+        <p>Reach out: <a href="mailto:dnilgis@gmail.com" style="color:var(--cyan);text-decoration:none;border-bottom:1px solid rgba(0,229,255,.3)" id="faq-email">dnilgis@gmail.com</a></p>
       </div>
     </div>
   </section>
@@ -613,8 +626,14 @@ body{
 
 <!-- FOOTER -->
 <footer class="faq-footer">
-  <span>&copy; 2026 BRAIAIN</span> &middot;
-  <a href="/">Play Today's Challenge</a> &middot;
+  <span>&copy; 2026 BRAIAIN</span>
+  <span class="sep">&middot;</span>
+  <a href="/">Play Today's Challenge</a>
+  <span class="sep">&middot;</span>
+  <a href="/guide.html">Detection Guide</a>
+  <span class="sep">&middot;</span>
+  <a href="/educators.html">For Educators</a>
+  <span class="sep">&middot;</span>
   <span class="faq-footer-build" title="You looked. Good instincts.">build <span id="build-hash">—</span></span>
 </footer>
 
@@ -655,6 +674,10 @@ function toggleFaq(el) {
 document.getElementById('build-hash').textContent =
   (Date.now() >>> 0).toString(16).slice(-6);
 
+/* Email obfuscation */
+const faqEmail = document.getElementById('faq-email');
+if (faqEmail) faqEmail.href = 'mail' + 'to:' + 'dnilgis' + '@' + 'gmail.com';
+
 /* ══════════════════════════════════════
    GLITCH FLASH UTILITY
    ══════════════════════════════════════ */
@@ -693,7 +716,6 @@ document.addEventListener('keydown', (e) => {
 });
 
 function activateClassified() {
-  // Full screen terminal takeover
   const tt = document.getElementById('terminal-takeover');
   const content = document.getElementById('tt-content');
   tt.style.display = 'flex';
@@ -711,43 +733,29 @@ function activateClassified() {
   content.innerHTML = '';
   lines.forEach(line => {
     setTimeout(() => {
-      if (!line.text) {
-        content.innerHTML += '<br>';
-        return;
-      }
+      if (!line.text) { content.innerHTML += '<br>'; return; }
       const el = document.createElement('div');
       el.style.cssText = `
         font-size: ${line.color === 'var(--red)' && line.text.includes('⬡') ? '1.1rem' : '.85rem'};
-        letter-spacing: 2px;
-        color: ${line.color};
-        margin: 4px 0;
-        opacity: 0;
-        transform: translateY(4px);
+        letter-spacing: 2px; color: ${line.color}; margin: 4px 0;
+        opacity: 0; transform: translateY(4px);
         transition: opacity .3s, transform .3s;
         ${line.color === 'var(--red)' ? 'text-shadow: 0 0 20px rgba(255,0,60,.4);' : ''}
       `;
       el.textContent = line.text;
       content.appendChild(el);
-      requestAnimationFrame(() => {
-        el.style.opacity = '1';
-        el.style.transform = 'translateY(0)';
-      });
-
-      if (line.text.includes('OMEGA')) {
-        glitchFlash('var(--red)', 4);
-      }
+      requestAnimationFrame(() => { el.style.opacity = '1'; el.style.transform = 'translateY(0)'; });
+      if (line.text.includes('OMEGA')) glitchFlash('var(--red)', 4);
     }, line.delay);
   });
 
   tt.onclick = () => {
     tt.style.display = 'none';
-    // Reveal classified section with scroll
     const classified = document.getElementById('classified');
     classified.style.display = '';
     classified.style.opacity = '0';
     classified.style.transform = 'translateY(20px)';
     classified.style.transition = 'opacity .6s, transform .6s';
-
     setTimeout(() => {
       classified.style.opacity = '1';
       classified.style.transform = 'translateY(0)';
@@ -767,18 +775,13 @@ document.addEventListener('keydown', (e) => {
   if (e.key.length !== 1) return;
   turingBuf += e.key.toLowerCase();
   if (turingBuf.length > 20) turingBuf = turingBuf.slice(-20);
-
-  if (turingBuf.endsWith(turingSeq)) {
-    turingBuf = '';
-    showTuringMessage();
-  }
+  if (turingBuf.endsWith(turingSeq)) { turingBuf = ''; showTuringMessage(); }
 });
 
 function showTuringMessage() {
   const tt = document.getElementById('terminal-takeover');
   const content = document.getElementById('tt-content');
   tt.style.display = 'flex';
-
   content.innerHTML = '';
   const msgs = [
     { text: '> turing_test.exe', color: 'var(--muted)', delay: 0 },
@@ -791,7 +794,6 @@ function showTuringMessage() {
     { text: '', delay: 2600 },
     { text: '[click to dismiss]', color: 'var(--muted)', delay: 3200 },
   ];
-
   msgs.forEach(msg => {
     setTimeout(() => {
       if (!msg.text) { content.innerHTML += '<br>'; return; }
@@ -806,61 +808,44 @@ function showTuringMessage() {
       `;
       el.textContent = msg.text;
       content.appendChild(el);
-      requestAnimationFrame(() => {
-        el.style.opacity = '1';
-        el.style.transform = 'translateY(0)';
-      });
+      requestAnimationFrame(() => { el.style.opacity = '1'; el.style.transform = 'translateY(0)'; });
     }, msg.delay);
   });
-
   glitchFlash('var(--cyan)', 2);
   tt.onclick = () => { tt.style.display = 'none'; };
 }
 
 /* ══════════════════════════════════════
    EASTER EGG 3: CLICK "//" 7 TIMES
-   Section header prefix — triggers glitch
    ══════════════════════════════════════ */
 let slashClicks = 0;
 let slashTimer = null;
 
 document.querySelectorAll('.faq-section-label').forEach(label => {
   label.addEventListener('click', (e) => {
-    // Only count if clicking near the "//" (left side)
     const rect = label.getBoundingClientRect();
     if (e.clientX - rect.left > 40) return;
-
     slashClicks++;
     clearTimeout(slashTimer);
     slashTimer = setTimeout(() => { slashClicks = 0; }, 2000);
-
     if (slashClicks >= 7) {
       slashClicks = 0;
       glitchFlash('var(--green)', 3);
-
-      // Briefly scramble all section labels
       const labels = document.querySelectorAll('.faq-section-label');
       const originals = Array.from(labels).map(l => l.innerHTML);
       const glitchChars = '⌐░▒▓█▄▀■□▪▫◊◘◙';
-
       labels.forEach(l => {
         let scrambled = '';
-        for (let i = 0; i < 20; i++) {
-          scrambled += glitchChars[Math.floor(Math.random() * glitchChars.length)];
-        }
+        for (let i = 0; i < 20; i++) scrambled += glitchChars[Math.floor(Math.random() * glitchChars.length)];
         l.innerHTML = '<span style="color:var(--green)">' + scrambled + '</span>';
       });
-
-      setTimeout(() => {
-        labels.forEach((l, i) => { l.innerHTML = originals[i]; });
-      }, 800);
+      setTimeout(() => { labels.forEach((l, i) => { l.innerHTML = originals[i]; }); }, 800);
     }
   });
 });
 
 /* ══════════════════════════════════════
    EASTER EGG 4: MOBILE — SHAKE DEVICE
-   Falls back for mobile users without keyboard
    ══════════════════════════════════════ */
 let lastShake = 0;
 let shakeCount = 0;
