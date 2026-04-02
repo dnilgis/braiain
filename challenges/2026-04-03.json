@@ -1,0 +1,99 @@
+{
+  "day_number": 59,
+  "date": "2026-04-03",
+  "category": "April Showers Day",
+  "category_emoji": "🌧️☂️",
+  "rounds": [
+    {
+      "id": "d59r1",
+      "type": "image",
+      "content": "images/d59_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "CATEGORY: RAIN'S REGULARITY. Observe if falling rain streaks appear unnaturally uniform or lack realistic interaction with the child's movement. Emotions might seem generic.",
+      "_note": "Prompt: A photorealistic photograph of several pedestrians, dressed in muted tones, walking briskly with open black umbrellas on a wet, reflective city street during a light \"April Showers\" rain. Parked cars with glistening wet surfaces line the pavement. The scene is illuminated by the soft, diffused light of an overcast afternoon, with subtle reflections of urban streetlights on the slick ground. Shot with a Fujifilm GFX 100S and a 32-64mm f/4 lens, from a slightly elevated eye-level perspective, capturing the movement with a moderate shutter speed."
+    },
+    {
+      "id": "d59r2",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/30427235/pexels-photo-30427235.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Cihan Yüce on Pexels",
+      "pro_tip": "CATEGORY: MICROSCOPIC CHAOS. Observe natural inconsistencies in dew drop sizes and placement on grass. Look for subtle dirt or minute debris that adds realism.",
+      "source_url": "https://www.pexels.com/photo/raindrops-on-window-creating-moody-atmosphere-30427235/"
+    },
+    {
+      "id": "d59r3",
+      "type": "image",
+      "content": "images/d59_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "CATEGORY: CONSISTENT ANOMALIES. Check for repetitive motion blur or reflections that are too perfect and lack natural irregularity on wet streets. Faces may be generic.",
+      "_note": "Prompt: A photorealistic photograph of vibrant, freshly washed green grass blades, glistening with countless tiny raindrops and dew, seen from an extreme low-angle perspective, almost at ground level. The light is the soft, diffused glow of the morning after an \"April Shower\", highlighting the individual water droplets like jewels. Shot with a Nikon D850 and a 105mm f/2.8 macro lens, with an extremely shallow depth of field, creating a dreamlike foreground and background blur."
+    },
+    {
+      "id": "d59r4",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/804474/pexels-photo-804474.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by ClickerHappy on Pexels",
+      "pro_tip": "CATEGORY: ORGANIC IMPERFECTIONS. Spot the subtle, natural flaws in fabric weave or wood grain. Genuine human emotion appears spontaneous, not perfectly posed.",
+      "source_url": "https://www.pexels.com/photo/person-in-black-hoodie-riding-swing-while-raining-804474/"
+    },
+    {
+      "id": "d59r5",
+      "type": "image",
+      "content": "images/d59_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "CATEGORY: UNCANNY PERFECTION. Look for flawless skin texture or too-perfect fabric folds on denim. AI often lacks subtle, organic imperfections.",
+      "_note": "Prompt: A photorealistic photograph of a small child, bundled in a colorful raincoat, gently swinging alone on a park swing, with visible streaks of soft, falling \"April Showers\" rain all around. The moment is serene, captured in the cool, even light of a heavily overcast day. Shot with a Sony A7 III and a 85mm f/1.8 lens, capturing the rain with a slightly slower shutter speed, from a low-angle perspective."
+    },
+    {
+      "id": "d59r6",
+      "type": "image",
+      "content": "images/d59_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "CATEGORY: MACRO FLAWLESSNESS. Examine individual water droplets on grass for excessive uniformity or geometric perfection. Real droplets exhibit natural variation and imperfections.",
+      "_note": "Prompt: A photorealistic photograph of large, distinct raindrops clinging to and streaking down the exterior of a window pane, creating natural distortions. The background outside is beautifully blurred into warm, indistinct lights and colors of an \"April Showers Day\", evoking a cozy, moody, and introspective atmosphere from inside. Captured with the soft, inviting ambient light of a room, shot with a Leica SL2 and a 90mm f/2 Summicron lens, focused tightly on the raindrops, maximizing the bokeh of the background."
+    },
+    {
+      "id": "d59r7",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/16550711/pexels-photo-16550711.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Caleb Oquendo on Pexels",
+      "pro_tip": "CATEGORY: DYNAMIC AUTHENTICITY. Look for varied rain patterns and natural interaction with the child's movement. Candid expressions capture genuine, unforced moments.",
+      "source_url": "https://www.pexels.com/photo/people-with-umbrellas-in-the-rain-16550711/"
+    },
+    {
+      "id": "d59r8",
+      "type": "image",
+      "content": "images/d59_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are your \"April Showers Day\" pro tips for the AI detection game:",
+      "_note": "Prompt: A photorealistic photograph of a young woman in blue denim jeans, sitting thoughtfully on a rustic brown wooden chair on a porch, gently holding a closed, dark blue umbrella, with soft, diffused overcast daylight illuminating her from the side. Shot with a Canon EOS R5 and a 50mm f/1.4 lens, slightly blurred background, eye-level composition."
+    },
+    {
+      "id": "d59r9",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1614178581038-74be28a7d750?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyMnx8QXByaWwlMjBTaG93ZXJzfGVufDB8MHx8fDE3NzUxNTQ4NjR8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by YEH CHE WEI on Unsplash",
+      "pro_tip": "CATEGORY: BOKEH ODDITIES. Note if background bokeh appears too smooth or 'painterly,' lacking natural light texture. Raindrop distortions might seem unnatural or uniform.",
+      "source_url": "https://unsplash.com/photos/woman-in-blue-denim-jeans-sitting-on-brown-wooden-chair-holding-umbrella-zIVqwXJ46Ho"
+    },
+    {
+      "id": "d59r10",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1556485689-33e55ab56127?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyM3x8cmFpbnxlbnwwfDB8fHwxNzc1MTU0OTI3fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Roman Synkevych on Unsplash",
+      "pro_tip": "CATEGORY: UNPREDICTABLE REALISM. Identify unique imperfections in umbrellas or varied motion blur on different subjects. Reflections on wet surfaces will show natural irregularities.",
+      "source_url": "https://unsplash.com/photos/low-angle-photography-of-green-grass-qPvBmSvmohs"
+    }
+  ],
+  "category_subtitle": "April showers: Don't let the AI rain on your parade!"
+}
