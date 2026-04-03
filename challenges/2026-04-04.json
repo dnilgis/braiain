@@ -1,0 +1,99 @@
+{
+  "day_number": 60,
+  "date": "2026-04-04",
+  "category": "World Rat Day",
+  "category_emoji": "🐀",
+  "rounds": [
+    {
+      "id": "d60r1",
+      "type": "image",
+      "content": "images/d60_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "TEXTURE REPETITION: Look for repetitive or overly uniform textures in backgrounds, clothing, or furniture. AI often struggles with natural, varied surface imperfections.",
+      "_note": "Prompt: A photorealistic photograph of a sleek, healthy brown rat paused mid-action, its face and front paws in sharp focus, while its hindquarters and the background blur into a soft, creamy bokeh of natural tones. Captured with an 85mm prime lens at a wide aperture, utilizing soft, directional natural light to highlight its fur texture and curious expression."
+    },
+    {
+      "id": "d60r2",
+      "type": "image",
+      "content": "images/d60_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are pro tips for the AI detection game:",
+      "_note": "Prompt: A photorealistic photograph of a sleek black pet rat being gently cradled in soft human hands, its long, sensitive whiskers sharply in focus against a softly blurred, warm-toned background. Shot with a macro lens, using natural, diffused window light to emphasize texture and detail."
+    },
+    {
+      "id": "d60r3",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/2302804/pexels-photo-2302804.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Vincent M.A. Janssen on Pexels",
+      "pro_tip": "NATURAL LIGHTING: Observe the lighting and shadows. Real photos display authentic light interplay, casting natural shadows and highlighting textures organically.",
+      "source_url": "https://www.pexels.com/photo/bunch-of-rats-feeding-from-a-bowl-2302804/"
+    },
+    {
+      "id": "d60r4",
+      "type": "image",
+      "content": "images/d60_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "UNCANNY DETAILS: Check human hands for unnatural smoothness, odd finger joints, or inconsistent skin texture. AI often struggles with organic imperfections.",
+      "_note": "Prompt: A photorealistic photograph of a cheerful woman, mid-shot, smiling warmly with a small brown rat perched comfortably on her shoulder, its tiny paws resting on her cream-colored turtleneck sweater. Captured with a professional portrait lens, utilizing soft, even studio lighting to highlight both their expressions and the fabric's texture."
+    },
+    {
+      "id": "d60r5",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/9864522/pexels-photo-9864522.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Xeniya Kovaleva on Pexels",
+      "pro_tip": "DYNAMIC EXPRESSIONS: Look for unique, dynamic expressions and interactions in rats and humans. Real photos capture genuine, unscripted moments, not repeated poses.",
+      "source_url": "https://www.pexels.com/photo/black-mouse-near-the-smartphone-9864522/"
+    },
+    {
+      "id": "d60r6",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1575378064390-5a323bbac5d7?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw0fHxSYXRzfGVufDB8MHx8fDE3NzUyNTI2ODZ8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Svetozar Cenisev on Unsplash",
+      "pro_tip": "ORGANIC TEXTURES: Examine textures for natural variation. Real fur shows individual strands, real fabric has genuine folds, unlike AI's uniformity.",
+      "source_url": "https://unsplash.com/photos/selective-focus-photo-of-rodent-KKPV5hGmQkA"
+    },
+    {
+      "id": "d60r7",
+      "type": "image",
+      "content": "images/d60_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "RAT REALISM: Examine rat fur for repetitive patterns or an overly uniform appearance. AI rats sometimes lack natural hair variability or have static expressions.",
+      "_note": "Prompt: A photorealistic photograph of a small group of active brown rats gathered around a shallow white ceramic bowl, eagerly lapping milk outdoors in a sun-dappled grassy area. Shot at eye-level with a 50mm lens, bathed in bright, crisp natural daylight, capturing the subtle ripples in the milk and the rats' focused expressions."
+    },
+    {
+      "id": "d60r8",
+      "type": "image",
+      "content": "images/d60_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "REFLECTION FLAWS: Scrutinize reflections on surfaces like water or screens. AI reflections can appear too perfect, inconsistent, or strangely distorted.",
+      "_note": "Prompt: A photorealistic photograph of a curious light-brown rat peering intently at its own distorted reflection on a brightly lit smartphone screen lying flat on a distressed wooden table. Captured with a macro lens from a slightly elevated angle, using soft, diffused overhead lighting, emphasizing the rat's whiskers and the screen's subtle glow."
+    },
+    {
+      "id": "d60r9",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/8891138/pexels-photo-8891138.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by IRINA LYADOVA on Pexels",
+      "pro_tip": "HYPER-PERFECTION: An image feeling too perfect, with every detail unnaturally sharp or flawlessly composed, often hints at AI generation. Look for a sterile finish.",
+      "source_url": "https://www.pexels.com/photo/close-up-photo-of-person-touching-a-black-rat-8891138/"
+    },
+    {
+      "id": "d60r10",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/10333865/pexels-photo-10333865.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Xeniya Kovaleva on Pexels",
+      "pro_tip": "IMPERFECTION CUES: Real photos often include natural imperfections like slight blurs, stray hairs, or subtle smudges. These organic elements indicate authenticity.",
+      "source_url": "https://www.pexels.com/photo/two-rats-on-a-woman-s-shoulder-10333865/"
+    }
+  ],
+  "category_subtitle": "On World Rat Day, sniff out the AI's digital cheese!"
+}
