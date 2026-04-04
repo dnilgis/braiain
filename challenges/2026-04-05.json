@@ -1,0 +1,99 @@
+{
+  "day_number": 61,
+  "date": "2026-04-05",
+  "category": "Easter Egg Hunt Day",
+  "category_emoji": "🥚",
+  "rounds": [
+    {
+      "id": "d61r1",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/7282048/pexels-photo-7282048.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by RDNE Stock project on Pexels",
+      "pro_tip": "**AUTHENTIC IMPERFECTIONS:** Real photos often include natural imperfections: a smudge on an egg, a wrinkle in clothing, or a slightly less-than-perfect smile, adding realism.",
+      "source_url": "https://www.pexels.com/photo/light-holiday-flowers-holidays-7282048/"
+    },
+    {
+      "id": "d61r2",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1650472363263-b5a6bd792d18?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyM3x8RWFzdGVyJTIwSHVudHxlbnwwfDB8fHwxNzc1MzM4MTc1fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Chris Hardy on Unsplash",
+      "pro_tip": "**SPONTANEOUS EXPRESSIONS:** Genuine emotions are captured with natural nuances, slight asymmetries, or unposed gestures, making faces feel truly alive and unique.",
+      "source_url": "https://unsplash.com/photos/a-person-sitting-on-a-step-next-to-a-pile-of-toys-eIGh3jyyR9Y"
+    },
+    {
+      "id": "d61r3",
+      "type": "image",
+      "content": "images/d61_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are your pro tips for the AI detection game, themed \"Easter Egg Hunt Day\":",
+      "_note": "Prompt: A photorealistic photograph of a toddler on hands and knees, intently collecting vibrant Easter eggs into a woven basket in a sun-dappled garden. Shot on a Canon EOS R5 with an 85mm f/1.4 lens, shallow depth of field, captured during golden hour with warm, soft backlight, f/1.8."
+    },
+    {
+      "id": "d61r4",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1586738730873-bdd59a596a2d?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxfHxFYXN0ZXIlMjBIdW50fGVufDB8MHx8fDE3NzUzMzgxNzV8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Gabe Pierce on Unsplash",
+      "pro_tip": "**NATURAL VARIETY:** Real scenes exhibit diverse objects, textures, and subtle clutter with realistic wear, rather than uniform, pristine elements. Notice distinct toys or varied egg designs.",
+      "source_url": "https://unsplash.com/photos/girl-in-green-jacket-playing-with-white-and-pink-plastic-balls-on-green-grass-field-during-2w46Lv6EYT4"
+    },
+    {
+      "id": "d61r5",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/7281960/pexels-photo-7281960.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by RDNE Stock project on Pexels",
+      "pro_tip": "**TEXTURE ODDITIES:** Look for areas of skin, fabric, or environmental details that appear unnaturally smooth, waxy, or pixelated, lacking realistic grain and texture variations.",
+      "source_url": "https://www.pexels.com/photo/a-girl-holding-easter-eggs-7281960/"
+    },
+    {
+      "id": "d61r6",
+      "type": "image",
+      "content": "images/d61_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**UNSCRAMBLED ANATOMY:** Examine human figures for subtle anatomical inconsistencies, such as misshapen hands, strange limb proportions, or unusual facial symmetries.",
+      "_note": "Prompt: A photorealistic photograph of a happy child sitting on a rustic wooden porch step, proudly displaying a large pile of newly found colorful Easter eggs and small plush bunny toys next to them. Shot with a Sony Alpha a7 III and a 35mm f/2.8 lens, natural daylight under a clear blue sky, sharp focus on the child and eggs, ISO 200."
+    },
+    {
+      "id": "d61r7",
+      "type": "image",
+      "content": "images/d61_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**REPETITIVE CLUES:** Watch for repeating patterns in backgrounds, textures, or small objects like flowers or toy bunnies, indicating a lack of true random generation.",
+      "_note": "Prompt: A photorealistic photograph of a joyful young girl holding an open decorative box filled with brightly colored Easter eggs and fluffy yellow chick figurines, standing in a vibrant blooming spring garden. Taken with a Fujifilm GFX 100S and a 110mm f/2 lens, soft morning light illuminating her face, creamy bokeh background at f/2.0."
+    },
+    {
+      "id": "d61r8",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/7281802/pexels-photo-7281802.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by RDNE Stock project on Pexels",
+      "pro_tip": "**ORGANIC LIGHTING:** Observe how light falls naturally, creating realistic shadows and highlights that blend seamlessly, reflecting true environmental conditions without artificial enhancement.",
+      "source_url": "https://www.pexels.com/photo/girl-holding-chocolate-eggs-in-box-7281802/"
+    },
+    {
+      "id": "d61r9",
+      "type": "image",
+      "content": "images/d61_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**UNNATURAL PERFECTION:** AI images frequently display excessive flawlessness in subjects, settings, or props like overly clean baskets or identical eggs, lacking real-world imperfections.",
+      "_note": "Prompt: A photorealistic photograph of two smiling young girls in pastel Easter outfits, holding up a homemade \"Happy Easter Egg Hunt!\" sign, surrounded by spring flowers and colorful bunting. Captured on a Nikon D850 with a 50mm f/1.8 lens, bright diffused natural light on a slightly overcast spring day, f/2.8, full frame."
+    },
+    {
+      "id": "d61r10",
+      "type": "image",
+      "content": "images/d61_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**OVERLY VIBRANT HUES:** AI often generates hyper-saturated colors and idealized, dramatic lighting that feels artificially enhanced, lacking the natural subtlety of real photography.",
+      "_note": "Prompt: A photorealistic photograph of a child in a lightweight green jacket kneeling on lush green grass, carefully arranging a scattered collection of pastel Easter eggs around them. Captured with a DJI Mavic 3 Pro drone from a low altitude, wide-angle lens, crisp mid-morning sun casting subtle shadows, f/5.6, vibrant color saturation."
+    }
+  ],
+  "category_subtitle": "AI's Easter Eggs: Hunt for hidden pixels, not just chocolate!"
+}
