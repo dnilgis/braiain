@@ -411,6 +411,13 @@
       "category_emoji": "🐀",
       "category_subtitle": "On World Rat Day, sniff out the AI's digital cheese!",
       "challenge_file": "challenges/2026-04-04.json"
+  },
+    "2026-04-05": {
+      "day_number": 61,
+      "category": "Easter Egg Hunt Day",
+      "category_emoji": "🥚",
+      "category_subtitle": "AI's Easter Eggs: Hunt for hidden pixels, not just chocolate!",
+      "challenge_file": "challenges/2026-04-05.json"
   }
 }
 
