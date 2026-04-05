@@ -1,0 +1,99 @@
+{
+  "day_number": 62,
+  "date": "2026-04-06",
+  "category": "National Student-Athlete Day",
+  "category_emoji": "📚🏀",
+  "rounds": [
+    {
+      "id": "d62r1",
+      "type": "image",
+      "content": "images/d62_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**UNCANNY HUMANITY:** Examine eyes, hands, and facial features for subtle distortions, hyper-smoothness, or an unnatural, 'too-perfect' quality. AI often struggles with these details.",
+      "_note": "Prompt: A photorealistic photograph of two joyous university graduates in black academic gowns and caps, playfully shooting hoops on an indoor basketball court. One student-athlete is mid-jump for a layup, while the other claps and cheers, their graduation attire contrasting humorously with the athletic setting. Shot with a Sony Alpha 1 and a 35mm f/1.4 lens, utilizing the vibrant, even lighting of the gymnasium to freeze the celebratory motion, with confetti lightly scattered on the polished floor."
+    },
+    {
+      "id": "d62r2",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1774748682131-66f482706c34?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxfHxTdHVkZW50LUF0aGxldGV8ZW58MHwwfHx8MTc3NTQyMjAzNnww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Nicholas Wilson on Unsplash",
+      "pro_tip": "**PROMPT-PERFECT RENDERING:** Does the image flawlessly match *all* detailed technical specifications (camera, lens, light) without any natural photographic \"mistakes\" or variations?",
+      "source_url": "https://unsplash.com/photos/a-smiling-woman-in-a-flames-softball-uniform-high-fives-teammates-Rfx3dEFXUx0"
+    },
+    {
+      "id": "d62r3",
+      "type": "image",
+      "content": "images/d62_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are your pro tips for the AI detection game:",
+      "_note": "Prompt: A photorealistic photograph of a radiant female student-athlete in a vibrant red and orange softball uniform, mid-high-five with her equally joyful teammates in the dugout. Shot with a Canon EOS R5 and an 85mm f/1.4 lens, natural late afternoon sunlight casting soft shadows, capturing their shared triumph and camaraderie. The focus is sharp on her beaming face and the connected hands, with a shallow depth of field blurring the background slightly."
+    },
+    {
+      "id": "d62r4",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/7943997/pexels-photo-7943997.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Pavel Danilyuk on Pexels",
+      "pro_tip": "**SUBTLE EMOTION:** Look for more nuanced, less exaggerated facial expressions. Real emotions are rarely as \"radiant\" or intensely focused as AI's idealized portrayal.",
+      "source_url": "https://www.pexels.com/photo/a-group-of-men-playing-basketball-while-wearing-black-academic-gowns-7943997/"
+    },
+    {
+      "id": "d62r5",
+      "type": "image",
+      "content": "images/d62_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**HYPER-PERFECTION:** Look for scenes where every detail, emotion, and lighting condition is *flawlessly* executed, often aligning perfectly with the prompt's explicit narrative.",
+      "_note": "Prompt: A photorealistic photograph of a dynamic women's university volleyball match, captured from a high-angle perspective looking down onto the brightly lit court. Multiple student-athletes are mid-action – one spiking, another diving, and teammates cheering. Shot with a Fujifilm GFX 100S and a wide-angle 23mm f/4 lens, utilizing arena floodlights for crisp, even illumination across the polished wooden floor. The composition emphasizes the strategic spread of players and the energy of the game."
+    },
+    {
+      "id": "d62r6",
+      "type": "image",
+      "content": "images/d62_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**SIMULTANEOUS ACTION:** Observe if multiple subjects are captured performing complex, peak actions *perfectly* at the same moment. Real photos rarely achieve such synchronized perfection.",
+      "_note": "Prompt: A photorealistic photograph of an experienced football coach, wearing a university polo shirt and a focused expression, intently watching his student-athletes perform drills on a sun-drenched practice field. Shot from a medium distance with a Nikon Z9 and a 70-200mm f/2.8 telephoto lens, capturing the intensity in his eyes while the blurred figures of players are active in the background. The late morning sun creates sharp highlights and deep shadows, emphasizing the texture of his skin and the grass."
+    },
+    {
+      "id": "d62r7",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/31367508/pexels-photo-31367508.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Yusuf Çelik on Pexels",
+      "pro_tip": "**REAL-WORLD GRIT:** Examine backgrounds and props for genuine wear, natural clutter, or less pristine surfaces. Real environments often show signs of use.",
+      "source_url": "https://www.pexels.com/photo/smiling-woman-holding-books-in-a-hallway-31367508/"
+    },
+    {
+      "id": "d62r8",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1762742228042-6bad070913bd?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxNHx8U3R1ZGVudC1BdGhsZXRlfGVufDB8MHx8fDE3NzU0MjIwMzZ8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Tim Mossholder on Unsplash",
+      "pro_tip": "**AUTHENTIC MOTION BLUR:** Real images often show natural motion blur or less synchronized actions among subjects. Not every movement is perfectly frozen at its peak.",
+      "source_url": "https://unsplash.com/photos/coach-watches-football-players-on-the-field-7Ifr5C6uGi8"
+    },
+    {
+      "id": "d62r9",
+      "type": "image",
+      "content": "images/d62_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**OVERLY PRISTINE TEXTURES:** Check if textures like fabric, skin, or surfaces appear uniformly perfect and sharp, lacking natural imperfections or organic variation.",
+      "_note": "Prompt: A photorealistic photograph of a confident young female student-athlete, dressed in smart casual wear, standing in a bright university hallway. She holds a stack of textbooks close to her chest, a warm and assured smile gracing her face as soft light from a nearby window illuminates her from the side. Shot with a Canon EOS R3 and a 50mm f/1.2 lens, focusing sharply on her eyes and the texture of her sweater, with a slightly blurred background of lockers and student activity. The composition is a thoughtful head-and-shoulders portrait emphasizing her intelligence and poise."
+    },
+    {
+      "id": "d62r10",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/4425263/pexels-photo-4425263.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Wendy Wei on Pexels",
+      "pro_tip": "**NATURAL IMPERFECTIONS:** Seek out genuine flaws: a stray hair, slight uniform wrinkles, or dust. Real photos rarely achieve AI's spotless, idealized perfection in every detail.",
+      "source_url": "https://www.pexels.com/photo/femal-volleyball-game-4425263/"
+    }
+  ],
+  "category_subtitle": "Balancing books and ball? Your detection skills are MVP!"
+}
