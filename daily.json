@@ -418,6 +418,13 @@
       "category_emoji": "🥚",
       "category_subtitle": "AI's Easter Eggs: Hunt for hidden pixels, not just chocolate!",
       "challenge_file": "challenges/2026-04-05.json"
+  },
+    "2026-04-06": {
+      "day_number": 62,
+      "category": "National Student-Athlete Day",
+      "category_emoji": "📚🏀",
+      "category_subtitle": "Balancing books and ball? Your detection skills are MVP!",
+      "challenge_file": "challenges/2026-04-06.json"
   }
 }
 
