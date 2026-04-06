@@ -425,6 +425,13 @@
       "category_emoji": "📚🏀",
       "category_subtitle": "Balancing books and ball? Your detection skills are MVP!",
       "challenge_file": "challenges/2026-04-06.json"
+  },
+    "2026-04-07": {
+      "day_number": 63,
+      "category": "National No Housework Day",
+      "category_emoji": "🧹🚫",
+      "category_subtitle": "No scrubbing, just spotting: AI handles the dirty work!",
+      "challenge_file": "challenges/2026-04-07.json"
   }
 }
 
