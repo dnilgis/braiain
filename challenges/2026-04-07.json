@@ -1,0 +1,99 @@
+{
+  "day_number": 63,
+  "date": "2026-04-07",
+  "category": "National No Housework Day",
+  "category_emoji": "🧹🚫",
+  "rounds": [
+    {
+      "id": "d63r1",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1758273705712-857d29edbde1?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxNXx8SG91c2V3b3JrfGVufDB8MHx8fDE3NzU1MDY5MDJ8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Vitaly Gariev on Unsplash",
+      "pro_tip": "**AUTHENTIC IMPERFECTIONS:** Spot genuine, subtle imperfections like realistic skin pores, natural hair strands, or slight clutter in a lived-in kitchen.",
+      "source_url": "https://unsplash.com/photos/woman-with-headphones-cleaning-and-singing-GYenXb9ltUU"
+    },
+    {
+      "id": "d63r2",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1647381518264-97ff1835026f?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxfHxIb3VzZXdvcmt8ZW58MHwwfHx8MTc3NTUwNjkwMnww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Josue Michel on Unsplash",
+      "pro_tip": "**EXAGGERATED REALISM:** Notice overly dramatic lighting, hyper-detailed but unnatural textures, or expressions and poses that seem too theatrical.",
+      "source_url": "https://unsplash.com/photos/a-woman-standing-in-a-kitchen-holding-a-broom-MwxsRSG1A2s"
+    },
+    {
+      "id": "d63r3",
+      "type": "image",
+      "content": "images/d63_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are pro tips for the AI detection game on \"National No Housework Day\":",
+      "_note": "Prompt: A photorealistic photograph of a smiling young woman lounging against a kitchen counter, casually holding a broom like a staff, enjoying a cup of coffee. Warm, diffused morning light streams in through a window, creating soft highlights. Shot with a Canon EOS R5, 50mm lens, f/1.8, ISO 100, professional studio lighting setup."
+    },
+    {
+      "id": "d63r4",
+      "type": "image",
+      "content": "images/d63_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**TEXT/ANIMAL ANOMALIES:** Observe gibberish text on books, unusual animal anatomy, or hyper-realistic yet subtly off fur textures on pets.",
+      "_note": "Prompt: A photorealistic photograph of a person deeply engrossed in a movie on a laptop, their feet propped up on a coffee table strewn with snacks. A forgotten duster lies playfully beside them on the sofa, symbolic of \"National No Housework Day.\" Soft, warm lamp light creates a relaxed atmosphere in the cozy living room. Shot with a Fujifilm GFX 100S, 63mm lens, f/2.5, ISO 800, tungsten lighting."
+    },
+    {
+      "id": "d63r5",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/909620/pexels-photo-909620.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Monica Silvestre on Pexels",
+      "pro_tip": "**NATURAL DYNAMICS:** Look for dynamic motion blur, authentic expressions reflecting activity, or a real-world messy environment.",
+      "source_url": "https://www.pexels.com/photo/person-lying-on-sofa-with-cat-909620/"
+    },
+    {
+      "id": "d63r6",
+      "type": "image",
+      "content": "images/d63_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**OBJECT INTERACTION FLAWS:** Spot distorted hands interacting with objects, generic screen content, or perfectly placed \"forgotten\" items that feel staged.",
+      "_note": "Prompt: A photorealistic photograph of a young woman sprawled luxuriously on a velvet sofa, holding a long-handled broom aloft like a trophy of defiance, a wide, contented grin on her face. Her messy bun and comfortable clothes speak of ultimate relaxation. Dramatic side lighting highlights her expression and the texture of the sofa. Shot with a Leica Q2, 28mm lens, f/1.7, ISO 100, cinematic lighting setup."
+    },
+    {
+      "id": "d63r7",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/4047832/pexels-photo-4047832.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by KATRIN  BOLOVTSOVA on Pexels",
+      "pro_tip": "**ORGANIC FEATURES:** Observe natural animal postures, genuine fur textures with varying softness, and credible screen content or legible text.",
+      "source_url": "https://www.pexels.com/photo/photo-of-man-sleeping-on-sofa-4047832/"
+    },
+    {
+      "id": "d63r8",
+      "type": "image",
+      "content": "images/d63_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**UNCANNY DETAILS:** Check for strangely perfect background objects, inconsistent lighting on small details, or subtle distortions in accessories like headphones.",
+      "_note": "Prompt: A photorealistic photograph of a person in comfortable clothes, gently petting a fluffy domestic cat curled up beside them on a spacious, sun-drenched sofa. An open book lies forgotten on their lap, emphasizing a day dedicated to pure leisure. Bright, natural daylight from a large window fills the scene. Shot with a Nikon Z7, 35mm lens, f/2.8, ISO 200, available light."
+    },
+    {
+      "id": "d63r9",
+      "type": "image",
+      "content": "images/d63_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**ARTIFICIAL PERFECTION:** Look for unnaturally smooth skin, flawless objects, or excessively clean environments that lack natural wear and tear.",
+      "_note": "Prompt: A photorealistic photograph of a woman with wireless headphones on, deeply engrossed in music, sprawled comfortably on a plush sofa, playfully ignoring a neatly stacked pile of laundry on a nearby chair. Soft, ambient evening light illuminates the cozy living room. Shot with a Sony Alpha a7 III, 85mm lens, f/2.0, ISO 400, natural interior lighting."
+    },
+    {
+      "id": "d63r10",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/5591486/pexels-photo-5591486.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by RDNE Stock project on Pexels",
+      "pro_tip": "**SUBTLE TEXTURE & LIGHT:** Find realistic fabric folds, natural light variations, and nuanced, unexaggerated human expressions.",
+      "source_url": "https://www.pexels.com/photo/woman-sitting-on-sofa-holding-a-broom-5591486/"
+    }
+  ],
+  "category_subtitle": "No scrubbing, just spotting: AI handles the dirty work!"
+}
