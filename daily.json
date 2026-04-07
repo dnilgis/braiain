@@ -432,6 +432,13 @@
       "category_emoji": "🧹🚫",
       "category_subtitle": "No scrubbing, just spotting: AI handles the dirty work!",
       "challenge_file": "challenges/2026-04-07.json"
+  },
+    "2026-04-08": {
+      "day_number": 64,
+      "category": "National Zoo Lovers Day",
+      "category_emoji": "🐘",
+      "category_subtitle": "Don't just lion around, spot those zoo animals!",
+      "challenge_file": "challenges/2026-04-08.json"
   }
 }
 
