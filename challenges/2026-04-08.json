@@ -1,0 +1,99 @@
+{
+  "day_number": 64,
+  "date": "2026-04-08",
+  "category": "National Zoo Lovers Day",
+  "category_emoji": "🐘",
+  "rounds": [
+    {
+      "id": "d64r1",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1503919005314-30d93d07d823?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyfHxab298ZW58MHwwfHx8MTc3NTU5MzA1MHww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Daiga Ellaby on Unsplash",
+      "pro_tip": "ANIMAL INTERACTION: Animal poses or interactions might appear stiff or overly choreographed. Look for repetitive patterns in skin textures that lack natural imperfections.",
+      "source_url": "https://unsplash.com/photos/boy-feeding-a-animal-during-daytime-Sg_OwwU2Z9o"
+    },
+    {
+      "id": "d64r2",
+      "type": "image",
+      "content": "images/d64_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "TEXTURE & SHADOWS: Observe hyper-realistic yet sometimes repetitive textures in fur or sand. Shadows may appear unnaturally sharp with uniform edges, lacking natural diffusion.",
+      "_note": "Prompt: A photorealistic photograph of a woman with short brown hair, wearing a vibrant blue denim shirt, standing with a gentle hand resting on the back of a calm, brown fallow deer in a spacious walk-through zoo enclosure. Captured with a Sony a7 III, 50mm lens, f/4, utilizing soft, late afternoon golden hour lighting that creates a subtle rim light on the deer's fur, from a slightly low, eye-level perspective."
+    },
+    {
+      "id": "d64r3",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1592803883394-eeaa36f92a70?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxMXx8Wm9vfGVufDB8MHx8fDE3NzU1OTMwNTB8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Jackie Park on Unsplash",
+      "pro_tip": "ENVIRONMENTAL REALISM: Real backgrounds often contain natural clutter, varied textures, and organic imperfections in sand or rocks. Shadows show realistic, subtle gradations.",
+      "source_url": "https://unsplash.com/photos/woman-in-blue-shirt-standing-beside-brown-deer-during-daytime-3SBfM2-ytb8"
+    },
+    {
+      "id": "d64r4",
+      "type": "image",
+      "content": "images/d64_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "LIGHTING & CLOTHING: Inspect for overly consistent or \"painted-on\" rim lighting. Clothing might lack natural folds or texture inconsistencies found in real garments.",
+      "_note": "Prompt: A photorealistic photograph of a parent holding a small child's hand, as the child gazes up in wonder at the wrinkled trunk of a magnificent Asian elephant gently extended towards them over a low barrier at a zoo. Photographed with a Fujifilm GFX 100S, 110mm lens, f/2.0, showcasing a shallow depth of field that emphasizes the emotional connection, under diffused, bright overcast skies."
+    },
+    {
+      "id": "d64r5",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/36033889/pexels-photo-36033889.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Wahyu Prabowo on Pexels",
+      "pro_tip": "NATURAL IMPERFECTIONS: Real clothing shows natural wrinkles or slight wear. Animal fur exhibits organic variations, not perfectly generated patterns, and minor imperfections.",
+      "source_url": "https://www.pexels.com/photo/touching-moment-with-an-asian-elephant-at-zoo-36033889/"
+    },
+    {
+      "id": "d64r6",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1552071379-041b32707fed?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxN3x8Wm9vfGVufDB8MHx8fDE3NzU1OTMwNTB8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Dušan veverkolog on Unsplash",
+      "pro_tip": "AUTHENTICITY: Real photos capture candid, unposed moments with genuine, sometimes less-than-perfect, human expressions. Lighting often shows natural nuances or imperfections.",
+      "source_url": "https://unsplash.com/photos/three-animals-on-sand-during-daytime-ah7KHxYg6Ow"
+    },
+    {
+      "id": "d64r7",
+      "type": "image",
+      "content": "images/d64_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "ANATOMY & EXPRESSION: Closely examine hands for subtle deformities or odd positioning. Expressions like \"wonder\" might appear overly intense or less authentic than human emotion.",
+      "_note": "Prompt: A photorealistic photograph of two massive, gray African elephants standing close together, one playfully nudging the other with its trunk, in a large, naturalistic zoo habitat featuring rocks and sparse vegetation. Shot with a Canon 1DX Mark III, 200mm lens, f/5.6, capturing their textured skin and immense scale with sharp detail, bathed in clear, bright morning sunlight."
+    },
+    {
+      "id": "d64r8",
+      "type": "image",
+      "content": "images/d64_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are your pro tips for the AI detection game, themed \"National Zoo Lovers Day\":",
+      "_note": "Prompt: A photorealistic photograph of a smiling young boy in a striped t-shirt gently offering a handful of pellets to a curious, long-necked llama through a fence at a petting zoo, under bright, warm midday sun. Shot with a Canon EOS R5, 85mm lens, f/2.8, shallow depth of field, natural soft light illuminating their interaction from the side."
+    },
+    {
+      "id": "d64r9",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1518013895739-f7b24b50adf9?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyMHx8Wm9vfGVufDB8MHx8fDE3NzU1OTMwNTB8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Irene Grace Tolentino on Unsplash",
+      "pro_tip": "EMOTIONAL DEPTH: Real images capture genuine, unforced emotional connections through authentic body language and eye contact. Animal features display unique, natural imperfections.",
+      "source_url": "https://unsplash.com/photos/two-gray-elephants-during-daytime-5v-5WjeAr7Y"
+    },
+    {
+      "id": "d64r10",
+      "type": "image",
+      "content": "images/d64_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "IDEALIZED FOCUS: AI images often feature subjects with consistently perfect, almost too-good-to-be-true expressions. Observe unnaturally pristine bokeh from shallow depth of field.",
+      "_note": "Prompt: A photorealistic photograph of three agile meerkats standing alert on an expansive, sun-baked sand dune within a desert-themed zoo exhibit, their shadows sharp on the ground. Taken with a Nikon D850, 70-200mm lens at 120mm, f/8, capturing crisp details of their fur and the coarse sand, under harsh, high-noon sunlight."
+    }
+  ],
+  "category_subtitle": "Don't just lion around, spot those zoo animals!"
+}
