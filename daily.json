@@ -440,12 +440,12 @@
       "category_subtitle": "Don't just lion around, spot those zoo animals!",
       "challenge_file": "challenges/2026-04-08.json"
   },
-    "2026-04-10": {
+    "2026-04-09": {
       "day_number": 65,
       "category": "National Sibling Day",
       "category_emoji": "👫",
       "category_subtitle": "Your siblings, or AI fakes? The family secret is out!",
-      "challenge_file": "challenges/2026-04-10.json"
+      "challenge_file": "challenges/2026-04-09.json"
   }
 }
 
