@@ -1,0 +1,99 @@
+{
+  "day_number": 65,
+  "date": "2026-04-10",
+  "category": "National Sibling Day",
+  "category_emoji": "👫",
+  "rounds": [
+    {
+      "id": "d65r1",
+      "type": "image",
+      "content": "images/d65_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Look for natural imperfections — real photos have dust, slight blur, and uneven lighting.",
+      "_note": "Prompt: A photorealistic photograph of two joyful siblings, a girl and a boy around 8 and 10 years old respectively, beaming and tightly hugging each other while comfortably seated on a plush cream-colored sofa in a warmly lit living room. Captured with a Canon EOS R5 and an 85mm f/1.4 lens at f/2.0, natural soft window light coming from the side, with a shallow depth of field creating gentle bokeh."
+    },
+    {
+      "id": "d65r2",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/7492993/pexels-photo-7492993.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Kampus Production on Pexels",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://www.pexels.com/photo/close-up-shot-of-children-smiling-7492993/"
+    },
+    {
+      "id": "d65r3",
+      "type": "image",
+      "content": "images/d65_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Look at reflections — real reflections match the environment, AI reflections are often random.",
+      "_note": "Prompt: A photorealistic photograph of a tender moment as a loving older sister, around 7 years old, gently kisses the top of her baby brother's head (approximately 6 months old) while he lies peacefully in a white crib indoors. Captured with a Fujifilm GFX 100S and a 110mm f/2 lens at f/2.0, soft diffused window light illuminating their heads, emphasizing the intimate connection with a very shallow depth of field."
+    },
+    {
+      "id": "d65r4",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/5599318/pexels-photo-5599318.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Diwakar Jangir on Pexels",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://www.pexels.com/photo/girl-in-red-tank-top-kissing-baby-5599318/"
+    },
+    {
+      "id": "d65r5",
+      "type": "image",
+      "content": "images/d65_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Check for symmetry — AI tends to make things too perfect and symmetrical.",
+      "_note": "Prompt: A photorealistic photograph of two joyful toddlers, approximately 2 and 4 years old, giggling and playing together with colorful wooden blocks on a soft rug in a brightly lit playroom. Shot from a slightly elevated, dynamic angle with a Canon EOS R6 and a 35mm f/1.8 lens at f/3.2, utilizing cheerful overhead artificial lighting and natural light from a large window, capturing their playful energy and innocence."
+    },
+    {
+      "id": "d65r6",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/13692374/pexels-photo-13692374.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by SAULO LEITE on Pexels",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://www.pexels.com/photo/baby-girl-with-headband-sitting-beside-her-siblings-13692374/"
+    },
+    {
+      "id": "d65r7",
+      "type": "image",
+      "content": "https://images.unsplash.com/flagged/photo-1551455464-ae6227c3fd5b?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxNnx8U2libGluZ3N8ZW58MHwwfHx8MTc3NTY5MzE1M3ww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Zakaria Mohie on Unsplash",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://unsplash.com/photos/three-boys-looking-outside-window-of-car-front-seat-06BaDK2DlF8"
+    },
+    {
+      "id": "d65r8",
+      "type": "image",
+      "content": "images/d65_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Examine text and labels — AI struggles with readable, consistent lettering.",
+      "_note": "Prompt: A photorealistic photograph of three young brothers, aged approximately 7, 9, and 11, seated in the front passenger seat of a car, looking intently out the window at the passing scenery. Shot from the back seat with a wide-angle lens (24mm f/2.8) on a Sony Alpha a7 III at f/4.0, utilizing available daylight streaming through the car window, showcasing their shared moment of quiet observation."
+    },
+    {
+      "id": "d65r9",
+      "type": "image",
+      "content": "images/d65_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Check edges carefully — AI often produces halos or unnatural blending where objects meet.",
+      "_note": "Prompt: A photorealistic photograph of two radiant young children, a boy and a girl aged about 6 and 4, embracing each other with wide, genuine smiles in a sun-drenched park during late afternoon. Captured during golden hour with a Nikon D850 and a 50mm f/1.8 lens at f/2.2, warm backlighting creating a gentle halo effect around their heads, full of warmth and natural beauty."
+    },
+    {
+      "id": "d65r10",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/33786883/pexels-photo-33786883.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Rakibul alam khan on Pexels",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://www.pexels.com/photo/joyful-children-embracing-outdoors-33786883/"
+    }
+  ],
+  "category_subtitle": "Your siblings, or AI fakes? The family secret is out!"
+}
