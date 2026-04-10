@@ -1,0 +1,99 @@
+{
+  "day_number": 66,
+  "date": "2026-04-10",
+  "category": "National Hug Your Dog Day",
+  "category_emoji": "🐕",
+  "rounds": [
+    {
+      "id": "d66r1",
+      "type": "image",
+      "content": "images/d66_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**CONSISTENCY FLAWS:** Examine intricate details like fur, hands, or facial expressions. AI might show subtle anatomical inaccuracies or repetitive patterns upon close inspection.",
+      "_note": "Prompt: A photorealistic photograph of a very close-up shot of a woman warmly hugging a cheerful beagle outdoors, her cheek pressed against its head, capturing their joyful connection. A bright backyard with hints of green foliage is in the background. Extreme close-up, head and shoulders, showing genuine emotion. Photographed with a Canon R6 and a 100mm f/2.8 macro lens, under bright but diffused natural light, emphasizing every fur detail and facial expression, tack sharp focus on their eyes."
+    },
+    {
+      "id": "d66r2",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1713764054306-7f2a3157fcd2?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxOHx8SHVnJTIwWW91ciUyMERvZ3xlbnwwfDB8fHwxNzc1NzgxMjcwfDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Vitaly Gariev on Unsplash",
+      "pro_tip": "**EXAGGERATED DETAILS:** Spot details that are *too* perfect or crisp, like individual fur strands that look rendered. Real photos often have slight imperfections in close-up clarity.",
+      "source_url": "https://unsplash.com/photos/a-woman-holding-a-dog-in-a-park-dOw547M0zxo"
+    },
+    {
+      "id": "d66r3",
+      "type": "image",
+      "content": "images/d66_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**UNNATURAL CLARITY:** Check for wide scenes with perfect, uniform sharpness throughout. Real cameras often have areas of slight blur or focus fall-off, even with deep focus.",
+      "_note": "Prompt: A photorealistic photograph of a young woman carrying a small terrier mix close to her chest, the dog's head resting on her shoulder, as she walks down a quaint cobblestone street. A vibrant urban setting with brick buildings provides a soft-focused background. Portrait-style medium close-up, eye-level. Taken with a Sony Alpha A7 III and an 85mm f/1.4 prime lens, utilizing overcast diffused natural light for soft even illumination, shallow depth of field."
+    },
+    {
+      "id": "d66r4",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/7438895/pexels-photo-7438895.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Nikita Krasnov on Pexels",
+      "pro_tip": "**ORGANIC TEXTURES:** Examine fur, skin, and fabric for genuine, non-uniform textures. Realism often includes natural irregularities and slight blemishes.",
+      "source_url": "https://www.pexels.com/photo/close-up-photo-of-a-woman-kissing-her-cute-beagle-pet-7438895/"
+    },
+    {
+      "id": "d66r5",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1510613439354-64547973b449?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyMXx8SHVnJTIwWW91ciUyMERvZ3xlbnwwfDB8fHwxNzc1NzgxMjcwfDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Erica Magugliani on Unsplash",
+      "pro_tip": "**GENUINE EMOTION:** Spot unforced, spontaneous expressions and natural body language. Real interactions often convey subtle, unscripted feelings.",
+      "source_url": "https://unsplash.com/photos/selective-focus-photography-of-man-hugging-black-dog-q_TH75_MFTc"
+    },
+    {
+      "id": "d66r6",
+      "type": "image",
+      "content": "images/d66_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**OVERLY STYLIZED BOKEH:** Observe depth of field. AI can sometimes create bokeh that feels too \"painted\" or inconsistently applied, especially around complex subject edges.",
+      "_note": "Prompt: A photorealistic photograph of a man intensely hugging a large, glossy black German Shepherd, his face buried into the dog's fur, expressing deep affection. An indoor setting with warm ambient light ensures the background is softly blurred. Tight close-up, focusing sharply on the man and dog's embrace. Shot with a Fujifilm GFX 100S and a 110mm f/2 lens, using a single softbox light source from above and to the side, selective focus with strong bokeh to isolate the subjects."
+    },
+    {
+      "id": "d66r7",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1553369586-70d0015f1d77?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxMHx8SHVnJTIwWW91ciUyMERvZ3xlbnwwfDB8fHwxNzc1NzgxMjcwfDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Helena Lopes on Unsplash",
+      "pro_tip": "**NATURAL LIGHTING:** Observe realistic shadows and highlights that show natural light interaction, not overly balanced or studio-perfect illumination.",
+      "source_url": "https://unsplash.com/photos/woman-carrying-dog-0SJuDFU4DxU"
+    },
+    {
+      "id": "d66r8",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1650892449679-2224ee011eb7?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxNnx8SHVnJTIwWW91ciUyMERvZ3xlbnwwfDB8fHwxNzc1NzgxMjcwfDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Xennie Moore on Unsplash",
+      "pro_tip": "**AUTHENTIC IMPERFECTION:** Look for natural variations: slight blurs from movement, imperfect lighting, or unexpected real-world elements in the background.",
+      "source_url": "https://unsplash.com/photos/a-man-lying-on-the-beach-with-a-dog-IdANgdka1xo"
+    },
+    {
+      "id": "d66r9",
+      "type": "image",
+      "content": "images/d66_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**HYPER-REALISM:** Look for scenes that are too perfect, almost dreamlike. Lighting may be unnaturally pristine, shadows too soft, or details excessively polished.",
+      "_note": "Prompt: A photorealistic photograph of a man lying comfortably on a sandy beach, his arm wrapped around a contented Labrador retriever, both looking out towards the gentle ocean waves. The beach stretches into the distance under a clear blue sky. Wide shot, slightly from above. Captured with a Nikon Z7 II and a 24-70mm f/2.8 lens, using bright midday sun with subtle fill flash to illuminate details, sharp focus throughout."
+    },
+    {
+      "id": "d66r10",
+      "type": "image",
+      "content": "images/d66_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are pro tips for the AI detection game, themed \"National Hug Your Dog Day\":",
+      "_note": "Prompt: A photorealistic photograph of a woman gently cradling a fluffy golden retriever in her arms, looking down at the dog with a warm smile. They are in a sun-dappled park, with blurred green trees and golden leaves in the background. Medium shot. Shot with a Canon EOS R5 and a 50mm f/1.8 lens, employing natural golden hour light from the side, creating soft shadows and highlights, bokeh effect."
+    }
+  ],
+  "category_subtitle": "Who's a good AI? Detecting all the doggie love!"
+}
