@@ -1,0 +1,99 @@
+{
+  "day_number": 67,
+  "date": "2026-04-11",
+  "category": "National Pet Day",
+  "category_emoji": "🐾",
+  "rounds": [
+    {
+      "id": "d67r1",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxM3x8UGV0fGVufDB8MHx8fDE3NzU4Mzc3NzV8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Yerlin Matu on Unsplash",
+      "pro_tip": "**TEXTURE:** Genuine fur textures in real photos exhibit natural variation, individual strands, and subtle imperfections, not a uniform, rendered look.",
+      "source_url": "https://unsplash.com/photos/shallow-focus-photography-of-white-and-brown-cat-GtwiBmtJvaU"
+    },
+    {
+      "id": "d67r2",
+      "type": "image",
+      "content": "images/d67_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**INTERACTION:** Observe the interaction between humans and pets. AI sometimes creates slightly awkward poses or misaligned features that feel unnatural.",
+      "_note": "Prompt: A photorealistic photograph of a joyful woman with a warm smile, tightly embracing a medium-sized golden retriever, their heads touching. Shot from an eye-level perspective with a Fujifilm X-T4 and a 35mm f/2 lens, featuring soft, golden hour backlighting streaming through a window, highlighting their bond in a candid, heartwarming moment."
+    },
+    {
+      "id": "d67r3",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1623387641168-d9803ddd3f35?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxNXx8UGV0fGVufDB8MHx8fDE3NzU4Mzc3NzV8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Andrew S on Unsplash",
+      "pro_tip": "**BACKGROUND:** Real photo backgrounds, even blurred, often contain organic, irregular details and natural inconsistencies, avoiding artificial uniformity.",
+      "source_url": "https://unsplash.com/photos/a-dog-and-a-cat-laying-in-the-grass-ouo1hbizWwo"
+    },
+    {
+      "id": "d67r4",
+      "type": "image",
+      "content": "images/d67_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**ANATOMY:** Examine human hands closely for deformities, extra or missing fingers, or unnatural joint articulation. AI often struggles here.",
+      "_note": "Prompt: A photorealistic photograph of a luxurious, fluffy white Persian cat with emerald eyes, resting comfortably on a soft blanket indoors. A human hand is gently stroking its head, captured in a medium close-up, with warm, inviting ambient lamplight casting soft shadows, using a Sony A7 III with a 50mm f/1.4 lens."
+    },
+    {
+      "id": "d67r5",
+      "type": "image",
+      "content": "images/d67_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**EYES:** AI can create overly bright, sharp, or reflective eyes that lack natural depth or realistic light interaction. Look for unnerving perfection.",
+      "_note": "Prompt: A photorealistic photograph of a striking white and brown tabby cat, looking directly at the viewer with curious green eyes. Captured with a Nikon D850 and an 85mm f/1.8 lens, employing a very shallow depth of field to isolate the cat from its softly blurred, neutral-toned indoor background, lit by a single studio softbox from the side."
+    },
+    {
+      "id": "d67r6",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1557495235-340eb888a9fb?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw3fHxQZXR8ZW58MHwwfHx8MTc3NTgzNzc3NXww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Wade Austin Ellis on Unsplash",
+      "pro_tip": "**EMOTION:** Look for authentic expressions and unforced interactions between subjects. Real moments often capture subtle, genuine emotional cues.",
+      "source_url": "https://unsplash.com/photos/woman-hugging-a-dog-FtuJIuBbUhI"
+    },
+    {
+      "id": "d67r7",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1425082661705-1834bfd09dca?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw4fHxQZXR8ZW58MHwwfHx8MTc3NTgzNzc3NXww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Ricky  Kharawala on Unsplash",
+      "pro_tip": "**FOCUS:** Real photos may exhibit subtle imperfections like slight motion blur or minor focus discrepancies, especially in macro shots.",
+      "source_url": "https://unsplash.com/photos/selective-focus-photography-of-brown-hamster-adK3Vu70DEQ"
+    },
+    {
+      "id": "d67r8",
+      "type": "image",
+      "content": "images/d67_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**TEXTURE:** AI-generated fur can appear overly smooth or plastic-like. Check for unnatural uniformity or sheen, especially on macro details like tiny paws.",
+      "_note": "Prompt: A photorealistic photograph of a small brown hamster, its tiny paws visible as it grooms its face. Shot with a Canon EOS R5 and a 100mm macro lens at f/2.8, utilizing selective focus to blur the background into a soft bokeh, illuminated by gentle, diffused natural window light, creating a dreamy, intimate portrait."
+    },
+    {
+      "id": "d67r9",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/35296906/pexels-photo-35296906.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Matthew Jesús on Pexels",
+      "pro_tip": "**LIGHTING:** Real photos show natural light fall-off and realistic shadow play, creating depth without exaggerated highlights or perfect glows.",
+      "source_url": "https://www.pexels.com/photo/fluffy-persian-cat-relaxing-in-cozy-home-35296906/"
+    },
+    {
+      "id": "d67r10",
+      "type": "image",
+      "content": "images/d67_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**ENVIRONMENT:** AI often generates hyper-perfect or unnaturally uniform outdoor environments. Check for repetitive patterns in grass or overly vibrant, artificial colors.",
+      "_note": "Prompt: A photorealistic photograph of a calm Labrador retriever and a striped domestic short-hair cat, lying side-by-side in lush green grass under a clear blue sky. Captured from a slightly elevated, wide-angle perspective with a DJI Mavic 3 Pro drone camera, using bright, natural daylight with soft shadows, showcasing the pets in their tranquil outdoor setting."
+    }
+  ],
+  "category_subtitle": "National Pet Day: Can your AI spot the goodest boy?"
+}
