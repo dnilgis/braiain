@@ -453,6 +453,13 @@
       "category_emoji": "🐕",
       "category_subtitle": "Who's a good AI? Detecting all the doggie love!",
       "challenge_file": "challenges/2026-04-10.json"
+  },
+    "2026-04-11": {
+      "day_number": 67,
+      "category": "National Pet Day",
+      "category_emoji": "🐾",
+      "category_subtitle": "National Pet Day: Can your AI spot the goodest boy?",
+      "challenge_file": "challenges/2026-04-11.json"
   }
 }
 
