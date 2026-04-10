@@ -446,6 +446,13 @@
       "category_emoji": "👫",
       "category_subtitle": "Your siblings, or AI fakes? The family secret is out!",
       "challenge_file": "challenges/2026-04-09.json"
+  },
+    "2026-04-10": {
+      "day_number": 66,
+      "category": "National Hug Your Dog Day",
+      "category_emoji": "🐕",
+      "category_subtitle": "Who's a good AI? Detecting all the doggie love!",
+      "challenge_file": "challenges/2026-04-10.json"
   }
 }
 
