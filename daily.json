@@ -460,6 +460,13 @@
       "category_emoji": "🐾",
       "category_subtitle": "National Pet Day: Can your AI spot the goodest boy?",
       "challenge_file": "challenges/2026-04-11.json"
+  },
+    "2026-04-12": {
+      "day_number": 68,
+      "category": "National Drop Everything And Read Day (D.E.A.R. Day)",
+      "category_emoji": "📚📖",
+      "category_subtitle": "Drop your books, it's time to read between AI's lines!",
+      "challenge_file": "challenges/2026-04-12.json"
   }
 }
 
