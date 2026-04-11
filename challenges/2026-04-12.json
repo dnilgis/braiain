@@ -1,0 +1,99 @@
+{
+  "day_number": 68,
+  "date": "2026-04-12",
+  "category": "National Drop Everything And Read Day (D.E.A.R. Day)",
+  "category_emoji": "📚📖",
+  "rounds": [
+    {
+      "id": "d68r1",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/7034493/pexels-photo-7034493.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by George Milton on Pexels",
+      "pro_tip": "**BELIEVABLE ANATOMY:** Note natural hand placements, relaxed body posture, and accurate proportions, reflecting genuine human engagement with the act of reading.",
+      "source_url": "https://www.pexels.com/photo/woman-sitting-and-reading-book-7034493/"
+    },
+    {
+      "id": "d68r2",
+      "type": "image",
+      "content": "images/d68_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**BACKGROUND DISTORTION:** Look for overly smooth, repetitive bokeh or abstract, nonsensical shapes within the blurred background elements like foliage or room decor.",
+      "_note": "Prompt: A photorealistic photograph of a contented elderly woman, perhaps in her early seventies, wearing a soft rose-pink button-up shirt, seated outdoors at a rustic wooden picnic table. She is wearing reading glasses and smiling faintly as she reads a well-worn hardcover book. In the background, out-of-focus foliage and dappled sunlight suggest a peaceful garden setting. Shot with a Nikon D850 and a 105mm f/2.8 macro lens at f/3.2, ISO 200, 1/400s. Soft, diffused daylight under a partly cloudy sky, providing even, flattering illumination."
+    },
+    {
+      "id": "d68r3",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/4866043/pexels-photo-4866043.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by cottonbro studio on Pexels",
+      "pro_tip": "**ORGANIC LIGHTING:** Observe nuanced light interaction, such as realistic soft shadows from a window or naturally dappled sunlight through trees, not perfectly even.",
+      "source_url": "https://www.pexels.com/photo/woman-in-yellow-long-sleeve-shirt-lying-on-couch-4866043/"
+    },
+    {
+      "id": "d68r4",
+      "type": "image",
+      "content": "images/d68_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**FINGERS & GRIP:** Examine hands holding books. AI often struggles with natural finger articulation, inconsistent count, or a stiff, unrealistic grip on objects.",
+      "_note": "Prompt: A photorealistic photograph of a woman in her late twenties, dressed in a relaxed sundress, lying gracefully on a striped beach towel spread on lush green grass. She is propped on her forearms, deeply engrossed in a paperback novel, with the sparkling blue water of a serene lake visible in the soft-focus background, reflecting the bright daytime sky. Shot with a Canon EOS R5 and an 85mm f/1.4 lens at f/2.0, ISO 100, 1/500s. Natural, bright daylight from the side, creating gentle shadows and highlights."
+    },
+    {
+      "id": "d68r5",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/8972308/pexels-photo-8972308.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by SHVETS production on Pexels",
+      "pro_tip": "**TEXTURED REALISM:** Appreciate genuine variations in fabric weaves, the organic grain of wood, or the natural feel of paper, adding true tactile depth.",
+      "source_url": "https://www.pexels.com/photo/woman-in-pink-shirt-reading-book-8972308/"
+    },
+    {
+      "id": "d68r6",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1578667343354-26a1de5bfe5a?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxN3x8cmVhZGluZ3xlbnwwfDB8fHwxNzc1OTQwMDE2fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Nguyen Thu Hoai on Unsplash",
+      "pro_tip": "**NATURAL IMPERFECTIONS:** Look for authentic details like subtle wrinkles in clothing, a stray hair, or realistic wear and tear on a book's pages or cover.",
+      "source_url": "https://unsplash.com/photos/woman-reading-book-and-lying-forward-on-sheet-on-grass-beside-body-of-water-during-day-9CILN1ybspA"
+    },
+    {
+      "id": "d68r7",
+      "type": "image",
+      "content": "images/d68_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**REFLECTIONS & GLASSES:** Observe reflections in water, lenses, or shiny surfaces for illogical light sources, distortions, or an uncanny, unnatural smoothness.",
+      "_note": "Prompt: A photorealistic photograph of a tight crop showing the hands and torso of an unrecognizable person in a thick, textured, warm cream-colored cable-knit sweater, sitting cross-legged on a polished hardwood floor. They are deeply focused on an open, interesting-looking book, held delicately in their hands. The background is a brightly lit, minimalist room, subtly blurred, emphasizing the act of reading. Shot with a Fujifilm GFX 100S and a 63mm f/2.8 lens at f/4.0, ISO 160, 1/320s. Bright, direct natural light from an unseen window, creating crisp shadows and strong highlights."
+    },
+    {
+      "id": "d68r8",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1612477954469-c6a60de89802?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxNXx8cmVhZGluZ3xlbnwwfDB8fHwxNzc1OTQwMDE2fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Alexandra Fuller on Unsplash",
+      "pro_tip": "**AUTHENTIC DETAILS:** Examine background elements, even if blurred, for organic variety, unique patterns, and a sense of lived-in authenticity, not repetition.",
+      "source_url": "https://unsplash.com/photos/woman-in-white-and-black-stripe-long-sleeve-shirt-sitting-on-chair-wkgv7I2VTzM"
+    },
+    {
+      "id": "d68r9",
+      "type": "image",
+      "content": "images/d68_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**TEXT & PATTERNS:** Inspect any visible text on books or covers for garbled letters. Check stripes or fabric textures for unnatural uniformity or warping.",
+      "_note": "Prompt: A photorealistic photograph of a young woman in her early twenties, dressed in comfortable loungewear, gracefully stretched out on a contemporary fabric sofa. She is fully immersed in reading a paperback book, with her feet slightly crossed and a soft throw blanket draped nearby. The setting is a cozy, brightly lit living room with natural light streaming in from a large window, creating a peaceful indoor moment. Shot with a Sony Alpha A7 III and a 35mm f/1.8 lens at f/2.2, ISO 400, 1/250s. Soft, natural window light from the side, creating subtle shadows and a warm glow."
+    },
+    {
+      "id": "d68r10",
+      "type": "image",
+      "content": "images/d68_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**PERFECT POSE:** Notice if the subject's posture, expression, or surroundings appear overly idealized, stiff, or lack subtle, natural imperfections found in real life.",
+      "_note": "Prompt: A photorealistic photograph of a woman in her mid-thirties, wearing a stylish white and black striped long-sleeved shirt and dark trousers, sitting comfortably in a modern upholstered armchair. She is holding a hardcover book with both hands, her gaze intently fixed on the pages, a subtle look of contemplation on her face. The background features a softly blurred bookshelf filled with books, illuminated by a warm reading lamp. Shot with a Leica Q2 with its fixed 28mm f/1.7 lens at f/2.0, ISO 320, 1/160s. Soft, directional light from a nearby floor lamp combined with ambient room light, creating a cozy and focused atmosphere."
+    }
+  ],
+  "category_subtitle": "Drop your books, it's time to read between AI's lines!"
+}
