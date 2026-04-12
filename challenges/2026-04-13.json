@@ -1,0 +1,99 @@
+{
+  "day_number": 69,
+  "date": "2026-04-13",
+  "category": "International Plant Appreciation Day",
+  "category_emoji": "🌿💚",
+  "rounds": [
+    {
+      "id": "d69r1",
+      "type": "image",
+      "content": "images/d69_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are your pro tips for the AI detection game, themed \"International Plant Appreciation Day\":",
+      "_note": "Prompt: A photorealistic photograph of two experienced gardeners, one kneeling and the other standing, meticulously tending to vibrant rows of potted orchids and exotic foliage inside a sun-drenched, steamy greenhouse. The late afternoon golden hour light streams through the glass panes, casting long shadows and highlighting dust motes in the humid air. Shot with a Sony Alpha a7R IV, 50mm lens, f/2.8, ISO 200, natural light."
+    },
+    {
+      "id": "d69r2",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/36812326/pexels-photo-36812326.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Vitaly Gariev on Pexels",
+      "pro_tip": "**REAL IMPERFECTIONS:** Real photos often include natural imperfections like slight blurs, organic dust, or less-than-perfect lighting. Observe authentic, un-staged plant environments.",
+      "source_url": "https://www.pexels.com/photo/young-gardeners-tending-plants-in-greenhouse-36812326/"
+    },
+    {
+      "id": "d69r3",
+      "type": "image",
+      "content": "images/d69_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**AI TEXTURES & PATTERNS:** AI can create textures (plant leaves, ceramic pots) that are either too uniform, too smooth, or have repetitive, unnatural patterns when zoomed in.",
+      "_note": "Prompt: A photorealistic photograph, an exquisite macro close-up shot of a pair of slender hands gently and reverently cradling a single, perfectly bloomed yellow plumeria flower with a delicate pink center. The soft, diffused sunlight highlights the subtle veins in the petals and the fine lines on the skin, creating a tender and intimate moment of connection with nature. Shot with a Canon EOS R5, 100mm macro lens, f/2.8, ISO 100, soft outdoor overcast light, extreme shallow depth of field."
+    },
+    {
+      "id": "d69r4",
+      "type": "image",
+      "content": "images/d69_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**AI FACIAL EXPRESSIONS:** Watch for smiles or expressions that seem too symmetrical, \"too perfect,\" or slightly unnatural. Human emotions are complex; AI can miss subtle nuances.",
+      "_note": "Prompt: A photorealistic photograph of a young woman with a thoughtful expression, her hand hovering over a small, spiky echeveria, as she shops for an assortment of unique succulents displayed on rustic wooden shelves in a trendy, well-lit indoor plant boutique. Soft, warm overhead track lighting creates inviting highlights on the ceramic pots and the intricate textures of the plants. Shot with a Fujifilm GFX 100S, 80mm lens, f/1.8, ISO 400, interior ambient light, a close-up, slightly angled shot."
+    },
+    {
+      "id": "d69r5",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/1784757/pexels-photo-1784757.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Jem  Sanchez on Pexels",
+      "pro_tip": "**ORGANIC VARIATIONS:** Real plants and settings will show natural, non-uniform variations in color, size, and texture. No two leaves or pots are perfectly identical.",
+      "source_url": "https://www.pexels.com/photo/photo-of-person-holding-yellow-flower-1784757/"
+    },
+    {
+      "id": "d69r6",
+      "type": "image",
+      "content": "images/d69_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**AI COMPOSITION:** AI often generates overly \"perfect,\" staged scenes with exaggerated lighting effects (like golden hour dust motes). Look for unnaturally pristine plants or theatrical light.",
+      "_note": "Prompt: A photorealistic photograph of two millennial urban gardeners, a woman and a man, laughing softly as they mist a hanging fern and prune a small citrus tree within a spectacularly vibrant and lush botanical greenhouse. The scene is bathed in bright, diffused daylight filtering through the arched glass roof, illuminating every verdant leaf and colorful bloom. Shot with a Canon EOS 5D Mark IV, 35mm lens, f/4.0, ISO 160, natural window light, wide-angle perspective."
+    },
+    {
+      "id": "d69r7",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/36812300/pexels-photo-36812300.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Vitaly Gariev on Pexels",
+      "pro_tip": "**AI HYPERREALISM:** AI images sometimes feature an unnatural level of detail, making every leaf, dewdrop, or background element look impossibly sharp and vibrant.",
+      "source_url": "https://www.pexels.com/photo/gardeners-tending-to-plants-in-greenhouse-36812300/"
+    },
+    {
+      "id": "d69r8",
+      "type": "image",
+      "content": "images/d69_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**AI HANDS & FINGERS:** Examine hands and fingers closely for deformities, odd joint angles, or an incorrect number of digits. They are a common giveaway in AI plant care scenes.",
+      "_note": "Prompt: A photorealistic photograph, a heartwarming waist-up portrait of a cheerful man in his late 30s, beaming directly at the camera with a genuine, bright smile as he gently mists the glossy leaves of a thriving Monstera deliciosa in his bright, minimalist living room. The soft, even light from a large nearby window illuminates his face and the vibrant green plant, creating a warm and inviting atmosphere with a pleasing bokeh background. Shot with a Nikon D850, 85mm lens, f/1.4, ISO 100, soft window light, shallow depth of field."
+    },
+    {
+      "id": "d69r9",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/7156443/pexels-photo-7156443.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Gustavo Fring on Pexels",
+      "pro_tip": "**REALISTIC LIGHTING:** Real photos typically display natural, unforced light sources and shadows, avoiding the overly dramatic or impossibly uniform lighting sometimes seen in AI.",
+      "source_url": "https://www.pexels.com/photo/a-man-looking-at-the-potted-plant-he-is-holding-7156443/"
+    },
+    {
+      "id": "d69r10",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/13984652/pexels-photo-13984652.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Rizky Sabriansyah on Pexels",
+      "pro_tip": "**REAL CANDID MOMENTS:** Look for spontaneous, un-posed interactions or genuine expressions that capture a true moment, rather than a perfectly modeled scenario.",
+      "source_url": "https://www.pexels.com/photo/woman-posing-with-succulent-in-store-13984652/"
+    }
+  ],
+  "category_subtitle": "Time to branch out: AI vs. your plant eye!"
+}
