@@ -474,6 +474,13 @@
       "category_emoji": "🌿💚",
       "category_subtitle": "Time to branch out: AI vs. your plant eye!",
       "challenge_file": "challenges/2026-04-13.json"
+  },
+    "2026-04-14": {
+      "day_number": 70,
+      "category": "Reach as High as You Can Day",
+      "category_emoji": "⬆️",
+      "category_subtitle": "Up, up, and AI-way! Spot the fakes today!",
+      "challenge_file": "challenges/2026-04-14.json"
   }
 }
 
