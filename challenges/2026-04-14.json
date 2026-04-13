@@ -1,0 +1,99 @@
+{
+  "day_number": 70,
+  "date": "2026-04-14",
+  "category": "Reach as High as You Can Day",
+  "category_emoji": "⬆️",
+  "rounds": [
+    {
+      "id": "d70r1",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/10565437/pexels-photo-10565437.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Louis Joossens on Pexels",
+      "pro_tip": "**NATURAL MOTION BLUR:** Dynamic shots often feature realistic blur from movement, indicating natural capture without over-processing.",
+      "source_url": "https://www.pexels.com/photo/man-playing-basketball-10565437/"
+    },
+    {
+      "id": "d70r2",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/6180395/pexels-photo-6180395.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Kampus Production on Pexels",
+      "pro_tip": "**ENVIRONMENTAL REALISM:** Examine interaction with surroundings; sand particles, water splashes, or realistic wear on objects reveal true physics.",
+      "source_url": "https://www.pexels.com/photo/a-woman-playing-volleyball-6180395/"
+    },
+    {
+      "id": "d70r3",
+      "type": "image",
+      "content": "images/d70_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**UNREALISTIC PHYSICS:** Observe objects or people in motion. They might defy gravity slightly, or motion blur could be inconsistently applied.",
+      "_note": "Prompt: A photorealistic photograph of a powerful female beach volleyball player mid-air, her arm extended high above her head, spiking a volleyball with intense focus. The dynamic full-body shot is set against a vibrant beach background with shimmering ocean waves and a clear blue sky. Captured during golden hour with a Fujifilm GFX 100S and a 110mm f/2 lens, featuring warm, soft lighting and a shallow depth of field, at f/2.8, 1/1500s, ISO 200."
+    },
+    {
+      "id": "d70r4",
+      "type": "image",
+      "content": "images/d70_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**SYNTHETIC SMOOTHNESS:** Look for unnatural skin uniformity or plastic-like textures. Details often lack natural imperfections like pores or fine hair.",
+      "_note": "Prompt: A photorealistic photograph of a muscular hand, fingers outstretched, reaching directly up to grasp the bottom of an orange basketball rim. The extreme low-angle perspective looks up from beneath the hoop, showcasing the net with a bright, slightly overexposed clear blue sky and sun-drenched outdoor court details blurred in the background. Taken with a Sony Alpha a7 III and a 24-70mm f/2.8 lens under bright midday sunlight, creating sharp contrasts and deep shadows, at f/3.5, 1/1600s, ISO 200."
+    },
+    {
+      "id": "d70r5",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1551845800-98a3f7034048?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxN3x8UmVhY2glMjBhcyUyMEhpZ2glMjBhcyUyMFlvdSUyMENhbnxlbnwwfDB8fHwxNzc2MTA4NTM2fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Priscilla Du Preez 🇨🇦 on Unsplash",
+      "pro_tip": "**ORGANIC COMPOSITION:** Real photos often feature slightly less \"perfect\" framing or unexpected elements, showing a moment captured organically.",
+      "source_url": "https://unsplash.com/photos/woman-raising-her-hands-xbG7QRCJ7Ts"
+    },
+    {
+      "id": "d70r6",
+      "type": "image",
+      "content": "images/d70_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**IMPERFECT ANATOMY:** Check hands, fingers, or limbs for subtle distortions, extra digits, or awkward joint bends, especially in dynamic poses.",
+      "_note": "Prompt: A photorealistic photograph of an athletic man in peak jump, soaring towards an outdoor basketball hoop with a focused expression, his arm fully extended, a basketball clutched in his hand. The dynamic wide shot captures his entire body suspended against an intensely clear, brilliant blue sky, with the sunny court surface sharply in focus below. Captured with a Nikon D850 and a 70-200mm f/2.8 lens, using bright, crisp natural daylight, at f/4.0, 1/2000s, ISO 400."
+    },
+    {
+      "id": "d70r7",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/9675888/pexels-photo-9675888.png?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Azraq Al Rezoan on Pexels",
+      "pro_tip": "**LIGHTING INCONSISTENCIES:** Shadows and highlights might not align perfectly with a single light source, or reflections could seem artificial.",
+      "source_url": "https://www.pexels.com/photo/boy-standing-on-metal-railings-9675888/"
+    },
+    {
+      "id": "d70r8",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/29594048/pexels-photo-29594048.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Tuğba Özsoy on Pexels",
+      "pro_tip": "**AUTHENTIC IMPERFECTIONS:** Seek out natural human details like pores, wrinkles, sweat, or flyaway hair, adding to a genuine look.",
+      "source_url": "https://www.pexels.com/photo/hand-reaching-for-basketball-hoop-shot-outdoors-29594048/"
+    },
+    {
+      "id": "d70r9",
+      "type": "image",
+      "content": "images/d70_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are your pro tips for the AI detection game, themed \"Reach as High as You Can Day\":",
+      "_note": "Prompt: A photorealistic photograph of a determined young boy, approximately 9 years old, standing on a weathered metal playground climbing frame, his arm fully extended upwards towards a bright, partly cloudy sky. The composition is a low-angle shot, emphasizing his reach against the expansive blue, with soft focus on distant green trees. Captured with a Canon EOS R5 and a 50mm f/1.8 lens, utilizing natural bright daylight with a hint of soft lens flare, at f/2.2, 1/1000s, ISO 100."
+    },
+    {
+      "id": "d70r10",
+      "type": "image",
+      "content": "images/d70_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**TEXTURE ODDITIES:** Scrutinize background elements like water, sand, or weathered surfaces. Textures can appear repetitive, overly perfect, or slightly \"off.\"",
+      "_note": "Prompt: A photorealistic photograph of a woman standing on a windswept hill, her head tilted slightly back, arms gracefully extended straight upwards, hands open towards the vast, dawning sky. The wide shot emphasizes her silhouette against the soft, ethereal light of sunrise, with blurred distant mountains and clouds providing a serene backdrop. Captured with a Leica Q2 and a 28mm f/1.7 lens, utilizing the warm, glowing light of dawn, at f/2.0, 1/500s, ISO 100."
+    }
+  ],
+  "category_subtitle": "Up, up, and AI-way! Spot the fakes today!"
+}
