@@ -1,0 +1,99 @@
+{
+  "day_number": 71,
+  "date": "2026-04-15",
+  "category": "National Laundry Day",
+  "category_emoji": "🧺",
+  "rounds": [
+    {
+      "id": "d71r1",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/5591640/pexels-photo-5591640.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by RDNE Stock project on Pexels",
+      "pro_tip": "**AUTHENTIC EMOTIONS:** Subjects often show genuine, sometimes subtle, expressions or body language, reflecting a real moment, not a prompted pose.",
+      "source_url": "https://www.pexels.com/photo/a-woman-wearing-a-white-shirt-doing-a-laundry-using-a-washing-machine-5591640/"
+    },
+    {
+      "id": "d71r2",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/2927523/pexels-photo-2927523.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Darya Sannikova on Pexels",
+      "pro_tip": "**ORDERED CHAOS:** Even \"messy\" scenes might have an underlying, aesthetically pleasing arrangement that feels intentionally composed, not truly random.",
+      "source_url": "https://www.pexels.com/photo/photo-of-woman-standing-inside-the-laundromat-2927523/"
+    },
+    {
+      "id": "d71r3",
+      "type": "image",
+      "content": "images/d71_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are your pro tips for the AI detection game:",
+      "_note": "Prompt: A photorealistic photograph of a woman with short, dark hair, neatly folding freshly laundered white towels in a brightly lit, modern laundromat. The composition is a medium shot, focused on her hands and the neatly stacked linen, with the background showing rows of sleek, stainless-steel washing and drying machines, slightly blurred. Captured with a Canon EOS R5 and a 50mm f/1.4 lens, utilizing crisp, even overhead LED lighting mixed with soft natural light from large windows."
+    },
+    {
+      "id": "d71r4",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/7282367/pexels-photo-7282367.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Sarah  Chai on Pexels",
+      "pro_tip": "**ORGANIC COMPOSITION:** Expect less \"perfectly\" framed shots; lighting may be harsh, or focus slightly off, reflecting a natural capture.",
+      "source_url": "https://www.pexels.com/photo/positive-woman-loading-washing-machine-7282367/"
+    },
+    {
+      "id": "d71r5",
+      "type": "image",
+      "content": "images/d71_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**HYPER-REAL TEXTURES:** Fabrics or surfaces may have exaggerated, almost plastic-like textures or too-perfect patterns, lacking natural wear.",
+      "_note": "Prompt: A photorealistic photograph of a woman's hands meticulously loading colorful mixed laundry into the open drum of a modern, top-loading washing machine in a cozy, well-maintained indoor utility room. The composition is a close-up, focusing intensely on the textures of the fabrics and the action of her hands, with a shallow depth of field blurring the background. Captured with a Sony a7 III and an 85mm f/1.8 lens, under soft, warm ambient light filtering from a nearby window and a subtle overhead fixture."
+    },
+    {
+      "id": "d71r6",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/3794129/pexels-photo-3794129.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Andrea Piacquadio on Pexels",
+      "pro_tip": "**BACKGROUND REALISM:** Background elements often show subtle, unglamorous details, real-world clutter, or unique, non-repeating patterns.",
+      "source_url": "https://www.pexels.com/photo/woman-in-red-long-sleeve-shirt-holding-her-clothes-3794129/"
+    },
+    {
+      "id": "d71r7",
+      "type": "image",
+      "content": "images/d71_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**PERFECTION BIAS:** Look for unnaturally crisp details, ideal lighting, and flawless surfaces. AI often generates sterile environments lacking realistic grit.",
+      "_note": "Prompt: A photorealistic photograph of a vibrant, wide-angle street scene in a bustling European city. The composition captures several old, charming apartment buildings, their colorful facades adorned with multiple lines of clothes hanging out to dry from open windows and balconies. Bright midday sunlight illuminates the scene, casting dynamic shadows, and a clear blue sky serves as the backdrop. Shot with a Nikon Z7 and a 24mm f/2.8 wide-angle lens, emphasizing the depth and lively atmosphere."
+    },
+    {
+      "id": "d71r8",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1714427670809-705e5f667b89?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxMnx8bGF1bmRyeSUyMGRheXxlbnwwfDB8fHwxNzc2MjAxNjg0fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Franck Michel on Unsplash",
+      "pro_tip": "**NATURAL IMPERFECTIONS:** Spot dust, smudges, or realistic wear-and-tear on surfaces and appliances. These authentic flaws add realism to the scene.",
+      "source_url": "https://unsplash.com/photos/a-couple-of-buildings-that-have-clothes-hanging-out-to-dry-oa2NXsYGXt0"
+    },
+    {
+      "id": "d71r9",
+      "type": "image",
+      "content": "images/d71_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**GENERIC EXPRESSIONS:** Human subjects often display overly perfect, bland smiles or exaggerated emotions that feel staged, not spontaneous.",
+      "_note": "Prompt: A photorealistic photograph of a smiling young woman in casual loungewear, comfortably seated on the floor of a pristine, minimalist bathroom, loading a pile of dirty clothes into a sleek, built-in white front-loading washing machine. The composition is an eye-level medium shot, showing her joyful expression and the interaction with the appliance. Taken with a Fujifilm X-T4 and a 35mm f/2 lens, under bright, diffused natural light from a large frosted window, highlighting the clean, modern aesthetic."
+    },
+    {
+      "id": "d71r10",
+      "type": "image",
+      "content": "images/d71_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**UNNATURAL LIGHTING:** Observe lighting that's too \"perfectly\" diffused or casts unconvincing shadows, often lacking realistic interplay of light sources.",
+      "_note": "Prompt: A photorealistic photograph of a pensive woman in a vibrant red knitted sweater, sitting on the floor in a messy bedroom, surrounded by a chaotic pile of clothes spread around her. Her gaze is directed at a particular garment, conveying a sense of decision or contemplation. The composition is an environmental portrait at a slightly high angle, emphasizing the clutter. Captured with a Leica SL2 and a 50mm f/1.4 lens, using soft, moody natural light filtering through sheer curtains, creating a slightly melancholic atmosphere."
+    }
+  ],
+  "category_subtitle": "Time to air out AI's dirty laundry predictions!"
+}
