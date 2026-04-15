@@ -488,6 +488,13 @@
       "category_emoji": "🧺",
       "category_subtitle": "Time to air out AI's dirty laundry predictions!",
       "challenge_file": "challenges/2026-04-15.json"
+  },
+    "2026-04-16": {
+      "day_number": 72,
+      "category": "National High Five Day",
+      "category_emoji": "👋",
+      "category_subtitle": "High Five Day: Our AI is all thumbs… or five fingers?",
+      "challenge_file": "challenges/2026-04-16.json"
   }
 }
 
