@@ -1,4 +1,9 @@
 User-agent: *
-Allow: /
+Allow: /standard.html
+Allow: /models/
+Allow: /guide.html
+Allow: /educators.html
+Allow: /faq.html
+Disallow: /curator.html
 
 Sitemap: https://braiain.com/sitemap.xml

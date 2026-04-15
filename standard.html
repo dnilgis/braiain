@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BRAIAIN Standard — The Only AI Benchmark With No Commercial Incentive to Lie</title>
+<meta name="description" content="Every AI model. The same battery. Scored 400–1600. Full test results published. Independent. No lab funding.">
+<meta name="keywords" content="AI benchmark, AI model comparison, LLM benchmark, Claude vs GPT-4o, best AI API 2026, independent AI testing">
+<link rel="canonical" href="https://braiain.com/standard.html">
+<meta property="og:title" content="BRAIAIN Standard — AI Intelligence Ranking">
+<meta property="og:description" content="The only AI benchmark with no commercial incentive to lie. Every model, same battery, full results published.">
+<meta property="og:image" content="https://braiain.com/og-standard.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"BRAIAIN Standard AI Intelligence Benchmark","description":"Independent AI model benchmark. Every model scored 400-1600. Full test results public. No lab funding.","url":"https://braiain.com/standard.html","creator":{"@type":"Organization","name":"BRAIAIN","url":"https://braiain.com"}}</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3B3ZCE62NW"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-3B3ZCE62NW");</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --red:#e8342a;--rd:#fdf5f4;
+  --tx:#111111;--mt:#888880;--dm:#c8c4c0;
+  --bg:#ffffff;--sf:#fafaf8;--bd:#e8e4e0;--bd2:#d4d0cc;
+  --art:#100c08;--max:1080px;
+  --g:"Space Grotesk",sans-serif;--m:"JetBrains Mono",monospace;
+}
+html{background:var(--bg);color:var(--tx);font-family:var(--g);font-size:16px;-webkit-font-smoothing:antialiased}
+body{min-height:100vh}
+a{color:inherit;text-decoration:none}
+button{font-family:var(--g);cursor:pointer;border:none;background:none;color:inherit}
+canvas{display:block}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+.skip{position:absolute;top:-100px;left:0;background:var(--red);color:#fff;padding:8px 16px;font-size:12px;z-index:999;transition:top .2s}
+.skip:focus{top:0}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.97);backdrop-filter:blur(10px);border-bottom:1px solid var(--bd);height:54px;display:flex;align-items:center;padding:0 32px}
+.nav-brand{display:flex;align-items:center;flex-shrink:0;margin-right:36px;cursor:pointer;gap:0}
+.nav-logo{font-size:16px;font-weight:600;letter-spacing:.02em;color:var(--tx)}
+.nav-dot{width:5px;height:5px;border-radius:50%;background:var(--red);margin:0 7px;flex-shrink:0}
+.nav-sub{font-size:11px;font-weight:400;color:var(--mt);font-family:var(--m);letter-spacing:.08em;text-transform:uppercase}
+.nav-links{display:flex;flex:1}
+.nav-link{font-size:12px;padding:0 14px;height:54px;display:flex;align-items:center;color:var(--mt);cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;letter-spacing:.03em;transition:color .15s,border-color .15s;background:transparent;border-top:none;border-left:none;border-right:none}
+.nav-link:hover,.nav-link:focus-visible{color:var(--tx);outline:none}
+.nav-link.on{color:var(--red);border-bottom-color:var(--red)}
+.nav-right{margin-left:auto;display:flex;align-items:center;gap:10px}
+.nav-cta{font-size:12px;font-weight:500;padding:8px 20px;background:var(--red);color:#fff;border-radius:2px;letter-spacing:.03em;transition:background .15s;flex-shrink:0;cursor:pointer;border:none;font-family:var(--g)}
+.nav-cta:hover{background:#c82b1e}
+.hamburger{display:none;flex-direction:column;gap:5px;padding:8px;cursor:pointer;border:none;background:none}
+.hamburger span{display:block;width:20px;height:1.5px;background:var(--tx);transition:all .2s;border-radius:1px}
+.hamburger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+.mobile-nav{display:none;position:fixed;top:54px;left:0;right:0;background:var(--bg);border-bottom:1px solid var(--bd);z-index:99;padding:8px 0;box-shadow:0 8px 24px rgba(0,0,0,.06)}
+.mobile-nav.open{display:block}
+.mob-link{display:block;width:100%;text-align:left;padding:14px 32px;font-size:14px;color:var(--mt);background:none;border:none;cursor:pointer;font-family:var(--g)}
+.mob-link:hover{color:var(--tx)}
+.mob-cta{display:block;margin:8px 32px 12px;padding:12px;background:var(--red);color:#fff;font-size:13px;font-weight:500;border-radius:2px;text-align:center;border:none;cursor:pointer;font-family:var(--g);width:calc(100% - 64px)}
+@media(max-width:680px){.nav-links,.nav-cta{display:none}.hamburger{display:flex}}
+@media(min-width:681px){.mobile-nav{display:none!important}}
+
+/* VIEWS */
+.view{display:none}.view.on{display:block}
+
+/* HERO */
+.hero-split{display:grid;grid-template-columns:1fr 1fr;min-height:460px;border-bottom:1px solid var(--bd)}
+.hero-left{padding:64px 52px;display:flex;flex-direction:column;justify-content:center}
+.hero-right{background:var(--art);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;min-height:380px}
+.hero-right canvas{position:relative;z-index:1}
+.hero-art-label{position:absolute;bottom:16px;right:18px;font-size:10px;font-family:var(--m);color:rgba(238,230,212,.26);letter-spacing:.08em;z-index:2}
+.hero-fallback{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:11px;font-family:var(--m);color:rgba(238,230,212,.25);letter-spacing:.08em;text-align:center;padding:20px}
+.kicker{font-size:11px;font-family:var(--m);color:var(--red);letter-spacing:.16em;text-transform:uppercase;margin-bottom:8px}
+.kicker-sub{font-size:13px;color:var(--mt);margin-bottom:20px;line-height:1.5}
+.hero-h1{font-size:clamp(28px,3.8vw,50px);font-weight:300;line-height:1.08;letter-spacing:-.04em;color:var(--tx);margin-bottom:18px;max-width:480px}
+.hero-h1 strong{font-weight:600}
+.hero-sub{font-size:14px;color:var(--mt);line-height:1.8;max-width:400px;margin-bottom:30px}
+.hero-actions{display:flex;gap:10px;flex-wrap:wrap}
+.btn-primary{font-size:13px;font-weight:500;padding:12px 28px;background:var(--red);color:#fff;border-radius:2px;letter-spacing:.02em;transition:background .15s;border:none;cursor:pointer;font-family:var(--g)}
+.btn-primary:hover{background:#c82b1e}
+.btn-ghost{font-size:13px;padding:12px 22px;border:1px solid var(--bd2);color:var(--mt);border-radius:2px;background:transparent;transition:all .15s;cursor:pointer;font-family:var(--g)}
+.btn-ghost:hover{color:var(--tx);border-color:var(--tx)}
+
+/* SPECTRUM */
+.spectrum-section{background:var(--art);overflow:hidden;position:relative;border-bottom:1px solid rgba(238,230,212,.06)}
+.spectrum-inner{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:1fr 340px;align-items:center;min-height:220px}
+.spectrum-text{padding:36px 48px}
+.spectrum-h{font-size:clamp(18px,2.5vw,26px);font-weight:300;line-height:1.2;letter-spacing:-.03em;color:rgba(238,230,212,.92);margin-bottom:10px}
+.spectrum-h strong{font-weight:500}
+.spectrum-p{font-size:13px;color:rgba(238,230,212,.45);line-height:1.75;max-width:320px;margin-bottom:16px}
+.spectrum-score{font-size:52px;font-family:var(--m);font-weight:300;color:rgba(238,230,212,.18);letter-spacing:-.04em;line-height:1}
+.spectrum-canvas-wrap{padding:20px 20px 20px 0;display:flex;align-items:center;justify-content:center}
+
+/* LEADERBOARD */
+.lb-wrap{max-width:var(--max);margin:0 auto;padding:0 32px 40px}
+.lb-meta{display:flex;align-items:baseline;justify-content:space-between;padding:24px 0 14px;border-bottom:2px solid var(--tx);flex-wrap:wrap;gap:8px}
+.lb-meta-l{font-size:22px;font-weight:300;color:var(--tx);letter-spacing:-.03em}
+.lb-meta-r{font-size:11px;font-family:var(--m);color:var(--dm);letter-spacing:.06em}
+.lb-head{display:grid;grid-template-columns:36px 52px 1fr 88px 160px 120px;padding:10px 16px;border-bottom:1px solid var(--bd)}
+.th{font-size:10px;font-family:var(--m);letter-spacing:.12em;text-transform:uppercase;color:var(--dm)}
+.mrow{display:grid;grid-template-columns:36px 52px 1fr 88px 160px 120px;padding:15px 16px;border-bottom:1px solid var(--bd);cursor:pointer;align-items:center;transition:background .1s;position:relative}
+.mrow:focus-visible{outline:2px solid var(--red);outline-offset:-2px}
+.mrow::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--red);opacity:0;transition:opacity .15s}
+.mrow:hover,.mrow:focus{background:var(--sf)}
+.mrow:hover::before,.mrow:focus::before,.mrow.top::before{opacity:1}
+.rn{font-size:12px;font-family:var(--m);color:var(--dm)}
+.mrow.top .rn{color:var(--red);font-weight:500}
+.dna-wrap{background:var(--art);border-radius:3px;padding:4px;line-height:0;display:inline-block}
+.m-name{font-size:13px;font-weight:500;color:var(--tx);margin-bottom:2px}
+.m-prov{font-size:11px;color:var(--mt);font-family:var(--m);letter-spacing:.04em}
+.m-score{font-size:21px;font-family:var(--m);font-weight:300;letter-spacing:-.03em;color:var(--tx)}
+.mrow.top .m-score{color:var(--red)}
+.bars{display:flex;flex-direction:column;gap:6px}
+.brow{display:flex;align-items:center;gap:6px}
+.blbl{font-size:9px;font-family:var(--m);color:var(--dm);width:10px;text-transform:uppercase}
+.btrack{flex:1;height:5px;background:var(--bd);border-radius:0;overflow:hidden}
+.bfill{height:100%}
+.bval{font-size:9px;font-family:var(--m);color:var(--mt);width:26px;text-align:right}
+.row-actions{display:flex;gap:5px;justify-content:flex-end}
+.row-btn{font-size:10px;padding:5px 9px;border:1px solid var(--bd2);color:var(--mt);border-radius:2px;letter-spacing:.03em;background:transparent;transition:all .12s;font-family:var(--m);cursor:pointer;white-space:nowrap}
+.row-btn:hover{color:var(--red);border-color:var(--red)}
+.row-btn.cmp-active{color:var(--red);border-color:var(--red);background:var(--rd)}
+
+/* EMAIL BAR */
+.email-bar{border-top:1px solid var(--bd);border-bottom:1px solid var(--bd);background:var(--sf);padding:28px 32px}
+.email-bar-inner{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:1fr auto;gap:32px;align-items:center}
+.email-bar-h{font-size:15px;font-weight:500;color:var(--tx);margin-bottom:4px}
+.email-bar-s{font-size:13px;color:var(--mt);line-height:1.6}
+.email-form{display:flex;gap:8px;flex-wrap:wrap}
+.email-form input{font-size:13px;padding:10px 16px;border:1px solid var(--bd2);border-radius:2px;background:var(--bg);color:var(--tx);font-family:var(--g);width:240px;outline:none;transition:border-color .15s}
+.email-form input:focus{border-color:var(--tx)}
+.email-form input::placeholder{color:var(--dm)}
+.email-form button{font-size:12px;font-weight:500;padding:10px 20px;background:var(--tx);color:#fff;border:none;border-radius:2px;cursor:pointer;font-family:var(--g);transition:background .15s}
+.email-form button:hover{background:var(--red)}
+.email-confirm{font-size:13px;color:var(--mt);padding:10px 0;display:none}
+
+/* COMPARE BAR */
+.compare-bar{position:fixed;bottom:0;left:0;right:0;background:var(--tx);color:#fff;padding:14px 32px;display:none;align-items:center;justify-content:space-between;z-index:200;border-top:3px solid var(--red)}
+.compare-bar.show{display:flex}
+.cmp-bar-l{font-size:13px;font-family:var(--m)}
+.cmp-bar-l span{color:rgba(255,255,255,.45);font-size:11px;margin-left:8px}
+.cmp-bar-r{display:flex;gap:10px}
+.cmp-btn{font-size:12px;padding:8px 20px;border-radius:2px;cursor:pointer;font-family:var(--g);font-weight:500}
+.cmp-btn.primary{background:var(--red);color:#fff;border:none}
+.cmp-btn.primary:hover{background:#c82b1e}
+.cmp-btn.ghost{background:transparent;color:rgba(255,255,255,.6);border:1px solid rgba(255,255,255,.2)}
+.cmp-btn.ghost:hover{color:#fff}
+
+/* CEILING */
+.ceiling{max-width:var(--max);margin:0 auto;padding:0 32px 60px}
+.ceiling-inner{border:1px solid var(--bd);display:grid;grid-template-columns:240px 1fr;margin-top:40px;overflow:hidden}
+.ceiling-art{background:var(--art);display:flex;align-items:center;justify-content:center;padding:20px;line-height:0;position:relative}
+.ceiling-art-label{position:absolute;bottom:10px;right:12px;font-size:9px;font-family:var(--m);color:rgba(238,230,212,.18);letter-spacing:.08em}
+.ceiling-text{padding:32px 40px}
+.ceiling-score{font-size:60px;font-family:var(--m);font-weight:300;color:var(--bd);letter-spacing:-.04em;line-height:1;margin-bottom:10px}
+.ceiling-h{font-size:16px;font-weight:500;color:var(--tx);margin-bottom:10px}
+.ceiling-p{font-size:14px;color:var(--mt);line-height:1.8;margin-bottom:16px}
+.ceiling-link{font-size:11px;font-family:var(--m);color:var(--red);letter-spacing:.04em;cursor:pointer;background:none;border:none;padding:0;text-align:left}
+.ceiling-link:hover{text-decoration:underline}
+
+/* COMPARE VIEW */
+.cmp-wrap{max-width:var(--max);margin:0 auto;padding:32px 32px 80px}
+.back-btn{display:inline-flex;align-items:center;gap:8px;font-size:12px;color:var(--mt);margin-bottom:32px;cursor:pointer;background:none;border:none;padding:0;letter-spacing:.03em;transition:color .12s}
+.back-btn:hover{color:var(--red)}
+.cmp-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--bd)}
+.cmp-col{background:var(--bg);padding:28px}
+.cmp-art{background:var(--art);margin-bottom:18px;line-height:0;display:flex;align-items:center;justify-content:center;padding:16px}
+.cmp-score{font-size:48px;font-family:var(--m);font-weight:300;letter-spacing:-.04em;margin-bottom:4px}
+.cmp-name{font-size:16px;font-weight:500;color:var(--tx);margin-bottom:2px}
+.cmp-prov{font-size:11px;font-family:var(--m);color:var(--mt);letter-spacing:.06em;margin-bottom:18px;text-transform:uppercase}
+.cmp-dims{display:flex;flex-direction:column;gap:8px;margin-bottom:16px}
+.cmp-dim-row{display:flex;align-items:center;gap:8px}
+.cmp-dim-l{font-size:11px;font-family:var(--m);color:var(--mt);width:80px;flex-shrink:0}
+.cmp-dim-t{flex:1;height:4px;background:var(--bd)}
+.cmp-dim-f{height:100%}
+.cmp-dim-v{font-size:10px;font-family:var(--m);color:var(--dm);width:24px;text-align:right}
+
+/* DETAIL VIEW */
+.det-wrap{max-width:var(--max);margin:0 auto;padding:36px 32px 80px}
+.det-grid{display:grid;grid-template-columns:300px 1fr;gap:56px;align-items:start}
+.det-art-frame{background:var(--art);padding:18px;line-height:0;margin-bottom:1px}
+.art-params{font-size:10px;font-family:var(--m);color:rgba(238,230,212,.22);letter-spacing:.06em;line-height:2;background:var(--art);padding:6px 18px 12px;margin-bottom:16px}
+.print-module{border:1px solid var(--bd)}
+.pm-head{padding:16px 18px 0}
+.pm-title{font-size:14px;font-weight:500;color:var(--tx);margin-bottom:4px}
+.pm-sub{font-size:12px;color:var(--mt);line-height:1.65;margin-bottom:6px}
+.pm-looks{font-size:11px;color:var(--mt);font-style:italic;margin-bottom:12px}
+.pm-urgency{font-size:11px;color:var(--red);font-family:var(--m);letter-spacing:.03em;margin-bottom:14px}
+.tiers{border-top:1px solid var(--bd)}
+.tier{display:flex;align-items:center;justify-content:space-between;padding:11px 18px;border-bottom:1px solid var(--bd);cursor:pointer;transition:background .1s}
+.tier:hover,.tier.sel{background:var(--sf)}
+.tier.sel{background:var(--rd)}
+.tier-name{font-size:12px;font-weight:500;color:var(--tx)}
+.tier-spec{font-size:10px;font-family:var(--m);color:var(--mt);margin-top:1px}
+.tier-edition{font-size:9px;font-family:var(--m);color:var(--dm);margin-top:2px}
+.tier-price{font-size:14px;font-weight:500;font-family:var(--m);color:var(--red)}
+.pm-action{padding:14px 18px 10px}
+.order-btn{width:100%;font-size:13px;font-weight:500;padding:12px;background:var(--red);color:#fff;border-radius:2px;border:none;cursor:pointer;font-family:var(--g);letter-spacing:.02em;transition:background .15s}
+.order-btn:hover{background:#c82b1e}
+.pm-footer{padding:0 18px 12px;font-size:10px;font-family:var(--m);color:var(--dm);line-height:2;letter-spacing:.03em}
+.pm-refund{padding:0 18px 14px;font-size:10px;color:var(--mt);line-height:1.6;border-top:1px solid var(--bd);padding-top:10px}
+.det-prov{font-size:11px;font-family:var(--m);color:var(--mt);letter-spacing:.1em;text-transform:uppercase;margin-bottom:10px}
+.det-score-num{font-family:var(--m);font-weight:300;line-height:1;letter-spacing:-.04em;color:var(--tx);margin-bottom:4px;font-size:84px}
+.det-score-lbl{font-size:10px;font-family:var(--m);letter-spacing:.14em;text-transform:uppercase;color:var(--mt);margin-bottom:12px}
+.det-desc{font-size:14px;color:var(--mt);line-height:1.8;margin-bottom:20px}
+.secs{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--bd);margin-bottom:20px}
+.sec{background:var(--bg);padding:16px}
+.sec-lbl{font-size:9px;font-family:var(--m);letter-spacing:.14em;text-transform:uppercase;color:var(--mt);margin-bottom:6px}
+.sec-num{font-size:34px;font-family:var(--m);font-weight:300;line-height:1;margin-bottom:8px}
+.sec-track{height:4px;background:var(--bd)}
+.sec-fill{height:100%}
+.dims-lbl{font-size:9px;font-family:var(--m);letter-spacing:.14em;text-transform:uppercase;color:var(--dm);margin-bottom:10px}
+.dims-list{display:flex;flex-direction:column;gap:7px;margin-bottom:8px}
+.dim-row{display:flex;align-items:center;gap:10px;position:relative}
+.dim-n{font-size:11px;color:var(--mt);width:86px;font-family:var(--m);letter-spacing:.04em}
+.dim-t{flex:1;height:3px;background:var(--bd)}
+.dim-f{height:100%}
+.dim-v{font-size:10px;font-family:var(--m);color:var(--dm);width:24px;text-align:right}
+.dim-weak{font-size:9px;font-family:var(--m);color:var(--red);margin-top:2px;letter-spacing:.04em}
+.dims-note{font-size:11px;color:var(--mt);margin-bottom:16px;line-height:1.6;border-left:2px solid var(--bd);padding-left:10px}
+.det-results-link{font-size:11px;font-family:var(--m);color:var(--red);letter-spacing:.04em;margin-top:8px;display:inline-block;cursor:pointer;background:none;border:none;padding:0}
+.det-results-link:hover{text-decoration:underline}
+.det-meta{font-size:11px;font-family:var(--m);color:var(--dm);letter-spacing:.04em;line-height:2;margin-top:12px}
+.det-model-link{font-size:11px;font-family:var(--m);color:var(--red);letter-spacing:.04em;margin-top:6px;display:inline-block}
+.det-model-link:hover{text-decoration:underline}
+.det-tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px}
+.tag{font-size:10px;padding:3px 10px;border-radius:2px;font-family:var(--m);letter-spacing:.04em;border:1px solid var(--bd2);color:var(--mt)}
+
+/* RESULTS VIEW */
+.results-wrap{max-width:var(--max);margin:0 auto;padding:36px 32px 80px}
+.results-header{margin-bottom:28px;padding-bottom:20px;border-bottom:1px solid var(--bd)}
+.results-model-name{font-size:28px;font-weight:300;color:var(--tx);letter-spacing:-.03em;margin-bottom:4px}
+.results-score-line{font-size:13px;font-family:var(--m);color:var(--mt);margin-bottom:12px;letter-spacing:.04em}
+.results-caveat{background:var(--sf);border:1px solid var(--bd);padding:12px 16px;font-size:12px;color:var(--mt);line-height:1.75;margin-bottom:20px}
+.results-caveat strong{color:var(--tx)}
+.results-dim-tabs{display:flex;gap:4px;flex-wrap:wrap;margin-bottom:20px}
+.dim-tab{font-size:11px;padding:5px 13px;border-radius:20px;cursor:pointer;border:.5px solid var(--bd2);color:var(--mt);background:transparent;transition:all .12s;font-family:var(--m)}
+.dim-tab:hover{color:var(--tx)}
+.dim-tab.on{background:var(--tx);color:#fff;border-color:var(--tx)}
+.dim-tab.has-weak{border-color:var(--red);color:var(--red)}
+.dim-tab.has-weak.on{background:var(--red);color:#fff}
+.results-dim-panel{display:none}
+.results-dim-panel.on{display:block}
+.results-dim-summary{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:20px}
+.rds{background:var(--sf);border:1px solid var(--bd);padding:12px;text-align:center}
+.rds-n{font-size:20px;font-family:var(--m);font-weight:300;color:var(--tx);margin-bottom:2px}
+.rds-l{font-size:10px;color:var(--mt);font-family:var(--m);letter-spacing:.06em}
+.q-result{border:1px solid var(--bd);margin-bottom:8px;overflow:hidden}
+.q-result.pass{border-left:3px solid #4a9e5c}
+.q-result.partial{border-left:3px solid #c4861a}
+.q-result.fail{border-left:3px solid var(--red)}
+.q-result-head{display:flex;align-items:center;gap:10px;padding:10px 14px;cursor:pointer;transition:background .1s}
+.q-result-head:hover{background:var(--sf)}
+.q-num{font-size:10px;font-family:var(--m);color:var(--dm);width:28px;flex-shrink:0}
+.q-score-badge{font-size:10px;font-family:var(--m);padding:2px 8px;border-radius:2px;flex-shrink:0}
+.q-score-badge.pass{background:#e8f5ec;color:#2d6b3a}
+.q-score-badge.partial{background:#fdf0e0;color:#7a5010}
+.q-score-badge.fail{background:var(--rd);color:var(--red)}
+.q-prompt-preview{font-size:12px;color:var(--tx);flex:1;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.q-expand{font-size:10px;font-family:var(--m);color:var(--dm);flex-shrink:0}
+.q-result-body{display:none;padding:14px;border-top:1px solid var(--bd);background:var(--sf)}
+.q-result.open .q-result-body{display:block}
+.q-result.open .q-expand{transform:rotate(90deg)}
+.q-section{margin-bottom:10px}
+.q-section-label{font-size:9px;font-family:var(--m);color:var(--dm);letter-spacing:.12em;text-transform:uppercase;margin-bottom:4px}
+.q-section-text{font-size:12px;color:var(--mt);line-height:1.7}
+.q-model-answer{background:var(--bg);border:1px solid var(--bd);padding:10px 12px;font-size:12px;color:var(--tx);line-height:1.7;margin-top:4px;max-height:120px;overflow-y:auto}
+.q-fail-note{font-size:11px;color:var(--red);font-family:var(--m);margin-top:8px;padding:6px 10px;background:var(--rd);letter-spacing:.03em}
+.weakness-banner{background:var(--rd);border:1px solid rgba(232,52,42,.2);padding:14px 16px;margin-bottom:20px;display:none}
+.weakness-banner.show{display:block}
+.weakness-h{font-size:12px;font-weight:500;color:var(--red);margin-bottom:6px}
+.weakness-p{font-size:12px;color:var(--red);opacity:.8;line-height:1.65}
+
+/* METHODOLOGY */
+.meth-wrap{max-width:640px;margin:0 auto;padding:60px 32px 80px}
+.meth-h1{font-size:44px;font-weight:300;color:var(--tx);letter-spacing:-.04em;line-height:1.08;margin-bottom:48px}
+.meth-h1 strong{font-weight:600}
+.meth-sec{margin-bottom:48px;padding-top:36px;border-top:1px solid var(--bd)}
+.meth-sec:first-of-type{border-top:2px solid var(--tx)}
+.meth-h2{font-size:10px;font-family:var(--m);letter-spacing:.16em;text-transform:uppercase;color:var(--red);margin-bottom:16px}
+.meth-p{font-size:15px;color:var(--mt);line-height:1.9}
+.meth-caveat{background:#fff8e6;border:1px solid #e8c94a;padding:16px 20px;margin-bottom:20px}
+.meth-caveat-h{font-size:11px;font-family:var(--m);color:#7a6010;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px}
+.meth-caveat-p{font-size:13px;color:#5a4800;line-height:1.75}
+.meth-formula{background:var(--sf);border:1px solid var(--bd);padding:16px 18px;font-family:var(--m);font-size:11px;color:var(--tx);line-height:2.2;margin:14px 0;overflow-x:auto}
+.meth-tbl{width:100%;border-collapse:collapse;margin-top:16px;font-size:13px}
+.meth-tbl th{text-align:left;padding:8px 14px;font-size:9px;font-family:var(--m);letter-spacing:.12em;text-transform:uppercase;color:var(--dm);border-bottom:1px solid var(--tx)}
+.meth-tbl td{padding:12px 14px;border-bottom:1px solid var(--bd);color:var(--mt);vertical-align:top;line-height:1.6}
+.meth-tbl td:first-child{font-family:var(--m);color:var(--tx);font-size:12px;white-space:nowrap}
+.policy{border-left:3px solid var(--tx);padding:20px 24px;background:var(--sf);margin-top:16px}
+.policy p{font-size:15px;color:var(--mt);line-height:1.9;font-style:italic}
+.dispute-box{border:1px solid var(--bd);padding:20px;margin-top:14px}
+.dispute-box h3{font-size:13px;font-weight:500;color:var(--tx);margin-bottom:10px}
+.dispute-box ol{padding-left:16px;color:var(--mt);line-height:2.2;font-size:13px}
+.meth-callout{background:var(--sf);border:1px solid var(--bd);padding:14px 18px;margin-top:14px;font-size:13px;color:var(--mt);line-height:1.7}
+.meth-callout a{color:var(--red)}
+
+/* SHOP */
+.shop-hero{padding:60px 32px 40px;border-bottom:1px solid var(--bd);max-width:var(--max);margin:0 auto}
+.shop-h1{font-size:clamp(32px,4vw,52px);font-weight:300;letter-spacing:-.04em;color:var(--tx);margin-bottom:14px;line-height:1.05}
+.shop-h1 strong{font-weight:600}
+.shop-urgency{font-size:14px;font-weight:500;color:var(--red);margin-bottom:8px}
+.shop-sub{font-size:14px;color:var(--mt);line-height:1.8;max-width:520px}
+.scale-wrap{max-width:var(--max);margin:0 auto;padding:0 32px}
+.scale-inner{border:1px solid var(--bd);margin-top:48px;display:grid;grid-template-columns:1fr 1fr;overflow:hidden}
+.scale-art{background:var(--art);padding:28px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:center}
+.scale-info{padding:36px;display:flex;flex-direction:column;justify-content:center}
+.scale-kicker{font-size:10px;font-family:var(--m);color:var(--red);letter-spacing:.16em;text-transform:uppercase;margin-bottom:14px}
+.scale-h{font-size:24px;font-weight:400;color:var(--tx);margin-bottom:10px;letter-spacing:-.2px}
+.scale-p{font-size:14px;color:var(--mt);line-height:1.8;margin-bottom:8px}
+.scale-sub{font-size:12px;color:var(--mt);font-style:italic;margin-bottom:20px}
+.scale-price{font-size:24px;font-family:var(--m);font-weight:300;color:var(--tx);margin-bottom:4px}
+.scale-spec{font-size:11px;font-family:var(--m);color:var(--dm);letter-spacing:.04em;margin-bottom:20px}
+.bundle-wrap{max-width:var(--max);margin:0 auto;padding:0 32px}
+.bundle-inner{border:1px solid var(--bd);border-top:none;padding:20px 28px;background:var(--sf);display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.bundle-text h3{font-size:14px;font-weight:500;color:var(--tx);margin-bottom:4px}
+.bundle-text p{font-size:12px;color:var(--mt);line-height:1.6}
+.bundle-right{display:flex;align-items:center;gap:16px;flex-shrink:0}
+.bundle-price{font-size:20px;font-family:var(--m);font-weight:300;color:var(--tx)}
+.shop-grid-wrap{max-width:var(--max);margin:0 auto;padding:0 32px 60px}
+.shop-section-head{font-size:10px;font-family:var(--m);color:var(--dm);letter-spacing:.12em;text-transform:uppercase;padding:28px 0 14px;border-bottom:1px solid var(--bd)}
+.shop-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1px;background:var(--bd)}
+.scard{background:var(--bg);cursor:pointer;transition:background .12s}
+.scard:hover{background:var(--sf)}
+.sart{background:var(--art);display:flex;align-items:center;justify-content:center;padding:20px;line-height:0}
+.sinfo{padding:14px 16px}
+.s-name{font-size:13px;font-weight:500;color:var(--tx);margin-bottom:2px}
+.s-score{font-size:11px;font-family:var(--m);margin-bottom:2px}
+.s-prov{font-size:10px;font-family:var(--m);color:var(--dm);margin-bottom:12px}
+.s-btn{width:100%;font-size:12px;font-weight:500;padding:10px 0;border:1px solid var(--bd2);color:var(--tx);background:transparent;font-family:var(--g);letter-spacing:.02em;transition:all .15s;border-radius:2px;cursor:pointer}
+.s-btn:hover{background:var(--red);color:#fff;border-color:var(--red)}
+.materials{max-width:var(--max);margin:0 auto;padding:0 32px 60px}
+.mat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--bd);margin-top:24px}
+.mat-item{background:var(--bg);padding:24px}
+.mat-h{font-size:12px;font-weight:500;color:var(--tx);margin-bottom:8px}
+.mat-p{font-size:12px;color:var(--mt);line-height:1.75}
+
+/* FOOTER */
+footer{border-top:2px solid var(--tx);padding:32px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.foot-l{font-size:11px;font-family:var(--m);color:var(--dm);letter-spacing:.04em}
+.foot-r{display:flex;gap:24px}
+.foot-r a{font-size:12px;color:var(--mt);letter-spacing:.02em;transition:color .12s}
+.foot-r a:hover{color:var(--red)}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .hero-split{grid-template-columns:1fr}
+  .hero-right{min-height:240px}
+  .hero-left{padding:40px 24px}
+  .ceiling-inner{grid-template-columns:1fr}
+  .det-grid{grid-template-columns:1fr}
+  .scale-inner{grid-template-columns:1fr}
+  .spectrum-inner{grid-template-columns:1fr}
+  .spectrum-canvas-wrap{display:none}
+  .mat-grid{grid-template-columns:1fr}
+  .cmp-grid{grid-template-columns:1fr}
+  .results-dim-summary{grid-template-columns:1fr 1fr}
+}
+@media(max-width:700px){
+  .lb-head,.mrow{grid-template-columns:28px 44px 1fr 70px}
+  .th:nth-child(n+5),.bars,.row-actions{display:none}
+  .secs{grid-template-columns:1fr}
+  nav,.lb-wrap,.det-wrap,.results-wrap,.meth-wrap,.shop-hero,.scale-wrap,.bundle-wrap,.shop-grid-wrap,.ceiling,.materials,footer,.email-bar,.cmp-wrap{padding-left:16px;padding-right:16px}
+  .shop-grid{grid-template-columns:1fr 1fr}
+  .email-bar-inner{grid-template-columns:1fr}
+  .compare-bar{padding:12px 16px}
+}
+</style>
+</head>
+<body>
+<a href="#main" class="skip">Skip to main content</a>
+
+<nav aria-label="Main navigation">
+  <div class="nav-brand" onclick="showView('scores',document.getElementById('nl-scores'))" role="button" tabindex="0">
+    <span class="nav-logo">BRAIAIN</span><span class="nav-dot" aria-hidden="true"></span><span class="nav-sub">Standard</span>
+  </div>
+  <div class="nav-links">
+    <button class="nav-link on" id="nl-scores" onclick="showView('scores',this)" aria-current="page">Scores</button>
+    <button class="nav-link" id="nl-methodology" onclick="showView('methodology',this)">Methodology</button>
+    <button class="nav-link" id="nl-prints" onclick="showView('prints',this)">Prints</button>
+  </div>
+  <div class="nav-right">
+    <button class="nav-cta" onclick="showView('prints',document.getElementById('nl-prints'))">Own a print &mdash; from $39</button>
+    <button class="hamburger" id="hamburger" onclick="toggleMobileNav()" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="mobile-nav" id="mobile-nav">
+  <button class="mob-link" onclick="showView('scores',document.getElementById('nl-scores'));closeMobileNav()">Scores</button>
+  <button class="mob-link" onclick="showView('methodology',document.getElementById('nl-methodology'));closeMobileNav()">Methodology</button>
+  <button class="mob-link" onclick="showView('prints',document.getElementById('nl-prints'));closeMobileNav()">Prints</button>
+  <button class="mob-cta" onclick="showView('prints',document.getElementById('nl-prints'));closeMobileNav()">Own a print &mdash; from $39</button>
+</div>
+<div class="compare-bar" id="compare-bar">
+  <div class="cmp-bar-l">Comparing <span id="cmp-bar-names"></span></div>
+  <div class="cmp-bar-r">
+    <button class="cmp-btn primary" onclick="openComparison()">Compare side by side &rarr;</button>
+    <button class="cmp-btn ghost" onclick="clearComparison()">Clear</button>
+  </div>
+</div>
+
+<main id="main">
+
+<!-- SCORES -->
+<div id="view-scores" class="view on">
+  <div class="hero-split">
+    <div class="hero-left">
+      <div class="kicker" id="hero-kicker">BRAIAIN Standard</div>
+      <div class="kicker-sub" id="hero-kicker-sub">The independent benchmark scoring every AI model 400&ndash;1600. Full test results published.</div>
+      <h1 class="hero-h1">The only AI benchmark<br>with <strong>no commercial<br>incentive</strong> to lie.</h1>
+      <p class="hero-sub">Every model. The same battery. Published publicly &mdash; including every question answered and every question failed. We have never accepted funding from a laboratory.</p>
+      <div class="hero-actions">
+        <button class="btn-primary" onclick="showView('prints',document.getElementById('nl-prints'))">Own the DNA print</button>
+        <button class="btn-ghost" onclick="showView('methodology',document.getElementById('nl-methodology'))">How it works</button>
+      </div>
+    </div>
+    <div class="hero-right" aria-hidden="true">
+      <div class="hero-fallback" id="hero-fallback">Loading&hellip;</div>
+      <canvas id="hero-canvas" width="360" height="360"></canvas>
+      <div class="hero-art-label" id="hero-art-label"></div>
+    </div>
+  </div>
+
+  <div class="spectrum-section" aria-hidden="true">
+    <div class="spectrum-inner">
+      <div class="spectrum-text">
+        <h2 class="spectrum-h">From silence<br>to <strong>perfection.</strong></h2>
+        <p class="spectrum-p">Every model exists somewhere between 400 and 1600. The figure it produces is the only one possible at that exact score. No model has reached the ceiling.</p>
+        <div class="spectrum-score" id="spec-score">400</div>
+      </div>
+      <div class="spectrum-canvas-wrap">
+        <canvas id="spec-canvas" width="200" height="200"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <div class="lb-wrap">
+    <div class="lb-meta">
+      <div class="lb-meta-l">Rankings</div>
+      <div class="lb-meta-r" id="lb-meta-r">Loading&hellip;</div>
+    </div>
+    <div class="lb-head" role="row" aria-hidden="true">
+      <div class="th">#</div><div class="th">DNA</div><div class="th">Model</div>
+      <div class="th">Score</div><div class="th">Sections</div><div class="th"></div>
+    </div>
+    <div id="tbl-body" role="rowgroup"></div>
+  </div>
+
+  <div class="caveat" role="note" aria-label="Capability caveat" style="margin:24px auto 0;max-width:var(--max);padding:20px 28px;border-left:3px solid var(--red);background:var(--sf);font-size:13px;line-height:1.65;color:var(--mt)">
+    <strong style="color:var(--tx)">Scores reflect performance on a specific test battery.</strong>
+    They should not be interpreted as general intelligence rankings or as evidence that one model is universally superior to another. Different tasks, prompts, and real-world conditions may produce different relative outcomes. BRAIAIN Standard measures performance across 8 defined dimensions using 120 questions per cycle&mdash;a meaningful but intentionally limited sample. Full test methodology, every question asked, and every answer received are published for inspection.<br><br>
+    <strong style="color:var(--tx)">Infrastructure note:</strong> Tests are run via provider APIs. API latency, rate limits, model versioning, and provider-side changes between test runs may affect scores. BRAIAIN has no financial relationship with any model provider and receives no compensation tied to scores.
+  </div>
+
+  <div class="email-bar" role="complementary">
+    <div class="email-bar-inner">
+      <div>
+        <div class="email-bar-h">Score changes are news.</div>
+        <div class="email-bar-s">When a model is retested and its score changes, its DNA figure changes. Get notified when it happens.</div>
+      </div>
+      <form class="email-form" onsubmit="handleEmail(event)">
+        <input type="email" placeholder="your@email.com" required id="email-input" aria-label="Email address">
+        <button type="submit">Notify me</button>
+      </form>
+      <div class="email-confirm" id="email-confirm">You are on the list.</div>
+    </div>
+  </div>
+
+  <div class="ceiling">
+    <div class="ceiling-inner">
+      <div class="ceiling-art">
+        <canvas id="ceil-canvas" width="200" height="200" role="img" aria-label="1600 mandala"></canvas>
+        <div class="ceiling-art-label" aria-hidden="true">1600</div>
+      </div>
+      <div class="ceiling-text">
+        <div class="ceiling-score" aria-hidden="true">1600</div>
+        <h2 class="ceiling-h">The unreached ceiling</h2>
+        <p class="ceiling-p">When all eight dimensions reach 1.0, the figure achieves 8-fold rotational symmetry. The void at centre is the fixed point of dihedral group D&#x2088;. No model has earned it. The distance between the current leader and this figure is the entire story of where AI is right now.</p>
+        <button class="ceiling-link" onclick="showView('methodology',document.getElementById('nl-methodology'))">How the score is calculated &rarr;</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- COMPARE -->
+<div id="view-compare" class="view">
+  <div class="cmp-wrap">
+    <button class="back-btn" onclick="showView('scores',document.getElementById('nl-scores'))">&larr; back to scores</button>
+    <div class="cmp-grid" id="cmp-grid"></div>
+  </div>
+</div>
+
+<!-- DETAIL -->
+<div id="view-detail" class="view">
+  <div class="det-wrap">
+    <button class="back-btn" onclick="showView('scores',document.getElementById('nl-scores'))">&larr; all scores</button>
+    <div class="det-grid">
+      <div>
+        <div class="det-art-frame"><canvas id="det-canvas" width="264" height="264" role="img" aria-label="DNA fingerprint"></canvas></div>
+        <div class="art-params" id="det-params"></div>
+        <div class="print-module">
+          <div class="pm-head">
+            <div class="pm-title">Own this model&rsquo;s DNA fingerprint</div>
+            <div class="pm-sub">Archival giclée on cotton rag. Fulfilled by Printful.</div>
+            <div class="pm-looks">Looks better in person than on screen &mdash; warm palette on cotton catches the light.</div>
+            <div class="pm-urgency" id="pm-urgency">This figure changes when this model is retested.</div>
+          </div>
+          <div class="tiers" role="radiogroup" aria-label="Select print size">
+            <div class="tier sel" role="radio" aria-checked="true" tabindex="0" data-tier="standard" data-price="$39" onclick="selTier(this)" onkeydown="if(event.key==='Enter'||event.key===' ')selTier(this)">
+              <div><div class="tier-name">Standard print</div><div class="tier-spec">18&times;18 in &nbsp;&middot;&nbsp; 300 DPI</div><div class="tier-edition">Open edition</div></div>
+              <div class="tier-price">$39</div>
+            </div>
+            <div class="tier" role="radio" aria-checked="false" tabindex="0" data-tier="large" data-price="$89" onclick="selTier(this)" onkeydown="if(event.key==='Enter'||event.key===' ')selTier(this)">
+              <div><div class="tier-name">Large print</div><div class="tier-spec">24&times;24 in &nbsp;&middot;&nbsp; 300 DPI</div><div class="tier-edition">Edition of 100</div></div>
+              <div class="tier-price">$89</div>
+            </div>
+            <div class="tier" role="radio" aria-checked="false" tabindex="0" data-tier="contact" data-price="$249" onclick="selTier(this)" onkeydown="if(event.key==='Enter'||event.key===' ')selTier(this)">
+              <div><div class="tier-name">Certificate edition</div><div class="tier-spec">36&times;36 in &nbsp;&middot;&nbsp; signed</div><div class="tier-edition">Edition of 25 &nbsp;&middot;&nbsp; with provenance cert</div></div>
+              <div class="tier-price">$249</div>
+            </div>
+            <div class="tier" role="radio" aria-checked="false" tabindex="0" data-tier="digital" data-price="$5" onclick="selTier(this)" onkeydown="if(event.key==='Enter'||event.key===' ')selTier(this)">
+              <div><div class="tier-name">Digital download</div><div class="tier-spec">2400&times;2400 px &nbsp;&middot;&nbsp; instant</div><div class="tier-edition">Open edition</div></div>
+              <div class="tier-price">$5</div>
+            </div>
+          </div>
+          <div class="pm-action"><button class="order-btn" id="order-btn">Order standard print &mdash; $39</button></div>
+          <div class="pm-footer">100-year lightfast inks &nbsp;&middot;&nbsp; Ships in 5&ndash;7 days</div>
+          <div class="pm-refund">Damaged in transit? Printful replaces damaged prints. Contact us within 14 days with a photograph.</div>
+        </div>
+        <div class="det-tags" id="det-tags" role="list"></div>
+      </div>
+      <div>
+        <div class="det-prov" id="det-prov"></div>
+        <div class="det-score-num" id="det-score-num"></div>
+        <div class="det-score-lbl">BRAIAIN score</div>
+        <div class="det-desc" id="det-desc"></div>
+        <div class="secs">
+          <div class="sec"><div class="sec-lbl">Analytical</div><div class="sec-num" id="det-ana"></div><div class="sec-track"><div class="sec-fill" id="det-ana-f"></div></div></div>
+          <div class="sec"><div class="sec-lbl">Technical</div><div class="sec-num" id="det-tech"></div><div class="sec-track"><div class="sec-fill" id="det-tech-f"></div></div></div>
+        </div>
+        <div class="dims-lbl">Dimension profile</div>
+        <p style="font-size:12px;color:var(--mt);margin:-4px 0 12px;line-height:1.55">Scores reflect performance on BRAIAIN&rsquo;s 120-question test battery, not general capability. <button style="color:var(--red);text-decoration:underline;font-size:12px;font-family:var(--g);cursor:pointer;background:none;border:none;padding:0" onclick="showView('methodology',document.getElementById('nl-methodology'))">Full methodology</button></p>
+        <div class="dims-list" id="det-dims"></div>
+        <div class="dims-note" id="det-dims-note" style="display:none"></div>
+        <button class="det-results-link" id="det-results-link" onclick="">View full test results &rarr;</button>
+        <div class="det-meta" id="det-meta"></div>
+        <a class="det-model-link" id="det-model-link" href="#">Full model page &nearr;</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- RESULTS -->
+<div id="view-results" class="view">
+  <div class="results-wrap">
+    <button class="back-btn" id="results-back-btn">&larr; back</button>
+    <div class="results-header">
+      <div class="results-model-name" id="results-model-name"></div>
+      <div class="results-score-line" id="results-score-line"></div>
+      <div class="results-caveat">
+        <strong>What these results show:</strong> Every question asked, the model&rsquo;s answer, and how it scored. BRAIAIN Standard measures cognitive capability across 8 dimensions. A high score does not indicate safety, alignment, fairness, or fitness for any specific use case. These are capability results only.
+      </div>
+      <div class="weakness-banner" id="weakness-banner">
+        <div class="weakness-h" id="weakness-h"></div>
+        <div class="weakness-p" id="weakness-p"></div>
+      </div>
+    </div>
+    <div class="results-dim-tabs" id="results-dim-tabs"></div>
+    <div id="results-panels"></div>
+  </div>
+</div>
+
+<!-- METHODOLOGY -->
+<div id="view-methodology" class="view">
+  <div class="meth-wrap">
+    <h1 class="meth-h1">The BRAIAIN<br><strong>Standard</strong></h1>
+
+    <div class="meth-caveat">
+      <div class="meth-caveat-h">Capability benchmark &mdash; scope statement</div>
+      <div class="meth-caveat-p">BRAIAIN Standard measures eight dimensions of cognitive capability. A high BRAIAIN score does not indicate safety, alignment, fairness, or fitness for any specific use case. These results measure what models can do, not whether they should be deployed, trusted, or preferred for your application.</div>
+    </div>
+
+    <div class="meth-sec">
+      <div class="meth-h2">What this is</div>
+      <p class="meth-p">BRAIAIN Standard is an independent AI testing authority. We run every model through an identical battery of prompts and publish the full results publicly &mdash; including every question answered and every question failed. We have never accepted funding from any AI laboratory. We never will.</p>
+    </div>
+
+    <div class="meth-sec">
+      <div class="meth-h2">Scoring formula</div>
+      <p class="meth-p">Eight dimension scores (each 0.0&ndash;1.0) feed into two section scores (200&ndash;800 each) for a total of 400&ndash;1600.</p>
+      <div class="meth-formula">
+Analytical (200&ndash;800):<br>
+&nbsp;&nbsp;= 200 + (Reasoning&times;0.35 + Math&times;0.40 + Science&times;0.25) &times; 600<br>
+<br>
+Technical (200&ndash;800):<br>
+&nbsp;&nbsp;= 200 + (Coding&times;0.40 + Context&times;0.30 + Efficiency&times;0.15 + Speed&times;0.15) &times; 600<br>
+<br>
+BRAIAIN Score = Analytical + Technical &nbsp;[range: 400&ndash;1600]<br>
+<br>
+Dimension score = mean(question scores within dimension)<br>
+Question scores: 0.0 (wrong) | 0.5 (partial) | 1.0 (correct)<br>
+Confidence interval: &plusmn;15 points
+      </div>
+      <table class="meth-tbl">
+        <thead><tr><th scope="col">Section</th><th scope="col">Measures</th><th scope="col">Weight</th></tr></thead>
+        <tbody>
+          <tr><td>Analytical (200&ndash;800)</td><td>Reasoning, mathematics, science</td><td>50%</td></tr>
+          <tr><td>Technical (200&ndash;800)</td><td>Coding, context, efficiency, speed</td><td>50%</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="meth-sec">
+      <div class="meth-h2">Independence policy</div>
+      <div class="policy"><p>&ldquo;BRAIAIN Standard has never accepted and will never accept funding, sponsorship, or paid placement from any AI laboratory or model provider. Models are included at our discretion. Scores update when models update. If a model regresses, the score falls. We publish regressions.&rdquo;</p></div>
+    </div>
+
+    <div class="meth-sec">
+      <div class="meth-h2">How judging works</div>
+      <p class="meth-p">Questions are scored in three tiers. Automated scoring (unit tests, exact match) handles questions with objectively correct answers. AI judges score qualitative questions via structured rubric &mdash; with the rule that no model judges its own provider family. Human expert review covers proofs, complex explanation, and all disputes.</p>
+      <table class="meth-tbl" style="margin-top:14px">
+        <thead><tr><th scope="col">Tier</th><th scope="col">Method</th><th scope="col">Questions</th></tr></thead>
+        <tbody>
+          <tr><td>Tier 1</td><td>Automated (unit tests, exact match)</td><td>~55%</td></tr>
+          <tr><td>Tier 2</td><td>AI rubric judge (not same family)</td><td>~35%</td></tr>
+          <tr><td>Tier 3</td><td>Human expert</td><td>~10%</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="meth-sec">
+      <div class="meth-h2">Dispute process</div>
+      <div class="dispute-box">
+        <h3>Providers who believe their model was scored incorrectly may submit a dispute.</h3>
+        <ol>
+          <li>Email <span style="font-family:var(--m);font-size:12px">disputes@braiain.com</span> within 30 days of score publication</li>
+          <li>Include: model ID, specific question IDs in dispute, evidence of correct answer</li>
+          <li>We review disputed questions with an independent human expert within 14 days</li>
+          <li>If the dispute is upheld, the score is corrected and the correction published</li>
+          <li>Dispute outcomes are always published, whether upheld or rejected</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="meth-sec">
+      <div class="meth-h2">The DNA fingerprint</div>
+      <p class="meth-p">Each model&rsquo;s eight dimension scores drive eight harmonic amplitudes in a Lissajous parametric curve. Score 1600 uses zero phase offsets, revealing 8-fold rotational symmetry (dihedral group D&#x2088;). Score 400 produces near-silence. Every other score is a broken-symmetry state between them. The shape is the score &mdash; if the scores change, the figure changes.</p>
+    </div>
+
+    <div class="meth-sec">
+      <div class="meth-h2">For educators</div>
+      <p class="meth-p">BRAIAIN Standard is used in AI literacy curricula.</p>
+      <div class="meth-callout">Classroom resources, lesson plans, and bulk print licensing &rarr; <a href="/educators.html">educators.html</a></div>
+    </div>
+
+    <div class="meth-sec">
+      <div class="meth-h2">Submit a model</div>
+      <p class="meth-p">Any publicly available model may be submitted. No fee.<br><br><span style="font-family:var(--m);font-size:12px">submissions@braiain.com</span></p>
+    </div>
+  </div>
+</div>
+
+<!-- PRINTS -->
+<div id="view-prints" class="view">
+  <div class="shop-hero">
+    <h1 class="shop-h1">Own the<br><strong>intelligence.</strong></h1>
+    <div class="shop-urgency">These figures exist only as long as these scores hold. When a model is retested and its score changes, the figure changes.</div>
+    <p class="shop-sub">Each model&rsquo;s benchmark scores produce a unique Lissajous figure &mdash; iterated 70,000 times, rendered as a scientific etching on archival cotton rag. Looks better in person than on screen.</p>
+  </div>
+  <div class="scale-wrap">
+    <div class="scale-inner">
+      <div class="scale-art" id="scale-art"></div>
+      <div class="scale-info">
+        <div class="scale-kicker">Featured &mdash; Series print</div>
+        <h2 class="scale-h">The Scale</h2>
+        <p class="scale-p">The complete arc of machine intelligence. Scores 400 through 1600 in sequence on one archival panel.</p>
+        <p class="scale-sub">The floor. The ceiling. Every step between. One wall. One argument.</p>
+        <div class="scale-price">$149</div>
+        <div class="scale-spec">24&times;36 in &nbsp;&middot;&nbsp; archival giclée &nbsp;&middot;&nbsp; signed</div>
+        <button class="btn-primary" onclick="window.open('https://braiain.com/shop/the-scale','_blank')">Order The Scale &mdash; $149</button>
+      </div>
+    </div>
+  </div>
+  <div class="bundle-wrap">
+    <div class="bundle-inner">
+      <div class="bundle-text">
+        <h3>The Complete Argument</h3>
+        <p>The Floor (400) + Current leader + Perfect score (1600) + The Scale. Four prints, one wall, complete story.</p>
+      </div>
+      <div class="bundle-right">
+        <div class="bundle-price">$199</div>
+        <button class="btn-primary" onclick="window.open('https://braiain.com/shop/complete-argument','_blank')">Order bundle</button>
+      </div>
+    </div>
+  </div>
+  <div class="shop-grid-wrap">
+    <div class="shop-section-head">Individual model prints</div>
+    <div class="shop-grid" id="shop-grid" role="list"></div>
+  </div>
+  <div class="materials">
+    <div class="mat-grid">
+      <div class="mat-item"><div class="mat-h">Archival giclée</div><p class="mat-p">Pigment-based inks rated for 100+ years of display lightfastness. Museum-quality reproduction process. These prints will outlast the models they depict.</p></div>
+      <div class="mat-item"><div class="mat-h">Cotton rag paper</div><p class="mat-p">Acid-free, 100% cotton fibre. Warm white surface that complements the warm monochrome palette. The print looks better in person than on screen &mdash; the warm palette on cotton catches light in a way screens cannot reproduce.</p></div>
+      <div class="mat-item"><div class="mat-h">Damaged in transit?</div><p class="mat-p">Printful replaces damaged prints at no cost. Contact us within 14 days with a photograph. No questions asked.</p></div>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<footer>
+  <div class="foot-l">BRAIAIN Standard &nbsp;&middot;&nbsp; Independent &nbsp;&middot;&nbsp; No lab funding &nbsp;&middot;&nbsp; Ever</div>
+  <nav class="foot-r">
+    <a href="/educators.html">Educators</a>
+    <a href="/guide.html">Detection guide</a>
+    <a href="/faq.html">FAQ</a>
+    <a href="mailto:submissions@braiain.com">Submit a model</a>
+  </nav>
+</footer>
+
+<script>
+/* LISSAJOUS ETCHING ENGINE */
+var ART_BG="#100c08",LRGB=[238,230,212];
+var FX=[1,2,3,5],FY=[1,3,4,7],PH=[0,0.8,1.6,2.4,0.4,1.2,2.0,2.8];
+
+function lisPoints(dims,N){
+  var a=new Float32Array(N*2);
+  var d=[dims.reasoning,dims.coding,dims.math,dims.science,dims.context,dims.speed,dims.efficiency,dims.multimodal];
+  var T=80*Math.PI,mnX=1e9,mxX=-1e9,mnY=1e9,mxY=-1e9;
+  for(var i=0;i<N;i++){
+    var t=(i/N)*T,x=0,y=0;
+    for(var j=0;j<4;j++){x+=d[j]*Math.sin(FX[j]*t+PH[j]);y+=d[j+4]*Math.cos(FY[j]*t+PH[j+4])}
+    a[i*2]=x;a[i*2+1]=y;
+    if(x<mnX)mnX=x;if(x>mxX)mxX=x;if(y<mnY)mnY=y;if(y>mxY)mxY=y;
+  }
+  return{a:a,mnX:mnX,mxX:mxX,mnY:mnY,mxY:mxY};
+}
+
+function getTr(r,W,H){
+  var midX=(r.mnX+r.mxX)/2,midY=(r.mnY+r.mxY)/2;
+  var rx=r.mxX-r.mnX,ry=r.mxY-r.mnY;
+  if(rx<0.01)rx=0.01;if(ry<0.01)ry=0.01;
+  var sc=Math.min(W*0.82/rx,H*0.82/ry);
+  return{sc:sc,ox:W/2-midX*sc,oy:H/2-midY*sc};
+}
+
+function strokePts(ctx,pts,tr,lw,al){
+  ctx.save();
+  ctx.strokeStyle="rgba("+LRGB[0]+","+LRGB[1]+","+LRGB[2]+","+al+")";
+  ctx.lineWidth=lw;ctx.lineCap="round";ctx.lineJoin="round";
+  var N=pts.a.length/2,C=5000;
+  for(var s=0;s<N-1;s+=C){
+    ctx.beginPath();
+    ctx.moveTo(pts.a[s*2]*tr.sc+tr.ox,pts.a[s*2+1]*tr.sc+tr.oy);
+    var e=Math.min(s+C,N);
+    for(var i=s+1;i<e;i++)ctx.lineTo(pts.a[i*2]*tr.sc+tr.ox,pts.a[i*2+1]*tr.sc+tr.oy);
+    ctx.stroke();
+  }
+  ctx.restore();
+}
+
+function addVig(ctx,W,H,r0,r1){
+  var g=ctx.createRadialGradient(W/2,H/2,r0,W/2,H/2,r1);
+  g.addColorStop(0,"rgba(0,0,0,0)");g.addColorStop(1,"rgba(16,12,8,0.95)");
+  ctx.fillStyle=g;ctx.fillRect(0,0,W,H);
+}
+
+function drawEtching(canvas,dims,N){
+  var W=canvas.width,H=canvas.height,ctx=canvas.getContext("2d");
+  ctx.fillStyle=ART_BG;ctx.fillRect(0,0,W,H);
+  var pts=lisPoints(dims,N||20000);
+  var tr=getTr(pts,W,H);
+  strokePts(ctx,pts,tr,1.8,0.020);strokePts(ctx,pts,tr,0.55,0.078);strokePts(ctx,pts,tr,0.22,0.240);
+  addVig(ctx,W,H,Math.min(W,H)*0.34,Math.min(W,H)*0.55);
+}
+
+function drawMandala(canvas){
+  var W=canvas.width,H=canvas.height,cx=W/2,cy=H/2,ctx=canvas.getContext("2d");
+  ctx.fillStyle=ART_BG;ctx.fillRect(0,0,W,H);
+  var N=50000,T=80*Math.PI,pts=new Float32Array(N*2);
+  var mnX=1e9,mxX=-1e9,mnY=1e9,mxY=-1e9;
+  for(var i=0;i<N;i++){var t=(i/N)*T,x=0,y=0;for(var j=0;j<4;j++){x+=Math.sin(FX[j]*t);y+=Math.cos(FY[j]*t)}pts[i*2]=x;pts[i*2+1]=y;if(x<mnX)mnX=x;if(x>mxX)mxX=x;if(y<mnY)mnY=y;if(y>mxY)mxY=y;}
+  var midX=(mnX+mxX)/2,midY=(mnY+mxY)/2,rx=mxX-mnX,ry=mxY-mnY;
+  var sc=Math.min(W*0.80/rx,H*0.80/ry),ox=cx-midX*sc,oy=cy-midY*sc;
+  var maxR=0;for(var i=0;i<N;i++){var dx=pts[i*2]*sc+ox-cx,dy=pts[i*2+1]*sc+oy-cy;var d=Math.sqrt(dx*dx+dy*dy);if(d>maxR)maxR=d;}
+  var fp={a:pts,mnX:mnX,mxX:mxX,mnY:mnY,mxY:mxY},tr={sc:sc,ox:ox,oy:oy};
+  for(var rot=0;rot<8;rot++){ctx.save();ctx.translate(cx,cy);ctx.rotate(rot*Math.PI/4);ctx.translate(-cx,-cy);strokePts(ctx,fp,tr,1.8,0.018);strokePts(ctx,fp,tr,0.55,0.072);strokePts(ctx,fp,tr,0.20,0.195);ctx.restore();}
+  var boost=ctx.createRadialGradient(cx,cy,0,cx,cy,maxR*0.32);boost.addColorStop(0,"rgba(238,230,212,0.08)");boost.addColorStop(1,"rgba(0,0,0,0)");ctx.fillStyle=boost;ctx.fillRect(0,0,W,H);
+  addVig(ctx,W,H,maxR*0.36,W*0.56);
+  ctx.beginPath();ctx.arc(cx,cy,maxR+2,0,Math.PI*2);ctx.strokeStyle="rgba(238,230,212,0.13)";ctx.lineWidth=0.5;ctx.stroke();
+  ctx.beginPath();ctx.arc(cx,cy,12,0,Math.PI*2);ctx.fillStyle=ART_BG;ctx.fill();
+  ctx.beginPath();ctx.arc(cx,cy,12,0,Math.PI*2);ctx.strokeStyle="rgba(238,230,212,0.45)";ctx.lineWidth=1.0;ctx.stroke();
+  ctx.save();ctx.font="300 9px 'JetBrains Mono',monospace";ctx.textAlign="center";ctx.fillStyle="rgba(238,230,212,0.13)";ctx.fillText("8 dimensions \u00b7 8-fold symmetry \u00b7 D\u2088",cx,H-14);ctx.restore();
+}
+
+/* HERO + SPECTRUM ANIMATIONS */
+var heroAnimId=null,detAnimId=null,detAnimTarget=null;
+
+function animateHero(canvas,dims){
+  if(heroAnimId)cancelAnimationFrame(heroAnimId);
+  var W=canvas.width,H=canvas.height,ctx=canvas.getContext("2d");
+  ctx.fillStyle=ART_BG;ctx.fillRect(0,0,W,H);
+  var N=80000,pts=lisPoints(dims,N),tr=getTr(pts,W,H),done=0,STEP=6000;
+  function tick(){
+    var e=Math.min(done+STEP,N-1);
+    ctx.save();ctx.strokeStyle="rgba(238,230,212,0.235)";ctx.lineWidth=0.40;ctx.lineCap="round";ctx.lineJoin="round";
+    ctx.beginPath();ctx.moveTo(pts.a[done*2]*tr.sc+tr.ox,pts.a[done*2+1]*tr.sc+tr.oy);
+    for(var i=done+1;i<=e;i++)ctx.lineTo(pts.a[i*2]*tr.sc+tr.ox,pts.a[i*2+1]*tr.sc+tr.oy);
+    ctx.stroke();ctx.restore();done=e;
+    if(done<N-1)heroAnimId=requestAnimationFrame(tick);
+    else addVig(ctx,W,H,Math.min(W,H)*0.36,Math.min(W,H)*0.58);
+  }
+  requestAnimationFrame(tick);
+}
+
+function animateDetail(canvas,dims){
+  if(detAnimId)cancelAnimationFrame(detAnimId);
+  detAnimTarget=dims;
+  var W=canvas.width,H=canvas.height,ctx=canvas.getContext("2d");
+  ctx.fillStyle=ART_BG;ctx.fillRect(0,0,W,H);
+  var N=70000,pts=lisPoints(dims,N),tr=getTr(pts,W,H),done=0,STEP=4000;
+  function tick(){
+    if(detAnimTarget!==dims)return;
+    var e=Math.min(done+STEP,N-1);
+    ctx.save();ctx.strokeStyle="rgba(238,230,212,0.260)";ctx.lineWidth=0.42;ctx.lineCap="round";ctx.lineJoin="round";
+    ctx.beginPath();ctx.moveTo(pts.a[done*2]*tr.sc+tr.ox,pts.a[done*2+1]*tr.sc+tr.oy);
+    for(var i=done+1;i<=e;i++)ctx.lineTo(pts.a[i*2]*tr.sc+tr.ox,pts.a[i*2+1]*tr.sc+tr.oy);
+    ctx.stroke();ctx.restore();done=e;
+    if(done<N-1)detAnimId=requestAnimationFrame(tick);
+    else addVig(ctx,W,H,Math.min(W,H)*0.34,Math.min(W,H)*0.55);
+  }
+  requestAnimationFrame(tick);
+}
+
+/* SPECTRUM ANIMATION */
+var SBUF=new Float32Array(10000*2),specAnimId=null,specPhase=0;
+function specDims(p){
+  var b=0.02+0.98*Math.pow(p,0.65);
+  function cl(v){return Math.max(0,Math.min(1,v));}
+  return{reasoning:cl(b+0.10*Math.sin(p*14)),coding:cl(b+0.13*Math.sin(p*10+1.2)),math:cl(b+0.09*Math.sin(p*12+2.4)),science:cl(b+0.11*Math.sin(p*8+0.6)),context:cl(b+0.15*Math.sin(p*7+3.0)),speed:cl(b+0.10*Math.sin(p*11+1.8)),efficiency:cl(b+0.09*Math.sin(p*9+2.8)),multimodal:cl(b+0.08*Math.sin(p*6+0.9))};
+}
+
+function runSpectrum(){
+  var canvas=document.getElementById("spec-canvas");if(!canvas)return;
+  var W=canvas.width,H=canvas.height,ctx=canvas.getContext("2d"),scoreEl=document.getElementById("spec-score");
+  function frame(){
+    specPhase=(specPhase+0.0008)%1.0;
+    var progress=specPhase<0.88?specPhase/0.88:(specPhase<0.95?1.0:Math.max(0,1-(specPhase-0.95)/0.05));
+    ctx.fillStyle=ART_BG;ctx.fillRect(0,0,W,H);
+    if(progress>=0.99){
+      var cx=W/2,cy=H/2,N=18000,T=40*Math.PI,pts=new Float32Array(N*2);
+      var mnX=1e9,mxX=-1e9,mnY=1e9,mxY=-1e9;
+      for(var i=0;i<N;i++){var t=(i/N)*T,x=0,y=0;for(var j=0;j<4;j++){x+=Math.sin(FX[j]*t);y+=Math.cos(FY[j]*t)}pts[i*2]=x;pts[i*2+1]=y;if(x<mnX)mnX=x;if(x>mxX)mxX=x;if(y<mnY)mnY=y;if(y>mxY)mxY=y;}
+      var sc=Math.min(W*0.78/(mxX-mnX),H*0.78/(mxY-mnY));
+      var ox=cx-((mnX+mxX)/2)*sc,oy=cy-((mnY+mxY)/2)*sc;
+      var fp={a:pts,mnX:mnX,mxX:mxX,mnY:mnY,mxY:mxY},tr={sc:sc,ox:ox,oy:oy};
+      for(var r=0;r<8;r++){ctx.save();ctx.translate(cx,cy);ctx.rotate(r*Math.PI/4);ctx.translate(-cx,-cy);strokePts(ctx,fp,tr,0.6,0.20);ctx.restore();}
+    } else {
+      var dims=specDims(progress);
+      var d=[dims.reasoning,dims.coding,dims.math,dims.science,dims.context,dims.speed,dims.efficiency,dims.multimodal];
+      var T=40*Math.PI,N=10000,mnX=1e9,mxX=-1e9,mnY=1e9,mxY=-1e9;
+      for(var i=0;i<N;i++){var t=(i/N)*T,x=0,y=0;for(var j=0;j<4;j++){x+=d[j]*Math.sin(FX[j]*t+PH[j]);y+=d[j+4]*Math.cos(FY[j]*t+PH[j+4])}SBUF[i*2]=x;SBUF[i*2+1]=y;if(x<mnX)mnX=x;if(x>mxX)mxX=x;if(y<mnY)mnY=y;if(y>mxY)mxY=y;}
+      var rx=mxX-mnX,ry=mxY-mnY;if(rx<0.01)rx=0.01;if(ry<0.01)ry=0.01;
+      var sc=Math.min(W*0.80/rx,H*0.80/ry),ox=W/2-((mnX+mxX)/2)*sc,oy=H/2-((mnY+mxY)/2)*sc;
+      ctx.save();ctx.strokeStyle="rgba(238,230,212,0.28)";ctx.lineWidth=0.50;ctx.lineCap="round";ctx.lineJoin="round";
+      ctx.beginPath();ctx.moveTo(SBUF[0]*sc+ox,SBUF[1]*sc+oy);
+      for(var i=1;i<N;i++)ctx.lineTo(SBUF[i*2]*sc+ox,SBUF[i*2+1]*sc+oy);
+      ctx.stroke();ctx.restore();
+    }
+    addVig(ctx,W,H,Math.min(W,H)*0.30,Math.min(W,H)*0.52);
+    if(scoreEl)scoreEl.textContent=Math.round(400+Math.min(1,progress)*1200);
+    specAnimId=requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+}
+
+/* NAV */
+function showView(id,btn){
+  document.querySelectorAll(".view").forEach(function(v){v.classList.remove("on")});
+  document.querySelectorAll(".nav-link").forEach(function(l){l.classList.remove("on");l.removeAttribute("aria-current")});
+  document.getElementById("view-"+id).classList.add("on");
+  if(btn&&btn.classList&&btn.classList.contains("nav-link")){btn.classList.add("on");btn.setAttribute("aria-current","page")}
+  window.scrollTo({top:0,behavior:"smooth"});
+}
+function toggleMobileNav(){
+  var hb=document.getElementById("hamburger"),mn=document.getElementById("mobile-nav"),open=mn.classList.contains("open");
+  mn.classList.toggle("open",!open);hb.classList.toggle("open",!open);hb.setAttribute("aria-expanded",String(!open));
+}
+function closeMobileNav(){
+  document.getElementById("hamburger").classList.remove("open");document.getElementById("hamburger").setAttribute("aria-expanded","false");document.getElementById("mobile-nav").classList.remove("open");
+}
+
+/* EMAIL */
+function handleEmail(e){
+  e.preventDefault();
+  // TODO: replace action with Buttondown/Mailchimp endpoint
+  document.querySelector(".email-form").style.display="none";document.getElementById("email-confirm").style.display="block";
+}
+
+/* TIER SELECTION */
+var selTierData={tier:"standard",price:"$39"};
+function selTier(el){
+  document.querySelectorAll(".tier").forEach(function(t){t.classList.remove("sel");t.setAttribute("aria-checked","false")});
+  el.classList.add("sel");el.setAttribute("aria-checked","true");
+  selTierData={tier:el.dataset.tier,price:el.dataset.price};
+  var btn=document.getElementById("order-btn"),n=el.querySelector(".tier-name").textContent.toLowerCase();
+  if(selTierData.tier==="digital")btn.textContent="Download \u2014 $5";
+  else if(selTierData.tier==="contact")btn.textContent="Enquire about certificate edition";
+  else btn.textContent="Order "+n+" \u2014 "+selTierData.price;
+}
+
+/* COMPARE */
+var cmpModels=[];
+function toggleCompare(m){
+  var idx=cmpModels.findIndex(function(x){return x.id===m.id});
+  if(idx>=0){cmpModels.splice(idx,1);document.getElementById("cell-cmp-"+m.id).classList.remove("cmp-active");}
+  else if(cmpModels.length<2){cmpModels.push(m);document.getElementById("cell-cmp-"+m.id).classList.add("cmp-active");}
+  var bar=document.getElementById("compare-bar");
+  if(cmpModels.length>0){bar.classList.add("show");document.getElementById("cmp-bar-names").textContent=cmpModels.map(function(x){return x.name}).join(" vs ");}
+  else bar.classList.remove("show");
+}
+function clearComparison(){cmpModels.forEach(function(m){document.getElementById("cell-cmp-"+m.id).classList.remove("cmp-active")});cmpModels=[];document.getElementById("compare-bar").classList.remove("show");}
+function openComparison(){
+  if(cmpModels.length<2)return;
+  var DIM_L={reasoning:"Reasoning",coding:"Coding",math:"Math",science:"Science",context:"Context",speed:"Speed",efficiency:"Efficiency",multimodal:"Multimodal"};
+  var grid=document.getElementById("cmp-grid");grid.innerHTML="";
+  cmpModels.forEach(function(m,mi){
+    var other=cmpModels[1-mi],total=m.analytical+m.technical,otherTotal=other.analytical+other.technical;
+    var col=document.createElement("div");col.className="cmp-col";
+    col.innerHTML="<div class='cmp-art'><canvas width='200' height='200' role='img' aria-label='"+m.name+"'></canvas></div>"
+      +"<div class='cmp-score' style='color:var(--tx)'>"+total+"</div>"
+      +"<div class='cmp-name'>"+m.name+"</div>"
+      +"<div class='cmp-prov'>"+m.provider+"</div>"
+      +"<div class='cmp-dims' id='cd-"+mi+"'></div>";
+    grid.appendChild(col);
+    var dd=col.querySelector("#cd-"+mi);
+    Object.entries(m.dims).forEach(function(e){
+      var k=e[0],v=e[1],ov=other.dims[k];
+      var row=document.createElement("div");row.className="cmp-dim-row";
+      row.innerHTML="<span class='cmp-dim-l'>"+DIM_L[k]+"</span><span class='cmp-dim-t'><span class='cmp-dim-f' style='width:"+Math.round(v*100)+"%;background:"+(v>=ov?"var(--red)":"var(--dm)")+"'></span></span><span class='cmp-dim-v'>"+Math.round(v*100)+"</span>";
+      dd.appendChild(row);
+    });
+    setTimeout(function(c,dims){return function(){drawEtching(c,dims,28000)}}(col.querySelector("canvas"),m.dims),mi*200);
+  });
+  showView("compare",null);document.getElementById("compare-bar").classList.remove("show");
+}
+
+/* RESULTS VIEW */
+var DIM_LABELS={reasoning:"Reasoning",coding:"Coding",math:"Math",science:"Science",context:"Context",speed:"Speed",efficiency:"Efficiency",multimodal:"Multimodal"};
+var DIM_ORDER=["reasoning","math","science","coding","context","efficiency","speed","multimodal"];
+var THRESHOLD_WEAK=0.60,THRESHOLD_STRONG=0.80;
+
+function generateSampleResults(model){
+  /* Generate realistic placeholder results until real test data exists.
+     TODO: replace with actual test result data loaded from results/[model.id].json */
+  var dims=model.dims,results={};
+  DIM_ORDER.forEach(function(dim){
+    var dimScore=dims[dim];
+    var qs=[];
+    var count={reasoning:10,math:10,science:10,coding:10,context:5,efficiency:5,speed:5,multimodal:5}[dim]||5;
+    for(var i=0;i<count;i++){
+      var r=Math.random();
+      var score;
+      if(r<dimScore*0.85)score=1.0;
+      else if(r<dimScore*0.85+0.15)score=0.5;
+      else score=0.0;
+      qs.push({
+        id:dim.toUpperCase().slice(0,1)+"0"+(i+1),
+        difficulty:i<count*0.4?"medium":"hard",
+        score:score,
+        prompt:samplePrompts[dim]?samplePrompts[dim][i%samplePrompts[dim].length]:"Sample question for "+dim+" dimension.",
+        model_answer:score===1.0?"[Correct answer provided]":score===0.5?"[Partial answer — correct approach, incomplete reasoning]":"[Incorrect or incomplete answer]",
+        reference:"[Reference answer]",
+        rubric:"Standard rubric for this question type.",
+        fail_note:score===0?"This question tests a known gap in this model’s capability in this dimension.":null
+      });
+    }
+    results[dim]=qs;
+  });
+  return results;
+}
+
+var samplePrompts={
+  reasoning:["A says B is lying. B says C is lying. C says A and B are both lying. Exactly one tells truth. Who?","All mammals breathe air. Whales breathe air. Therefore whales are mammals. Valid?","You have a 3-gal and 5-gal jug. Measure exactly 4 gallons.","A bat and ball cost $1.10. Bat costs $1 more. How much is the ball?","12 identical-looking balls, one different weight. 3 weighings to find it.","A clock shows 3:15. What is the angle between the hands?","All Glorps are Blurps. Some Blurps are Flurps. Some Glorps are Flurps. Valid?","Two prisoners, two doors. One liar, one truth-teller. One question. Which door?","If P implies Q, and Q implies R, does P imply R? Prove it.","You flip a coin until two consecutive heads. Expected number of flips?"],
+  math:["Prove that sqrt(2) is irrational.","What is the sum of integers from 1 to 200?","3 red, 5 blue balls. Two drawn. P(first red | second red)?","In a group of 30, each shakes hands with 9. Total handshakes?","Prove by induction: 1²+2²+...+n² = n(n+1)(2n+1)/6","Two trains 300 mi apart. Bird flies between at 120 mph. How far?","Find all integer solutions to x²-y²=35.","f(2x)=3f(x), f(1)=2. Find f(16).","How many ways to arrange the letters of MISSISSIPPI?","A fair coin is flipped until two consecutive heads. Expected flips?"],
+  science:["Ideal gas free expansion into vacuum. Does internal energy change?","Two Aa parents cross. What fraction of offspring are aa?","Why doesn’t the Sun collapse under gravity on the main sequence?","Half-life 5 years, start 800g. How much remains after 20 years?","Explain Type I vs Type II statistical errors with examples.","2kg block, 30° frictionless incline, 4m length. Speed at bottom?","What is a buffer solution and how does it resist pH changes?","Explain competitive inhibition. Effect on Km and Vmax?","Satellite at 400km altitude. Approximate orbital speed?","Difference between mitosis and meiosis. Why is meiosis essential?"],
+  coding:["Implement QuickSelect to find kth largest in O(n) average.","Find and fix the bug in this Fibonacci function.","Implement MinStack with O(1) push, pop, getMin.","Write is_palindrome() ignoring spaces, punctuation, case.","Detect cycle in linked list in O(1) space.","What does this async/map code output and why?","What is the time complexity of this nested loop function?","Write a Fibonacci generator.","Fix all bugs in this merge sort implementation.","Implement first_duplicate() in O(n) time."],
+  context:["What exact dollar amount appears in Section 8.3 of this document?","What is Finding #2 in this research paper and where does it appear?","These three articles make conflicting claims. Identify the contradiction.","Follow all 8 formatting rules in this document to write a paragraph.","What specific number was mentioned earlier in this conversation?"],
+  efficiency:["Explain quantum entanglement in exactly 25 words.","Summarise WWI causes in 3 bullet points, max 10 words each.","Why is the sky blue at day but red at sunset? Two sentences only.","Explain photosynthesis for a 10-year-old in max 40 words.","Respond with only a valid JSON object with three specific keys."],
+  speed:["Hi","What is 144 divided by 12?","Write exactly 500 words about the ocean.","List the first 50 prime numbers.","Translate this into French, Spanish, and German."],
+  multimodal:["Which company in this chart had highest revenue growth?","What does this flowchart output if the input is n=7?","Extract the mean of column C from this table image.","What is the measure of angle X in this diagram?","What is the next shape in this pattern sequence?"]
+};
+
+function openResults(model){
+  window._resultsModel=model;
+  document.getElementById("results-model-name").textContent=model.name;
+  document.getElementById("results-back-btn").onclick=function(){showView("detail",null);};
+  var total=model.analytical+model.technical;
+  document.getElementById("results-score-line").textContent=
+    "BRAIAIN score: "+total+" \u00b7 Analytical: "+model.analytical+" \u00b7 Technical: "+model.technical+" \u00b7 "+model.provider;
+
+  /* Find weak dimensions */
+  var weakDims=DIM_ORDER.filter(function(d){return model.dims[d]<THRESHOLD_WEAK});
+  var weakBanner=document.getElementById("weakness-banner");
+  if(weakDims.length>0){
+    weakBanner.classList.add("show");
+    document.getElementById("weakness-h").textContent=model.name+" has notable weaknesses in: "+weakDims.map(function(d){return DIM_LABELS[d]}).join(", ");
+    document.getElementById("weakness-p").textContent="The questions where this model scored 0.0 or 0.5 in these dimensions are highlighted below. These represent documented gaps in current capability.";
+  } else {
+    weakBanner.classList.remove("show");
+  }
+
+  var results=generateSampleResults(model);
+  var tabsEl=document.getElementById("results-dim-tabs");
+  var panelsEl=document.getElementById("results-panels");
+  tabsEl.innerHTML="";panelsEl.innerHTML="";
+
+  DIM_ORDER.forEach(function(dim,idx){
+    var qs=results[dim];
+    var dimScore=model.dims[dim];
+    var isWeak=dimScore<THRESHOLD_WEAK;
+    var passed=qs.filter(function(q){return q.score===1.0}).length;
+    var partial=qs.filter(function(q){return q.score===0.5}).length;
+    var failed=qs.filter(function(q){return q.score===0.0}).length;
+
+    var tab=document.createElement("button");
+    tab.className="dim-tab"+(isWeak?" has-weak":"")+(idx===0?" on":"");
+    tab.textContent=DIM_LABELS[dim]+" "+Math.round(dimScore*100);
+    tab.onclick=function(){
+      document.querySelectorAll(".dim-tab").forEach(function(t){t.classList.remove("on")});
+      document.querySelectorAll(".results-dim-panel").forEach(function(p){p.classList.remove("on")});
+      tab.classList.add("on");
+      document.getElementById("rdp-"+dim).classList.add("on");
+    };
+    tabsEl.appendChild(tab);
+
+    var panel=document.createElement("div");
+    panel.id="rdp-"+dim;
+    panel.className="results-dim-panel"+(idx===0?" on":"");
+
+    var summaryHTML="<div class='results-dim-summary'>"
+      +"<div class='rds'><div class='rds-n' style='color:#4a9e5c'>"+passed+"</div><div class='rds-l'>Correct</div></div>"
+      +"<div class='rds'><div class='rds-n' style='color:#c4861a'>"+partial+"</div><div class='rds-l'>Partial</div></div>"
+      +"<div class='rds'><div class='rds-n' style='color:var(--red)'>"+failed+"</div><div class='rds-l'>Failed</div></div>"
+      +"</div>";
+
+    if(isWeak){
+      summaryHTML+="<div class='weakness-banner show' style='margin-bottom:16px'>"
+        +"<div class='weakness-h'>Documented weakness in "+DIM_LABELS[dim]+"</div>"
+        +"<div class='weakness-p'>This model scored "+Math.round(dimScore*100)+"% in this dimension, below the 60% threshold. The failed questions below represent specific, reproducible gaps.</div>"
+        +"</div>";
+    }
+
+    var qsHTML=qs.map(function(q,qi){
+      var cls=q.score===1.0?"pass":q.score===0.5?"partial":"fail";
+      var badge=q.score===1.0?"1.0 \u2713":q.score===0.5?"0.5 ~":"0.0 \u2717";
+      return "<div class='q-result "+cls+"' id='qr-"+dim+"-"+qi+"'>"
+        +"<div class='q-result-head' onclick='toggleQResult("qr-"+dim+"-"+qi+"")'>"
+          +"<span class='q-num'>"+q.id+"</span>"
+          +"<span class='q-score-badge "+cls+"'>"+badge+"</span>"
+          +"<span class='q-prompt-preview'>"+q.prompt+"</span>"
+          +"<span class='q-expand'>\u203a</span>"
+        +"</div>"
+        +"<div class='q-result-body'>"
+          +"<div class='q-section'><div class='q-section-label'>Question</div><div class='q-section-text'>"+q.prompt+"</div></div>"
+          +"<div class='q-section'><div class='q-section-label'>Model answer</div><div class='q-model-answer'>"+q.model_answer+"</div></div>"
+          +(q.fail_note?"<div class='q-fail-note'>"+q.fail_note+"</div>":"")
+        +"</div>"
+      +"</div>";
+    }).join("");
+
+    panel.innerHTML=summaryHTML+qsHTML;
+    panelsEl.appendChild(panel);
+  });
+
+  showView("results",null);
+}
+
+function toggleQResult(id){
+  var el=document.getElementById(id);
+  el.classList.toggle("open");
+}
+
+/* DATA */
+var MODELS_SORTED=[];
+function scoreDesc(s){
+  if(s>=1350)return"Exceptional \u2014 frontier performance across all benchmark categories.";
+  if(s>=1200)return"Advanced \u2014 outperforms the majority of tested models.";
+  if(s>=1050)return"Proficient \u2014 competitive across general production use cases.";
+  return"Capable \u2014 specialised strengths or efficiency-focused design.";
+}
+
+/* BUILD TABLE */
+function buildTable(models){
+  MODELS_SORTED=[].concat(models).sort(function(a,b){return(b.analytical+b.technical)-(a.analytical+a.technical)});
+  var body=document.getElementById("tbl-body");body.innerHTML="";
+  MODELS_SORTED.forEach(function(m,i){
+    var total=m.analytical+m.technical,isTop=i===0;
+    var aW=Math.round((m.analytical-200)/600*100),tW=Math.round((m.technical-200)/600*100);
+    var barC=isTop?"var(--red)":"rgba(238,230,212,0.45)";
+    var row=document.createElement("div");
+    row.className="mrow"+(isTop?" top":"");row.setAttribute("role","row");row.setAttribute("tabindex","0");
+    row.setAttribute("aria-label",m.name+" "+total+" BRAIAIN score");
+    row.innerHTML="<div class='rn' role='cell'>"+(i+1)+"</div>"
+      +"<div role='cell'><div class='dna-wrap'><canvas width='44' height='44' role='img' aria-label='"+m.name+" DNA'></canvas></div></div>"
+      +"<div role='cell'><div class='m-name'>"+m.name+"</div><div class='m-prov'>"+m.provider+"</div></div>"
+      +"<div class='m-score' role='cell'>"+total+"</div>"
+      +"<div class='bars' role='cell' aria-label='A "+m.analytical+" T "+m.technical+"'>"
+        +"<div class='brow'><span class='blbl' aria-hidden='true'>A</span><span class='btrack'><span class='bfill' style='width:"+aW+"%;background:"+barC+"'></span></span><span class='bval'>"+m.analytical+"</span></div>"
+        +"<div class='brow'><span class='blbl' aria-hidden='true'>T</span><span class='btrack'><span class='bfill' style='width:"+tW+"%;background:"+barC+";opacity:.55'></span></span><span class='bval'>"+m.technical+"</span></div>"
+      +"</div>"
+      +"<div class='row-actions' role='cell'>"
+        +"<button class='row-btn' id='cell-cmp-"+m.id+"' onclick='event.stopPropagation();toggleCompare(MODELS_SORTED["+i+"])'>Cmp</button>"
+        +"<button class='row-btn' onclick='event.stopPropagation();openDetail(MODELS_SORTED["+i+"])'>View</button>"
+      +"</div>";
+    row.addEventListener("click",function(model){return function(){openDetail(model)}}(m));
+    row.addEventListener("keydown",function(model){return function(e){if(e.key==="Enter"||e.key===" ")openDetail(model)}}(m));
+    body.appendChild(row);
+    setTimeout(function(c,d){return function(){drawEtching(c,d,18000)}}(row.querySelector("canvas"),m.dims),i*80);
+  });
+}
+
+/* OPEN DETAIL */
+function openDetail(m){
+  var total=m.analytical+m.technical,isTop=MODELS_SORTED.length&&MODELS_SORTED[0].id===m.id;
+  var accent=isTop?"var(--red)":"var(--tx)";
+  document.getElementById("det-prov").textContent=m.provider.toUpperCase()+" \u00b7 "+m.context_window+" context";
+  var sn=document.getElementById("det-score-num");sn.textContent=total;sn.style.color=isTop?"var(--red)":"var(--tx)";
+  document.getElementById("det-desc").textContent=scoreDesc(total);
+  var an=document.getElementById("det-ana");an.textContent=m.analytical;an.style.color=accent;
+  document.getElementById("det-ana-f").style.cssText="width:"+Math.round((m.analytical-200)/600*100)+"%;background:"+accent;
+  document.getElementById("det-tech").textContent=m.technical;
+  document.getElementById("det-tech-f").style.cssText="width:"+Math.round((m.technical-200)/600*100)+"%;background:var(--tx)";
+  document.getElementById("det-params").textContent="fx=[1,2,3,5] fy=[1,3,4,7] N=70k t\u2208[0,80\u03c0]";
+
+  /* Dimensions with weakness highlighting */
+  var dl=document.getElementById("det-dims");dl.innerHTML="";
+  var weakDims=[];
+  DIM_ORDER.forEach(function(k){
+    var v=m.dims[k];
+    var isWeak=v<THRESHOLD_WEAK;
+    var isStrong=v>=THRESHOLD_STRONG;
+    if(isWeak)weakDims.push(DIM_LABELS[k]);
+    var row=document.createElement("div");row.className="dim-row";
+    row.innerHTML="<span class='dim-n'>"+DIM_LABELS[k]+"</span>"
+      +"<span class='dim-t'><span class='dim-f' style='width:"+Math.round(v*100)+"%;background:"+(isWeak?"var(--red)":isStrong?"#4a9e5c":"var(--dm)")+"'></span></span>"
+      +"<span class='dim-v' style='color:"+(isWeak?"var(--red)":"var(--dm)")+"'>"+Math.round(v*100)+"</span>";
+    if(isWeak){
+      var note=document.createElement("div");note.className="dim-weak";note.textContent="\u25b2 documented weakness";row.appendChild(note);
+    }
+    dl.appendChild(row);
+  });
+
+  var dimsNote=document.getElementById("det-dims-note");
+  if(weakDims.length>0){
+    dimsNote.style.display="block";
+    dimsNote.textContent="Documented weaknesses in: "+weakDims.join(", ")+". Red bars indicate dimensions below 60%. Click ‘View full test results’ to see every question answered.";
+  } else {
+    dimsNote.style.display="none";
+  }
+
+  document.getElementById("det-results-link").onclick=function(){openResults(m)};
+  var price=m.price_input===0?"Free (open weights)":"$"+m.price_input.toFixed(3)+"/1M input";
+  document.getElementById("det-meta").textContent="Released "+m.released+"\nPricing: "+price;
+  var tg=document.getElementById("det-tags");tg.innerHTML="";
+  (m.tags||[]).forEach(function(t){var el=document.createElement("span");el.className="tag";el.textContent=t;tg.appendChild(el)});
+  document.getElementById("det-model-link").href="/models/"+m.id+".html";
+  var dc=document.getElementById("det-canvas");dc.setAttribute("aria-label","DNA fingerprint for "+m.name);
+  selTierData={tier:"standard",price:"$39"};
+  document.querySelectorAll(".tier").forEach(function(t,i){t.classList.toggle("sel",i===0);t.setAttribute("aria-checked",i===0?"true":"false")});
+  document.getElementById("order-btn").textContent="Order standard print \u2014 $39";
+  document.getElementById("order-btn").onclick=function(){
+    if(selTierData.tier==="digital"){downloadPoster(m);}
+    else if(selTierData.tier==="contact"){window.location.href="mailto:submissions@braiain.com?subject=Certificate edition: "+m.name;}
+    else{window.open("https://braiain.com/shop/"+m.id+"?tier="+selTierData.tier,"_blank");}
+  };
+  showView("detail",null);animateDetail(dc,m.dims);
+}
+
+function downloadPoster(model){
+  var off=document.createElement("canvas");off.width=off.height=2400;
+  drawEtching(off,model.dims,1200000);
+  off.toBlob(function(blob){var a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="braiain-dna-"+model.id+"-2400px.png";a.click()},"image/png");
+}
+
+/* BUILD SHOP */
+var FLOOR_DIMS={reasoning:0.02,coding:0.02,math:0.02,science:0.02,context:0.02,speed:0.02,efficiency:0.02,multimodal:0.02};
+function buildShop(models){
+  var sorted=[].concat(models).sort(function(a,b){return(b.analytical+b.technical)-(a.analytical+a.technical)});
+  var grid=document.getElementById("shop-grid");grid.innerHTML="";
+  var floor=document.createElement("div");floor.className="scard";floor.setAttribute("role","listitem");
+  floor.innerHTML="<div class='sart'><canvas width='180' height='180' role='img' aria-label='The Floor'></canvas></div><div class='sinfo'><div class='s-name'>The Floor</div><div class='s-score' style='color:var(--dm)'>400 \u00b7 BRAIAIN score</div><div class='s-prov'>Theoretical minimum \u00b7 all dimensions at zero</div><button class='s-btn'>Order print \u2014 $39</button></div>";
+  grid.appendChild(floor);
+  setTimeout(function(){drawEtching(floor.querySelector("canvas"),FLOOR_DIMS,12000)},150);
+  floor.querySelector(".s-btn").onclick=function(){window.open("https://braiain.com/shop/the-floor","_blank")};
+  sorted.forEach(function(m,i){
+    var total=m.analytical+m.technical;
+    var card=document.createElement("div");card.className="scard";card.setAttribute("role","listitem");
+    card.innerHTML="<div class='sart'><canvas width='180' height='180' role='img' aria-label='"+m.name+"'></canvas></div><div class='sinfo'><div class='s-name'>"+m.name+"</div><div class='s-score' style='color:var(--dm)'>"+total+" \u00b7 BRAIAIN score</div><div class='s-prov'>"+m.provider+"</div><button class='s-btn'>Order print \u2014 from $39</button></div>";
+    card.querySelector(".sart").addEventListener("click",function(model){return function(){openDetail(model)}}(m));
+    card.querySelector(".s-btn").addEventListener("click",function(model){return function(){window.open("https://braiain.com/shop/"+model.id,"_blank")}}(m));
+    grid.appendChild(card);
+    setTimeout(function(c,d){return function(){drawEtching(c,d,32000)}}(card.querySelector("canvas"),m.dims),i*100+300);
+  });
+  var sa=document.getElementById("scale-art");sa.innerHTML="";
+  [{dims:FLOOR_DIMS}].concat(sorted.slice(0,4)).forEach(function(m,i){
+    var c=document.createElement("canvas");c.width=c.height=56;c.setAttribute("role","img");sa.appendChild(c);
+    setTimeout(function(cv,d){return function(){drawEtching(cv,d,7000)}}(c,m.dims),i*120+200);
+  });
+  var mc=document.createElement("canvas");mc.width=mc.height=56;mc.setAttribute("role","img");sa.appendChild(mc);
+  setTimeout(function(){drawMandala(mc)},1100);
+}
+
+/* INIT */
+async function init(){
+  try{
+    var res=await fetch("models.json");if(!res.ok)throw new Error("HTTP "+res.status);
+    var data=await res.json();var models=data.models;
+    var sorted=[].concat(models).sort(function(a,b){return(b.analytical+b.technical)-(a.analytical+a.technical)});
+    var d=new Date(data.updated);
+    var fmt=d.toLocaleDateString("en-US",{month:"long",day:"numeric",year:"numeric"});
+    document.getElementById("hero-kicker").textContent="Updated "+fmt;
+    document.getElementById("hero-kicker-sub").textContent="Independent benchmark \u00b7 "+models.length+" models \u00b7 full test results published";
+    document.getElementById("lb-meta-r").textContent=models.length+" models \u00b7 "+fmt+" \u00b7 next cycle "+data.next_cycle;
+    document.getElementById("hero-fallback").style.display="none";
+    document.getElementById("hero-art-label").textContent=sorted[0].name+" \u00b7 "+(sorted[0].analytical+sorted[0].technical);
+    buildTable(models);buildShop(models);
+    setTimeout(function(){drawMandala(document.getElementById("ceil-canvas"))},400);
+    setTimeout(function(){animateHero(document.getElementById("hero-canvas"),sorted[0].dims)},500);
+    setTimeout(runSpectrum,900);
+  }catch(e){
+    document.getElementById("hero-kicker").textContent="BRAIAIN Standard";
+    document.getElementById("hero-kicker-sub").textContent="Independent benchmark scoring every AI model 400\u20131600";
+    document.getElementById("hero-fallback").textContent="Unable to load model data";
+    console.error(e);
+  }
+}
+init();
+</script>
+</body>
+</html>
