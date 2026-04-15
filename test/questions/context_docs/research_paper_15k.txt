@@ -1,0 +1,106 @@
+TITLE: Effects of Ambient Noise on Cognitive Task Performance in Open-Plan Office Environments: A Multi-Site Longitudinal Study
+
+AUTHORS: Priya Ramanathan¹, Jorge Villalobos², Claire Dupont¹, Kwame Asante³
+1. Department of Environmental Psychology, University of Toronto
+2. Institute for Workplace Research, ETH Zurich
+3. School of Occupational Health, University of Cape Town
+
+Published in: Journal of Applied Cognitive Science, Volume 41, Issue 3, pp. 287–312 (2025)
+
+ABSTRACT
+
+Ambient noise in open-plan offices is widely reported as a source of distraction, yet its effects on different categories of cognitive work remain poorly characterized. This study measured task performance across three cognitive domains—sustained attention, creative ideation, and numerical reasoning—in 847 knowledge workers across six organizations in three countries. Workers were exposed to four noise conditions over 16 weeks: silence (<30 dB), low ambient (40–50 dB), moderate ambient (55–65 dB), and elevated ambient (70–80 dB). We report three principal findings. The results challenge the prevailing assumption that all cognitive work degrades monotonically with increased noise exposure.
+
+Keywords: open-plan office, ambient noise, cognitive performance, workplace design, attention
+
+1. INTRODUCTION
+
+The open-plan office has become the dominant workspace configuration in knowledge-intensive industries, with an estimated 70% of US office workers occupying open or semi-open environments as of 2024 (Global Workplace Analytics, 2024). While proponents cite collaboration benefits and real estate efficiency, critics point to extensive survey data showing that workers in open-plan offices report higher levels of distraction, stress, and dissatisfaction compared to those in private offices (Kim & de Dear, 2013; Bernstein & Turban, 2018).
+
+However, much of the existing literature relies on self-reported measures or laboratory simulations that may not reflect actual workplace conditions. Few studies have measured objective cognitive performance across multiple task types in real office settings with controlled noise exposure.
+
+This study addresses that gap by conducting a multi-site field experiment examining how four levels of ambient noise affect performance on three distinct cognitive task types.
+
+2. METHODS
+
+2.1 Participants
+A total of 847 knowledge workers (ages 24–58, M = 34.7, SD = 8.2; 52% female, 46% male, 2% non-binary) were recruited from six organizations: two technology companies (Toronto, Canada), two financial services firms (Zurich, Switzerland), and two consulting firms (Cape Town, South Africa). Participants were included if they worked at least 30 hours per week in an open-plan environment and had no reported hearing impairments.
+
+2.2 Noise Conditions
+Four conditions were implemented using a combination of sound masking systems and noise-cancelling partitions:
+- Condition A (Silence): <30 dB SPL
+- Condition B (Low): 40–50 dB SPL (comparable to a quiet library)
+- Condition C (Moderate): 55–65 dB SPL (typical open-plan conversation)
+- Condition D (Elevated): 70–80 dB SPL (noisy cafeteria)
+
+Each participant experienced all four conditions in a counterbalanced Latin square design over 16 weeks (4 weeks per condition).
+
+2.3 Cognitive Tasks
+Three standardized tasks were administered weekly via a web-based testing platform:
+
+Sustained Attention: Participants completed a 20-minute continuous performance test (CPT-IP) measuring hit rate, false alarm rate, and reaction time variability.
+
+Creative Ideation: Participants completed the Alternate Uses Task (AUT), generating as many novel uses for a common object as possible in 3 minutes. Responses were scored for fluency, flexibility, and originality by two trained raters (inter-rater reliability: κ = 0.83).
+
+Numerical Reasoning: Participants solved 15 multi-step word problems drawn from a validated item bank. Problems ranged from two-step arithmetic to multi-variable optimization. Accuracy and completion time were recorded.
+
+2.4 Statistical Analysis
+Linear mixed-effects models were used with noise condition as a fixed effect and participant, organization, and week as random effects. Post-hoc pairwise comparisons used Tukey's HSD correction. Effect sizes are reported as Cohen's d.
+
+3. RESULTS
+
+3.1 Finding #1: Sustained Attention Degrades Significantly Above 55 dB
+
+Sustained attention performance showed a clear threshold effect. Performance in Conditions A and B was statistically indistinguishable (d = 0.04, p = 0.82). However, performance dropped sharply from Condition B to C (d = 0.61, p < 0.001) and again from C to D (d = 0.43, p < 0.001).
+
+Hit rates: A = 0.91, B = 0.90, C = 0.78, D = 0.69
+False alarm rates: A = 0.03, B = 0.04, C = 0.09, D = 0.14
+Reaction time variability (ms): A = 42, B = 45, C = 68, D = 89
+
+The threshold at approximately 55 dB aligns with the World Health Organization's guideline for cognitive task environments (WHO, 2018).
+
+3.2 Finding #2: Moderate Ambient Noise (55–65 dB) Enhances Creative Ideation Relative to Silence
+
+Contrary to the monotonic degradation pattern observed for sustained attention, creative ideation showed an inverted-U relationship with noise level. Performance was lowest in Condition A (silence), peaked in Condition C (moderate noise), and declined slightly in Condition D.
+
+AUT fluency scores: A = 7.2, B = 8.9, C = 10.4, D = 9.1
+AUT originality scores: A = 2.1, B = 2.8, C = 3.7, D = 3.0
+
+The difference between Conditions A and C was significant for both fluency (d = 0.72, p < 0.001) and originality (d = 0.68, p < 0.001). This finding is consistent with the processing disfluency hypothesis proposed by Mehta, Zhu, and Cheema (2012), which suggests that moderate ambient noise induces a mild level of distraction that promotes abstract, divergent thinking.
+
+The effect was moderated by personality: participants scoring high on openness to experience showed a larger creativity boost under moderate noise (interaction β = 0.34, p = 0.004), while participants high in neuroticism showed no significant benefit.
+
+3.3 Finding #3: Numerical Reasoning Performance Is Resilient Below 70 dB but Collapses Under Elevated Noise
+
+Numerical reasoning showed a different pattern from both sustained attention and creative ideation. Performance was stable across Conditions A, B, and C, then dropped precipitously in Condition D.
+
+Accuracy: A = 82%, B = 81%, C = 79%, D = 58%
+Mean completion time (min): A = 11.2, B = 11.5, C = 12.1, D = 16.8
+
+The difference between Conditions C and D was highly significant (d = 0.94, p < 0.001), representing the largest effect size observed in any task-condition comparison. This suggests that numerical reasoning draws on cognitive resources that are robust to moderate distraction but susceptible to overload.
+
+Working memory capacity (measured by operation span at baseline) was a significant moderator: participants with high working memory capacity maintained performance in Condition D (accuracy = 71%) while low-capacity participants declined sharply (accuracy = 44%; interaction β = 0.52, p < 0.001).
+
+4. DISCUSSION
+
+The three findings collectively demonstrate that the relationship between ambient noise and cognitive performance is task-dependent, not uniform. The prevailing view that noise is universally harmful to cognitive work is an oversimplification.
+
+For workplace design, the practical implications are significant. Organizations cannot optimize for a single noise level across all work types. Instead, environments should provide zones calibrated to the cognitive demands of different tasks: quiet zones (<50 dB) for sustained attention tasks, moderate-noise zones (55–65 dB) for creative work, and standard open-plan areas for numerical and analytical work that tolerates moderate noise but requires protection from elevated levels.
+
+4.1 Limitations
+Several limitations should be noted. First, the noise conditions were approximations; real offices produce variable and unpredictable sound profiles. Second, the study did not control for the semantic content of noise (e.g., intelligible speech vs. unintelligible babble). Third, the 16-week duration may not capture adaptation effects that emerge over longer periods.
+
+4.2 Future Directions
+Future research should investigate: (a) the role of noise content and predictability; (b) individual differences in noise sensitivity beyond personality and working memory; (c) the interaction between noise and other environmental factors such as lighting and temperature.
+
+5. CONCLUSION
+
+Ambient noise affects cognitive performance in a task-specific manner. Sustained attention degrades above 55 dB. Creative ideation benefits from moderate noise around 55–65 dB. Numerical reasoning is resilient below 70 dB but collapses under elevated noise. These findings support differentiated workspace design rather than uniform noise policies.
+
+REFERENCES
+
+Bernstein, E. S., & Turban, S. (2018). The impact of the 'open' workspace on human collaboration. Phil. Trans. R. Soc. B, 373, 20170239.
+Global Workplace Analytics. (2024). State of the American Workplace Report.
+Kim, J., & de Dear, R. (2013). Workspace satisfaction: The privacy-communication trade-off in open-plan offices. Journal of Environmental Psychology, 36, 18–26.
+Mehta, R., Zhu, R., & Cheema, A. (2012). Is noise always bad? Exploring the effects of ambient noise on creative cognition. Journal of Consumer Research, 39(4), 784–799.
+World Health Organization. (2018). Environmental Noise Guidelines for the European Region.

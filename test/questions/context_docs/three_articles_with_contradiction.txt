@@ -1,0 +1,39 @@
+ARTICLE 1: "Mediterranean Diets and Cardiovascular Health: Updated Meta-Analysis"
+Source: The Lancet Nutrition Review, January 2025
+Author: Dr. Elena Marchetti, University of Naples
+
+A comprehensive meta-analysis of 42 randomized controlled trials involving 127,000 participants has confirmed the cardiovascular benefits of the Mediterranean diet. The analysis found that adherence to a Mediterranean dietary pattern—rich in olive oil, nuts, fish, vegetables, and whole grains—was associated with a 31% reduction in major adverse cardiovascular events (MACE) compared to control diets.
+
+The protective effect was consistent across geographic regions, age groups, and baseline cardiovascular risk levels. The strongest individual component association was with extra-virgin olive oil consumption, which alone accounted for a 14% MACE reduction when consumed at ≥4 tablespoons per day.
+
+Notably, the meta-analysis found that moderate red wine consumption (1–2 glasses per day) was independently associated with a 12% reduction in cardiovascular mortality, even after controlling for overall dietary pattern. This effect was observed across all 42 studies and was statistically significant (HR = 0.88, 95% CI: 0.82–0.94, p < 0.001).
+
+The authors concluded that the Mediterranean diet should be recommended as a first-line lifestyle intervention for cardiovascular disease prevention, with moderate red wine consumption as an acceptable component of the dietary pattern.
+
+---
+
+ARTICLE 2: "Global Burden of Alcohol: A Systematic Review of Dose-Response Relationships"
+Source: The New England Journal of Medicine, March 2025
+Author: Dr. Kenji Watanabe, Kyoto University School of Public Health
+
+A systematic review of 87 prospective cohort studies encompassing 4.2 million participants has re-examined the relationship between alcohol consumption and all-cause mortality. Using updated statistical methods that correct for "sick quitter" bias—the tendency for former drinkers in poor health to inflate the apparent benefits of moderate drinking—the review found no safe level of alcohol consumption for overall health.
+
+The dose-response curve was J-shaped for cardiovascular mortality alone, but when all-cause mortality was considered (including cancer, liver disease, accidents, and neurological conditions), even moderate consumption (1–2 drinks per day) was associated with a 4% increase in all-cause mortality (HR = 1.04, 95% CI: 1.01–1.07, p = 0.02).
+
+Critically, the review found that moderate red wine consumption showed NO independent cardiovascular benefit once confounding variables were properly controlled. The apparent "French Paradox" benefit was entirely attributable to other lifestyle factors correlated with moderate wine consumption (higher income, better diet quality, more physical activity, lower smoking rates). The study reported a hazard ratio for moderate red wine consumption and cardiovascular mortality of HR = 1.01 (95% CI: 0.96–1.06, p = 0.71), indicating no statistically significant protective effect.
+
+The authors recommended that public health guidelines should state clearly that no level of alcohol consumption improves health, and that any perceived cardiovascular benefits of moderate red wine are an artifact of residual confounding.
+
+---
+
+ARTICLE 3: "Olive Oil Polyphenols: Mechanisms of Cardioprotection"
+Source: Annual Review of Nutrition, February 2025
+Author: Dr. Sofia Papadopoulos, National and Kapodistrian University of Athens
+
+This mechanistic review examined the biochemical pathways through which olive oil polyphenols—particularly oleocanthal, oleuropein, and hydroxytyrosol—exert cardioprotective effects. In vitro and in vivo studies demonstrate that these compounds reduce oxidative stress, inhibit platelet aggregation, improve endothelial function, and modulate inflammatory gene expression via the NF-κB pathway.
+
+Clinical trials confirm that extra-virgin olive oil (EVOO) consumption of ≥4 tablespoons per day significantly reduces LDL oxidation, improves HDL functionality, and lowers systemic inflammatory markers including C-reactive protein and interleukin-6. These effects are dose-dependent and are not observed with refined olive oil, confirming that the polyphenol content is the active component.
+
+The review also examined the broader Mediterranean diet context. The author noted that the cardiovascular benefits of the Mediterranean dietary pattern are well-established and extend beyond olive oil alone. However, the author emphasized that certain commonly cited components lack strong evidence of independent benefit. Specifically, the review stated that moderate red wine consumption has not been shown to provide cardiovascular protection beyond what is explained by the overall dietary pattern and associated lifestyle factors.
+
+The review concluded that olive oil polyphenols represent a promising area for functional food development and therapeutic application, while calling for more rigorous isolation of individual dietary components in future clinical trials.

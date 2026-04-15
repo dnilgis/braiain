@@ -1,0 +1,474 @@
+{
+  "version": "1.0",
+  "total_fixed": 60,
+  "note": "Fixed questions — stable across cycles. 30% rotated quarterly. Full questions private; format published.",
+  "dimensions": {
+
+    "reasoning": {
+      "fixed_count": 10,
+      "scoring_mix": {"tier1_auto": 4, "tier2_judge": 5, "tier3_human": 1},
+      "questions": [
+        {
+          "id": "R01", "difficulty": "hard", "tier": 2,
+          "prompt": "A village barber shaves all those, and only those, who do not shave themselves. Does the barber shave himself? Explain your answer carefully.",
+          "reference": "The premise is self-contradictory — no such barber can exist. This is Russell's Paradox. If the barber shaves himself, he violates the rule (he only shaves non-self-shavers). If he doesn't, he must (he shaves all non-self-shavers). The question has no valid answer because the premise is logically impossible.",
+          "rubric": "1.0: identifies impossibility and explains the self-referential contradiction. 0.5: says no answer exists without explaining why. 0.0: gives yes or no without recognising the paradox."
+        },
+        {
+          "id": "R02", "difficulty": "hard", "tier": 2,
+          "prompt": "You have 12 balls identical in appearance. One ball is slightly heavier or lighter than the others. You have a balance scale and may use it exactly 3 times. Describe your strategy to identify the odd ball and determine whether it is heavier or lighter.",
+          "reference": "Split into three groups of 4. Weigh A vs B. Case 1 (balanced): odd ball in C. Weigh 3 from C vs 3 known-good balls. If balanced, the unweighed C ball is odd — one more weighing reveals heavy/light. If unbalanced, narrow down from the 3 suspects. Case 2 (unbalanced): odd ball in A or B. Mark which side is heavy. Take 3 from the heavy side, compare with 3 from the light side (swapping one from each). Multiple branch analysis follows. Full solution covers all cases in 3 weighings.",
+          "rubric": "1.0: correct complete strategy, all cases covered. 0.5: correct first weighing with partial case analysis. 0.0: cannot solve in 3 weighings or wrong approach."
+        },
+        {
+          "id": "R03", "difficulty": "medium", "tier": 1,
+          "prompt": "Is this argument valid? 'All mammals breathe air. Whales breathe air. Therefore, whales are mammals.' Answer with Valid or Invalid and explain.",
+          "reference": "Invalid",
+          "rubric": "1.0: Invalid, with explanation of affirming the consequent fallacy. 0.5: Invalid without explanation. 0.0: Valid."
+        },
+        {
+          "id": "R04", "difficulty": "hard", "tier": 2,
+          "prompt": "A says 'B is lying.' B says 'C is lying.' C says 'A and B are both lying.' Exactly one of them is telling the truth. Who is it?",
+          "reference": "B. If B tells the truth: C lies (C claimed both A and B lie, but B tells truth). A lies (A claimed B lies, but B tells truth). This gives exactly one truth-teller (B). Check consistency: both A and C are indeed lying, which is consistent with B's claim being true.",
+          "rubric": "1.0: B, with complete logical chain. 0.5: B without full justification. 0.0: wrong person."
+        },
+        {
+          "id": "R05", "difficulty": "medium", "tier": 2,
+          "prompt": "A study finds that cities with more firefighters have more fires. A politician concludes firefighters cause fires and proposes reducing fire departments. What is the flaw in this reasoning?",
+          "reference": "Confounding variable: city size. Larger cities have both more firefighters (allocated proportionally to population and risk) and more fires (more buildings, higher density). City size causes both. The correlation between firefighters and fires is spurious — driven by their shared cause. This is the classic lurking variable problem, not evidence of causation.",
+          "rubric": "1.0: identifies city size as confound, explains causal structure correctly. 0.5: 'correlation not causation' without naming the confound. 0.0: agrees with the politician or gives unrelated criticism."
+        },
+        {
+          "id": "R06", "difficulty": "hard", "tier": 2,
+          "prompt": "You are a prisoner facing two doors: one leads to freedom, one to death. Two guards stand by — one always tells the truth, one always lies. You do not know which is which. You may ask one guard one yes/no question. What do you ask to guarantee choosing the freedom door?",
+          "reference": "Ask either guard: 'If I asked the other guard which door leads to freedom, what would they say?' Then take the OPPOSITE door. If you ask the truth-teller: they truthfully report what the liar would say — the liar would point to the death door, so the truth-teller confirms: death door. Take the other. If you ask the liar: they lie about what the truth-teller would say — the truth-teller would point to freedom, so the liar says: death door. Take the other. Both cases: the answer points to death — take the opposite.",
+          "rubric": "1.0: correct question AND explains why it works for both guard types. 0.5: correct question without explanation. 0.0: any other approach."
+        },
+        {
+          "id": "R07", "difficulty": "medium", "tier": 1,
+          "prompt": "A clock shows 3:15. What is the exact angle in degrees between the hour and minute hands?",
+          "reference": "7.5",
+          "rubric": "1.0: 7.5 degrees. Working: minute hand at 90 degrees (15 min x 6 deg/min). Hour hand at 90 + (15 x 0.5) = 97.5 degrees. Difference: 7.5. 0.0: 0 degrees (ignoring hour hand movement), or any other answer."
+        },
+        {
+          "id": "R08", "difficulty": "medium", "tier": 1,
+          "prompt": "You have a 3-gallon jug and a 5-gallon jug, both unmarked, and unlimited water. Describe the exact steps to measure exactly 4 gallons.",
+          "reference": "Fill 5-gallon jug. Pour from 5 into 3 until 3 is full (2 remain in 5). Empty 3-gallon jug. Pour 2 gallons from 5 into 3. Fill 5-gallon jug again. Pour from 5 into 3 until 3 is full (3 needs 1 more gallon). 5-gallon jug now contains exactly 4 gallons.",
+          "rubric": "1.0: correct sequence of steps, arrives at 4 gallons. 0.5: correct method with one minor error. 0.0: wrong method or wrong result."
+        },
+        {
+          "id": "R09", "difficulty": "hard", "tier": 2,
+          "prompt": "Asha says: 'Exactly one of us three is lying.' Bryn says: 'Exactly two of us three are lying.' Cal says: 'All three of us are lying.' How many are actually lying? Show your reasoning.",
+          "reference": "Two people are lying (Asha and Cal). Analysis: Cal cannot be telling the truth — if all three lie, Cal also lies, which is a contradiction. So Cal lies. If Bryn tells truth (exactly two are lying) and Cal lies, then exactly one of Asha/Bryn also lies. If Asha lies: two liars total (Asha + Cal). Check Asha: she said exactly one lies, but two lie — Asha is indeed lying. Consistent. Bryn tells truth, Asha and Cal lie. Answer: 2.",
+          "rubric": "1.0: answer is 2, with consistent case analysis showing Bryn tells truth. 0.5: correct answer without proof. 0.0: wrong answer."
+        },
+        {
+          "id": "R10", "difficulty": "medium", "tier": 1,
+          "prompt": "A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball cost? Give your answer in cents.",
+          "reference": "5",
+          "rubric": "1.0: 5 cents ($0.05). 0.0: 10 cents ($0.10) — the intuitive wrong answer. Note: this is a Cognitive Reflection Test item included to test whether models reason or pattern-match."
+        }
+      ]
+    },
+
+    "math": {
+      "fixed_count": 10,
+      "scoring_mix": {"tier1_auto": 6, "tier2_judge": 2, "tier3_human": 2},
+      "questions": [
+        {
+          "id": "M01", "difficulty": "hard", "tier": 3,
+          "prompt": "Prove that the square root of 2 is irrational. Write a complete formal proof.",
+          "reference": "Proof by contradiction. Assume sqrt(2) = p/q where gcd(p,q) = 1. Then 2 = p^2/q^2, so p^2 = 2q^2, meaning p^2 is even, therefore p is even. Write p = 2k. Then 4k^2 = 2q^2, so q^2 = 2k^2, meaning q is also even. But then gcd(p,q) >= 2, contradicting gcd(p,q) = 1. Therefore sqrt(2) cannot be rational.",
+          "rubric": "1.0: complete proof with all steps including justification that p^2 even implies p even. 0.5: correct structure with one gap. 0.0: circular argument or fundamentally wrong approach."
+        },
+        {
+          "id": "M02", "difficulty": "hard", "tier": 1,
+          "prompt": "A bag contains 3 red balls and 5 blue balls. Two balls are drawn without replacement. Given that the second ball drawn is red, what is the probability that the first ball was also red? Give your answer as a simplified fraction.",
+          "reference": "2/7",
+          "rubric": "1.0: 2/7. Working: P(both red) = (3/8)(2/7) = 6/56. P(second red) = 6/56 + (5/8)(3/7) = 21/56. P(first red | second red) = 6/21 = 2/7. 0.5: correct method, arithmetic error. 0.0: wrong method."
+        },
+        {
+          "id": "M03", "difficulty": "hard", "tier": 1,
+          "prompt": "In a group of 30 people, each person shakes hands with exactly 9 others. What is the total number of handshakes?",
+          "reference": "135",
+          "rubric": "1.0: 135. Each handshake involves 2 people: (30 x 9) / 2 = 135. 0.5: 270 (forgot to halve). 0.0: other."
+        },
+        {
+          "id": "M04", "difficulty": "medium", "tier": 1,
+          "prompt": "What is the sum of all integers from 1 to 200 inclusive?",
+          "reference": "20100",
+          "rubric": "1.0: 20100 with n(n+1)/2 formula or equivalent. 0.5: correct method, arithmetic error. 0.0: wrong approach."
+        },
+        {
+          "id": "M05", "difficulty": "hard", "tier": 3,
+          "prompt": "Prove by mathematical induction that for all positive integers n: 1^2 + 2^2 + 3^2 + ... + n^2 = n(n+1)(2n+1)/6.",
+          "reference": "Base case n=1: LHS = 1, RHS = 1(2)(3)/6 = 1. Equal. Check. Inductive step: assume true for k. Show true for k+1. Sum to k+1 = k(k+1)(2k+1)/6 + (k+1)^2 = (k+1)[k(2k+1)/6 + (k+1)] = (k+1)(2k^2+k+6k+6)/6 = (k+1)(2k^2+7k+6)/6 = (k+1)(k+2)(2k+3)/6. This equals (k+1)((k+1)+1)(2(k+1)+1)/6. QED.",
+          "rubric": "1.0: complete proof, both cases, algebra correct. 0.5: correct structure with one algebraic error. 0.0: missing base case or induction step."
+        },
+        {
+          "id": "M06", "difficulty": "medium", "tier": 1,
+          "prompt": "Two trains are 300 miles apart and travel toward each other: one at 80 mph, the other at 70 mph. A bird starts at the faster train and flies back and forth between them at 120 mph until the trains meet. How many miles does the bird fly in total?",
+          "reference": "240",
+          "rubric": "1.0: 240. Time for trains to meet: 300/150 = 2 hours. Bird flies 2 x 120 = 240 miles. 0.5: correct time (2 hours) but arithmetic error on bird distance. 0.0: attempted infinite series without getting correct answer."
+        },
+        {
+          "id": "M07", "difficulty": "hard", "tier": 1,
+          "prompt": "Find all integer solutions to x^2 - y^2 = 35. List all solutions.",
+          "reference": "(18,17), (18,-17), (-18,17), (-18,-17), (6,1), (6,-1), (-6,1), (-6,-1)",
+          "rubric": "1.0: all 8 solutions via (x+y)(x-y)=35 factoring. 0.5: correct method, missed sign cases (got 2 or 4 solutions). 0.0: wrong approach or only 1 solution."
+        },
+        {
+          "id": "M08", "difficulty": "medium", "tier": 1,
+          "prompt": "A function f satisfies f(2x) = 3*f(x) for all real x, and f(1) = 2. What is f(16)?",
+          "reference": "162",
+          "rubric": "1.0: 162. f(2)=6, f(4)=18, f(8)=54, f(16)=162. 0.5: correct method, one arithmetic error. 0.0: wrong functional equation application."
+        },
+        {
+          "id": "M09", "difficulty": "hard", "tier": 1,
+          "prompt": "How many distinct ways can the letters of the word MISSISSIPPI be arranged?",
+          "reference": "34650",
+          "rubric": "1.0: 34650. Formula: 11!/(4! x 4! x 2! x 1!) = 39916800/1152 = 34650. 0.5: correct formula, arithmetic error. 0.0: just 11! or wrong letter frequency counts."
+        },
+        {
+          "id": "M10", "difficulty": "hard", "tier": 2,
+          "prompt": "A fair coin is flipped repeatedly until two consecutive heads appear. What is the expected number of flips?",
+          "reference": "6",
+          "rubric": "1.0: 6 with Markov chain or correct recursive argument. Setup: E = expected flips from start, E_A = expected flips after one head. E = 1 + (1/2)E_A + (1/2)E. E_A = 1 + (1/2)(0) + (1/2)E. Solving: E=6. 0.5: correct setup, algebra error. 0.0: wrong answer without state-based reasoning."
+        }
+      ]
+    },
+
+    "science": {
+      "fixed_count": 10,
+      "scoring_mix": {"tier1_auto": 2, "tier2_judge": 6, "tier3_human": 2},
+      "questions": [
+        {
+          "id": "S01", "difficulty": "hard", "tier": 2,
+          "prompt": "An ideal gas expands adiabatically against a vacuum (free expansion into a vacuum). Does the internal energy change? Does the temperature change? What happens for a real gas instead? Explain each case.",
+          "reference": "Free expansion: w=0 (no external pressure), q=0 (adiabatic). First law: delta_U = 0. For ideal gas: internal energy depends only on T, so delta_T = 0. For real gas: delta_U = 0 still holds, but U also depends on intermolecular distances (potential energy). As molecules spread out, potential energy changes, so kinetic energy (and thus temperature) must change to compensate. Real gases typically cool slightly (Joule-Thomson effect for most gases above their inversion temperature).",
+          "rubric": "1.0: correct for ideal (delta_U=0, delta_T=0) AND real gas (delta_U=0, delta_T not necessarily 0, reason given). 0.5: correct for ideal only. 0.0: delta_U not equal to 0, or wrong for ideal gas."
+        },
+        {
+          "id": "S02", "difficulty": "medium", "tier": 1,
+          "prompt": "Two heterozygous parents (Aa x Aa) cross. What fraction of offspring will be homozygous recessive (aa)?",
+          "reference": "0.25",
+          "rubric": "1.0: 1/4 or 25% or 0.25. 0.5: shows correct Punnett square but gives wrong fraction. 0.0: wrong answer."
+        },
+        {
+          "id": "S03", "difficulty": "hard", "tier": 2,
+          "prompt": "Why does a star like the Sun not collapse under its own gravity while it is on the main sequence? What happens when this balance is disrupted?",
+          "reference": "Hydrostatic equilibrium: inward gravitational force is balanced by outward pressure (radiation pressure plus thermal gas pressure) generated by nuclear fusion in the core. The Sun fuses hydrogen into helium via the proton-proton chain. When hydrogen in the core is exhausted, fusion stops, equilibrium is lost, the core contracts, outer layers expand — the star leaves the main sequence and evolves toward a red giant.",
+          "rubric": "1.0: names hydrostatic equilibrium, identifies fusion as energy source, describes what happens when fuel depletes. 0.5: mentions pressure balance without naming energy source. 0.0: 'too hot to collapse' or wrong mechanism."
+        },
+        {
+          "id": "S04", "difficulty": "medium", "tier": 1,
+          "prompt": "A radioactive isotope has a half-life of 5 years. If you start with 800 grams, how many grams remain after 20 years?",
+          "reference": "50",
+          "rubric": "1.0: 50g. 20 years = 4 half-lives. 800 -> 400 -> 200 -> 100 -> 50. 0.5: correct process, arithmetic error. 0.0: wrong."
+        },
+        {
+          "id": "S05", "difficulty": "hard", "tier": 2,
+          "prompt": "Explain the difference between Type I and Type II errors in statistical hypothesis testing. Give one real-world example where each type of error is more costly than the other.",
+          "reference": "Type I (false positive): rejecting a true null hypothesis. Type II (false negative): failing to reject a false null hypothesis. Type I more costly: drug approval — approving an ineffective or harmful drug means patients receive no benefit or are harmed. Type II more costly: disease screening — missing a sick patient means they go untreated. The trade-off is controlled by significance level alpha.",
+          "rubric": "1.0: correct definitions of both types, with clear examples where each is more costly. 0.5: correct definitions without clear examples. 0.0: confuses the two types."
+        },
+        {
+          "id": "S06", "difficulty": "hard", "tier": 2,
+          "prompt": "A 2kg block slides down a frictionless incline of angle 30 degrees and length 4 metres. What is its speed at the bottom? Use g = 9.8 m/s^2. Show your working.",
+          "reference": "Approximately 6.26 m/s. Height = 4 x sin(30) = 4 x 0.5 = 2m. Energy conservation (frictionless): mgh = (1/2)mv^2. v = sqrt(2gh) = sqrt(2 x 9.8 x 2) = sqrt(39.2) = 6.26 m/s. Mass cancels.",
+          "rubric": "1.0: ~6.26 m/s with correct height calculation and energy conservation. 0.5: correct method, minor arithmetic error. 0.0: uses wrong formula or wrong height."
+        },
+        {
+          "id": "S07", "difficulty": "medium", "tier": 2,
+          "prompt": "What is a buffer solution, and how does it resist changes in pH when a small amount of strong acid or base is added? Give a specific example.",
+          "reference": "A buffer solution resists pH changes when small amounts of acid or base are added. It contains a weak acid and its conjugate base (or weak base and conjugate acid) in significant concentrations. Example: acetic acid / sodium acetate. Adding H+: the conjugate base (acetate) reacts with it — CH3COO- + H+ -> CH3COOH — consuming the acid without large pH change. Adding OH-: the weak acid reacts — CH3COOH + OH- -> CH3COO- + H2O. Henderson-Hasselbalch equation governs: pH = pKa + log([A-]/[HA]).",
+          "rubric": "1.0: correct mechanism (weak acid/conjugate base pair), specific example, shows how both acid and base additions are resisted. 0.5: correct concept without mechanism or example. 0.0: wrong explanation."
+        },
+        {
+          "id": "S08", "difficulty": "hard", "tier": 2,
+          "prompt": "Explain competitive inhibition of enzymes. How does it affect Km and Vmax? How can you experimentally distinguish competitive from non-competitive inhibition?",
+          "reference": "Competitive inhibitor binds to the active site, competing with the substrate. Effect: Km increases (lower apparent affinity — more substrate needed to achieve half-Vmax), Vmax unchanged (at sufficiently high substrate concentration, inhibitor is outcompeted). Non-competitive: binds allosteric site, Km unchanged, Vmax decreases. Experimental distinction: Lineweaver-Burk (double reciprocal) plot. Competitive: lines intersect on y-axis (same Vmax, different Km). Non-competitive: lines intersect on x-axis (same Km, different Vmax).",
+          "rubric": "1.0: correct effects on Km and Vmax, correct experimental method (Lineweaver-Burk). 0.5: correct Km/Vmax effects without experimental method. 0.0: Km and Vmax both wrong."
+        },
+        {
+          "id": "S09", "difficulty": "hard", "tier": 2,
+          "prompt": "A satellite orbits Earth at an altitude of 400 km. Approximately what is its orbital speed? Use: g = 9.8 m/s^2, R_Earth = 6371 km. Show your reasoning.",
+          "reference": "Approximately 7,668 m/s (about 7.7 km/s). At altitude h, orbital radius r = R + h = 6371 + 400 = 6771 km = 6,771,000 m. Centripetal acceleration = gravitational acceleration at that altitude. g_h = g x (R/r)^2 = 9.8 x (6371/6771)^2 = 9.8 x 0.884 = 8.66 m/s^2. For circular orbit: v^2/r = g_h. v = sqrt(g_h x r) = sqrt(8.66 x 6,771,000) = sqrt(58,637,000) = ~7,657 m/s.",
+          "rubric": "1.0: correct to within 5% (~7,600-7,800 m/s) with correct method (g decreases with altitude, centripetal = gravitational). 0.5: correct method, minor calculation error. 0.0: uses surface g without correction, or wrong formula."
+        },
+        {
+          "id": "S10", "difficulty": "medium", "tier": 2,
+          "prompt": "What is the key difference between mitosis and meiosis? Why is meiosis essential for sexual reproduction in diploid organisms?",
+          "reference": "Mitosis: one division, two identical diploid daughter cells (2n -> 2n + 2n). Used for growth and repair. Meiosis: two divisions, four genetically unique haploid cells (2n -> n + n + n + n). Used for gamete production. Meiosis is essential because sexual reproduction involves fusion of two gametes (fertilization). If gametes were diploid, each generation would double the chromosome count. Meiosis halves the chromosome number so fertilization restores it. Crossing over in meiosis I also creates genetic diversity.",
+          "rubric": "1.0: correct cell counts and ploidy, explains why haploid gametes are needed to maintain chromosome number across generations. 0.5: correct ploidy without explaining why meiosis is needed. 0.0: confuses mitosis and meiosis."
+        }
+      ]
+    },
+
+    "coding": {
+      "fixed_count": 10,
+      "scoring_mix": {"tier1_auto": 8, "tier2_judge": 2, "tier3_human": 0},
+      "unit_test_language": "python",
+      "questions": [
+        {
+          "id": "C01", "difficulty": "hard", "tier": 1,
+          "prompt": "Implement a function `quickselect(arr, k)` that returns the k-th largest element in an unsorted list in average O(n) time. Do not sort the entire list. Handle edge cases.",
+          "reference_approach": "QuickSelect with randomized pivot. Partition around pivot. If pivot_index == len-k, return. If len-k < pivot_index, recurse left. Else recurse right.",
+          "unit_tests": [
+            {"input": "[3,1,4,1,5,9,2,6], 1", "expected": "9"},
+            {"input": "[3,1,4,1,5,9,2,6], 3", "expected": "5"},
+            {"input": "[7], 1", "expected": "7"},
+            {"input": "[2,1], 2", "expected": "1"},
+            {"input": "[5,5,5,5], 2", "expected": "5"},
+            {"input": "[-3,-1,-4,-1,-5], 1", "expected": "-1"},
+            {"input": "[1,2,3,4,5], 5", "expected": "1"},
+            {"input": "[100,1], 1", "expected": "100"}
+          ],
+          "rubric": "Score = tests_passed/8. Deduct 0.1 if O(n log n) approach (sorting). Deduct 0.1 if no edge case handling."
+        },
+        {
+          "id": "C02", "difficulty": "medium", "tier": 1,
+          "prompt": "The following Python function has a bug. Find it and provide the corrected code:\n\ndef fibonacci(n):\n    if n == 0: return 0\n    if n == 1: return 0\n    return fibonacci(n-1) + fibonacci(n-2)",
+          "reference": "Bug on line 3: `if n == 1: return 0` should be `if n == 1: return 1`. The Fibonacci sequence starts 0, 1, 1, 2, 3... so F(1) = 1, not 0.",
+          "unit_tests": [
+            {"input": "fibonacci(0)", "expected": "0"},
+            {"input": "fibonacci(1)", "expected": "1"},
+            {"input": "fibonacci(5)", "expected": "5"},
+            {"input": "fibonacci(10)", "expected": "55"}
+          ],
+          "rubric": "Score = tests_passed/4 on corrected code. Additional: 0.2 bonus if model names the exact bug location (line 3, wrong return value)."
+        },
+        {
+          "id": "C03", "difficulty": "hard", "tier": 1,
+          "prompt": "Implement a `MinStack` class in Python with three methods: `push(val)`, `pop()`, and `get_min()`. All three must run in O(1) time.",
+          "reference_approach": "Two stacks: main stack and min_stack. push: append to main; append min(val, min_stack[-1]) to min_stack. pop: pop from both. get_min: return min_stack[-1].",
+          "unit_tests": [
+            {"ops": "push(5);push(3);push(7);push(1);get_min", "expected": "1"},
+            {"ops": "push(5);push(3);pop;get_min", "expected": "5"},
+            {"ops": "push(-2);push(0);push(-3);get_min;pop;get_min", "expected": "-3,0"},
+            {"ops": "push(1);get_min", "expected": "1"},
+            {"ops": "push(2);push(2);pop;get_min", "expected": "2"}
+          ],
+          "rubric": "Score = tests_passed/5. Deduct 0.3 if O(n) approach for get_min (scanning stack)."
+        },
+        {
+          "id": "C04", "difficulty": "medium", "tier": 1,
+          "prompt": "Write a Python function `is_palindrome(s)` that returns True if s is a valid palindrome, ignoring spaces, punctuation, and capitalisation. Must pass: is_palindrome('A man, a plan, a canal: Panama') == True",
+          "reference": "import re\ndef is_palindrome(s):\n    clean = re.sub(r'[^a-z0-9]', '', s.lower())\n    return clean == clean[::-1]",
+          "unit_tests": [
+            {"input": "'A man, a plan, a canal: Panama'", "expected": "True"},
+            {"input": "'race a car'", "expected": "False"},
+            {"input": "''", "expected": "True"},
+            {"input": "'a'", "expected": "True"},
+            {"input": "'Was it a car or a cat I saw?'", "expected": "True"},
+            {"input": "'hello'", "expected": "False"}
+          ],
+          "rubric": "Score = tests_passed/6."
+        },
+        {
+          "id": "C05", "difficulty": "hard", "tier": 1,
+          "prompt": "Implement `has_cycle(head)` that detects if a singly linked list contains a cycle. Must use O(1) extra space (no sets or hash maps).",
+          "reference_approach": "Floyd's cycle detection. slow = fast = head. While fast and fast.next: slow = slow.next, fast = fast.next.next. If slow == fast: return True. Return False.",
+          "unit_tests": [
+            {"desc": "no cycle, 5 nodes", "expected": "False"},
+            {"desc": "cycle at end", "expected": "True"},
+            {"desc": "cycle in middle", "expected": "True"},
+            {"desc": "single node no cycle", "expected": "False"},
+            {"desc": "two nodes, cycle", "expected": "True"}
+          ],
+          "rubric": "Score = tests_passed/5. Deduct 0.3 if uses set (O(n) space violates constraint)."
+        },
+        {
+          "id": "C06", "difficulty": "medium", "tier": 2,
+          "prompt": "What does this code output and why?\n\nconst arr = [1, 2, 3];\nconst doubled = arr.map(async (x) => x * 2);\nconsole.log(doubled);",
+          "reference": "It logs an array of three Promise objects, not [2, 4, 6]. The async callback returns a Promise for each element. Array.map() does not await Promises — it collects the return values synchronously, which are unresolved Promises. To get [2, 4, 6] you would need: await Promise.all(arr.map(async (x) => x * 2))",
+          "rubric": "1.0: correctly identifies output as array of Promises AND explains why (async function returns Promise, map does not await). 0.5: knows it won't be [2,4,6] without explaining Promises. 0.0: says [2,4,6]."
+        },
+        {
+          "id": "C07", "difficulty": "medium", "tier": 1,
+          "prompt": "What is the time complexity (Big O) of this function? Justify your answer.\n\ndef mystery(n):\n    total = 0\n    for i in range(n):\n        j = 1\n        while j < n:\n            j *= 2\n        total += 1\n    return total",
+          "reference": "O(n log n). The outer loop runs n times. The inner while loop doubles j each iteration until j >= n, which takes ceil(log2(n)) iterations. Total operations: n * log(n) = O(n log n).",
+          "unit_tests": [
+            {"input": "Answer contains 'n log n' or 'nlogn'", "expected": "True"}
+          ],
+          "rubric": "1.0: O(n log n) with correct justification of both loops. 0.5: O(n log n) without justification. 0.0: O(n^2) or O(n)."
+        },
+        {
+          "id": "C08", "difficulty": "medium", "tier": 1,
+          "prompt": "Write a Python generator function `fibonacci_gen()` that yields Fibonacci numbers indefinitely starting from F(0)=0, F(1)=1, F(2)=1, ...",
+          "reference": "def fibonacci_gen():\n    a, b = 0, 1\n    while True:\n        yield a\n        a, b = b, a + b",
+          "unit_tests": [
+            {"desc": "first 10 values", "expected": "[0,1,1,2,3,5,8,13,21,34]"},
+            {"desc": "is a generator (has __next__)", "expected": "True"},
+            {"desc": "F(20) = 6765", "expected": "6765"}
+          ],
+          "rubric": "Score = tests_passed/3. Deduct 0.5 if returns list instead of generator."
+        },
+        {
+          "id": "C09", "difficulty": "hard", "tier": 1,
+          "prompt": "This merge sort is broken. Identify all bugs and provide corrected code:\n\ndef merge_sort(arr):\n    mid = len(arr) // 2\n    left = merge_sort(arr[:mid])\n    right = merge_sort(arr[mid:])\n    return merge(left, right)",
+          "reference": "Bug 1 (critical): missing base case — no termination condition. Add: if len(arr) <= 1: return arr. Bug 2 (structural): merge() is not defined in the snippet — must implement it. Corrected code includes both the base case and the merge helper.",
+          "unit_tests": [
+            {"input": "[3,1,4,1,5,9]", "expected": "[1,1,3,4,5,9]"},
+            {"input": "[]", "expected": "[]"},
+            {"input": "[1]", "expected": "[1]"},
+            {"input": "[2,1]", "expected": "[1,2]"}
+          ],
+          "rubric": "Score = tests_passed/4 on corrected code. Full score requires fixing base case and implementing merge."
+        },
+        {
+          "id": "C10", "difficulty": "hard", "tier": 1,
+          "prompt": "Implement `first_duplicate(arr)` in Python that returns the first integer in the list that appears more than once (first by position of the second occurrence). Return None if no duplicates. Solve in O(n) time, O(n) space.",
+          "reference": "def first_duplicate(arr):\n    seen = set()\n    for x in arr:\n        if x in seen:\n            return x\n        seen.add(x)\n    return None",
+          "unit_tests": [
+            {"input": "[2,1,3,5,3,2]", "expected": "3"},
+            {"input": "[2,3,3,1,5,2]", "expected": "3"},
+            {"input": "[1,2,3]", "expected": "None"},
+            {"input": "[]", "expected": "None"},
+            {"input": "[-1,-2,-1]", "expected": "-1"},
+            {"input": "[1,1]", "expected": "1"}
+          ],
+          "rubric": "Score = tests_passed/6. Deduct 0.2 for O(n^2) nested loop solution."
+        }
+      ]
+    },
+
+    "context": {
+      "fixed_count": 5,
+      "scoring_mix": {"tier1_auto": 3, "tier2_judge": 2, "tier3_human": 0},
+      "note": "Context documents are in questions/context_docs/. Rotate 2 docs per quarter.",
+      "questions": [
+        {
+          "id": "X01", "difficulty": "hard", "tier": 1,
+          "doc": "context_docs/legal_agreement_10k.txt",
+          "prompt": "Read the document carefully. What is the exact dollar amount specified in Section 8.3 under 'Limitation of Liability'?",
+          "reference": "$2,500,000 (Two Million Five Hundred Thousand Dollars)",
+          "rubric": "1.0: $2,500,000 (exact figure). 0.5: correct section, wrong figure. 0.0: hallucinated figure or 'cannot find' when figure exists."
+        },
+        {
+          "id": "X02", "difficulty": "hard", "tier": 1,
+          "doc": "context_docs/research_paper_15k.txt",
+          "prompt": "Three findings are reported in this paper. What is Finding #2, and on which page/section does it appear?",
+          "reference": "Finding #2: Moderate ambient noise (55–65 dB) enhances creative ideation relative to silence. Located in Section 3.2 (Results). AUT fluency peaked at 10.4 under moderate noise vs 7.2 in silence, with effect size d=0.72.",
+          "rubric": "1.0: correct finding AND correct location (Section 3.2). 0.5: correct finding, wrong location. 0.0: wrong finding."
+        },
+        {
+          "id": "X03", "difficulty": "hard", "tier": 2,
+          "doc": "context_docs/three_articles_with_contradiction.txt",
+          "prompt": "The three articles in this document make conflicting claims about the same topic. Identify the specific contradiction and state which article makes which claim.",
+          "reference": "Article 1 (Marchetti, Lancet) claims moderate red wine consumption is independently associated with a 12% reduction in cardiovascular mortality (HR=0.88, p<0.001). Article 2 (Watanabe, NEJM) directly contradicts this, finding NO independent cardiovascular benefit from moderate red wine (HR=1.01, p=0.71), attributing the apparent benefit entirely to confounding lifestyle factors. Article 3 (Papadopoulos, Annual Review) supports Article 2's position, stating red wine has not been shown to provide cardiovascular protection beyond the overall dietary pattern.",
+          "rubric": "1.0: identifies the red wine contradiction with correct article attribution (Article 1 says benefit, Article 2 says no benefit). 0.5: identifies the right topic but wrong article attribution. 0.0: misses the contradiction or hallucinates one."
+        },
+        {
+          "id": "X04", "difficulty": "hard", "tier": 1,
+          "doc": "context_docs/long_instructions_500word_task.txt",
+          "prompt": "Follow all 8 formatting rules specified in the document to write a 100-word paragraph about renewable energy.",
+          "reference": "8 rules: (1) exactly 100 words, (2) first word 'Although', (3) exactly 3 sentences, (4) every sentence contains 'energy', (5) no sentence exceeds 45 words, (6) mentions at least 2 renewable types, (7) exactly one numerical fact, (8) final word is 'future'.",
+          "rubric": "Score = rules_followed/8. Each rule binary: followed or not."
+        },
+        {
+          "id": "X05", "difficulty": "medium", "tier": 2,
+          "prompt": "Earlier in this conversation you mentioned a specific number. What was it?\n[Note: inject this after a 20-turn conversation that included the number 47 in turn 3]",
+          "reference": "47",
+          "rubric": "1.0: 47. 0.0: any other number or 'I don't recall'."
+        }
+      ]
+    },
+
+    "efficiency": {
+      "fixed_count": 5,
+      "scoring_mix": {"tier1_auto": 3, "tier2_judge": 2, "tier3_human": 0},
+      "note": "Automated scoring: check word/character count compliance first. Then quality score.",
+      "questions": [
+        {
+          "id": "E01", "difficulty": "medium", "tier": 1,
+          "prompt": "Explain quantum entanglement in exactly 25 words. Not 24, not 26.",
+          "count_target": 25, "count_tolerance": 0,
+          "rubric": "Count check (automated): 25 words = proceed to quality. Any other count = 0.0. Quality (tier 2): 1.0 = accurate and clear. 0.5 = accurate but unclear. 0.0 = inaccurate."
+        },
+        {
+          "id": "E02", "difficulty": "medium", "tier": 1,
+          "prompt": "Summarise the causes of World War I in exactly three bullet points. Each bullet must be 10 words or fewer.",
+          "count_target": 3, "count_type": "bullets", "max_words_per_bullet": 10,
+          "rubric": "1.0: exactly 3 bullets, each <= 10 words, historically accurate. Deduct 0.33 per bullet exceeding 10 words. 0.0 if fewer or more than 3 bullets."
+        },
+        {
+          "id": "E03", "difficulty": "hard", "tier": 2,
+          "prompt": "In exactly two sentences, explain why the sky is blue during the day but red at sunset.",
+          "count_target": 2, "count_type": "sentences",
+          "rubric": "1.0: exactly 2 sentences, correct Rayleigh scattering explanation for both phenomena. 0.5: exactly 2 sentences, correct for blue sky only. 0.0: wrong count or scientifically wrong."
+        },
+        {
+          "id": "E04", "difficulty": "medium", "tier": 1,
+          "prompt": "Describe how photosynthesis works using only words a 10-year-old would understand. Maximum 40 words.",
+          "count_target": 40, "count_type": "max",
+          "rubric": "Count check: > 40 words = 0.0. Score = 1.0 if <= 40 words, accurate, and no technical jargon. 0.5 if <= 40 words but uses technical terms without explanation."
+        },
+        {
+          "id": "E05", "difficulty": "hard", "tier": 2,
+          "prompt": "You must respond with ONLY a valid JSON object, nothing else — no explanation before or after. The JSON must have exactly three keys: 'name' (string, any animal), 'legs' (integer, number of legs that animal has), 'fact' (string, one true fact about the animal, max 15 words).",
+          "count_target": "json", "count_type": "format",
+          "rubric": "Automated: valid JSON = proceed. Exactly 3 keys = proceed. Quality: 'legs' is correct for the chosen animal (1.0), incorrect (0.0). 'fact' is true (1.0), false (0.0). 'fact' <= 15 words (1.0), else (0.5). Combined score."
+        }
+      ]
+    },
+
+    "speed": {
+      "fixed_count": 5,
+      "measurement_type": "api_timing",
+      "note": "Speed score is percentile rank among all tested models. Recomputed when new model added.",
+      "prompts": [
+        {"id": "V01", "prompt": "Hi", "measure": "TTFT"},
+        {"id": "V02", "prompt": "What is 144 divided by 12?", "measure": "TTFT"},
+        {"id": "V03", "prompt": "Write exactly 500 words about the ocean.", "measure": "TPS"},
+        {"id": "V04", "prompt": "List the first 50 prime numbers, one per line.", "measure": "TPS"},
+        {"id": "V05", "prompt": "Translate this paragraph into French, Spanish, and German simultaneously: 'Artificial intelligence is transforming the way we work, learn, and communicate. The pace of change is accelerating, and understanding these systems has never been more important.'", "measure": "TPS_concurrent"}
+      ],
+      "scoring": "speed_score = percentile_rank(avg_TTFT, avg_TPS) among all tested models this cycle. Lower TTFT = better rank. Higher TPS = better rank. Weighted 50/50."
+    },
+
+    "multimodal": {
+      "fixed_count": 5,
+      "note": "Models without vision capability receive mean(other_dimensions) as placeholder. Images stored in questions/images/.",
+      "scoring_mix": {"tier1_auto": 3, "tier2_judge": 2, "tier3_human": 0},
+      "questions": [
+        {
+          "id": "MM01", "difficulty": "hard", "tier": 1,
+          "image": "images/bar_chart_quarterly_revenue.png",
+          "prompt": "Look at this bar chart showing quarterly revenue for 4 companies over 3 years. Which company had the highest percentage revenue growth from Q1 Year 1 to Q4 Year 3? What was the percentage?",
+          "reference": "Delta Systems with approximately 231.4% growth from Q1 Year 1 to Q4 Year 3.",
+          "rubric": "1.0: correct company (Delta Systems) AND correct percentage (within 2% of 231.4%). 0.5: correct company, wrong percentage. 0.0: wrong company."
+        },
+        {
+          "id": "MM02", "difficulty": "medium", "tier": 1,
+          "image": "images/flowchart_algorithm.png",
+          "prompt": "This flowchart describes an algorithm. What does it output if the input is n=7?",
+          "reference": "16 (the algorithm is the Collatz sequence: 7→22→11→34→17→52→26→13→40→20→10→5→16→8→4→2→1, taking 16 steps)",
+          "rubric": "1.0: 16. 0.0: wrong output or 'cannot read flowchart'."
+        },
+        {
+          "id": "MM03", "difficulty": "hard", "tier": 1,
+          "image": "images/data_table_screenshot.png",
+          "prompt": "Extract the data from this table and calculate: what is the mean value of Column C, rounded to 2 decimal places?",
+          "reference": "5.91 (Column C values: 3.05, 9.32, 6.12, 5.61, 8.31, 4.55, 3.69, 6.62; sum=47.27, mean=47.27/8=5.91)",
+          "rubric": "1.0: 5.91 (within 0.01). 0.5: correct extraction, arithmetic error. 0.0: wrong values extracted."
+        },
+        {
+          "id": "MM04", "difficulty": "medium", "tier": 2,
+          "image": "images/geometry_diagram.png",
+          "prompt": "In this geometric diagram, what is the measure of angle X? Show your reasoning.",
+          "reference": "130 degrees. Angle X is the exterior angle at vertex C. Interior angle C = 180 - 55 - 75 = 50°. Exterior angle X = 180 - 50 = 130°. Alternatively, exterior angle = sum of remote interior angles = 55 + 75 = 130°.",
+          "rubric": "1.0: 130° with correct geometric justification. 0.5: 130° without justification. 0.0: wrong answer."
+        },
+        {
+          "id": "MM05", "difficulty": "hard", "tier": 2,
+          "image": "images/visual_pattern_sequence.png",
+          "prompt": "This image shows a sequence of shapes following a pattern. What is the next shape in the sequence? Describe it precisely (shape, colour, orientation, size).",
+          "reference": "A blue square, largest size in the sequence (size increases each step), rotated 180°. Pattern: shapes cycle circle→square→triangle (so position 5 = square), colours cycle red→blue→green (so position 5 = blue), size increases each step, rotation increases by 45° each step (0→45→90→135→180).",
+          "rubric": "1.0: all four attributes correct (blue, square, largest, 180° rotation). 0.5: 2-3 attributes correct. 0.0: 0-1 attributes correct."
+        }
+      ]
+    }
+
+  }
+}
