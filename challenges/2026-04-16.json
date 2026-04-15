@@ -1,0 +1,99 @@
+{
+  "day_number": 72,
+  "date": "2026-04-16",
+  "category": "National High Five Day",
+  "category_emoji": "👋",
+  "rounds": [
+    {
+      "id": "d72r1",
+      "type": "image",
+      "content": "images/d72_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are pro tips for the AI detection game:",
+      "_note": "Prompt: A photorealistic photograph of a man in a black t-shirt and blue denim jeans, having just pulled his classic motorcycle to the side of a sun-drenched asphalt road, leaning slightly to high-five a casually dressed friend standing beside him. Shot from a medium distance with a 85mm lens at f/4, natural bright daylight, crisp focus on the interaction, and a slightly blurred background of green trees."
+    },
+    {
+      "id": "d72r2",
+      "type": "image",
+      "content": "images/d72_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**EXPRESSION & TEXTURE.** AI struggles with genuine human smiles and fabric realism. Check for plastic-like skin, unnatural clothing folds, or subtly repetitive background patterns.",
+      "_note": "Prompt: A photorealistic photograph of a friendly short-coated brown dog, with intelligent eyes and a slightly open mouth, gently \"high-fiving\" a human hand with its front paw, captured in a cozy indoor setting bathed in warm, soft window light. Shot low to the ground with a macro lens, shallow depth of field (f/1.8), focusing sharply on the dog's paw and the human fingers, with a blurred rustic wooden floor in the background."
+    },
+    {
+      "id": "d72r3",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1690192123455-6337e6db4179?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw0fHxIaWdoJTIwRml2ZXxlbnwwfDB8fHwxNzc2MjgwNzc0fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Walls.io on Unsplash",
+      "pro_tip": "**AUTHENTIC EMOTION.** Real images show genuine, un-idealized happiness. Look for natural skin textures, organic imperfections in light, and spontaneous expressions of joy and connection.",
+      "source_url": "https://unsplash.com/photos/a-man-and-a-woman-giving-each-other-a-high-five-yMDlCJaLvYc"
+    },
+    {
+      "id": "d72r4",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1534551767192-78b8dd45b51b?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxMnx8SGlnaCUyMEZpdmV8ZW58MHwwfHx8MTc3NjI4MDc3NHww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Camylla Battani on Unsplash",
+      "pro_tip": "**NATURAL REALISM.** Real photos embrace human imperfections. Look for natural skin textures, unpolished expressions, and subtle, realistic background clutter, not a sterile environment.",
+      "source_url": "https://unsplash.com/photos/short-coated-brown-dog-AoqgGAqrLpU"
+    },
+    {
+      "id": "d72r5",
+      "type": "image",
+      "content": "images/d72_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**PERFECT PARAMS.** AI excels at ideal camera settings. Scrutinize complex body angles and classic motorcycle details for uncanny reflections or anatomical errors.",
+      "_note": "Prompt: A photorealistic photograph of two women, one with vibrant red hair and the other with a wide, infectious smile, joyfully high-fiving each other mid-action on a bustling urban sidewalk during golden hour. Shot with a wide aperture (f/2.8) on a full-frame camera, soft directional light highlighting their faces and hands, creating a pleasant bokeh effect of city buildings and blurred pedestrians in the background."
+    },
+    {
+      "id": "d72r6",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/4623205/pexels-photo-4623205.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Ketut Subiyanto on Pexels",
+      "pro_tip": "**ORGANIC FEATURES.** Real animal photos display natural fur patterns, genuine canine expressions without humanization, and realistic eye reflections, often with contextual imperfections.",
+      "source_url": "https://www.pexels.com/photo/woman-giving-high-five-to-the-man-4623205/"
+    },
+    {
+      "id": "d72r7",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1628530713391-83a1a7dd94f6?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyMXx8SGlnaCUyMEZpdmV8ZW58MHwwfHx8MTc3NjI4MDc3NHww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Nils on Unsplash",
+      "pro_tip": "**GROUP FLAWS.** AI often struggles with group consistency. Check for identical faces, mismatched hands, garbled text on screens, or unrealistic reflections on office tech.",
+      "source_url": "https://unsplash.com/photos/man-in-black-t-shirt-and-blue-denim-jeans-riding-motorcycle-on-road-during-daytime-gFeYSbDCJM0"
+    },
+    {
+      "id": "d72r8",
+      "type": "image",
+      "content": "images/d72_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**ANIMAL UNCANNY.** AI can over-humanize animal expressions. Look for unsettling \"intelligent eyes,\" unnatural paw-hand interaction, or inconsistent fur texture and lighting.",
+      "_note": "Prompt: A photorealistic photograph of a diverse group of four professionals in business casual attire, enthusiastically high-fiving across a modern open-plan office desk, celebrating a team success with sleek laptops and monitors visible in the background. Shot from a slightly elevated perspective with a wide-angle lens, sharp focus across all subjects, utilizing bright, diffused fluorescent office lighting and natural light from large windows."
+    },
+    {
+      "id": "d72r9",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/5537986/pexels-photo-5537986.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Zen Chung on Pexels",
+      "pro_tip": "**SPONTANEOUS MOTION.** Real photos capture genuine action. Expect slight motion blur, natural light variations, and less \"posed\" composition, focusing on the ride itself.",
+      "source_url": "https://www.pexels.com/photo/happy-woman-doing-a-high-five-5537986/"
+    },
+    {
+      "id": "d72r10",
+      "type": "image",
+      "content": "images/d72_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**IDEALIZED SCENES.** AI perfects golden hour and smiles. Watch for inconsistent light, subtle hand distortions, or unnaturally smooth bokeh in background elements.",
+      "_note": "Prompt: A photorealistic photograph of a diverse man and woman, both dressed in smart casual attire, exchanging an enthusiastic high five with genuine smiles, captured against a clean, modern public park background on a bright afternoon. Shot at eye-level with a 50mm lens, natural overhead light, sharp focus on their hands and expressions, and a subtly diffused green lawn in the background."
+    }
+  ],
+  "category_subtitle": "High Five Day: Our AI is all thumbs… or five fingers?"
+}
