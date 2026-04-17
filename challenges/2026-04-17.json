@@ -1,0 +1,99 @@
+{
+  "day_number": 73,
+  "date": "2026-04-17",
+  "category": "National Ford Mustang Day",
+  "category_emoji": "🚗",
+  "rounds": [
+    {
+      "id": "d73r1",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1650634196151-b152b2929234?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxNnx8Rm9yZCUyME11c3Rhbmd8ZW58MHwwfHx8MTc3NjM4NTM4Nnww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Eugene Tkachenko on Unsplash",
+      "pro_tip": "**ORGANIC COMPOSITION:** Observe natural, sometimes imperfect, framing or realistic background clutter. Real photos often have elements that feel unposed or less \"perfect.\"",
+      "source_url": "https://unsplash.com/photos/a-black-car-parked-on-a-street-Qozl0MHpxs4"
+    },
+    {
+      "id": "d73r2",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1547744152-14d985cb937f?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxfHxGb3JkJTIwTXVzdGFuZ3xlbnwwfDB8fHwxNzc2Mzg1Mzg2fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Agustin Segura on Unsplash",
+      "pro_tip": "**ANOMALIES/GLITCHES:** Seek out subtle distortions in perspective, unusual object merging, or strange artifacts, especially at edges or complex junctions. These are AI hallmarks.",
+      "source_url": "https://unsplash.com/photos/black-ford-mustang-coupe-parked-near-green-tree-eDXRq-2LfNM"
+    },
+    {
+      "id": "d73r3",
+      "type": "image",
+      "content": "images/d73_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are 10 pro tips for the AI detection game:",
+      "_note": "Prompt: A photorealistic photograph of a sleek, gleaming black Ford Mustang GT coupe parked on an asphalt lot beside a vibrant, lush green oak tree. The car is angled slightly, showcasing its muscular lines, with the tree's leaves creating a natural, soft canopy overhead. Shot during golden hour with a Canon EOS R5, f/2.8, ISO 100, 85mm lens, bathed in warm, directional light creating subtle reflections on the car's paint."
+    },
+    {
+      "id": "d73r4",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/31767308/pexels-photo-31767308.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Beniam on Pexels",
+      "pro_tip": "**AUTHENTIC PEOPLE:** Notice clear, distinct faces, natural poses, and genuine interactions among individuals in the frame. People look real, not generic.",
+      "source_url": "https://www.pexels.com/photo/classic-ford-mustang-on-a-rainy-seattle-day-31767308/"
+    },
+    {
+      "id": "d73r5",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1678826537247-fc1e60fbda51?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw4fHxGb3JkJTIwTXVzdGFuZ3xlbnwwfDB8fHwxNzc2Mzg1Mzg2fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Vitali Adutskevich on Unsplash",
+      "pro_tip": "**IMPERFECTIONS/WEAR:** Look for natural dust, scratches, smudges, or authentic wear and tear on the car and surrounding environment. Real objects aren't flawless.",
+      "source_url": "https://unsplash.com/photos/a-black-mustang-parked-on-a-snowy-road-xuAzM7C9zEw"
+    },
+    {
+      "id": "d73r6",
+      "type": "image",
+      "content": "images/d73_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**PERFECTION/SYNTHESIS:** Notice hyper-perfect reflections, unnaturally pristine surfaces, or textures that seem too uniform. Real-world imperfections are often absent in AI.",
+      "_note": "Prompt: A photorealistic photograph of a modern black Ford Mustang EcoBoost parked parallel on a quiet suburban street. The car is viewed from a slightly elevated angle, capturing its side profile and the details of the curb, sidewalk, and parked cars further down the street. Residential houses are softly blurred in the background. Taken at midday with a Sony a7 III, f/5.6, ISO 160, 50mm lens, under bright, clear sunlight casting distinct, crisp shadows."
+    },
+    {
+      "id": "d73r7",
+      "type": "image",
+      "content": "images/d73_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**LIGHTING/SHADOWS:** Check for inconsistencies in light sources or shadows that don't quite match the object's form or environment. AI can get these wrong.",
+      "_note": "Prompt: A photorealistic photograph of a classic 1968 Ford Mustang Fastback in dark gray with a driver partially visible through the rain-streaked windshield, idling on a wet city street in what appears to be Seattle. A close-up shot focuses on the front of the car, with rain droplets visible on the glass and hood, reflecting blurred city lights. The composition is tight, emphasizing the vintage details and the moody, rainy atmosphere. Shot on an overcast, rainy afternoon with a Fujifilm GFX 100S, f/2.0, ISO 400, 110mm lens, using available soft, ambient light to create a sense of depth and highlight the wet surfaces."
+    },
+    {
+      "id": "d73r8",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/30687949/pexels-photo-30687949.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by FBO Media on Pexels",
+      "pro_tip": "**ENVIRONMENTAL REALISM:** Check for genuinely realistic weather effects (rain, snow texture) and how light interacts naturally with complex surfaces. Physics are consistent.",
+      "source_url": "https://www.pexels.com/photo/vintage-mustang-at-outdoor-car-show-event-30687949/"
+    },
+    {
+      "id": "d73r9",
+      "type": "image",
+      "content": "images/d73_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**PEOPLE/CROWDS:** Look for distorted or generic faces, uncanny hands, or repetitive figures in backgrounds. AI often struggles with realistic human anatomy and individual details.",
+      "_note": "Prompt: A photorealistic photograph of a robust black Ford Mustang Mach 1 parked silently on a freshly snow-covered, desolate country road. The scene emphasizes the stark contrast between the dark car and the pristine white snow, with tire tracks leading subtly away. A wide-angle view captures the expansive, snow-laden landscape in the background. Captured on a cloudy winter morning with a Nikon Z7, f/8, ISO 200, 24mm lens, utilizing soft, diffused ambient light that highlights the texture of the snow and the car's contours."
+    },
+    {
+      "id": "d73r10",
+      "type": "image",
+      "content": "images/d73_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**CONTEXT/DETAILS:** Examine background elements like signs, license plates, or small objects for garbled text, impossible physics, or odd repetitions. AI often blurs these.",
+      "_note": "Prompt: A photorealistic photograph of a stunning classic blue 1967 Ford Mustang convertible on display at an outdoor car show, surrounded by a diverse crowd of enthusiasts. The car is the clear centerpiece, positioned prominently with a slight front three-quarter view. People are gathered around, some admiring, some conversing, creating a lively but respectful atmosphere, their faces partially visible and slightly out of focus to keep the attention on the car. Captured on a sunny afternoon with a Canon EOS R3, f/4.0, ISO 100, 35mm lens, using bright, natural daylight that brings out the vivid blue paint and chrome details, with a pleasing background blur."
+    }
+  ],
+  "category_subtitle": "Giddy up, AI! It's a stampede of Mustangs to detect."
+}
