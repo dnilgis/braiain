@@ -502,6 +502,13 @@
       "category_emoji": "🚗",
       "category_subtitle": "Giddy up, AI! It's a stampede of Mustangs to detect.",
       "challenge_file": "challenges/2026-04-17.json"
+  },
+    "2026-04-18": {
+      "day_number": 74,
+      "category": "Record Store Day",
+      "category_emoji": "🎶",
+      "category_subtitle": "AI's turning the tables on image detection.",
+      "challenge_file": "challenges/2026-04-18.json"
   }
 }
 
