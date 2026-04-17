@@ -1,0 +1,99 @@
+{
+  "day_number": 74,
+  "date": "2026-04-18",
+  "category": "Record Store Day",
+  "category_emoji": "🎶",
+  "rounds": [
+    {
+      "id": "d74r1",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1599663253408-ddd8dadac635?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyMnx8UmVjb3JkJTIwU3RvcmV8ZW58MHwwfHx8MTc3NjQ2ODA0NXww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Karsten Winegeart on Unsplash",
+      "pro_tip": "**NATURAL TEXTURES:** Observe varied skin textures and realistic fabric folds in clothing. Real photos capture organic, unblemished surface details.",
+      "source_url": "https://unsplash.com/photos/woman-in-green-jacket-standing-beside-books-guCLBw5Cflc"
+    },
+    {
+      "id": "d74r2",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1615621720189-29bd695f0a6c?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw3fHxSZWNvcmQlMjBTdG9yZXxlbnwwfDB8fHwxNzc2NDY4MDQ1fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Sean Benesh on Unsplash",
+      "pro_tip": "**FLAWED REFLECTIONS/SHADOWS:** Check for inconsistent reflections on glossy surfaces or unrealistic, overly uniform shadows. Light interaction can feel off.",
+      "source_url": "https://unsplash.com/photos/man-in-black-long-sleeve-shirt-standing-near-brown-wooden-table-hsgsfvdboUw"
+    },
+    {
+      "id": "d74r3",
+      "type": "image",
+      "content": "images/d74_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**ARTIFICIAL BOKEH:** Observe background blur. AI's bokeh can appear too uniform, perfectly smooth, or create strange, unnatural artifacts.",
+      "_note": "Prompt: A photorealistic photograph of a young woman in a stylish olive green jacket, thoughtfully browsing through a meticulously arranged rack of vinyl records in a bright corner of a modern record store, a focused and contemplative expression on her face. Shot with a Leica Q2 and a fixed 28mm f/1.7 lens, utilizing soft, natural daylight streaming in from a large front window, creating gentle highlights and an airy, intimate atmosphere."
+    },
+    {
+      "id": "d74r4",
+      "type": "image",
+      "content": "images/d74_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**GIBBERISH TEXT:** Scrutinize album spines and covers. AI frequently generates unreadable, inconsistent, or nonsensical text on records.",
+      "_note": "Prompt: A photorealistic photograph of a meticulously curated wall display within a record store, covered entirely with an eclectic collection of vintage album art posters and promotional band flyers, creating a dense and colorful collage effect. Shot with a Nikon Z7 II and a 35mm f/1.8 lens, employing bright, even overhead fluorescent lighting characteristic of a retail space, emphasizing sharp detail and vibrant color saturation."
+    },
+    {
+      "id": "d74r5",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1502773860571-211a597d6e4b?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw1fHxSZWNvcmQlMjBTdG9yZXxlbnwwfDB8fHwxNzc2NDY4MDQ1fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Jamakassi on Unsplash",
+      "pro_tip": "**OVERLY PERFECT VINTAGE:** Vintage items might lack authentic wear, dust, or natural imperfections. Colors can be unnaturally vibrant and clean.",
+      "source_url": "https://unsplash.com/photos/person-holding-elvis-presley-vinyl-sleeve-wejxKZ-9IZg"
+    },
+    {
+      "id": "d74r6",
+      "type": "image",
+      "content": "images/d74_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**Tips for Identifying AI-Generated Images:**",
+      "_note": "Prompt: A photorealistic photograph of a man in a simple black long-sleeve shirt, standing casually beside a sturdy brown wooden display table laden with stacks of new and used vinyl records, his hand resting on a sleeve. Shot with a Fujifilm GFX 100S and a 50mm f/3.5 lens, using soft, diffused ambient daylight filtering through a large window, giving a relaxed, natural feel with subtle shadows."
+    },
+    {
+      "id": "d74r7",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1531060504220-d30bebf3daaf?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxNnx8UmVjb3JkJTIwU3RvcmV8ZW58MHwwfHx8MTc3NjQ2ODA0NXww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Ellicia on Unsplash",
+      "pro_tip": "**AUTHENTIC WEAR & TEAR:** Spot natural imperfections like scuffs, creases, or dust on album sleeves, posters, and furniture. Realism in small details.",
+      "source_url": "https://unsplash.com/photos/movie-poster-collection-tD_e5Q8RimM"
+    },
+    {
+      "id": "d74r8",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/5163787/pexels-photo-5163787.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Mick Haupt on Pexels",
+      "pro_tip": "**Tips for Identifying Real Photographs:**",
+      "source_url": "https://www.pexels.com/photo/assorted-cd-records-in-the-shelves-5163787/"
+    },
+    {
+      "id": "d74r9",
+      "type": "image",
+      "content": "images/d74_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are 10 pro tips for the AI detection game, themed \"Record Store Day\":",
+      "_note": "Prompt: A photorealistic photograph of a person's hands gently holding a classic Elvis Presley \"Blue Hawaii\" vinyl album sleeve, its iconic artwork clearly visible, against a softly blurred background of a record store interior. Shot with a Canon EOS R5 and an 85mm f/1.4 lens, using warm, focused directional light from a vintage overhead lamp, creating a nostalgic, cinematic quality."
+    },
+    {
+      "id": "d74r10",
+      "type": "image",
+      "content": "images/d74_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**UNNATURAL HANDS/SKIN:** Look for overly smooth skin textures or subtle distortions in hands and fingers. AI often struggles with realistic human anatomy.",
+      "_note": "Prompt: A photorealistic photograph of a sprawling, vibrant collection of vintage vinyl records filling wooden crates and wall-mounted shelves in a dimly lit, cozy retro music store, evoking strong nostalgia and the thrill of discovery. Shot with a Sony Alpha 7 IV and a 24mm f/2.8 lens, using warm, atmospheric practical lighting from pendant lamps and neon signs, creating a rich, inviting depth of field."
+    }
+  ],
+  "category_subtitle": "AI's turning the tables on image detection."
+}
