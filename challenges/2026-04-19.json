@@ -1,0 +1,99 @@
+{
+  "day_number": 75,
+  "date": "2026-04-19",
+  "category": "Bicycle Day",
+  "category_emoji": "🚴‍♂️",
+  "rounds": [
+    {
+      "id": "d75r1",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/14226403/pexels-photo-14226403.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by 대정 김 on Pexels",
+      "pro_tip": "**STRAIGHTFORWARD PERSPECTIVE:** The absence of specific, complex camera angles suggests a natural, un-prompted viewpoint.",
+      "source_url": "https://www.pexels.com/photo/group-of-people-riding-a-bicycle-14226403/"
+    },
+    {
+      "id": "d75r2",
+      "type": "image",
+      "content": "images/d75_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**COMPLEX CAMERA ANGLES:** Identify specific, often unusual, camera perspectives like \"low, slightly rear-quarter angle\" or \"elevated position looking down.\"",
+      "_note": "Prompt: A photorealistic photograph of a diverse group of five cyclists, equipped with mountain bikes and bright helmets, spread out along a winding forest trail. The path is bathed in dappled sunlight filtering through tall pine trees, highlighting the texture of the dirt and roots. Captured with a Leica M10-P, f/8, 1/250s, ISO 200, 28mm lens, from a slightly elevated position looking down the trail, emphasizing the sense of shared adventure and the immersive natural environment, with crisp focus on the lead riders."
+    },
+    {
+      "id": "d75r3",
+      "type": "image",
+      "content": "images/d75_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**OVERLY DESCRIPTIVE LANGUAGE:** AI prompts frequently use an abundance of vivid adjectives for every element, creating an exaggerated sense of detail.",
+      "_note": "Prompt: A photorealistic photograph of two adventurous cyclists on full-suspension mountain bikes navigating a narrow, sun-dappled forest trail, kicking up small clouds of dust. Streaks of sunlight pierce through the dense canopy, illuminating the vibrant green moss and fallen leaves on the forest floor. Shot with a Fujifilm GFX 100S, f/2.8, 1/1000s, ISO 400, 35mm lens, capturing the motion blur of the wheels while keeping the riders sharp, using a low-angle shot to emphasize the rugged terrain and the thrill of the ride."
+    },
+    {
+      "id": "d75r4",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1576858574144-9ae1ebcf5ae5?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxMHx8YmlraW5nfGVufDB8MHx8fDE3NzY1NDExNzZ8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Tony Pham on Unsplash",
+      "pro_tip": "**GENERIC LIGHTING:** Expect simple lighting descriptions like \"sunny day,\" without complex terms or specific times like \"golden hour.\"",
+      "source_url": "https://unsplash.com/photos/three-cyclists-on-road-K2xGNNcQn_w"
+    },
+    {
+      "id": "d75r5",
+      "type": "image",
+      "content": "images/d75_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are 10 pro tips for the AI detection game, \"Bicycle Day\" themed:",
+      "_note": "Prompt: A photorealistic photograph of a diverse group of cyclists, some wearing celebratory hats, riding together on a smooth asphalt road lined with early spring trees, under a bright, clear midday sun. Shot with a Canon EOS R5, f/8, 1/500s, ISO 200, 70mm lens, capturing the motion and camaraderie from a low, slightly rear-quarter angle, with subtle lens flare."
+    },
+    {
+      "id": "d75r6",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/33723004/pexels-photo-33723004.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Masood Aslami on Pexels",
+      "pro_tip": "**CONCISE SCENE-SETTING:** Real descriptions are brief and direct, focusing on subjects and activity, sometimes including a simple purpose.",
+      "source_url": "https://www.pexels.com/photo/mountain-biking-adventure-through-forest-trail-33723004/"
+    },
+    {
+      "id": "d75r7",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/16001823/pexels-photo-16001823.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Connor Scott McManus on Pexels",
+      "pro_tip": "**LACK OF TECHNICALS:** Real photo descriptions rarely mention specific camera gear, lens types, or detailed exposure settings.",
+      "source_url": "https://www.pexels.com/photo/two-people-riding-bikes-down-a-sidewalk-16001823/"
+    },
+    {
+      "id": "d75r8",
+      "type": "image",
+      "content": "images/d75_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**TECHNICAL SPECS:** AI prompts often include precise camera models, f-stops, shutter speeds, ISO, and lens details, rarely seen in real descriptions.",
+      "_note": "Prompt: A photorealistic photograph of two smiling young adults, one male and one female, casually riding their bicycles side-by-side through a bustling city park avenue on a vibrant spring morning. The sun casts long, soft shadows, highlighting their relaxed posture and the colorful architecture in the background. Captured with a Sony a7 III, f/5.6, 1/400s, ISO 160, 50mm lens, utilizing natural light to emphasize their joyful expressions, with a slightly wide-angle perspective showcasing the urban environment."
+    },
+    {
+      "id": "d75r9",
+      "type": "image",
+      "content": "images/d75_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**ARTISTIC INSTRUCTION:** Look for explicit commands on mood, motion blur, lens flare, or \"golden hour\" lighting, guiding the AI's creative output.",
+      "_note": "Prompt: A photorealistic photograph of three friends, dressed in casual cycling gear, riding abreast on a winding country road during the golden hour of late afternoon. Their silhouettes are gently illuminated by the setting sun, casting warm light on the worn asphalt and the distant rolling hills. Photographed with a Nikon D850, f/4, 1/800s, ISO 100, 85mm lens, using available light to create a cinematic, nostalgic mood, from a medium eye-level perspective emphasizing the open road ahead."
+    },
+    {
+      "id": "d75r10",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1517649763962-0c623066013b?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxOXx8YmlraW5nfGVufDB8MHx8fDE3NzY1NDExNzZ8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Markus Spiske on Unsplash",
+      "pro_tip": "**PERFECTED IMPERFECTIONS:** AI prompts may intentionally add \"realistic\" flaws like \"subtle lens flare\" or \"kicking up dust\" to enhance authenticity.",
+      "source_url": "https://unsplash.com/photos/group-of-cyclist-on-asphalt-road-WUehAgqO5hE"
+    }
+  ],
+  "category_subtitle": "It's Bicycle Day: Ride the pixels, spot AI's trip!"
+}
