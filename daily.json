@@ -509,6 +509,13 @@
       "category_emoji": "🎶",
       "category_subtitle": "AI's turning the tables on image detection.",
       "challenge_file": "challenges/2026-04-18.json"
+  },
+    "2026-04-19": {
+      "day_number": 75,
+      "category": "Bicycle Day",
+      "category_emoji": "🚴‍♂️",
+      "category_subtitle": "It's Bicycle Day: Ride the pixels, spot AI's trip!",
+      "challenge_file": "challenges/2026-04-19.json"
   }
 }
 
