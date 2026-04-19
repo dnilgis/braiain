@@ -1,0 +1,99 @@
+{
+  "day_number": 76,
+  "date": "2026-04-20",
+  "category": "Thank a Park Ranger Day",
+  "category_emoji": "🌳",
+  "rounds": [
+    {
+      "id": "d76r1",
+      "type": "image",
+      "content": "images/d76_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**IDEALIZED SCENES:** AI excels at rendering specific moods and flawless lighting. Look for unnaturally perfect textures in snow or rustic elements, lacking real-world wear.",
+      "_note": "Prompt: A photorealistic photograph of a female park ranger's upper torso, wearing a crisp dark green uniform shirt with an embroidered park badge clearly visible on her right sleeve and a metallic name tag pinned to her chest, standing outdoors. The ranger's face is in sharp focus, conveying a professional and approachable expression. Shot with a Sony A7 III and a FE 85mm f/1.4 GM lens, utilizing a very shallow depth of field (f/1.8) to blur the natural background into a soft, creamy bokeh, making the ranger's uniform details the undeniable focal point under bright, yet diffused, natural daylight."
+    },
+    {
+      "id": "d76r2",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/17087539/pexels-photo-17087539.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Raphael Loquellano on Pexels",
+      "pro_tip": "**SYNTHETIC PERFECTION:** AI crafts synthetically perfect \"scenic\" bridges and \"sun-drenched\" landscapes. Look for idealized clothing, specific poses, and overly dramatic emphasis on vastness.",
+      "source_url": "https://www.pexels.com/photo/a-woman-wearing-a-hat-in-a-desert-17087539/"
+    },
+    {
+      "id": "d76r3",
+      "type": "image",
+      "content": "images/d76_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**IMPECCABLE RENDERING:** AI flawlessly renders specific equipment and insignia, with perfect lighting and vehicle contours. Watch for consistent, idealized elements, often lacking real brand logos.",
+      "_note": "Prompt: A photorealistic photograph of a male park ranger, wearing a protective blue ranger jacket and sturdy tan outdoor pants, standing firmly near the center of a scenic wooden suspension bridge that spans a deep, tree-lined canyon. The ranger is looking out towards distant, sun-drenched mountains and a clear horizon, with a bright blue sky overhead. The scene is bathed in crisp, clear midday light, captured with a Canon EOS 5D Mark IV and an EF 16-35mm f/2.8L III USM lens, employing a wide-angle perspective (20mm) to emphasize the vastness of the natural landscape and the ranger's protective presence within it."
+    },
+    {
+      "id": "d76r4",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1599581211035-cced6fa4e8d3?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyfHxwYXJrJTIwJTIwcmFuZ2VyfGVufDB8MHx8fDE3NzY2Mjc5MzV8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Yaroslav Muzychenko on Unsplash",
+      "pro_tip": "**CONTEXTUAL INCONSISTENCIES:** Real photos might contain subtle contextual mismatches, like a police officer instead of a park ranger. Details like badges or uniform texture may show natural wear.",
+      "source_url": "https://unsplash.com/photos/white-honda-suv-parked-near-green-trees-during-daytime-tawDAGiDerg"
+    },
+    {
+      "id": "d76r5",
+      "type": "image",
+      "content": "images/d76_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**HYPER-REALISM:** Notice unnaturally sharp details, exaggerated contrast, and often too-perfect compositions. AI often renders specific lighting effects with artificial precision.",
+      "_note": "Prompt: A photorealistic photograph of a male park ranger in full winter attire, including a thick dark green parka and a knit cap, standing contemplatively on a snow-covered, rustic wooden bridge spanning a frozen stream in a serene national park. The soft, diffused light of an overcast winter morning gently illuminates the tranquil scene, shot with a Nikon D850 and an AF-S NIKKOR 70-200mm f/2.8E FL ED VR lens, using a slightly longer focal length (135mm) to create a subtle compression of the winter forest in the background."
+    },
+    {
+      "id": "d76r6",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/13451872/pexels-photo-13451872.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Gaspar Zaldo on Pexels",
+      "pro_tip": "**AUTHENTICITY:** Real images often show natural light variations, subtle imperfections, or unexpected elements. Look for a less staged, more organic interaction with the environment.",
+      "source_url": "https://www.pexels.com/photo/man-in-a-winter-jacket-and-hat-walking-outdoors-in-snow-13451872/"
+    },
+    {
+      "id": "d76r7",
+      "type": "image",
+      "content": "images/d76_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are 10 pro tips for the AI detection game:",
+      "_note": "Prompt: A photorealistic photograph of a female park ranger, wearing a wide-brimmed hat and a khaki uniform, standing purposefully in a vast, sun-drenched desert with gentle white sand dunes, intently examining a blooming yucca plant. The bright, high-contrast midday sun casts sharp shadows, captured with a Canon EOS R5 and an RF 24-70mm f/2.8L IS USM lens, using a wide aperture (f/4) to maintain focus on the ranger and the plant while subtly blurring the distant dunes."
+    },
+    {
+      "id": "d76r8",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1585265188725-daa7f4e029cd?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxfHxwYXJrJTIwJTIwcmFuZ2VyfGVufDB8MHx8fDE3NzY2Mjc5MzV8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Taylor Flowe on Unsplash",
+      "pro_tip": "**REAL-WORLD BRANDS & VARIANCE:** Look for real-world brand logos (e.g., \"Honda\") or vehicle models. Colors and specific equipment often vary from a perfectly idealized description.",
+      "source_url": "https://unsplash.com/photos/man-in-blue-jacket-standing-on-bridge-during-daytime-NAQ_OvALl3k"
+    },
+    {
+      "id": "d76r9",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/6357596/pexels-photo-6357596.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Adventure Travelers TheAdventureTravelers.com on Pexels",
+      "pro_tip": "**NATURAL IMPERFECTIONS:** Observe realistic wear and tear on materials, like a wooden bridge, or varied, imperfect snow textures. Real scenes exhibit subtle deviations from ideal perfection.",
+      "source_url": "https://www.pexels.com/photo/policeman-looking-at-his-badge-6357596/"
+    },
+    {
+      "id": "d76r10",
+      "type": "image",
+      "content": "images/d76_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**OVER-SPECIFICITY:** AI perfectly renders every requested detail, from \"crisp\" uniforms and \"clearly visible\" badges to \"creamy bokeh.\" Look for elements that appear unnaturally precise.",
+      "_note": "Prompt: A photorealistic photograph of a rugged dark green park ranger SUV, equipped with official insignia on the doors and a roof rack carrying patrol gear, perfectly parked on a wide gravel shoulder beside a dense stand of vibrant green pine and fir trees under a clear blue sky during late morning. The sun's rays highlight the vehicle's contours and the rich texture of the evergreen needles. Captured with a Fujifilm GFX 100S and a GF 50mm f/3.5 R LM WR lens, using a moderate aperture (f/8) for sharp detail across the vehicle and the immediate, lush forest surroundings."
+    }
+  ],
+  "category_subtitle": "Ranger AI: Spot the hidden, thank a hero!"
+}
