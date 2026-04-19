@@ -516,6 +516,13 @@
       "category_emoji": "🚴‍♂️",
       "category_subtitle": "It's Bicycle Day: Ride the pixels, spot AI's trip!",
       "challenge_file": "challenges/2026-04-19.json"
+  },
+    "2026-04-20": {
+      "day_number": 76,
+      "category": "Thank a Park Ranger Day",
+      "category_emoji": "🌳",
+      "category_subtitle": "Ranger AI: Spot the hidden, thank a hero!",
+      "challenge_file": "challenges/2026-04-20.json"
   }
 }
 
