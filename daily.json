@@ -523,6 +523,13 @@
       "category_emoji": "🌳",
       "category_subtitle": "Ranger AI: Spot the hidden, thank a hero!",
       "challenge_file": "challenges/2026-04-20.json"
+  },
+    "2026-04-21": {
+      "day_number": 77,
+      "category": "Kindergarten Day",
+      "category_emoji": "🏫",
+      "category_subtitle": "Kindergarten chaos: Spot the AI's finger-painted fakes!",
+      "challenge_file": "challenges/2026-04-21.json"
   }
 }
 
