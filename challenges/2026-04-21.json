@@ -1,0 +1,99 @@
+{
+  "day_number": 77,
+  "date": "2026-04-21",
+  "category": "Kindergarten Day",
+  "category_emoji": "🏫",
+  "rounds": [
+    {
+      "id": "d77r1",
+      "type": "image",
+      "content": "images/d77_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are pro tips for the AI detection game, \"Kindergarten Day\":",
+      "_note": "Prompt: A photorealistic photograph of a diverse group of kindergarten children engrossed in a colorful finger-painting activity with a kind female teacher, their tiny hands covered in vibrant hues, inside a brightly lit classroom with large windows. Shot with a Canon EOS R5, 50mm lens, f/2.8, natural soft light streaming in from the left, slightly elevated eye-level perspective."
+    },
+    {
+      "id": "d77r2",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1588075592446-265fd1e6e76f?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw3fHxLaW5kZXJnYXJ0ZW58ZW58MHwwfHx8MTc3NjcyNDkxN3ww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by CDC on Unsplash",
+      "pro_tip": "**NATURAL EXPRESSIONS & BODY LANGUAGE:** Observe varied, authentic expressions and realistic body language among children, including some looking away or fidgeting.",
+      "source_url": "https://unsplash.com/photos/people-sitting-on-blue-carpet-gsRi9cWCIB0"
+    },
+    {
+      "id": "d77r3",
+      "type": "image",
+      "content": "images/d77_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**EYES & EXPRESSIONS:** Scan for eerily uniform or slightly \"off\" eyes and smiles across multiple children. Uncanny valley effects or mirrored facial details often signal AI.",
+      "_note": "Prompt: A photorealistic photograph of a kind woman in a soft gray long-sleeve shirt sitting patiently on the floor beside a young boy in an orange crew-neck shirt, as they both focus on building a block tower together in a brightly lit kindergarten corner. Captured with a Fujifilm X-T4, 56mm lens, f/1.8, using warm, natural light from a nearby window creating gentle highlights, at eye level for an intimate close-up."
+    },
+    {
+      "id": "d77r4",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1587616211892-f743fcca64f9?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxNnx8S2luZGVyZ2FydGVufGVufDB8MHx8fDE3NzY3MjQ5MTd8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by enkuu smile on Unsplash",
+      "pro_tip": "**For Real Photos:**",
+      "source_url": "https://unsplash.com/photos/group-of-women-sitting-on-floor-uD7ZRjhgwLo"
+    },
+    {
+      "id": "d77r5",
+      "type": "image",
+      "content": "images/d77_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**FINGERS & HANDS:** Check for distorted, extra, or missing fingers, especially when children's hands are obscured by paint. Look for unnaturally perfect or inconsistent hand proportions.",
+      "_note": "Prompt: A photorealistic photograph of a group of four professional women, dressed in comfortable casual wear, sitting cross-legged on a patterned rug in a bright kindergarten classroom, engaged in a serious yet friendly discussion, with children's artwork visible in the background. Shot with a Nikon D850, 85mm lens, f/3.2, utilizing soft, diffused overhead lighting, from a slightly high-angle medium shot."
+    },
+    {
+      "id": "d77r6",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/35782382/pexels-photo-35782382.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Валерій Волинський on Pexels",
+      "pro_tip": "**TEXTURE & LIGHTING UNIFORMITY:** Observe if textures like hair, skin, or carpet appear unnaturally smooth or uniform. AI lighting can be too perfect and flat, lacking realistic shadows.",
+      "source_url": "https://www.pexels.com/photo/smiling-teacher-with-happy-children-in-classroom-35782382/"
+    },
+    {
+      "id": "d77r7",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/8535599/pexels-photo-8535599.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Ksenia Chernaya on Pexels",
+      "pro_tip": "**REPETITIVE PATTERNS:** Look for identical patterns on clothing, toys, or blocks that repeat unnaturally. AI sometimes clones textures to fill space.",
+      "source_url": "https://www.pexels.com/photo/kids-doing-artwork-8535599/"
+    },
+    {
+      "id": "d77r8",
+      "type": "image",
+      "content": "images/d77_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**BACKGROUND BLUR & TEXT:** Examine background artwork or text for nonsensical symbols, blurry edges, or illogical arrangements. AI struggles with coherent background details.",
+      "_note": "Prompt: A photorealistic photograph of a diverse group of kindergarten children, ranging from 4-6 years old, sitting attentively in a semi-circle on a vibrant blue carpet, listening to a teacher who is out of frame, during a morning circle time. Shot with a Panasonic Lumix S5, 24-70mm lens at 50mm, f/4.5, with bright, even overhead classroom lighting and a slightly elevated, medium-wide perspective to capture the group."
+    },
+    {
+      "id": "d77r9",
+      "type": "image",
+      "content": "images/d77_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**For AI-Generated Images:**",
+      "_note": "Prompt: A photorealistic photograph of a happy and diverse group of kindergarten children smiling brightly, gathered closely around their enthusiastic female teacher who is reading a storybook, in a vibrant and playful classroom setting filled with colorful learning materials. Captured with a Sony a7 III, 35mm lens, f/4, even and warm ambient lighting, from a slightly wide-angle, candid perspective."
+    },
+    {
+      "id": "d77r10",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1583468991267-3f068b607ae1?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyMHx8S2luZGVyZ2FydGVufGVufDB8MHx8fDE3NzY3MjQ5MTd8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Adam Winger on Unsplash",
+      "pro_tip": "**AUTHENTIC IMPERFECTIONS:** Look for slight smudges, wrinkles, or natural wear on clothing, toys, or skin. Real photos often capture these small, genuine details.",
+      "source_url": "https://unsplash.com/photos/woman-in-gray-long-sleeve-shirt-sitting-beside-boy-in-orange-crew-neck-shirt-UFG04g43hqs"
+    }
+  ],
+  "category_subtitle": "Kindergarten chaos: Spot the AI's finger-painted fakes!"
+}
