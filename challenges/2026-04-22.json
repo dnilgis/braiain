@@ -1,0 +1,99 @@
+{
+  "day_number": 78,
+  "date": "2026-04-22",
+  "category": "World Twinning Day",
+  "category_emoji": "👯‍♀️",
+  "rounds": [
+    {
+      "id": "d78r1",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/10384401/pexels-photo-10384401.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Стас Ксензов on Pexels",
+      "pro_tip": "**ORGANIC INTERACTIONS:** Notice how people authentically share space, hold objects, or express emotion with natural body language.",
+      "source_url": "https://www.pexels.com/photo/two-young-boys-sitting-on-the-bed-10384401/"
+    },
+    {
+      "id": "d78r2",
+      "type": "image",
+      "content": "images/d78_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**ODD PROPS/INTERACTIONS:** Notice strange details in objects like turtles, or how people interact with props or each other, like sharing a hoodie.",
+      "_note": "Prompt: A photorealistic photograph of a charming close-up of two smiling twin girls with wavy blonde hair, intimately sharing a single oversized grey hoodie, their heads gently touching. Taken indoors with natural window light filtering in softly from the side, creating gentle shadows. Captured with a Fujifilm GFX 50S and a 110mm f/2 lens at f/2.2, ISO 800."
+    },
+    {
+      "id": "d78r3",
+      "type": "image",
+      "content": "images/d78_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**UNREALISTIC FACES:** Look for overly smooth skin, perfectly symmetrical features, or subtly uncanny expressions. Eyes might lack depth or reflection.",
+      "_note": "Prompt: A photorealistic photograph of two twin sisters with intricate blonde braids adorned with playful face stickers, beaming with joyful smiles against a vibrant turquoise background. A tightly framed headshot captured with a Nikon D850 and a 105mm macro lens at f/4, illuminated by a crisp, softbox-lit studio flash from the front. ISO 100."
+    },
+    {
+      "id": "d78r4",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/4718073/pexels-photo-4718073.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by cottonbro studio on Pexels",
+      "pro_tip": "**AUTHENTIC IMPERFECTIONS:** Spot natural skin blemishes, varied hair strands, or slight facial asymmetries that add realism.",
+      "source_url": "https://www.pexels.com/photo/2-smiling-girl-wearing-green-shirt-and-gray-blazer-4718073/"
+    },
+    {
+      "id": "d78r5",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/5263966/pexels-photo-5263966.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by KATRIN  BOLOVTSOVA on Pexels",
+      "pro_tip": "**ENVIRONMENTAL CUES:** Examine backgrounds for uniform perfection, repetitive natural elements like grass, or a strange lack of detail.",
+      "source_url": "https://www.pexels.com/photo/small-twin-girls-holding-turtles-5263966/"
+    },
+    {
+      "id": "d78r6",
+      "type": "image",
+      "content": "images/d78_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**IMPERFECT PATTERNS:** Check for distorted plaid, repetitive polka dots, or unnatural fabric textures and folds in clothing.",
+      "_note": "Prompt: A photorealistic photograph of two fluffy twin lambs, standing side-by-side with serene expressions, on a rolling, sun-drenched grass-covered field during the golden hour. A wide-angle landscape shot taken with a Sony Alpha a7 III and a 24-70mm lens at f/8, with warm, natural sunlight casting long shadows. ISO 400."
+    },
+    {
+      "id": "d78r7",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1534368786749-b63e05c90863?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyfHx0d2luc3xlbnwwfDB8fHwxNzc2Nzk1ODU1fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Jørgen Håland on Unsplash",
+      "pro_tip": "**REALISTIC TEXTURES:** Observe genuine fabric wrinkles, natural animal fur variations, or individual grass blades with true depth.",
+      "source_url": "https://unsplash.com/photos/a-couple-of-sheep-standing-on-top-of-a-grass-covered-field-4yOgRb_b_i4"
+    },
+    {
+      "id": "d78r8",
+      "type": "image",
+      "content": "images/d78_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**UNNATURAL LIGHTING:** Observe if lighting is too perfect, shadows are absent, or highlights are exaggerated without realistic fall-off.",
+      "_note": "Prompt: A photorealistic photograph of two cute twin boys in matching blue and green plaid shirts, sitting comfortably on a rumpled white duvet on a bed indoors, beaming with genuine smiles that highlight their sibling bond. A medium full-body shot captured with a Canon EOS 5D Mark IV and a 50mm lens at f/1.8, lit by warm, ambient room lighting. ISO 640."
+    },
+    {
+      "id": "d78r9",
+      "type": "image",
+      "content": "images/d78_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are pro tips for the AI detection game, themed \"World Twinning Day\":",
+      "_note": "Prompt: A photorealistic photograph of two adorable twin girls, dressed in matching vibrant polka dot dresses, each happily holding a small, brown turtle with a gentle smile on their faces. Shot in a brightly lit studio with a soft, diffused key light and a clean white background. A medium shot captured with a Canon EOS R5 and an 85mm lens at f/2.8, ISO 200."
+    },
+    {
+      "id": "d78r10",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/9532899/pexels-photo-9532899.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Ron Lach on Pexels",
+      "pro_tip": "**NATURAL LIGHTING:** Look for realistic light fall-off, subtle shadows, and genuine reflections characteristic of natural or studio light.",
+      "source_url": "https://www.pexels.com/photo/twins-with-heads-close-together-in-a-gray-hoodie-9532899/"
+    }
+  ],
+  "category_subtitle": "Twinning Day: Find the AI's doppelgänger before it finds yours!"
+}
