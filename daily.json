@@ -537,6 +537,13 @@
       "category_emoji": "👯‍♀️",
       "category_subtitle": "Twinning Day: Find the AI's doppelgänger before it finds yours!",
       "challenge_file": "challenges/2026-04-22.json"
+  },
+    "2026-04-23": {
+      "day_number": 79,
+      "category": "German Beer Day",
+      "category_emoji": "🍺",
+      "category_subtitle": "Thursday's Toast: AI's spotting the best German brews!",
+      "challenge_file": "challenges/2026-04-23.json"
   }
 }
 
