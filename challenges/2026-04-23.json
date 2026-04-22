@@ -1,0 +1,99 @@
+{
+  "day_number": 79,
+  "date": "2026-04-23",
+  "category": "German Beer Day",
+  "category_emoji": "🍺",
+  "rounds": [
+    {
+      "id": "d79r1",
+      "type": "image",
+      "content": "images/d79_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**HYPER-REAL DETAILS:** Examine condensation or foam; AI renders textures as hyper-real, perfectly uniform, or plastic-like, missing organic randomness or genuine wear.",
+      "_note": "Prompt: A photorealistic photograph of a happy man in traditional Lederhosen, his face beaming, taking a large sip from a massive, condensation-covered beer stein. He is seated at a rustic wooden table outdoors, with a bustling, out-of-focus crowd celebrating German Beer Day in the background, adding depth and context. Shot with a prime lens, 85mm, f/2.8, utilizing soft, natural sidelight to emphasize the textures of the beer and his attire, with a clear separation from the background."
+    },
+    {
+      "id": "d79r2",
+      "type": "image",
+      "content": "images/d79_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are pro tips for the AI detection game, themed \"German Beer Day\":",
+      "_note": "Prompt: A photorealistic photograph of a lively outdoor German Beer Day celebration in full swing, with diverse groups of people laughing, chatting, and enjoying steins of beer at long wooden tables. The late afternoon sun casts a warm, golden glow across the scene, highlighting traditional Bavarian decorations and a festive atmosphere. Shot with a wide-angle lens, f/4, capturing the expansive crowd and dynamic energy, with natural, soft shadows."
+    },
+    {
+      "id": "d79r3",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1565539383096-875303015bd2?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyfHxHZXJtYW4lMjBCZWVyfGVufDB8MHx8fDE3NzY4ODY5NjF8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Poojitha Prasad on Unsplash",
+      "pro_tip": "**ENVIRONMENTAL REALISM:** Real photos often contain specific, less-than-perfect environmental details. A worn bench, a unique local sign, or unexpected background elements ground the image.",
+      "source_url": "https://unsplash.com/photos/clear-glass-mug-1F1p3kwPqjc"
+    },
+    {
+      "id": "d79r4",
+      "type": "image",
+      "content": "images/d79_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**UNNATURAL LIGHTING:** Observe lighting consistency. AI often creates unnaturally perfect, studio-quality illumination outdoors, with inconsistent shadow directions or sharpness.",
+      "_note": "Prompt: A photorealistic photograph of a pristine, clear glass beer mug, brimming with golden, effervescent German lager and a perfect head of foam, with delicate condensation clinging to its exterior. The mug is placed on a rustic wooden table with a very subtle, warmly lit, festive outdoor background blurred into bokeh. Expertly lit with professional studio strobes and a large softbox to create crisp reflections and highlight the clarity of the glass and the beer's texture, shot with a macro lens, f/8, for extreme detail."
+    },
+    {
+      "id": "d79r5",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/1551944/pexels-photo-1551944.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Brett Sayles on Pexels",
+      "pro_tip": "**OBJECT DISTORTIONS:** Check beer steins and handles closely. AI can struggle with complex geometry, showing handles that connect unnaturally, distort, or seem non-functional.",
+      "source_url": "https://www.pexels.com/photo/man-drinking-from-a-beer-pint-1551944/"
+    },
+    {
+      "id": "d79r6",
+      "type": "image",
+      "content": "images/d79_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**BACKGROUND GLITCHES:** Scan backgrounds for tells: gibberish text on signs, repeated faces in crowds, or illogical objects revealing AI generation errors.",
+      "_note": "Prompt: A photorealistic photograph of a smiling, elderly man with a contented expression, wearing a traditional Bavarian hat and festive tracht, clinking a beer stein with a friend or two. They are seated outdoors amidst the vibrant atmosphere of a German Beer Day celebration. The light is soft and diffused, characteristic of an overcast but bright day, creating flattering illumination on their faces. Captured with a portrait lens, 100mm, f/4, focusing sharply on the elderly man's warm smile and the details of his attire, with a gently blurred background of fellow festival-goers."
+    },
+    {
+      "id": "d79r7",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/1467807/pexels-photo-1467807.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Brett Sayles on Pexels",
+      "pro_tip": "**AUTHENTIC IMPERFECTIONS:** Real photos show natural flaws: a scuff on a boot, a spilled drop of beer, or slightly messy hair. These small details enhance realism.",
+      "source_url": "https://www.pexels.com/photo/woman-standing-in-a-crowd-holding-up-beer-glass-1467807/"
+    },
+    {
+      "id": "d79r8",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/1533864/pexels-photo-1533864.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Brett Sayles on Pexels",
+      "pro_tip": "**GENUINE EXPRESSIONS:** Look for varied, authentic human expressions and interactions, not all perfectly staged or smiling. Candid moments and diverse body language are key.",
+      "source_url": "https://www.pexels.com/photo/man-drinking-liquor-1533864/"
+    },
+    {
+      "id": "d79r9",
+      "type": "image",
+      "content": "images/d79_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**IDEALIZED FACES:** AI faces often appear too perfect, with uniform smiles or subtle uncanny valley effects. Look for lack of natural asymmetry or genuine character.",
+      "_note": "Prompt: A photorealistic photograph of a joyous crowd at an outdoor German Beer Day festival, with several individuals in the foreground and mid-ground raising their large, foam-topped beer mugs in a cheerful toast. The bright mid-day sun illuminates their faces and traditional attire, creating sharp, vibrant colors. Captured with a 50mm lens, f/5.6, to balance sharpness across the celebratory group against a lively, blurred background of tents and revelers."
+    },
+    {
+      "id": "d79r10",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/1474705/pexels-photo-1474705.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Brett Sayles on Pexels",
+      "pro_tip": "**NATURAL LIGHT & SHADOWS:** Observe how light interacts with the scene. Real photos have organic, sometimes imperfect lighting with consistent shadows reflecting the actual sun's position.",
+      "source_url": "https://www.pexels.com/photo/smiling-man-sitting-in-front-of-blue-table-1474705/"
+    }
+  ],
+  "category_subtitle": "Thursday's Toast: AI's spotting the best German brews!"
+}
