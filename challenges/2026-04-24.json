@@ -1,0 +1,99 @@
+{
+  "day_number": 80,
+  "date": "2026-04-24",
+  "category": "National Arbor Day (US)",
+  "category_emoji": "🌳",
+  "rounds": [
+    {
+      "id": "d80r1",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/5335838/pexels-photo-5335838.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Markus Winkler on Pexels",
+      "pro_tip": "**IDEALIZED SCENES:** AI scenes often appear overly pristine or idealized: grass too green, rows too straight, surfaces too clean. Look for an absence of natural imperfections or wear and tear.",
+      "source_url": "https://www.pexels.com/photo/grown-trees-in-a-farm-5335838/"
+    },
+    {
+      "id": "d80r2",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/4920290/pexels-photo-4920290.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Gustavo Fring on Pexels",
+      "pro_tip": "**Real Photo Detection Tips:**",
+      "source_url": "https://www.pexels.com/photo/man-and-woman-talking-to-each-other-4920290/"
+    },
+    {
+      "id": "d80r3",
+      "type": "image",
+      "content": "images/d80_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are 10 pro tips for the AI detection game, themed \"National Arbor Day (US)\":",
+      "_note": "Prompt: A photorealistic photograph of a person's hands gently cradling a bare-root deciduous sapling, its light brown roots visible and slightly moist, ready for planting. The background is softly blurred. Shot with a Canon EOS R5, 50mm lens, f/2.8, warm natural sunlight."
+    },
+    {
+      "id": "d80r4",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/7656729/pexels-photo-7656729.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Thirdman on Pexels",
+      "pro_tip": "**NATURAL IMPERFECTIONS:** Real photos often show natural imperfections: slight blur, dust, wear on objects or clothing, and organic clutter. Look for these subtle signs of real-world authenticity.",
+      "source_url": "https://www.pexels.com/photo/a-couple-planting-on-green-grass-field-7656729/"
+    },
+    {
+      "id": "d80r5",
+      "type": "image",
+      "content": "images/d80_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**AI Detection Tips:**",
+      "_note": "Prompt: A photorealistic photograph of an expansive view of newly planted young conifer trees arranged in perfectly straight, parallel rows stretching towards a distant tree line on a gently rolling rural farm. The sky is bright blue with a few wispy clouds. Shot with a Nikon D850, 24mm wide-angle lens, f/8, crisp morning sunlight."
+    },
+    {
+      "id": "d80r6",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1625758476104-f2ed6c81248f?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyfHxwbGFudCUyMGElMjB0cmVlfGVufDB8MHx8fDE3NzY5Njc1MzZ8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Vitor Monthay on Unsplash",
+      "pro_tip": "**SUBTLE GLITCHES:** Look for subtle distortions in backgrounds, repeating patterns, or unreadable text. Human elements like hands or faces might have minor anatomical inconsistencies upon close inspection.",
+      "source_url": "https://unsplash.com/photos/person-holding-brown-dried-plant-EkEdHarUPTs"
+    },
+    {
+      "id": "d80r7",
+      "type": "image",
+      "content": "images/d80_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**FLAWLESS COMPOSITION:** AI images often feature excessively clean compositions, perfect symmetry, or predictable framing. Notice the absence of natural clutter or unexpected elements.",
+      "_note": "Prompt: A photorealistic photograph of two community volunteers, one kneeling and holding a shovel, working together to carefully plant a small tree sapling into a freshly dug hole in a lush, vibrant green grassy park. The sun casts soft shadows. Shot with a Fujifilm GFX 100S, 35mm lens, f/5.6, bright midday sun with subtle cloud cover."
+    },
+    {
+      "id": "d80r8",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/12267851/pexels-photo-12267851.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Alfo Medeiros on Pexels",
+      "pro_tip": "**AUTHENTIC TEXTURES:** Real photos feature authentic, varied textures in soil, leaves, and wood, often with subtle imperfections. These organic, non-uniform details signal a genuine photograph.",
+      "source_url": "https://www.pexels.com/photo/moving-a-plat-in-a-pot-12267851/"
+    },
+    {
+      "id": "d80r9",
+      "type": "image",
+      "content": "images/d80_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**HYPER-REALISM:** AI images often exhibit an unnaturally smooth or exaggerated perfection in textures like skin, leaves, and soil. Details may appear hyper-defined.",
+      "_note": "Prompt: A photorealistic photograph of two park rangers, one pointing to a tag on a small potted tree, engaged in a focused conversation amidst rows of various potted saplings and young trees in an outdoor municipal nursery. The scene is bathed in soft, diffused afternoon light. Shot with a Sony A7 III, 85mm lens, f/4, gentle overcast lighting."
+    },
+    {
+      "id": "d80r10",
+      "type": "image",
+      "content": "images/d80_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**UNIFORM LIGHTING:** AI lighting tends to be unnaturally uniform or overly perfected, like a studio shot. Observe for a lack of realistic light falloff or complex, nuanced shadows.",
+      "_note": "Prompt: A photorealistic photograph of a detailed close-up of a pair of gloved hands gently firming nutrient-rich soil around the base of a freshly planted small oak sapling in a terracotta pot, situated outdoors on a wooden deck. The sunlight highlights the texture of the soil and leaves. Shot with a Canon R6, 100mm macro lens, f/2.8, warm golden hour sunlight from the side."
+    }
+  ],
+  "category_subtitle": "Don't be stumped! AI needs you to spot these trees."
+}
