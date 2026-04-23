@@ -544,6 +544,13 @@
       "category_emoji": "🍺",
       "category_subtitle": "Thursday's Toast: AI's spotting the best German brews!",
       "challenge_file": "challenges/2026-04-23.json"
+  },
+    "2026-04-24": {
+      "day_number": 80,
+      "category": "National Arbor Day (US)",
+      "category_emoji": "🌳",
+      "category_subtitle": "Don't be stumped! AI needs you to spot these trees.",
+      "challenge_file": "challenges/2026-04-24.json"
   }
 }
 
