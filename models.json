@@ -1,116 +1,378 @@
 {
-  "updated": "2026-04-14",
-  "next_cycle": "2026-04-28",
+  "updated": "2026-04-25",
+  "source": "Chatbot Arena (arena.ai) \u2014 April 23, 2026. 5.9M+ votes. Elo scores normalized 1350-1575 \u2192 0-1.",
+  "source_url": "https://arena.ai/leaderboard/text",
+  "note": "Arena Elo scores across 8 categories. See arena_elo field for raw values.",
   "models": [
     {
-      "id": "claude-3-7-sonnet",
-      "name": "Claude 3.7 Sonnet",
+      "id": "claude-opus-4-6",
+      "name": "Claude Opus 4.6",
       "provider": "Anthropic",
       "color": "#c85a2a",
-      "analytical": 748,
-      "technical": 639,
-      "dims": { "reasoning": 0.75, "coding": 0.96, "math": 0.97, "science": 0.85, "context": 0.60, "speed": 0.65, "efficiency": 0.38, "multimodal": 0.80 },
-      "context_window": "200k", "price_input": 3.00, "price_output": 15.00, "released": "2025-02",
-      "used_in_game": false,
-      "tags": ["Top coder", "Math leader", "Reasoning"]
+      "analytical": 571,
+      "technical": 628,
+      "dims": {
+        "reasoning": 0.6667,
+        "math": 0.5556,
+        "coding": 0.8667,
+        "science": 0.6489,
+        "context": 0.6222,
+        "speed": 0.5289,
+        "efficiency": 0.6667,
+        "multimodal": 0.4889
+      },
+      "context_window": "1M",
+      "price_input": 5.0,
+      "price_output": 25.0,
+      "released": "2025-11",
+      "tags": [
+        "#1 Overall",
+        "Coding leader",
+        "Instruction following"
+      ],
+      "arena_elo": {
+        "overall": 1496,
+        "math": 1475,
+        "coding": 1545,
+        "hard_prompts": 1500,
+        "creative_writing": 1469,
+        "instruction_following": 1500,
+        "multi_turn": 1490,
+        "vision": 1460
+      }
     },
     {
-      "id": "o3-mini",
-      "name": "o3-mini",
-      "provider": "OpenAI",
-      "color": "#2a7acc",
-      "analytical": 790,
-      "technical": 533,
-      "dims": { "reasoning": 0.88, "coding": 0.82, "math": 0.95, "science": 0.80, "context": 0.50, "speed": 0.45, "efficiency": 0.50, "multimodal": 0.05 },
-      "context_window": "128k", "price_input": 1.10, "price_output": 4.40, "released": "2025-01",
-      "used_in_game": false,
-      "tags": ["Reasoning king", "Math", "Science"]
-    },
-    {
-      "id": "deepseek-v3",
-      "name": "DeepSeek V3",
-      "provider": "DeepSeek",
-      "color": "#b07018",
-      "analytical": 654,
-      "technical": 551,
-      "dims": { "reasoning": 0.71, "coding": 0.71, "math": 0.80, "science": 0.55, "context": 0.43, "speed": 0.60, "efficiency": 0.95, "multimodal": 0.20 },
-      "context_window": "128k", "price_input": 0.27, "price_output": 1.10, "released": "2024-12",
-      "used_in_game": false,
-      "tags": ["Best value", "Math strength", "Open weights"]
-    },
-    {
-      "id": "gemini-2-0-pro",
-      "name": "Gemini 2.0 Pro",
+      "id": "gemini-3-1-pro",
+      "name": "Gemini 3.1 Pro",
       "provider": "Google",
       "color": "#1a6e8a",
-      "analytical": 625,
-      "technical": 567,
-      "dims": { "reasoning": 0.72, "coding": 0.75, "math": 0.65, "science": 0.65, "context": 0.85, "speed": 0.60, "efficiency": 0.55, "multimodal": 0.95 },
-      "context_window": "1M", "price_input": 1.25, "price_output": 5.00, "released": "2025-02",
-      "used_in_game": false,
-      "tags": ["Multimodal", "Long context", "Balanced"]
+      "analytical": 597,
+      "technical": 533,
+      "dims": {
+        "reasoning": 0.6222,
+        "math": 0.7111,
+        "coding": 0.4756,
+        "science": 0.6356,
+        "context": 0.6133,
+        "speed": 0.6089,
+        "efficiency": 0.6,
+        "multimodal": 0.5778
+      },
+      "context_window": "1M",
+      "price_input": 2.0,
+      "price_output": 12.0,
+      "released": "2026-02",
+      "tags": [
+        "#1 Math",
+        "Long context",
+        "Multimodal"
+      ],
+      "arena_elo": {
+        "overall": 1493,
+        "math": 1510,
+        "coding": 1457,
+        "hard_prompts": 1490,
+        "creative_writing": 1487,
+        "instruction_following": 1485,
+        "multi_turn": 1488,
+        "vision": 1480
+      }
     },
     {
-      "id": "gpt-4o",
-      "name": "GPT-4o",
+      "id": "gemini-3-pro",
+      "name": "Gemini 3 Pro",
+      "provider": "Google",
+      "color": "#4285f4",
+      "analytical": 579,
+      "technical": 503,
+      "dims": {
+        "reasoning": 0.5867,
+        "math": 0.6889,
+        "coding": 0.3911,
+        "science": 0.6044,
+        "context": 0.5867,
+        "speed": 0.5778,
+        "efficiency": 0.5689,
+        "multimodal": 0.6
+      },
+      "context_window": "1M",
+      "price_input": 2.0,
+      "price_output": 12.0,
+      "released": "2025-10",
+      "tags": [
+        "Proven flagship",
+        "Well-rounded",
+        "Multimodal"
+      ],
+      "arena_elo": {
+        "overall": 1486,
+        "math": 1505,
+        "coding": 1438,
+        "hard_prompts": 1482,
+        "creative_writing": 1480,
+        "instruction_following": 1478,
+        "multi_turn": 1482,
+        "vision": 1485
+      }
+    },
+    {
+      "id": "gpt-5-4",
+      "name": "GPT-5.4",
       "provider": "OpenAI",
       "color": "#1a8a4a",
-      "analytical": 585,
-      "technical": 579,
-      "dims": { "reasoning": 0.73, "coding": 0.75, "math": 0.45, "science": 0.62, "context": 0.43, "speed": 0.70, "efficiency": 0.40, "multimodal": 0.90 },
-      "context_window": "128k", "price_input": 2.50, "price_output": 10.00, "released": "2024-05",
-      "used_in_game": false,
-      "tags": ["Balanced", "Fast", "Multimodal"]
+      "analytical": 553,
+      "technical": 515,
+      "dims": {
+        "reasoning": 0.5778,
+        "math": 0.6,
+        "coding": 0.4756,
+        "science": 0.5822,
+        "context": 0.5689,
+        "speed": 0.5111,
+        "efficiency": 0.5778,
+        "multimodal": 0.5111
+      },
+      "context_window": "1.1M",
+      "price_input": 2.5,
+      "price_output": 15.0,
+      "released": "2026-03",
+      "tags": [
+        "Balanced",
+        "Enterprise",
+        "Strong IF"
+      ],
+      "arena_elo": {
+        "overall": 1481,
+        "math": 1485,
+        "coding": 1457,
+        "hard_prompts": 1480,
+        "creative_writing": 1465,
+        "instruction_following": 1480,
+        "multi_turn": 1478,
+        "vision": 1465
+      }
     },
     {
-      "id": "gemini-2-0-flash",
-      "name": "Gemini 2.0 Flash",
+      "id": "claude-sonnet-4-6",
+      "name": "Claude Sonnet 4.6",
+      "provider": "Anthropic",
+      "color": "#d97706",
+      "analytical": 495,
+      "technical": 570,
+      "dims": {
+        "reasoning": 0.5111,
+        "math": 0.4667,
+        "coding": 0.7867,
+        "science": 0.5022,
+        "context": 0.4889,
+        "speed": 0.4667,
+        "efficiency": 0.5733,
+        "multimodal": 0.4222
+      },
+      "context_window": "1M",
+      "price_input": 3.0,
+      "price_output": 15.0,
+      "released": "2026-01",
+      "tags": [
+        "Value flagship",
+        "Strong coder",
+        "Writing"
+      ],
+      "arena_elo": {
+        "overall": 1463,
+        "math": 1455,
+        "coding": 1527,
+        "hard_prompts": 1465,
+        "creative_writing": 1455,
+        "instruction_following": 1479,
+        "multi_turn": 1460,
+        "vision": 1445
+      }
+    },
+    {
+      "id": "kimi-k2-6",
+      "name": "Kimi K2.6",
+      "provider": "Moonshot",
+      "color": "#8b5cf6",
+      "analytical": 515,
+      "technical": 535,
+      "dims": {
+        "reasoning": 0.4444,
+        "math": 0.6222,
+        "coding": 0.7956,
+        "science": 0.48,
+        "context": 0.4222,
+        "speed": 0.3556,
+        "efficiency": 0.4,
+        "multimodal": 0.2667
+      },
+      "context_window": "256K",
+      "price_input": 0.74,
+      "price_output": 4.66,
+      "released": "2026-04",
+      "tags": [
+        "Open weights",
+        "Math strength",
+        "Value"
+      ],
+      "arena_elo": {
+        "overall": 1458,
+        "math": 1490,
+        "coding": 1529,
+        "hard_prompts": 1450,
+        "creative_writing": 1430,
+        "instruction_following": 1440,
+        "multi_turn": 1445,
+        "vision": 1410
+      }
+    },
+    {
+      "id": "grok-4-20",
+      "name": "Grok 4.20",
+      "provider": "xAI",
+      "color": "#e84040",
+      "analytical": 542,
+      "technical": 496,
+      "dims": {
+        "reasoning": 0.6,
+        "math": 0.5333,
+        "coding": 0.4,
+        "science": 0.5867,
+        "context": 0.5778,
+        "speed": 0.5556,
+        "efficiency": 0.5111,
+        "multimodal": 0.4667
+      },
+      "context_window": "2M",
+      "price_input": 2.0,
+      "price_output": 6.0,
+      "released": "2026-03",
+      "tags": [
+        "Real-time data",
+        "2M context",
+        "Fast climber"
+      ],
+      "arena_elo": {
+        "overall": 1482,
+        "math": 1470,
+        "coding": 1440,
+        "hard_prompts": 1485,
+        "creative_writing": 1475,
+        "instruction_following": 1465,
+        "multi_turn": 1480,
+        "vision": 1455
+      }
+    },
+    {
+      "id": "gpt-5-2",
+      "name": "GPT-5.2",
+      "provider": "OpenAI",
+      "color": "#2a7acc",
+      "analytical": 539,
+      "technical": 491,
+      "dims": {
+        "reasoning": 0.5556,
+        "math": 0.5778,
+        "coding": 0.4222,
+        "science": 0.56,
+        "context": 0.5422,
+        "speed": 0.4889,
+        "efficiency": 0.5333,
+        "multimodal": 0.4889
+      },
+      "context_window": "128K",
+      "price_input": 1.75,
+      "price_output": 14.0,
+      "released": "2026-02",
+      "tags": [
+        "Proven",
+        "High benchmark",
+        "Enterprise"
+      ],
+      "arena_elo": {
+        "overall": 1476,
+        "math": 1480,
+        "coding": 1445,
+        "hard_prompts": 1475,
+        "creative_writing": 1460,
+        "instruction_following": 1470,
+        "multi_turn": 1472,
+        "vision": 1460
+      }
+    },
+    {
+      "id": "gemini-3-flash",
+      "name": "Gemini 3 Flash",
       "provider": "Google",
       "color": "#00c97a",
-      "analytical": 362,
-      "technical": 646,
-      "dims": { "reasoning": 0.42, "coding": 0.45, "math": 0.30, "science": 0.40, "context": 1.00, "speed": 0.95, "efficiency": 0.97, "multimodal": 0.92 },
-      "context_window": "1M", "price_input": 0.075, "price_output": 0.30, "released": "2025-02",
-      "used_in_game": true,
-      "game_role": "Generates the AI images you try to spot in the daily challenge",
-      "tags": ["Ultra fast", "1M context", "Makes BRAIAIN fakes"]
-    },
-    {
-      "id": "imagen-3",
-      "name": "Imagen 3",
-      "provider": "Google",
-      "color": "#7060cc",
-      "analytical": 290,
-      "technical": 680,
-      "dims": { "reasoning": 0.20, "coding": 0.05, "math": 0.10, "science": 0.25, "context": 0.60, "speed": 0.70, "efficiency": 0.65, "multimodal": 1.00 },
-      "context_window": "—", "price_input": 0.00, "price_output": 0.04, "released": "2024-11",
-      "used_in_game": true,
-      "game_role": "Also generates AI images used in BRAIAIN daily challenges",
-      "tags": ["Image specialist", "Photorealistic", "Makes BRAIAIN fakes"]
-    },
-    {
-      "id": "mistral-large-2",
-      "name": "Mistral Large 2",
-      "provider": "Mistral",
-      "color": "#aa6688",
       "analytical": 550,
-      "technical": 510,
-      "dims": { "reasoning": 0.68, "coding": 0.70, "math": 0.60, "science": 0.58, "context": 0.50, "speed": 0.72, "efficiency": 0.70, "multimodal": 0.30 },
-      "context_window": "128k", "price_input": 2.00, "price_output": 6.00, "released": "2024-07",
-      "used_in_game": false,
-      "tags": ["European", "Efficient", "Strong coder"]
+      "technical": 477,
+      "dims": {
+        "reasoning": 0.5111,
+        "math": 0.6667,
+        "coding": 0.3911,
+        "science": 0.5511,
+        "context": 0.5244,
+        "speed": 0.4933,
+        "efficiency": 0.4889,
+        "multimodal": 0.5333
+      },
+      "context_window": "1M",
+      "price_input": 0.5,
+      "price_output": 3.0,
+      "released": "2026-01",
+      "tags": [
+        "Ultra fast",
+        "Best price/perf",
+        "1M context"
+      ],
+      "arena_elo": {
+        "overall": 1474,
+        "math": 1500,
+        "coding": 1438,
+        "hard_prompts": 1465,
+        "creative_writing": 1461,
+        "instruction_following": 1460,
+        "multi_turn": 1468,
+        "vision": 1470
+      }
     },
     {
-      "id": "llama-3-3-70b",
-      "name": "Llama 3.3 70B",
-      "provider": "Meta",
-      "color": "#5a5ab0",
-      "analytical": 482,
-      "technical": 536,
-      "dims": { "reasoning": 0.50, "coding": 0.68, "math": 0.44, "science": 0.35, "context": 0.43, "speed": 0.75, "efficiency": 0.99, "multimodal": 0.10 },
-      "context_window": "128k", "price_input": 0.00, "price_output": 0.00, "released": "2024-12",
-      "used_in_game": false,
-      "tags": ["Open source", "Free", "Self-hostable"]
+      "id": "deepseek-v4-pro",
+      "name": "DeepSeek V4 Pro",
+      "provider": "DeepSeek",
+      "color": "#b07018",
+      "analytical": 501,
+      "technical": 473,
+      "dims": {
+        "reasoning": 0.4667,
+        "math": 0.5333,
+        "coding": 0.4711,
+        "science": 0.5022,
+        "context": 0.4667,
+        "speed": 0.4,
+        "efficiency": 0.4444,
+        "multimodal": 0.3111
+      },
+      "context_window": "1M",
+      "price_input": 1.74,
+      "price_output": 3.48,
+      "released": "2026-04",
+      "tags": [
+        "Open weights",
+        "MIT license",
+        "Best value"
+      ],
+      "arena_elo": {
+        "overall": 1463,
+        "math": 1470,
+        "coding": 1456,
+        "hard_prompts": 1455,
+        "creative_writing": 1440,
+        "instruction_following": 1450,
+        "multi_turn": 1455,
+        "vision": 1420
+      }
     }
   ]
 }

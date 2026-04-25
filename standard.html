@@ -1058,7 +1058,7 @@ function openResults(model){
       var cls=q.score===1.0?"pass":q.score===0.5?"partial":"fail";
       var badge=q.score===1.0?"1.0 \u2713":q.score===0.5?"0.5 ~":"0.0 \u2717";
       return "<div class='q-result "+cls+"' id='qr-"+dim+"-"+qi+"'>"
-        +"<div class='q-result-head' onclick='toggleQResult(&quot;qr-"+dim+"-"+qi+"&quot;)'>"
+        +"<div class='q-result-head' onclick='toggleQResult(\"qr-"+dim+"-"+qi+"\")'>"
           +"<span class='q-num'>"+q.id+"</span>"
           +"<span class='q-score-badge "+cls+"'>"+badge+"</span>"
           +"<span class='q-prompt-preview'>"+q.prompt+"</span>"
