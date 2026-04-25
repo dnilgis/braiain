@@ -558,6 +558,13 @@
       "category_emoji": "☎️",
       "category_subtitle": "AI's on the line: Spot the image before the call drops!",
       "challenge_file": "challenges/2026-04-25.json"
+  },
+    "2026-04-26": {
+      "day_number": 82,
+      "category": "National Pretzel Day",
+      "category_emoji": "🥨",
+      "category_subtitle": "A-salted by pretzels? AI's got this twisted challenge.",
+      "challenge_file": "challenges/2026-04-26.json"
   }
 }
 
