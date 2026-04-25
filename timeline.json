@@ -1,0 +1,218 @@
+{
+  "title": "The Scale",
+  "subtitle": "From silence to perfection. 37 months of AI evolution.",
+  "source": "Chatbot Arena (arena.ai) \u2014 Elo milestone data via BenchLM.ai",
+  "source_url": "https://benchlm.ai/llm-leaderboard-history",
+  "milestones": [
+    {
+      "id": "vicuna-13b",
+      "name": "Vicuna 13B",
+      "provider": "LMSYS",
+      "date": "2023-05",
+      "event": "The beginning. First Arena model tracked.",
+      "arena_elo": 1094,
+      "analytical": 251,
+      "technical": 250,
+      "total": 501,
+      "dims": {
+        "reasoning": 0.087,
+        "math": 0.0348,
+        "coding": 0.0522,
+        "science": 0.1635,
+        "context": 0.1043,
+        "speed": 0.1391,
+        "efficiency": 0.0696,
+        "multimodal": 0.0
+      }
+    },
+    {
+      "id": "gpt-4-0314",
+      "name": "GPT-4",
+      "provider": "OpenAI",
+      "date": "2023-12",
+      "event": "The frontier opens. First model to cross 1100 Elo.",
+      "arena_elo": 1150,
+      "analytical": 337,
+      "technical": 319,
+      "total": 656,
+      "dims": {
+        "reasoning": 0.2261,
+        "math": 0.2087,
+        "coding": 0.2435,
+        "science": 0.2609,
+        "context": 0.1565,
+        "speed": 0.1739,
+        "efficiency": 0.1913,
+        "multimodal": 0.0
+      }
+    },
+    {
+      "id": "claude-3-opus",
+      "name": "Claude 3 Opus",
+      "provider": "Anthropic",
+      "date": "2024-04",
+      "event": "Anthropic takes the crown for the first time.",
+      "arena_elo": 1256,
+      "analytical": 442,
+      "technical": 436,
+      "total": 878,
+      "dims": {
+        "reasoning": 0.4348,
+        "math": 0.3478,
+        "coding": 0.4174,
+        "science": 0.4452,
+        "context": 0.3652,
+        "speed": 0.4,
+        "efficiency": 0.3826,
+        "multimodal": 0.087
+      }
+    },
+    {
+      "id": "gpt-4o",
+      "name": "GPT-4o",
+      "provider": "OpenAI",
+      "date": "2024-05",
+      "event": "Multimodal arrives. Vision becomes a real dimension.",
+      "arena_elo": 1285,
+      "analytical": 465,
+      "technical": 457,
+      "total": 922,
+      "dims": {
+        "reasoning": 0.4696,
+        "math": 0.3826,
+        "coding": 0.4522,
+        "science": 0.4957,
+        "context": 0.4,
+        "speed": 0.4348,
+        "efficiency": 0.4174,
+        "multimodal": 0.313
+      }
+    },
+    {
+      "id": "llama-3-1-405b",
+      "name": "Llama 3.1 405B",
+      "provider": "Meta",
+      "date": "2024-08",
+      "event": "Open source peaks. The gap narrows to 30 points.",
+      "arena_elo": 1262,
+      "analytical": 440,
+      "technical": 434,
+      "total": 874,
+      "dims": {
+        "reasoning": 0.4,
+        "math": 0.3652,
+        "coding": 0.4348,
+        "science": 0.4557,
+        "context": 0.3826,
+        "speed": 0.3478,
+        "efficiency": 0.3304,
+        "multimodal": 0.0
+      }
+    },
+    {
+      "id": "o1-2024-12-17",
+      "name": "o1",
+      "provider": "OpenAI",
+      "date": "2025-01",
+      "event": "The reasoning revolution. Chain-of-thought changes everything.",
+      "arena_elo": 1350,
+      "analytical": 585,
+      "technical": 523,
+      "total": 1108,
+      "dims": {
+        "reasoning": 0.6435,
+        "math": 0.6609,
+        "coding": 0.5913,
+        "science": 0.6087,
+        "context": 0.5043,
+        "speed": 0.487,
+        "efficiency": 0.5217,
+        "multimodal": 0.2609
+      }
+    },
+    {
+      "id": "deepseek-r1",
+      "name": "DeepSeek R1",
+      "provider": "DeepSeek",
+      "date": "2025-02",
+      "event": "Open source nearly catches the frontier. Gap: 4 points.",
+      "arena_elo": 1361,
+      "analytical": 588,
+      "technical": 534,
+      "total": 1122,
+      "dims": {
+        "reasoning": 0.6261,
+        "math": 0.6783,
+        "coding": 0.6087,
+        "science": 0.6278,
+        "context": 0.5217,
+        "speed": 0.5043,
+        "efficiency": 0.5391,
+        "multimodal": 0.1739
+      }
+    },
+    {
+      "id": "gemini-2-5-pro",
+      "name": "Gemini 2.5 Pro",
+      "provider": "Google",
+      "date": "2025-07",
+      "event": "The longest reign begins. 5 months at #1. 1M context.",
+      "arena_elo": 1450,
+      "analytical": 674,
+      "technical": 645,
+      "total": 1319,
+      "dims": {
+        "reasoning": 0.7652,
+        "math": 0.8174,
+        "coding": 0.7304,
+        "science": 0.7826,
+        "context": 0.7652,
+        "speed": 0.7478,
+        "efficiency": 0.713,
+        "multimodal": 0.487
+      }
+    },
+    {
+      "id": "claude-opus-4-5",
+      "name": "Claude Opus 4.5",
+      "provider": "Anthropic",
+      "date": "2025-11",
+      "event": "The thinking models arrive. Extended reasoning becomes standard.",
+      "arena_elo": 1469,
+      "analytical": 684,
+      "technical": 679,
+      "total": 1363,
+      "dims": {
+        "reasoning": 0.8261,
+        "math": 0.7826,
+        "coding": 0.8139,
+        "science": 0.8157,
+        "context": 0.7913,
+        "speed": 0.7652,
+        "efficiency": 0.8,
+        "multimodal": 0.5043
+      }
+    },
+    {
+      "id": "claude-opus-4-6",
+      "name": "Claude Opus 4.6",
+      "provider": "Anthropic",
+      "date": "2026-02",
+      "event": "First model to break 1500 Elo. The new benchmark.",
+      "arena_elo": 1500,
+      "analytical": 710,
+      "technical": 733,
+      "total": 1443,
+      "dims": {
+        "reasoning": 0.8696,
+        "math": 0.8261,
+        "coding": 0.9478,
+        "science": 0.8626,
+        "context": 0.8522,
+        "speed": 0.8157,
+        "efficiency": 0.8696,
+        "multimodal": 0.8
+      }
+    }
+  ]
+}

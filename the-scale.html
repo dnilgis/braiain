@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Scale — 37 Months of AI Evolution in 10 Lissajous Portraits | BRAIAIN</title>
+<meta name="description" content="From Vicuna's first tremor to Claude Opus 4.6's intricate weave. 10 mathematical portraits showing how AI evolved from 2023 to 2026. Derived from 6 million Chatbot Arena votes.">
+<meta property="og:title" content="The Scale — AI Evolution in Mathematical Portraits">
+<meta property="og:description" content="10 Lissajous portraits. 37 months. From silence to complexity.">
+<meta property="og:url" content="https://braiain.com/the-scale.html">
+<link rel="canonical" href="https://braiain.com/the-scale.html">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3B3ZCE62NW"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-3B3ZCE62NW");</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#100c08;--fg:rgba(238,230,212,1);--fg50:rgba(238,230,212,0.5);
+  --fg30:rgba(238,230,212,0.3);--fg15:rgba(238,230,212,0.15);--fg08:rgba(238,230,212,0.08);
+  --red:#e8342a;--g:'Space Grotesk',sans-serif;--m:'JetBrains Mono',monospace;
+}
+html{background:var(--bg);color:var(--fg);font-family:var(--g);-webkit-font-smoothing:antialiased}
+body{max-width:1200px;margin:0 auto;padding:0 24px 80px}
+
+nav{display:flex;align-items:center;justify-content:space-between;height:52px;border-bottom:1px solid var(--fg08)}
+.nav-logo{font-size:14px;font-weight:600;color:var(--fg);text-decoration:none}
+.nav-logo span{font-weight:300;color:var(--fg50);font-size:12px;margin-left:4px}
+.nav-back{font-size:12px;color:var(--fg50);text-decoration:none;border:1px solid var(--fg15);padding:5px 12px;border-radius:2px}
+.nav-back:hover{color:var(--red);border-color:var(--red)}
+
+.hero{padding:80px 0 60px;text-align:center;max-width:680px;margin:0 auto}
+.hero h1{font-size:clamp(32px,6vw,56px);font-weight:300;letter-spacing:-.04em;line-height:1.1;margin-bottom:16px}
+.hero h1 strong{font-weight:600}
+.hero p{font-size:15px;color:var(--fg50);line-height:1.7;max-width:500px;margin:0 auto}
+.hero .kicker{font-size:10px;font-family:var(--m);color:var(--red);letter-spacing:.18em;text-transform:uppercase;margin-bottom:20px}
+
+.timeline{position:relative;padding:40px 0}
+.timeline::before{content:'';position:absolute;left:50%;top:0;bottom:0;width:1px;background:var(--fg08);transform:translateX(-50%)}
+@media(max-width:768px){.timeline::before{left:20px}}
+
+.milestone{display:grid;grid-template-columns:1fr 280px 1fr;gap:0;align-items:center;margin-bottom:60px;position:relative}
+@media(max-width:768px){.milestone{grid-template-columns:50px 1fr;gap:16px}}
+
+.milestone:nth-child(odd) .ms-info{text-align:right;padding-right:40px}
+.milestone:nth-child(even) .ms-info{grid-column:3;text-align:left;padding-left:40px}
+.milestone:nth-child(even) .ms-canvas-wrap{grid-column:2;grid-row:1}
+@media(max-width:768px){
+  .milestone:nth-child(odd) .ms-info,.milestone:nth-child(even) .ms-info{text-align:left;padding:0;grid-column:2}
+  .milestone:nth-child(even) .ms-canvas-wrap{grid-column:1;grid-row:1}
+}
+
+.ms-canvas-wrap{display:flex;justify-content:center;align-items:center;position:relative}
+.ms-canvas-wrap canvas{width:280px;height:280px;border:1px solid var(--fg08)}
+
+.ms-date{font-family:var(--m);font-size:11px;color:var(--red);letter-spacing:.1em;margin-bottom:6px}
+.ms-name{font-size:24px;font-weight:300;letter-spacing:-.02em;margin-bottom:4px}
+.ms-provider{font-family:var(--m);font-size:11px;color:var(--fg30);letter-spacing:.06em;margin-bottom:10px}
+.ms-event{font-size:13px;color:var(--fg50);line-height:1.6;font-style:italic}
+.ms-score{font-family:var(--m);font-size:28px;font-weight:300;color:var(--fg30);margin-top:8px;letter-spacing:-.02em}
+
+.ms-dot{position:absolute;left:50%;top:50%;width:10px;height:10px;background:var(--red);border-radius:50%;transform:translate(-50%,-50%);z-index:2}
+@media(max-width:768px){.ms-dot{left:20px}}
+
+/* The 1600 / AGI section */
+.agi{text-align:center;padding:80px 0;border-top:1px solid var(--fg08);max-width:600px;margin:0 auto}
+.agi h2{font-size:clamp(24px,4vw,40px);font-weight:300;letter-spacing:-.03em;margin-bottom:16px}
+.agi h2 strong{font-weight:600}
+.agi p{font-size:14px;color:var(--fg50);line-height:1.7;margin-bottom:24px}
+.agi .void{width:200px;height:200px;border:1px solid var(--fg15);border-radius:50%;margin:0 auto 30px;display:flex;align-items:center;justify-content:center}
+.agi .void span{font-family:var(--m);font-size:48px;font-weight:300;color:var(--fg15)}
+.agi .price{font-family:var(--m);font-size:13px;color:var(--fg30);letter-spacing:.04em}
+
+/* Print CTA */
+.cta{text-align:center;padding:60px 0;border-top:1px solid var(--fg08);max-width:500px;margin:0 auto}
+.cta h3{font-size:18px;font-weight:400;margin-bottom:8px}
+.cta p{font-size:13px;color:var(--fg50);line-height:1.6;margin-bottom:20px}
+.cta a{display:inline-block;padding:12px 28px;background:var(--red);color:#fff;text-decoration:none;font-family:var(--g);font-size:13px;font-weight:500;letter-spacing:.02em;border-radius:2px}
+.cta a:hover{background:#c82b1e}
+.cta .sec-link{display:block;margin-top:14px;font-size:12px;font-family:var(--m);color:var(--fg30);text-decoration:none;letter-spacing:.04em}
+.cta .sec-link:hover{color:var(--fg)}
+
+/* Source credit */
+.credit{text-align:center;padding:40px 0;font-size:11px;font-family:var(--m);color:var(--fg15);line-height:1.8;letter-spacing:.04em}
+.credit a{color:var(--fg30);text-decoration:none}.credit a:hover{color:var(--red)}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/standard.html" class="nav-logo">Braiain <span>standard</span></a>
+  <a href="/standard.html" class="nav-back">&larr; Leaderboard</a>
+</nav>
+
+<div class="hero">
+  <div class="kicker">The Scale</div>
+  <h1>From silence<br>to <strong>complexity.</strong></h1>
+  <p>37 months of AI evolution in 10 mathematical portraits. Each figure is a Lissajous curve driven by 8 dimensions of capability. The shape is the score.</p>
+</div>
+
+<div class="timeline" id="timeline"></div>
+
+<div class="agi">
+  <div class="void"><span>1600</span></div>
+  <h2>The <strong>last print.</strong></h2>
+  <p>A perfect score of 1600 means zero phase offset across all eight dimensions. The Lissajous collapses into an 8-fold rotational mandala with an empty center. No model has achieved this. When one does, this print becomes available.</p>
+  <div class="price">$10,000 &mdash; Edition of 1 &mdash; Available when achieved</div>
+</div>
+
+<div class="cta">
+  <h3>Own the complete sequence</h3>
+  <p>10 archival gicl&eacute;e prints on cotton rag. Identical framing. From Vicuna's seed to Opus 4.6's weave. Edition of 25.</p>
+  <a href="https://braiain.com/shop/the-scale">The Scale &mdash; $1,200</a>
+  <a href="/standard.html#prints" class="sec-link">Or view individual prints &rarr;</a>
+</div>
+
+<div class="credit">
+  Evaluation data: <a href="https://arena.ai">Chatbot Arena</a> by Arena Intelligence &middot; 6M+ votes &middot; April 2026<br>
+  Historical milestones: <a href="https://benchlm.ai/llm-leaderboard-history">BenchLM Leaderboard History</a><br>
+  Visualization: BRAIAIN Standard &middot; Lissajous parametric curves
+</div>
+
+<script>
+const TIMELINE = null; // Will be loaded from timeline.json
+
+const T_LEN = 70000;
+const T_MAX = 80 * Math.PI;
+const BG = '#100c08';
+const LINE_R = 238/255, LINE_G = 230/255, LINE_B = 212/255;
+const PASSES = [
+  {lw: 1.8, alpha: 0.020},
+  {lw: 0.55, alpha: 0.078},
+  {lw: 0.22, alpha: 0.240},
+];
+
+function drawDNA(canvas, dims) {
+  const ctx = canvas.getContext('2d');
+  const W = canvas.width, H = canvas.height;
+  ctx.fillStyle = BG;
+  ctx.fillRect(0, 0, W, H);
+
+  const r = dims.reasoning||0, c = dims.coding||0, m = dims.math||0, s = dims.science||0;
+  const cx = dims.context||0, sp = dims.speed||0, e = dims.efficiency||0, mm = dims.multimodal||0;
+
+  // Fixed scale — all figures use same coordinate system
+  const SCALE = W / 9.0; // maps -4.2..4.2 to canvas
+  const CX = W/2, CY = H/2;
+
+  for (const pass of PASSES) {
+    ctx.lineWidth = pass.lw;
+    ctx.lineCap = 'round';
+    ctx.beginPath();
+
+    for (let i = 0; i < T_LEN; i++) {
+      const t = (i / T_LEN) * T_MAX;
+      const x = r*Math.sin(t) + c*Math.sin(2*t+0.8) + m*Math.sin(3*t+1.6) + s*Math.sin(5*t+2.4);
+      const y = cx*Math.cos(t+0.4) + sp*Math.cos(3*t+1.2) + e*Math.cos(4*t+2.0) + mm*Math.cos(7*t+2.8);
+
+      const px = CX + x * SCALE;
+      const py = CY + y * SCALE;
+
+      // Radial vignette
+      const dist = Math.sqrt(x*x + y*y);
+      const maxR = 4.2;
+      const falloff = 1.0 - Math.min(dist/maxR, 1.0) * 0.6;
+      const a = pass.alpha * falloff;
+
+      ctx.strokeStyle = `rgba(${Math.round(LINE_R*255)},${Math.round(LINE_G*255)},${Math.round(LINE_B*255)},${a})`;
+
+      if (i === 0) ctx.moveTo(px, py);
+      else {
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.moveTo(px, py);
+      }
+
+      // Draw short segments for per-point alpha
+      const t2 = ((i+1) / T_LEN) * T_MAX;
+      const x2 = r*Math.sin(t2) + c*Math.sin(2*t2+0.8) + m*Math.sin(3*t2+1.6) + s*Math.sin(5*t2+2.4);
+      const y2 = cx*Math.cos(t2+0.4) + sp*Math.cos(3*t2+1.2) + e*Math.cos(4*t2+2.0) + mm*Math.cos(7*t2+2.8);
+      ctx.lineTo(CX + x2*SCALE, CY + y2*SCALE);
+    }
+    ctx.stroke();
+  }
+}
+
+// Load timeline and render
+fetch('/timeline.json').then(r=>r.json()).then(data => {
+  const container = document.getElementById('timeline');
+  data.milestones.forEach((m, i) => {
+    const div = document.createElement('div');
+    div.className = 'milestone';
+
+    const info = `
+      <div class="ms-info">
+        <div class="ms-date">${m.date}</div>
+        <div class="ms-name">${m.name}</div>
+        <div class="ms-provider">${m.provider}</div>
+        <div class="ms-event">${m.event}</div>
+        <div class="ms-score">${m.total}</div>
+      </div>`;
+
+    const canvasWrap = `
+      <div class="ms-canvas-wrap">
+        <canvas id="ms-canvas-${i}" width="560" height="560"></canvas>
+        <div class="ms-dot"></div>
+      </div>`;
+
+    if (i % 2 === 0) {
+      div.innerHTML = info + canvasWrap + '<div></div>';
+    } else {
+      div.innerHTML = '<div></div>' + canvasWrap + info;
+    }
+    container.appendChild(div);
+
+    // Render after DOM insertion
+    requestAnimationFrame(() => {
+      const canvas = document.getElementById(`ms-canvas-${i}`);
+      if (canvas) drawDNA(canvas, m.dims);
+    });
+  });
+}).catch(e => {
+  // Fallback: render with inline data if fetch fails
+  console.error('Failed to load timeline.json:', e);
+  document.getElementById('timeline').innerHTML =
+    '<p style="text-align:center;color:var(--fg30);padding:40px">Loading timeline data&hellip;</p>';
+});
+</script>
+</body>
+</html>

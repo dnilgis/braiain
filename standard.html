@@ -409,9 +409,9 @@ footer{border-top:2px solid var(--tx);padding:32px;display:flex;align-items:cent
   <div class="hero-split">
     <div class="hero-left">
       <div class="kicker" id="hero-kicker">BRAIAIN Standard</div>
-      <div class="kicker-sub" id="hero-kicker-sub">The independent benchmark scoring every AI model 400&ndash;1600. Full test results published.</div>
-      <h1 class="hero-h1">The only AI benchmark<br>with <strong>no commercial<br>incentive</strong> to lie.</h1>
-      <p class="hero-sub">Every model. The same battery. Published publicly &mdash; including every question answered and every question failed. We have never accepted funding from a laboratory.</p>
+      <div class="kicker-sub" id="hero-kicker-sub">The mathematical portrait of every AI model. Scored 400&ndash;1600 from 6 million human votes.</div>
+      <h1 class="hero-h1">Every model has<br>a <strong>mathematical<br>portrait.</strong></h1>
+      <p class="hero-sub">Eight dimensions of capability. One Lissajous curve. No two models produce the same figure. Derived from Chatbot Arena &mdash; 6M+ crowdsourced votes.</p>
       <div class="hero-actions">
         <button class="btn-primary" onclick="showView('prints',document.getElementById('nl-prints'))">Own the DNA print</button>
         <button class="btn-ghost" onclick="showView('methodology',document.getElementById('nl-methodology'))">How it works</button>
@@ -450,9 +450,9 @@ footer{border-top:2px solid var(--tx);padding:32px;display:flex;align-items:cent
   </div>
 
   <div class="caveat" role="note" aria-label="Capability caveat" style="margin:24px auto 0;max-width:var(--max);padding:20px 28px;border-left:3px solid var(--red);background:var(--sf);font-size:13px;line-height:1.65;color:var(--mt)">
-    <strong style="color:var(--tx)">Scores reflect performance on a specific test battery.</strong>
-    They should not be interpreted as general intelligence rankings or as evidence that one model is universally superior to another. Different tasks, prompts, and real-world conditions may produce different relative outcomes. BRAIAIN Standard measures performance across 8 defined dimensions using 120 questions per cycle&mdash;a meaningful but intentionally limited sample. Full test methodology, every question asked, and every answer received are published for inspection.<br><br>
-    <strong style="color:var(--tx)">Infrastructure note:</strong> Tests are run via provider APIs. API latency, rate limits, model versioning, and provider-side changes between test runs may affect scores. BRAIAIN has no financial relationship with any model provider and receives no compensation tied to scores.
+    <strong style="color:var(--tx)">Scores are derived from Chatbot Arena Elo ratings.</strong>
+    Arena ratings are based on 6 million+ blind pairwise human votes across 347 models at <a href="https://arena.ai" style="color:var(--red)">arena.ai</a>. BRAIAIN normalizes Arena category Elo scores across 8 dimensions to produce a single 400&ndash;1600 composite and a unique DNA visualization per model. Different tasks, prompts, and real-world conditions may produce different relative outcomes.<br><br>
+    <strong style="color:var(--tx)">Data attribution:</strong> Evaluation data from <a href="https://arena.ai/leaderboard/text" style="color:var(--red)">Chatbot Arena</a> by Arena Intelligence (lmarena-ai). BRAIAIN has no financial relationship with any model provider and receives no compensation tied to scores.
   </div>
 
   <div class="email-bar" role="complementary">
@@ -542,7 +542,7 @@ footer{border-top:2px solid var(--tx);padding:32px;display:flex;align-items:cent
           <div class="sec"><div class="sec-lbl">Technical</div><div class="sec-num" id="det-tech"></div><div class="sec-track"><div class="sec-fill" id="det-tech-f"></div></div></div>
         </div>
         <div class="dims-lbl">Dimension profile</div>
-        <p style="font-size:12px;color:var(--mt);margin:-4px 0 12px;line-height:1.55">Scores reflect performance on BRAIAIN&rsquo;s 120-question test battery, not general capability. <button style="color:var(--red);text-decoration:underline;font-size:12px;font-family:var(--g);cursor:pointer;background:none;border:none;padding:0" onclick="showView('methodology',document.getElementById('nl-methodology'))">Full methodology</button></p>
+        <p style="font-size:12px;color:var(--mt);margin:-4px 0 12px;line-height:1.55">Scores derived from <a href="https://arena.ai" style="color:var(--red);text-decoration:underline">Chatbot Arena</a> Elo ratings (6M+ votes). <button style="color:var(--red);text-decoration:underline;font-size:12px;font-family:var(--g);cursor:pointer;background:none;border:none;padding:0" onclick="showView('methodology',document.getElementById('nl-methodology'))">Full methodology</button></p>
         <div class="dims-list" id="det-dims"></div>
         <div class="dims-note" id="det-dims-note" style="display:none"></div>
         <button class="det-results-link" id="det-results-link" onclick="">View full test results &rarr;</button>
@@ -585,7 +585,9 @@ footer{border-top:2px solid var(--tx);padding:32px;display:flex;align-items:cent
 
     <div class="meth-sec">
       <div class="meth-h2">What this is</div>
-      <p class="meth-p">BRAIAIN Standard is an independent AI testing authority. We run every model through an identical battery of prompts and publish the full results publicly &mdash; including every question answered and every question failed. We have never accepted funding from any AI laboratory. We never will.</p>
+      <p class="meth-p">BRAIAIN Standard visualizes AI model capability as mathematical art. We transform multi-dimensional performance data into unique Lissajous curves &mdash; one per model, derived from its scores across reasoning, math, coding, science, context, speed, efficiency, and multimodal capability.</p>
+      <p class="meth-p" style="margin-top:10px">Dimension scores are sourced from <a href="https://arena.ai/leaderboard/text" style="color:var(--red)">Chatbot Arena</a> (arena.ai) &mdash; the industry-standard crowdsourced evaluation platform with 6 million+ human votes across 347 models. Arena Elo ratings across 8 categories are normalized to 0&ndash;1 to drive our scoring formula and DNA visualizations. We credit the Arena community for the underlying evaluation data.</p>
+      <p class="meth-p" style="margin-top:10px">BRAIAIN Standard has never accepted funding from any AI laboratory. The DNA visualization algorithm, print production, and editorial framing are ours. The evaluation data belongs to the community that generated it.</p>
     </div>
 
     <div class="meth-sec">
@@ -600,9 +602,9 @@ Technical (200&ndash;800):<br>
 <br>
 BRAIAIN Score = Analytical + Technical &nbsp;[range: 400&ndash;1600]<br>
 <br>
-Dimension score = mean(question scores within dimension)<br>
-Question scores: 0.0 (wrong) | 0.5 (partial) | 1.0 (correct)<br>
-Confidence interval: &plusmn;15 points
+Dimension score = Arena Elo normalized to 0.0&ndash;1.0<br>
+&nbsp;&nbsp;(Elo 1350 = 0.0, Elo 1575 = 1.0)<br>
+Source: arena.ai &mdash; 6M+ crowdsourced votes
       </div>
       <table class="meth-tbl">
         <thead><tr><th scope="col">Section</th><th scope="col">Measures</th><th scope="col">Weight</th></tr></thead>
@@ -615,32 +617,37 @@ Confidence interval: &plusmn;15 points
 
     <div class="meth-sec">
       <div class="meth-h2">Independence policy</div>
-      <div class="policy"><p>&ldquo;BRAIAIN Standard has never accepted and will never accept funding, sponsorship, or paid placement from any AI laboratory or model provider. Models are included at our discretion. Scores update when models update. If a model regresses, the score falls. We publish regressions.&rdquo;</p></div>
+      <div class="policy"><p>&ldquo;BRAIAIN Standard has never accepted and will never accept funding, sponsorship, or paid placement from any AI laboratory or model provider. Scores are derived from public crowdsourced evaluation data (Chatbot Arena). Models are included at our discretion. The DNA visualization, scoring formula, and print production are independent of all model providers. If Arena ratings change, our scores update accordingly.&rdquo;</p></div>
     </div>
 
     <div class="meth-sec">
-      <div class="meth-h2">How judging works</div>
-      <p class="meth-p">Questions are scored in three tiers. Automated scoring (unit tests, exact match) handles questions with objectively correct answers. AI judges score qualitative questions via structured rubric &mdash; with the rule that no model judges its own provider family. Human expert review covers proofs, complex explanation, and all disputes.</p>
+      <div class="meth-h2">How scoring works</div>
+      <p class="meth-p">Eight dimensions are drawn from Arena category leaderboards, each representing a distinct axis of model capability as evaluated by millions of human voters in blind pairwise comparisons.</p>
       <table class="meth-tbl" style="margin-top:14px">
-        <thead><tr><th scope="col">Tier</th><th scope="col">Method</th><th scope="col">Questions</th></tr></thead>
+        <thead><tr><th scope="col">BRAIAIN Dim</th><th scope="col">Arena Source</th><th scope="col">What it measures</th></tr></thead>
         <tbody>
-          <tr><td>Tier 1</td><td>Automated (unit tests, exact match)</td><td>~55%</td></tr>
-          <tr><td>Tier 2</td><td>AI rubric judge (not same family)</td><td>~35%</td></tr>
-          <tr><td>Tier 3</td><td>Human expert</td><td>~10%</td></tr>
+          <tr><td>Reasoning</td><td>Hard Prompts</td><td>Complex multi-step problem solving</td></tr>
+          <tr><td>Math</td><td>Math</td><td>Mathematical reasoning and computation</td></tr>
+          <tr><td>Coding</td><td>WebDev / Code</td><td>Software engineering and debugging</td></tr>
+          <tr><td>Science</td><td>Overall</td><td>General knowledge and scientific reasoning</td></tr>
+          <tr><td>Context</td><td>Multi-Turn</td><td>Sustained coherence across exchanges</td></tr>
+          <tr><td>Speed</td><td>Creative Writing</td><td>Fluent, high-quality generation</td></tr>
+          <tr><td>Efficiency</td><td>Instruction Following</td><td>Precision in following constraints</td></tr>
+          <tr><td>Multimodal</td><td>Vision Arena</td><td>Image understanding and reasoning</td></tr>
         </tbody>
       </table>
+      <p class="meth-p" style="margin-top:14px">Elo ratings are updated as new Arena votes are cast. BRAIAIN refreshes scores periodically. Raw Arena Elo values are preserved in our data for full transparency.</p>
     </div>
 
     <div class="meth-sec">
-      <div class="meth-h2">Dispute process</div>
+      <div class="meth-h2">Score updates</div>
       <div class="dispute-box">
-        <h3>Providers who believe their model was scored incorrectly may submit a dispute.</h3>
+        <h3>BRAIAIN scores are derived from public Arena data and update accordingly.</h3>
         <ol>
-          <li>Email <span style="font-family:var(--m);font-size:12px">disputes@braiain.com</span> within 30 days of score publication</li>
-          <li>Include: model ID, specific question IDs in dispute, evidence of correct answer</li>
-          <li>We review disputed questions with an independent human expert within 14 days</li>
-          <li>If the dispute is upheld, the score is corrected and the correction published</li>
-          <li>Dispute outcomes are always published, whether upheld or rejected</li>
+          <li>When Chatbot Arena publishes updated Elo ratings, BRAIAIN refreshes affected models</li>
+          <li>New models are added when they appear in Arena with sufficient vote counts</li>
+          <li>If you believe our normalization of Arena data contains an error, email <span style="font-family:var(--m);font-size:12px">hello@braiain.com</span></li>
+          <li>Raw Arena Elo values are published alongside normalized BRAIAIN scores for verification</li>
         </ol>
       </div>
     </div>
