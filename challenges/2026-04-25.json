@@ -1,0 +1,99 @@
+{
+  "day_number": 81,
+  "date": "2026-04-25",
+  "category": "National Telephone Day",
+  "category_emoji": "☎️",
+  "rounds": [
+    {
+      "id": "d81r1",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1608610026254-da1c4f08ce9d?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw4fHxUZWxlcGhvbmV8ZW58MHwwfHx8MTc3NzA3NzI0OXww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Wesley Hilario on Unsplash",
+      "pro_tip": "**REAL IMPERFECTIONS:** Observe natural, subtle ripples in the water, not overly smooth. The subject's posture and phone interaction will feel genuinely unstaged.",
+      "source_url": "https://unsplash.com/photos/person-holding-black-rotary-telephone-CNSH-JGEwtI"
+    },
+    {
+      "id": "d81r2",
+      "type": "image",
+      "content": "images/d81_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**AI ENVIRONMENT:** Note excessively clean desks or minimalist spaces. Facial expressions, though \"focused,\" can appear generic or slightly stiff, lacking genuine engagement.",
+      "_note": "Prompt: A photorealistic photograph of a vibrant young person, with a joyful expression, actively scrolling through their smartphone while striding dynamically through a sun-drenched urban park. The setting emphasizes freedom and connectivity, with blurred green trees and subtle city architecture in the background. Shot on a Nikon D850, f/5.6, 1/500s, ISO 100, using a wide-angle lens to capture the movement and environment under bright natural daylight."
+    },
+    {
+      "id": "d81r3",
+      "type": "image",
+      "content": "images/d81_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**AI DETAIL:** Look for unnaturally perfect nails or strange hand anatomy. The rotary phone's coiled cord might appear too uniform or lack natural irregularities.",
+      "_note": "Prompt: A photorealistic photograph of a focused businessman in a crisp collared shirt, sitting at a clean, modern desk inside a minimalist office, engaged in a conversation on a sleek, black IP phone. Natural light streams in from a large window to his side, creating soft highlights. Shot on a Sony Alpha a7R IV, f/1.8, 1/100s, ISO 200, with a shallow depth of field blurring the background office elements."
+    },
+    {
+      "id": "d81r4",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1525182008055-f88b95ff7980?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyMnx8VGVsZXBob25lfGVufDB8MHx8fDE3NzcwNzcyNDl8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Berkeley Communications on Unsplash",
+      "pro_tip": "**REAL TEXTURE:** Look for natural skin textures, minor blemishes on hands. The phone's coiled cord will have realistic, imperfect windings and signs of use.",
+      "source_url": "https://unsplash.com/photos/man-using-ip-phone-inside-room-WEDDt-u3q3o"
+    },
+    {
+      "id": "d81r5",
+      "type": "image",
+      "content": "images/d81_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**AI REALISM:** Examine water reflections for unnatural perfection or overly smooth surfaces. Facial expressions might seem generic or subtly off, lacking true depth.",
+      "_note": "Prompt: A photorealistic photograph of a person's hands with perfectly manicured nails, gently gripping a classic, glossy black rotary telephone with a coiled cord, poised as if about to dial. The background is a subtly blurred, warm-toned, vintage-inspired wall. Shot on a Fujifilm GFX 100S, f/4, 1/125s, ISO 400, with crisp focus on the phone and hands under soft, diffused studio lighting."
+    },
+    {
+      "id": "d81r6",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/4604624/pexels-photo-4604624.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by cottonbro studio on Pexels",
+      "pro_tip": "**REAL CONTEXT:** Search for natural desk clutter or unique office details. The man's facial expressions will show genuine engagement in conversation, not just a posed focus.",
+      "source_url": "https://www.pexels.com/photo/person-in-gray-long-sleeve-shirt-holding-silver-iphone-6-4604624/"
+    },
+    {
+      "id": "d81r7",
+      "type": "image",
+      "content": "images/d81_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**AI MOVEMENT:** Check if dynamic poses look unnaturally frozen or stiff. Smartphone screens often show generic content, and \"joyful\" expressions can feel forced.",
+      "_note": "Prompt: A photorealistic photograph of a poised professional woman in a sophisticated deep blue trench coat, intently gazing at her smartphone screen while standing confidently outside a modern, glass-fronted office building. The building's reflective facade mirrors the urban environment. Shot on a Canon EOS 5D Mark IV, f/2.2, 1/320s, ISO 160, with crisp detail and late morning sun casting subtle highlights on her and the architecture."
+    },
+    {
+      "id": "d81r8",
+      "type": "image",
+      "content": "images/d81_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are 10 pro tips for the AI detection game:",
+      "_note": "Prompt: A photorealistic photograph of a thoughtful man in a smart casual shirt, holding a modern smartphone horizontally, as he stands in quiet contemplation at the edge of a vast, calm lake under a soft golden hour glow. Shot on a Canon EOS R5, f/2.8, 1/250s, ISO 100, with a shallow depth of field, highlighting the man and the serene water."
+    },
+    {
+      "id": "d81r9",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1516055619834-586f8c75d1de?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyMXx8VGVsZXBob25lfGVufDB8MHx8fDE3NzcwNzcyNDl8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Hassan OUAJBIR on Unsplash",
+      "pro_tip": "**AI REFLECTION:** Analyze building reflections for unrealistic distortions or inconsistent details. Clothing fabric, like a trench coat, might look unnaturally pristine and smooth.",
+      "source_url": "https://unsplash.com/photos/man-holding-smartphone-standing-in-front-of-calm-body-of-water-IYU_YmMRm7s"
+    },
+    {
+      "id": "d81r10",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/5717224/pexels-photo-5717224.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Tima Miroshnichenko on Pexels",
+      "pro_tip": "**REAL DYNAMICS:** Look for authentic motion blur, especially on the moving subject. Lighting and shadows will realistically interact with the environment, showing true depth.",
+      "source_url": "https://www.pexels.com/photo/a-woman-in-a-blue-coat-using-her-phone-5717224/"
+    }
+  ],
+  "category_subtitle": "AI's on the line: Spot the image before the call drops!"
+}
