@@ -1,0 +1,99 @@
+{
+  "day_number": 82,
+  "date": "2026-04-26",
+  "category": "National Pretzel Day",
+  "category_emoji": "🥨",
+  "rounds": [
+    {
+      "id": "d82r1",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/36445154/pexels-photo-36445154.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Yasin Onuş on Pexels",
+      "pro_tip": "**GENUINE EXPRESSIONS:** Note genuine, unforced smiles and natural lip movements. Look for authentic, irregular textures and slight inconsistencies in the pretzel dough.",
+      "source_url": "https://www.pexels.com/photo/artisan-baker-preparing-freshly-baked-pretzels-36445154/"
+    },
+    {
+      "id": "d82r2",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/13931277/pexels-photo-13931277.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Mizuno K on Pexels",
+      "pro_tip": "**UNEXPECTED OBJECTS:** Look for objects that subtly deviate from the expected prompt, like a cap instead of a pretzel. Real photos often include authentic, diverse elements.",
+      "source_url": "https://www.pexels.com/photo/couple-eating-pretzels-13931277/"
+    },
+    {
+      "id": "d82r3",
+      "type": "image",
+      "content": "images/d82_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**DRAMATIC LIGHTING:** Spot overly dramatic light sources, like oven glows, creating harsh, unrealistic shadows. Human features such as hands or faces may seem subtly artificial.",
+      "_note": "Prompt: A photorealistic photograph of a stylish woman in a chic black leather jacket, confidently holding a large, braided Bavarian pretzel up to eye level, with a slight, knowing smile. Captured with a Fujifilm GFX 100S and an 85mm f/1.2 lens, using sophisticated cinematic lighting with a key light from the front-right and a subtle rim light, against a softly blurred, upscale urban cafe background, from a medium shot perspective."
+    },
+    {
+      "id": "d82r4",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1644938051297-db4f9230f2c8?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxOXx8UHJldHplbHxlbnwwfDB8fHwxNzc3MTU2MDQwfDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Crystal Kay on Unsplash",
+      "pro_tip": "**AUTHENTIC IMPERFECTIONS:** Observe natural variations in skin texture or subtle imperfections on the pretzel surface. Salt crystals are typically irregular, not perfectly uniform.",
+      "source_url": "https://unsplash.com/photos/a-person-holding-a-pretzel-in-their-hand-LVdr6fs0l5Y"
+    },
+    {
+      "id": "d82r5",
+      "type": "image",
+      "content": "images/d82_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**TEXTURE PERFECTION:** Look for perfectly uniform salt crystals or unnaturally smooth \"weathered\" hands. AI often over-optimizes subtle details, making them appear too flawless.",
+      "_note": "Prompt: A photorealistic photograph of a happy young woman's hand holding a large, freshly baked soft pretzel, poised just before taking a bite, with a focus on her smiling lips. Shot with a Nikon Z7 and a 105mm f/2.8 macro lens, under bright, even diffused studio lighting, highlighting the intricate texture of the pretzel dough, with a medium close-up composition."
+    },
+    {
+      "id": "d82r6",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1511951786553-1d4f975424c9?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxfHxQcmV0emVsfGVufDB8MHx8fDE3NzcxNTYwNDB8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Pierre Gui on Unsplash",
+      "pro_tip": "**MULTI-PERSON ANATOMY:** Identify unnatural human interaction, misshapen hands, or overly saturated, uniform foliage. Golden hour light might be exaggerated beyond realism.",
+      "source_url": "https://unsplash.com/photos/person-holding-pretzel-1GeTpL5FJvY"
+    },
+    {
+      "id": "d82r7",
+      "type": "image",
+      "content": "images/d82_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**BACKGROUND ARTIFACTS:** Check for distorted background text or uncanny human expressions/poses. AI-generated cinematic lighting can also appear overly stylized and unnatural.",
+      "_note": "Prompt: A photorealistic photograph of a joyful couple, holding hands and smiling warmly, as they share a large, twisted pretzel while strolling leisurely along a sun-dappled path in a vibrant, lush green park during golden hour. Taken with a Panasonic Lumix S5 II and a 70-200mm f/2.8 lens at 100mm, capturing the scene with a wide shot composition under bright, warm late afternoon sunlight, emphasizing the depth and verdant beauty of the surroundings."
+    },
+    {
+      "id": "d82r8",
+      "type": "image",
+      "content": "images/d82_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**UNCANNY EXPRESSIONS:** Watch for smiles that feel slightly off or unnatural, especially around the lips. Pretzel dough might also lack the subtle imperfections found in real bakes.",
+      "_note": "Prompt: A photorealistic photograph of a skilled artisan baker, with flour dusting their apron, intently sliding a long wooden peel laden with several steaming, dark-crusted pretzels into the fiery maw of a traditional brick oven. Shot with a Sony A7S III and a 24mm f/2.8 wide-angle lens, utilizing the dramatic, warm glow emanating from the oven mouth as the primary light source, creating deep shadows in the rustic bakery."
+    },
+    {
+      "id": "d82r9",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1615493882077-c67106a1daca?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyMnx8UHJldHplbHN8ZW58MHwwfHx8MTc3NzE1NjA2N3ww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Yura Timoshenko on Unsplash",
+      "pro_tip": "**NATURAL FLOW & DETAIL:** Spot organic, realistic flour dust patterns and natural human posture during action. Real lighting provides nuanced light and shadow, not over-dramatized.",
+      "source_url": "https://unsplash.com/photos/woman-in-black-jacket-holding-white-and-pink-floral-knit-cap-iNcYx_L-6SQ"
+    },
+    {
+      "id": "d82r10",
+      "type": "image",
+      "content": "images/d82_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are 10 pro tips for the AI detection game, National Pretzel Day edition:",
+      "_note": "Prompt: A photorealistic photograph of a close-up on a person's subtly weathered hand, gently holding a perfectly golden-brown, coarse-salt-dusted pretzel. Shot with a Canon EOS R5 and a 50mm f/1.4 lens, utilizing warm, soft natural light from a window, with a shallow depth of field rendering a creamy bokeh background."
+    }
+  ],
+  "category_subtitle": "A-salted by pretzels? AI's got this twisted challenge."
+}
