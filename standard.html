@@ -379,6 +379,7 @@ footer{border-top:2px solid var(--tx);padding:32px;display:flex;align-items:cent
   <div class="nav-links">
     <button class="nav-link on" id="nl-scores" onclick="showView('scores',this)" aria-current="page">Scores</button>
     <button class="nav-link" id="nl-methodology" onclick="showView('methodology',this)">Methodology</button>
+    <a href="the-scale.html" class="nav-link" style="text-decoration:none">The Scale</a>
     <button class="nav-link" id="nl-prints" onclick="showView('prints',this)">Prints</button>
   </div>
   <div class="nav-right">
@@ -391,6 +392,7 @@ footer{border-top:2px solid var(--tx);padding:32px;display:flex;align-items:cent
 <div class="mobile-nav" id="mobile-nav">
   <button class="mob-link" onclick="showView('scores',document.getElementById('nl-scores'));closeMobileNav()">Scores</button>
   <button class="mob-link" onclick="showView('methodology',document.getElementById('nl-methodology'));closeMobileNav()">Methodology</button>
+  <a href="the-scale.html" class="mob-link" style="text-decoration:none;text-align:left">The Scale</a>
   <button class="mob-link" onclick="showView('prints',document.getElementById('nl-prints'));closeMobileNav()">Prints</button>
   <button class="mob-cta" onclick="showView('prints',document.getElementById('nl-prints'));closeMobileNav()">Own a print &mdash; from $39</button>
 </div>
@@ -654,7 +656,7 @@ Source: arena.ai &mdash; 6M+ crowdsourced votes
 
     <div class="meth-sec">
       <div class="meth-h2">The DNA fingerprint</div>
-      <p class="meth-p">Each model&rsquo;s eight dimension scores drive both the amplitude AND phase of eight harmonic components in a Lissajous parametric curve. Critically, each dimension&rsquo;s score sets the phase offset of another dimension&rsquo;s frequency &mdash; creating cross-coupling that ensures models with different capability profiles produce genuinely different shapes, not just scaled versions of the same curve. A model strong in math but weak in coding traces a fundamentally different path than one strong in coding but weak in math, even at the same total score.</p>
+      <p class="meth-p">Each model&rsquo;s eight dimension scores drive 16 harmonic components in a Lissajous parametric curve &mdash; all eight dimensions on both axes, but with prime frequencies (1, 2, 3, 5, 7, 11, 13, 17) on one axis and composite frequencies (1, 4, 6, 8, 9, 10, 14, 15) on the other. Each dimension&rsquo;s score also sets the phase offset of another component, creating cross-coupling that ensures models with different capability profiles produce genuinely different shapes. A model strong in math but weak in coding traces a fundamentally different path than one strong in coding but weak in math, even at the same total score.</p>
     </div>
 
     <div class="meth-sec">
@@ -731,18 +733,16 @@ Source: arena.ai &mdash; 6M+ crowdsourced votes
 <script>
 /* LISSAJOUS ETCHING ENGINE */
 var ART_BG="#100c08",LRGB=[238,230,212];
-var FX=[1,2,3,5],FY=[1,3,4,7];
+var FX=[1,2,3,5,7,11,13,17],FY=[1,4,6,8,9,10,14,15];
 
 function lisPoints(dims,N){
   var a=new Float32Array(N*2);
   var d=[dims.reasoning,dims.coding,dims.math,dims.science,dims.context,dims.speed,dims.efficiency,dims.multimodal];
-  /* V2: cross-coupled phases — each dim's score sets another's phase offset */
-  var PH=[d[1]*Math.PI, d[2]*Math.PI, d[3]*Math.PI, d[0]*Math.PI,
-          d[5]*Math.PI*0.5, d[6]*Math.PI, d[4]*Math.PI, d[7]*Math.PI];
-  var T=80*Math.PI,mnX=1e9,mxX=-1e9,mnY=1e9,mxY=-1e9;
+  /* Approach B: 8×8 Lissajous — all dims on both axes, prime vs composite freqs, cross-coupled phases */
+  var T=120*Math.PI,mnX=1e9,mxX=-1e9,mnY=1e9,mxY=-1e9;
   for(var i=0;i<N;i++){
     var t=(i/N)*T,x=0,y=0;
-    for(var j=0;j<4;j++){x+=d[j]*Math.sin(FX[j]*t+PH[j]);y+=d[j+4]*Math.cos(FY[j]*t+PH[j+4])}
+    for(var j=0;j<8;j++){x+=d[j]*Math.sin(FX[j]*t+d[7-j]*Math.PI);y+=d[j]*Math.cos(FY[j]*t+d[(j+3)%8]*Math.PI*1.3)}
     a[i*2]=x;a[i*2+1]=y;
     if(x<mnX)mnX=x;if(x>mxX)mxX=x;if(y<mnY)mnY=y;if(y>mxY)mxY=y;
   }
@@ -790,9 +790,9 @@ function drawEtching(canvas,dims,N){
 function drawMandala(canvas){
   var W=canvas.width,H=canvas.height,cx=W/2,cy=H/2,ctx=canvas.getContext("2d");
   ctx.fillStyle=ART_BG;ctx.fillRect(0,0,W,H);
-  var N=50000,T=80*Math.PI,pts=new Float32Array(N*2);
+  var N=50000,T=120*Math.PI,pts=new Float32Array(N*2);
   var mnX=1e9,mxX=-1e9,mnY=1e9,mxY=-1e9;
-  for(var i=0;i<N;i++){var t=(i/N)*T,x=0,y=0;for(var j=0;j<4;j++){x+=Math.sin(FX[j]*t);y+=Math.cos(FY[j]*t)}pts[i*2]=x;pts[i*2+1]=y;if(x<mnX)mnX=x;if(x>mxX)mxX=x;if(y<mnY)mnY=y;if(y>mxY)mxY=y;}
+  for(var i=0;i<N;i++){var t=(i/N)*T,x=0,y=0;for(var j=0;j<8;j++){x+=Math.sin(FX[j]*t+Math.PI);y+=Math.cos(FY[j]*t+1.3*Math.PI)}pts[i*2]=x;pts[i*2+1]=y;if(x<mnX)mnX=x;if(x>mxX)mxX=x;if(y<mnY)mnY=y;if(y>mxY)mxY=y;}
   var midX=(mnX+mxX)/2,midY=(mnY+mxY)/2,rx=mxX-mnX,ry=mxY-mnY;
   var sc=Math.min(W*0.80/rx,H*0.80/ry),ox=cx-midX*sc,oy=cy-midY*sc;
   var maxR=0;for(var i=0;i<N;i++){var dx=pts[i*2]*sc+ox-cx,dy=pts[i*2+1]*sc+oy-cy;var d=Math.sqrt(dx*dx+dy*dy);if(d>maxR)maxR=d;}
@@ -861,9 +861,9 @@ function runSpectrum(){
     var progress=specPhase<0.88?specPhase/0.88:(specPhase<0.95?1.0:Math.max(0,1-(specPhase-0.95)/0.05));
     ctx.fillStyle=ART_BG;ctx.fillRect(0,0,W,H);
     if(progress>=0.99){
-      var cx=W/2,cy=H/2,N=18000,T=40*Math.PI,pts=new Float32Array(N*2);
+      var cx=W/2,cy=H/2,N=18000,T=60*Math.PI,pts=new Float32Array(N*2);
       var mnX=1e9,mxX=-1e9,mnY=1e9,mxY=-1e9;
-      for(var i=0;i<N;i++){var t=(i/N)*T,x=0,y=0;for(var j=0;j<4;j++){x+=Math.sin(FX[j]*t);y+=Math.cos(FY[j]*t)}pts[i*2]=x;pts[i*2+1]=y;if(x<mnX)mnX=x;if(x>mxX)mxX=x;if(y<mnY)mnY=y;if(y>mxY)mxY=y;}
+      for(var i=0;i<N;i++){var t=(i/N)*T,x=0,y=0;for(var j=0;j<8;j++){x+=Math.sin(FX[j]*t+Math.PI);y+=Math.cos(FY[j]*t+1.3*Math.PI)}pts[i*2]=x;pts[i*2+1]=y;if(x<mnX)mnX=x;if(x>mxX)mxX=x;if(y<mnY)mnY=y;if(y>mxY)mxY=y;}
       var sc=Math.min(W*0.78/(mxX-mnX),H*0.78/(mxY-mnY));
       var ox=cx-((mnX+mxX)/2)*sc,oy=cy-((mnY+mxY)/2)*sc;
       var fp={a:pts,mnX:mnX,mxX:mxX,mnY:mnY,mxY:mxY},tr={sc:sc,ox:ox,oy:oy};
@@ -871,9 +871,8 @@ function runSpectrum(){
     } else {
       var dims=specDims(progress);
       var d=[dims.reasoning,dims.coding,dims.math,dims.science,dims.context,dims.speed,dims.efficiency,dims.multimodal];
-      var PH=[d[1]*Math.PI,d[2]*Math.PI,d[3]*Math.PI,d[0]*Math.PI,d[5]*Math.PI*0.5,d[6]*Math.PI,d[4]*Math.PI,d[7]*Math.PI];
-      var T=40*Math.PI,N=10000,mnX=1e9,mxX=-1e9,mnY=1e9,mxY=-1e9;
-      for(var i=0;i<N;i++){var t=(i/N)*T,x=0,y=0;for(var j=0;j<4;j++){x+=d[j]*Math.sin(FX[j]*t+PH[j]);y+=d[j+4]*Math.cos(FY[j]*t+PH[j+4])}SBUF[i*2]=x;SBUF[i*2+1]=y;if(x<mnX)mnX=x;if(x>mxX)mxX=x;if(y<mnY)mnY=y;if(y>mxY)mxY=y;}
+      var T=60*Math.PI,N=10000,mnX=1e9,mxX=-1e9,mnY=1e9,mxY=-1e9;
+      for(var i=0;i<N;i++){var t=(i/N)*T,x=0,y=0;for(var j=0;j<8;j++){x+=d[j]*Math.sin(FX[j]*t+d[7-j]*Math.PI);y+=d[j]*Math.cos(FY[j]*t+d[(j+3)%8]*Math.PI*1.3)}SBUF[i*2]=x;SBUF[i*2+1]=y;if(x<mnX)mnX=x;if(x>mxX)mxX=x;if(y<mnY)mnY=y;if(y>mxY)mxY=y;}
       var rx=mxX-mnX,ry=mxY-mnY;if(rx<0.01)rx=0.01;if(ry<0.01)ry=0.01;
       var sc=Math.min(W*0.80/rx,H*0.80/ry),ox=W/2-((mnX+mxX)/2)*sc,oy=H/2-((mnY+mxY)/2)*sc;
       ctx.save();ctx.strokeStyle="rgba(238,230,212,0.28)";ctx.lineWidth=0.50;ctx.lineCap="round";ctx.lineJoin="round";

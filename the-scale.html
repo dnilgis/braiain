@@ -124,7 +124,7 @@ nav{display:flex;align-items:center;justify-content:space-between;height:52px;bo
 const TIMELINE = null; // Will be loaded from timeline.json
 
 const T_LEN = 70000;
-const T_MAX = 80 * Math.PI;
+const T_MAX = 120 * Math.PI;
 const BG = '#100c08';
 const LINE_R = 238/255, LINE_G = 230/255, LINE_B = 212/255;
 const PASSES = [
@@ -133,59 +133,57 @@ const PASSES = [
   {lw: 0.22, alpha: 0.240},
 ];
 
+const FX = [1,2,3,5,7,11,13,17];
+const FY = [1,4,6,8,9,10,14,15];
+
 function drawDNA(canvas, dims) {
   const ctx = canvas.getContext('2d');
   const W = canvas.width, H = canvas.height;
   ctx.fillStyle = BG;
   ctx.fillRect(0, 0, W, H);
 
-  const r = dims.reasoning||0, c = dims.coding||0, m = dims.math||0, s = dims.science||0;
-  const cx = dims.context||0, sp = dims.speed||0, e = dims.efficiency||0, mm = dims.multimodal||0;
+  const d = [dims.reasoning||0, dims.coding||0, dims.math||0, dims.science||0,
+             dims.context||0, dims.speed||0, dims.efficiency||0, dims.multimodal||0];
 
   // Fixed scale — all figures use same coordinate system
-  const SCALE = W / 9.0; // maps -4.2..4.2 to canvas
+  const SCALE = W / 10.0;
   const CX = W/2, CY = H/2;
 
   for (const pass of PASSES) {
     ctx.lineWidth = pass.lw;
     ctx.lineCap = 'round';
-    ctx.beginPath();
 
-    for (let i = 0; i < T_LEN; i++) {
+    for (let i = 0; i < T_LEN - 1; i++) {
       const t = (i / T_LEN) * T_MAX;
-      const x = r*Math.sin(t+c*Math.PI) + c*Math.sin(2*t+m*Math.PI) + m*Math.sin(3*t+s*Math.PI) + s*Math.sin(5*t+r*Math.PI);
-      const y = cx*Math.cos(t+sp*Math.PI*0.5) + sp*Math.cos(3*t+e*Math.PI) + e*Math.cos(4*t+cx*Math.PI) + mm*Math.cos(7*t+mm*Math.PI);
+      let x = 0, y = 0;
+      for (let j = 0; j < 8; j++) {
+        x += d[j] * Math.sin(FX[j]*t + d[7-j]*Math.PI);
+        y += d[j] * Math.cos(FY[j]*t + d[(j+3)%8]*Math.PI*1.3);
+      }
 
-      const px = CX + x * SCALE;
-      const py = CY + y * SCALE;
+      const t2 = ((i+1) / T_LEN) * T_MAX;
+      let x2 = 0, y2 = 0;
+      for (let j = 0; j < 8; j++) {
+        x2 += d[j] * Math.sin(FX[j]*t2 + d[7-j]*Math.PI);
+        y2 += d[j] * Math.cos(FY[j]*t2 + d[(j+3)%8]*Math.PI*1.3);
+      }
 
-      // Radial vignette
       const dist = Math.sqrt(x*x + y*y);
-      const maxR = 4.2;
+      const maxR = 5.0;
       const falloff = 1.0 - Math.min(dist/maxR, 1.0) * 0.6;
       const a = pass.alpha * falloff;
 
       ctx.strokeStyle = `rgba(${Math.round(LINE_R*255)},${Math.round(LINE_G*255)},${Math.round(LINE_B*255)},${a})`;
-
-      if (i === 0) ctx.moveTo(px, py);
-      else {
-        ctx.stroke();
-        ctx.beginPath();
-        ctx.moveTo(px, py);
-      }
-
-      // Draw short segments for per-point alpha
-      const t2 = ((i+1) / T_LEN) * T_MAX;
-      const x2 = r*Math.sin(t2+c*Math.PI) + c*Math.sin(2*t2+m*Math.PI) + m*Math.sin(3*t2+s*Math.PI) + s*Math.sin(5*t2+r*Math.PI);
-      const y2 = cx*Math.cos(t2+sp*Math.PI*0.5) + sp*Math.cos(3*t2+e*Math.PI) + e*Math.cos(4*t2+cx*Math.PI) + mm*Math.cos(7*t2+mm*Math.PI);
+      ctx.beginPath();
+      ctx.moveTo(CX + x*SCALE, CY + y*SCALE);
       ctx.lineTo(CX + x2*SCALE, CY + y2*SCALE);
+      ctx.stroke();
     }
-    ctx.stroke();
   }
 }
 
 // Load timeline and render
-fetch('/timeline.json').then(r=>r.json()).then(data => {
+fetch('timeline.json').then(r=>r.json()).then(data => {
   const container = document.getElementById('timeline');
   data.milestones.forEach((m, i) => {
     const div = document.createElement('div');

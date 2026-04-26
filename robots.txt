@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /standard.html
+Allow: /the-scale.html
 Allow: /models/
 Allow: /guide.html
 Allow: /educators.html
