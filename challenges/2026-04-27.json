@@ -1,0 +1,99 @@
+{
+  "day_number": 83,
+  "date": "2026-04-27",
+  "category": "National Tell A Story Day (US)",
+  "category_emoji": "📖🗣️",
+  "rounds": [
+    {
+      "id": "d83r1",
+      "type": "image",
+      "content": "images/d83_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**SPECIFIC LIGHTING**: Observe highly specific and sometimes complex lighting effects like \"subtle motion blur on one hand.\" AI can execute these too precisely, feeling artificial.",
+      "_note": "Prompt: A photorealistic photograph of a loving grandmother reading animatedly from a large storybook to her two enraptured grandchildren (one boy, one girl) gathered around her on a comfortable rug. The camera captures a slightly elevated, medium shot, showcasing the group's interaction and the expressive faces of the children looking up at their grandmother. Diffused, soft daylight from a large window fills the room, creating natural highlights and shadows, while a fast shutter speed ensures crisp details in their playful movements and the book's illustrations."
+    },
+    {
+      "id": "d83r2",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/1741230/pexels-photo-1741230.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Lina Kivaka on Pexels",
+      "pro_tip": "**SPONTANEOUS EXPRESSIONS**: Note genuine, unforced expressions and interactions. Real photos capture candid emotions rather than perfectly posed, \"content\" or \"enraptured\" faces.",
+      "source_url": "https://www.pexels.com/photo/person-reading-a-book-1741230/"
+    },
+    {
+      "id": "d83r3",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/8317825/pexels-photo-8317825.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Mikhail Nilov on Pexels",
+      "pro_tip": "**NATURAL LIGHTING**: Observe lighting that feels less controlled or \"designed,\" with subtle variations and fewer highly specific effects. Real light often has less deliberate perfection.",
+      "source_url": "https://www.pexels.com/photo/grandmother-reading-a-book-for-the-kids-8317825/"
+    },
+    {
+      "id": "d83r4",
+      "type": "image",
+      "content": "images/d83_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**ANOMALOUS DETAILS**: Check for intricate, highly specific details like \"stacked books\" or \"illustrations.\" AI renders these with uncanny, sometimes too-deliberate precision.",
+      "_note": "Prompt: A photorealistic photograph of a child and an adult (gender ambiguous, perhaps just hands and partial faces) intimately sharing an elaborately illustrated storybook in a rustic, cozy setting. The camera takes an over-the-shoulder perspective, focusing primarily on the vibrant, detailed illustrations of the open book and their hands turning the pages. Warm, inviting glow emanates from a nearby crackling fireplace, casting dynamic light and shadows, giving the image a high ISO, slightly grainy texture, and a candid, documentary feel."
+    },
+    {
+      "id": "d83r5",
+      "type": "image",
+      "content": "images/d83_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**HYPER-PERFECTION**: Look for composition that feels unnaturally perfect with impeccable lighting and staged elements. AI often lacks real-world spontaneity or subtle imperfections.",
+      "_note": "Prompt: A photorealistic photograph of a father and his elementary-aged son enjoying a captivating storybook together in a dimly lit, cozy living room. The wide-angle lens, shot from a slightly low perspective, frames them comfortably on a plush sofa, illuminated by the warm, inviting ambient light of a floor lamp and indirect natural light from a window at dusk. The focus is sharp on their bonding expressions and the colorful pages, with a gentle bokeh effect in the background revealing a stacked pile of books and a comfy throw blanket."
+    },
+    {
+      "id": "d83r6",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/5867248/pexels-photo-5867248.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by cottonbro studio on Pexels",
+      "pro_tip": "**MIMICKED FLAWS**: Be wary of images deliberately mimicking photographic imperfections like \"high ISO grain\" or \"overexposed dreamy quality.\" AI generates these perfectly, lacking organic feel.",
+      "source_url": "https://www.pexels.com/photo/mother-and-son-reading-a-book-5867248/"
+    },
+    {
+      "id": "d83r7",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/7640985/pexels-photo-7640985.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by MART  PRODUCTION on Pexels",
+      "pro_tip": "**ORGANIC COMPOSITION**: Look for slightly less \"perfect\" or spontaneous framing, capturing genuine moments without elaborate staging. Real photos embrace natural imperfections.",
+      "source_url": "https://www.pexels.com/photo/a-boy-looking-at-the-man-holding-a-book-7640985/"
+    },
+    {
+      "id": "d83r8",
+      "type": "image",
+      "content": "images/d83_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are pro tips for the AI detection game:",
+      "_note": "Prompt: A photorealistic photograph of a mother and her young son nestled under a duvet, deeply engrossed in a bedtime story. The camera is positioned intimately, capturing a medium close-up shot with a shallow depth of field, bringing their warm, joyful expressions and the open book into sharp focus. Soft, golden light from a bedside lamp casts a cozy glow, highlighting the texture of the blankets and their content faces, with subtle motion blur on the son's excited hand pointing at an illustration."
+    },
+    {
+      "id": "d83r9",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/7979782/pexels-photo-7979782.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Kindel Media on Pexels",
+      "pro_tip": "**AUTHENTIC TEXTURES**: Feel for the true-to-life textures of skin, hair, and fabric, which appear more varied and less uniformly smooth compared to AI renderings.",
+      "source_url": "https://www.pexels.com/photo/a-woman-and-a-gril-reading-a-book-7979782/"
+    },
+    {
+      "id": "d83r10",
+      "type": "image",
+      "content": "images/d83_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**UNNATURAL FOCUS**: Examine the depth of field. AI can create overly clinical bokeh or perfectly sharp focus on multiple, distinct elements a real lens might struggle with.",
+      "_note": "Prompt: A photorealistic photograph of a mother and her teenage daughter sharing a quiet moment, reading a novel together on a bright, sunlit window seat in their home. The composition is a medium shot, slightly off-center, emphasizing the close bond as they lean into each other, with the open book prominently featured. Bright, natural light streams in, creating a slightly overexposed but dreamy quality, with sharp focus on their hands holding the book and the subtle expressions of shared enjoyment, exhibiting a clean, modern aesthetic."
+    }
+  ],
+  "category_subtitle": "Hear the AI's Tale: Can You Spot the Plot Holes?"
+}
