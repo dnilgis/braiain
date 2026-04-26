@@ -565,6 +565,13 @@
       "category_emoji": "🥨",
       "category_subtitle": "A-salted by pretzels? AI's got this twisted challenge.",
       "challenge_file": "challenges/2026-04-26.json"
+  },
+    "2026-04-27": {
+      "day_number": 83,
+      "category": "National Tell A Story Day (US)",
+      "category_emoji": "📖🗣️",
+      "category_subtitle": "Hear the AI's Tale: Can You Spot the Plot Holes?",
+      "challenge_file": "challenges/2026-04-27.json"
   }
 }
 
