@@ -572,6 +572,13 @@
       "category_emoji": "📖🗣️",
       "category_subtitle": "Hear the AI's Tale: Can You Spot the Plot Holes?",
       "challenge_file": "challenges/2026-04-27.json"
+  },
+    "2026-04-28": {
+      "day_number": 84,
+      "category": "World Day for Safety and Health at Work",
+      "category_emoji": "👷",
+      "category_subtitle": "Workplace vigilance: Spot the AI before it 'trips' you!",
+      "challenge_file": "challenges/2026-04-28.json"
   }
 }
 
