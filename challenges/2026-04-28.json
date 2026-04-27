@@ -1,0 +1,99 @@
+{
+  "day_number": 84,
+  "date": "2026-04-28",
+  "category": "World Day for Safety and Health at Work",
+  "category_emoji": "👷",
+  "rounds": [
+    {
+      "id": "d84r1",
+      "type": "image",
+      "content": "images/d84_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are your pro tips for the AI detection game, themed \"World Day for Safety and Health at Work\":",
+      "_note": "Prompt: A photorealistic photograph of a confident construction worker, a man in a vibrant orange high-visibility vest and a bright yellow hard hat, looking directly at the viewer with a professional and reassuring expression. Photographed with a Canon EOS R5, 85mm lens, f/2.8, ISO 100, under soft natural daylight, focusing sharply on his eyes with a slightly blurred background."
+    },
+    {
+      "id": "d84r2",
+      "type": "image",
+      "content": "images/d84_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**HYPER-REALISM:** Notice exaggerated lighting, brilliant sparks, or impossibly sharp details across the entire scene. AI can amplify effects, making them seem almost *too* perfect or dramatic.",
+      "_note": "Prompt: A photorealistic photograph of a skilled male welder in full protective gear, including a dark welding mask and heavy-duty gloves, meticulously joining metal pipes outdoors on a construction site. Brilliant sparks fly dynamically from the welding point. Taken as a dynamic mid-shot, slightly low angle, capturing the intensity and precision of the task. Photographed with a Nikon D850, 35mm lens, f/4, ISO 400, dramatic side lighting from the sun illuminating the sparks, fast shutter speed to freeze motion."
+    },
+    {
+      "id": "d84r3",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1628147529780-36964fbb8d54?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw0fHxEYXklMjBmb3IlMjBTYWZldHklMjBhbmQlMjBIZWFsdGglMjBhdCUyMFdvcmt8ZW58MHwwfHx8MTc3NzMzMDk0Nnww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Mufid Majnun on Unsplash",
+      "pro_tip": "**CONTEXT CUES:** Look for generic backgrounds or repetitive elements in a construction site. AI might struggle with unique, messy, or dynamically varied background details, making them less authentic.",
+      "source_url": "https://unsplash.com/photos/man-in-orange-vest-wearing-yellow-hard-hat-7TR0TGS7zqg"
+    },
+    {
+      "id": "d84r4",
+      "type": "image",
+      "content": "images/d84_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**UNREAL ANATOMY:** Pay close attention to hands, fingers, or subtle facial symmetry. AI sometimes introduces minor distortions or unnaturally smooth features upon closer inspection.",
+      "_note": "Prompt: A photorealistic photograph of an experienced safety inspector, a man wearing blue work overalls, a yellow hard hat, and safety glasses, meticulously examining a large industrial control panel in a brightly lit factory. His hand is pointing to a display, indicating careful inspection and attention to detail. Taken as a medium shot, slightly from the side, highlighting his focused expression and the intricate machinery. Captured with a Leica SL2, 50mm lens, f/2.0, ISO 320, clean industrial lighting with a mix of ambient and fluorescent sources, creating a professional and sharp image."
+    },
+    {
+      "id": "d84r5",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/8961155/pexels-photo-8961155.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Mikael Blomkvist on Pexels",
+      "pro_tip": "**NATURAL IMPERFECTIONS:** Seek out authentic dust, smudges, or wrinkles on clothing and equipment. Real-world photos capture the grit and reality of work conditions.",
+      "source_url": "https://www.pexels.com/photo/man-in-blue-polo-shirt-and-yellow-hard-hat-smiling-8961155/"
+    },
+    {
+      "id": "d84r6",
+      "type": "image",
+      "content": "images/d84_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**IMMACULATE GEAR:** Examine hard hats, vests, and tools for pristine condition, despite demanding work. AI rarely depicts natural wear, dirt, or creases that real gear would show.",
+      "_note": "Prompt: A photorealistic photograph of a male road worker wearing a high-visibility lime green jacket and a white hard hat, holding a stop sign, standing alertly at a roadside construction zone in a suburban area. A clear \"Caution\" cone is visible in the foreground. Captured as a wide shot, showing the worker and a segment of the road, emphasizing the environmental context. Shot with a Fujifilm GFX 100S, 32-64mm lens at 40mm, f/8, ISO 160, clear, bright overcast daylight providing even illumination, sharp focus across the entire scene."
+    },
+    {
+      "id": "d84r7",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/9075453/pexels-photo-9075453.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Mufid Majnun on Pexels",
+      "pro_tip": "**ENVIRONMENTAL VARIETY:** Observe unique background elements, varied textures, and organic clutter. Real sites often have unpredictable details, unlike curated AI scenes.",
+      "source_url": "https://www.pexels.com/photo/a-person-wearing-a-helmet-9075453/"
+    },
+    {
+      "id": "d84r8",
+      "type": "image",
+      "content": "images/d84_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**PERFECTION:** Look for flawless skin, perfectly placed hair, and an unnaturally clean environment. AI often produces images that are too polished, lacking real-world grit or imperfections.",
+      "_note": "Prompt: A photorealistic photograph of a female safety supervisor, focused on her surroundings outdoors, wearing a distinct red hard hat with a clear \"Safety First\" logo on the side, and a matching reflective jacket. Captured in a medium close-up, slightly off-center, with a thoughtful gaze towards the right. Shot with a Sony A7 III, 50mm lens, f/1.8, ISO 200, crisp morning light creating gentle highlights, shallow depth of field."
+    },
+    {
+      "id": "d84r9",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/7023922/pexels-photo-7023922.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Prakash Chavda on Pexels",
+      "pro_tip": "**REALISTIC LIGHTING:** Identify natural light that might be harsh, inconsistent, or less \"studio-perfect.\" Real photos reflect the actual conditions, not always ideal illumination.",
+      "source_url": "https://www.pexels.com/photo/a-man-working-on-the-metal-plate-surface-while-holding-a-welding-machine-7023922/"
+    },
+    {
+      "id": "d84r10",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/34859873/pexels-photo-34859873.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Aidan Hunnisett on Pexels",
+      "pro_tip": "**AUTHENTIC EXPRESSIONS:** Look for genuine focused gazes, natural body language, or subtle fatigue. Human subjects display nuanced emotions and postures, not just posed perfection.",
+      "source_url": "https://www.pexels.com/photo/construction-worker-in-safety-gear-at-roadside-site-34859873/"
+    }
+  ],
+  "category_subtitle": "Workplace vigilance: Spot the AI before it 'trips' you!"
+}
