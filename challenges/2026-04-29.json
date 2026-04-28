@@ -1,0 +1,99 @@
+{
+  "day_number": 85,
+  "date": "2026-04-29",
+  "category": "International Dance Day",
+  "category_emoji": "💃",
+  "rounds": [
+    {
+      "id": "d85r1",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1524594152303-9fd13543fe6e?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxNXx8RGFuY2V8ZW58MHwwfHx8MTc3NzQxMzU2MHww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Danielle Cerullo on Unsplash",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://unsplash.com/photos/women-dancing-near-mirror-3ckWUnaCxzc"
+    },
+    {
+      "id": "d85r2",
+      "type": "image",
+      "content": "images/d85_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Check for symmetry — AI tends to make things too perfect and symmetrical.",
+      "_note": "Prompt: A photorealistic photograph of a male contemporary dancer executing a powerful grand jeté, his body suspended mid-air in the middle of a bustling city street, against a backdrop of blurred traffic and modern buildings. He is dressed in casual, athletic dance wear. Shot during bright midday sunlight with a fast shutter speed to perfectly freeze the action, using a telephoto lens to compress the background, creating a sharp focus on the airborne dancer. The composition is vertical, emphasizing his height and grace against the urban environment."
+    },
+    {
+      "id": "d85r3",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1621976360623-004223992275?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxMHx8RGFuY2V8ZW58MHwwfHx8MTc3NzQxMzU2MHww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Maick Maciel on Unsplash",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://unsplash.com/photos/group-of-men-in-green-and-white-shirts-dancing-on-stage-xJFbvG1edaM"
+    },
+    {
+      "id": "d85r4",
+      "type": "image",
+      "content": "images/d85_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Examine text and labels — AI struggles with readable, consistent lettering.",
+      "_note": "Prompt: A photorealistic photograph of a professional female contemporary dancer, wearing a form-fitting black sleeveless top and black leggings, captured in a moment of intense emotional expression and powerful motion. Shot in a dramatic close-up from the waist up, using hard, directional theatrical lighting from above that creates stark shadows and beautifully emphasizes muscle definition against a dark, blurred background. The composition focuses tightly on her torso and face, conveying raw power."
+    },
+    {
+      "id": "d85r5",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1454486837617-ce8e1ba5ebfe?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxNHx8RGFuY2V8ZW58MHwwfHx8MTc3NzQxMzU2MHww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Andre Hunter on Unsplash",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://unsplash.com/photos/man-jumping-on-the-middle-of-the-street-during-daytime-p-I9wV811qk"
+    },
+    {
+      "id": "d85r6",
+      "type": "image",
+      "content": "images/d85_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Check edges carefully — AI often produces halos or unnatural blending where objects meet.",
+      "_note": "Prompt: A photorealistic photograph of a female ballet dancer mid-pirouette, her form perfectly reflected in a vast, pristine studio mirror behind her. She wears a simple black leotard and tights. Shot with a standard prime lens at eye level, utilizing warm, diffused studio lighting that highlights her graceful lines and the subtle texture of the mirror's surface, with a shallow depth of field that subtly blurs the background beyond the reflection. The composition frames the dancer and her reflection in a dynamic diagonal."
+    },
+    {
+      "id": "d85r7",
+      "type": "image",
+      "content": "images/d85_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Look at reflections — real reflections match the environment, AI reflections are often random.",
+      "_note": "Prompt: A photorealistic photograph of a group of energetic male hip-hop dancers, dressed in stylish green and white streetwear costumes, performing a synchronized routine on a brightly lit urban stage. Shot from a low, wide-angle perspective from the audience, capturing the full stage and the dynamic motion of the dancers, bathed in vibrant stage lights with noticeable light rays and subtle fog. The composition is expansive, placing the dancers centrally as they explode with movement."
+    },
+    {
+      "id": "d85r8",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1588540111535-2b7ef1eb7833?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyNHx8RGFuY2V8ZW58MHwwfHx8MTc3NzQxMzU2MXww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Breakreate on Unsplash",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://unsplash.com/photos/group-of-people-in-white-and-black-shirts-and-pants-doing-yoga-S_ZTxRjlftA"
+    },
+    {
+      "id": "d85r9",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1537365587684-f490102e1225?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw1fHxEYW5jZXxlbnwwfDB8fHwxNzc3NDEzNTYwfDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Rainier Ridao on Unsplash",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://unsplash.com/photos/womens-black-shirt-lot-GRDpPpKczdY"
+    },
+    {
+      "id": "d85r10",
+      "type": "image",
+      "content": "images/d85_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Look for natural imperfections — real photos have dust, slight blur, and uneven lighting.",
+      "_note": "Prompt: A photorealistic photograph of a diverse group of contemporary dancers, dressed in matching black and white rehearsal attire, performing synchronized floor work and dynamic stretches in a sunlit dance studio. Captured with a wide-angle lens from a slightly elevated perspective, using soft, natural daylight filtering through large windows to illuminate the entire scene with crisp detail. The composition is a horizontal wide shot, emphasizing the group's collective movement."
+    }
+  ],
+  "category_subtitle": "Time to dance! Can AI tell a tango from a twirl?"
+}
