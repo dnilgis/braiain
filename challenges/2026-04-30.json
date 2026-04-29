@@ -1,0 +1,99 @@
+{
+  "day_number": 86,
+  "date": "2026-04-30",
+  "category": "International Jazz Day",
+  "category_emoji": "🎷",
+  "rounds": [
+    {
+      "id": "d86r1",
+      "type": "image",
+      "content": "images/d86_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are pro tips for the AI detection game, \"International Jazz Day\" themed:",
+      "_note": "Prompt: A photorealistic photograph of a passionate male jazz saxophonist in his late 30s, eyes closed in concentration, deeply immersed in playing a gleaming brass tenor saxophone on a dimly lit club stage. The composition is a medium shot, capturing his upper body and the instrument against a blurred background of subtle stage lights. Dramatic spotlights from above and behind create strong rim lighting and specular highlights on the saxophone, emphasizing its polished surface. Shot on a Sony a7 III with an 85mm f/1.4 lens, ISO 1600, 1/250s, with a very shallow depth of field and warm, inviting bokeh."
+    },
+    {
+      "id": "d86r2",
+      "type": "image",
+      "content": "images/d86_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**CONTROLLED LIGHTING:** Look for dramatic, complex stage lighting (rim lights, specific color schemes) that seems perfectly executed without any harshness or accidental shadows.",
+      "_note": "Prompt: A photorealistic photograph of a detailed close-up of the upper body of a gleaming gold tenor saxophone, with the musician's hands just visible, expertly manipulating the keys. The instrument itself is the primary focus, its polished brass surface reflecting warm stage lights beautifully. The composition is a tight crop, centered on the saxophone's body and keywork, with the musician's arms and torso slightly out of focus to emphasize the instrument. Strong, directional warm yellow-orange light from the upper right creates brilliant reflections and highlights the intricate engravings on the brass. Shot on a Fujifilm GFX 100S with a GF 120mm f/4 macro lens, ISO 400, 1/200s, for exceptional clarity and deep color saturation."
+    },
+    {
+      "id": "d86r3",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/26952977/pexels-photo-26952977.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by elusiyan eluwole on Pexels",
+      "pro_tip": "**ANATOMY/REALISM FLAWS:** Check for subtle inconsistencies in musician's finger placement, instrument scale, or reflections that don't quite add up to reality.",
+      "source_url": "https://www.pexels.com/photo/royalty-26952977/"
+    },
+    {
+      "id": "d86r4",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/9002889/pexels-photo-9002889.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Yan Krukau on Pexels",
+      "pro_tip": "**IMPERFECT LIGHTING:** Real photography often has less controlled lighting, featuring natural lens flares, harsh highlights, or deeper, less artificial shadows.",
+      "source_url": "https://www.pexels.com/photo/a-person-in-white-long-sleeve-shirt-playing-the-saxophone-9002889/"
+    },
+    {
+      "id": "d86r5",
+      "type": "image",
+      "content": "images/d86_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**PERFECTION:** AI images often feature unnaturally flawless instrument surfaces, devoid of smudges or wear. Reflections might appear too ideal or perfectly rendered.",
+      "_note": "Prompt: A photorealistic photograph of an extreme close-up of a jazz musician's left hand gracefully pressing the pearl keys of a vintage silver alto saxophone, showcasing intricate finger dexterity. The composition is tightly focused on the keys and the musician's fingers, with just a hint of the instrument's bell and the musician's sleeve blurred in the background. Soft, directional ambient light from the side accentuates the metallic texture of the saxophone and the subtle veins on the musician's hand. Shot on a Nikon D850 with a 105mm f/2.8 macro lens, ISO 800, 1/320s, ensuring incredible detail and sharpness on the points of focus."
+    },
+    {
+      "id": "d86r6",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/359995/pexels-photo-359995.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Chevanon Photography on Pexels",
+      "pro_tip": "**NATURAL IMPERFECTIONS:** Real photos often show authentic wear and tear, dust, or smudges on instruments, and less-than-perfect, organic reflections.",
+      "source_url": "https://www.pexels.com/photo/gold-saxophone-359995/"
+    },
+    {
+      "id": "d86r7",
+      "type": "image",
+      "content": "images/d86_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**HYPER-DETAIL:** Observe if intricate details, like saxophone engravings or skin pores, are rendered with unnatural, uniform sharpness across the focal plane.",
+      "_note": "Prompt: A photorealistic photograph of an energetic jazz quartet performing in a vibrant, slightly smoky jazz club. A male pianist is mid-chord, eyes fixed on the keys with intense focus, while a female electric guitarist leans into a passionate solo, her face expressing deep emotion. A drummer and upright bassist are visible in dynamic motion in the background. The composition is a wide-angle shot from a slightly low perspective, capturing the full stage and the lively interaction between the musicians. Atmospheric warm amber and cool blue stage lights create dramatic contrasts and highlight the instruments. Shot on a Canon EOS R5 with a 24-70mm f/2.8 lens at 35mm, ISO 3200, 1/160s, capturing the dynamic movement with a slight motion blur on the instruments."
+    },
+    {
+      "id": "d86r8",
+      "type": "image",
+      "content": "images/d86_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**IDEALIZED BOKEH:** Notice exceptionally smooth, creamy background blur (bokeh) that might feel overly artistic or slightly unnatural in its perfection and uniformity.",
+      "_note": "Prompt: A photorealistic photograph of a diverse jazz quintet, composed of a female trumpeter, a male upright bassist, a female drummer, a male pianist, and a female vocalist, all performing together with infectious energy on a well-appointed stage in a grand concert hall. The composition is a medium wide shot, capturing the full ensemble and their instruments, showcasing their individual focus and collective synergy. Bright, professional stage lighting, a mix of cool blues and soft whites, evenly illuminates the band and their instruments, with a subtle haze adding to the atmospheric depth. Shot on a Blackmagic Pocket Cinema Camera 6K Pro with a 24mm f/1.8 lens, ISO 1000, 1/125s, in a cinematic aspect ratio, delivering rich blacks and clean, detailed whites."
+    },
+    {
+      "id": "d86r9",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1541804627596-3b5b9ef58c93?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw4fHxKYXp6fGVufDB8MHx8fDE3Nzc1MDQxODh8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Alex Zamora on Unsplash",
+      "pro_tip": "**UNPREDICTABLE MOVEMENT:** Look for genuine, less controlled motion blur, especially on fast-moving hands or instruments in lower light, that feels dynamic and spontaneous.",
+      "source_url": "https://unsplash.com/photos/band-playing-musical-instruments-FU1KddSIIR4"
+    },
+    {
+      "id": "d86r10",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/8040838/pexels-photo-8040838.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by ANTONI SHKRABA production on Pexels",
+      "pro_tip": "**ORGANIC NOISE/GRAIN:** In live, low-light jazz settings, expect to see subtle, natural photographic grain or digital noise, common with higher ISOs.",
+      "source_url": "https://www.pexels.com/photo/musicians-playing-musical-instrument-8040838/"
+    }
+  ],
+  "category_subtitle": "Jazz riffs and AI sniffs: Can you spot the authentic beat?"
+}
