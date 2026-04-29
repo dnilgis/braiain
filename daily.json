@@ -586,6 +586,13 @@
       "category_emoji": "💃",
       "category_subtitle": "Time to dance! Can AI tell a tango from a twirl?",
       "challenge_file": "challenges/2026-04-29.json"
+  },
+    "2026-04-30": {
+      "day_number": 86,
+      "category": "International Jazz Day",
+      "category_emoji": "🎷",
+      "category_subtitle": "Jazz riffs and AI sniffs: Can you spot the authentic beat?",
+      "challenge_file": "challenges/2026-04-30.json"
   }
 }
 
