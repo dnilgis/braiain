@@ -1,0 +1,99 @@
+{
+  "day_number": 87,
+  "date": "2026-05-01",
+  "category": "National Tuba Day",
+  "category_emoji": "🎺",
+  "rounds": [
+    {
+      "id": "d87r1",
+      "type": "image",
+      "content": "images/d87_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "CATEGORY: CROWD UNIFORMITY. AI crowds often feature repetitive faces, unnatural frozen poses, or lack genuine interaction. Look for unnaturally sharp focus on distant details.",
+      "_note": "Prompt: A photorealistic photograph of a charismatic musician with a vintage top hat and a handlebar mustache playing a large, polished brass tuba during a vibrant nighttime street performance for National Tuba Day, with subtle, controlled sparks and smoke artistically emanating from the tuba's bell. Shot with a prime lens at f/2.8, illuminated by dynamic multicolored stage lighting and ambient city glow, with a shallow depth of field."
+    },
+    {
+      "id": "d87r2",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/14143406/pexels-photo-14143406.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Mick Latter on Pexels",
+      "pro_tip": "CATEGORY: AUTHENTIC SPECIAL EFFECTS. Real flames/smoke are unpredictable, showing natural heat haze and uneven light interaction. Look for genuine, dynamic energy in the performance.",
+      "source_url": "https://www.pexels.com/photo/man-playing-tube-14143406/"
+    },
+    {
+      "id": "d87r3",
+      "type": "image",
+      "content": "images/d87_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are your pro tips for the AI detection game:",
+      "_note": "Prompt: A photorealistic photograph of an energetic street band performing lively music during a sunny daytime celebration for National Tuba Day, with a prominent tuba player at the forefront among other brass instruments. Shot with a wide-angle lens at f/8.0 in bright natural daylight, crisp focus on the musicians, with a bustling cityscape in the softly blurred background."
+    },
+    {
+      "id": "d87r4",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/29463301/pexels-photo-29463301.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Jan van der Wolf on Pexels",
+      "pro_tip": "CATEGORY: ORGANIC IMPERFECTIONS. Real street scenes have genuine, varied crowd expressions and subtle imperfections in the environment. Look for natural motion blur and wear.",
+      "source_url": "https://www.pexels.com/photo/vintage-brass-musician-with-flaming-tuba-performance-29463301/"
+    },
+    {
+      "id": "d87r5",
+      "type": "image",
+      "content": "images/d87_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "CATEGORY: EXAGGERATED EMOTIONS. AI parades often show uniformly \"jovial\" or \"cheering\" faces lacking genuine individual expression or natural imperfections in the crowd.",
+      "_note": "Prompt: A photorealistic photograph of a refined close-up of a musician intently playing a polished, large brass tuba in a modern, acoustically designed concert hall during a National Tuba Day performance. The details of the instrument and the musician's focused expression are rendered with exquisite clarity under sophisticated warm theatrical lighting, with the elegant blurred architecture of the hall visible in the background. Shot with a telephoto lens at f/4.0."
+    },
+    {
+      "id": "d87r6",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/33493004/pexels-photo-33493004.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by ZOUEBETHIMAGE Jean on Pexels",
+      "pro_tip": "CATEGORY: REALISTIC REFLECTIONS. Authentic reflections on polished brass reveal subtle distortions of the actual environment. Look for natural skin texture and nuanced finger placement.",
+      "source_url": "https://www.pexels.com/photo/street-musician-playing-tuba-in-festive-parade-33493004/"
+    },
+    {
+      "id": "d87r7",
+      "type": "image",
+      "content": "images/d87_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "CATEGORY: STYLIZED EFFECTS. Look for perfectly symmetrical or overly \"artistic\" sparks/smoke. AI's \"charismatic\" expressions can appear unnervingly generic or plastic.",
+      "_note": "Prompt: A photorealistic photograph of a close-up shot focusing on a skilled musician's hands expertly gripping the valves of a highly polished, gleaming brass tuba during an indoor concert celebrating National Tuba Day. The instrument's intricate details and reflective surface are in razor-sharp focus under soft, directed warm stage lighting, with a creamy bokeh background of the concert hall audience. Shot with a macro lens at f/5.6."
+    },
+    {
+      "id": "d87r8",
+      "type": "image",
+      "content": "images/d87_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "CATEGORY: REFLECTION ANOMALIES. Highly polished surfaces in AI images often display overly clean, generic, or distorted reflections that don't match the environment.",
+      "_note": "Prompt: A photorealistic photograph of a jovial musician enthusiastically playing a sousaphone-style tuba while marching in a lively street parade during a sunny National Tuba Day celebration. The musician, wearing a vibrant costume, is surrounded by a cheering, smiling crowd, all bathed in bright natural sunlight. Shot with a fast shutter speed of 1/500s to capture the motion, from a slightly elevated perspective."
+    },
+    {
+      "id": "d87r9",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/19953443/pexels-photo-19953443.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Anthony Isaac Kofi Arthur on Pexels",
+      "pro_tip": "CATEGORY: OVERLY PERFECT COMPOSITION. AI images can appear unnaturally pristine, with flawless surfaces, sterile lighting, and an almost too-idealized \"refined\" clarity.",
+      "source_url": "https://www.pexels.com/photo/men-playing-trombones-19953443/"
+    },
+    {
+      "id": "d87r10",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/34516604/pexels-photo-34516604.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Caleb Oquendo on Pexels",
+      "pro_tip": "CATEGORY: DIVERSE CROWD REALISM. Real parades feature a diverse range of expressions, not just uniform smiles. Look for incidental details and authentic environmental interaction.",
+      "source_url": "https://www.pexels.com/photo/musician-playing-tuba-in-a-concert-hall-34516604/"
+    }
+  ],
+  "category_subtitle": "Happy Tuba Day! Can AI find the deepest brass?"
+}
