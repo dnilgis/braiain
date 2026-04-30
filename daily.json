@@ -593,6 +593,13 @@
       "category_emoji": "🎷",
       "category_subtitle": "Jazz riffs and AI sniffs: Can you spot the authentic beat?",
       "challenge_file": "challenges/2026-04-30.json"
+  },
+    "2026-05-01": {
+      "day_number": 87,
+      "category": "National Tuba Day",
+      "category_emoji": "🎺",
+      "category_subtitle": "Happy Tuba Day! Can AI find the deepest brass?",
+      "challenge_file": "challenges/2026-05-01.json"
   }
 }
 
