@@ -600,6 +600,13 @@
       "category_emoji": "🎺",
       "category_subtitle": "Happy Tuba Day! Can AI find the deepest brass?",
       "challenge_file": "challenges/2026-05-01.json"
+  },
+    "2026-05-02": {
+      "day_number": 88,
+      "category": "National Truffle Day",
+      "category_emoji": "🍄",
+      "category_subtitle": "Can AI detect the earth's black gold? Truffle-y find out!",
+      "challenge_file": "challenges/2026-05-02.json"
   }
 }
 
