@@ -1,0 +1,99 @@
+{
+  "day_number": 88,
+  "date": "2026-05-02",
+  "category": "National Truffle Day",
+  "category_emoji": "🍄",
+  "rounds": [
+    {
+      "id": "d88r1",
+      "type": "image",
+      "content": "images/d88_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "HYPER-PERFECTION: AI flawlessly executes specific camera specs, artistic lighting, and aesthetic descriptors like \"creamy bokeh,\" creating an impossibly perfect image.",
+      "_note": "Prompt: A photorealistic photograph of a rugged-looking man, dressed in a dark, worn canvas jacket, holding a freshly unearthed, pristine white Alba truffle in his dirt-stained, gloved hand. Shot with a Nikon Z7 II and an 85mm f/1.4 lens, employing dramatic, high-contrast studio lighting to emphasize texture and shadow, sharp focus on the truffle and hands, ISO 200."
+    },
+    {
+      "id": "d88r2",
+      "type": "image",
+      "content": "images/d88_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "IDEALIZED SUBJECTS: AI generates animals that are often too perfect in breed or pose, engaged in an unnaturally staged yet flawlessly rendered action with specified objects.",
+      "_note": "Prompt: A photorealistic photograph of a meticulously arranged still life of several organic, irregularly shaped black truffles resting on a rustic, dark brown reclaimed wooden cutting board, with some scattered earth crumbs. Shot with a Hasselblad X1D II 50C and a 90mm f/3.2 lens, using controlled, soft box studio lighting from above to reveal intricate textures and subtle highlights, deep depth of field to keep all truffles in focus, ISO 100."
+    },
+    {
+      "id": "d88r3",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1653185245072-8eaccca8d0f1?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyM3x8VHJ1ZmZsZXxlbnwwfDB8fHwxNzc3Njc2NjUwfDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Desirae Hayes-Vitor on Unsplash",
+      "pro_tip": "UNEXPECTED ELEMENTS: Real images frequently contain items significantly differing from a detailed prompt, such as \"meatballs\" instead of \"truffles\" or a generic \"knife.\"",
+      "source_url": "https://unsplash.com/photos/a-small-white-dog-wearing-a-blue-harness-dPQ1HPipSNE"
+    },
+    {
+      "id": "d88r4",
+      "type": "image",
+      "content": "images/d88_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "PERFECT FOOD STYLING: AI delivers hyper-realistic food shots, capturing steam, specific sauces, and perfectly rendered specialized tools with immaculate precision.",
+      "_note": "Prompt: A photorealistic photograph of a small, fluffy white Lagotto Romagnolo puppy, wearing a simple blue collar, playfully sniffing a small, round black truffle placed on a patch of damp forest floor. Taken with a Fujifilm GFX 100S and a 110mm f/2 lens, using bright, diffused outdoor daylight, capturing sharp detail in the dog's fur and the truffle's surface, ISO 400."
+    },
+    {
+      "id": "d88r5",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1589208038781-a183a2d3c0fc?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw1fHxUcnVmZmxlfGVufDB8MHx8fDE3Nzc2NzY2NTB8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Andrea Cairone on Unsplash",
+      "pro_tip": "STUDIO PERFECTION: AI excels at meticulously arranged still life, perfectly depicting textures like \"reclaimed wood\" and \"earth crumbs\" with ideal focus and lighting.",
+      "source_url": "https://unsplash.com/photos/person-holding-brown-and-white-short-coated-dog-YdmMUyqfgNA"
+    },
+    {
+      "id": "d88r6",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1601170022284-3a8b1eedf844?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw2fHxUcnVmZmxlfGVufDB8MHx8fDE3Nzc2NzY2NTB8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by CHUTTERSNAP on Unsplash",
+      "pro_tip": "SUBTLE DEVIATIONS: Real photos often feature small, natural variations in requested details, like a \"harness\" instead of a \"collar,\" or a lack of a perfectly staged interaction.",
+      "source_url": "https://unsplash.com/photos/brown-stones-on-brown-wooden-surface-FqIhSU2Plko"
+    },
+    {
+      "id": "d88r7",
+      "type": "image",
+      "content": "images/d88_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "EXTREME TEXTURE: AI renders highly detailed, specific textures, like \"dirt-stained gloves\" and \"pristine truffle,\" under dramatic lighting, often lacking natural inconsistencies.",
+      "_note": "Prompt: A photorealistic photograph of an elegant plate of steaming tagliatelle pasta generously coated in a creamy Parmesan sauce, topped with thinly shaved black truffles, with a specialized truffle shaver resting beside it on the white porcelain plate. Photographed with a Sony Alpha A7 III and a 100mm f/2.8 macro lens, under warm, directional overhead artificial light to highlight steam and truffle sheen, creating a shallow depth of field that blurs the table surface."
+    },
+    {
+      "id": "d88r8",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1589208310452-7cf38ba4d109?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw4fHxUcnVmZmxlfGVufDB8MHx8fDE3Nzc2NzY2NTB8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Andrea Cairone on Unsplash",
+      "pro_tip": "NATURAL FLAWS: Real photos often show less-than-perfect composition, uneven lighting, or subtle background elements not precisely controlled by a prompt.",
+      "source_url": "https://unsplash.com/photos/man-in-black-leather-jacket-holding-white-and-black-short-coated-dog-SW7UylxRpsg"
+    },
+    {
+      "id": "d88r9",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1642354609876-5386fea5e7fc?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw0fHxUcnVmZmxlfGVufDB8MHx8fDE3Nzc2NzY2NTB8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Vincent Dörig on Unsplash",
+      "pro_tip": "AUTHENTIC DETAILS: Look for genuine, un-stylized human interactions, specific clothing items or brands, and natural environments without AI's curated perfection.",
+      "source_url": "https://unsplash.com/photos/a-plate-of-pasta-with-meatballs-and-a-knife--iPCD8Rpve4"
+    },
+    {
+      "id": "d88r10",
+      "type": "image",
+      "content": "images/d88_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are pro tips for the AI detection game, themed \"National Truffle Day\":",
+      "_note": "Prompt: A photorealistic photograph of a pair of hands delicately holding a large, knobby black truffle, its earthy texture visible, against a softly blurred, neutral background. Captured with a Canon EOS R5 and a 50mm f/1.2 lens, utilizing soft, diffused window light from the left, creating a shallow depth of field with creamy bokeh, ISO 100."
+    }
+  ],
+  "category_subtitle": "Can AI detect the earth's black gold? Truffle-y find out!"
+}
