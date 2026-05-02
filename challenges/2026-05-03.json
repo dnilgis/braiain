@@ -1,0 +1,99 @@
+{
+  "day_number": 89,
+  "date": "2026-05-03",
+  "category": "National Two Different Colored Shoes Day",
+  "category_emoji": "👟",
+  "rounds": [
+    {
+      "id": "d89r1",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/539/man-person-legs-grass.jpg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Gratisography on Pexels",
+      "pro_tip": "**SIMPLE LANGUAGE:** Real photo descriptions are usually straightforward, focusing on the subject and scene without technical jargon like lens models or aperture settings.",
+      "source_url": "https://www.pexels.com/photo/man-person-legs-grass-539/"
+    },
+    {
+      "id": "d89r2",
+      "type": "image",
+      "content": "images/d89_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**CAMERA SPECIFICS:** Watch for precise camera model, lens, and aperture mentions. AI generators are often prompted with these details for realism.",
+      "_note": "Prompt: A photorealistic photograph of a person's feet, standing firmly on vibrant green grass, wearing one bright blue sneaker and one fiery red sneaker. The late afternoon golden hour light casts long shadows, highlighting the textured laces and the slight dew on the blades of grass. Shot with a Canon EOS R5, 50mm f/1.8 lens, shallow depth of field, eye-level composition from a slightly low angle."
+    },
+    {
+      "id": "d89r3",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/5662816/pexels-photo-5662816.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Erik Mclean on Pexels",
+      "pro_tip": "**FOCUS ON THE 'WHAT':** Real photo descriptions prioritize what is visible and its general appearance, rather than the intricate technical details of how the image was captured.",
+      "source_url": "https://www.pexels.com/photo/faceless-man-on-high-staircase-5662816/"
+    },
+    {
+      "id": "d89r4",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/9251961/pexels-photo-9251961.png?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Madvortex on Pexels",
+      "pro_tip": "**CONCEPT AND FEEL:** Look for descriptions that convey a theme, mood, or target audience for the photo, rather than just technical execution.",
+      "source_url": "https://www.pexels.com/photo/close-up-photo-of-nikae-air-shoes-9251961/"
+    },
+    {
+      "id": "d89r5",
+      "type": "image",
+      "content": "images/d89_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**OVERLY DETAILED COMPOSITION:** AI prompts often define exact angles, specific vantage points, and focal lengths. Real photos' descriptions are generally less prescriptive about camera mechanics.",
+      "_note": "Prompt: A photorealistic photograph from a very high, downward-looking perspective, capturing male feet clad in a striking pair of sneakers: one bright orange and one deep navy blue. The shoes are sharply in focus against the dramatically blurred urban street scene below, with faint car lights and building reflections visible. The bright midday sun casts short, defined shadows beneath the feet, emphasizing the precarious height. Shot with a long telephoto lens from a skyscraper rooftop, 400mm, f/2.8, dramatic high-angle composition."
+    },
+    {
+      "id": "d89r6",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/6016990/pexels-photo-6016990.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Erik Mclean on Pexels",
+      "pro_tip": "**LACK OF TECHNICAL SPECS:** The absence of specific camera models, lens focal lengths, f-stops, or detailed lighting setups is a strong indicator of a real photo description.",
+      "source_url": "https://www.pexels.com/photo/legs-on-stairs-6016990/"
+    },
+    {
+      "id": "d89r7",
+      "type": "image",
+      "content": "images/d89_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**HYPER-REAL TEXTURE:** Identify descriptions emphasizing extreme detail, perfect fabric, or intricate craftsmanship with technical terms like \"1:1 magnification.\" Real photo descriptions are generally simpler.",
+      "_note": "Prompt: A photorealistic photograph, extreme close-up, focusing on the intricate details of a pair of high-fashion designer sneakers. The left shoe is a rich emerald green suede with neon pink laces, while the right shoe is a lustrous mustard yellow leather with electric blue laces. The soft, diffused studio lighting accentuates the stitching, material textures, and the intricate patterns on the soles. Shot with a macro lens, 1:1 magnification, f/8, studio strobes with softboxes, emphasizing minute details and craftsmanship."
+    },
+    {
+      "id": "d89r8",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1565095747113-c462f5fbf6d6?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw4fHxUd28lMjBEaWZmZXJlbnQlMjBDb2xvcmVkJTIwU2hvZXN8ZW58MHwwfHx8MTc3Nzc1NjE4M3ww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Possessed Photography on Unsplash",
+      "pro_tip": "**ABSENCE OF PERFECTION:** Real photo descriptions typically avoid specifying \"pristine,\" \"perfectly placed,\" or \"flawless\" conditions found in AI prompts. Look for a more natural depiction.",
+      "source_url": "https://unsplash.com/photos/pair-of-red-and-yellow-sneakers-miWGZ02CLKI"
+    },
+    {
+      "id": "d89r9",
+      "type": "image",
+      "content": "images/d89_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**ARTIFICIAL PERFECTION:** Look for descriptions of immaculate surfaces, pristine textures, and perfect symmetry. Real photos often have minor imperfections.",
+      "_note": "Prompt: A photorealistic photograph of a brand new pair of canvas sneakers, one shoe a vivid crimson red and the other a sunny dandelion yellow, placed perfectly side-by-side on a clean, light grey studio backdrop. The softbox lighting from above and slightly to the front creates subtle shadows and crisp highlights, emphasizing the fabric texture and pristine white soles. Shot with a Sony Alpha a7R IV, 100mm macro lens, f/5.6 aperture, studio flash."
+    },
+    {
+      "id": "d89r10",
+      "type": "image",
+      "content": "images/d89_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**TECHNICAL LIGHTING:** Spot detailed descriptions of studio setups, specific lighting types (softbox, strobes), and \"crisp\" illumination. Real photos might have less controlled lighting.",
+      "_note": "Prompt: A photorealistic photograph from a direct overhead perspective, showcasing a pair of feet standing on worn, textured stone stairs. The left foot is wearing a vibrant teal sneaker and the right foot is sporting a contrasting magenta sneaker, both with pristine white laces. The late morning natural light illuminates the scene evenly, highlighting the individual pebbles and cracks in the stone. Shot with a DJI Mavic 3 Pro drone camera, 24mm equivalent lens, f/2.8, sharp focus across the entire frame."
+    }
+  ],
+  "category_subtitle": "AI: Sole searching for those perfectly mismatched pairs."
+}
