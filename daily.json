@@ -607,6 +607,13 @@
       "category_emoji": "🍄",
       "category_subtitle": "Can AI detect the earth's black gold? Truffle-y find out!",
       "challenge_file": "challenges/2026-05-02.json"
+  },
+    "2026-05-03": {
+      "day_number": 89,
+      "category": "National Two Different Colored Shoes Day",
+      "category_emoji": "👟",
+      "category_subtitle": "AI: Sole searching for those perfectly mismatched pairs.",
+      "challenge_file": "challenges/2026-05-03.json"
   }
 }
 
