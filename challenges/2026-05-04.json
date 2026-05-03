@@ -1,0 +1,99 @@
+{
+  "day_number": 90,
+  "date": "2026-05-04",
+  "category": "Star Wars Day",
+  "category_emoji": "🚀",
+  "rounds": [
+    {
+      "id": "d90r1",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/9482214/pexels-photo-9482214.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Otto Rascon on Pexels",
+      "pro_tip": "**NATURAL REFLECTIONS.** Observe authentic, slightly distorted, or complex reflections on glossy surfaces. Real light interacts genuinely with various textures.",
+      "source_url": "https://www.pexels.com/photo/person-in-red-and-black-costume-9482214/"
+    },
+    {
+      "id": "d90r2",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/9482200/pexels-photo-9482200.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Otto Rascon on Pexels",
+      "pro_tip": "**REAL-WORLD DETAILS.** Look for subtle, unscripted elements like stray hairs, specific location markers, or environmental details that feel genuinely lived-in.",
+      "source_url": "https://www.pexels.com/photo/people-in-stormtrooper-costumes-in-the-street-9482200/"
+    },
+    {
+      "id": "d90r3",
+      "type": "image",
+      "content": "images/d90_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**LIGHTING LOGIC.** Check for inconsistent shadows or highlights that don't match the light source's direction. AI lighting can sometimes feel unnatural or \"painted on.\"",
+      "_note": "Prompt: A photorealistic photograph of an individual in a highly detailed, gleaming white and silver futuristic armor costume, standing amidst a densely crowded outdoor cosplay event with other attendees blurred in the background. Captured at eye-level with a standard lens, using the natural ambient light of a sunny day, showcasing a documentary style."
+    },
+    {
+      "id": "d90r4",
+      "type": "image",
+      "content": "images/d90_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**BACKGROUND ARTIFACTS.** Look for distorted faces or limbs in crowds, repetitive patterns, or nonsensical objects in blurred backgrounds. AI often struggles with realistic background complexity.",
+      "_note": "Prompt: A photorealistic photograph of several individuals in highly detailed and colorful Mandalorian costumes and helmets, posing together at a lively outdoor Star Wars cosplay event. Shot with a medium telephoto lens, emphasizing the intricate armor textures and vibrant hues under soft, diffused natural light with a shallow depth of field."
+    },
+    {
+      "id": "d90r5",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/3526022/pexels-photo-3526022.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Craig Adderley on Pexels",
+      "pro_tip": "**ANATOMY FLAWS.** Pay close attention to hands, fingers, or subtle body postures. AI still sometimes generates unnatural, distorted, or strangely proportioned human anatomy.",
+      "source_url": "https://www.pexels.com/photo/shallow-focus-photo-of-stormtrooper-3526022/"
+    },
+    {
+      "id": "d90r6",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/9482193/pexels-photo-9482193.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Otto Rascon on Pexels",
+      "pro_tip": "**ORGANIC CROWDS.** Identify diverse individuals with natural expressions and varied attire in backgrounds. Real crowds exhibit spontaneous poses and unique details.",
+      "source_url": "https://www.pexels.com/photo/person-in-black-helmet-9482193/"
+    },
+    {
+      "id": "d90r7",
+      "type": "image",
+      "content": "images/d90_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**UNCANNY PERFECTION.** Spot costumes or environments that are too pristine or symmetrical. Real-world items usually show subtle wear, dust, or organic imperfections.",
+      "_note": "Prompt: A photorealistic photograph of a Darth Vader cosplayer dramatically pointing to the left, captured in an outdoor setting against a backdrop of weathered stone walls and subtle foliage. Shot with a prime lens at a medium close-up, highlighting the glossy textures of the detailed costume and helmet under a mix of direct sunlight and dramatic shadows."
+    },
+    {
+      "id": "d90r8",
+      "type": "image",
+      "content": "images/d90_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are pro tips for the AI detection game:",
+      "_note": "Prompt: A photorealistic photograph of a lone Stormtrooper character in meticulously crafted costume, standing confidently amidst a bustling, vibrant sci-fi themed park event, surrounded by diverse crowds and futuristic architecture. Captured with a wide-angle lens at eye-level, showcasing the dynamic atmosphere under bright, natural daylight."
+    },
+    {
+      "id": "d90r9",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/9482213/pexels-photo-9482213.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Otto Rascon on Pexels",
+      "pro_tip": "**AUTHENTIC IMPERFECTIONS.** Seek out natural wear, scratches, dust, or genuine blemishes on costumes and props. Real items acquire true-to-life marks.",
+      "source_url": "https://www.pexels.com/photo/person-in-black-and-yellow-costume-9482213/"
+    },
+    {
+      "id": "d90r10",
+      "type": "image",
+      "content": "images/d90_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**TEXTURE ODDITIES.** Examine materials for overly uniform patterns, strange repetitions, or a \"plastic\" feel that lacks natural variation or subtle imperfections.",
+      "_note": "Prompt: A photorealistic photograph of a tight close-up on the upper body and helmet of a person dressed as a Stormtrooper, participating in a bustling outdoor cosplay event. Shot with a macro lens, accentuating the glossy surface and subtle wear of the helmet under bright, directional sunlight, with the background softly blurred to indicate a lively crowd."
+    }
+  ],
+  "category_subtitle": "May the Fourth: These *are* the AI droids you're looking for!"
+}
