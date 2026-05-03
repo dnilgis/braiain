@@ -614,6 +614,13 @@
       "category_emoji": "👟",
       "category_subtitle": "AI: Sole searching for those perfectly mismatched pairs.",
       "challenge_file": "challenges/2026-05-03.json"
+  },
+    "2026-05-04": {
+      "day_number": 90,
+      "category": "Star Wars Day",
+      "category_emoji": "🚀",
+      "category_subtitle": "May the Fourth: These *are* the AI droids you're looking for!",
+      "challenge_file": "challenges/2026-05-04.json"
   }
 }
 
