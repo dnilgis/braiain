@@ -621,6 +621,13 @@
       "category_emoji": "🚀",
       "category_subtitle": "May the Fourth: These *are* the AI droids you're looking for!",
       "challenge_file": "challenges/2026-05-04.json"
+  },
+    "2026-05-05": {
+      "day_number": 91,
+      "category": "World Hand Hygiene Day",
+      "category_emoji": "🧼",
+      "category_subtitle": "Hands down, the cleanest AI detection game!",
+      "challenge_file": "challenges/2026-05-05.json"
   }
 }
 
