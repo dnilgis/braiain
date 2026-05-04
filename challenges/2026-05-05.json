@@ -1,0 +1,99 @@
+{
+  "day_number": 91,
+  "date": "2026-05-05",
+  "category": "World Hand Hygiene Day",
+  "category_emoji": "🧼",
+  "rounds": [
+    {
+      "id": "d91r1",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1584591284146-accc545c17fd?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxNnx8SGFuZCUyMEh5Z2llbmV8ZW58MHwwfHx8MTc3NzkzMzY3NXww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by F Cary Snyder on Unsplash",
+      "pro_tip": "**SUBTLE INCONSISTENCIES:** Scan for small blending errors, slightly off reflections, or physics that don't look quite right (e.g., water splashes behaving unusually). AI often struggles with these nuances.",
+      "source_url": "https://unsplash.com/photos/person-holding-stainless-steel-faucet-CBT-1Owg6R0"
+    },
+    {
+      "id": "d91r2",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/6627796/pexels-photo-6627796.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by www.kaboompics.com on Pexels",
+      "pro_tip": "**UNIFORM TEXTURES:** Pay attention to skin, water, or metal surfaces that appear unnaturally smooth or exhibit subtle, repetitive patterns. Real-world textures usually have more organic variation.",
+      "source_url": "https://www.pexels.com/photo/doctor-washing-hands-under-tap-water-6627796/"
+    },
+    {
+      "id": "d91r3",
+      "type": "image",
+      "content": "images/d91_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**FLAWLESS ILLUMINATION:** AI frequently produces lighting that is too ideal, uniform, or lacks complex natural shadows and highlights. Look for reflections that seem slightly off or artificial.",
+      "_note": "Prompt: A photorealistic photograph of a pair of heavily tattooed hands washing under a running kitchen faucet. The composition is a dynamic medium close-up, sharply focusing on the detailed artwork on the skin and the water droplets, while a colorful bowl of fresh, vibrant vegetables (like bell peppers and leafy greens) is artfully blurred in the background. Shot with a Canon EOS R6 Mark II and a 85mm f/1.4 lens, f/1.8, 1/400s, ISO 500, illuminated by warm, inviting kitchen overhead lights combined with natural light from a nearby window, creating a pleasant domestic atmosphere."
+    },
+    {
+      "id": "d91r4",
+      "type": "image",
+      "content": "images/d91_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**CALCULATED AESTHETICS:** Observe precise depth of field and lens effects that appear too intentional or artificial. AI often perfectly renders specific camera settings, creating an uncanny exactness.",
+      "_note": "Prompt: A photorealistic photograph of a person actively washing their hands under a stream of water in a pristine white porcelain sink. The composition is a medium shot, showing the forearms, hands, and the basin of the sink with water splashing. Captured with a Fujifilm GFX 100S and a 80mm f/1.7 lens, f/5.6, 1/200s, ISO 160, bathed in bright, natural daylight filtering through a bathroom window, providing crisp details and realistic color rendition."
+    },
+    {
+      "id": "d91r5",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/9871625/pexels-photo-9871625.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Towfiqu barbhuiya on Pexels",
+      "pro_tip": "**Tips for Detecting Real Photos:**",
+      "source_url": "https://www.pexels.com/photo/close-up-shot-of-a-hand-washing-9871625/"
+    },
+    {
+      "id": "d91r6",
+      "type": "image",
+      "content": "images/d91_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are your pro tips for the AI detection game:",
+      "_note": "Prompt: A photorealistic photograph of a healthcare worker's hands meticulously washing under a stream of clear running water from a sterile chrome faucet. The composition is a detailed close-up, capturing the rivulets of water cascading over the skin, with subtle steam visible. Shot with a Canon EOS R5 and a 100mm macro lens, f/2.8, 1/500s, ISO 400, illuminated by bright, cool LED overhead lighting typical of a hospital examination room, emphasizing cleanliness and precision."
+    },
+    {
+      "id": "d91r7",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1584744354544-a956499a4959?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw3fHxIYW5kJTIwSHlnaWVuZXxlbnwwfDB8fHwxNzc3OTMzNjc1fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Mélissa Jeanty on Unsplash",
+      "pro_tip": "**AUTHENTIC IMPERFECTIONS:** Look for realistic skin pores, minor blemishes, or less-than-perfect water droplets. Real photos often embrace natural irregularities, unlike AI's flawless renditions.",
+      "source_url": "https://unsplash.com/photos/a-person-washing-their-hands-in-a-sink-BGiJJcHwA94"
+    },
+    {
+      "id": "d91r8",
+      "type": "image",
+      "content": "images/d91_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**Tips for Detecting AI-Generated Images:**",
+      "_note": "Prompt: A photorealistic photograph of a person's hand firmly gripping a sleek, brushed stainless steel faucet handle. The composition is a medium close-up, highlighting the texture of the skin against the reflective metal surface. Captured with a Nikon Z7 II and a 50mm f/1.8 lens, f/4, 1/125s, ISO 200, utilizing soft, diffused studio lighting from a large softbox to bring out the subtle sheen of the metal and the fine details of the hand, with a shallow depth of field gently blurring the background."
+    },
+    {
+      "id": "d91r9",
+      "type": "image",
+      "content": "images/d91_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**HYPERREALISM:** Notice impossibly perfect skin, water rivulets, or foam details. AI often renders visuals that are unnaturally flawless, lacking natural imperfections.",
+      "_note": "Prompt: A photorealistic photograph of both hands thoroughly covered in a thick, luxurious white soap lather, with tiny bubbles glistening on the skin's surface. The composition is an extreme close-up, showcasing every detail of the foam and the skin texture. Shot with a Sony Alpha 1 and a 90mm macro lens, f/4, 1/250s, ISO 320, under soft, even ambient light from a large window on a cloudy day, creating gentle shadows that emphasize the three-dimensionality of the lather."
+    },
+    {
+      "id": "d91r10",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/5514899/pexels-photo-5514899.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Ivan S on Pexels",
+      "pro_tip": "**ORGANIC LIGHTING:** Observe how light creates complex, natural shadows and highlights that feel genuinely integrated into the scene. Real photos capture nuanced, unpredictable illumination.",
+      "source_url": "https://www.pexels.com/photo/a-tattooed-person-washing-his-hands-5514899/"
+    }
+  ],
+  "category_subtitle": "Hands down, the cleanest AI detection game!"
+}
