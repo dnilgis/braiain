@@ -1,0 +1,99 @@
+{
+  "day_number": 92,
+  "date": "2026-05-06",
+  "category": "National Nurses Day 🩺",
+  "category_emoji": "🧠",
+  "rounds": [
+    {
+      "id": "d92r1",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/35645507/pexels-photo-35645507.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Sahil Singh on Pexels",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://www.pexels.com/photo/nursing-students-in-clinical-training-with-mannequin-35645507/"
+    },
+    {
+      "id": "d92r2",
+      "type": "image",
+      "content": "images/d92_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "MEDICAL ACCURACY: Stethoscopes hang correctly around the neck, IVs connect to the right side of the bag, BP cuffs sit on the upper arm. AI frequently misplaces or invents equipment that looks plausible but is medically wrong.",
+      "_note": "Prompt: A photorealistic photograph of a home health nurse in plain scrubs taking blood pressure on an elderly patient seated in a wooden chair in a sunlit living room. Canon 5D Mark IV, 50mm f/1.8, golden afternoon light through sheer curtains. Visible age spots and skin texture on the patient's arm, fabric weave on the blood pressure cuff, dust visible in the light beam, slight wear on the wooden chair."
+    },
+    {
+      "id": "d92r3",
+      "type": "image",
+      "content": "images/d92_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "EQUIPMENT TEXT: Look at IV bags, monitors, and medication labels — AI struggles to render legible, consistent medical text and will often produce gibberish or warped logos.",
+      "_note": "Prompt: A photorealistic photograph of a nurse in navy scrubs leaning over a patient lying in a hospital bed, adjusting an IV line. Canon EOS R5, 50mm f/1.8, soft fluorescent overhead light mixed with cooler monitor glow. Crisp detail on the IV tubing, wrinkled bedsheets, faint smudges on the bedrail, individual strands of hair visible."
+    },
+    {
+      "id": "d92r4",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/6129676/pexels-photo-6129676.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by RDNE Stock project on Pexels",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://www.pexels.com/photo/nurse-measuring-the-blood-pressure-of-a-patient-6129676/"
+    },
+    {
+      "id": "d92r5",
+      "type": "image",
+      "content": "images/d92_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "EYE CONTACT: In multi-person scenes, real photos show natural mismatched gazes — someone's looking down, someone's checking a chart. AI tends to make everyone face the camera or stare in eerily aligned directions.",
+      "_note": "Prompt: A photorealistic photograph of two nurses in light blue scrubs standing beside an elderly patient's hospital bed, with a family member in casual clothes seated nearby. Nikon Z6, 35mm f/2.8, mixed indoor lighting from window plus overhead fluorescent. Realistic asymmetry in faces, slightly creased clothing, faint reflections on the floor, dust motes near the window."
+    },
+    {
+      "id": "d92r6",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1592218698237-5bd1aef5e3e7?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyfHxOdXJzZSUyMGhvc3BpdGFsfGVufDB8MHx8fDE3NzgwMTcxNjh8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Günter Valda on Unsplash",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://unsplash.com/photos/man-in-green-scrub-suit-lZYOdy2yVj0"
+    },
+    {
+      "id": "d92r7",
+      "type": "image",
+      "content": "images/d92_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "FABRIC FOLDS: Real scrubs wrinkle naturally where elbows and shoulders move; AI scrubs often look too uniform or have folds that don't match the body's posture.",
+      "_note": "Prompt: A photorealistic close-up photograph of a nurse in pink scrubs cradling a newborn wrapped in a white hospital blanket, head tilted down in concentration. Sony A7 IV, 85mm f/1.4, warm window light from camera left. Visible skin pores, faint hospital wristband, slight wrinkles in the blanket fabric, shallow depth of field with bokeh on background equipment."
+    },
+    {
+      "id": "d92r8",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1624727828489-a1e03b79bba8?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyfHxOdXJzZXxlbnwwfDB8fHwxNzc4MDE3MjE4fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Patty Brito on Unsplash",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://unsplash.com/photos/girl-in-blue-jacket-holding-red-and-silver-ring-Y-3Dt0us7e0"
+    },
+    {
+      "id": "d92r9",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/18459702/pexels-photo-18459702.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Jsme  MILA on Pexels",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://www.pexels.com/photo/caregiver-talking-with-patient-on-bed-18459702/"
+    },
+    {
+      "id": "d92r10",
+      "type": "image",
+      "content": "images/d92_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Real nurses' hands show calluses, short clipped nails, and natural finger positioning — AI often produces too-smooth skin or subtly wrong finger counts on gripping hands.",
+      "_note": "Prompt: A photorealistic photograph of three nurses in teal scrubs and surgical caps gathered around a patient on an operating table under bright overhead surgical lights. Fujifilm X-T4, 35mm f/2, slight motion blur in foreground hands. Visible texture on scrub fabric weave, faint reflections in stainless steel instruments, subtle skin pores under harsh clinical lighting."
+    }
+  ],
+  "category_subtitle": "Scrubs, Stethoscopes, and Showing Up"
+}
