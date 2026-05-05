@@ -219,6 +219,34 @@
   .day-chip.picked { border-color: var(--cyan); background: rgba(0,229,255,.12); color: var(--cyan); }
   .day-chip .day-emoji { font-size: .8rem; }
 
+  .theme-card {
+    padding: 10px 12px; background: var(--bg); border: 1px solid var(--border);
+    border-radius: 4px; cursor: pointer; transition: all .15s;
+    color: var(--text); display: flex; flex-direction: column; gap: 4px;
+    flex: 1 1 240px; min-width: 220px; max-width: 340px;
+  }
+  .theme-card:hover { border-color: var(--cyan); background: rgba(0,229,255,.05); }
+  .theme-card.picked { border-color: var(--cyan); background: rgba(0,229,255,.12); }
+  .theme-card .tc-head { display: flex; align-items: center; gap: 6px; font-size: .75rem; font-weight: 600; }
+  .theme-card .tc-emoji { font-size: 1rem; }
+  .theme-card .tc-sub { font-size: .65rem; color: var(--muted); font-style: italic; line-height: 1.4; }
+  .theme-card .tc-visual { font-size: .58rem; color: var(--cyan); opacity: .8; letter-spacing: .04em; }
+
+  .tagline-options {
+    display: none; flex-direction: column; gap: 4px; margin-top: 6px;
+    padding: 8px; background: rgba(168,85,247,.06); border: 1px solid rgba(168,85,247,.3);
+    border-radius: 4px;
+  }
+  .tagline-options.show { display: flex; }
+  .tagline-options .to-label { font-size: .55rem; color: var(--muted); text-transform: uppercase; letter-spacing: .1em; margin-bottom: 2px; }
+  .tagline-options button {
+    padding: 7px 10px; background: var(--bg); border: 1px solid var(--border);
+    border-radius: 3px; color: var(--text); font-size: .68rem; cursor: pointer;
+    text-align: left; transition: all .15s; font-family: var(--font-mono);
+  }
+  .tagline-options button:hover { border-color: var(--purple); background: rgba(168,85,247,.1); }
+  .tagline-options button .to-tone { color: var(--purple); font-size: .55rem; text-transform: uppercase; letter-spacing: .08em; margin-right: 6px; }
+
   .warning-box {
     background: rgba(255,149,0,.08); border: 1px solid var(--orange);
     border-radius: 4px; padding: 10px 14px; margin-top: 10px;
@@ -273,9 +301,10 @@
       <button class="btn btn-purple btn-sm" onclick="autoTagline()" style="width:100%">✨ AUTO TAGLINE</button>
     </div>
   </div>
+  <div id="tagline-options" class="tagline-options"></div>
   <hr>
   <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:10px;">
-    <button class="btn btn-yellow btn-sm" onclick="lookupDays()">📅 WHAT'S TODAY?</button>
+    <button class="btn btn-yellow btn-sm" onclick="suggestThemes()">✨ SUGGEST THEMES</button>
     <button class="btn btn-outline btn-sm" onclick="document.getElementById('import-file').click()">📂 IMPORT JSON</button>
     <input type="file" id="import-file" accept=".json" style="display:none" onchange="importJSON(event)">
     <span class="status" id="import-status"></span>
@@ -406,6 +435,14 @@ const AI   = [null, null, null, null, null];
 let photoResults = [];
 let photoSource = 'unsplash';
 
+/* Surface real status code + API error message instead of generic "HTTP 503" */
+async function apiError(resp, prefix='') {
+  const body = await resp.json().catch(() => ({}));
+  const detail = body?.error?.message || resp.statusText || '';
+  const tag = prefix ? prefix + ': ' : '';
+  return new Error(`${tag}HTTP ${resp.status}${detail ? ' — ' + detail : ''}`);
+}
+
 const defaultPrompts = [
   'A photorealistic photograph of [subject], natural lighting, shot on Canon EOS R5, 85mm lens',
   'A photorealistic photograph of [subject], casual composition, slightly messy, everyday life, natural colors',
@@ -487,37 +524,69 @@ async function autoTagline() {
   const date = document.getElementById('cfg-date').value;
   const d = new Date(date + 'T12:00:00');
   const formatted = d.toLocaleDateString('en-US', { weekday:'long', month:'long', day:'numeric', year:'numeric' });
+  const opts = document.getElementById('tagline-options');
+  opts.innerHTML = ''; opts.classList.remove('show');
 
-  stat('import-status', 'Generating tagline…');
+  stat('import-status', 'Generating 4 tagline variants…');
   try {
     const resp = await fetch(
       `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${key}`,
       {
         method: 'POST', headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ contents: [{ parts: [{ text:
-          `Generate a short, witty subtitle for a daily AI image detection game.
-Theme: "${theme}" | Date: ${formatted}
-Rules: 5-12 words, fun/cheeky, theme-related. Similar to:
-"Post-Super Bowl Recovery — It's Pizza Time!"
-"Rain, Snow, or AI — They Always Deliver"
-Return ONLY the tagline, no quotes.`
+          `Theme: "${theme}"
+Date: ${formatted}
+
+Generate 4 different taglines for a daily AI-vs-real photo detection game. Each tagline: 5-12 words, theme-related, no surrounding quotes.
+
+Variety required (one of each):
+1. WITTY — pun, wordplay, or clever twist
+2. PUNCHY — direct challenge, short and confident
+3. SENSORY — evokes a mood, season, or feeling
+4. CHEEKY — irreverent, slightly absurd
+
+Reference taglines (style only, do not reuse):
+- "Post-Super Bowl Recovery — It's Pizza Time!"
+- "Rain, Snow, or AI — They Always Deliver"
+
+Return JSON only, no markdown:
+[{"tone":"witty","text":"..."},{"tone":"punchy","text":"..."},{"tone":"sensory","text":"..."},{"tone":"cheeky","text":"..."}]`
         }], role: 'user' }] })
       }
     );
-    if (!resp.ok) throw new Error('HTTP ' + resp.status);
+    if (!resp.ok) throw await apiError(resp, 'Tagline');
     const data = await resp.json();
-    const text = (data.candidates?.[0]?.content?.parts?.[0]?.text || '').trim().replace(/^["']|["']$/g, '');
-    if (text) {
-      document.getElementById('cfg-subtitle').value = text;
-      stat('import-status', 'Tagline generated ✓', 'ok');
-    } else throw new Error('Empty');
+    const raw = (data.candidates?.[0]?.content?.parts?.[0]?.text || '')
+      .replace(/```json\s*/g, '').replace(/```\s*/g, '').trim();
+    const variants = JSON.parse(raw);
+    if (!Array.isArray(variants) || !variants.length) throw new Error('No variants returned');
+
+    const label = document.createElement('div');
+    label.className = 'to-label';
+    label.textContent = 'Pick a tagline →';
+    opts.appendChild(label);
+
+    variants.forEach(v => {
+      const text = (v.text || '').trim().replace(/^["']|["']$/g, '');
+      if (!text) return;
+      const btn = document.createElement('button');
+      btn.innerHTML = `<span class="to-tone">${(v.tone||'').toUpperCase()}</span>${text}`;
+      btn.onclick = () => {
+        document.getElementById('cfg-subtitle').value = text;
+        opts.classList.remove('show');
+        stat('import-status', `Tagline set ✓`, 'ok');
+      };
+      opts.appendChild(btn);
+    });
+    opts.classList.add('show');
+    stat('import-status', `${variants.length} taglines — click one`, 'ok');
   } catch (e) { stat('import-status', 'Failed: ' + e.message, 'err'); }
 }
 
 /* ═══════════════════════════════════════
    WHAT'S TODAY?
    ═══════════════════════════════════════ */
-async function lookupDays() {
+async function suggestThemes() {
   const key = document.getElementById('key-gemini').value.trim();
   if (!key) return stat('days-status', 'Enter Google AI key in Step 2', 'err');
   const date = document.getElementById('cfg-date').value;
@@ -525,7 +594,7 @@ async function lookupDays() {
 
   const d = new Date(date + 'T12:00:00');
   const formatted = d.toLocaleDateString('en-US', { weekday:'long', month:'long', day:'numeric', year:'numeric' });
-  stat('days-status', `Looking up ${formatted}…`);
+  stat('days-status', `Brainstorming themes for ${formatted}…`);
   document.getElementById('days-list').innerHTML = '';
 
   try {
@@ -534,38 +603,56 @@ async function lookupDays() {
       {
         method: 'POST', headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ contents: [{ parts: [{ text:
-          `What national days, international days, awareness days, food days, and fun holidays fall on ${formatted}?
-Include well-known and obscure. Also major events or seasonal themes.
-Return as JSON array: [{"name":"National Pizza Day","emoji":"🍕"}]
-ONLY JSON, no other text. 10-20 results, prioritize visually interesting themes.`
+          `Date: ${formatted}
+
+Suggest 6 fully-formed theme ideas for a daily AI-vs-real photo detection game on this date. Mix:
+- 2-3 real national/international/awareness/food days that fall on this exact date
+- 2 seasonal or cultural angles (weather, nearby holidays, zeitgeist of the week)
+- 1 unexpected or playful angle
+
+For EACH theme return:
+- "theme": punchy 2-4 word theme name (goes in the game's theme field, e.g. "National Pizza Day" or "Late Summer Light")
+- "subtitle": ready-to-use tagline, 6-12 words, witty, theme-related, no surrounding quotes
+- "emoji": one emoji that fits
+- "search": 1-3 word stock-photo search query (drop "National"/"Day" etc.)
+- "visual": 4-7 word note on what makes this photogenic and AI-worthy
+
+Order by visual interest descending. Return JSON array only, no markdown, no other text.
+
+Example shape:
+[{"theme":"National Pizza Day","subtitle":"Post-Super Bowl Recovery — It's Pizza Time!","emoji":"🍕","search":"pizza","visual":"melted cheese, char marks, steam"}]`
         }], role: 'user' }] })
       }
     );
-    if (!resp.ok) throw new Error('HTTP ' + resp.status);
+    if (!resp.ok) throw await apiError(resp, 'Theme suggestions');
     const data = await resp.json();
     const text = data.candidates?.[0]?.content?.parts?.[0]?.text || '';
     const jsonStr = text.replace(/```json\s*/g, '').replace(/```\s*/g, '').trim();
-    const days = JSON.parse(jsonStr);
-    if (!Array.isArray(days) || !days.length) throw new Error('No days found');
+    const themes = JSON.parse(jsonStr);
+    if (!Array.isArray(themes) || !themes.length) throw new Error('No themes returned');
 
     const list = document.getElementById('days-list');
     list.innerHTML = '';
-    days.forEach(day => {
-      const chip = document.createElement('div');
-      chip.className = 'day-chip';
-      chip.innerHTML = `<span class="day-emoji">${day.emoji||'📅'}</span>${day.name}`;
-      chip.onclick = () => {
-        document.getElementById('cfg-cat').value = day.name;
-        document.getElementById('cfg-emoji').value = day.emoji || '📅';
-        document.getElementById('us-query').value = day.name.replace(/^(National|International|World)\s+/i,'').replace(/\s+Day$/i,'');
-        list.querySelectorAll('.day-chip').forEach(c => c.classList.remove('picked'));
-        chip.classList.add('picked');
-        stat('days-status', `Selected: ${day.name}`, 'ok');
-        autoTagline();
+    themes.forEach(t => {
+      const card = document.createElement('div');
+      card.className = 'theme-card';
+      card.innerHTML = `
+        <div class="tc-head"><span class="tc-emoji">${t.emoji||'📅'}</span>${t.theme||'Untitled'}</div>
+        <div class="tc-sub">${t.subtitle||''}</div>
+        <div class="tc-visual">▸ ${t.visual||''}</div>`;
+      card.onclick = () => {
+        document.getElementById('cfg-cat').value = t.theme || '';
+        document.getElementById('cfg-emoji').value = t.emoji || '📅';
+        document.getElementById('cfg-subtitle').value = t.subtitle || '';
+        document.getElementById('us-query').value = t.search || (t.theme||'').replace(/^(National|International|World)\s+/i,'').replace(/\s+Day$/i,'');
+        list.querySelectorAll('.theme-card').forEach(c => c.classList.remove('picked'));
+        card.classList.add('picked');
+        document.getElementById('tagline-options').classList.remove('show');
+        stat('days-status', `Picked: ${t.theme} → now search photos ↓`, 'ok');
       };
-      list.appendChild(chip);
+      list.appendChild(card);
     });
-    stat('days-status', `${days.length} days found. Click to use →`, 'ok');
+    stat('days-status', `${themes.length} themes — click one to lock theme + tagline + search query`, 'ok');
   } catch (e) { stat('days-status', 'Failed: ' + e.message, 'err'); }
 }
 
@@ -637,7 +724,7 @@ async function searchPhotos() {
 async function searchUnsplash(q, key) {
   const r = await fetch(`https://api.unsplash.com/search/photos?query=${encodeURIComponent(q)}&per_page=24&orientation=landscape`,
     { headers: { Authorization: `Client-ID ${key}` } });
-  if (!r.ok) throw new Error('Unsplash: ' + (r.status===401 ? 'Invalid key' : 'HTTP '+r.status));
+  if (!r.ok) throw await apiError(r, 'Unsplash' + (r.status===401 ? ' (invalid key)' : ''));
   const d = await r.json();
   return d.results.map(p => ({
     id: 'us_'+p.id, platform: 'unsplash',
@@ -650,7 +737,7 @@ async function searchUnsplash(q, key) {
 async function searchPexels(q, key) {
   const r = await fetch(`https://api.pexels.com/v1/search?query=${encodeURIComponent(q)}&per_page=24&orientation=landscape`,
     { headers: { Authorization: key } });
-  if (!r.ok) throw new Error('Pexels: ' + (r.status===401 ? 'Invalid key' : 'HTTP '+r.status));
+  if (!r.ok) throw await apiError(r, 'Pexels' + (r.status===401 ? ' (invalid key)' : ''));
   const d = await r.json();
   return d.photos.map(p => ({
     id: 'px_'+p.id, platform: 'pexels',
@@ -758,7 +845,7 @@ async function geminiGen(i) {
         method: 'POST', headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ instances: [{ prompt }], parameters: { sampleCount: 1, aspectRatio: '4:3' } })
       });
-      if (!resp.ok) { const e = await resp.json().catch(()=>({})); throw new Error(e.error?.message || 'HTTP '+resp.status); }
+      if (!resp.ok) throw await apiError(resp, model);
       data = await resp.json();
       const prev = document.getElementById(`prev-${i}`);
       let found = false;
@@ -788,7 +875,7 @@ async function geminiGen(i) {
           generationConfig: { responseModalities: ['TEXT', 'IMAGE'] }
         })
       });
-      if (!resp.ok) { const e = await resp.json().catch(()=>({})); throw new Error(e.error?.message || 'HTTP '+resp.status); }
+      if (!resp.ok) throw await apiError(resp, model);
       data = await resp.json();
       let found = false;
       const prev = document.getElementById(`prev-${i}`);
@@ -869,29 +956,54 @@ async function suggestPrompts() {
   const theme = document.getElementById('cfg-cat').value.trim();
   if (!theme) return stat('ai-status-global', 'Enter a theme first', 'err');
 
-  const realDescs = REAL.filter(Boolean).map((p,i) => `Real ${i+1}: ${p.desc}`).join('\n');
-  const ctx = realDescs ? `\n\nReal photos selected:\n${realDescs}\nMatch similar subjects to make AI hard to distinguish.` : '';
+  const picked = REAL.filter(Boolean);
+  if (picked.length < 3) {
+    return stat('ai-status-global', `Pick at least 3 stock photos first ↑ (you have ${picked.length})`, 'err');
+  }
 
-  stat('ai-status-global', 'Generating prompts…');
+  // Build a per-slot map: which AI slot anchors to which real photo
+  const slots = REAL.map((p, i) => ({ idx: i, real: p }));
+  const realBlock = slots.map(s =>
+    s.real
+      ? `Slot ${s.idx+1} (anchor to Real ${s.idx+1}): ${s.real.desc}`
+      : `Slot ${s.idx+1} (no anchor — invent a fitting variant on theme)`
+  ).join('\n');
+
+  stat('ai-status-global', `Generating prompts anchored to ${picked.length} real photos…`);
   try {
     const resp = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${key}`, {
       method: 'POST', headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ contents: [{ parts: [{ text:
-        `Theme: "${theme}". Generate 5 photorealistic image prompts for AI image generation.
-Each: starts with "A photorealistic photograph of", includes camera/lighting details, varies composition.${ctx}
-Return ONLY 5 prompts numbered 1-5.`
+        `Theme: "${theme}"
+
+You are writing 5 photorealistic image-generation prompts for AI images that will be mixed into a puzzle alongside the real photos described below. Each AI image must be plausibly mistaken for one of the real photos in the same set — same subject category, same lighting feel, same composition style.
+
+Real photos:
+${realBlock}
+
+For each slot 1-5, write ONE prompt that:
+- Starts with "A photorealistic photograph of"
+- Matches the subject and setting of its anchor real photo (if any), but NOT identical — vary the specific subject/angle so it looks like a sibling shot
+- Includes specific camera + lens (e.g., "Canon EOS R5, 50mm f/1.8" / "Fujifilm X-T4, 35mm f/2") and lighting cue (golden hour, overcast, indoor warm light, etc.)
+- Mentions concrete texture or detail cues that are hard for AI (skin pores, food char marks, fabric weave, dust motes)
+- Is 2-3 sentences, rich enough to render but not novelistic
+
+Return ONLY 5 numbered prompts (1. through 5.), no preamble, no JSON, one prompt per number, each on a new line. The prompt for slot N must correspond to anchor "Real N".`
       }], role: 'user' }] })
     });
-    if (!resp.ok) throw new Error('HTTP ' + resp.status);
+    if (!resp.ok) throw await apiError(resp, 'Auto-prompts');
     const data = await resp.json();
-    const lines = (data.candidates?.[0]?.content?.parts?.[0]?.text || '').split('\n')
-      .map(l => l.replace(/^\d+[\.\)]\s*/, '').trim()).filter(l => l.length > 20);
-    if (lines.length < 5) throw new Error('Bad response — retry');
+    const raw = data.candidates?.[0]?.content?.parts?.[0]?.text || '';
+    // Parse numbered prompts — handle multi-line per item
+    const lines = raw.split(/\n(?=\s*\d+[\.\)]\s)/)
+      .map(chunk => chunk.replace(/^\s*\d+[\.\)]\s*/, '').replace(/\s+/g,' ').trim())
+      .filter(l => l.length > 20);
+    if (lines.length < 5) throw new Error(`Only got ${lines.length}/5 prompts — retry`);
     for (let i = 0; i < 5; i++) {
       const el = document.getElementById(`prompt-${i}`);
       if (el && lines[i]) el.value = lines[i];
     }
-    stat('ai-status-global', 'Prompts filled ✓', 'ok');
+    stat('ai-status-global', `5 prompts anchored to your photos ✓ — review then GENERATE ALL`, 'ok');
   } catch (e) { stat('ai-status-global', 'Failed: ' + e.message, 'err'); }
 }
 
@@ -938,7 +1050,7 @@ Each tip: CATEGORY: in caps, 1-2 sentences, max 30 words, specific visual tells.
 Numbered list only.`
       }], role: 'user' }] })
     });
-    if (!resp.ok) throw new Error('HTTP ' + resp.status);
+    if (!resp.ok) throw await apiError(resp, 'Auto-tips');
     const data = await resp.json();
     const lines = (data.candidates?.[0]?.content?.parts?.[0]?.text || '').split('\n')
       .map(l => l.replace(/^\d+[\.\)]\s*/, '').trim()).filter(l => l.length > 15);
