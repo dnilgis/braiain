@@ -628,6 +628,13 @@
       "category_emoji": "🧼",
       "category_subtitle": "Hands down, the cleanest AI detection game!",
       "challenge_file": "challenges/2026-05-05.json"
+  },
+    "2026-05-06": {
+      "day_number": 92,
+      "category": "National Nurses Day 🩺",
+      "category_emoji": "🧠",
+      "category_subtitle": "Scrubs, Stethoscopes, and Showing Up",
+      "challenge_file": "challenges/2026-05-06.json"
   }
 }
 
