@@ -635,6 +635,13 @@
       "category_emoji": "🧠",
       "category_subtitle": "Scrubs, Stethoscopes, and Showing Up",
       "challenge_file": "challenges/2026-05-06.json"
+  },
+    "2026-05-07": {
+      "day_number": 93,
+      "category": "May Blooms",
+      "category_emoji": "🌸",
+      "category_subtitle": "Vibrant colors burst forth as spring fully embraces the world.",
+      "challenge_file": "challenges/2026-05-07.json"
   }
 }
 
