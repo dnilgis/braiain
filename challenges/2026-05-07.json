@@ -1,0 +1,99 @@
+{
+  "day_number": 93,
+  "date": "2026-05-07",
+  "category": "May Blooms",
+  "category_emoji": "🌸",
+  "rounds": [
+    {
+      "id": "d93r1",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1774155425732-9638a4fbde1d?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw4fHxzcHJpbmclMjBnYXJkZW5pbmd8ZW58MHwwfHx8MTc3ODA5MjY3NHww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by View Shadow on Unsplash",
+      "pro_tip": "ORGANIC GROWTH: Identify specific flower species like \"daffodils\" with natural, organic clusters and realistic light variations reflecting genuine outdoor conditions, not idealized perfection.",
+      "source_url": "https://unsplash.com/photos/a-person-tending-to-plants-in-a-flower-field-HqJ8N6ADI2Q"
+    },
+    {
+      "id": "d93r2",
+      "type": "image",
+      "content": "images/d93_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are your pro tips for the AI detection game, themed \"May Blooms\":",
+      "_note": "Prompt: A photorealistic photograph of a woman with braided hair meticulously pruning delicate pink hydrangeas in a sun-drenched greenhouse. The light filters through the glass panes, highlighting the tiny water droplets clinging to the leaves and the subtle texture of her cotton apron. Shot on a Nikon Z7, 85mm f/1.4, with bright, diffused natural light."
+    },
+    {
+      "id": "d93r3",
+      "type": "image",
+      "content": "images/d93_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "DETAIL OVERLOAD: Observe skin pores and fabric weaves that are too perfectly rendered under idealized lighting, often lacking the natural imperfections or blur of real photography.",
+      "_note": "Prompt: A photorealistic photograph of a dense cluster of brilliant red tulips with variegated green leaves, blooming vividly in an outdoor garden bed. Close-up details reveal tiny dew drops on the petals and the intricate veins on the leaves, all under bright, clear daylight with soft shadows. Captured using a Sony Alpha 7 IV, 90mm f/2.8 macro lens."
+    },
+    {
+      "id": "d93r4",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/6509145/pexels-photo-6509145.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Tima Miroshnichenko on Pexels",
+      "pro_tip": "AUTHENTIC FOCUS: Real photos show genuine human engagement and natural, un-staged interactions with plants, often with less theatrical lighting and more realistic compositions.",
+      "source_url": "https://www.pexels.com/photo/gardeners-looking-at-flowering-plants-6509145/"
+    },
+    {
+      "id": "d93r5",
+      "type": "image",
+      "content": "images/d93_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "TEXTURE PERFECTION: Look for hyper-detailed textures like individual water droplets or fabric weaves that appear unnaturally pristine, often paired with flawless, theatrical lighting.",
+      "_note": "Prompt: A photorealistic photograph of two florists, one with glasses, collaboratively arranging a display of vibrant fuchsia geraniums and purple petunias on a wooden bench inside a bustling greenhouse. The soft, even light of an overcast day illuminates the varied green hues of the foliage and the faint dust motes suspended in the air. Captured with a Canon EOS R6, 50mm f/1.8."
+    },
+    {
+      "id": "d93r6",
+      "type": "image",
+      "content": "images/d93_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "ATMOSPHERIC CONTROL: AI often generates specific atmospheric effects like \"faint dust motes\" or perfectly \"soft, even light\" that feel intentionally placed and too consistent.",
+      "_note": "Prompt: A photorealistic photograph of a woman in a flowing indigo-blue sundress gently walking through a field of blossoming lavender and white daisies. Golden hour light casts warm glows on her skin, revealing subtle pores, and catches the delicate weave of her dress fabric as she moves. Taken with a Fujifilm X-T4, 35mm f/2."
+    },
+    {
+      "id": "d93r7",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1655528733312-cfd343d457e4?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyM3x8Zmxvd2VyJTIwZ2FyZGVuaW5nfGVufDB8MHx8fDE3NzgwOTI2NTB8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Debbie Ducic on Unsplash",
+      "pro_tip": "NATURAL SETTING: Observe natural postures, realistic workflow, and subtle, everyday imperfections or clutter within an authentic greenhouse environment, typical of a real photo.",
+      "source_url": "https://unsplash.com/photos/a-person-in-a-blue-dress-B2wdgDewFU4"
+    },
+    {
+      "id": "d93r8",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/31651835/pexels-photo-31651835.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Natalia Sevruk on Pexels",
+      "pro_tip": "SIMPLE REALISM: Real photos often feature straightforward subjects without an excess of hyper-detailed textures or effects, relying on natural light and an un-enhanced quality.",
+      "source_url": "https://www.pexels.com/photo/bright-yellow-daffodils-in-bloom-during-spring-31651835/"
+    },
+    {
+      "id": "d93r9",
+      "type": "image",
+      "content": "images/d93_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "MICRO-PERFECTION: Check for uniformly perfect details like identical \"tiny dew drops\" or \"intricate veins\" on leaves that seem flawlessly symmetrical or unnaturally sharp in focus.",
+      "_note": "Prompt: A photorealistic photograph of a man with weathered hands gently tending to rows of newly planted marigolds in a vast, sun-drenched flower field. The late afternoon sun creates a warm, soft glow across the field, highlighting the fine soil particles clinging to his gardening gloves and the individual blades of grass. Shot on a Canon EOS R5, 85mm f/1.4."
+    },
+    {
+      "id": "d93r10",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/7156462/pexels-photo-7156462.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Gustavo Fring on Pexels",
+      "pro_tip": "HYPER-HIGHLIGHTS: Notice how AI perfectly illuminates specific small details like \"fine soil particles\" or \"individual blades of grass\" within an otherwise idealized, uniform glow.",
+      "source_url": "https://www.pexels.com/photo/woman-holding-violet-flower-plant-7156462/"
+    }
+  ],
+  "category_subtitle": "Vibrant colors burst forth as spring fully embraces the world."
+}
