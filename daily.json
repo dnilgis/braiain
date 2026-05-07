@@ -642,6 +642,13 @@
       "category_emoji": "🌸",
       "category_subtitle": "Vibrant colors burst forth as spring fully embraces the world.",
       "challenge_file": "challenges/2026-05-07.json"
+  },
+    "2026-05-08": {
+      "day_number": 94,
+      "category": "Red Cross Aid",
+      "category_emoji": "⛑️",
+      "category_subtitle": "Honoring humanitarian heroes—compassion and courage in action worldwide.",
+      "challenge_file": "challenges/2026-05-08.json"
   }
 }
 
