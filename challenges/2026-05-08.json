@@ -1,0 +1,99 @@
+{
+  "day_number": 94,
+  "date": "2026-05-08",
+  "category": "Red Cross Aid",
+  "category_emoji": "⛑️",
+  "rounds": [
+    {
+      "id": "d94r1",
+      "type": "image",
+      "content": "images/d94_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**EQUIPMENT AESTHETIC:** Note if the image strongly embodies specific camera/lens aesthetics (e.g., 85mm f/1.4 bokeh). AI tries to mimic these technical details.",
+      "_note": "Prompt: A photorealistic photograph of a male Red Cross paramedic, wearing a standard blue uniform with a visible red cross patch, standing calmly beside a modern white ambulance featuring subtle Red Cross branding, parked on a quiet suburban street. Shot with a Canon EOS R5, 50mm f/1.8 lens, under bright, diffused daylight, showcasing the crisp fabric weave of his uniform and the smooth, reflective surface of the ambulance."
+    },
+    {
+      "id": "d94r2",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/6519887/pexels-photo-6519887.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by RDNE Stock project on Pexels",
+      "pro_tip": "**GENERAL SCENARIOS:** Real photo descriptions often provide broader scene details, lacking the explicit, thematic Red Cross integration specified by AI prompts.",
+      "source_url": "https://www.pexels.com/photo/emt-standing-behind-an-ambulance-6519887/"
+    },
+    {
+      "id": "d94r3",
+      "type": "image",
+      "content": "images/d94_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**HYPER-DETAILED TEXTURE:** Observe unnaturally crisp fabric weaves, visible dust motes, or uniform texture perfection across surfaces. AI often over-renders micro-details.",
+      "_note": "Prompt: A photorealistic photograph of a Red Cross search and rescue team member, identifiable by a red cross patch, in a bright orange uniform, carefully examining rubble in a partially demolished building. Shot with a Nikon D850, 35mm f/1.4 lens, under harsh midday sun casting strong shadows, revealing the fine dust motes suspended in the air and the rough, broken edges of concrete debris."
+    },
+    {
+      "id": "d94r4",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1771946428508-b1b275ecc95a?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw5fHxodW1hbml0YXJpYW4lMjBhaWQlMkMlMjBmaXJzdCUyMHJlc3BvbmRlcnN8ZW58MHwwfHx8MTc3ODE3NzY5NHww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Navy Medicine on Unsplash",
+      "pro_tip": "**UNEXPECTED VARIATIONS:** Note subtle deviations, like a blue and yellow ambulance instead of a pure white one, showing real-world diversity.",
+      "source_url": "https://unsplash.com/photos/military-personnel-practice-medical-evacuation-training-with-helicopter-wMpdlUO8xE0"
+    },
+    {
+      "id": "d94r5",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/19832606/pexels-photo-19832606.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Oscar Sánchez on Pexels",
+      "pro_tip": "**NATURAL AMBIENCE:** Real photos may have less controlled lighting or unexpected elements, contributing to a more candid and less \"studio-perfect\" feel.",
+      "source_url": "https://www.pexels.com/photo/firefighter-in-uniform-and-helmet-standing-on-street-19832606/"
+    },
+    {
+      "id": "d94r6",
+      "type": "image",
+      "content": "images/d94_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**EXACT BRANDING:** Look for perfectly rendered Red Cross emblems or patches. AI prioritizes precise adherence to specific branding requests.",
+      "_note": "Prompt: A photorealistic photograph of a man in a navy blue polo shirt, with a faint Red Cross emblem on the sleeve, standing confidently beside a stack of brown cardboard aid boxes in a warehouse. Shot with a Sony Alpha a7 III, 85mm f/1.4 lens, under bright, diffused indoor lighting, highlighting the fine fabric weave of his shirt and the subtle texture variations of the cardboard."
+    },
+    {
+      "id": "d94r7",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/16105713/pexels-photo-16105713.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Faruk Tokluoğlu on Pexels",
+      "pro_tip": "**AUTHENTIC WEAR:** Look for natural wear, scuffs, or organic dust patterns that feel less uniform and more genuinely aged than AI's renderings.",
+      "source_url": "https://www.pexels.com/photo/group-of-paramedics-walking-through-a-demolished-city-16105713/"
+    },
+    {
+      "id": "d94r8",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1595054103602-b61d4c10c660?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw4fHxodW1hbml0YXJpYW4lMjBhaWQlMkMlMjBmaXJzdCUyMHJlc3BvbmRlcnN8ZW58MHwwfHx8MTc3ODE3NzY5NHww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Alexander Simonsen on Unsplash",
+      "pro_tip": "**MISSING BRANDING:** Observe the *absence* of Red Cross emblems/patches. Real-world descriptions often omit specific branding details even in relevant scenes.",
+      "source_url": "https://unsplash.com/photos/man-in-blue-polo-shirt-standing-beside-brown-cardboard-boxes-oj6nOfh9Obo"
+    },
+    {
+      "id": "d94r9",
+      "type": "image",
+      "content": "images/d94_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**PREDICTABLE LIGHTING:** Scrutinize lighting conditions that perfectly match descriptions, such as \"harsh midday sun\" or \"diffused afternoon light,\" often feeling too ideal.",
+      "_note": "Prompt: A photorealistic photograph of a Red Cross disaster relief worker, wearing a red vest over casual clothes, speaking intently with a firefighter in full gear on a bustling city street after a minor incident. Shot with a Canon EOS R6, 50mm f/1.2 lens, under diffused afternoon light, emphasizing the slightly worn texture of the firefighter's uniform and the reflective sheen of the wet pavement."
+    },
+    {
+      "id": "d94r10",
+      "type": "image",
+      "content": "images/d94_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**PERFECT COMPOSITION:** AI images frequently show impeccably framed subjects and scenes, aligning exactly with action cues like \"standing confidently\" or \"speaking intently.\"",
+      "_note": "Prompt: A photorealistic photograph of a Red Cross field medic, distinguished by a prominent red cross on their uniform, assisting military personnel during a simulated medical evacuation training with a helicopter hovering low in a dusty field. Shot with a Fujifilm X-T4, 90mm f/2 lens, during late afternoon sunlight, highlighting the fine dust particles caught in the rotor wash and the worn fabric texture of the medic's tactical vest."
+    }
+  ],
+  "category_subtitle": "Honoring humanitarian heroes—compassion and courage in action worldwide."
+}
