@@ -1,0 +1,99 @@
+{
+  "day_number": 95,
+  "date": "2026-05-09",
+  "category": "Migratory Bird Day",
+  "category_emoji": "🐦",
+  "rounds": [
+    {
+      "id": "d95r1",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/11094346/pexels-photo-11094346.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Sane Noor on Pexels",
+      "pro_tip": "**For Real Photos (6-10):**",
+      "source_url": "https://www.pexels.com/photo/kingfisher-bird-perched-on-a-tree-branch-11094346/"
+    },
+    {
+      "id": "d95r2",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1777913372134-7277fd173cf1?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxNXx8bWlncmF0b3J5JTIwYmlyZHMlMkMlMjBiaXJkd2F0Y2hpbmd8ZW58MHwwfHx8MTc3ODI1MDkzMnww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Jeffrey Eisen on Unsplash",
+      "pro_tip": "**ANATOMICAL SUBTLETIES:** Examine minute organic details. Look for slight imperfections or uncanny uniformity in feather arrangement, eye realism, or branch growth.",
+      "source_url": "https://unsplash.com/photos/a-white-egret-flying-against-a-blue-sky-VlceFqIlOqA"
+    },
+    {
+      "id": "d95r3",
+      "type": "image",
+      "content": "images/d95_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**For AI-Generated Images (1-5):**",
+      "_note": "Prompt: A photorealistic photograph of a bustling congregation of razorbills and common murres nesting on a jagged, seaweed-encrusted sea stack within a serene Baltic inlet. The rocky outcrops are dotted with resilient green coastal vegetation, their vibrant textures contrasting with the dark stone and the calm, subtly rippled grey-blue water. Captured with a Nikon Z9, 70-200mm f/2.8 lens at 100mm, under the soft, diffused light of an early morning mist."
+    },
+    {
+      "id": "d95r4",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/29780014/pexels-photo-29780014.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Raul Ling on Pexels",
+      "pro_tip": "**ATMOSPHERIC EXAGGERATION:** Note highly stylized or over-perfect atmospheric effects. Mist, sunbeams, or water glisten often appear unnaturally ideal and pronounced.",
+      "source_url": "https://www.pexels.com/photo/seabirds-resting-on-rocks-in-serene-baltic-landscape-29780014/"
+    },
+    {
+      "id": "d95r5",
+      "type": "image",
+      "content": "images/d95_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**PERFECT COMPOSITION:** Observe flawless, almost cinematic lighting and composition. Reflections, like mirror-smooth water, often appear unnaturally ideal.",
+      "_note": "Prompt: A photorealistic photograph of thousands of white-fronted geese in a sprawling V-formation, creating a dramatic silhouette against a vivid sunrise sky as they migrate over a glassy, expansive lake. The calm water surface perfectly mirrors the fiery orange and soft pink hues of the horizon, and subtle mist is seen rising from the water, catching the golden light. Captured with a Canon EOS 5D Mark IV, 24-70mm f/2.8 lens at 35mm, during the first light of dawn."
+    },
+    {
+      "id": "d95r6",
+      "type": "image",
+      "content": "images/d95_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**TEXTURE UNIFORMITY:** Check for repetitive or overly uniform textures. Bark, feathers, or rock surfaces might lack natural, subtle variations, appearing too consistent.",
+      "_note": "Prompt: A photorealistic photograph of a perky European Robin, its signature orange-red breast feathers subtly fluffed, perched on a slender, lichen-dusted silver birch branch within the shaded depths of an Izmir, Türkiye forest. Tiny water droplets glisten on the intricate network of the branch's bark and on the sparse, dark green leaves surrounding the bird. Taken with a Fujifilm X-T5, 85mm f/1.4 lens, under soft, filtered ambient light."
+    },
+    {
+      "id": "d95r7",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/30338333/pexels-photo-30338333.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Kutay Orkun Durukan on Pexels",
+      "pro_tip": "**DEPTH OF FIELD:** Notice natural focus fall-off. Elements outside the main subject will have an organic, varying blur, not uniform sharpness.",
+      "source_url": "https://www.pexels.com/photo/european-robin-on-branch-in-izmir-forest-30338333/"
+    },
+    {
+      "id": "d95r8",
+      "type": "image",
+      "content": "images/d95_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**HYPER-DETAIL:** Note unnatural sharpness in every element. Individual feathers, water droplets, and leaf veins are often perfectly rendered, lacking natural blur.",
+      "_note": "Prompt: A photorealistic photograph of a male common kingfisher, its brilliant turquoise and orange plumage shimmering, intently scanning the water from a dew-kissed hazel branch. The bird is nestled among freshly unfurled, emerald green leaves, their delicate vein patterns clearly visible, with the rough bark of the branch showing subtle lichen growth. Taken with a Sony A1, 300mm f/2.8 lens, utilizing natural, dappled light filtering through the surrounding foliage."
+    },
+    {
+      "id": "d95r9",
+      "type": "image",
+      "content": "images/d95_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are your pro tips for the AI detection game, themed \"Migratory Bird Day\":",
+      "_note": "Prompt: A photorealistic photograph of a juvenile great egret with slightly ruffled plumage, caught mid-descent against a vast, clear cerulean sky with faint wisps of cirrus clouds. The intricate structure of its broad wings, with individual flight feathers slightly separated at the tips, is sharply defined as the sun backlights the delicate barbs. Shot with a Canon EOS R6, 400mm f/5.6 lens, under bright, clear midday sun."
+    },
+    {
+      "id": "d95r10",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/36678120/pexels-photo-36678120.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Roman Biernacki on Pexels",
+      "pro_tip": "**NATURAL IMPERFECTION:** Expect subtle, organic flaws. A slight blur from movement, a tiny dust particle, or minor feather disarray points to authenticity.",
+      "source_url": "https://www.pexels.com/photo/mass-migration-of-birds-over-tranquil-lake-36678120/"
+    }
+  ],
+  "category_subtitle": "Spot the real bird's journey; don't let AI wing it!"
+}
