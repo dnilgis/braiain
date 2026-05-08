@@ -649,6 +649,13 @@
       "category_emoji": "⛑️",
       "category_subtitle": "Honoring humanitarian heroes—compassion and courage in action worldwide.",
       "challenge_file": "challenges/2026-05-08.json"
+  },
+    "2026-05-09": {
+      "day_number": 95,
+      "category": "Migratory Bird Day",
+      "category_emoji": "🐦",
+      "category_subtitle": "Spot the real bird's journey; don't let AI wing it!",
+      "challenge_file": "challenges/2026-05-09.json"
   }
 }
 
