@@ -656,6 +656,13 @@
       "category_emoji": "🐦",
       "category_subtitle": "Spot the real bird's journey; don't let AI wing it!",
       "challenge_file": "challenges/2026-05-09.json"
+  },
+    "2026-05-10": {
+      "day_number": 96,
+      "category": "Mother's Day Love",
+      "category_emoji": "💖",
+      "category_subtitle": "Celebrating the incredible women who brighten our lives today.",
+      "challenge_file": "challenges/2026-05-10.json"
   }
 }
 
