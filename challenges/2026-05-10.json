@@ -1,0 +1,99 @@
+{
+  "day_number": 96,
+  "date": "2026-05-10",
+  "category": "Mother's Day Love",
+  "category_emoji": "💖",
+  "rounds": [
+    {
+      "id": "d96r1",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1531983412531-1f49a365ffed?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwzfHxtb3RoZXJzJTIwZGF5fGVufDB8MHx8fDE3NzgzNjYyNDh8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Xavier Mouton Photographie on Unsplash",
+      "pro_tip": "**DYNAMIC LIGHTING:** Observe natural light interaction; real photos often have more dynamic, less \"perfectly rendered\" light, with genuine shadows and highlights.",
+      "source_url": "https://unsplash.com/photos/photo-of-mother-and-child-beside-body-of-water-ry_sD0P1ZL0"
+    },
+    {
+      "id": "d96r2",
+      "type": "image",
+      "content": "images/d96_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**EXAGGERATED REALISM:** Notice elements like unusually sharp focus on every background detail or exaggerated light effects that feel generated rather than genuinely captured.",
+      "_note": "Prompt: A photorealistic photograph of a teenage daughter presenting her surprised mother with a vibrant bouquet of freshly cut red and yellow tulips in the living room of their sunlit home. The soft indoor light catches fine dust motes dancing in the air near a window, emphasizing the delicate texture of the tulip petals and the genuine delight on the mother's face. Shot on a Nikon Z6 II with a 50mm f/1.8 lens."
+    },
+    {
+      "id": "d96r3",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/3890651/pexels-photo-3890651.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Andrea Piacquadio on Pexels",
+      "pro_tip": "**ORGANIC IMPERFECTIONS:** Real photos display natural blur, realistic skin with subtle blemishes, or less perfectly uniform fabric details, reflecting a genuine capture, not generation.",
+      "source_url": "https://www.pexels.com/photo/photo-of-woman-embracing-girl-3890651/"
+    },
+    {
+      "id": "d96r4",
+      "type": "image",
+      "content": "images/d96_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**IMPERFECTION PARADOX:** AI often generates \"perfect imperfections\" such as subtle wrinkles or dust motes that appear too uniform or strategically placed, lacking organic randomness.",
+      "_note": "Prompt: A photorealistic photograph of a happy mother and her pre-teen son walking hand-in-hand through a sun-drenched wildflower meadow in the countryside, a gentle breeze rustling their hair. Soft afternoon sunlight illuminates the individual grass blades and the texture of their cotton shirts, with a slight haze in the distant hills. Captured with a Sony a7 III and a 24-70mm f/2.8 lens."
+    },
+    {
+      "id": "d96r5",
+      "type": "image",
+      "content": "images/d96_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**SYNTHETIC TEXTURES:** Examine fabric weaves, water ripples, or plant veins. AI often creates textures that are too crisp, uniform, or mathematically perfect, lacking natural organic variations.",
+      "_note": "Prompt: A photorealistic photograph of a mother holding her young child's hand as they stand at the shallow edge of a serene lake, sunlight glinting off gentle water ripples. The child's tiny wet footprints are visible in the damp sand, and the mother's casual linen shirt shows subtle fabric wrinkles. Taken with a Fujifilm X-T4, 35mm f/2 lens, under soft overcast light."
+    },
+    {
+      "id": "d96r6",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/7358342/pexels-photo-7358342.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by KATRIN  BOLOVTSOVA on Pexels",
+      "pro_tip": "**NATURAL RANDOMNESS:** Look for subtle photographic noise, grain, or less predictable compositions. Real scenes feature natural randomness in elements like wind-blown hair or grass.",
+      "source_url": "https://www.pexels.com/photo/a-girl-surprising-her-mother-with-a-bouquet-of-flowers-7358342/"
+    },
+    {
+      "id": "d96r7",
+      "type": "image",
+      "content": "images/d96_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**HYPER-DETAIL:** Look for unnatural levels of detail, like perfectly rendered individual skin pores, hair strands, or grass blades, where a real photo might have natural fall-off or blur.",
+      "_note": "Prompt: A photorealistic photograph of a loving mother gently kissing her laughing toddler daughter's forehead, both wrapped in soft wool blankets on a comfy sofa by a window. The scene is bathed in a warm, gentle indoor light, highlighting the intricate fabric weave of their sweaters and individual strands of the daughter's fine hair. Shot on a Canon EOS R6 with an 85mm f/1.4 lens, capturing delicate skin pores."
+    },
+    {
+      "id": "d96r8",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/1660234/pexels-photo-1660234.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Archie Binamira on Pexels",
+      "pro_tip": "**SPONTANEOUS EMOTION:** Authentic human expressions and interactions appear natural and less staged, with subtle nuances that are challenging for AI to perfectly replicate.",
+      "source_url": "https://www.pexels.com/photo/woman-hugging-boy-on-field-1660234/"
+    },
+    {
+      "id": "d96r9",
+      "type": "image",
+      "content": "images/d96_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**UNNATURAL FACIALS:** While often good, AI faces sometimes show subtle \"offness\"—too smooth, overly symmetrical, or expressions that don't quite align naturally with the scene's emotion.",
+      "_note": "Prompt: A photorealistic photograph of a beaming mother standing next to a beautifully decorated \"Happy Mother's Day\" chalkboard sign, surrounded by an array of potted vibrant green plants on a rustic wooden stand. The bright, even daylight highlights the chalk dust texture on the sign and the intricate vein patterns on the plant leaves. Captured with a Google Pixel 7 Pro, 26mm equivalent lens."
+    },
+    {
+      "id": "d96r10",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1557868382-ec969b11dbaf?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw0fHxtb3RoZXIlMjdzJTIwZGF5fGVufDB8MHx8fDE3NzgzNjYyNjh8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Karolina Bobek on Unsplash",
+      "pro_tip": "**LIVED-IN AUTHENTICITY:** Focus on environmental details – slight messiness, unpolished elements, or natural wear and tear that contribute to an authentic, ungenerated feel.",
+      "source_url": "https://unsplash.com/photos/person-near-happy-mothers-day-signage-and-plants-eoR84jjW1oo"
+    }
+  ],
+  "category_subtitle": "Celebrating the incredible women who brighten our lives today."
+}
