@@ -663,6 +663,13 @@
       "category_emoji": "💖",
       "category_subtitle": "Celebrating the incredible women who brighten our lives today.",
       "challenge_file": "challenges/2026-05-10.json"
+  },
+    "2026-05-11": {
+      "day_number": 97,
+      "category": "Eat What You Want",
+      "category_emoji": "🍔",
+      "category_subtitle": "No rules, just deliciousness. Indulge your cravings today!",
+      "challenge_file": "challenges/2026-05-11.json"
   }
 }
 
