@@ -1,0 +1,99 @@
+{
+  "day_number": 97,
+  "date": "2026-05-11",
+  "category": "Eat What You Want",
+  "category_emoji": "🍔",
+  "rounds": [
+    {
+      "id": "d97r1",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/28828555/pexels-photo-28828555.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Lucas Porras on Pexels",
+      "pro_tip": "ORGANIC MESSINESS: Real dishes, especially \"pulled pork,\" show natural, unforced messiness and variations in texture and presentation.",
+      "source_url": "https://www.pexels.com/photo/delicious-cheeseburger-with-fries-in-dark-setting-28828555/"
+    },
+    {
+      "id": "d97r2",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1614947072818-194bef257274?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw0fHxjb21mb3J0JTIwZm9vZHxlbnwwfDB8fHwxNzc4NDQwNDc4fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Annie Spratt on Unsplash",
+      "pro_tip": "NATURAL IMPERFECTIONS: Real food often has slight, organic imperfections in arrangement, melt, or cooking, lacking AI's sterile perfection.",
+      "source_url": "https://unsplash.com/photos/woman-in-white-floral-long-sleeve-shirt-holding-black-ceramic-mug-vpYPsIw6cW4"
+    },
+    {
+      "id": "d97r3",
+      "type": "image",
+      "content": "images/d97_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "IMPOSSIBLE PERFECTION: Examine food stacking and component placement; AI frequently creates unnaturally ideal or too-perfectly arranged dishes.",
+      "_note": "Prompt: A photorealistic photograph of a bustling street vendor in a vibrant outdoor market, skillfully ladling steaming hot ramen into bowls, surrounded by colourful fresh ingredients. The late afternoon sun casts a warm glow, revealing the delicate wisps of steam rising from the broth and the intricate patterns on the vendor's apron, with a few dust motes visible in the golden light. Shot on a Leica Q2, 28mm f/1.7."
+    },
+    {
+      "id": "d97r4",
+      "type": "image",
+      "content": "images/d97_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "TEXTURE PERFECTION: AI often renders textures like breadcrumbs or char marks with unnatural uniformity or excessive, flawless detail.",
+      "_note": "Prompt: A photorealistic photograph of a man in a cozy grey knitted sweater, his hands gently cradling a steaming forest-green ceramic mug, caught in soft morning light filtering through a window. Observe the fine texture of the sweater's weave and the subtle pores on his knuckles as he holds the warm cup. Shot on a Canon EOS R5, 50mm f/1.8."
+    },
+    {
+      "id": "d97r5",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/33706254/pexels-photo-33706254.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Valeria Boltneva on Pexels",
+      "pro_tip": "AUTHENTIC HUMANITY: Real hands display natural wrinkles, varied skin tones, and less stylized grips, unlike AI's often 'too perfect' portrayals.",
+      "source_url": "https://www.pexels.com/photo/delicious-pulled-pork-sandwich-with-soup-33706254/"
+    },
+    {
+      "id": "d97r6",
+      "type": "image",
+      "content": "images/d97_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are 10 pro tips for the AI detection game, \"Eat What You Want\":",
+      "_note": "Prompt: A photorealistic photograph of a creamy baked macaroni and cheese bubbling in a white ceramic casserole dish, with golden-brown breadcrumbs topping the melted cheese. The warm indoor light illuminates the slight char marks on the pasta and the subtle glaze of the dish. Captured with a Sony a7 III, 85mm f/1.4 lens."
+    },
+    {
+      "id": "d97r7",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1768204039572-9e62db7b39fd?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw2fHxjb21mb3J0JTIwZm9vZHxlbnwwfDB8fHwxNzc4NDQwNDc4fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Lee Milo on Unsplash",
+      "pro_tip": "ATMOSPHERIC EXAGGERATION: Watch for atmospheric elements like steam or dust motes that appear overly stylized or intentionally 'added' for effect.",
+      "source_url": "https://unsplash.com/photos/broccoli-and-cheese-gratin-in-a-white-dish-rShpgs9ThwI"
+    },
+    {
+      "id": "d97r8",
+      "type": "image",
+      "content": "images/d97_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "STYLIZED DETAIL: Notice if \"imperfections\" like wood grain or food \"ooze\" appear too artistically perfect or consistently rendered.",
+      "_note": "Prompt: A photorealistic photograph of a towering double patty smash burger, stacked high with crisp lettuce, ripe tomato, melted American cheese, and a glossy brioche bun, alongside a generous serving of crinkle-cut sweet potato fries. The bright, even indoor light accentuates the char marks on the burger patties and the slight sheen of oil on the perfectly crispy fries. Photographed with a Fujifilm X-T4, 35mm f/2."
+    },
+    {
+      "id": "d97r9",
+      "type": "image",
+      "content": "images/d97_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "HYPER-DETAIL: Check for overly perfect or uniform skin pores and clothing weaves; AI struggles with natural, imperfect human micro-details.",
+      "_note": "Prompt: A photorealistic photograph of a gourmet grilled cheese sandwich with oozing sharp cheddar and caramelized onions, paired with a vibrant red tomato bisque, resting on a distressed wooden cutting board. The warm indoor light highlights the crispy, golden-brown crust of the bread and the subtle sheen of the creamy soup, with visible wood grain imperfections on the table surface. Captured with a Nikon Z7 II, 105mm f/2.8 macro lens."
+    },
+    {
+      "id": "d97r10",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/37133951/pexels-photo-37133951.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Rayhan Ahmed on Pexels",
+      "pro_tip": "REALISTIC IMPERFECTIONS: Look for natural grease, slight unevenness in cheese melt, or realistic bacon texture that AI struggles to replicate perfectly.",
+      "source_url": "https://www.pexels.com/photo/street-vendor-serving-delicious-indian-snacks-37133951/"
+    }
+  ],
+  "category_subtitle": "No rules, just deliciousness. Indulge your cravings today!"
+}
