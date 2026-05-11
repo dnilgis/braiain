@@ -670,6 +670,13 @@
       "category_emoji": "🍔",
       "category_subtitle": "No rules, just deliciousness. Indulge your cravings today!",
       "challenge_file": "challenges/2026-05-11.json"
+  },
+    "2026-05-12": {
+      "day_number": 98,
+      "category": "Heroic Nurses",
+      "category_emoji": "🩺",
+      "category_subtitle": "Celebrating the unwavering dedication of healthcare heroes today.",
+      "challenge_file": "challenges/2026-05-12.json"
   }
 }
 
