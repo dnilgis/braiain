@@ -1,0 +1,99 @@
+{
+  "day_number": 98,
+  "date": "2026-05-12",
+  "category": "Heroic Nurses",
+  "category_emoji": "🩺",
+  "rounds": [
+    {
+      "id": "d98r1",
+      "type": "image",
+      "content": "images/d98_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "UNCANNY TEXTURES: Look for unnaturally perfect rendering of fabrics, skin pores, or hair. AI often renders every minute detail flawlessly, appearing almost too simulated.",
+      "_note": "Prompt: A photorealistic photograph of a determined nurse, mid-shot, wearing a dark green scrub top and a slightly fogged white N95 mask, her focused eyes looking intently towards the left. Captured with a Nikon Z7 II and a 70mm f/2.8 lens, under bright, even fluorescent hospital lighting, highlighting the fine texture of the mask material and the individual eyelashes around her eyes."
+    },
+    {
+      "id": "d98r2",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1590611936760-eeb9bc598548?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw2fHxudXJzZXN8ZW58MHwwfHx8MTc3ODUxMTU0NHww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by SJ Objio on Unsplash",
+      "pro_tip": "UNPOSED EXPRESSIONS: Look for subtle, unforced body language and expressions that convey genuine moments rather than perfectly sculpted, overly dramatic portrayals.",
+      "source_url": "https://unsplash.com/photos/woman-in-teal-shirt-wearing-white-mask-8hHxO3iYuU0"
+    },
+    {
+      "id": "d98r3",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1599045118108-bf9954418b76?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw5fHxudXJzZXxlbnwwfDB8fHwxNzc4NTExNTIzfDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Irwan on Unsplash",
+      "pro_tip": "AUTHENTIC IMPERFECTIONS: Real photos often feature subtle, natural imperfections like slight blur, genuine shadows, or less-than-perfect focus, adding to their authenticity.",
+      "source_url": "https://unsplash.com/photos/person-in-green-shirt-wearing-white-mask-rbDE93-0hHs"
+    },
+    {
+      "id": "d98r4",
+      "type": "image",
+      "content": "images/d98_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are 10 pro tips for the AI detection game:",
+      "_note": "Prompt: A photorealistic photograph of a compassionate nurse gently checking the vital signs monitor while holding the hand of an elderly patient in a soft-lit hospital room, their other hand resting reassuringly. Shot on a Canon EOS R5 with a 85mm f/1.8 lens, under warm indoor hospital lighting, capturing the subtle fabric weave of the patient's gown and the faint lines on the nurse's hand."
+    },
+    {
+      "id": "d98r5",
+      "type": "image",
+      "content": "images/d98_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "LACK OF GRIT: AI images often lack natural imperfections like stray hairs, subtle smudges, or realistic skin variations. The scene appears too sterile or idealized.",
+      "_note": "Prompt: A photorealistic photograph of a dedicated nurse, captured from a three-quarter angle, wearing a vibrant teal scrub top and a snug white surgical mask, her head slightly tilted as she listens attentively to a colleague. Photographed with a Leica Q2, 28mm f/1.7 lens, under crisp, cool hospital lighting, showing the precise stitching on her uniform and the subtle tension in her jawline."
+    },
+    {
+      "id": "d98r6",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1624727828489-a1e03b79bba8?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyfHxudXJzZXxlbnwwfDB8fHwxNzc4NTExNTIzfDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Patty Brito on Unsplash",
+      "pro_tip": "UNDERSPECIFIED REALITY: Real photos are described simply, focusing on the core subject without hyper-specific details about textures or camera gear. The visual output matches this.",
+      "source_url": "https://unsplash.com/photos/girl-in-blue-jacket-holding-red-and-silver-ring-Y-3Dt0us7e0"
+    },
+    {
+      "id": "d98r7",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/6129688/pexels-photo-6129688.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by RDNE Stock project on Pexels",
+      "pro_tip": "OVERLY OPTIMIZED DEPTH: Images might show bokeh or depth of field engineered to specific lens parameters, resulting in unnaturally perfect focus transitions or background blur.",
+      "source_url": "https://www.pexels.com/photo/nurse-taking-the-blood-pressure-of-a-patient-6129688/"
+    },
+    {
+      "id": "d98r8",
+      "type": "image",
+      "content": "images/d98_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "PRISTINE ILLUMINATION: AI often creates perfectly balanced, specified lighting without natural inconsistencies. Watch for unnaturally even or overly dramatic light.",
+      "_note": "Prompt: A photorealistic photograph of a young nurse, partially off-duty, wearing a comfortable navy blue zip-up jacket, her hands gently holding a small, polished silver 'hero' pin. Taken with a Sony a7 IV, 100mm f/2.8 macro lens, bathed in soft, diffused natural window light, revealing the subtle fuzz on the fleece jacket and the delicate skin pores on her knuckles."
+    },
+    {
+      "id": "d98r9",
+      "type": "image",
+      "content": "images/d98_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "FLAWLESS COMPOSITION: Notice images where every detail, foreground to background, is rendered with impossible precision. Scenes may feel overly staged and \"prompt-perfect.\"",
+      "_note": "Prompt: A photorealistic photograph of a reflective nurse in profile, wearing a simple black cotton crew neck shirt and sleek dark blue wireless earbuds, her gaze directed out of frame, lost in thought. Shot on a Fujifilm X-T4 with a 50mm f/1.4 lens, illuminated by soft, ambient overhead lighting, capturing the fine texture of the cotton fabric and the slight sheen on the earbud casing."
+    },
+    {
+      "id": "d98r10",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1585842378054-ee2e52f94ba2?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxN3x8bnVyc2V8ZW58MHwwfHx8MTc3ODUxMTUyM3ww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by TopSphere Media on Unsplash",
+      "pro_tip": "ORGANIC LIGHTING: Observe natural variations in light, reflections, and shadows. Real light interaction often presents subtle inconsistencies and a less \"manufactured\" feel.",
+      "source_url": "https://unsplash.com/photos/woman-in-black-crew-neck-shirt-wearing-blue-earbuds-WxRd7byFxs4"
+    }
+  ],
+  "category_subtitle": "Celebrating the unwavering dedication of healthcare heroes today."
+}
