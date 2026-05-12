@@ -677,6 +677,13 @@
       "category_emoji": "🩺",
       "category_subtitle": "Celebrating the unwavering dedication of healthcare heroes today.",
       "challenge_file": "challenges/2026-05-12.json"
+  },
+    "2026-05-13": {
+      "day_number": 99,
+      "category": "Picnic Vibes",
+      "category_emoji": "🧺",
+      "category_subtitle": "Blankets spread, baskets open. Real outdoor fun or AI's imagination?",
+      "challenge_file": "challenges/2026-05-13.json"
   }
 }
 
