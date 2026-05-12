@@ -1,0 +1,99 @@
+{
+  "day_number": 99,
+  "date": "2026-05-13",
+  "category": "Picnic Vibes",
+  "category_emoji": "🧺",
+  "rounds": [
+    {
+      "id": "d99r1",
+      "type": "image",
+      "content": "images/d99_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "HYPER-DETAIL: Look for unnatural perfection in fabric weaves, condensation, or skin pores. AI often renders these with excessive, sterile detail.",
+      "_note": "Prompt: A photorealistic photograph of a perfectly arranged gourmet picnic setup, showcasing an assortment of artisanal cheeses, fresh baguette slices, vibrant green grapes, and a chilled bottle of rosé wine on a tightly woven linen blanket. The crisp morning light illuminates the intricate fabric weave and the delicate condensation on the glass bottle, creating a refreshing atmosphere. Shot on a Canon EOS R6, 85mm f/1.4, early morning sun."
+    },
+    {
+      "id": "d99r2",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/8380045/pexels-photo-8380045.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Kampus Production on Pexels",
+      "pro_tip": "NATURAL COMPOSITION: Look for an organic, unforced arrangement of people and objects. Real photos often feel less staged, capturing candid moments and genuine interactions.",
+      "source_url": "https://www.pexels.com/photo/people-getting-food-from-the-picnic-blanket-8380045/"
+    },
+    {
+      "id": "d99r3",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1613109040830-ffdd96756f5e?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw4fHxwaWNuaWN8ZW58MHwwfHx8MTc3ODU5Mjg3M3ww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Nicole Herrero on Unsplash",
+      "pro_tip": "ENVIRONMENTAL CUES: Check backgrounds for natural, sometimes imperfect details like real-world depth of field, unexpected elements, or authentic environmental clutter.",
+      "source_url": "https://unsplash.com/photos/people-sitting-on-chair-eating-food-during-daytime-rWWLpxSefp8"
+    },
+    {
+      "id": "d99r4",
+      "type": "image",
+      "content": "images/d99_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "UNCANNY ANATOMY: Despite claims of \"skin pores,\" examine hands and faces for subtle anatomical distortions, overly smooth skin, or generic expressions.",
+      "_note": "Prompt: A photorealistic photograph of a family enjoying an al fresco meal, seated comfortably on classic patio chairs around a sturdy wooden table laden with plates of grilled skewers, fresh salads, and a pitcher of iced tea during a bright daytime. The dappled sunlight filtering through nearby trees brings out the natural wood grain of the table and the subtle glint on the cutlery, with visible skin imperfections on their relaxed faces. Shot on a Canon EOS 5D Mark IV, 50mm f/1.2, dappled sunlight."
+    },
+    {
+      "id": "d99r5",
+      "type": "image",
+      "content": "images/d99_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "FLAWLESS LIGHTING: AI excels at perfect lighting effects (golden hour, dappled sun), but check for unnatural shadow consistency or overly dramatic highlights that seem staged.",
+      "_note": "Prompt: A photorealistic photograph of a diverse collection of hands, with visible skin pores and subtle tan lines, reaching for various colorful snacks and ripe fruits scattered across a soft, fringed picnic blanket during a bright afternoon. The strong overhead sun highlights the fine texture of the fruit skins and the individual threads of the blanket's weave. Shot on a Fujifilm X-T4, 50mm f/1.8, direct midday sun."
+    },
+    {
+      "id": "d99r6",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/11760994/pexels-photo-11760994.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Matheus Bertelli on Pexels",
+      "pro_tip": "AUTHENTIC MESSINESS: Real picnics have natural imperfections: a crumpled napkin, slightly spilled crumbs, or less-than-perfectly arranged items. Embrace the subtle chaos.",
+      "source_url": "https://www.pexels.com/photo/photo-of-food-on-a-blanket-11760994/"
+    },
+    {
+      "id": "d99r7",
+      "type": "image",
+      "content": "images/d99_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "TEXTURE REPETITION: Observe patterns in grass or fabric weaves. AI can subtly repeat textures or create overly uniform, slightly unnatural organic elements.",
+      "_note": "Prompt: A photorealistic photograph of a small gathering of people casually sitting and chatting on a lush, vibrant green grass field, with their colorful picnic blankets spread out around them during a pleasant daytime. The even, soft light of an overcast sky gently accentuates the individual blades of grass and the subtle wrinkles in their relaxed clothing. Shot on a Sony Alpha a7 III, 35mm f/2.8, overcast daytime."
+    },
+    {
+      "id": "d99r8",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1474899351970-ee05f7dd1334?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxMnx8cGljbmljfGVufDB8MHx8fDE3Nzg1OTI4NzN8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Robert Bye on Unsplash",
+      "pro_tip": "GENUINE EXPRESSIONS: Observe facial expressions and body language. Real photos convey authentic emotions, subtle nuances, and natural, unforced gestures.",
+      "source_url": "https://unsplash.com/photos/group-of-people-gathering-on-field-4hcpIbqQM8c"
+    },
+    {
+      "id": "d99r9",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1592153978217-6913256c7e1e?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxN3x8cGljbmljfGVufDB8MHx8fDE3Nzg1OTI4NzN8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by David Todd McCarty on Unsplash",
+      "pro_tip": "REALISTIC LIGHTING: Real light often creates less idealized, sometimes harsher shadows or highlights. Look for natural fall-off and realistic exposure without hyper-perfection.",
+      "source_url": "https://unsplash.com/photos/people-sitting-on-green-grass-field-during-daytime-TUUEdIhwNFQ"
+    },
+    {
+      "id": "d99r10",
+      "type": "image",
+      "content": "images/d99_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "OBJECT INTEGRATION: Check for subtle inconsistencies in how food items rest or interact, like unnatural weight distribution or oddly suspended dust motes.",
+      "_note": "Prompt: A photorealistic photograph of a lively group of friends gathering and mingling across a vast, sun-drenched field, with some standing and others relaxing on various blankets, enjoying the warm afternoon. The golden hour light casts long, soft shadows and illuminates the fine dust motes gently rising from the dry grass, highlighting the diverse textures of their casual fabrics. Shot on a Nikon Z6 II, 24-70mm f/4, late afternoon golden hour."
+    }
+  ],
+  "category_subtitle": "Blankets spread, baskets open. Real outdoor fun or AI's imagination?"
+}
