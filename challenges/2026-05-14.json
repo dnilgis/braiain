@@ -1,0 +1,99 @@
+{
+  "day_number": 100,
+  "date": "2026-05-14",
+  "category": "Graduation Buzz",
+  "category_emoji": "🎓",
+  "rounds": [
+    {
+      "id": "d100r1",
+      "type": "image",
+      "content": "images/d100_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are 10 pro tips for the AI detection game, themed \"Graduation Buzz\":",
+      "_note": "Prompt: A photorealistic photograph of a confident woman in academic regalia delivering an impassioned speech from a classic wooden podium, addressing a blurred crowd in a large university auditorium. The warm stage lighting highlights the fine fabric weave of her dark gown and the subtle wood grain of the podium, capturing individual strands of hair."
+    },
+    {
+      "id": "d100r2",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/7972741/pexels-photo-7972741.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by George Pak on Pexels",
+      "pro_tip": "**REAL: AUTHENTIC EMOTION:** Genuine laughter and expressions are varied and spontaneous. Skin will show natural pores and subtle, non-uniform light reflections.",
+      "source_url": "https://www.pexels.com/photo/portrait-of-smiling-students-with-diplomas-7972741/"
+    },
+    {
+      "id": "d100r3",
+      "type": "image",
+      "content": "images/d100_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**AI: SKIN & SHINE:** Observe skin with an overly smooth texture but exaggerated, uniform shine. Embroidery details might be hyper-intricate and perfectly symmetrical.",
+      "_note": "Prompt: A photorealistic photograph of three diverse graduates, one embracing another while a third laughs heartily beside them, all outdoors on a sunny mid-morning, proudly wearing caps and gowns and holding their rolled diplomas. The crisp texture of the diploma paper is visible, along with the fine weave of their gown fabric and a few dust motes dancing in the bright sunlight."
+    },
+    {
+      "id": "d100r4",
+      "type": "image",
+      "content": "images/d100_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**AI: TEXTURE INTENSITY:** Look for fabric weaves and wood grains that are unnaturally sharp and uniformly detailed, sometimes appearing almost *too* perfect.",
+      "_note": "Prompt: A photorealistic photograph of a diverse group of ecstatic graduates in caps and gowns, mid-toss as their mortarboards ascend against a bright overcast sky. The soft light emphasizes the creases in their colorful gowns and the individual threads of the tassels on the airborne hats, with a subtle sheen visible on their satin sashes."
+    },
+    {
+      "id": "d100r5",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1733835085968-d586d44a31da?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwzfHxncmFkdWF0aW9uJTIwY2VsZWJyYXRpb258ZW58MHwwfHx8MTc3ODY4MDkzMHww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Amir Hossein Bakhtiari on Unsplash",
+      "pro_tip": "**AI: STERILE PRECISION:** Aerial views often feature unnaturally precise patterns or uniform grass texture. Shadows might be too crisp and perfectly defined.",
+      "source_url": "https://unsplash.com/photos/a-man-standing-at-a-podium-in-front-of-a-crowd-of-people-FGkLYqfmve4"
+    },
+    {
+      "id": "d100r6",
+      "type": "image",
+      "content": "images/d100_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**AI: UNCANNY MOTION:** Hats mid-toss may lack natural motion blur, appearing frozen and pristine. Tassels can be individually rendered with unrealistic perfection.",
+      "_note": "Prompt: A photorealistic photograph of three joyful young Asian women, beaming and laughing together outdoors during golden hour, dressed in their academic gowns and holding small bouquets of flowers. The warm light gently illuminates the subtle wrinkles in the fabric of their gowns and the slight shine on their skin, emphasizing the intricate embroidery on their colorful stoles."
+    },
+    {
+      "id": "d100r7",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1775623606576-3e049f72b8e7?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyfHxncmFkdWF0aW9uJTIwY2VsZWJyYXRpb258ZW58MHwwfHx8MTc3ODY4MDkzMHww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Md.Sabbir Sikder on Unsplash",
+      "pro_tip": "**REAL: ORGANIC IMPERFECTIONS:** Seek out natural wrinkles in gowns, flyaway hair, or subtle skin blemishes. The crowd will have varied focus and realistic expressions.",
+      "source_url": "https://unsplash.com/photos/graduates-in-caps-and-gowns-toss-hats-in-the-air-pf-o0xEBkt4"
+    },
+    {
+      "id": "d100r8",
+      "type": "image",
+      "content": "images/d100_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**AI: DETAIL OVERLOAD:** Diplomas might have hyper-crisp, exaggerated paper texture. Dust motes can appear unnaturally sharp and uniformly distributed in sunlight.",
+      "_note": "Prompt: A photorealistic photograph from a high aerial perspective showing a large group of graduates in caps and gowns forming a precise, celebratory pattern on a vibrant green field under a bright afternoon sun. The clear view captures the individual threads of the tassels on their hats and the subtle texture variations in the grass below, with crisp shadows defining their formation."
+    },
+    {
+      "id": "d100r9",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/12885681/pexels-photo-12885681.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by HONG SON on Pexels",
+      "pro_tip": "**REAL: DYNAMIC MOVEMENT:** Expect realistic motion blur on tossed hats and active graduates, capturing the genuine energy of the moment with natural chaos.",
+      "source_url": "https://www.pexels.com/photo/young-women-in-academic-dresses-12885681/"
+    },
+    {
+      "id": "d100r10",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1533854775446-95c4609da544?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxMnx8Z3JhZHVhdGlvbnxlbnwwfDB8fHwxNzc4NjgwOTUxfDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Good Free Photos on Unsplash",
+      "pro_tip": "**REAL: NATURAL LIGHTING:** Look for realistic depth of field with some elements slightly out of focus. Lighting often shows natural fall-off and organic shadows.",
+      "source_url": "https://unsplash.com/photos/aerial-view-of-graduates-wearing-hats-YZsvNs2GCPU"
+    }
+  ],
+  "category_subtitle": "Tassels turned and futures bright – celebrating hard-earned achievements."
+}
