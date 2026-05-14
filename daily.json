@@ -691,6 +691,13 @@
       "category_emoji": "🎓",
       "category_subtitle": "Tassels turned and futures bright – celebrating hard-earned achievements.",
       "challenge_file": "challenges/2026-05-14.json"
+  },
+    "2026-05-15": {
+      "day_number": 101,
+      "category": "Pizza Party Day",
+      "category_emoji": "🍕",
+      "category_subtitle": "Gather 'round, the toppings are endless, the fun is real!",
+      "challenge_file": "challenges/2026-05-15.json"
   }
 }
 
