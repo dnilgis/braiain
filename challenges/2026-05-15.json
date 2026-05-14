@@ -1,0 +1,99 @@
+{
+  "day_number": 101,
+  "date": "2026-05-15",
+  "category": "Pizza Party Day",
+  "category_emoji": "🍕",
+  "rounds": [
+    {
+      "id": "d101r1",
+      "type": "image",
+      "content": "images/d101_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**HYPER-DETAIL CHECK:** AI often renders *all* details—skin pores, char marks, water condensation—with unnatural perfection and clarity, sometimes leading to a sterile look.",
+      "_note": "Prompt: A photorealistic photograph of two friends, one mid-laugh with visible individual teeth and crinkles around her eyes, sharing a slice of Margherita pizza on a couch. Shot with a Fujifilm X-T4, 35mm f/2, using soft indoor ambient light that highlights the fuzzy weave of a throw blanket and the steam gently rising from the hot pizza."
+    },
+    {
+      "id": "d101r2",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1714978444570-729693fde1f3?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw5fHxwaXp6YSUyMHBhcnR5fGVufDB8MHx8fDE3Nzg3OTQzNzF8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Vitaly Gariev on Unsplash",
+      "pro_tip": "**ORGANIC REALISM:** Details exist but aren't uniformly hyper-sharp; there's a natural ebb and flow of focus and light, making the scene feel naturally cohesive.",
+      "source_url": "https://unsplash.com/photos/a-group-of-people-sitting-around-a-table-eating-pizza-n2iY18iCOLs"
+    },
+    {
+      "id": "d101r3",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1622455331494-966b1b4eda44?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw4fHxwaXp6YSUyMHBhcnR5fGVufDB8MHx8fDE3Nzg3OTQzNzF8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Aleksandra Sapozhnikova on Unsplash",
+      "pro_tip": "**CANDID MOMENTS:** Look for genuine, spontaneous expressions and interactions, like mid-laughter or natural body language, that feel less posed and more dynamic.",
+      "source_url": "https://unsplash.com/photos/woman-in-white-shirt-eating-pizza-ObkUzac2QpQ"
+    },
+    {
+      "id": "d101r4",
+      "type": "image",
+      "content": "images/d101_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**UNNATURAL TEXTURES:** Look for fabric weaves, wood grain, or pizza crusts that appear *too* intricate, uniform, or almost painted, lacking organic randomness.",
+      "_note": "Prompt: A photorealistic photograph of a woman with her head tilted, taking a bite out of a pizza slice, a speck of sauce subtly near her lips, while wearing a crisp white linen shirt. Taken with a Sony Alpha A7 III, 85mm f/1.4, under soft window light that reveals faint skin pores on her cheek and the delicate texture of the pizza cheese stretch."
+    },
+    {
+      "id": "d101r5",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/7142969/pexels-photo-7142969.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by KoolShooters on Pexels",
+      "pro_tip": "**ANATOMY & OBJECTS:** Scrutinize hands, fingers, or the way wine settles in a glass. AI can still produce subtle distortions or unnatural physics.",
+      "source_url": "https://www.pexels.com/photo/two-person-getting-a-slice-of-pizza-7142969/"
+    },
+    {
+      "id": "d101r6",
+      "type": "image",
+      "content": "images/d101_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**SUBTLE ANOMALIES:** Observe reflections, shadows, or even the consistency of steam; AI can struggle with physically accurate interplay, revealing oddities.",
+      "_note": "Prompt: A photorealistic photograph of a man's hand with slightly rolled-up sleeves reaching across a table filled with various pizza slices and side dishes to grab a piece. Photographed with a Canon EOS R6, 85mm f/1.8, using cozy indoor lighting that emphasizes subtle flour dust on the pizza crust and the distinct fingerprints on a nearby glass, with a shallow depth of field."
+    },
+    {
+      "id": "d101r7",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/7142952/pexels-photo-7142952.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by KoolShooters on Pexels",
+      "pro_tip": "**AUTHENTIC IMPERFECTIONS:** Real photos often include natural, unplanned smudges, uneven lighting, or slight focus discrepancies that feel organic, not curated.",
+      "source_url": "https://www.pexels.com/photo/two-young-women-having-fun-7142952/"
+    },
+    {
+      "id": "d101r8",
+      "type": "image",
+      "content": "images/d101_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**IMPERFECTION PLACEMENT:** AI-added \"imperfections\" like sauce specks or flour dust can seem deliberately placed rather than naturally occurring.",
+      "_note": "Prompt: A photorealistic photograph of a diverse group of four friends conversing and reaching for slices around a rustic wooden table piled with two different pizzas and drinks. Captured with a Nikon Z7 II, 24-70mm f/2.8, illuminated by warm overhead indoor lighting, showing reflections on cutlery, the unique char patterns on the pizza crusts, and the intricate wood grain of the table."
+    },
+    {
+      "id": "d101r9",
+      "type": "image",
+      "content": "images/d101_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are your pro tips for the AI detection game, \"Pizza Party Day\" edition:",
+      "_note": "Prompt: A photorealistic photograph of two diverse young women, one with auburn hair and the other with dark curls, clinking wine glasses over a table laden with a steaming pepperoni pizza. Shot with a Canon EOS R5, 50mm f/1.8, capturing the intimate indoor warm light illuminating fine skin pores and the subtle char marks on the pizza crust, with condensation visible on the wine glasses."
+    },
+    {
+      "id": "d101r10",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1544880047-1966fc792a37?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw3fHxwaXp6YSUyMHBhcnR5fGVufDB8MHx8fDE3Nzg3OTQzNzF8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Rosie Sun on Unsplash",
+      "pro_tip": "**NATURAL LIGHTING:** Real photos exhibit varied lighting, with natural shadows, subtle inconsistencies, and less uniform illumination across the entire scene.",
+      "source_url": "https://unsplash.com/photos/person-reaching-of-a-pizza-on-other-side-of-table-Vnb8zsvYVbo"
+    }
+  ],
+  "category_subtitle": "Gather 'round, the toppings are endless, the fun is real!"
+}
