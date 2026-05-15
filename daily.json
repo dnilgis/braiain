@@ -698,6 +698,13 @@
       "category_emoji": "🍕",
       "category_subtitle": "Gather 'round, the toppings are endless, the fun is real!",
       "challenge_file": "challenges/2026-05-15.json"
+  },
+    "2026-05-16": {
+      "day_number": 102,
+      "category": "National BBQ Day",
+      "category_emoji": "🍖",
+      "category_subtitle": "Fire up the grill, it's time for smoky deliciousness!",
+      "challenge_file": "challenges/2026-05-16.json"
   }
 }
 
