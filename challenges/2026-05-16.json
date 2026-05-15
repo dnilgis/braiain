@@ -1,0 +1,99 @@
+{
+  "day_number": 102,
+  "date": "2026-05-16",
+  "category": "National BBQ Day",
+  "category_emoji": "🍖",
+  "rounds": [
+    {
+      "id": "d102r1",
+      "type": "image",
+      "content": "images/d102_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**UNNATURAL TEXTURE INTERACTION:** Examine how textures blend. AI excels at individual textures, but their interaction or subtle imperfections might feel too clean or slightly artificial.",
+      "_note": "Prompt: A photorealistic photograph of a lively backyard barbecue gathering on a bright, clear sunny afternoon, showcasing a picnic table brimming with platters of grilled corn on the cob, various sausages, and fresh salads, with laughter and activity blurred in the background. The intense sunlight highlights individual blades of grass and tiny dust motes in the air, catching the condensation on cold beer bottles and the vibrant textures of the food. Captured with a Canon EOS R6, 24-70mm f/2.8 lens at 35mm."
+    },
+    {
+      "id": "d102r2",
+      "type": "image",
+      "content": "images/d102_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**SIMULATED IMPERFECTIONS:** Observe \"scratches\" or \"grease splatters\" that appear too uniform or deliberately placed, rather than organically inconsistent and natural.",
+      "_note": "Prompt: A photorealistic photograph of a mouth-watering pile of smoked brisket slices, rich with a dark, caramelized crust and tender, rendered fat, resting on a rustic, well-used wooden cutting board. The warm, late afternoon sun accentuates the fibrous texture of the meat and the distinct smoke ring, revealing individual flakes of black pepper and coarse salt. Shot with a Nikon Z7 II, 70-200mm f/2.8 lens at 135mm."
+    },
+    {
+      "id": "d102r3",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1702012464343-a9966c1a9ead?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxNXx8QkJRJTIwZ3JpbGwlMjBmb29kfGVufDB8MHx8fDE3Nzg4Njk0OTh8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Jeremy Bishop on Unsplash",
+      "pro_tip": "**PAINTED BACKGROUNDS:** Identify backgrounds or blurred elements that appear too smooth or 'painted,' lacking the organic chaos and subtle, authentic imperfections of real life.",
+      "source_url": "https://unsplash.com/photos/a-person-is-cooking-food-on-a-grill-ifyCg2yVOSk"
+    },
+    {
+      "id": "d102r4",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/37030072/pexels-photo-37030072.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Canary Vista ES on Pexels",
+      "pro_tip": "**NATURAL LIGHTING NUANCES:** Look for realistic light behavior, including genuine lens flare, harsh shadows, or subtle, authentic inconsistencies in illumination.",
+      "source_url": "https://www.pexels.com/photo/delicious-backyard-bbq-with-grilled-meat-and-vegetables-37030072/"
+    },
+    {
+      "id": "d102r5",
+      "type": "image",
+      "content": "images/d102_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**HYPER-DETAIL:** Notice unnaturally sharp, consistent detail everywhere—skin pores, fine hairs, or fabric weave—often lacking natural focal fall-off and imperfection.",
+      "_note": "Prompt: A photorealistic photograph of a colorful assortment of grilled peppers, onions, and zucchini slices, along with browned chicken skewers, neatly arranged on a slightly scratched stainless steel serving tray, glistening with a light dressing. The soft, even light from an overcast sky emphasizes the intricate char marks on the vegetables and the chicken's crispy skin, highlighting the tray's subtle reflections. Captured with a Sony a7 III, 100mm f/2.8 macro lens."
+    },
+    {
+      "id": "d102r6",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1560614382-33bd4daa1b9e?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyMXx8QkJRJTIwZ3JpbGwlMjBmb29kfGVufDB8MHx8fDE3Nzg4Njk0OTh8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Quaritsch Photography on Unsplash",
+      "pro_tip": "**EXCESSIVE PERFECTION:** Look for light and shadow that's too flawless. Reflections might lack realistic distortion, or highlights appear unnaturally consistent across surfaces.",
+      "source_url": "https://unsplash.com/photos/person-holding-gray-tongs-on-barbecue-nQ6bjb20G5w"
+    },
+    {
+      "id": "d102r7",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1628294896516-344152572ee8?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw4fHxCQlElMjBncmlsbCUyMGZvb2R8ZW58MHwwfHx8MTc3ODg2OTQ5OHww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Dolores Preciado on Unsplash",
+      "pro_tip": "**Real Photos:**",
+      "source_url": "https://unsplash.com/photos/cooked-food-on-stainless-steel-tray-7a--Ad6mkNE"
+    },
+    {
+      "id": "d102r8",
+      "type": "image",
+      "content": "images/d102_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are your pro tips for the AI detection game, BBQ edition:",
+      "_note": "Prompt: A photorealistic photograph of a man's strong hands, with visible skin pores and fine hairs, expertly holding shiny black metal tongs to flip a perfectly seared steak on a charcoal grill, with subtle smoke tendrils curling upwards. The golden hour light casts warm highlights on the tongs' surface and the steak's rich char marks. Shot with a Canon EOS R5, 85mm f/1.4 lens."
+    },
+    {
+      "id": "d102r9",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/8250723/pexels-photo-8250723.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Julia Filirovska on Pexels",
+      "pro_tip": "**AUTHENTIC IMPERFECTIONS:** Spot natural wear—genuine smudges, inconsistent charring, or irregular nicks on surfaces—details that feel truly unplanned and imperfect.",
+      "source_url": "https://www.pexels.com/photo/cooked-meat-in-the-stainless-tray-8250723/"
+    },
+    {
+      "id": "d102r10",
+      "type": "image",
+      "content": "images/d102_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**AI-Generated Photos:**",
+      "_note": "Prompt: A photorealistic photograph of a woman wearing a light linen apron, her arm extended as she carefully bastes a rack of ribs sizzling on a gas grill, her concentration evident. The bright midday sun illuminates the subtle fabric weave of her apron and the faint grease splatters on the grill's side, with distinct grill lines forming on the basted meat. Taken with a Fujifilm X-T4, 50mm f/2 lens."
+    }
+  ],
+  "category_subtitle": "Fire up the grill, it's time for smoky deliciousness!"
+}
