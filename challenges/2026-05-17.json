@@ -1,0 +1,99 @@
+{
+  "day_number": 103,
+  "date": "2026-05-17",
+  "category": "Pet Pranks",
+  "category_emoji": "🐾",
+  "rounds": [
+    {
+      "id": "d103r1",
+      "type": "image",
+      "content": "images/d103_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are 10 pro tips for the AI detection game, themed \"Pet Pranks\":",
+      "_note": "Prompt: A photorealistic photograph of a long-haired Persian cat with wide yellow eyes, mid-sneeze, spraying bathwater across a pristine white bathroom wall, a mischievous glint in its eyes. Tiny water droplets glisten on its wet fur, showcasing individual strands and the fine ceramic texture of the wall tiles, illuminated by warm overhead indoor lighting. Shot with a Canon EOS R6, 85mm f/1.4."
+    },
+    {
+      "id": "d103r2",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/384555/pexels-photo-384555.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Tranmautritam on Pexels",
+      "pro_tip": "**AUTHENTIC IMPERFECTION:** Real photos show natural, unposed expressions or slight blur. Look for genuine moments with less idealized composition or lighting.",
+      "source_url": "https://www.pexels.com/photo/ragdoll-cat-on-a-white-chair-384555/"
+    },
+    {
+      "id": "d103r3",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/7224647/pexels-photo-7224647.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Karin Chantanaprayura on Pexels",
+      "pro_tip": "**EXCESSIVE LITERALISM:** Descriptions of light, texture, or environment can be excessively detailed and literal, like \"fine ceramic texture.\"",
+      "source_url": "https://www.pexels.com/photo/photograph-of-a-cat-bathing-7224647/"
+    },
+    {
+      "id": "d103r4",
+      "type": "image",
+      "content": "images/d103_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**CAMERA INFO:** Specific camera model and lens details mentioned in the description are a major AI giveaway. Real users rarely include this.",
+      "_note": "Prompt: A photorealistic photograph of a brown and white short-coated dog, running full-tilt across a pristine snow-covered field, a colorful knitted beanie clutched playfully in its mouth. Fine snow crystals are kicked up in a cloud behind its paws, and its breath forms a faint vapor in the crisp, cold air under a bright overcast sky. Shot with a Sony Alpha a7 III, 70-200mm f/2.8."
+    },
+    {
+      "id": "d103r5",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/160846/french-bulldog-summer-smile-joy-160846.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Pixabay on Pexels",
+      "pro_tip": "**SIMPLER SCENES:** Real photos capture straightforward pet moments, not elaborate \"prank\" setups. The focus is on natural behavior, not narrative.",
+      "source_url": "https://www.pexels.com/photo/white-short-coated-dog-160846/"
+    },
+    {
+      "id": "d103r6",
+      "type": "image",
+      "content": "images/d103_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**PERFECT REALISM:** AI images often lack genuine imperfections. Scenarios like \"pristine\" environments or overly \"mischievous glints\" can signal AI.",
+      "_note": "Prompt: A photorealistic photograph of a Boston Terrier's cute muzzle, framed by a pair of round, slightly askew glasses, looking away with a guilty expression while lying on a textured fabric sofa. In the background, a partially chewed remote control is visible on the floor, its plastic casing showing distinct teeth marks under the warm, ambient indoor lighting. Shot with a Canon EOS R5, 50mm f/1.8."
+    },
+    {
+      "id": "d103r7",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/7533379/pexels-photo-7533379.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by SHVETS production on Pexels",
+      "pro_tip": "**NATURAL BEHAVIOR:** Pets exhibit natural actions like sticking out their tongue, rather than perfectly executed or overly dramatic \"pranks.\"",
+      "source_url": "https://www.pexels.com/photo/funny-dog-lying-on-floor-with-glasses-7533379/"
+    },
+    {
+      "id": "d103r8",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1581171383994-afd540b6a4da?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwzfHxGdW5ueSUyMHBldHN8ZW58MHwwfHx8MTc3ODk1NDA2NHww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Yan Laurichesse on Unsplash",
+      "pro_tip": "**GENERAL DESCRIPTIONS:** Descriptions are less detailed about lighting, textures, or specific photographic equipment. They focus on the core subject.",
+      "source_url": "https://unsplash.com/photos/brown-and-white-short-coated-dog-running-on-snow-covered-ground-during-daytime-3qZnN_M45Ds"
+    },
+    {
+      "id": "d103r9",
+      "type": "image",
+      "content": "images/d103_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**HYPER-DETAIL:** Look for unnatural levels of crisp detail, like individual fur strands or distinct teeth marks. AI renders every tiny element perfectly.",
+      "_note": "Prompt: A photorealistic photograph of an adorable Ragdoll cat with striking blue eyes, caught mid-act, having just pulled a roll of toilet paper off a nearby holder, now partially unspooled and draped over the armrest of a modern chair. Its fluffy fur is slightly ruffled, and a single, loose thread from the chair's fabric is visible, illuminated by soft natural light filtering through a nearby window. Shot with a Fujifilm X-T4, 35mm f/2."
+    },
+    {
+      "id": "d103r10",
+      "type": "image",
+      "content": "images/d103_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**STAGED NARRATIVES:** AI often presents pets in complex, \"mid-act\" prank scenarios with human-like expressions. It's too perfectly narrative.",
+      "_note": "Prompt: A photorealistic photograph of a happy French Bulldog, its red collar askew, having just \"helped\" unroll an entire garden hose across a sun-drenched lawn, a mischievous glint in its eyes. Tiny flecks of damp soil cling to its short, glossy fur, and individual blades of vibrant green grass are sharply defined in the bright midday sun. Shot with a Nikon Z7 II, 24-70mm f/2.8."
+    }
+  ],
+  "category_subtitle": "Catch our furry friends in their most mischievous moments!"
+}
