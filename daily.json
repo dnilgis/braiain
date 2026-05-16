@@ -705,6 +705,13 @@
       "category_emoji": "🍖",
       "category_subtitle": "Fire up the grill, it's time for smoky deliciousness!",
       "challenge_file": "challenges/2026-05-16.json"
+  },
+    "2026-05-17": {
+      "day_number": 103,
+      "category": "Pet Pranks",
+      "category_emoji": "🐾",
+      "category_subtitle": "Catch our furry friends in their most mischievous moments!",
+      "challenge_file": "challenges/2026-05-17.json"
   }
 }
 
