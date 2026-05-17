@@ -712,6 +712,13 @@
       "category_emoji": "🐾",
       "category_subtitle": "Catch our furry friends in their most mischievous moments!",
       "challenge_file": "challenges/2026-05-17.json"
+  },
+    "2026-05-18": {
+      "day_number": 104,
+      "category": "Museum Marvels",
+      "category_emoji": "🏛️",
+      "category_subtitle": "Is it priceless art, or just a really good pixel party trick?",
+      "challenge_file": "challenges/2026-05-18.json"
   }
 }
 
