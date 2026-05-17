@@ -1,0 +1,99 @@
+{
+  "day_number": 104,
+  "date": "2026-05-18",
+  "category": "Museum Marvels",
+  "category_emoji": "🏛️",
+  "rounds": [
+    {
+      "id": "d104r1",
+      "type": "image",
+      "content": "images/d104_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**LIGHTING LOGIC:** Observe shadows and reflections. AI can misinterpret light sources, leading to illogical or missing environmental interactions.",
+      "_note": "Prompt: A photorealistic photograph of a woman in a textured wool cardigan, calmly sitting on a minimalist wooden bench in a spacious contemporary art museum. The subtle grain of the bench and the fine weave of her cardigan are clearly visible, bathed in the soft, natural light filtering from a large overhead skylight. Captured with a Fujifilm X-T4 and a 35mm f/2 lens."
+    },
+    {
+      "id": "d104r2",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/16960921/pexels-photo-16960921.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Alina  Rossoshanska on Pexels",
+      "pro_tip": "**ORGANIC IMPERFECTIONS:** Seek subtle, natural flaws: a stray hair, a slight wrinkle in clothing, or a dusty surface. Real life isn't pristine.",
+      "source_url": "https://www.pexels.com/photo/woman-in-a-museum-looking-at-paintings-16960921/"
+    },
+    {
+      "id": "d104r3",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1708406620473-3641dc3185ed?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxN3x8bXVzZXVtJTIwZXhoaWJpdCUyMGFydHxlbnwwfDB8fHwxNzc5MDM3MDU5fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Alireza Banijani on Unsplash",
+      "pro_tip": "**BELIEVABLE ANATOMY:** Look for natural human poses, expressions, and realistic skin details with pores and subtle blemishes. Hands and eyes are key.",
+      "source_url": "https://unsplash.com/photos/a-woman-sitting-on-a-bench-in-a-museum-696vqqGHxVE"
+    },
+    {
+      "id": "d104r4",
+      "type": "image",
+      "content": "images/d104_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**TOO PERFECT:** AI often generates images that are *too* clean or perfectly composed. Real photos usually have slight imperfections or natural 'messiness'.",
+      "_note": "Prompt: A photorealistic photograph of two adults, a man and a woman, standing a respectful distance from a massive, vibrant abstract painting with bold brushstrokes in a sunlit modern art museum. The glossy texture of the painting and the intricate stitching on the man's denim jacket are sharply rendered, illuminated by bright, diffused overhead gallery lights. Captured with a Leica Q2, 28mm f/1.7 lens."
+    },
+    {
+      "id": "d104r5",
+      "type": "image",
+      "content": "images/d104_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**AI ARTIFACTS:** Check for unnatural repetitions in textures like fabric weave or wood grain. AI often creates hyper-detailed but patterned surfaces.",
+      "_note": "Prompt: A photorealistic photograph of a woman in a deep emerald velvet coat, seen from a slight back angle, gazing intently at a large Impressionist landscape painting in a well-lit museum gallery. The intricate fabric weave of her coat is visible, and faint dust motes dance in the ambient light filtering from above. Shot on a Canon EOS R5 with a 85mm f/1.4 lens, using diffused indoor gallery lighting."
+    },
+    {
+      "id": "d104r6",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1606819717115-9159c900370b?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxfHxtdXNldW0lMjBleGhpYml0JTIwYXJ0fGVufDB8MHx8fDE3NzkwMzcwNTl8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Zalfa Imani on Unsplash",
+      "pro_tip": "**CONSISTENT PHYSICS:** Analyze how light interacts with the scene. Shadows fall naturally, and reflections accurately depict the environment.",
+      "source_url": "https://unsplash.com/photos/woman-in-black-coat-standing-in-front-of-paintings-1xp5VxvyKL0"
+    },
+    {
+      "id": "d104r7",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/32435962/pexels-photo-32435962.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by rana aldemir on Pexels",
+      "pro_tip": "**LENS CHARACTERISTICS:** Notice natural lens effects like subtle barrel distortion, lens flare, or realistic bokeh. These are hard for AI to perfectly replicate.",
+      "source_url": "https://www.pexels.com/photo/art-enthusiasts-admiring-abstract-museum-exhibit-32435962/"
+    },
+    {
+      "id": "d104r8",
+      "type": "image",
+      "content": "images/d104_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**BACKGROUND ANOMALIES:** Look for warped text, strange or repetitive background elements, and inconsistent depth of field.",
+      "_note": "Prompt: A photorealistic photograph of a woman wearing a sleek black wool trench coat, standing contemplatively to the side of a large Baroque painting in a grand museum hall. The fine texture of her coat's fabric and the aged, subtle cracks in the painting's varnish are discernible under the warm, directed spotlighting. Shot on a Nikon Z7 with a 24-70mm f/2.8 lens at 50mm."
+    },
+    {
+      "id": "d104r9",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1563000215-e31a8ddcb2d0?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyfHxtdXNldW0lMjBleGhpYml0JTIwYXJ0fGVufDB8MHx8fDE3NzkwMzcwNTl8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Pauline Loroy on Unsplash",
+      "pro_tip": "**AUTHENTIC TEXTURES:** Observe genuine variations in fabric, skin, or paint. Real textures show natural wear, light interaction, and subtle irregularities.",
+      "source_url": "https://unsplash.com/photos/woman-looking-at-painting-AlLKJ292jOQ"
+    },
+    {
+      "id": "d104r10",
+      "type": "image",
+      "content": "images/d104_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**ANATOMICAL FLAWS:** Scrutinize hands, fingers, and eyes for distortions or uncanny symmetry. Reflections in eyes might also be inconsistent.",
+      "_note": "Prompt: A photorealistic photograph of a woman with her head tilted slightly, observing a vibrant abstract expressionist painting in a modern art museum. Her thoughtful expression reveals subtle skin pores, and the thick impasto texture of the artwork is evident under the gallery's bright, even lighting. Shot on a Sony Alpha A7 III with a 50mm f/1.8 lens."
+    }
+  ],
+  "category_subtitle": "Is it priceless art, or just a really good pixel party trick?"
+}
