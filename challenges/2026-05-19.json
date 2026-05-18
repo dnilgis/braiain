@@ -1,0 +1,99 @@
+{
+  "day_number": 105,
+  "date": "2026-05-19",
+  "category": "Hidden Tiny Worlds",
+  "category_emoji": "🔍",
+  "rounds": [
+    {
+      "id": "d105r1",
+      "type": "image",
+      "content": "images/d105_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**CONSISTENCY FLAWS:** Examine reflections within water droplets or compound eyes. AI can struggle with realistic environmental reflections or subtle lighting inconsistencies.",
+      "_note": "Prompt: A photorealistic photograph of a slender blue damselfly, its iridescent body and fragile, intricate wings heavily laden with countless sparkling dew droplets, subtly camouflaged amidst a tangle of lush green grass blades. Shot with a Fujifilm GFX 100S and a GF 120mm f/4 R LM OIS WR Macro lens in soft, ambient predawn light, bringing out the fibrous texture of the grass and the damselfly's delicate, articulated legs."
+    },
+    {
+      "id": "d105r2",
+      "type": "image",
+      "content": "images/d105_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are your pro tips for the AI detection game, themed \"Hidden Tiny Worlds\":",
+      "_note": "Prompt: A photorealistic photograph of a vibrant red ladybug, its back glistening with perfect spherical water droplets, meticulously clinging to the textured surface of its shell while it pauses on a broad green leaf in a botanical garden in Leipzig, Germany. Captured with a Canon EOS R5 and a 100mm f/2.8 Macro lens under soft, diffused morning light, highlighting the ladybug's delicate antennae and the subtle fuzz on its tiny legs."
+    },
+    {
+      "id": "d105r3",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1764183122037-56a96bf29f23?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyfHxtYWNybyUyMGluc2VjdCUyMGRld3xlbnwwfDB8fHwxNzc5MTE0NTczfDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Noah Ridge on Unsplash",
+      "pro_tip": "**NATURAL IMPERFECTIONS:** Real macro shots often contain slight dust, tiny scratches, or less-than-perfectly round water droplets, indicating an authentic scene.",
+      "source_url": "https://unsplash.com/photos/a-small-green-praying-mantis-on-a-yellow-flower-3HzgcHI61pA"
+    },
+    {
+      "id": "d105r4",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/34327496/pexels-photo-34327496.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Rafael Minguet Delgado on Pexels",
+      "pro_tip": "**ORGANIC LIGHTING:** Observe subtle, natural light fall-off and realistic shadow play that gently interacts with textures. It feels less \"rendered\" or uniformly lit.",
+      "source_url": "https://www.pexels.com/photo/detailed-macro-shot-of-asilidae-in-valencia-34327496/"
+    },
+    {
+      "id": "d105r5",
+      "type": "image",
+      "content": "images/d105_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**HYPER-PERFECTION:** Look for images where every detail is flawlessly rendered, from perfectly spherical water droplets to impossibly clean textures. Real nature is rarely so pristine.",
+      "_note": "Prompt: A photorealistic photograph of a slender green praying mantis, perfectly camouflaged and perched alertly on the vibrant yellow petals of a rudbeckia flower. Taken with a Nikon D850 and a Laowa 100mm f/2.8 2X Ultra Macro APO lens during bright natural afternoon sunlight, revealing the mantis's intricate compound eyes and the fine, almost powdery texture of the flower's pollen-dusted center."
+    },
+    {
+      "id": "d105r6",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/13435732/pexels-photo-13435732.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Moritz Spannenkrebs on Pexels",
+      "pro_tip": "**FORMULAIC COMPOSITION:** Many AI images from similar prompts may share a highly centered, perfectly balanced composition with overly ideal background blur, lacking spontaneity.",
+      "source_url": "https://www.pexels.com/photo/a-lady-bug-with-water-droplets-13435732/"
+    },
+    {
+      "id": "d105r7",
+      "type": "image",
+      "content": "images/d105_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**EXAGGERATED DETAILS:** Be wary of details that seem over-emphasized, like \"countless sparkling dew droplets\" or an \"exquisite layer of morning dew.\" It can feel artistically excessive.",
+      "_note": "Prompt: A photorealistic photograph of a plump bumblebee, its furry body and legs covered in a sparkling array of morning dew droplets, paused on the heavily veined surface of a broad, dark green leaf. Taken with an Olympus OM-D E-M1 Mark III and an M.Zuiko Digital ED 60mm f/2.8 Macro lens under overcast, soft morning light, emphasizing the bee's compound eyes and the subtle variations in the leaf's epidermal texture."
+    },
+    {
+      "id": "d105r8",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/17961740/pexels-photo-17961740.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Egor Kamelev on Pexels",
+      "pro_tip": "**SUBTLE MOVEMENT:** Look for slight blurring from natural movement, or a less \"posed\" subject. Real subjects rarely hold perfectly still for hyper-detailed shots.",
+      "source_url": "https://www.pexels.com/photo/close-up-of-bee-17961740/"
+    },
+    {
+      "id": "d105r9",
+      "type": "image",
+      "content": "images/d105_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**UNNATURAL CLARITY:** AI often produces unnaturally sharp focus across multiple planes or an artificial \"sheen\" on surfaces. Textures might appear too smooth or subtly fake.",
+      "_note": "Prompt: A photorealistic photograph of a formidable Asilidae, its entire body, including its prominent eyes and spiny legs, adorned with an exquisite layer of morning dew, as it rests motionless on a dry, textured thistle stem in the arid landscape near Valencia. Captured with a Sony A7R IV and a Sigma 105mm f/2.8 DG DN Macro Art lens under gentle, early morning diffused light, accentuating the fly's proboscis and the sharp details of its chitinous exoskeleton."
+    },
+    {
+      "id": "d105r10",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/7225088/pexels-photo-7225088.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Jürgen on Pexels",
+      "pro_tip": "**BELIEVABLE DOF:** While macro has shallow depth of field, real photos show a natural gradient of blur, with background elements feeling organically out of focus, not artificially smoothed.",
+      "source_url": "https://www.pexels.com/photo/green-damselfly-perched-on-green-leaf-in-close-up-photography-7225088/"
+    }
+  ],
+  "category_subtitle": "Zoom in on the minuscule marvels all around us!"
+}
