@@ -1,0 +1,99 @@
+{
+  "day_number": 106,
+  "date": "2026-05-20",
+  "category": "Rescue Dogs",
+  "category_emoji": "🐾",
+  "rounds": [
+    {
+      "id": "d106r1",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/18723775/pexels-photo-18723775.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Jeswin  Thomas on Pexels",
+      "pro_tip": "**DYNAMIC MOTION:** Observe dogs in action. Real photographs capture natural motion blur, organic dust disturbances, and fluid, unposed expressions during movement.",
+      "source_url": "https://www.pexels.com/photo/service-dogs-in-front-of-an-airplane-at-an-airport-18723775/"
+    },
+    {
+      "id": "d106r2",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1581597359121-0f69057e2fb1?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw0fHxzZXJ2aWNlJTIwZG9nfGVufDB8MHx8fDE3NzkyMzM0MDZ8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Dzmitry Dudov on Unsplash",
+      "pro_tip": "**AUTHENTIC IMPERFECTIONS:** Real photos display natural variations: a stray fur, slight leash wear, or genuine light reflections that create an unpolished, authentic feel.",
+      "source_url": "https://unsplash.com/photos/golden-retriever-with-yellow-and-black-harness-dL2_aPczMDY"
+    },
+    {
+      "id": "d106r3",
+      "type": "image",
+      "content": "images/d106_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**IMMACULATE ACCESSORIES:** Check harnesses or vests. AI frequently renders them unnaturally new, bright, and perfectly stitched, showing no realistic wear, creases, or subtle dirt.",
+      "_note": "Prompt: A photorealistic photograph of a determined search and rescue worker, clad in a slightly dusty olive-green uniform, guiding a sleek black Labrador-mix rescue dog on a sturdy nylon leash, walking deliberately past an aged, sun-baked stucco wall with peeling paint and visible cracks. The dog's focused expression and the subtle sweat sheen on the worker's forehead are evident, with fine particles of red dust clinging to the dog's paws and the worker's boots, under the stark, high-contrast light of a Mediterranean afternoon. Shot on a Fujifilm X-T5 with a 23mm f/2 lens."
+    },
+    {
+      "id": "d106r4",
+      "type": "image",
+      "content": "images/d106_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**REPETITIVE PATTERNS:** Observe weathered surfaces like walls. AI may generate cracks or peeling paint with repeating patterns, lacking the unique, random variability of authentic damage.",
+      "_note": "Prompt: A photorealistic photograph of a kind-faced man in his 50s, wearing a well-worn denim jacket, seated on a rustic, weathered grey stone bench in a garden, with two happy golden retriever rescue dogs nestled closely beside him. The dogs' thick, wavy fur shows slight variations in color, and the coarse, uneven texture of the stone bench, along with scattered dry leaves on the ground, is sharply rendered under soft, diffuse morning light. Shot on a Sony a7C with a 35mm f/1.8 lens."
+    },
+    {
+      "id": "d106r5",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/5163793/pexels-photo-5163793.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Gustavo Fring on Pexels",
+      "pro_tip": "**GENUINE EXPRESSIONS:** Real subjects display nuanced, authentic emotions and body language, conveying true interaction and connection, not just a generic 'happy' or 'determined' pose.",
+      "source_url": "https://www.pexels.com/photo/person-in-blue-denim-jeans-sitting-beside-golden-retriever-5163793/"
+    },
+    {
+      "id": "d106r6",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/11652095/pexels-photo-11652095.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Elena's on Pexels",
+      "pro_tip": "**ENVIRONMENTAL VARIABILITY:** Look for nuanced, non-repeating details like tarmac oil stains or unique dirt clumps, reflecting genuine, unpredictable environmental wear and tear.",
+      "source_url": "https://www.pexels.com/photo/a-firefighter-walking-a-dog-11652095/"
+    },
+    {
+      "id": "d106r7",
+      "type": "image",
+      "content": "images/d106_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**EXAGGERATED TEXTURE:** Look for fur strands or fabric weave that appear unnaturally hyper-detailed and uniform across the image, lacking organic imperfections or varied depth.",
+      "_note": "Prompt: A photorealistic photograph of a young, energetic golden retriever rescue dog, its thick, shimmering fur slightly ruffled, wearing a new bright yellow and black nylon service harness. The dog is captured mid-trot on a slightly uneven dirt path bordered by lush green grass, its mouth slightly open as if panting, with fine dust motes visible in the air around its paws, under bright overhead sunlight. Shot on a Nikon Z9 with an 85mm f/1.8 lens."
+    },
+    {
+      "id": "d106r8",
+      "type": "image",
+      "content": "images/d106_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**ARTIFICIAL ATMOSPHERE:** Examine elements like dust motes; AI often scatters them too perfectly or uniformly, lacking the chaotic, natural distribution of real environmental particles.",
+      "_note": "Prompt: A photorealistic photograph of two calm, alert black Labrador Retrievers, wearing matching bright red service vests with reflective strips, patiently sitting on a clean, grey tarmac surface next to a parked commercial airliner's engine. The smooth, short fur of their coats and the crisp stitching on their vests are in sharp focus, with subtle oil stains on the tarmac and the gleam of metal on the engine visible under the bright, clear midday sun. Shot on a Canon EOS R5 with a 24-70mm f/2.8 lens."
+    },
+    {
+      "id": "d106r9",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1598962056963-9323f7a1dac2?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw1fHxzZXJ2aWNlJTIwZG9nfGVufDB8MHx8fDE3NzkyMzM0MDZ8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Frames For Your Heart on Unsplash",
+      "pro_tip": "**UNNATURAL MERGING:** Notice how subjects interact. AI dogs might \"nestle\" too perfectly, with fur subtly merging or body parts overlapping unnaturally, defying physical separation.",
+      "source_url": "https://unsplash.com/photos/black-and-white-curly-coated-small-dog-with-black-and-white-strap-bjU0FvDuHJA"
+    },
+    {
+      "id": "d106r10",
+      "type": "image",
+      "content": "images/d106_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are 10 pro tips for the AI detection game, themed \"Rescue Dogs\":",
+      "_note": "Prompt: A photorealistic black and white photograph of a small, fluffy black and white curly-coated rescue dog, possibly a Portuguese Water Dog mix, wearing a thick canvas leash with black and white stripes. The dog sits attentively on a worn concrete floor, its intelligent eyes gleaming, with individual fur strands and the coarse weave of the leash clearly visible, bathed in soft, diffused studio light. Shot on a Leica M10-R with a 50mm f/0.95 lens."
+    }
+  ],
+  "category_subtitle": "Unconditional love finds a home. Adopt, don't shop!"
+}
