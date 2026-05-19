@@ -726,6 +726,13 @@
       "category_emoji": "🔍",
       "category_subtitle": "Zoom in on the minuscule marvels all around us!",
       "challenge_file": "challenges/2026-05-19.json"
+  },
+    "2026-05-20": {
+      "day_number": 106,
+      "category": "Rescue Dogs",
+      "category_emoji": "🐾",
+      "category_subtitle": "Unconditional love finds a home. Adopt, don't shop!",
+      "challenge_file": "challenges/2026-05-20.json"
   }
 }
 
