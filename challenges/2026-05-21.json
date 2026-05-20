@@ -1,0 +1,99 @@
+{
+  "day_number": 107,
+  "date": "2026-05-21",
+  "category": "International Tea Day",
+  "category_emoji": "☕",
+  "rounds": [
+    {
+      "id": "d107r1",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/9452278/pexels-photo-9452278.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by TrintX on Pexels",
+      "pro_tip": "**FABRIC REPETITIONS & UNCANNY TEXTURE:** Check for perfectly repeated patterns on fabrics or an artificial sheen. AI struggles with organic, complex material imperfections and natural drape.",
+      "source_url": "https://www.pexels.com/photo/a-person-pouring-coffee-in-the-cup-9452278/"
+    },
+    {
+      "id": "d107r2",
+      "type": "image",
+      "content": "images/d107_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**ARTIFICIAL PERFECTION:** Look for unnaturally flawless textures (e.g., condensation, crumbs, daisy). AI often creates details too perfect, lacking natural imperfections or subtle irregularities.",
+      "_note": "Prompt: A photorealistic photograph of a serene close-up of a woman's hands gently cradling a delicate teacup, her face partially obscured as she gazes thoughtfully out a window, reflected subtly on the polished cafe tabletop. Soft, diffused daylight filters into the modern cafe, captured with a Fujifilm X-T4, 56mm f/1.2, revealing the slight weave of her wool scarf and the faint steam rising from the tea."
+    },
+    {
+      "id": "d107r3",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/36611172/pexels-photo-36611172.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Vyvan BÙI VY VÂN on Pexels",
+      "pro_tip": "**GENUINE HUMANITY:** Seek genuine human expressions and interactions, not just 'warm smiles.' Real faces show natural creases and subtle asymmetries that convey true emotion.",
+      "source_url": "https://www.pexels.com/photo/cultural-tea-ceremony-with-traditional-decor-36611172/"
+    },
+    {
+      "id": "d107r4",
+      "type": "image",
+      "content": "images/d107_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**UNNATURAL FACIAL EXPRESSIONS:** Observe smiles or skin textures. AI faces can appear too smooth, overly symmetrical, or have an 'uncanny valley' effect, despite detailed pore descriptions.",
+      "_note": "Prompt: A photorealistic photograph of a wide, contemplative shot of two individuals gracefully performing a segment of a traditional East Asian tea ceremony, one meticulously pouring hot water from a clay pot while the other observes intently, surrounded by rich, crimson and gold patterned fabrics and delicate ceramic vessels. Soft, natural light from a large window mixes with the subtle glow of paper lanterns, captured with a Hasselblad X1D II 400C, 45mm f/3.5, highlighting the fine texture of the tea leaves in the bowl and the subtle sheen of the silk fabrics."
+    },
+    {
+      "id": "d107r5",
+      "type": "image",
+      "content": "images/d107_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**REFLECTIVE ODDITIES:** Scrutinize reflections (e.g., on tabletops or windows). AI-generated reflections can be too clear, distorted in unnatural ways, or lack true environmental context.",
+      "_note": "Prompt: A photorealistic photograph of a candid mid-shot of a smiling street vendor in vibrant, embroidered traditional attire, holding a steaming cup of freshly brewed chai tea towards a customer at a bustling outdoor market. Bright, warm daylight streams through the translucent orange tent canopy above, captured with a Sony Alpha A7 III, 35mm f/1.8, emphasizing the intricate fabric weave of the vendor's tunic and the faint dust motes dancing in the sunbeams."
+    },
+    {
+      "id": "d107r6",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/32772138/pexels-photo-32772138.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Can Ceylan on Pexels",
+      "pro_tip": "**ORGANIC IMPERFECTIONS:** Notice subtle imperfections: natural variations in steam, slight blurs from movement (e.g., pouring tea), or naturally scattered elements. Real photos embrace flaws.",
+      "source_url": "https://www.pexels.com/photo/relaxed-coffee-break-with-reflections-32772138/"
+    },
+    {
+      "id": "d107r7",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/33542011/pexels-photo-33542011.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Tahir Xəlfə on Pexels",
+      "pro_tip": "**AUTHENTIC AMBIANCE & REFLECTIONS:** Observe natural light play and authentic reflections. Real reflections have natural distortions and realistically integrate the environment without being overly sharp.",
+      "source_url": "https://www.pexels.com/photo/street-vendor-pouring-tea-at-outdoor-market-33542011/"
+    },
+    {
+      "id": "d107r8",
+      "type": "image",
+      "content": "images/d107_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are your pro tips for the AI detection game:",
+      "_note": "Prompt: A photorealistic photograph of a freshly poured cup of amber tea with visible steam rising, sitting on a wooden coaster next to a small plate of homemade shortbread cookies and a single, delicate daisy. The scene is bathed in soft, warm indoor light from a window, captured with a Canon EOS R5, 85mm f/1.4, highlighting the fine crumbs on the cookies and the subtle condensation on the ceramic cup."
+    },
+    {
+      "id": "d107r9",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/37026972/pexels-photo-37026972.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Sóc Năng Động on Pexels",
+      "pro_tip": "**NATURAL BUSTLE & DUST:** Look for a natural sense of activity and environment, like authentically chaotic market scenes or naturally diffused dust motes that aren't perfectly placed.",
+      "source_url": "https://www.pexels.com/photo/man-enjoying-tea-in-cozy-indoor-setting-37026972/"
+    },
+    {
+      "id": "d107r10",
+      "type": "image",
+      "content": "images/d107_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**EXCESSIVE DETAIL/VIBRANCY:** Note overwhelming vibrancy or hyper-detailed elements, like uniform fabric embroidery or perfectly scattered dust motes. AI can over-render minor details to a fault.",
+      "_note": "Prompt: A photorealistic photograph of a charming portrait of a man with a warm smile, holding a ceramic mug of tea with both hands, seated comfortably in a rustic cabin setting with a worn leather armchair and a stone fireplace in the background. Cozy, warm indoor light emanates from a nearby lamp, captured with a Nikon Z7, 50mm f/1.4, revealing the subtle pores on his skin and the rough grain of the wooden mantelpiece."
+    }
+  ],
+  "category_subtitle": "Steeped in tradition, enjoyed worldwide – have a cuppa!"
+}
