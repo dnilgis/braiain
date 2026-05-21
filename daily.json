@@ -740,6 +740,13 @@
       "category_emoji": "☕",
       "category_subtitle": "Steeped in tradition, enjoyed worldwide – have a cuppa!",
       "challenge_file": "challenges/2026-05-21.json"
+  },
+    "2026-05-22": {
+      "day_number": 108,
+      "category": "Goth Day Glare",
+      "category_emoji": "🦇",
+      "category_subtitle": "Spot the fake: Real goth tears or AI's digital drama?",
+      "challenge_file": "challenges/2026-05-22.json"
   }
 }
 
