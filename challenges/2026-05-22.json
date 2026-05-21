@@ -1,0 +1,99 @@
+{
+  "day_number": 108,
+  "date": "2026-05-22",
+  "category": "Goth Day Glare",
+  "category_emoji": "🦇",
+  "rounds": [
+    {
+      "id": "d108r1",
+      "type": "image",
+      "content": "images/d108_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are your Goth Day Glare pro tips for the AI detection game:",
+      "_note": "Prompt: A photorealistic photograph of a pair in elegant Victorian gothic masquerade costumes, one in a feathered mask and the other in a Venetian-style mask, captured in a grand, dimly lit hall with flickering candle sconces. Shot on a Canon EOS R5, 85mm f/1.2 lens, under dramatic indoor low light, highlighting the intricate embroidery on their dark cloaks and the subtle sheen of silk fabric."
+    },
+    {
+      "id": "d108r2",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/18513671/pexels-photo-18513671.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Antonio Friedemann on Pexels",
+      "pro_tip": "**GEAR GRACE:** Inspect intricate steampunk details. AI often renders complex gears or leather with a fabricated, pristine look, lacking authentic wear or material depth.",
+      "source_url": "https://www.pexels.com/photo/a-man-and-woman-dressed-in-gothic-clothing-18513671/"
+    },
+    {
+      "id": "d108r3",
+      "type": "image",
+      "content": "images/d108_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**FABRIC FLAWS:** AI often generates unnaturally perfect fabric folds or overly uniform sheen on silk cloaks. Look for details that are too immaculate or symmetrical.",
+      "_note": "Prompt: A photorealistic photograph of a model in a flowing black gothic gown, gently touching an open, weathered stone book set on a mossy plinth, surrounded by dark red roses and ivy. Captured with a Nikon Z7 II, 50mm f/1.8 lens, during a soft, overcast afternoon, revealing the intricate carvings on the book's pages and the velvety texture of the rose petals."
+    },
+    {
+      "id": "d108r4",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/32693920/pexels-photo-32693920.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Daijon J on Pexels",
+      "pro_tip": "**IMPERFECT BEAUTY:** Observe truly organic smudging of kohl. Real monochrome photos reveal nuanced skin tones and genuine texture in matte lipstick, not uniform rendering.",
+      "source_url": "https://www.pexels.com/photo/steampunk-fashion-enthusiast-waves-hello-outdoors-32693920/"
+    },
+    {
+      "id": "d108r5",
+      "type": "image",
+      "content": "images/d108_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**HAIR & HUES:** Observe individual hair strands and geometric eyeliner. AI often creates unnaturally separated hair or impeccably crisp makeup, lacking natural skin.",
+      "_note": "Prompt: A photorealistic black and white photograph of a woman with intensely dark, smudged kohl eyeliner and deep matte lipstick, her face partially obscured by shadow, looking directly at the camera. Shot on a Leica M10 Monochrom, 75mm f/2 lens, with dramatic, high-contrast studio lighting, emphasizing the texture of her matte lipstick and the subtle variations in her skin tone."
+    },
+    {
+      "id": "d108r6",
+      "type": "image",
+      "content": "images/d108_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**SMUDGE & SHADOW:** Examine \"smudged\" kohl and matte lipstick. AI might produce uniform smudges or textures missing subtle, organic skin variations in monochrome.",
+      "_note": "Prompt: A photorealistic photograph of a young adult in elaborate steampunk gear, including brass goggles and a leather utility belt, with subtle gothic eye makeup, smiling and gesturing as if greeting someone, against a backdrop of historic ironwork and Spanish moss-draped oak trees in Savannah. Captured with a Fujifilm X-T4, 35mm f/2 lens, under bright, clear daylight, showcasing the intricate details of their leather corset and the slight sheen of their goggles."
+    },
+    {
+      "id": "d108r7",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1636398746275-b44cd079ea52?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxNHx8Z290aHxlbnwwfDB8fHwxNzc5Mzk2NTA1fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Julia Kadel on Unsplash",
+      "pro_tip": "**HUMAN TOUCH:** Note natural hair flow and subtle imperfections in bold makeup. Real portraits capture authentic skin textures and realistic light on metallic eyeshadow.",
+      "source_url": "https://unsplash.com/photos/a-black-and-white-photo-of-a-woman-with-dark-makeup-wDiQ8-r49UQ"
+    },
+    {
+      "id": "d108r8",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/35051011/pexels-photo-35051011.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Irene Constantino on Pexels",
+      "pro_tip": "**NATURAL TEXTURES:** Look for genuine, irregular wear on the stone book. Real roses feature unique petal curves and authentic light play, unlike synthetic perfection.",
+      "source_url": "https://www.pexels.com/photo/expressive-portrait-of-blue-haired-emo-individual-35051011/"
+    },
+    {
+      "id": "d108r9",
+      "type": "image",
+      "content": "images/d108_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**WEATHERED WONDER:** Scrutinize the weathered stone book. AI may render hyper-detailed \"aging\" that lacks organic decay, or produces unnaturally perfect rose petals.",
+      "_note": "Prompt: A photorealistic photograph of a young person with vibrant teal-blue hair styled in choppy layers, sporting striking geometric black eyeliner and a silver lip piercing, against a plain gray studio backdrop. Taken with a Hasselblad X1D II, 100mm f/2.2 lens, using crisp, diffused studio lighting, emphasizing individual hair strands and the fine shimmer of their metallic eyeshadow."
+    },
+    {
+      "id": "d108r10",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/5614353/pexels-photo-5614353.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Antonio Friedemann on Pexels",
+      "pro_tip": "**ORGANIC DRESSING:** Seek authentic imperfections in fabric drapes or mask details. Real photos show natural light interaction and genuine wear, not sterile perfection.",
+      "source_url": "https://www.pexels.com/photo/a-woman-in-black-dress-looking-at-the-camera-5614353/"
+    }
+  ],
+  "category_subtitle": "Spot the fake: Real goth tears or AI's digital drama?"
+}
