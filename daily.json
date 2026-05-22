@@ -747,6 +747,13 @@
       "category_emoji": "🦇",
       "category_subtitle": "Spot the fake: Real goth tears or AI's digital drama?",
       "challenge_file": "challenges/2026-05-22.json"
+  },
+    "2026-05-23": {
+      "day_number": 109,
+      "category": "Memorial Day Kickoff",
+      "category_emoji": "🇺🇸",
+      "category_subtitle": "Fire up the grill, the long weekend officially begins!",
+      "challenge_file": "challenges/2026-05-23.json"
   }
 }
 
