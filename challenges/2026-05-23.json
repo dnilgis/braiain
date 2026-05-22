@@ -1,0 +1,99 @@
+{
+  "day_number": 109,
+  "date": "2026-05-23",
+  "category": "Memorial Day Kickoff",
+  "category_emoji": "🇺🇸",
+  "rounds": [
+    {
+      "id": "d109r1",
+      "type": "image",
+      "content": "images/d109_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "CATEGORY: CONTRIVED REALISM. Look for an abundance of hyper-specific, almost contradictory details like \"faint dust motes\" or \"slight sheen of sweat,\" designed to enhance realism.",
+      "_note": "Prompt: A photorealistic photograph of a pair of hands holding long metal tongs, carefully flipping a marinated chicken leg on a hot grill, with steam rising dramatically. The overcast bright light reveals the crispy texture forming on the chicken skin and the distinct grill marks beneath, with subtle fabric wrinkles visible on the cook's apron. Shot on a Fujifilm X-T5, 56mm f/1.2."
+    },
+    {
+      "id": "d109r2",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/8798704/pexels-photo-8798704.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by RDNE Stock project on Pexels",
+      "pro_tip": "CATEGORY: SENSORY SPECIFICITY. Note prompts rich in sensory details like \"steam rising dramatically\" and \"crispy texture,\" often aiming for a heightened, almost cinematic feel.",
+      "source_url": "https://www.pexels.com/photo/boy-learning-how-to-make-bbq-8798704/"
+    },
+    {
+      "id": "d109r3",
+      "type": "image",
+      "content": "images/d109_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "CATEGORY: IDEALIZED DYNAMICS. Spot scenes described with numerous active, sensory words like \"glistening\" or \"sizzling,\" creating an overly perfect and dynamic food presentation.",
+      "_note": "Prompt: A photorealistic photograph of a man in a worn baseball cap adjusting the heat on a large charcoal grill in a casual outdoor setting, the gleaming white fender of a clean pickup truck subtly blurred in the background. Late afternoon sun casts long shadows, revealing faint dust motes on the vehicle's paint and a slight sheen of sweat on his forehead. Shot on a Canon EOS 5D Mark IV, 24-70mm f/2.8."
+    },
+    {
+      "id": "d109r4",
+      "type": "image",
+      "content": "images/d109_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are your pro tips for the AI detection game:",
+      "_note": "Prompt: A photorealistic photograph of a dad in a plaid shirt carefully flipping burgers on a backyard grill, a young child peering up at him with wide eyes from the side. The bright midday sun highlights the subtle char marks on the burger patties and the texture of the grill grates. Shot on a Canon EOS R6, 85mm f/1.4."
+    },
+    {
+      "id": "d109r5",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1499218727621-7642e7bfa048?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxNXx8Z3JpbGx8ZW58MHwwfHx8MTc3OTQ4MDQzNHww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Nicholas  Peloso on Unsplash",
+      "pro_tip": "CATEGORY: NATURAL COMPOSITION. Look for natural, less-staged compositions with authentic light. Real scenes often have subtle imperfections, like used tools or less dramatic smoke.",
+      "source_url": "https://unsplash.com/photos/man-grilling-near-white-vehicle-BMGZM7g1lBA"
+    },
+    {
+      "id": "d109r6",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/8523509/pexels-photo-8523509.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by RDNE Stock project on Pexels",
+      "pro_tip": "CATEGORY: UNFILTERED EMOTION. Prioritize images with genuine, unforced emotions and natural imperfections. Real people convey authentic feelings, not just specified expressions or wrinkles.",
+      "source_url": "https://www.pexels.com/photo/a-person-wearing-black-and-red-gloves-grilling-meat-8523509/"
+    },
+    {
+      "id": "d109r7",
+      "type": "image",
+      "content": "images/d109_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "CATEGORY: TEXTURE EXAGGERATION. Observe unusually emphasized textures and lighting effects, like fabric weave or sesame seeds, often described with specific camera settings for macro detail.",
+      "_note": "Prompt: A photorealistic photograph of vibrant chicken and vegetable skewers, loaded with glistening cherry tomatoes and zucchini, sizzling next to a row of browned bratwursts on a hot barbecue. Wisps of smoke rise from the grill, and subtle char marks are visible on the bell peppers, all illuminated by bright, even daylight. Shot on a Sony a7 III, 35mm f/1.8."
+    },
+    {
+      "id": "d109r8",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1702012464343-a9966c1a9ead?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyMnx8Z3JpbGx8ZW58MHwwfHx8MTc3OTQ4MDQzNHww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Jeremy Bishop on Unsplash",
+      "pro_tip": "CATEGORY: INCIDENTAL DETAILS. Observe natural, less-contrived background elements. Real photos often contain incidental details or imperfections, not strategically placed \"dust motes\" or \"sweat.\"",
+      "source_url": "https://unsplash.com/photos/a-person-is-cooking-food-on-a-grill-ifyCg2yVOSk"
+    },
+    {
+      "id": "d109r9",
+      "type": "image",
+      "content": "images/d109_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "CATEGORY: HYPER-REALISM. Look for unnaturally perfect textures and details, like precise char marks or overly idealized expressions, often specified in the prompt for AI generation.",
+      "_note": "Prompt: A photorealistic photograph of a senior woman with gentle wrinkles around her eyes, smiling warmly while holding a small American flag, her husband's hand resting protectively on her arm, with a soft-focus burger and bun on a plate in the foreground. The scene is bathed in warm afternoon light, emphasizing the soft fabric weave of the flag and the sesame seeds on the bun. Shot on a Nikon Z7, 105mm f/2.8 macro."
+    },
+    {
+      "id": "d109r10",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/8805840/pexels-photo-8805840.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Mike Jones on Pexels",
+      "pro_tip": "CATEGORY: AUTHENTIC INTERACTION. Seek genuine, unposed interactions and natural expressions. Real photos often show slight imperfections, not idealized or hyper-detailed scenes.",
+      "source_url": "https://www.pexels.com/photo/close-up-photo-of-couple-putting-mini-american-flags-on-brugers-8805840/"
+    }
+  ],
+  "category_subtitle": "Fire up the grill, the long weekend officially begins!"
+}
