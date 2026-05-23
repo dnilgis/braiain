@@ -1,0 +1,99 @@
+{
+  "day_number": 110,
+  "date": "2026-05-24",
+  "category": "Mirror Mayhem",
+  "category_emoji": "🪞",
+  "rounds": [
+    {
+      "id": "d110r1",
+      "type": "image",
+      "content": "images/d110_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**PERFECT REFLECTIONS:** Check for reflections that are too perfect, lacking natural distortions, dust, or subtle inconsistencies with the original scene's light/angle.",
+      "_note": "Prompt: A photorealistic photograph of a contemplative woman holding a terracotta pot with a thriving mini fern, standing before a large round mirror that reflects an array of lush indoor plants. The bright, diffused natural indoor light highlights faint dew drops on the fern leaves and the coarse ceramic texture of the pot, with subtle reflections and distortions captured by a Canon EOS R5, 35mm f/1.8."
+    },
+    {
+      "id": "d110r2",
+      "type": "image",
+      "content": "images/d110_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**HYPER-DETAIL UNIFORMITY:** Notice unnaturally uniform \"visible pores,\" \"dew drops,\" or \"dust motes.\" AI often generates hyper-real details without organic randomness.",
+      "_note": "Prompt: A photorealistic photograph of two women in a chic boutique, one holding up a vibrant silk scarf with fine stitching, while the other looks at her reflection in a full-length mirror, adjusting a tweed jacket. The warm, inviting boutique lighting casts gentle shadows, revealing varied fabric weaves and faint dust motes dancing in the air, captured with a Sony Alpha A7 III, 24-70mm f/2.8."
+    },
+    {
+      "id": "d110r3",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1620251380414-7c0733103863?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxMHx8bWlycm9yJTIwcmVmbGVjdGlvbnxlbnwwfDB8fHwxNzc5NTQ3OTY3fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Ivan Lapyrin on Unsplash",
+      "pro_tip": "**IMPLAUSIBLE MERGING:** Be wary of reflections \"merging\" too seamlessly with backgrounds or subjects. AI can create unnatural transitions or perspective errors.",
+      "source_url": "https://unsplash.com/photos/woman-with-blonde-hair-holding-her-face-wXYlJ8nQvhw"
+    },
+    {
+      "id": "d110r4",
+      "type": "image",
+      "content": "images/d110_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are your \"Mirror Mayhem\" pro tips for the AI detection game:",
+      "_note": "Prompt: A photorealistic photograph of a woman with long blonde hair, eyes closed in contemplation, gently holding a small ornate hand mirror to her cheek, her delicate skin pores visible under the soft window light. Individual strands of her hair catch subtle light as she reflects on her image, captured with a Nikon Z7, 85mm f/1.4."
+    },
+    {
+      "id": "d110r5",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/12264712/pexels-photo-12264712.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Jalil Saeidi on Pexels",
+      "pro_tip": "**ENVIRONMENTAL CUES:** Spot subtle, unscripted elements in the background or reflections, like slight clutter, natural wear, or unexpected light interactions.",
+      "source_url": "https://www.pexels.com/photo/women-with-mirror-12264712/"
+    },
+    {
+      "id": "d110r6",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/15488772/pexels-photo-15488772.png?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Andrey Castillejos on Pexels",
+      "pro_tip": "**ORGANIC TEXTURE VARIATION:** Notice realistic, non-repetitive textures in fabrics, skin, or natural elements, showing authentic wear, random details, and imperfections.",
+      "source_url": "https://www.pexels.com/photo/man-sitting-on-chair-reflecting-in-mirror-15488772/"
+    },
+    {
+      "id": "d110r7",
+      "type": "image",
+      "content": "images/d110_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**EXPRESSION STYLIZATION:** Observe facial expressions; AI often creates generic \"contemplative\" or \"serene\" looks that lack genuine human nuance or slight asymmetry.",
+      "_note": "Prompt: A photorealistic photograph of a man in a worn canvas cap standing by the tranquil edge of a forest lake, gazing into a tall, framed mirror propped against a mossy log, his profile and the lake's reflection merging. Golden hour light bathes the scene, highlighting the rough texture of his cap's fabric and his slight stubble, with dappled sunlight on the ground, captured by a Leica Q2, 28mm f/1.7."
+    },
+    {
+      "id": "d110r8",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/36730413/pexels-photo-36730413.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Vitaly Gariev on Pexels",
+      "pro_tip": "**CANDID MOMENTS:** Identify natural, unforced expressions like genuine smiles or spontaneous interactions. Real photos capture authentic, less stylized human moments.",
+      "source_url": "https://www.pexels.com/photo/two-women-trying-on-clothes-in-front-of-mirror-36730413/"
+    },
+    {
+      "id": "d110r9",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/33794569/pexels-photo-33794569.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Đan Thy Nguyễn Mai on Pexels",
+      "pro_tip": "**IMPERFECT REFLECTIONS:** Look for natural smudges, slight imperfections on the mirror surface, or subtle, unforced distortions that indicate a real-world reflection.",
+      "source_url": "https://www.pexels.com/photo/young-woman-smiling-in-front-of-mirror-with-plants-33794569/"
+    },
+    {
+      "id": "d110r10",
+      "type": "image",
+      "content": "images/d110_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**FLAWLESS TEXTURES:** Scrutinize fabric weaves, hair strands, or plant textures for repetitive patterns or an unnatural, idealized perfection despite specified detail.",
+      "_note": "Prompt: A photorealistic photograph of an elegant woman in a flowing black velvet gown, her back to the camera, standing by a large antique mirror propped against an ivy-covered brick wall in an urban garden. Her striking reflection, showing a serene expression, is perfectly clear despite natural imperfections on the mirror surface, with the soft, overcast light emphasizing subtle wrinkles in the velvet and crisp green foliage, shot with a Hasselblad X1D II 50C, 90mm f/3.2."
+    }
+  ],
+  "category_subtitle": "Don't be fooled by reflections; spot the AI's perfect deception."
+}
