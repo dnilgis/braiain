@@ -754,6 +754,13 @@
       "category_emoji": "🇺🇸",
       "category_subtitle": "Fire up the grill, the long weekend officially begins!",
       "challenge_file": "challenges/2026-05-23.json"
+  },
+    "2026-05-24": {
+      "day_number": 110,
+      "category": "Mirror Mayhem",
+      "category_emoji": "🪞",
+      "category_subtitle": "Don't be fooled by reflections; spot the AI's perfect deception.",
+      "challenge_file": "challenges/2026-05-24.json"
   }
 }
 
