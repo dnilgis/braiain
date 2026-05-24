@@ -761,6 +761,13 @@
       "category_emoji": "🪞",
       "category_subtitle": "Don't be fooled by reflections; spot the AI's perfect deception.",
       "challenge_file": "challenges/2026-05-24.json"
+  },
+    "2026-05-25": {
+      "day_number": 111,
+      "category": "Summer's Start",
+      "category_emoji": "☀️",
+      "category_subtitle": "AI's trying to sneak into your summer. Catch the imposter!",
+      "challenge_file": "challenges/2026-05-25.json"
   }
 }
 
