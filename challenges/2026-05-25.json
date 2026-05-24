@@ -1,0 +1,99 @@
+{
+  "day_number": 111,
+  "date": "2026-05-25",
+  "category": "Summer's Start",
+  "category_emoji": "☀️",
+  "rounds": [
+    {
+      "id": "d111r1",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1685825559303-cde1d18a5723?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxMnx8c3VtbWVyJTIwZGF5fGVufDB8MHx8fDE3Nzk2NjQ3MzJ8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Andrea Huls Pareja on Unsplash",
+      "pro_tip": "CATEGORY: AUTHENTIC CONTEXT. Observe the specific location \"Venice, Florida\" and the natural, less detailed description of activities. Real photos provide genuine, simple contextual clues.",
+      "source_url": "https://unsplash.com/photos/a-couple-of-people-laying-on-top-of-a-beach-UxLeiKY_Yf0"
+    },
+    {
+      "id": "d111r2",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/31759850/pexels-photo-31759850.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Jeffrey Eisen on Pexels",
+      "pro_tip": "CATEGORY: GENERIC CAPTIONS. \"Group of people on beach\" offers no specific details beyond the main subjects. Real photos often have broad, summary-like labels.",
+      "source_url": "https://www.pexels.com/photo/sunny-day-at-a-vibrant-venice-beach-florida-31759850/"
+    },
+    {
+      "id": "d111r3",
+      "type": "image",
+      "content": "images/d111_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "CATEGORY: HYPER-DETAIL. Notice the emphasized \"fine grains of sand on their knees\" and \"faint shimmer of sunscreen.\" This microscopic precision is a common AI tell.",
+      "_note": "Prompt: A photorealistic photograph of a small group of friends laughing as they walk along the waterline, one carrying a boogie board, with the vast expanse of a clean beach behind them. Captured with a Nikon D850 and a 35mm f/1.8 lens during golden hour, focusing on the individual footprints etched into the damp sand and the loose weave of a striped beach blanket being carried."
+    },
+    {
+      "id": "d111r4",
+      "type": "image",
+      "content": "images/d111_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are your pro tips for the Summer's Start AI detection game:",
+      "_note": "Prompt: A photorealistic photograph of two young girls, one with a bright red bucket, building a sandcastle at the ocean's edge, while the other watches intently, occasionally glancing towards the camera. Taken with a Canon 5D Mark IV and an 85mm f/1.4 lens under bright mid-morning sun, emphasizing the fine grains of sand on their knees and the faint shimmer of sunscreen on their skin."
+    },
+    {
+      "id": "d111r5",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1536869338989-e7ffd2297454?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwzfHxiZWFjaCUyMGRheXxlbnwwfDB8fHwxNzc5NjY0NzA3fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Louis Hansel on Unsplash",
+      "pro_tip": "CATEGORY: NATURAL SIMPLICITY. Descriptions like \"a young girl sitting on a beach next to another young girl\" are straightforward and unembellished. Look for concise, general scene descriptions.",
+      "source_url": "https://unsplash.com/photos/group-of-people-on-beach-OAnydGhhcxE"
+    },
+    {
+      "id": "d111r6",
+      "type": "image",
+      "content": "images/d111_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "CATEGORY: TEXTURAL PERFECTION. Look for \"crisp shadows cast by the umbrella poles\" and \"delicate weave patterns of various beach towels.\" AI often renders textures with immaculate clarity.",
+      "_note": "Prompt: A photorealistic photograph of two friends peacefully lounging on large beach towels, one reading a paperback novel with a creased cover, the other with eyes closed and an arm casually draped over their face. Taken with a Fujifilm X-T4 and a 56mm f/1.2 lens on a softly overcast day, noticing the individual grains of sand clinging to their damp towels and the subtle wrinkles on the sun-warmed skin of their arms."
+    },
+    {
+      "id": "d111r7",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1706844210832-118b5d5784fa?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxNXx8YmVhY2glMjBkYXl8ZW58MHwwfHx8MTc3OTY2NDcwN3ww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by April Walker on Unsplash",
+      "pro_tip": "CATEGORY: ARTIFICIAL VIBRANCY. Seek \"individual water droplets suspended in the air\" and \"slight sheen of salt on their sun-kissed skin.\" AI often creates unnaturally perfect, glistening elements.",
+      "source_url": "https://unsplash.com/photos/a-young-girl-sitting-on-a-beach-next-to-another-young-girl-YaajgckB0Ts"
+    },
+    {
+      "id": "d111r8",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1560715581-457e74120325?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxMHx8c3VtbWVyJTIwYmVhY2glMjBkYXl8ZW58MHwwfHx8MTc3OTY2NDc3N3ww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Michaela on Unsplash",
+      "pro_tip": "CATEGORY: RELATABLE SCENES. \"A couple of people laying on top of a beach\" describes a common, un-staged moment. Real photos often capture everyday, less perfect compositions.",
+      "source_url": "https://unsplash.com/photos/group-of-people-swimming-on-beach-IQ8dwaa3yJc"
+    },
+    {
+      "id": "d111r9",
+      "type": "image",
+      "content": "images/d111_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "CATEGORY: UNCANNY PRECISION. Observe the exact \"individual footprints etched into the damp sand\" and the \"loose weave of a striped beach blanket.\" AI thrives on such perfect renderings.",
+      "_note": "Prompt: A photorealistic photograph of a bustling beach scene filled with diverse families and individuals relaxing under an array of brightly colored umbrellas and pop-up tents. Shot with a Sony Alpha 7 III and a 70-200mm f/4 lens at 70mm under the intense mid-day sun, highlighting the crisp shadows cast by the umbrella poles and the delicate weave patterns of various beach towels spread on the sand."
+    },
+    {
+      "id": "d111r10",
+      "type": "image",
+      "content": "images/d111_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "CATEGORY: SURREAL CLARITY. Identify \"individual grains of sand clinging to their damp towels\" and \"subtle wrinkles on sun-warmed skin.\" AI excels at consistent, pinpoint focus on minutiae.",
+      "_note": "Prompt: A photorealistic photograph of a joyous group of friends splashing and swimming in the clear, shallow ocean water, with some laughter lines visible on their faces as they interact. Captured with a Canon EOS R6 and a 24-70mm f/2.8 lens at 50mm under sparkling, direct afternoon sun, emphasizing the individual water droplets suspended in the air and the slight sheen of salt on their sun-kissed skin."
+    }
+  ],
+  "category_subtitle": "AI's trying to sneak into your summer. Catch the imposter!"
+}
