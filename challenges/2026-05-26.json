@@ -1,0 +1,99 @@
+{
+  "day_number": 112,
+  "date": "2026-05-26",
+  "category": "Lindy Hop Dance",
+  "category_emoji": "🕺",
+  "rounds": [
+    {
+      "id": "d112r1",
+      "type": "image",
+      "content": "images/d112_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "AI CONTENT: Look for an exact match to the prompt's specific \"Lindy Hop\" style. AI images perfectly execute requested swing-outs or Charleston kicks without deviation.",
+      "_note": "Prompt: A photorealistic photograph of two energetic Lindy Hop dancers, mid-swing out with synchronized smiles, on a sun-drenched city street. The clear sky casts sharp shadows, revealing the fine wrinkles in their vintage cotton shirts and the subtle sheen on their polished dance shoes. Captured with a Sony a7C, 85mm f/1.8 lens, under a bright, clear afternoon sky."
+    },
+    {
+      "id": "d112r2",
+      "type": "image",
+      "content": "images/d112_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**Tips for AI-generated images:**",
+      "_note": "Prompt: A photorealistic photograph of three joyful Lindy Hop dancers, one mid-kick, another smiling broadly, posing together by a large suspension bridge in an urban setting. The crisp daylight highlights the distinct weave of their retro clothing and the worn leather texture of their dance shoes, with the bridge's red metal showing faint rust patches. Shot with a Fujifilm X-T4, 23mm f/1.4 lens, under a bright, clear midday sky."
+    },
+    {
+      "id": "d112r3",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/8720178/pexels-photo-8720178.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Kampus Production on Pexels",
+      "pro_tip": "SUBJECT DIVERGENCE: If dancers perform breakdance or general poses instead of specified Lindy Hop, it's likely real. Real photos often capture similar but not exact subjects.",
+      "source_url": "https://www.pexels.com/photo/a-man-dancing-on-the-street-8720178/"
+    },
+    {
+      "id": "d112r4",
+      "type": "image",
+      "content": "images/d112_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "TEXTURE PERFECTION: Observe impossibly pristine textures. AI often renders clothing weaves, sweat beads, or dust motes with uniform, unblemished detail beyond reality.",
+      "_note": "Prompt: A photorealistic photograph of a dynamic Lindy Hop dancer, striking a powerful solo jazz pose by a wide river, directly beneath the massive concrete supports of a prominent suspension bridge. The low angle light highlights the subtle fabric weave of their trousers and the fine sweat sheen on their forehead, with ripples visible on the river's surface. Taken with a Canon EOS R6, 24-70mm f/2.8 lens, during a slightly overcast late afternoon."
+    },
+    {
+      "id": "d112r5",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/13993467/pexels-photo-13993467.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Niko Twisty on Pexels",
+      "pro_tip": "**Tips for Real photographs:**",
+      "source_url": "https://www.pexels.com/photo/men-breakdancing-on-the-street-13993467/"
+    },
+    {
+      "id": "d112r6",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/8720172/pexels-photo-8720172.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Kampus Production on Pexels",
+      "pro_tip": "BACKGROUND ALIGNMENT: Examine how dancers interact with the background. AI may perfectly place subjects, but sometimes shadows or reflections are subtly off or too ideal.",
+      "source_url": "https://www.pexels.com/photo/friends-posing-together-on-the-street-8720172/"
+    },
+    {
+      "id": "d112r7",
+      "type": "image",
+      "content": "images/d112_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "HYPER-REAL CLARITY: AI images frequently exhibit unnaturally sharp details across all planes, or lighting that feels *too* ideal and cinematic, lacking natural randomness.",
+      "_note": "Prompt: A photorealistic photograph of a solo Lindy Hop dancer, mid-air during a dynamic Charleston kick, on a sun-drenched wooden boardwalk with a distinct modern city skyline in the background. The intense afternoon sun reveals the worn texture of the boardwalk planks and the intricate stitching on the dancer's vintage dress, with distant skyscraper windows reflecting the light. Captured with a Nikon Z8, 70-200mm f/2.8 lens, during a bright afternoon."
+    },
+    {
+      "id": "d112r8",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/9410613/pexels-photo-9410613.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Maxie T on Pexels",
+      "pro_tip": "AUTHENTIC FLAWS: Look for genuine wear, slight misalignments, or unscripted details. Real photos show natural signs of age on surfaces or less-than-perfect poses.",
+      "source_url": "https://www.pexels.com/photo/a-man-dancing-on-the-boardwalk-9410613/"
+    },
+    {
+      "id": "d112r9",
+      "type": "image",
+      "content": "images/d112_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are pro tips for the AI detection game:",
+      "_note": "Prompt: A photorealistic photograph of two dynamic Lindy Hop dancers, one mid-air during a spectacular swing-out, on a sun-drenched cobblestone city street. Sunlight catches the intricate weave of their vintage clothing and individual sweat beads on their skin, with scattered dust motes visible in the warm light. Captured with a Sony a7 IV, 50mm f/1.2 lens, during golden hour."
+    },
+    {
+      "id": "d112r10",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/16680490/pexels-photo-16680490.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Edslan Silva on Pexels",
+      "pro_tip": "LACK OF IMPERFECTION: Real-world photos have subtle flaws. AI often lacks unexpected elements, natural distortions, or the gritty authenticity found in spontaneous street photography.",
+      "source_url": "https://www.pexels.com/photo/men-breakdancing-on-street-in-town-16680490/"
+    }
+  ],
+  "category_subtitle": "Swing into action with energetic vintage dance moves!"
+}
