@@ -768,6 +768,13 @@
       "category_emoji": "☀️",
       "category_subtitle": "AI's trying to sneak into your summer. Catch the imposter!",
       "challenge_file": "challenges/2026-05-25.json"
+  },
+    "2026-05-26": {
+      "day_number": 112,
+      "category": "Lindy Hop Dance",
+      "category_emoji": "🕺",
+      "category_subtitle": "Swing into action with energetic vintage dance moves!",
+      "challenge_file": "challenges/2026-05-26.json"
   }
 }
 
