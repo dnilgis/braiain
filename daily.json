@@ -775,6 +775,13 @@
       "category_emoji": "🕺",
       "category_subtitle": "Swing into action with energetic vintage dance moves!",
       "challenge_file": "challenges/2026-05-26.json"
+  },
+    "2026-05-27": {
+      "day_number": 113,
+      "category": "Pet's Secret Life",
+      "category_emoji": "🐾",
+      "category_subtitle": "Your pet's plotting world domination. Is AI their accomplice?",
+      "challenge_file": "challenges/2026-05-27.json"
   }
 }
 
