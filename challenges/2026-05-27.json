@@ -1,0 +1,99 @@
+{
+  "day_number": 113,
+  "date": "2026-05-27",
+  "category": "Pet's Secret Life",
+  "category_emoji": "🐾",
+  "rounds": [
+    {
+      "id": "d113r1",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1622422098590-5937643cc1eb?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyMXx8cGV0cyUyMGhpZGRlbiUyMGFjdGl2aXR5fGVufDB8MHx8fDE3Nzk4MzA2OTF8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Ishaq Robin on Unsplash",
+      "pro_tip": "**OVERLOADED DETAIL:** Check for an overwhelming amount of perfectly rendered details across the entire frame. AI struggles with natural selective focus and subtle imperfections.",
+      "source_url": "https://unsplash.com/photos/brown-tabby-cat-on-white-table-uGicUMj9uGE"
+    },
+    {
+      "id": "d113r2",
+      "type": "image",
+      "content": "images/d113_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**HYPER-REALISM:** Look for impossibly perfect details like individual fur strands glowing or shimmering dust motes visible. AI often over-renders subtle elements.",
+      "_note": "Prompt: A photorealistic photograph of an inquisitive ginger kitten crouched low, intently peering through a dense thicket of sun-bleached, dry golden grass, its eyes wide with focus. Shot with a Nikon Z7, 105mm f/2.8 macro lens, bathed in the warm, gentle glow of late afternoon sun, revealing the fine downy hairs on its ears and the sharp edges of the grass blades."
+    },
+    {
+      "id": "d113r3",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1778681290411-96b2442b70f9?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyMnx8cGV0cyUyMGxpZmV8ZW58MHwwfHx8MTc3OTgzMDc2OHww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Lei Hwang on Unsplash",
+      "pro_tip": "**UNPREDICTABLE LIGHTING:** Notice varied or less-than-perfect lighting, including natural shadows, flares, or uneven illumination. Real photos capture light as it genuinely occurs.",
+      "source_url": "https://unsplash.com/photos/a-fluffy-cat-rests-by-a-computer-keyboard-HCztkT-3Ys0"
+    },
+    {
+      "id": "d113r4",
+      "type": "image",
+      "content": "images/d113_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are 10 pro tips for the AI detection game:",
+      "_note": "Prompt: A photorealistic photograph of a sleek brown tabby cat elegantly stretching one paw towards a barely visible, shimmering dust mote floating above a clean white minimalist desk. Captured with a Sony a7 III, 85mm f/1.4 lens, under soft, diffused window light, highlighting the delicate texture of its whiskers and the subtle sheen of its fur."
+    },
+    {
+      "id": "d113r5",
+      "type": "image",
+      "content": "images/d113_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**POSED NARRATIVE:** Watch for animals in overly dramatic, human-like, or narrative-driven poses and expressions. AI often creates subjects that \"contemplate\" or \"listen intently.\"",
+      "_note": "Prompt: A photorealistic photograph of a curious golden retriever and a sleek domestic shorthair cat, perched side-by-side on an old wooden window sill, their noses almost touching the glass as they intently watch something outside. Shot with a Leica Q2, 28mm f/1.7 lens, utilizing the bright, natural light filtering through the window, emphasizing the subtle nose prints on the glass, individual fur strands, and the texture of the aged paint on the sill."
+    },
+    {
+      "id": "d113r6",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1642625932641-3a52ad27e268?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxM3x8cGV0cyUyMGxpZmV8ZW58MHwwfHx8MTc3OTgzMDc2OHww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Madalyn Cox on Unsplash",
+      "pro_tip": "**CANDID MOMENTS:** Identify natural, unposed interactions or spontaneous expressions. Real photos capture animals behaving authentically, not in staged narrative scenarios.",
+      "source_url": "https://unsplash.com/photos/a-dog-and-a-cat-looking-out-a-window-U9vNBBqsBck"
+    },
+    {
+      "id": "d113r7",
+      "type": "image",
+      "content": "images/d113_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**FLAWLESS LIGHTING:** Notice lighting that is too perfect, evenly illuminating all subjects with ideal highlights and shadows. AI rarely has natural harshness or unexpected light behavior.",
+      "_note": "Prompt: A photorealistic photograph of a sleek black Labrador mix, its short coat glistening, sprawled comfortably on vibrant green summer grass next to a weathered brown wooden picket fence, its head slightly raised as if listening. Taken with a Canon EOS R6, 70-200mm f/2.8 lens at 100mm, under bright, clear midday sun, accentuating the individual blades of grass and the smooth texture of its fur, with subtle dust motes visible in the air."
+    },
+    {
+      "id": "d113r8",
+      "type": "image",
+      "content": "images/d113_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**UNCANNY PERFECTION:** Examine textures and surfaces for an unnatural smoothness or uniform crispness. AI fur often lacks slight imperfections or natural disarray.",
+      "_note": "Prompt: A photorealistic photograph of an opulent fluffy Persian cat, its long fur spilling over the edge, daintily resting its paw near a backlit mechanical computer keyboard, as if contemplating the next keystroke. Captured with a Fujifilm X-T4, 56mm f/1.2 lens, under the soft, ambient glow of an indoor desk lamp and a subtle screen reflection, showcasing the intricate fabric weave of its fur and the crisp details of the keycaps."
+    },
+    {
+      "id": "d113r9",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/33742079/pexels-photo-33742079.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Tatev Manukyan on Pexels",
+      "pro_tip": "**AUTHENTIC IMPERFECTIONS:** Seek subtle flaws like a slightly ruffled fur patch, a stray hair, or natural debris. Real photos embrace genuine, un-retouched imperfections.",
+      "source_url": "https://www.pexels.com/photo/cute-kitten-hidden-in-dry-grass-close-up-33742079/"
+    },
+    {
+      "id": "d113r10",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1597918557806-ea5d4005a181?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxNnx8cGV0cyUyMGhpZGRlbiUyMGFjdGl2aXR5fGVufDB8MHx8fDE3Nzk4MzA2OTF8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Guillaume de Germain on Unsplash",
+      "pro_tip": "**NATURAL FOCUS FALL-OFF:** Look for realistic depth of field where some elements are slightly softer or naturally out of focus. Real cameras often have organic bokeh and blur.",
+      "source_url": "https://unsplash.com/photos/black-short-coated-dog-lying-on-green-grass-beside-brown-wooden-fence-during-daytime-EfIBVgtRZm8"
+    }
+  ],
+  "category_subtitle": "Your pet's plotting world domination. Is AI their accomplice?"
+}
