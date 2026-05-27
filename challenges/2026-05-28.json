@@ -1,0 +1,99 @@
+{
+  "day_number": 114,
+  "date": "2026-05-28",
+  "category": "Brisket Bliss",
+  "category_emoji": "🍖",
+  "rounds": [
+    {
+      "id": "d114r1",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1470858831619-ca02d796b2a5?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxNXx8YnJpc2tldCUyMGJhcmJlY3VlfGVufDB8MHx8fDE3Nzk5MTYwODN8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Scott Madore on Unsplash",
+      "pro_tip": "REALISTIC WEAR: Look for subtle creases, dust, or slight deformities on the gloves. The brisket's smoke ring and fat rendering will show natural variations.",
+      "source_url": "https://unsplash.com/photos/man-standing-infront-of-grill-while-holding-tong-1-WRkDjm_K4"
+    },
+    {
+      "id": "d114r2",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1705509444124-d908cae21ef8?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw3fHxzbW9rZWQlMjBicmlza2V0fGVufDB8MHx8fDE3Nzk5MTYyMzh8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Ambitious Studio* | Rick Barrett on Unsplash",
+      "pro_tip": "UNPOLISHED DETAILS: Observe authentic, non-perfect charring on the steak and realistic, perhaps duller, reflections on the knife. The grill may show realistic use.",
+      "source_url": "https://unsplash.com/photos/a-large-black-tank-sitting-on-top-of-a-pile-of-wood-RhvKrZ-tFUg"
+    },
+    {
+      "id": "d114r3",
+      "type": "image",
+      "content": "images/d114_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "HYPER-REALISM: Look for unnaturally glistening meat with an excessive number of perfectly formed juice droplets, often accompanied by an idealized smoke ring and fat.",
+      "_note": "Prompt: A photorealistic photograph of a black-gloved hand gently steadying a large, deeply smoked beef brisket on a sturdy wooden cutting board as a chef slices through it. The brisket's charred bark, distinct smoke ring, and tender, glistening meat are highlighted by soft overcast natural light, captured with a Nikon D850, 105mm f/2.8 macro lens, revealing minute details of the meat fibers and glove texture."
+    },
+    {
+      "id": "d114r4",
+      "type": "image",
+      "content": "images/d114_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "HUMAN ANATOMY: Examine stubble, hands, or tools for uncanny valley effects, unnatural proportions, oddly smooth/distorted textures, or unnatural smoke rendering.",
+      "_note": "Prompt: A photorealistic photograph of a person's hands holding a large, sharp carving knife, expertly slicing a thick cut of deeply charred steak on a small portable cutting board, positioned directly beside a gleaming black kettle grill. Bright, sunny outdoor daylight illuminates the knife's polished blade and the texture of the meat, captured with a Fujifilm X-T4, 50mm f/1.2, revealing the subtle charring and knife marks."
+    },
+    {
+      "id": "d114r5",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/12645502/pexels-photo-12645502.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Gil Goldman on Pexels",
+      "pro_tip": "REPETITIVE PATTERNS: Observe aged metal and wood grain for repetitive, unvarying patterns or a \"too clean\" look despite being described as aged and imperfect.",
+      "source_url": "https://www.pexels.com/photo/slicing-brisket-12645502/"
+    },
+    {
+      "id": "d114r6",
+      "type": "image",
+      "content": "images/d114_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "TEXTURAL PERFECTION: Check for hyper-detailed textures, especially on gloves and meat fibers, where every detail is unnaturally pristine or too perfectly rendered.",
+      "_note": "Prompt: A photorealistic photograph of a man with a slight stubble, casually dressed in a cotton t-shirt, leaning over a large charcoal grill, using long metal tongs to flip a piece of meat. Golden hour sunlight casts warm highlights on the smoke rising from the grates and the texture of his arm, captured with a Sony Alpha a7 III, 35mm f/1.8 lens."
+    },
+    {
+      "id": "d114r7",
+      "type": "image",
+      "content": "images/d114_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are 10 pro tips for the Brisket Bliss AI detection game:",
+      "_note": "Prompt: A photorealistic photograph of a sharp chef's knife carving a perfect slice from a large, glistening smoked beef brisket on a well-worn wooden cutting board. The rich red meat, distinct smoke ring, and rendered fat are visible, with tiny droplets of juice beading on the surface, captured in warm ambient kitchen light with a Canon EOS R6, 85mm f/1.4."
+    },
+    {
+      "id": "d114r8",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1605494708467-59cc8ebbe337?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxfHxiYnElMjBwaXR8ZW58MHwwfHx8MTc3OTkxNjIwMnww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Z Grills Australia on Unsplash",
+      "pro_tip": "NATURAL EXPRESSION: Note realistic facial expressions or body posture, and natural wear/grime on the grill or tongs, reflecting genuine use.",
+      "source_url": "https://unsplash.com/photos/person-holding-knife-slicing-meat-on-black-grill-pZyDC7BVN7s"
+    },
+    {
+      "id": "d114r9",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/9397270/pexels-photo-9397270.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Hayden Walker on Pexels",
+      "pro_tip": "AUTHENTIC IMPERFECTIONS: Seek natural irregularities: slight imperfections on the hand, knife blade, or cutting board. Juice might look natural, not hyper-stylized.",
+      "source_url": "https://www.pexels.com/photo/a-person-slicing-barbecue-beef-brisket-9397270/"
+    },
+    {
+      "id": "d114r10",
+      "type": "image",
+      "content": "images/d114_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "REFLECTIONS & TOOLS: Scrutinize the knife's polished blade for illogical reflections or its grip for unnatural placement. Also, check for \"too perfect\" charring on the steak.",
+      "_note": "Prompt: A photorealistic photograph of a hefty, cylindrical black offset smoker, with a faint sheen on its aged metal surface, resting securely atop a neatly stacked pile of split oak firewood. Overcast sky provides soft, even lighting that accentuates the subtle imperfections and texture of both the smoker's paint and the rough wood bark, captured with a Canon EOS R5, 24-70mm f/2.8."
+    }
+  ],
+  "category_subtitle": "Is it real brisket bliss, or did the bots get a bit too saucy?"
+}
