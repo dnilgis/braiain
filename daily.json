@@ -789,6 +789,13 @@
       "category_emoji": "🍖",
       "category_subtitle": "Is it real brisket bliss, or did the bots get a bit too saucy?",
       "challenge_file": "challenges/2026-05-28.json"
+  },
+    "2026-05-29": {
+      "day_number": 115,
+      "category": "Graduation Glory",
+      "category_emoji": "🎓",
+      "category_subtitle": "Did AI forge that diploma? Your call, genius.",
+      "challenge_file": "challenges/2026-05-29.json"
   }
 }
 
