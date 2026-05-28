@@ -1,0 +1,99 @@
+{
+  "day_number": 115,
+  "date": "2026-05-29",
+  "category": "Graduation Glory",
+  "category_emoji": "🎓",
+  "rounds": [
+    {
+      "id": "d115r1",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1733835085968-d586d44a31da?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxOXx8Z3JhZHVhdGlvbiUyMGNlcmVtb255fGVufDB8MHx8fDE3ODAwMDc4OTh8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Amir Hossein Bakhtiari on Unsplash",
+      "pro_tip": "**Real Photo Detection:**",
+      "source_url": "https://unsplash.com/photos/a-man-standing-at-a-podium-in-front-of-a-crowd-of-people-FGkLYqfmve4"
+    },
+    {
+      "id": "d115r2",
+      "type": "image",
+      "content": "images/d115_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**UNNATURAL CONSISTENCY:** AI images can show identical or too-perfect repetition in background elements like audience faces, dust motes, or falling confetti.",
+      "_note": "Prompt: A photorealistic photograph of three graduating students in caps and gowns, one holding a bouquet, are laughing and posing for a photo with two friends in casual attire, all standing in front of an ornate, ivy-clad university building, shot on a Canon EOS 5D Mark IV with a 35mm f/1.4 lens. The clear daylight illuminates the detailed brickwork of the building and the crisp fabric of their graduation robes, with individual strands of hair visible on their excited faces."
+    },
+    {
+      "id": "d115r3",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/35487173/pexels-photo-35487173.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Saad Bin  Hasan on Pexels",
+      "pro_tip": "**SUBTLE IMPERFECTIONS:** Check for subtle oddities in anatomy, strange or repetitive background elements, or text/logos that are slightly off or illegible.",
+      "source_url": "https://www.pexels.com/photo/graduates-celebrating-at-university-convocation-35487173/"
+    },
+    {
+      "id": "d115r4",
+      "type": "image",
+      "content": "images/d115_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are your pro tips for the AI detection game, \"Graduation Glory\":",
+      "_note": "Prompt: A photorealistic photograph of a large graduation ceremony taking place indoors. Thousands of graduates in their black caps and gowns are seated in long rows facing a distant stage, a sea of academic regalia under bright artificial stadium lights, shot on a Canon EOS R5 with a 24-70mm f/2.8 lens. The smooth, polished floor reflects the overhead lighting, and the distinct fabric weave of the gowns is visible on closer students."
+    },
+    {
+      "id": "d115r5",
+      "type": "image",
+      "content": "images/d115_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**HYPER-DETAILED TEXTURES:** Notice overly uniform or 'painted-on' textures like skin pores, fabric weaves, or wood grain. Details may be sharp everywhere, even in soft areas.",
+      "_note": "Prompt: A photorealistic photograph of a joyful group of five graduates, three women and two men, tossing their caps into the air with beaming smiles, celebrating their achievement outdoors on a sun-drenched university campus, shot on a Fujifilm X-T4 with a 50mm f/1.2 lens. The bright outdoor light catches the individual threads of their tassels and the sparkle of falling confetti, revealing authentic joy and subtle skin pores on their laughing faces."
+    },
+    {
+      "id": "d115r6",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/35487002/pexels-photo-35487002.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Saad Bin  Hasan on Pexels",
+      "pro_tip": "**NATURAL TEXTURE VARIATION:** Real images show organic, non-uniform textures in fabric wrinkles, skin, or building materials. Details aren't always perfectly sharp.",
+      "source_url": "https://www.pexels.com/photo/group-graduation-ceremony-at-university-campus-35487002/"
+    },
+    {
+      "id": "d115r7",
+      "type": "image",
+      "content": "images/d115_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**AI-Generated Image Detection:**",
+      "_note": "Prompt: A photorealistic photograph of a small group of excited graduates, three women and two men, holding their rolled diplomas high in the air and laughing joyfully inside a university convocation hall, shot on a Sony Alpha a7 III with an 85mm f/1.4 lens. The soft wrinkles in their satin stoles and the slightly textured paper of the diplomas are clearly visible, illuminated by bright indoor artificial lighting, revealing subtle skin pores on their laughing faces."
+    },
+    {
+      "id": "d115r8",
+      "type": "image",
+      "content": "images/d115_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**PERFECT REFLECTIONS:** Look for unnaturally smooth and precise reflections, especially on floors or shiny surfaces. They often lack subtle imperfections or organic distortion.",
+      "_note": "Prompt: A photorealistic photograph of an older man in a dark suit standing confidently at a wooden podium, addressing a large, blurry crowd of graduates and their families, shot on a Nikon D850 with a 70-200mm f/2.8 lens. Bright spotlights highlight the intricate wood grain of the podium and the slight sheen on his suit jacket, with individual dust motes visible dancing in the focused beam."
+    },
+    {
+      "id": "d115r9",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/15193114/pexels-photo-15193114.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Emily Petit on Pexels",
+      "pro_tip": "**ANOMALOUS LIGHTING:** Observe lighting that appears technically flawless but lacks natural variation or depth. Shadows might be absent or inconsistent with light sources.",
+      "source_url": "https://www.pexels.com/photo/professor-giving-a-speech-during-a-graduation-ceremony-15193114/"
+    },
+    {
+      "id": "d115r10",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/6527463/pexels-photo-6527463.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Max Anderson on Pexels",
+      "pro_tip": "**ORGANIC IMPERFECTIONS:** Genuine photos feature natural grain, slight blur, or noise, especially in lower light or distant areas. Look for authentic lens effects.",
+      "source_url": "https://www.pexels.com/photo/alumni-students-wearing-graduation-gowns-6527463/"
+    }
+  ],
+  "category_subtitle": "Did AI forge that diploma? Your call, genius."
+}
