@@ -796,6 +796,13 @@
       "category_emoji": "🎓",
       "category_subtitle": "Did AI forge that diploma? Your call, genius.",
       "challenge_file": "challenges/2026-05-29.json"
+  },
+    "2026-05-30": {
+      "day_number": 116,
+      "category": "Water A Flower",
+      "category_emoji": "🌸",
+      "category_subtitle": "AI's 'watering' a flower. Don't fall for the trick!",
+      "challenge_file": "challenges/2026-05-30.json"
   }
 }
 
