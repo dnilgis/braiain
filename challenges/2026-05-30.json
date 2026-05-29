@@ -1,0 +1,99 @@
+{
+  "day_number": 116,
+  "date": "2026-05-30",
+  "category": "Water A Flower",
+  "category_emoji": "🌸",
+  "rounds": [
+    {
+      "id": "d116r1",
+      "type": "image",
+      "content": "images/d116_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**LIGHTING EXAGGERATION:** Observe overly dramatic or precisely executed lighting effects. Shadows, highlights, or light on tiny particles might feel a bit \"too good to be true.\"",
+      "_note": "Prompt: A photorealistic photograph of a gardener from a slight distance, tending to an expansive field of vibrant orange and purple zinnias, seen from a slightly elevated perspective, with a single watering can. The golden hour sun bathes the scene in a warm glow, illuminating tiny dew drops on the flower petals and the rough texture of the tilled garden soil. Shot on a Panasonic Lumix S5 with a 35mm f/2.8 lens."
+    },
+    {
+      "id": "d116r2",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/9394832/pexels-photo-9394832.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Anastasia  Golubeva on Pexels",
+      "pro_tip": "**BACKGROUND ANOMALIES:** Notice subtle distortions or inconsistencies in background elements. Objects might not seamlessly blend, or details appear slightly off or repetitive.",
+      "source_url": "https://www.pexels.com/photo/girl-with-braided-hair-watering-a-plant-9394832/"
+    },
+    {
+      "id": "d116r3",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/4501244/pexels-photo-4501244.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Sarah Dietz on Pexels",
+      "pro_tip": "**NATURAL IMPERFECTIONS:** Real photos often feature authentic imperfections like slight blurs, genuine wear, or less-than-perfect focus on all elements. Embrace the natural grit.",
+      "source_url": "https://www.pexels.com/photo/photo-of-person-watering-the-plants-4501244/"
+    },
+    {
+      "id": "d116r4",
+      "type": "image",
+      "content": "images/d116_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are 10 pro tips for the AI detection game: \"Water A Flower.\"",
+      "_note": "Prompt: A photorealistic photograph of a young girl with twin pigtails, wearing a yellow sundress, gently watering a bed of bright pink petunias in a sunlit garden, her expression one of focused tenderness. The late afternoon sun casts long shadows and illuminates fine dust motes in the air, highlighting the subtle weave of her cotton dress. Shot on a Nikon D850 with an 85mm f/1.4 lens."
+    },
+    {
+      "id": "d116r5",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1684867430779-e66e779a19b7?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwzfHx3YXRlcmluZyUyMGZsb3dlcnN8ZW58MHwwfHx8MTc4MDA3NjE3MHww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Giorgio Trovato on Unsplash",
+      "pro_tip": "**REALISTIC TEXTURES:** Textures like skin, fabric, or soil have a more organic, slightly less defined, and genuinely imperfect feel, showcasing true grit or softness.",
+      "source_url": "https://unsplash.com/photos/a-person-is-holding-a-hose-and-spraying-water-5G3rZgVLGak"
+    },
+    {
+      "id": "d116r6",
+      "type": "image",
+      "content": "images/d116_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**HYPER-DETAIL:** Look for impossibly crisp tiny elements, like suspended dust motes, perfectly defined skin pores, or individual water droplets, often too clear.",
+      "_note": "Prompt: A photorealistic photograph of an adult's hand, adorned with a simple silver ring, carefully watering a cluster of vivid red gerbera daisies using a well-worn green watering can, with glistening water droplets clinging to the petals. The bright midday sun emphasizes the subtle creases and pores on the skin, and reflections on the can's surface. Taken with a Sony Alpha a7 III, 100mm f/2.8 macro lens."
+    },
+    {
+      "id": "d116r7",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/7782211/pexels-photo-7782211.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by RDNE Stock project on Pexels",
+      "pro_tip": "**AUTHENTIC EXPRESSIONS:** Look for natural, unstaged human emotions and poses. Smiles, gestures, or interactions feel genuinely captured, not meticulously composed.",
+      "source_url": "https://www.pexels.com/photo/person-holdin-a-green-watering-can-7782211/"
+    },
+    {
+      "id": "d116r8",
+      "type": "image",
+      "content": "images/d116_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**TEXTURE ABNORMALITIES:** Check for textures that are too uniform, repetitive, or have an unnatural sheen. Fabric weave, skin, or soil may look hyper-real but lack genuine randomness.",
+      "_note": "Prompt: A photorealistic photograph of a person's back and arm, holding a green garden hose fitted with a multi-pattern spray nozzle, directing a gentle shower of water over a mixed flower bed filled with various blooms. An overcast afternoon sky provides soft, even lighting that highlights the subtle sheen of plastic on the nozzle and individual water droplets suspended mid-air. Taken with an iPhone 14 Pro, 26mm f/1.5."
+    },
+    {
+      "id": "d116r9",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/2134798/pexels-photo-2134798.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Quang Nguyen Vinh on Pexels",
+      "pro_tip": "**ORGANIC LIGHTING:** Lighting appears natural and less dramatic, without an exaggerated, hyper-specific emphasis on tiny details. It feels authentic, not artificially enhanced.",
+      "source_url": "https://www.pexels.com/photo/man-spraying-water-on-orange-flowers-2134798/"
+    },
+    {
+      "id": "d116r10",
+      "type": "image",
+      "content": "images/d116_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**UNCANNY PERFECTION:** Faces or objects might appear unnaturally flawless or perfectly symmetrical. The scene feels meticulously composed, lacking natural subtle imperfections.",
+      "_note": "Prompt: A photorealistic photograph of a gardener's calloused hands and forearms, partially obscured by the sleeve of a faded denim shirt, holding a green watering can as water cascades onto a patch of bright yellow daffodils. Soft morning light reveals the distinct fabric weave of the denim and subtle dirt marks under the fingernails. Captured on a Canon EOS 5D Mark IV with a 135mm f/2.8 lens."
+    }
+  ],
+  "category_subtitle": "AI's 'watering' a flower. Don't fall for the trick!"
+}
