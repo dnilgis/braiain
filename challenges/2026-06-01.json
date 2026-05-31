@@ -1,0 +1,99 @@
+{
+  "day_number": 118,
+  "date": "2026-06-01",
+  "category": "Start Your Day",
+  "category_emoji": "☕",
+  "rounds": [
+    {
+      "id": "d118r1",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/10565658/pexels-photo-10565658.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by RDNE Stock project on Pexels",
+      "pro_tip": "**NATURAL IMPERFECTIONS:** Seek out slight blur, imperfect focus, or less-than-ideal lighting. These authentic flaws often indicate a real photograph.",
+      "source_url": "https://www.pexels.com/photo/girl-and-woman-in-bathroom-10565658/"
+    },
+    {
+      "id": "d118r2",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/8763023/pexels-photo-8763023.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Pavel Danilyuk on Pexels",
+      "pro_tip": "**SUBTLE ANOMALIES:** Watch for minor inconsistencies in reflections, anatomy, or object physics. AI can sometimes falter on true real-world interactions.",
+      "source_url": "https://www.pexels.com/photo/kids-eating-breakfast-8763023/"
+    },
+    {
+      "id": "d118r3",
+      "type": "image",
+      "content": "images/d118_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**LENS PERFECTION:** Note if simulated camera/lens effects like bokeh or depth of field seem exaggeratedly clean and artificial, lacking organic imperfections.",
+      "_note": "Prompt: A photorealistic photograph of a man in a textured grey sweater carefully pouring hot coffee from a French press into a rustic ceramic mug. Nikon D850, 105mm f/2.8 macro lens, under soft kitchen window light, highlighting the intricate weave of his sweater sleeve, tiny coffee grounds settled at the bottom of the mug, and subtle condensation on the outside surface."
+    },
+    {
+      "id": "d118r4",
+      "type": "image",
+      "content": "images/d118_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**FLAWLESS LIGHTING:** Observe complex light effects (e.g., golden hour, intricate shadows) that appear too perfectly executed and evenly applied without natural variation.",
+      "_note": "Prompt: A photorealistic photograph of a father patiently braiding his daughter's long, wavy hair in a cozy bathroom, her head tilted slightly as she watches her reflection. Sony a7 III, 85mm f/1.8, bathed in soft, warm indoor light from a vanity fixture, highlighting the individual strands of hair and the subtle sheen of her skin."
+    },
+    {
+      "id": "d118r5",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1658467930662-f72fce9cac0c?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxOXx8bW9ybmluZyUyMHJvdXRpbmV8ZW58MHwwfHx8MTc4MDI2MDY1OHww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Shadrina Izzati on Unsplash",
+      "pro_tip": "**AUTHENTIC EMOTION:** Spot genuine, perhaps messy, expressions and interactions. Real images convey lived-in moments, not just a perfect scene.",
+      "source_url": "https://unsplash.com/photos/a-man-walking-a-dog-on-a-beach-590LcOFNHaY"
+    },
+    {
+      "id": "d118r6",
+      "type": "image",
+      "content": "images/d118_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**HYPER-DETAIL:** Spot unnaturally perfect tiny details, like dust motes or individual strands of hair, rendered flawlessly and consistently across the image.",
+      "_note": "Prompt: A photorealistic photograph of a mother gently guiding her young daughter's hand as they both brush their teeth in front of a bathroom mirror, creating a tender reflection. Fujifilm X-T4, 35mm f/2, capturing the bright, even light from a large window, emphasizing the delicate bristles of the toothbrushes and tiny water droplets on the ceramic sink."
+    },
+    {
+      "id": "d118r7",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1617037201980-ddc9c1ebbd83?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw2fHxtb3JuaW5nJTIwcm91dGluZXxlbnwwfDB8fHwxNzgwMjYwNjU4fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Oveth Martinez on Unsplash",
+      "pro_tip": "**VARYING DETAIL:** Observe how details are rendered; real photos may have varying levels of sharpness and less uniform hyper-definition across all elements.",
+      "source_url": "https://unsplash.com/photos/man-in-blue-crew-neck-t-shirt-pouring-water-on-white-ceramic-teacup-gkvP_Syabbo"
+    },
+    {
+      "id": "d118r8",
+      "type": "image",
+      "content": "images/d118_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**EXAGGERATED TEXTURE:** Look for intricate textures (sweater weave, sand, fur) rendered with excessive, uniform detail, often appearing too defined and consistent.",
+      "_note": "Prompt: A photorealistic photograph of a woman and her energetic golden retriever running along a vast, sandy beach at sunrise, their silhouettes elongated by the low sun. Canon EOS R6, 70-200mm f/2.8, capturing the warm golden hour light, with crisp details of individual sand grains kicked up by their feet and the subtle texture of the dog's fur."
+    },
+    {
+      "id": "d118r9",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/10566156/pexels-photo-10566156.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by RDNE Stock project on Pexels",
+      "pro_tip": "**CASUAL COMPOSITION:** Look for spontaneous, unposed interactions and less stylized framing. Real photos often capture genuine moments rather than perfect setups.",
+      "source_url": "https://www.pexels.com/photo/father-brushing-daughter-hair-10566156/"
+    },
+    {
+      "id": "d118r10",
+      "type": "image",
+      "content": "images/d118_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are 10 pro tips for the AI detection game, themed \"Start Your Day\":",
+      "_note": "Prompt: A photorealistic photograph of a young girl excitedly pouring cereal into her bowl at a sleek kitchen island, while her father sips coffee in the background, slightly out of focus. Canon EOS R5, 50mm f/1.4, capturing the soft morning light streaming through a large window, highlighting tiny dust motes in the air and the subtle weave of a linen tea towel."
+    }
+  ],
+  "category_subtitle": "From quiet sips to active strides, how you begin."
+}
