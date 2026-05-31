@@ -1,0 +1,99 @@
+{
+  "day_number": 117,
+  "date": "2026-05-31",
+  "category": "Tricky Perspectives",
+  "category_emoji": "🧐",
+  "rounds": [
+    {
+      "id": "d117r1",
+      "type": "image",
+      "content": "images/d117_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "DIRECTED FLAWS: Imperfections like scratches might appear too intentional or evenly distributed, while complex textures remain flawlessly rendered.",
+      "_note": "Prompt: A photorealistic photograph of a man in a white t-shirt and blue chinos, sitting relaxed on a low, rough gray concrete wall during daytime, looking at an object in his hands. The bright, even daylight illuminates the subtle creases in his shirt fabric and highlights the tiny embedded pebbles in the concrete wall. Shot on a Canon EOS R6 with an 85mm f/1.8 lens, bright diffused daylight."
+    },
+    {
+      "id": "d117r2",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1568171430337-7ab7b866828d?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxNnx8Zm9yY2VkJTIwcGVyc3BlY3RpdmUlMjBpbGx1c2lvbnxlbnwwfDB8fHwxNzgwMTk0MjQyfDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Kyle Fritz on Unsplash",
+      "pro_tip": "CLINICAL CLARITY: Observe details like fabric wrinkles or window streaks that are too perfectly balanced and evenly rendered without organic imperfection.",
+      "source_url": "https://unsplash.com/photos/a-person-is-standing-in-the-middle-of-a-tunnel-vnbvpHZVEW8"
+    },
+    {
+      "id": "d117r3",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1730322022124-efdd445f2da8?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw3fHxmb3JjZWQlMjBwZXJzcGVjdGl2ZSUyMGlsbHVzaW9ufGVufDB8MHx8fDE3ODAxOTQyNDJ8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Karina Karina on Unsplash",
+      "pro_tip": "**Real Photos:**",
+      "source_url": "https://unsplash.com/photos/a-woman-sitting-on-top-of-a-metal-object-RXVvlhWh2Co"
+    },
+    {
+      "id": "d117r4",
+      "type": "image",
+      "content": "images/d117_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "OVER-PERFECTION: AI often renders *all* textures—skin pores, fabric sheen—with uniform, flawless precision, lacking natural variation.",
+      "_note": "Prompt: A photorealistic photograph of a man in a crisp collared shirt, standing contemplatively in front of a vast window overlooking a bustling city skyline. The overcast light from outside casts a soft, even glow, subtly revealing the fine wrinkles in his shirt fabric and faint streaks on the window glass. Shot on a Sony Alpha a7 III with a 24-70mm f/2.8 GM lens (at 35mm), soft ambient window light."
+    },
+    {
+      "id": "d117r5",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1582783807850-835d3ee076c3?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxfHxmb3JjZWQlMjBwZXJzcGVjdGl2ZSUyMGlsbHVzaW9ufGVufDB8MHx8fDE3ODAxOTQyNDJ8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Zayed Iqbal Abir on Unsplash",
+      "pro_tip": "TEXTURAL OBSESSION: AI often excels at meticulously rendering specific textures like fabric creases or wall pebbles with almost artificial sharpness.",
+      "source_url": "https://unsplash.com/photos/man-in-red-crew-neck-t-shirt-sitting-on-concrete-bench-under-blue-and-white-sunny-oibfzwc9QII"
+    },
+    {
+      "id": "d117r6",
+      "type": "image",
+      "content": "images/d117_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are 10 pro tips for the AI detection game:",
+      "_note": "Prompt: A photorealistic photograph of a solitary figure standing slightly off-center in an old, decaying concrete tunnel, looking towards the bright opening at the far end. Visible dust motes are suspended in the light pouring in, highlighting the rough, damp texture of the tunnel walls. Shot on a Canon EOS R5 with a 35mm f/2 lens, natural backlight from the tunnel entrance."
+    },
+    {
+      "id": "d117r7",
+      "type": "image",
+      "content": "images/d117_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "HYPER-DETAIL: Look for unnaturally perfect rendering of minute details like dust motes or fabric textures across the entire image.",
+      "_note": "Prompt: A photorealistic photograph of a woman with a thoughtful expression, perched elegantly on a large, abstract metal sculpture in an urban park. The soft golden hour light reflects off the sculpture's intricate surface, showing minor scratches and revealing the intricate weave of her denim jeans. Shot on a Nikon Z7 with an 85mm f/1.4 lens, late afternoon sunlight."
+    },
+    {
+      "id": "d117r8",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1708446309501-b73d6199392f?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwzfHxmb3JjZWQlMjBwZXJzcGVjdGl2ZSUyMGlsbHVzaW9ufGVufDB8MHx8fDE3ODAxOTQyNDJ8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Zanyar Ibrahim on Unsplash",
+      "pro_tip": "UNPREDICTABLE ELEMENTS: Real photos often contain unexpected, un-prompted details, or a general lack of hyper-specific texture emphasis.",
+      "source_url": "https://unsplash.com/photos/a-man-standing-in-front-of-a-large-window-D4_jfTRimZ8"
+    },
+    {
+      "id": "d117r9",
+      "type": "image",
+      "content": "images/d117_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**AI-Generated Images:**",
+      "_note": "Prompt: A photorealistic photograph of a man in a vibrant red crew neck t-shirt sitting casually on a weathered concrete bench, intently looking at his phone. The bright midday sun creates sharp shadows, revealing the subtle sheen on the fabric and the visible pores on his forearm. Shot on a Fujifilm X-T4 with a 50mm f/1.8 lens, clear blue sky with white clouds."
+    },
+    {
+      "id": "d117r10",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1596332973269-f7d5872a6274?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxMHx8Zm9yY2VkJTIwcGVyc3BlY3RpdmUlMjBpbGx1c2lvbnxlbnwwfDB8fHwxNzgwMTk0MjQyfDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Brian Lundquist on Unsplash",
+      "pro_tip": "AUTHENTIC IMPERFECTIONS: Look for natural variations in light, focus, or slight inconsistencies that don't conform to a perfect description.",
+      "source_url": "https://unsplash.com/photos/man-in-white-shirt-and-blue-pants-sitting-on-gray-concrete-wall-during-daytime-Uw-bJxb-AIY"
+    }
+  ],
+  "category_subtitle": "Look closer! What's real, and what's just an optical illusion?"
+}
