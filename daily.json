@@ -803,6 +803,13 @@
       "category_emoji": "🌸",
       "category_subtitle": "AI's 'watering' a flower. Don't fall for the trick!",
       "challenge_file": "challenges/2026-05-30.json"
+  },
+    "2026-05-31": {
+      "day_number": 117,
+      "category": "Tricky Perspectives",
+      "category_emoji": "🧐",
+      "category_subtitle": "Look closer! What's real, and what's just an optical illusion?",
+      "challenge_file": "challenges/2026-05-31.json"
   }
 }
 
