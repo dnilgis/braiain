@@ -810,6 +810,13 @@
       "category_emoji": "🧐",
       "category_subtitle": "Look closer! What's real, and what's just an optical illusion?",
       "challenge_file": "challenges/2026-05-31.json"
+  },
+    "2026-06-01": {
+      "day_number": 118,
+      "category": "Start Your Day",
+      "category_emoji": "☕",
+      "category_subtitle": "From quiet sips to active strides, how you begin.",
+      "challenge_file": "challenges/2026-06-01.json"
   }
 }
 
