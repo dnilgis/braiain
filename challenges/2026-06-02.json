@@ -1,0 +1,99 @@
+{
+  "day_number": 119,
+  "date": "2026-06-02",
+  "category": "Rotisserie Chicken Day",
+  "category_emoji": "🍗",
+  "rounds": [
+    {
+      "id": "d119r1",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1712579733874-c3a79f0f9d12?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxfHxyb3Rpc3NlcmllJTIwY2hpY2tlbnxlbnwwfDB8fHwxNzgwMzQxMDQ3fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Sven Lippmann on Unsplash",
+      "pro_tip": "**FLAWLESS PLATING:** Watch for \"perfectly roasted\" chicken with unnaturally uniform \"crispy skin edges.\" \"Natural chicken juices\" may pool with unrealistic consistency.",
+      "source_url": "https://unsplash.com/photos/a-whole-chicken-is-cooking-on-a-grill-hsoJOlqsBeU"
+    },
+    {
+      "id": "d119r2",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1772957041453-e0eb938535a8?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw0fHxyb3Rpc3NlcmllJTIwY2hpY2tlbnxlbnwwfDB8fHwxNzgwMzQxMDQ3fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Sebastián Brito on Unsplash",
+      "pro_tip": "**EVERYDAY WEAR:** Expect real-world smudges, true random dust, and natural reflections on the microwave. Surfaces will show natural variations from use.",
+      "source_url": "https://unsplash.com/photos/chickens-rotating-on-a-rotisserie-grill-kq_S_HdC6UI"
+    },
+    {
+      "id": "d119r3",
+      "type": "image",
+      "content": "images/d119_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are your Rotisserie Chicken Day pro tips for AI detection:",
+      "_note": "Prompt: A photorealistic photograph of a plump whole chicken, lightly seasoned and beginning to crisp, cooking slowly over glowing embers on a rustic barbecue grill, capturing the faint smoke wisps rising and the glistening fat droplets on its skin. Shot with a Nikon Z7, 85mm f/1.4, under warm late afternoon sun."
+    },
+    {
+      "id": "d119r4",
+      "type": "image",
+      "content": "images/d119_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**HYPER-TEXTURED SKIN:** Examine the \"intricate crispy texture\" of the skin for artificial uniformity and exaggerated detail. Drippings might look too viscous or identical.",
+      "_note": "Prompt: A photorealistic photograph of a serving of roasted asparagus spears and cherry tomatoes, lightly steamed, arranged neatly on a plain white ceramic oval plate, with fine textural details of the vegetable skins and the subtle glaze imperfections on the plate visible. Shot with a Fujifilm X-T5, 60mm f/2.4 Macro, under soft, diffused window light."
+    },
+    {
+      "id": "d119r5",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1616401616927-3c81de22dfa8?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxNnx8cm90aXNzZXJpZSUyMGNoaWNrZW58ZW58MHwwfHx8MTc4MDM0MTA0N3ww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Annie Spratt on Unsplash",
+      "pro_tip": "**SUBTLETY OF TEXTURE:** Real food photos often have less hyper-sharp detail. Look for natural softening of textures and truly random plate marks or smudges.",
+      "source_url": "https://unsplash.com/photos/roasted-chicken-on-white-ceramic-plate-hV4_DinnR_0"
+    },
+    {
+      "id": "d119r6",
+      "type": "image",
+      "content": "images/d119_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**CONTRIVED GRIME:** Observe \"faint fingerprints\" and \"subtle dust motes\" that appear too perfectly placed or uniformly distributed. The interior light might be unnaturally soft.",
+      "_note": "Prompt: A photorealistic photograph of several richly browned chickens slowly rotating on a vertical commercial rotisserie in a brightly lit deli display, showcasing the intricate crispy texture of their skin, visible drippings, and a gentle heat haze blurring the background. Shot with a Canon EOS R6, 70-200mm f/2.8 (at 100mm), under bright, warm fluorescent lighting."
+    },
+    {
+      "id": "d119r7",
+      "type": "image",
+      "content": "images/d119_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**UNCANNY PERFECTION:** Look for unnaturally uniform \"glistening fat droplets\" and overly idealized \"smoke wisps\" that lack natural randomness. The charring may also appear too perfect.",
+      "_note": "Prompt: A photorealistic photograph of a modern black and stainless steel microwave oven, slightly angled on a kitchen counter, its door ajar with a soft interior light illuminating a small ceramic dish, revealing faint fingerprints on the steel and subtle dust motes on the black control panel. Shot with a Sony A7 III, 35mm f/2.8, in soft indoor kitchen light."
+    },
+    {
+      "id": "d119r8",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1609936860881-a201ec9e6b30?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyMHx8cm90aXNzZXJpZSUyMGNoaWNrZW58ZW58MHwwfHx8MTc4MDM0MTA0N3ww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Luiz Neto on Unsplash",
+      "pro_tip": "**AUTHENTIC IMPERFECTIONS:** Real photos show natural, uneven charring and less idealized smoke or fat droplets. Look for genuine, random grit on the grill.",
+      "source_url": "https://unsplash.com/photos/black-and-silver-microwave-oven-ii5QTZc_hbs"
+    },
+    {
+      "id": "d119r9",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1606728011941-65de4e08f709?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyNHx8cm90aXNzZXJpZSUyMGNoaWNrZW58ZW58MHwwfHx8MTc4MDM0MTA0N3ww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Claudio Schwarz on Unsplash",
+      "pro_tip": "**ORGANIC VARIATION:** Real rotisserie chickens will have natural differences in size, browning, and texture. Expect genuine motion blur or slight blemishes.",
+      "source_url": "https://unsplash.com/photos/cooked-food-on-white-ceramic-plate-UyIv4iBqLbg"
+    },
+    {
+      "id": "d119r10",
+      "type": "image",
+      "content": "images/d119_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**MACRO PERFECTION:** Note \"fine textural details\" that are too sharp and consistent across all elements. Plate \"glaze imperfections\" might be too repetitive or pristine.",
+      "_note": "Prompt: A photorealistic photograph of a perfectly roasted chicken breast, sliced into thick pieces, accompanied by a sprig of fresh rosemary, resting on a pristine white ceramic dinner plate, with visible crispy skin edges, natural chicken juices pooling slightly, and the delicate pores of the chicken skin evident. Shot with a Leica SL2, 50mm f/1.4, under warm, directional indoor light."
+    }
+  ],
+  "category_subtitle": "Is this real chicken, or AI's greatest roast?"
+}
