@@ -1,0 +1,99 @@
+{
+  "day_number": 120,
+  "date": "2026-06-03",
+  "category": "World Bicycle Day",
+  "category_emoji": "🚴‍♀️",
+  "rounds": [
+    {
+      "id": "d120r1",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1653840691670-db2eb01355ec?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw5fHxiaWN5Y2xlJTIwcmlkZSUyMHN0cmVldHxlbnwwfDB8fHwxNzgwNDQwMDIxfDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Killari Hotaru on Unsplash",
+      "pro_tip": "**AUTHENTIC IMPERFECTIONS:** Real photos often include natural imperfections like slight motion blur, varied light, or genuine, unposed human expressions.",
+      "source_url": "https://unsplash.com/photos/a-man-riding-a-bike-past-a-colorful-building-7MEbBqhzA14"
+    },
+    {
+      "id": "d120r2",
+      "type": "image",
+      "content": "images/d120_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**HYPER-DETAILED FABRIC:** AI frequently over-renders fabric weaves or tiny cracks with meticulous detail, appearing too perfect or uniformly consistent.",
+      "_note": "Prompt: A photorealistic photograph of a large group of cyclists, diverse in age and attire, enjoying a spirited morning ride along a wide boulevard in Jakarta, with palm trees and modern high-rises faintly visible in the background. Shot on a Panasonic Lumix S5, 24-70mm f/2.8 at 50mm, during the golden hour, highlighting the subtle glistening of sweat on their foreheads and the fabric weave of their cycling jerseys."
+    },
+    {
+      "id": "d120r3",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/34075927/pexels-photo-34075927.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Nimit N on Pexels",
+      "pro_tip": "**IMPOSSIBLE SHARPNESS:** Notice individual strands of hair or painted textures rendered with uncanny, perfect sharpness across the entire image, defying real camera optics.",
+      "source_url": "https://www.pexels.com/photo/two-women-cycling-in-urban-street-with-helmets-34075927/"
+    },
+    {
+      "id": "d120r4",
+      "type": "image",
+      "content": "images/d120_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**PERFECT REFLECTIONS:** Look for reflections on surfaces like glass or metal that appear unnaturally precise, uniform, or without realistic distortions.",
+      "_note": "Prompt: A photorealistic photograph of a man in a bright yellow cycling jersey, his helmet glinting, as he rides his road bike past a striking building adorned with geometric patterns in vivid red and orange hues. Taken with a Nikon Z7 II, 50mm f/1.2, under crisp, clear sunlight, revealing the painted texture on the building's facade and individual strands of the man's hair escaping his helmet."
+    },
+    {
+      "id": "d120r5",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/9464030/pexels-photo-9464030.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Nasirun Khan on Pexels",
+      "pro_tip": "**NATURAL LIGHTING:** Look for realistic, less uniform lighting with organic shadows and highlights that show depth and natural atmospheric effects.",
+      "source_url": "https://www.pexels.com/photo/people-riding-bicycles-on-road-9464030/"
+    },
+    {
+      "id": "d120r6",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1561399907-1fb7f27c5a38?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw0fHxiaWN5Y2xlJTIwcmlkZSUyMHN0cmVldHxlbnwwfDB8fHwxNzgwNDQwMDIxfDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Max Berger on Unsplash",
+      "pro_tip": "**Real Photograph Detection Tips:**",
+      "source_url": "https://unsplash.com/photos/people-walking-and-riding-bikes-at-the-street-near-buildings-GXvrq21TmAs"
+    },
+    {
+      "id": "d120r7",
+      "type": "image",
+      "content": "images/d120_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**TEXTURAL PRECISION:** AI often renders textures like worn asphalt or skin sheen with unnatural clarity and excessive detail, lacking natural variation.",
+      "_note": "Prompt: A photorealistic photograph of a diverse group of people, some walking with shopping bags, others leisurely riding bicycles, all sharing a wide urban street flanked by modern glass buildings and older brick facades. Captured with a Fujifilm GFX 50S II, 45mm f/2.8, under clear midday sun, showcasing the intricate fabric textures of various outfits and the subtle cracks in the concrete sidewalk."
+    },
+    {
+      "id": "d120r8",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/11645131/pexels-photo-11645131.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Mehmet Turgut  Kirkgoz on Pexels",
+      "pro_tip": "**UNNATURAL UNIFORMITY:** Observe how AI can make \"subtle glistening\" of sweat or fabric details look too pristine and uniformly rendered, lacking natural imperfections.",
+      "source_url": "https://www.pexels.com/photo/men-riding-their-bicycles-on-the-street-11645131/"
+    },
+    {
+      "id": "d120r9",
+      "type": "image",
+      "content": "images/d120_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**AI-Generated Image Detection Tips:**",
+      "_note": "Prompt: A photorealistic photograph of two men in casual cycling gear, riding their bikes past a vibrant blue city bus parked alongside a bustling street, capturing the dynamic movement of the city. Shot on a Sony a7 III, 35mm f/1.8, in late afternoon sunlight, emphasizing the metallic reflections on the bus's windows and the fine dust clinging to the street pavement."
+    },
+    {
+      "id": "d120r10",
+      "type": "image",
+      "content": "images/d120_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are your pro tips for the AI detection game, themed \"World Bicycle Day\":",
+      "_note": "Prompt: A photorealistic photograph of two women, mid-30s, cycling slowly down a tree-lined urban street, their smiles reflecting the joy of outdoor fitness, wearing brightly colored helmets with visible fabric weave. Shot on a Canon EOS R6, 85mm f/1.4, under bright diffused daylight, highlighting the subtle sheen of sweat on their skin and the texture of the worn asphalt."
+    }
+  ],
+  "category_subtitle": "AI's trying to wheel you in. Don't fall for it!"
+}
