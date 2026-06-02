@@ -824,6 +824,13 @@
       "category_emoji": "🍗",
       "category_subtitle": "Is this real chicken, or AI's greatest roast?",
       "challenge_file": "challenges/2026-06-02.json"
+  },
+    "2026-06-03": {
+      "day_number": 120,
+      "category": "World Bicycle Day",
+      "category_emoji": "🚴‍♀️",
+      "category_subtitle": "AI's trying to wheel you in. Don't fall for it!",
+      "challenge_file": "challenges/2026-06-03.json"
   }
 }
 
