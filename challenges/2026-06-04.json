@@ -1,0 +1,99 @@
+{
+  "day_number": 121,
+  "date": "2026-06-04",
+  "category": "National Cheese Day",
+  "category_emoji": "🧀",
+  "rounds": [
+    {
+      "id": "d121r1",
+      "type": "image",
+      "content": "images/d121_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**CONSISTENT LIGHTING:** AI lighting can be perfectly distributed, lacking natural shadows or highlights that would occur in complex environments.",
+      "_note": "Prompt: A photorealistic photograph of a factory worker's gloved hands, wearing slightly worn blue industrial gloves, carefully slicing large blocks of fresh cheddar cheese on a gleaming stainless steel table. Shot with a Fujifilm GFX 100S, 63mm f/2.8, illuminated by bright, overhead fluorescent lights, highlighting minute water droplets on the cheese surface and subtle scratches on the steel."
+    },
+    {
+      "id": "d121r2",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1657828514361-e95409cac913?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxMnx8Y2hlZXNlJTIwcGFydHl8ZW58MHwwfHx8MTc4MDQ5MzQ1NHww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Claudio Schwarz on Unsplash",
+      "pro_tip": "**REALISTIC WEAR:** Look for believable wear and tear on objects like gloves or tables; it won't be hyper-detailed *and* flawless.",
+      "source_url": "https://unsplash.com/photos/a-person-eating-a-dessert-ZgIftUgJWy8"
+    },
+    {
+      "id": "d121r3",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1629805484487-fe57cbec07c8?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyM3x8Y2hlZXNlJTIwbWFrZXJ8ZW58MHwwfHx8MTc4MDQ5MzQ3M3ww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Andreea Pop on Unsplash",
+      "pro_tip": "**ENVIRONMENTAL REALISM:** Shadows, reflections, and ambient light will interact naturally with the setting, reflecting genuine physics.",
+      "source_url": "https://unsplash.com/photos/person-holding-white-dough-on-brown-wooden-chopping-board-T8wkGSyz1rE"
+    },
+    {
+      "id": "d121r4",
+      "type": "image",
+      "content": "images/d121_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**STAGED PERFECTION:** Look for scenes that feel unnaturally composed or meticulously arranged, lacking the spontaneity of a real moment.",
+      "_note": "Prompt: A photorealistic photograph of a person taking a delightful bite of a creamy, rich New York cheesecake, a small crumb visible near their lips, with a soft blur in the background. Taken with a Nikon Z7, 105mm f/2.8 macro lens, under warm, diffused indoor lighting, showcasing the subtle pores on their skin and the delicate condensation on a nearby water glass."
+    },
+    {
+      "id": "d121r5",
+      "type": "image",
+      "content": "images/d121_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**IMMACULATE TEXTURES:** AI often creates flawless, overly intricate textures on cheese rinds, flour dust, or wood grain, lacking real-world imperfections.",
+      "_note": "Prompt: A photorealistic photograph of skilled hands meticulously placing a slice of brie onto a vibrant charcuterie board, surrounded by cured meats and artisanal crackers on a warm wooden surface. Captured with a Sony a7 III, 50mm f/1.8, under soft, natural window light, emphasizing the intricate textures of the cheese rind and the fine dust of flour on the crackers."
+    },
+    {
+      "id": "d121r6",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/6004784/pexels-photo-6004784.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by RDNE Stock project on Pexels",
+      "pro_tip": "**ORGANIC INTERACTION:** Observe genuine, unforced body language and natural movements that convey an authentic moment, not a pose.",
+      "source_url": "https://www.pexels.com/photo/person-arranging-food-on-a-wooden-tray-6004784/"
+    },
+    {
+      "id": "d121r7",
+      "type": "image",
+      "content": "images/d121_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**EXAGGERATED PROPERTIES:** Notice how dough elasticity or water droplets might be rendered with a near-perfect, almost illustrative, clarity.",
+      "_note": "Prompt: A photorealistic photograph of hands, lightly dusted with flour, gently kneading a soft, pliable pizza dough on a well-worn brown wooden chopping board, preparing it for a cheesy topping. Captured with a Canon EOS R6, 35mm f/1.4, under bright, diffused natural light from a kitchen window, emphasizing the elasticity of the dough and the intricate grain of the wooden board."
+    },
+    {
+      "id": "d121r8",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/9586053/pexels-photo-9586053.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Ron Lach on Pexels",
+      "pro_tip": "**NATURAL IMPERFECTIONS:** Real photos often contain slight blurs, natural blemishes, or minor focus shifts, adding to their authenticity.",
+      "source_url": "https://www.pexels.com/photo/person-in-white-long-sleeve-shirt-holding-white-ceramic-bowl-9586053/"
+    },
+    {
+      "id": "d121r9",
+      "type": "image",
+      "content": "images/d121_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**HYPER-DETAIL:** Watch for unnaturally perfect rendering of pores, fabric weaves, or transient elements like crumbs or condensation. It often looks *too* good.",
+      "_note": "Prompt: A photorealistic photograph of two friends laughing joyfully as they reach for different artisanal cheeses on a rustic wooden platter during a vibrant outdoor picnic. Shot with a Canon EOS R5, 85mm f/1.4, bathed in warm golden hour light, highlighting the subtle pores on their skin and the soft weave of the checkered picnic blanket."
+    },
+    {
+      "id": "d121r10",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/5953758/pexels-photo-5953758.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Anna Shvets on Pexels",
+      "pro_tip": "**AUTHENTIC TEXTURES:** Textures like wood grain or cheese rinds will appear tangible and varied, with realistic depth, not artificial precision.",
+      "source_url": "https://www.pexels.com/photo/person-in-blue-gloves-preparing-cheese-5953758/"
+    }
+  ],
+  "category_subtitle": "Can you brie-lieve your eyes? Detect the real from AI."
+}
