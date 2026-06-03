@@ -831,6 +831,13 @@
       "category_emoji": "🚴‍♀️",
       "category_subtitle": "AI's trying to wheel you in. Don't fall for it!",
       "challenge_file": "challenges/2026-06-03.json"
+  },
+    "2026-06-04": {
+      "day_number": 121,
+      "category": "National Cheese Day",
+      "category_emoji": "🧀",
+      "category_subtitle": "Can you brie-lieve your eyes? Detect the real from AI.",
+      "challenge_file": "challenges/2026-06-04.json"
   }
 }
 
