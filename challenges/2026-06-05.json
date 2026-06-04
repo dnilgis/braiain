@@ -1,0 +1,99 @@
+{
+  "day_number": 122,
+  "date": "2026-06-05",
+  "category": "National Donut Day",
+  "category_emoji": "🍩",
+  "rounds": [
+    {
+      "id": "d122r1",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/6550779/pexels-photo-6550779.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Andres  Ayrton on Pexels",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://www.pexels.com/photo/crop-faceless-woman-taking-appetizing-donut-from-box-6550779/"
+    },
+    {
+      "id": "d122r2",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/1619572/pexels-photo-1619572.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Jeswin  Thomas on Pexels",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://www.pexels.com/photo/two-person-sitting-in-front-of-table-in-shipley-do-nuts-store-1619572/"
+    },
+    {
+      "id": "d122r3",
+      "type": "image",
+      "content": "images/d122_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Look for natural imperfections — real photos have dust, slight blur, and uneven lighting.",
+      "_note": "Prompt: A photorealistic photograph of several perfectly glazed donuts and a cruller, arranged in a simple brown paper box, resting on a striped beach towel with the ocean in the soft background. Glistening sugar glaze reflects the bright natural light, revealing tiny air bubbles and a few visible grains of sand clinging to the box's exterior. Taken with a Canon EOS R6, 85mm f/1.4 lens, under bright midday sun."
+    },
+    {
+      "id": "d122r4",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/8417387/pexels-photo-8417387.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by SHVETS production on Pexels",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://www.pexels.com/photo/an-elderly-woman-in-green-floral-dress-holding-a-donut-8417387/"
+    },
+    {
+      "id": "d122r5",
+      "type": "image",
+      "content": "images/d122_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Look at reflections — real reflections match the environment, AI reflections are often random.",
+      "_note": "Prompt: A photorealistic photograph of a diverse array of classic yeast and cake donuts, some with sprinkles and some chocolate-frosted, neatly displayed on multiple silver wire bakery racks within a glass display case. Bright overhead fluorescent lighting accentuates the individual sugar crystals on the glazed donuts and reveals faint dust motes resting on the metal trays. Taken with a Fujifilm GFX 100S, 120mm f/4 macro lens."
+    },
+    {
+      "id": "d122r6",
+      "type": "image",
+      "content": "images/d122_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Check for symmetry — AI tends to make things too perfect and symmetrical.",
+      "_note": "Prompt: A photorealistic photograph of a bustling \"Doughnut House\" shop exterior at night, with its prominent yellow and red neon sign brightly illuminating the dark urban street. Reflections of the signage are visible on the slightly wet asphalt below, and faint smudges and condensation are evident on the large storefront glass windows, hinting at the warm interior lights. Taken with a Canon EOS 5D Mark IV, 24-70mm f/2.8 L lens, under a clear, starless night sky."
+    },
+    {
+      "id": "d122r7",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/18253250/pexels-photo-18253250.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Patrick on Pexels",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://www.pexels.com/photo/donuts-in-a-plastic-box-18253250/"
+    },
+    {
+      "id": "d122r8",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/29772677/pexels-photo-29772677.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Anna on Pexels",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://www.pexels.com/photo/delicious-assortment-of-classic-and-chocolate-donuts-29772677/"
+    },
+    {
+      "id": "d122r9",
+      "type": "image",
+      "content": "images/d122_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Check edges carefully — AI often produces halos or unnatural blending where objects meet.",
+      "_note": "Prompt: A photorealistic photograph of a joyful senior woman, with subtle sun-kissed wrinkles around her eyes, taking a bite from a powdered donut, outdoors during a picnic. She wears a vividly patterned, loosely woven linen dress, with individual fabric threads visible, bathed in the soft, warm light of early golden hour. Taken with a Nikon Z7 II, 50mm f/1.2 lens."
+    },
+    {
+      "id": "d122r10",
+      "type": "image",
+      "content": "images/d122_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Examine text and labels — AI struggles with readable, consistent lettering.",
+      "_note": "Prompt: A photorealistic photograph of an unrecognizable plump female's hand, showing detailed skin pores and a slight sheen, reaching into an open white cardboard donut box to pick a jelly-filled donut. The person is sitting on a plush carpet, the subtle texture of their grey sweatpants with faint pilling clearly visible, in a room illuminated by soft, ambient light from a large window. Taken with a Sony Alpha A7 III, 35mm f/1.8 lens."
+    }
+  ],
+  "category_subtitle": "Donut let AI glaze your eyes; find the real deal!"
+}
