@@ -838,6 +838,13 @@
       "category_emoji": "🧀",
       "category_subtitle": "Can you brie-lieve your eyes? Detect the real from AI.",
       "challenge_file": "challenges/2026-06-04.json"
+  },
+    "2026-06-05": {
+      "day_number": 122,
+      "category": "National Donut Day",
+      "category_emoji": "🍩",
+      "category_subtitle": "Donut let AI glaze your eyes; find the real deal!",
+      "challenge_file": "challenges/2026-06-05.json"
   }
 }
 
