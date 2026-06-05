@@ -1,0 +1,99 @@
+{
+  "day_number": 123,
+  "date": "2026-06-06",
+  "category": "Early Summer Escapes",
+  "category_emoji": "☀️",
+  "rounds": [
+    {
+      "id": "d123r1",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1473969631237-f466cf342b1f?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxMHx8cm9hZCUyMHRyaXB8ZW58MHwwfHx8MTc4MDY3MDg1Nnww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by anja. on Unsplash",
+      "pro_tip": "**REALISTIC WEAR:** Spot genuine wear, dust, or smudges that adhere naturally to surfaces. Real life often includes grit, unlike AI's often too-clean renderings.",
+      "source_url": "https://unsplash.com/photos/persons-leg-resting-on-vehicle-window-Dt86cdOH-x4"
+    },
+    {
+      "id": "d123r2",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1569916385763-5f248d0f04c8?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw4fHxyb2FkJTIwdHJpcHxlbnwwfDB8fHwxNzgwNjcwODU2fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Sergey Tarasov on Unsplash",
+      "pro_tip": "**AUTHENTIC INTERACTION:** Note the natural, often less-than-perfect, human interaction with objects. Real photos show unforced gestures and realistic skin variations.",
+      "source_url": "https://unsplash.com/photos/a-woman-driving-a-car-with-a-cell-phone-in-her-hand--jFVZbDdj8M"
+    },
+    {
+      "id": "d123r3",
+      "type": "image",
+      "content": "images/d123_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**DISTANCE CLARITY:** Observe distant rock faces and metal surfaces. AI images often maintain implausible sharpness and detail across all depths, even where atmospheric haze would naturally occur.",
+      "_note": "Prompt: A photorealistic photograph of a modern white sprinter van with two mountain bikes secured on its rear rack, driving along a paved road winding through a majestic, sunlit alpine valley. The crisp midday light reveals fine details on the van's metal surface, the intricate bike chain links, and the rough texture of distant rock faces, captured with a Nikon Z7, 14-30mm f/4 lens."
+    },
+    {
+      "id": "d123r4",
+      "type": "image",
+      "content": "images/d123_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**IMPERFECTION FLAWS:** Examine mud splatters and glare on the windshield. AI-generated imperfections can sometimes look artificial, lacking natural randomness or light interaction.",
+      "_note": "Prompt: A photorealistic photograph of a mud-splattered hiking boot propped up on the dashboard of an SUV, with a sweeping vista of a forest road visible through the slightly dusty windshield. The bright afternoon sun creates a slight glare on the glass, emphasizing its imperfections and the texture of the boot's worn laces, captured with a Canon EOS 5D Mark IV, 35mm f/1.4 lens."
+    },
+    {
+      "id": "d123r5",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/5080858/pexels-photo-5080858.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by cottonbro studio on Pexels",
+      "pro_tip": "**NATURAL COMPOSITION:** Look for spontaneous framing or slightly imperfect angles. Real shots often capture candid moments, not always perfectly composed or centered.",
+      "source_url": "https://www.pexels.com/photo/a-carefree-person-relaxing-her-legs-out-of-the-car-window-5080858/"
+    },
+    {
+      "id": "d123r6",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/28224747/pexels-photo-28224747.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Amine Mayoufi on Pexels",
+      "pro_tip": "**ORGANIC DYNAMICS:** Notice natural motion blur or slight lens imperfections from movement. Real photos capture unpredicted interactions, like swaying grass or a slight hand blur.",
+      "source_url": "https://www.pexels.com/photo/a-person-is-pointing-at-a-car-in-the-side-mirror-28224747/"
+    },
+    {
+      "id": "d123r7",
+      "type": "image",
+      "content": "images/d123_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**TEXTURE PERFECTION:** Examine sand and skin textures. AI often renders them with an almost unnatural uniformity or too-perfect detail, lacking the subtle irregularities of real life.",
+      "_note": "Prompt: A photorealistic photograph of bare feet dangling from the open side door of a vintage camper van, overlooking a pristine early morning beach at sunrise. The soft light of the rising sun creates subtle golden highlights on the sand grains and the skin texture of the feet, captured with a Canon EOS R6, 24-70mm f/2.8 lens."
+    },
+    {
+      "id": "d123r8",
+      "type": "image",
+      "content": "images/d123_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**ANOMALOUS DETAILS:** Scrutinize fingerprints or text on the smartphone screen. AI often creates generic, slightly distorted, or too-perfect patterns, betraying their artificial origin.",
+      "_note": "Prompt: A photorealistic photograph of a man's hand holding a smartphone displaying a navigation app, resting on the steering wheel of a car, caught in soft morning light filtering through the windshield. Subtle fingerprints on the phone screen and the intricate stitching on the leather steering wheel are visible, shot with a Fujifilm X-T4, 56mm f/1.2 lens."
+    },
+    {
+      "id": "d123r9",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/28897042/pexels-photo-28897042.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Stephen Leonardi on Pexels",
+      "pro_tip": "**ATMOSPHERIC DEPTH:** Observe natural atmospheric haze or dust in the distance. Real scenes often show light interacting authentically with air particulates, softening far-off elements.",
+      "source_url": "https://www.pexels.com/photo/scenic-road-trip-adventure-with-camper-van-28897042/"
+    },
+    {
+      "id": "d123r10",
+      "type": "image",
+      "content": "images/d123_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**ORGANIC REPETITION:** Check the roadside grasses. AI can struggle with natural variation, sometimes showing overly uniform patterns or too-sharp individual blades in a sprawling field.",
+      "_note": "Prompt: A photorealistic photograph of an arm with rolled-up sleeve reaching out of a car window, fingers gently trailing through sun-drenched tall roadside grasses on a winding coastal highway. The late afternoon sunlight illuminates individual grass blades and highlights the subtle skin pores on the arm, shot with a Sony a7 III, 85mm f/1.4 lens during golden hour."
+    }
+  ],
+  "category_subtitle": "AI's best fakes. Spot the real summer escape."
+}
