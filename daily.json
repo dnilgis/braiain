@@ -845,6 +845,13 @@
       "category_emoji": "🍩",
       "category_subtitle": "Donut let AI glaze your eyes; find the real deal!",
       "challenge_file": "challenges/2026-06-05.json"
+  },
+    "2026-06-06": {
+      "day_number": 123,
+      "category": "Early Summer Escapes",
+      "category_emoji": "☀️",
+      "category_subtitle": "AI's best fakes. Spot the real summer escape.",
+      "challenge_file": "challenges/2026-06-06.json"
   }
 }
 
