@@ -1,0 +1,99 @@
+{
+  "day_number": 124,
+  "date": "2026-06-07",
+  "category": "Perfect Symmetry",
+  "category_emoji": "✨",
+  "rounds": [
+    {
+      "id": "d124r1",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/33488858/pexels-photo-33488858.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Robert Harutyunyan on Pexels",
+      "pro_tip": "**Real Photograph Detection:**",
+      "source_url": "https://www.pexels.com/photo/serene-image-of-stacked-stones-in-nature-33488858/"
+    },
+    {
+      "id": "d124r2",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/1930422/pexels-photo-1930422.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Roudy Salameh on Pexels",
+      "pro_tip": "**NATURAL VARIATION:** Seek subtle imperfections, asymmetrical elements, or organic irregularities in nature and man-made objects. Real world is rarely flawless.",
+      "source_url": "https://www.pexels.com/photo/empty-road-in-middle-of-trees-1930422/"
+    },
+    {
+      "id": "d124r3",
+      "type": "image",
+      "content": "images/d124_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are pro tips for the AI detection game, themed \"Perfect Symmetry\":",
+      "_note": "Prompt: A photorealistic photograph of a person's gloved hands meticulously aligning a bicycle wheel, its intricate spokes creating a radial symmetry under the soft, even light of a workshop. The worn rubber tire shows faint dust motes, and the subtle weave of the fabric gloves is visible, captured with a Fujifilm X-T4, 56mm f/1.2 lens."
+    },
+    {
+      "id": "d124r4",
+      "type": "image",
+      "content": "images/d124_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**PERFECT SYMMETRY:** Look for compositions that are *too* perfect or unnaturally symmetrical, often explicitly described in prompts. AI excels at ideal geometric arrangements.",
+      "_note": "Prompt: A photorealistic photograph of a slender, perfectly balanced cairn of smooth, water-worn stones standing in quiet contemplation on a damp rock, reflecting the subtle colors of an overcast dawn sky. Each stone's unique texture, from flecks of mica to subtle cracks, is crisply visible, shot with a Sony α7 III, 35mm f/1.4 lens."
+    },
+    {
+      "id": "d124r5",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1673870767999-20e9af6dc896?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxMXx8cGVyZmVjdCUyMGFsaWdubWVudHxlbnwwfDB8fHwxNzgwNzU1NzM4fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Anton Savinov on Unsplash",
+      "pro_tip": "**LACK OF IMPERFECTION:** AI images often lack the subtle, natural imperfections, wear, or organic randomness found in real-world objects and environments.",
+      "source_url": "https://unsplash.com/photos/a-close-up-of-a-person-holding-a-bike-wheel-L2FwHV40-rY"
+    },
+    {
+      "id": "d124r6",
+      "type": "image",
+      "content": "images/d124_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**HYPER-DETAIL:** Observe excessively crisp, uniform textures and details like individual dust motes or subtle machining marks. AI often renders these with unnatural precision.",
+      "_note": "Prompt: A photorealistic photograph of a quiet, perfectly straight asphalt road stretching into the distance, flanked by a rhythmic line of bare, symmetrical deciduous trees under a soft, late autumn sky. Scattered dry leaves crunch underfoot, and the textured bark of the trees shows intricate patterns, captured with a Canon EOS R5, 24mm f/2.8 lens during an overcast afternoon."
+    },
+    {
+      "id": "d124r7",
+      "type": "image",
+      "content": "images/d124_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**IDEALIZED LIGHTING:** Watch for unnaturally even, soft, or perfectly highlighted scenes that flawlessly showcase every element without realistic variation.",
+      "_note": "Prompt: A photorealistic photograph of a perfectly straight, damp asphalt road vanishing into a thick, enveloping morning mist, flanked on either side by symmetrically arrayed towering pines that gradually disappear into the ethereal haze. The road's wet surface glistens, reflecting the diffused light, and individual pine needles are visible on the nearest branches, captured with a Nikon Z7 II, 70-200mm f/2.8 lens (at 100mm) during a misty early morning."
+    },
+    {
+      "id": "d124r8",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1745571479807-8a0dda362f94?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxNXx8cGVyZmVjdCUyMGFsaWdubWVudHxlbnwwfDB8fHwxNzgwNzU1NzM4fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Maxim Tolchinskiy on Unsplash",
+      "pro_tip": "**CLINICAL DESCRIPTION:** When text accompanies, check for overly technical camera specs or sensory descriptions like \"crunch underfoot,\" often a prompt's literal interpretation.",
+      "source_url": "https://unsplash.com/photos/a-worker-measures-a-metal-piece-clamped-in-a-vise-o4498q1JS-w"
+    },
+    {
+      "id": "d124r9",
+      "type": "image",
+      "content": "images/d124_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**AI-Generated Image Detection:**",
+      "_note": "Prompt: A photorealistic photograph of a worker's hands meticulously securing a polished, rectangular metal piece within the robust, symmetrically aligned jaws of a workbench vise. The cool, overhead fluorescent lighting highlights subtle machining marks on the metal's surface and the slight sheen of oil on the worker's fingertips, captured with a Nikon D850, 105mm f/2.8 macro lens."
+    },
+    {
+      "id": "d124r10",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/27096680/pexels-photo-27096680.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Lorenzo Manera on Pexels",
+      "pro_tip": "**AUTHENTIC CONTEXT:** Look for genuine environmental interaction or contextual elements that create a sense of a lived moment, not just a posed subject.",
+      "source_url": "https://www.pexels.com/photo/road-among-trees-27096680/"
+    }
+  ],
+  "category_subtitle": "AI's perfect symmetry? Bless its digital heart. Spot the fraud!"
+}
