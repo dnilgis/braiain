@@ -852,6 +852,13 @@
       "category_emoji": "☀️",
       "category_subtitle": "AI's best fakes. Spot the real summer escape.",
       "challenge_file": "challenges/2026-06-06.json"
+  },
+    "2026-06-07": {
+      "day_number": 124,
+      "category": "Perfect Symmetry",
+      "category_emoji": "✨",
+      "category_subtitle": "AI's perfect symmetry? Bless its digital heart. Spot the fraud!",
+      "challenge_file": "challenges/2026-06-07.json"
   }
 }
 
