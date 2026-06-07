@@ -1,0 +1,99 @@
+{
+  "day_number": 125,
+  "date": "2026-06-08",
+  "category": "Ocean Wonders",
+  "category_emoji": "🐠",
+  "rounds": [
+    {
+      "id": "d125r1",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/3154149/pexels-photo-3154149.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Francesco Ungaro on Pexels",
+      "pro_tip": "**NATURAL IMPERFECTIONS:** Seek subtle lens flares, water particles, slight motion blur, or genuine imperfections in gear or environmental elements. Real photos have grit.",
+      "source_url": "https://www.pexels.com/photo/underwater-coral-reef-sea-view-3154149/"
+    },
+    {
+      "id": "d125r2",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1694661641480-d4e76d6bead3?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw0fHx1bmRlcndhdGVyJTIwY29yYWwlMjByZWVmfGVufDB8MHx8fDE3ODA4NjcyMjB8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by David Clode on Unsplash",
+      "pro_tip": "**ORGANIC COMPOSITION:** Observe less-than-perfect framing, slightly obscured elements, or subjects not always in ideal poses. Real scenes unfold naturally.",
+      "source_url": "https://unsplash.com/photos/a-large-group-of-colorful-corals-in-an-aquarium-UPw6XouLfao"
+    },
+    {
+      "id": "d125r3",
+      "type": "image",
+      "content": "images/d125_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**UNREAL VIBRANCY:** Check for intense, almost glowing color saturation in corals or fish that feels artificially enhanced beyond natural brilliance. AI often boosts palettes.",
+      "_note": "Prompt: A photorealistic photograph of a dense school of striped angelfish gracefully navigating over a complex tapestry of hard and soft corals on a sunlit reef. The transparency of the fish fins is evident, and individual grains of sand are visible on the reef bed, stirred gently by the current. Shot with a Fujifilm X-T4, 56mm f/1.2, under diffused natural afternoon light."
+    },
+    {
+      "id": "d125r4",
+      "type": "image",
+      "content": "images/d125_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**HYPER-DETAIL:** Look for unnaturally perfect textures like wetsuit weaves or individual fish scales rendered with exhaustive precision. AI often over-delivers on micro-details.",
+      "_note": "Prompt: A photorealistic photograph of an expansive underwater seascape, showcasing a healthy, intricately detailed brain coral colony surrounded by a shimmering school of small reef fish in crystal-clear azure waters. Sunlight dapples through the surface, creating visible light rays and illuminating the subtle scales on the fish. Shot with a Sony Alpha 7S III, 16-35mm f/4, during a bright sunny afternoon."
+    },
+    {
+      "id": "d125r5",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1682687982049-b3d433368cd1?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxNnx8Y29yYWwlMjByZWVmfGVufDB8MHx8fDE3ODA4NjcyMzl8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by NEOM on Unsplash",
+      "pro_tip": "**SUBTLE COLOR SHIFTS:** Look for natural color attenuation with depth or distance, and less uniform vibrancy across different elements. Water filters light naturally.",
+      "source_url": "https://unsplash.com/photos/a-scuba-diver-swims-over-a-coral-reef-FXJf8y_cZA0"
+    },
+    {
+      "id": "d125r6",
+      "type": "image",
+      "content": "images/d125_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**FLAWLESS LIGHTING:** Spot perfectly consistent light rays, caustics, or reflections that seem too ideal or uniformly applied across the scene. Real light scatters unpredictably.",
+      "_note": "Prompt: A photorealistic photograph of a close-up section of a bustling home aquarium, filled with a diverse array of fluorescent green, purple, and orange live corals. Algae growth is visible on the inner surface of the glass, and delicate water surface ripples reflect the warm, specialized LED aquarium lighting. Shot with a Canon EOS R6, 100mm f/2.8 Macro, lit by professional indoor aquarium lights."
+    },
+    {
+      "id": "d125r7",
+      "type": "image",
+      "content": "images/d125_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**PERFECT UNIFORMITY:** Observe schools of fish or coral formations that appear unnaturally symmetrical, identical, or perfectly spaced. Nature is rarely so uniform.",
+      "_note": "Prompt: A photorealistic photograph of a lone scuba diver observing a delicate fan coral, with their silhouette outlined against the luminous blue water. Fine stitching details are visible on the diver's buoyancy control device, and subtle sunbeam caustics dance across the sandy patches of the reef floor. Shot with an Olympus TG-6, 25mm f/1.8, in clear, bright morning light."
+    },
+    {
+      "id": "d125r8",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1682687981907-170c006e3744?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxfHx1bmRlcndhdGVyJTIwY29yYWwlMjByZWVmfGVufDB8MHx8fDE3ODA4NjcyMjB8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by NEOM on Unsplash",
+      "pro_tip": "**OVER-ENGINEERED IMPERFECTIONS:** Notice \"natural\" elements like algae on glass or sand stirring that feel deliberately placed and still too perfect to be organic.",
+      "source_url": "https://unsplash.com/photos/a-scuba-diver-swims-over-a-colorful-coral-reef-_tDdlCJIwOA"
+    },
+    {
+      "id": "d125r9",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1641410047437-7da0cfe420cf?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxMHx8dW5kZXJ3YXRlciUyMGNvcmFsJTIwcmVlZnxlbnwwfDB8fHwxNzgwODY3MjIwfDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Pascal van de Vendel on Unsplash",
+      "pro_tip": "**VARYING DETAIL & FOCUS:** Note areas of natural blur, focus fall-off, or less-than-sharp details due to depth of field or water clarity. Not everything is perfectly sharp.",
+      "source_url": "https://unsplash.com/photos/a-large-group-of-fish-swimming-over-a-colorful-coral-reef-4cybCXaiB4c"
+    },
+    {
+      "id": "d125r10",
+      "type": "image",
+      "content": "images/d125_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are pro tips for the AI detection game, themed \"Ocean Wonders\":",
+      "_note": "Prompt: A photorealistic photograph of a scuba diver, viewed from a slightly lower angle, gently ascending past a vibrant wall of soft corals and anemones. The diver's wetsuit shows fine weave texture, and tiny air bubbles rise from their regulator, catching the natural light filtering through the clear water. Shot with a Nikon D850, 24mm f/2.8, under bright mid-morning sun filtering through the surface."
+    }
+  ],
+  "category_subtitle": "AI vs. Ocean: Spot the real wonder."
+}
