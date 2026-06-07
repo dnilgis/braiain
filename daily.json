@@ -859,6 +859,13 @@
       "category_emoji": "✨",
       "category_subtitle": "AI's perfect symmetry? Bless its digital heart. Spot the fraud!",
       "challenge_file": "challenges/2026-06-07.json"
+  },
+    "2026-06-08": {
+      "day_number": 125,
+      "category": "Ocean Wonders",
+      "category_emoji": "🐠",
+      "category_subtitle": "AI vs. Ocean: Spot the real wonder.",
+      "challenge_file": "challenges/2026-06-08.json"
   }
 }
 
