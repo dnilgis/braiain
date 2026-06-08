@@ -866,6 +866,13 @@
       "category_emoji": "🐠",
       "category_subtitle": "AI vs. Ocean: Spot the real wonder.",
       "challenge_file": "challenges/2026-06-08.json"
+  },
+    "2026-06-09": {
+      "day_number": 126,
+      "category": "Strawberry Pie Day",
+      "category_emoji": "🥧",
+      "category_subtitle": "Sweet and tart, a classic summer delight ready to savor!",
+      "challenge_file": "challenges/2026-06-09.json"
   }
 }
 
