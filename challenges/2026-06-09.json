@@ -1,0 +1,99 @@
+{
+  "day_number": 126,
+  "date": "2026-06-09",
+  "category": "Strawberry Pie Day",
+  "category_emoji": "🥧",
+  "rounds": [
+    {
+      "id": "d126r1",
+      "type": "image",
+      "content": "images/d126_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**OVERLY PERFECT PATTERNS.** Notice flawless lattice crusts, uniformly dispersed sugar crystals, or unnaturally subtle, staged steam. AI often perfects symmetry.",
+      "_note": "Prompt: A photorealistic photograph of a golden-brown strawberry pie, fresh from the oven, showcasing a perfectly woven lattice crust with visible sugar crystals and slight char marks on the edges. Wisps of steam rise subtly from the pie, which rests on a cooling rack on a rustic wooden table under warm, inviting kitchen light, captured with a Fujifilm X-T4, 35mm f/2 lens."
+    },
+    {
+      "id": "d126r2",
+      "type": "image",
+      "content": "images/d126_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**UNIFORM TEXTURE & LIGHT.** Look for dough with excessively smooth, elastic texture and apron weaves too perfectly rendered under artificial, even lighting.",
+      "_note": "Prompt: A photorealistic photograph of a chef, seen from the chest down, meticulously rolling out a thin sheet of pie dough on a stainless steel countertop, leaving faint trails of flour. The bright, even lighting of the professional restaurant kitchen highlights the subtle weave of the chef's white apron and the smooth, elastic texture of the dough, captured with a Canon EOS R6, 24-70mm f/2.8 lens."
+    },
+    {
+      "id": "d126r3",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/4451339/pexels-photo-4451339.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Rene Terp on Pexels",
+      "pro_tip": "**REALISTIC AMBIENCE.** Look for subtle inconsistencies in kitchen lighting or genuine wear on surfaces. Real environments show lived-in details and natural texture variations.",
+      "source_url": "https://www.pexels.com/photo/unrecognizable-person-cooking-pie-in-kitchen-4451339/"
+    },
+    {
+      "id": "d126r4",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/6574597/pexels-photo-6574597.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by ROMAN ODINTSOV on Pexels",
+      "pro_tip": "**NATURAL VARIATION.** Spot authentic light and shadow inconsistencies, or minor imperfections in fruit placement. Real scenes show natural, less uniform details.",
+      "source_url": "https://www.pexels.com/photo/person-putting-fresh-sliced-strawberries-on-pie-6574597/"
+    },
+    {
+      "id": "d126r5",
+      "type": "image",
+      "content": "images/d126_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**MICRO-DETAIL PERFECTION.** Spot impossibly perfect micro-details like uniform berry seeds or subtle, consistent finger wrinkles. AI renders these uniformly.",
+      "_note": "Prompt: A photorealistic photograph of an adult's hands carefully placing glistening, ripe strawberries onto a partially baked pie crust, dusted with flour, on a light wooden countertop. The bright natural kitchen light from a large window highlights subtle wrinkles on the fingers and tiny seeds on the berries, captured with a Canon EOS R5, 50mm f/1.8 lens."
+    },
+    {
+      "id": "d126r6",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/775583/pexels-photo-775583.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Flip Side on Pexels",
+      "pro_tip": "**ORGANIC IMPERFECTION.** Observe genuine, non-uniform crust flakiness or slightly varied fruit distribution in the filling. Real photos show charming, natural flaws.",
+      "source_url": "https://www.pexels.com/photo/strawberry-pie-on-white-plate-775583/"
+    },
+    {
+      "id": "d126r7",
+      "type": "image",
+      "content": "images/d126_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**HYPER-VIBRANT FILLING.** Look for unnaturally vibrant, uniformly suspended fruit and glistening seeds within the filling. Backgrounds may appear too pristine.",
+      "_note": "Prompt: A photorealistic photograph of a generous slice of homemade strawberry pie, featuring a golden, slightly uneven crust, resting on a pristine white ceramic plate. The pie's vibrant red filling, studded with whole strawberries and their visible seeds, catches the soft, diffused indoor light, emphasizing the crust's flakiness, captured with a Nikon Z7, 105mm f/2.8 macro lens."
+    },
+    {
+      "id": "d126r8",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/6574543/pexels-photo-6574543.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by ROMAN ODINTSOV on Pexels",
+      "pro_tip": "**AUTHENTIC MOVEMENT.** Identify less precise cuts, natural juice smudges, or realistic hand imperfections. Real actions often appear more spontaneous and less staged.",
+      "source_url": "https://www.pexels.com/photo/person-cutting-strawberry-calyx-6574543/"
+    },
+    {
+      "id": "d126r9",
+      "type": "image",
+      "content": "images/d126_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**UNCANNY LIQUID & REFLECTION.** Identify perfectly glistening juice or overly precise reflections on knife blades. Specific imperfections like \"scratched plastic\" can be too ideal.",
+      "_note": "Prompt: A photorealistic photograph of a pair of hands gently slicing a plump, ruby-red strawberry with a sharp chef's knife on a deep red, slightly scratched plastic cutting board. The overhead task lighting illuminates the glistening juice emerging from the cut fruit and the faint lines on the fingertips, reflecting subtly off the knife blade, shot with a Sony Alpha a7 III, 85mm f/1.4 lens."
+    },
+    {
+      "id": "d126r10",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1760837988733-2782508a2260?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyfHxzdHJhd2JlcnJ5JTIwJTIwcmh1YmFyYiUyMHBpZXxlbnwwfDB8fHwxNzgwOTU0ODEzfDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Jeremy Mowery on Unsplash",
+      "pro_tip": "**AUTHENTICALLY BAKED.** Seek genuinely non-uniform browning, imperfect lattice weaving, or natural char marks. Real pies show the true, varied baking process.",
+      "source_url": "https://unsplash.com/photos/a-freshly-baked-strawberry-pie-with-lattice-crust-yJWz991G-pI"
+    }
+  ],
+  "category_subtitle": "Sweet and tart, a classic summer delight ready to savor!"
+}
