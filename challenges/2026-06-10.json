@@ -1,0 +1,99 @@
+{
+  "day_number": 127,
+  "date": "2026-06-10",
+  "category": "Bubble Trouble",
+  "category_emoji": "🫧",
+  "rounds": [
+    {
+      "id": "d127r1",
+      "type": "image",
+      "content": "images/d127_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Look for natural imperfections — real photos have dust, slight blur, and uneven lighting.",
+      "_note": "Prompt: A photorealistic photograph of a close-up shot of an adult's hand gently squeezing a transparent green dish soap bottle, causing a cluster of small, iridescent bubbles to gently flow from the nozzle. The bottle features subtle water droplets clinging to its plastic surface, and the individual fine hairs on the person's arm are visible, all captured with a Canon EOS R5, 50mm f/1.8 lens in soft, even indoor light."
+    },
+    {
+      "id": "d127r2",
+      "type": "image",
+      "content": "images/d127_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Check edges carefully — AI often produces halos or unnatural blending where objects meet.",
+      "_note": "Prompt: A photorealistic photograph of a child's small, slightly chubby hand delicately holding a single, large soap bubble, with the bright daytime sky and distant green trees softly reflected on its surface. The bubble shimmers with rainbow colors, highlighting visible skin pores on the child's fingertips and tiny dust motes dancing in the sunlit air, all shot with a Sony Alpha a7 III, 100mm f/2.8 macro lens under bright, natural daylight."
+    },
+    {
+      "id": "d127r3",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/36744102/pexels-photo-36744102.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Christiana Dj on Pexels",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://www.pexels.com/photo/street-performer-creating-giant-soap-bubble-in-nyc-36744102/"
+    },
+    {
+      "id": "d127r4",
+      "type": "image",
+      "content": "images/d127_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Look at reflections — real reflections match the environment, AI reflections are often random.",
+      "_note": "Prompt: A photorealistic photograph of an adult's hand holding a pair of vintage, silver-plated sewing scissors positioned just inches in front of a mesmerizing array of floating soap bubbles, with the light reflecting sharply off the scissor blades. Subtle fingerprints are visible on the polished metal, contrasting with the delicate, almost translucent quality of the individual bubble films, all taken with a Fujifilm X-T4, 56mm f/1.2 lens under soft, diffused window light."
+    },
+    {
+      "id": "d127r5",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1585594780079-6bce059354f8?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxM3x8c29hcCUyMGJ1YmJsZXMlMkMlMjBidWJibGVzJTIwY2xvc2UtdXB8ZW58MHwwfHx8MTc4MTAzNTYxOXww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Sandra Grünewald on Unsplash",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://unsplash.com/photos/person-holding-green-plastic-bottle-with-bubbles-EyTWCDtbeb8"
+    },
+    {
+      "id": "d127r6",
+      "type": "image",
+      "content": "images/d127_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Examine text and labels — AI struggles with readable, consistent lettering.",
+      "_note": "Prompt: A photorealistic photograph of a stunning selective focus close-up on a delicate cluster of soap bubbles, with one perfectly spherical bubble in razor-sharp focus in the immediate foreground, showcasing its intricate rainbow patterns, while several other bubbles softly blur into the shallow background. The scene is illuminated by golden hour sidelight, emphasizing the fragile, shimmering film of the bubbles and any microscopic imperfections. This image was captured using a Nikon D850, 105mm f/2.8 micro lens."
+    },
+    {
+      "id": "d127r7",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1633368516457-e716168f66b0?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxfHxidWJibGUlMjBndW58ZW58MHwwfHx8MTc4MTAzNTY0Mnww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Sash Sriganesh on Unsplash",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://unsplash.com/photos/a-person-holding-a-pair-of-scissors-in-front-of-soap-bubbles-K4O_KS9dvxE"
+    },
+    {
+      "id": "d127r8",
+      "type": "image",
+      "content": "images/d127_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Check for symmetry — AI tends to make things too perfect and symmetrical.",
+      "_note": "Prompt: A photorealistic photograph of a vibrant, wide-angle street scene in a bustling New York City neighborhood during the peak of autumn, where a street performer actively creates an enormous cloud of iridescent soap bubbles that drift above a diverse crowd of passersby. The wet sheen on the cobblestones from a recent drizzle and individual, brightly colored fallen autumn leaves scattered across the pavement add texture to this dynamic moment, captured with a Leica Q2, 28mm f/1.7 lens under bright, late afternoon sun."
+    },
+    {
+      "id": "d127r9",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1618085238478-b0d7a59884a7?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxMnx8c29hcCUyMGJ1YmJsZXN8ZW58MHwwfHx8MTc4MTAzNTYyOXww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Giu Vicente on Unsplash",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://unsplash.com/photos/person-holding-bubble-during-daytime-Ng2n54lAKcs"
+    },
+    {
+      "id": "d127r10",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1560981266-6bf9e7a88280?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxNXx8c29hcCUyMGJ1YmJsZXN8ZW58MHwwfHx8MTc4MTAzNTYyOXww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Pieter on Unsplash",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://unsplash.com/photos/selective-focus-photography-of-bubbles-Qa8Y_W4PORw"
+    }
+  ],
+  "category_subtitle": "The uneasy quiet before AI's visual bubble bursts."
+}
