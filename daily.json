@@ -880,6 +880,13 @@
       "category_emoji": "🫧",
       "category_subtitle": "The uneasy quiet before AI's visual bubble bursts.",
       "challenge_file": "challenges/2026-06-10.json"
+  },
+    "2026-06-11": {
+      "day_number": 128,
+      "category": "Hidden Faces",
+      "category_emoji": "🧐",
+      "category_subtitle": "A daily thrill, discerning hidden faces in the digital fog.",
+      "challenge_file": "challenges/2026-06-11.json"
   }
 }
 
