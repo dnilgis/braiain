@@ -1,0 +1,99 @@
+{
+  "day_number": 128,
+  "date": "2026-06-11",
+  "category": "Hidden Faces",
+  "category_emoji": "🧐",
+  "rounds": [
+    {
+      "id": "d128r1",
+      "type": "image",
+      "content": "images/d128_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**CATEGORY: TEXTURE PERFECTION**",
+      "_note": "Prompt: A photorealistic photograph of the rugged, deeply furrowed bark of an ancient oak tree trunk in extreme close-up, revealing intricate patterns, tiny lichen patches, and fine dust motes caught in its crevices. Captured with a Fujifilm X-T4, 80mm f/2.8 macro lens, under bright, clear midday sun, casting subtle shadows within the bark's depths."
+    },
+    {
+      "id": "d128r2",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1700916106082-032d831dcbc5?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwzfHxwYXJlaWRvbGlhfGVufDB8MHx8fDE3ODExMjYxMzZ8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Pascal Bernardon on Unsplash",
+      "pro_tip": "AI images often present \"too perfect\" compositions, like a stock photo. Real scenes usually have less idealized framing or subtle natural asymmetry.",
+      "source_url": "https://unsplash.com/photos/a-large-group-of-rocks-sitting-on-top-of-a-grass-covered-hillside-HEggF4OEZII"
+    },
+    {
+      "id": "d128r3",
+      "type": "image",
+      "content": "images/d128_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**CATEGORY: LIGHTING & REFLECTION**",
+      "_note": "Prompt: A photorealistic photograph of a cluster of smooth, grey granite boulders artfully scattered across the crest of a rolling, vibrant green grass-covered hillside, under an expansive sky. The individual blades of grass and tiny wildflowers are visible around the base of the rocks, captured with a Sony Alpha A7R IV, 35mm f/1.8 lens, during a bright, slightly overcast afternoon."
+    },
+    {
+      "id": "d128r4",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1678377809850-87be0a039e8e?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxfHxwYXJlaWRvbGlhfGVufDB8MHx8fDE3ODExMjYxMzZ8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Ludovico Ceroseis on Unsplash",
+      "pro_tip": "**CATEGORY: SUBTLE UNCANNY**",
+      "source_url": "https://unsplash.com/photos/a-waterfall-with-moss-growing-on-the-side-of-it-rC2go79OtCI"
+    },
+    {
+      "id": "d128r5",
+      "type": "image",
+      "content": "images/d128_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "AI excels at hyper-real, uniform textures. Look for impossibly detailed moss, bark, or rust that lacks natural variation or true randomness.",
+      "_note": "Prompt: A photorealistic photograph of a weathered, deep blue coin-operated tourist telescope, its metal housing showing authentic patches of flaky rust and peeling paint, angled slightly towards a hazy mountain range in the distance. The worn, textured grip and the coin slot's scratched metal are in sharp focus, shot with a Nikon Z7, 85mm f/1.4 lens, during a soft, golden hour sunset."
+    },
+    {
+      "id": "d128r6",
+      "type": "image",
+      "content": "images/d128_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are your pro tips for the AI detection game, \"Hidden Faces\":",
+      "_note": "Prompt: A photorealistic photograph of a lush, multi-tiered waterfall cascading down a sheer rock face, completely covered in vibrant, damp moss and ferns. The intricate texture of the wet moss is visible, with tiny water droplets clinging to its velvety surface, shot with a Canon EOS R5, 24-70mm f/2.8 lens, under soft, overcast morning light."
+    },
+    {
+      "id": "d128r7",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1631012347336-fe8150dd241f?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyfHxwYXJlaWRvbGlhfGVufDB8MHx8fDE3ODExMjYxMzZ8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Peter Laing on Unsplash",
+      "pro_tip": "Scan for minor inconsistencies or illogical details. Repeated patterns in natural elements like grass blades or water droplets often reveal AI generation.",
+      "source_url": "https://unsplash.com/photos/brown-tree-trunk-in-close-up-photography-RizHszOhZqA"
+    },
+    {
+      "id": "d128r8",
+      "type": "image",
+      "content": "images/d128_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Notice how light interacts. AI can create reflections that look 'painted on' or shadows that are technically correct but lack subtle atmospheric depth.",
+      "_note": "Prompt: A photorealistic photograph of a monumental, craggy sandstone monolith standing solitary in the vast expanse of a golden wheat field, stretching to the horizon under a dramatic, cloud-streaked sky. Close inspection reveals the porous texture of the sandstone, tiny fissures, and the delicate weave of countless wheat stalks surrounding its base, shot with a Canon EOS R6, 50mm f/1.4 lens, during the late afternoon sun."
+    },
+    {
+      "id": "d128r9",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/9978397/pexels-photo-9978397.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Иван Васючков on Pexels",
+      "pro_tip": "**CATEGORY: COMPOSITIONAL BALANCE**",
+      "source_url": "https://www.pexels.com/photo/close-up-phot-of-a-tower-viewer-9978397/"
+    },
+    {
+      "id": "d128r10",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1647711044295-a3e2f77d3730?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxMHx8cGFyZWlkb2xpYXxlbnwwfDB8fHwxNzgxMTI2MTM2fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Vitor Paladini on Unsplash",
+      "pro_tip": "**CATEGORY: DIGITAL ARTIFACTS**",
+      "source_url": "https://unsplash.com/photos/a-large-rock-in-the-middle-of-a-field-buNPyTmI36Q"
+    }
+  ],
+  "category_subtitle": "A daily thrill, discerning hidden faces in the digital fog."
+}
