@@ -1,0 +1,99 @@
+{
+  "day_number": 129,
+  "date": "2026-06-12",
+  "category": "Peanut Butter Bliss",
+  "category_emoji": "🍪",
+  "rounds": [
+    {
+      "id": "d129r1",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1607975218250-7faaf3e36bbf?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxfHxwZWFudXQlMjBidXR0ZXIlMjBjb29raWVzJTIwYmFraW5nfGVufDB8MHx8fDE3ODEyMTc3NTV8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Nathan Dumlao on Unsplash",
+      "pro_tip": "**CONTEXT CUES:** Note object discrepancies, like \"biscuits\" instead of \"cookies.\" Real images might feature natural flaws or items not exactly matching descriptions.",
+      "source_url": "https://unsplash.com/photos/person-holding-tray-of-cookies-AO_6utzivow"
+    },
+    {
+      "id": "d129r2",
+      "type": "image",
+      "content": "images/d129_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**PERFECTION PARADOX:** Watch for hyper-specific details like \"criss-cross fork marks\" or \"powdered sugar\" that appear too perfectly executed, lacking natural variation.",
+      "_note": "Prompt: A photorealistic photograph of several rustic peanut butter cookies scattered casually across a vintage black and white polka dot linen textile, showcasing the subtle fabric weave. The cookies have a slightly crumbly texture with visible ground peanut bits and a faint sheen, illuminated by soft natural window light. Captured with a Sony a7 III, 85mm f/1.4 lens."
+    },
+    {
+      "id": "d129r3",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1573827196605-0a95831e07f9?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxfHxwZWFudXQlMjBidXR0ZXIlMjBjb29raWV8ZW58MHwwfHx8MTc4MTIxNzY4N3ww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by George Gkaniatsas on Unsplash",
+      "pro_tip": "**ORGANIC TEXTURE:** Identify natural, less uniform textures in fabrics or cookies. Real photos often showcase genuine imperfections and authentic randomness.",
+      "source_url": "https://unsplash.com/photos/shallow-focus-photo-of-biscuits-nj1zUcpQOQA"
+    },
+    {
+      "id": "d129r4",
+      "type": "image",
+      "content": "images/d129_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**HAND HINTS:** Examine human elements. AI often struggles with realistic hands, sometimes creating uncanny valley effects despite prompts for \"wrinkles and pores.\"",
+      "_note": "Prompt: A photorealistic photograph of several perfectly round, rich brown peanut butter cookies neatly arranged on a pristine white marble countertop. Fine cookie crumbs are scattered around some of the cookies, which show a slightly coarse texture and a few tiny dark peanut flecks, all illuminated by bright, even studio lighting. Photographed with a Fujifilm X-T4, 56mm f/1.2 lens."
+    },
+    {
+      "id": "d129r5",
+      "type": "image",
+      "content": "images/d129_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**TEXTURE TRAP:** Identify unnaturally uniform or simulated textures, such as \"fabric weave\" or \"ground peanut bits,\" that lack organic randomness.",
+      "_note": "Prompt: A photorealistic photograph featuring a single, perfectly baked peanut butter cookie in sharp shallow focus, with a stack of similar cookies softly blurred in the background. The foreground cookie exhibits a delicate crisp crust texture with tiny visible sugar crystals and subtle cracks, captured under diffused daylight from a nearby window. Shot with a Nikon Z7, 105mm f/2.8 macro lens."
+    },
+    {
+      "id": "d129r6",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1706629854874-f7b240f06e26?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyMnx8cGVhbnV0JTIwYnV0dGVyJTIwY29va2llfGVufDB8MHx8fDE3ODEyMTc2ODd8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Mikey Frost on Unsplash",
+      "pro_tip": "**PRISTINE PROBLEM:** Observe environments for excessive perfection or deliberate arrangements. Even \"scattered crumbs\" can look unnaturally placed on an immaculate surface.",
+      "source_url": "https://unsplash.com/photos/three-chocolate-chip-cookies-on-a-white-plate-VzOAvLo11KU"
+    },
+    {
+      "id": "d129r7",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1621353354775-783845154a66?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxM3x8cGVhbnV0JTIwYnV0dGVyJTIwY29va2llfGVufDB8MHx8fDE3ODEyMTc2ODd8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Aditya Kulkarni on Unsplash",
+      "pro_tip": "**SURPRISE ELEMENTS:** Look for unexpected details or deviations from a specific prompt, like \"chocolate chip cookies\" instead of \"peanut butter,\" indicating real-world variation.",
+      "source_url": "https://unsplash.com/photos/brown-cookies-on-black-and-white-polka-dot-textile-fUb-IQlC0ng"
+    },
+    {
+      "id": "d129r8",
+      "type": "image",
+      "content": "images/d129_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**FOCUS FLAWLESSNESS:** Scrutinize focus transitions and micro-details like \"sugar crystals.\" AI often renders these with an almost artificial, too-clean perfection.",
+      "_note": "Prompt: A photorealistic photograph showing a pair of hands gently holding a rectangular metal baking tray laden with warm, freshly baked peanut butter cookies. The slight sheen on the metallic tray and the subtle wrinkles and pores on the person's hands are visible, with the cookies displaying a slightly puffed texture and golden-brown edges, under bright kitchen overhead lighting. Taken with a Canon EOS R6, 35mm f/1.4 lens."
+    },
+    {
+      "id": "d129r9",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1601782611443-060b1e760935?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxMHx8cGVhbnV0JTIwYnV0dGVyJTIwY3VwJTIwY29va2llc3xlbnwwfDB8fHwxNzgxMjE3ODAzfDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Hershe Go on Unsplash",
+      "pro_tip": "**AUTHENTIC ANATOMY:** Look for genuinely natural human features. Real hands display authentic wrinkles and pores without artificial smoothness or structural oddities.",
+      "source_url": "https://unsplash.com/photos/brown-round-cookies-on-white-surface-3StS2NlHszw"
+    },
+    {
+      "id": "d129r10",
+      "type": "image",
+      "content": "images/d129_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are your pro tips for the AI detection game, themed \"Peanut Butter Bliss\":",
+      "_note": "Prompt: A photorealistic photograph of three freshly baked peanut butter cookies arranged neatly on a smooth white ceramic plate. The cookies feature distinct criss-cross fork marks and subtle golden-brown edges, with tiny specks of powdered sugar visible, under soft indoor warm light. Shot with a Canon EOS R5, 50mm f/1.8 lens."
+    }
+  ],
+  "category_subtitle": "AI is buttering you up! Don't get stuck on fakes."
+}
