@@ -887,6 +887,13 @@
       "category_emoji": "🧐",
       "category_subtitle": "A daily thrill, discerning hidden faces in the digital fog.",
       "challenge_file": "challenges/2026-06-11.json"
+  },
+    "2026-06-12": {
+      "day_number": 129,
+      "category": "Peanut Butter Bliss",
+      "category_emoji": "🍪",
+      "category_subtitle": "AI is buttering you up! Don't get stuck on fakes.",
+      "challenge_file": "challenges/2026-06-12.json"
   }
 }
 
