@@ -894,6 +894,13 @@
       "category_emoji": "🍪",
       "category_subtitle": "AI is buttering you up! Don't get stuck on fakes.",
       "challenge_file": "challenges/2026-06-12.json"
+  },
+    "2026-06-13": {
+      "day_number": 130,
+      "category": "Axe Throwing Mania",
+      "category_emoji": "🪓",
+      "category_subtitle": "Sharpen your senses: Is it real, or just an AI axe-ident?",
+      "challenge_file": "challenges/2026-06-13.json"
   }
 }
 
