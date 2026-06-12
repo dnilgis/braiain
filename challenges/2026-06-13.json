@@ -1,0 +1,99 @@
+{
+  "day_number": 130,
+  "date": "2026-06-13",
+  "category": "Axe Throwing Mania",
+  "category_emoji": "🪓",
+  "rounds": [
+    {
+      "id": "d130r1",
+      "type": "image",
+      "content": "images/d130_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**TEXTURE OVERSHARPNESS:** AI often renders textures like wood grain or fabric with exaggerated, uniform sharpness, lacking true organic depth or natural variation.",
+      "_note": "Prompt: A photorealistic photograph of two friends, a man and a woman, casually leaning against a sturdy, distressed wooden safety barrier at an indoor axe throwing range, chatting and smiling. The camera captures the rough grain of the wood and the faint reflections of the throwing lanes in the woman's eyeglasses under the ambient indoor light, Panasonic Lumix S5, 50mm f/1.4."
+    },
+    {
+      "id": "d130r2",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1572887877606-db445a1ca3ba?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxMnx8YXhlJTIwdGhyb3dpbmd8ZW58MHwwfHx8MTc4MTI5MTYwM3ww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by John Hatchet on Unsplash",
+      "pro_tip": "**ORGANIC WEAR & TEAR:** Examine distressed elements. Real photos capture natural, irregular wear patterns and authentic material degradation, not just enhanced textures.",
+      "source_url": "https://unsplash.com/photos/a-couple-of-people-that-are-standing-in-front-of-a-fence-ldYWsp_6-Iw"
+    },
+    {
+      "id": "d130r3",
+      "type": "image",
+      "content": "images/d130_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**DETAIL FLAW:** Look for hyper-perfect details, like individual sweat beads or unnaturally sharp wood grain, lacking real-world imperfections.",
+      "_note": "Prompt: A photorealistic photograph of a man in a plaid shirt, intently focusing as he prepares to release an axe towards a well-used wooden target board. The camera captures the deep grain of the target wood and the slight sheen of sweat on his forehead under the indoor warm lighting, Canon EOS R5, 50mm f/1.8."
+    },
+    {
+      "id": "d130r4",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1649910812129-6cf7e194d21b?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxfHxheGUlMjB0aHJvd2luZ3xlbnwwfDB8fHwxNzgxMjkxNjAzfDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Acton Crawford on Unsplash",
+      "pro_tip": "**AUTHENTIC DYNAMICS:** Genuine action shots show organic, often imperfect, motion blur or subtle distortions inherent to rapid movement, less staged.",
+      "source_url": "https://unsplash.com/photos/a-man-hitting-a-baseball-with-a-bat-7tguAQimtys"
+    },
+    {
+      "id": "d130r5",
+      "type": "image",
+      "content": "images/d130_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**MOTION ANOMALIES:** Observe dynamic action. AI creates static \"motion blur\" or perfect dust, while other elements remain unnaturally sharp and frozen.",
+      "_note": "Prompt: A photorealistic photograph of a man in mid-powerful swing with a heavy throwing axe, his body twisted in a dynamic motion that mirrors a baseball player's follow-through. The camera captures the subtle muscle definition on his arm and fine dust kicked up from the floor by his footwork, under bright indoor lighting, Canon EOS R6, 70-200mm f/2.8."
+    },
+    {
+      "id": "d130r6",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/14041264/pexels-photo-14041264.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Jvxhn Visuals on Pexels",
+      "pro_tip": "**SUBTLE AMBIENCE:** Real photos capture natural ambient light, creating varied shadows and highlights that are organically integrated, not artificially stylized.",
+      "source_url": "https://www.pexels.com/photo/a-man-in-black-shirt-holding-an-axe-14041264/"
+    },
+    {
+      "id": "d130r7",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1572883214324-b57fdea087da?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxMHx8YXhlJTIwdGhyb3dpbmd8ZW58MHwwfHx8MTc4MTI5MTYwM3ww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by John Hatchet on Unsplash",
+      "pro_tip": "**NATURAL IMPERFECTIONS:** Real photos often include minor flaws like natural lens flare, subtle noise, or organic focus fall-off, adding authenticity.",
+      "source_url": "https://unsplash.com/photos/man-aiming-hatchet-on-board-YUBCqfCWQ7I"
+    },
+    {
+      "id": "d130r8",
+      "type": "image",
+      "content": "images/d130_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**LIGHTING UNIFORMITY:** Notice studio-style, perfectly focused lighting that unnaturally highlights features, often lacking realistic shadow play and fall-off for the scene.",
+      "_note": "Prompt: A photorealistic photograph of a striking close-up portrait of a man with a determined expression, holding a well-worn throwing axe across his chest in an indoor axe throwing range. The shot beautifully captures the subtle stubble on his jawline and the crisp edges of the bullseye patterns in the softly blurred background, under focused studio-style lighting, Canon EOS R5, 85mm f/1.2."
+    },
+    {
+      "id": "d130r9",
+      "type": "image",
+      "content": "images/d130_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**ENVIRONMENTAL CONSISTENCY:** Check background details. AI can generate a cohesive \"vibe,\" but minor inconsistencies often appear in reflections or distant textures.",
+      "_note": "Prompt: A photorealistic photograph of a diverse group of friends laughing and cheering in a dimly lit, cozy indoor axe throwing venue, some holding axes, others watching intently. The scene is illuminated by warm overhead lights, highlighting the sheen on the axe blades and the varied textures of their casual attire, Sony Alpha A7 III, 24-70mm f/2.8."
+    },
+    {
+      "id": "d130r10",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1661475736651-90928bc73ab3?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxM3x8YXhlJTIwdGhyb3dpbmd8ZW58MHwwfHx8MTc4MTI5MTYwM3ww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by David Schultz on Unsplash",
+      "pro_tip": "**RANDOMNESS & COMPLEXITY:** Real scenes have complex, slightly chaotic background details and varied crowd interactions, not always perfectly composed or uniform.",
+      "source_url": "https://unsplash.com/photos/a-group-of-people-in-a-room-hJMGAQA0C30"
+    }
+  ],
+  "category_subtitle": "Sharpen your senses: Is it real, or just an AI axe-ident?"
+}
