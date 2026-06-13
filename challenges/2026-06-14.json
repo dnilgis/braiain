@@ -1,0 +1,99 @@
+{
+  "day_number": 131,
+  "date": "2026-06-14",
+  "category": "Shadow Play",
+  "category_emoji": "🌗",
+  "rounds": [
+    {
+      "id": "d131r1",
+      "type": "image",
+      "content": "images/d131_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are your pro tips for the AI detection game, \"Shadow Play\":",
+      "_note": "Prompt: A photorealistic photograph of a woman in a linen dress, walking confidently along a sun-drenched cobblestone street, her long shadow trailing behind her. Shot with a Canon EOS R5, 50mm f/1.8, during late afternoon golden hour, highlighting the intricate fabric weave of her dress and the rough texture of the ancient cobblestones."
+    },
+    {
+      "id": "d131r2",
+      "type": "image",
+      "content": "images/d131_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**SYNTHETIC LIGHTING:** Look for lighting that feels unnaturally ideal or too balanced. AI often lacks the subtle flaws, lens flares, or light spills of a real camera.",
+      "_note": "Prompt: A photorealistic photograph, extreme close-up, of a person's outstretched hand reaching towards a beam of intense light filtering through a window, casting a deep, distorted shadow against a textured wall. Shot with a Nikon Z7, 105mm f/2.8 macro lens, in dramatic afternoon light, showcasing individual skin pores on the knuckles and fine dust motes suspended in the illuminated air."
+    },
+    {
+      "id": "d131r3",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/12691902/pexels-photo-12691902.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Meital ben hava on Pexels",
+      "pro_tip": "**ORGANIC IMPERFECTIONS:** Look for slight imperfections like natural lens flare, subtle dust, or minor focus variations that add authenticity and character to the image.",
+      "source_url": "https://www.pexels.com/photo/shadow-of-a-person-holding-a-leaf-12691902/"
+    },
+    {
+      "id": "d131r4",
+      "type": "image",
+      "content": "images/d131_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**COMPOSITIONAL STIFFNESS:** Images might feel overtly staged, too symmetrical, or perfectly centered. Real photos often possess a more dynamic, less rigid composition.",
+      "_note": "Prompt: A photorealistic photograph of a woman with long, dark hair, silhouetted slightly as she stands thoughtfully by a large, sun-drenched window, her body casting a soft, elongated shadow across the polished wooden floor. Taken with a Canon EOS R6, 35mm f/1.4 lens, during a bright morning, highlighting the subtle fabric weave of her loose-fitting blouse and the faint reflections on the window glass."
+    },
+    {
+      "id": "d131r5",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/17641767/pexels-photo-17641767.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by David Kouakou on Pexels",
+      "pro_tip": "**DEPTH REALISM:** Shadows might exhibit nuanced softness, subtle color shifts, or natural diffraction around edges, reflecting complex light interaction.",
+      "source_url": "https://www.pexels.com/photo/a-little-boy-walking-on-the-pavement-in-sunlight-17641767/"
+    },
+    {
+      "id": "d131r6",
+      "type": "image",
+      "content": "images/d131_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**SHADOW PERFECTION:** AI shadows frequently appear too clean, perfectly defined, or flawlessly consistent without natural diffusion or subtle distortions from complex surfaces.",
+      "_note": "Prompt: A photorealistic black and white photograph of a small child in overalls taking a tentative step on a bright, sunlit sidewalk, their exaggerated shadow stretching long before them. Captured with a Leica M10 Monochrom, 35mm f/2, under harsh midday sun, emphasizing the individual grit of the concrete pavement and the faint scuff marks on their canvas sneakers."
+    },
+    {
+      "id": "d131r7",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1481754100984-dbae571fe45b?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxfHxzaGFkb3clMjBwbGF5JTJDJTIwbGlnaHQlMjBjb250cmFzdHxlbnwwfDB8fHwxNzgxMzg1NTY2fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Martino Pietropoli on Unsplash",
+      "pro_tip": "**REPETITIVE PATTERNS:** Observe background textures like walls or foliage; AI can sometimes generate subtle, repeating patterns or unnatural uniformity.",
+      "source_url": "https://unsplash.com/photos/woman-walking-with-shadow-pirWeToS2mA"
+    },
+    {
+      "id": "d131r8",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/14467148/pexels-photo-14467148.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Oguz Kagan Cevik on Pexels",
+      "pro_tip": "**AUTHENTIC BOKEH:** Observe natural, non-uniform background blur. Real lenses produce distinctive bokeh with unique characteristics, not always perfectly smooth.",
+      "source_url": "https://www.pexels.com/photo/close-up-of-a-reaching-hand-14467148/"
+    },
+    {
+      "id": "d131r9",
+      "type": "image",
+      "content": "images/d131_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**HYPER-TEXTURES:** Scrutinize fabric weaves, skin pores, or pavement grit. AI often renders these with unnatural, uniform intensity and excessive detail, lacking real-world softness.",
+      "_note": "Prompt: A photorealistic photograph of a dramatic shadow cast by a hand gently hovering over a vibrant crimson maple leaf resting on a weathered terracotta patio. Taken with a Fujifilm X-T4, 60mm f/2.4 macro lens, in crisp morning light, revealing the intricate vein patterns on the leaf and the subtle texture of the tile grout."
+    },
+    {
+      "id": "d131r10",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1533594285052-5a88351dab21?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwzfHxzaGFkb3clMjBwbGF5JTJDJTIwbGlnaHQlMjBjb250cmFzdHxlbnwwfDB8fHwxNzgxMzg1NTY2fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Fernando Rodrigues on Unsplash",
+      "pro_tip": "**ENVIRONMENTAL NUANCE:** Details like subtle reflections, worn surfaces, or unexpected background elements often show genuine wear and complex interaction with light.",
+      "source_url": "https://unsplash.com/photos/woman-standing-near-window-j-wHlwUPLDo"
+    }
+  ],
+  "category_subtitle": "Conquer the shadows. Detect the AI."
+}
