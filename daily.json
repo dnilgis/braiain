@@ -901,6 +901,13 @@
       "category_emoji": "🪓",
       "category_subtitle": "Sharpen your senses: Is it real, or just an AI axe-ident?",
       "challenge_file": "challenges/2026-06-13.json"
+  },
+    "2026-06-14": {
+      "day_number": 131,
+      "category": "Shadow Play",
+      "category_emoji": "🌗",
+      "category_subtitle": "Conquer the shadows. Detect the AI.",
+      "challenge_file": "challenges/2026-06-14.json"
   }
 }
 
