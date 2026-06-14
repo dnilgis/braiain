@@ -1,0 +1,99 @@
+{
+  "day_number": 132,
+  "date": "2026-06-15",
+  "category": "Lobster Feast",
+  "category_emoji": "🦞",
+  "rounds": [
+    {
+      "id": "d132r1",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/5928119/pexels-photo-5928119.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Artem Zhukov on Pexels",
+      "pro_tip": "**NATURAL DOF:** Look for natural, sometimes slightly imperfect, depth of field and bokeh. Real lenses create organic blur that AI might struggle to replicate consistently or realistically.",
+      "source_url": "https://www.pexels.com/photo/an-assorted-fresh-seafood-on-the-market-5928119/"
+    },
+    {
+      "id": "d132r2",
+      "type": "image",
+      "content": "images/d132_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**FLAWLESS COMPOSITION:** Look for unnaturally perfect plating and compositions. AI often creates scenes that are \"too artfully arranged\" without the natural imperfections of a real photo.",
+      "_note": "Prompt: A photorealistic photograph of a thorny Caribbean spiny lobster peeking cautiously from beneath a large, colorful plate coral formation in a sun-drenched reef off Cozumel, Mexico, its long, banded antennae extended. Sunlight piercing the water highlights the rough, bumpy texture of the lobster's carapace and the delicate, patterned surface of the coral, captured with an underwater housing for an Olympus TG-6 and its 25mm f/2.0 lens under natural bright daylight."
+    },
+    {
+      "id": "d132r3",
+      "type": "image",
+      "content": "images/d132_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are your pro tips for the AI detection game, Lobster Feast edition:",
+      "_note": "Prompt: A photorealistic photograph of a perfectly plated gourmet meal featuring a grilled split Maine lobster tail, alongside golden turmeric rice and sautéed green beans, artfully arranged on a pristine white ceramic plate with a lemon wedge. The lobster meat shows subtle char marks and glistening herb butter, with individual grains of rice and crisp bean textures visible, captured under soft, diffused overhead studio lighting using a Canon EOS 5D Mark IV with a 100mm f/2.8 macro lens."
+    },
+    {
+      "id": "d132r4",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1657618217273-00513772e15d?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw0fHxsb2JzdGVyJTIwZGlzaHxlbnwwfDB8fHwxNzgxNDY1MzQwfDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by mauro mari on Unsplash",
+      "pro_tip": "**AUTHENTIC IMPERFECTIONS:** Real photos often include natural imperfections like slight smudges, uneven cuts, or unexpected glares, adding to their authenticity and raw feel.",
+      "source_url": "https://unsplash.com/photos/a-plate-of-seafood-kMwr4Z4i67E"
+    },
+    {
+      "id": "d132r5",
+      "type": "image",
+      "content": "images/d132_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**HYPER-REAL YET STERILE:** AI can produce images that are hyper-realistic yet lack organic imperfections. Details are sharp but the overall scene might feel too clean, staged, or sterile.",
+      "_note": "Prompt: A photorealistic photograph of a bustling seafood stall at a vibrant New York market, showcasing towering piles of fresh blue crabs and an array of glistening shellfish on beds of crushed ice, with several live lobsters in large wooden crates in the foreground. The cool, crisp overhead market lighting reveals the individual ice crystals and the wet sheen on the seafood, with blurred market-goers and a hand-painted price sign in the background, taken with a Fujifilm X-T4 and a 23mm f/2 lens."
+    },
+    {
+      "id": "d132r6",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/4606064/pexels-photo-4606064.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by James Lee on Pexels",
+      "pro_tip": "**SUBTLE REALISM:** Real photos portray details realistically without the hyper-emphasis of AI. Textures are visible but usually not unnaturally crisp or clinically \"perfect\" on every surface.",
+      "source_url": "https://www.pexels.com/photo/a-lobster-in-a-coral-reef-4606064/"
+    },
+    {
+      "id": "d132r7",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/24246111/pexels-photo-24246111.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Change C.C on Pexels",
+      "pro_tip": "**CONSISTENCY GLITCH:** In complex scenes, observe if repetitive elements like ice crystals or small shells appear too uniform. AI can sometimes struggle with natural, varied imperfections.",
+      "source_url": "https://www.pexels.com/photo/hands-holding-a-plate-with-lobster-and-vegetables-24246111/"
+    },
+    {
+      "id": "d132r8",
+      "type": "image",
+      "content": "images/d132_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**TEXTURE OVERLOAD:** AI images often exhibit hyper-detailed textures, like individual rice grains or skin pores, sometimes feeling too perfect or clinically rendered.",
+      "_note": "Prompt: A photorealistic photograph of an inviting seafood feast on a large, slightly rustic wooden platter, prominently featuring a whole steamed Dungeness crab, a generous pile of glistening shrimp, and several steamed clams, all garnished with fresh parsley and lemon. Soft, warm window light illuminates the varying textures of the shells and the condensation on a nearby chilled glass of rosé, shot with a Sony Alpha 7 III and an 85mm f/1.4 lens."
+    },
+    {
+      "id": "d132r9",
+      "type": "image",
+      "content": "images/d132_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**TECHNICAL PERFECTION:** AI images often boast too-perfect lighting or specific lens effects, mimicking a technical prompt with flawless execution that can feel manufactured.",
+      "_note": "Prompt: A photorealistic photograph of a pair of hands, with clearly visible skin pores and fine lines, holding a vibrant red, freshly steamed Canadian lobster over a checkered white and blue tablecloth on a well-worn wooden table. The intricate patterns on the lobster's shell are in sharp focus, contrasting with the slightly blurred fabric weave of the tablecloth, all bathed in the warm, inviting glow of indoor pendant lighting, captured with a Nikon Z7 II and a 50mm f/1.2 lens."
+    },
+    {
+      "id": "d132r10",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1643771554079-038da9d3b976?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyNHx8bG9ic3RlcnxlbnwwfDB8fHwxNzgxNDY1MzU4fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Brian J. Tromp on Unsplash",
+      "pro_tip": "**ORGANIC LIGHTING:** Observe nuanced and unpredictable lighting. Real photos exhibit more organic shadows and highlights, especially with natural light, lacking AI's sometimes \"perfect\" glow.",
+      "source_url": "https://unsplash.com/photos/a-person-holding-a-lobster-on-a-table-G5zZsIInEBc"
+    }
+  ],
+  "category_subtitle": "Steaming red lobsters, butter dripping: detect the AI imposters."
+}
