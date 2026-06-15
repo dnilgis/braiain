@@ -915,6 +915,13 @@
       "category_emoji": "🦞",
       "category_subtitle": "Steaming red lobsters, butter dripping: detect the AI imposters.",
       "challenge_file": "challenges/2026-06-15.json"
+  },
+    "2026-06-16": {
+      "day_number": 133,
+      "category": "World Sea Turtle",
+      "category_emoji": "🐢",
+      "category_subtitle": "Deep sea or deep fake? Dive into turtle detection.",
+      "challenge_file": "challenges/2026-06-16.json"
   }
 }
 
