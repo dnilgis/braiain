@@ -1,0 +1,99 @@
+{
+  "day_number": 134,
+  "date": "2026-06-17",
+  "category": "Waste Warriors",
+  "category_emoji": "🗑️",
+  "rounds": [
+    {
+      "id": "d134r1",
+      "type": "image",
+      "content": "images/d134_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**CONSISTENT LIGHTING:** AI creates remarkably consistent and often \"ideal\" lighting. Shadows and highlights perfectly align with prompt descriptions, lacking natural variation or subtlety.",
+      "_note": "Prompt: A photorealistic photograph of a large, clean white and sky-blue recycling truck driving down a suburban street on a clear cool night, its powerful headlights illuminating the wet asphalt ahead, creating subtle reflections. The road is slightly damp, and the faint glow of distant streetlights catches the chrome details of the truck, shot with a Fujifilm X-T4, 23mm f/1.4."
+    },
+    {
+      "id": "d134r2",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1612145342813-849b0c3e7f71?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw3fHxnYXJiYWdlJTIwdHJ1Y2t8ZW58MHwwfHx8MTc4MTYyNTIyMHww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Carl Campbell on Unsplash",
+      "pro_tip": "**SPONTANEOUS DETAILS:** Real-world scenes feature unscripted elements. Spot unexpected background objects, natural human expressions, or slight environmental clutter not explicitly described.",
+      "source_url": "https://unsplash.com/photos/man-in-orange-jacket-and-blue-denim-jeans-standing-near-garbage-6K_oQcTCuNk"
+    },
+    {
+      "id": "d134r3",
+      "type": "image",
+      "content": "images/d134_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are pro tips for the AI detection game, \"Waste Warriors\":",
+      "_note": "Prompt: A photorealistic photograph of a male sanitation worker in a slightly worn, dark green utility jacket and safety gloves, leaning against the side of a large, olive green recycling truck during bright midday sun. The fabric weave of his jacket is visible, along with the faint scratches on the truck's painted metal, captured with a Canon EOS R5, 70mm f/2.8."
+    },
+    {
+      "id": "d134r4",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1608476524605-2ad765c3bd78?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw0fHxnYXJiYWdlJTIwdHJ1Y2t8ZW58MHwwfHx8MTc4MTYyNTIyMHww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Carl Campbell on Unsplash",
+      "pro_tip": "**CONTEXTUAL FIDELITY:** AI often creates scenes perfectly matching descriptive cues. Note the exact color of jackets and trucks, specific clothing details, and precisely arranged objects as prompted.",
+      "source_url": "https://unsplash.com/photos/man-in-green-jacket-standing-beside-green-truck-during-daytime-stzGl8p5Vio"
+    },
+    {
+      "id": "d134r5",
+      "type": "image",
+      "content": "images/d134_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**HYPER-DETAILED TEXTURES:** AI excels at rendering minute textures with unnatural clarity. Look for perfectly visible fabric weaves, distinct asphalt pebbles, or precise scratches on metal surfaces.",
+      "_note": "Prompt: A photorealistic photograph of a modern, white and orange garbage truck parked on a quiet, sun-drenched urban street in the late afternoon, with classic brownstone residential buildings lining the background. The texture of the asphalt road is distinct, showing small pebbles and cracks, and the truck's industrial metal panels show slight scuffs, captured with a Sony A7 IV, 35mm f/1.4."
+    },
+    {
+      "id": "d134r6",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1597266673731-5f89216cf5e0?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxNHx8Z2FyYmFnZSUyMHRydWNrfGVufDB8MHx8fDE3ODE2MjUyMjB8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Sam LaRussa on Unsplash",
+      "pro_tip": "**AMBIGUOUS LIGHTING:** Lighting in real photos can be less idealized than AI. Observe subtle light variations, less defined shadows, or natural glow that isn't perfectly consistent.",
+      "source_url": "https://unsplash.com/photos/white-and-blue-truck-on-road-during-nighttime-x_Lecxyfh4A"
+    },
+    {
+      "id": "d134r7",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1577554969330-4fca5ed32923?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxMnx8Z2FyYmFnZSUyMHRydWNrfGVufDB8MHx8fDE3ODE2MjUyMjB8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Lucas van Oort on Unsplash",
+      "pro_tip": "**ORGANIC TEXTURE:** Real-world textures possess natural irregularities. Look for less-than-perfect fabric weaves, varied asphalt textures, or authentic, uneven wear on painted metal surfaces.",
+      "source_url": "https://unsplash.com/photos/garbage-in-a-garbage-truck-UbxvMVYKoxY"
+    },
+    {
+      "id": "d134r8",
+      "type": "image",
+      "content": "images/d134_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**CAMERA PERFECTION:** Observe the AI's meticulous adherence to camera specs. Flawless bokeh, precise depth of field, and specific focal length effects are often generated with uncanny accuracy.",
+      "_note": "Prompt: A photorealistic photograph of a female waste management supervisor in a bright orange high-visibility jacket and sturdy blue work jeans, standing near a neatly collected pile of sorted recyclables in an industrial yard under bright, diffused daylight. The weave of her jacket's reflective stripes and the rough texture of the cardboard boxes in the pile are sharply rendered, taken with a Nikon Z7 II, 85mm f/1.8."
+    },
+    {
+      "id": "d134r9",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/35436630/pexels-photo-35436630.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by José Franco on Pexels",
+      "pro_tip": "**NATURAL ABERRATIONS:** Real photos often include minor, unprompted visual imperfections. Look for subtle lens flares, organic light falloff, or less-than-perfect focus in non-critical areas.",
+      "source_url": "https://www.pexels.com/photo/urban-garbage-truck-on-city-street-in-daylight-35436630/"
+    },
+    {
+      "id": "d134r10",
+      "type": "image",
+      "content": "images/d134_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**MATERIAL ACCURACY:** Identify the AI's ability to render diverse material properties with precision. Look for convincing plastic sheen, distinct crinkled paper, or realistic damp organic residue details.",
+      "_note": "Prompt: A photorealistic photograph of a dense load of mixed household waste, including crumpled plastic bottles, food packaging, and cardboard, piled high within the rear compactor of a garbage truck under harsh mid-morning sunlight. The various textures of plastic sheen, crinkled paper, and damp organic residue are highly detailed, captured with a Canon EOS 5D Mark IV, 100mm f/2.8 Macro lens."
+    }
+  ],
+  "category_subtitle": "Waste not, warrior: Dump the digital dupes daily."
+}
