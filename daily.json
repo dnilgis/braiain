@@ -922,6 +922,13 @@
       "category_emoji": "🐢",
       "category_subtitle": "Deep sea or deep fake? Dive into turtle detection.",
       "challenge_file": "challenges/2026-06-16.json"
+  },
+    "2026-06-17": {
+      "day_number": 134,
+      "category": "Waste Warriors",
+      "category_emoji": "🗑️",
+      "category_subtitle": "Waste not, warrior: Dump the digital dupes daily.",
+      "challenge_file": "challenges/2026-06-17.json"
   }
 }
 
