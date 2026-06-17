@@ -1,0 +1,99 @@
+{
+  "day_number": 135,
+  "date": "2026-06-18",
+  "category": "Reel Fun",
+  "category_emoji": "🎣",
+  "rounds": [
+    {
+      "id": "d135r1",
+      "type": "image",
+      "content": "images/d135_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**HYPER-DETAIL:** Look for unnaturally perfect scales or fabric weaves where every thread is rendered. Water droplets may appear too symmetrical or glassy.",
+      "_note": "Prompt: A photorealistic photograph of two men standing casually on a weathered wooden pier that juts into a serene lake, one holding a fishing rod while the other gazes out at the horizon. The golden hour sunlight warmly illuminates the rough, textured planks of the pier and glints off the gentle ripples on the water, revealing the subtle weave of their sun-faded shirts. Captured with a Fujifilm X-T4, 22mm f/2."
+    },
+    {
+      "id": "d135r2",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1625027588969-8c30887f52ba?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyMnx8ZmlzaGluZyUyMHJpdmVyfGVufDB8MHx8fDE3ODE3MzU3MTJ8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Jay Miller on Unsplash",
+      "pro_tip": "**REALISTIC FOCUS:** Notice natural depth of field where not every element is razor-sharp. Human expressions and poses often appear less staged and more genuine.",
+      "source_url": "https://unsplash.com/photos/man-in-red-tank-top-holding-fishing-rod-D4mlT0zn_Eo"
+    },
+    {
+      "id": "d135r3",
+      "type": "image",
+      "content": "images/d135_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**EXCESSIVE CLARITY:** Notice unnaturally sharp details on mossy rocks or perfectly delineated individual blades of grass. Shadows often appear too crisp and defined.",
+      "_note": "Prompt: A photorealistic photograph of a strong man in a vivid red tank top, holding his fishing rod upright with both hands, looking off into the distance by a wide, open lake. The bright sunlight emphasizes the detailed weave of his tank top fabric and the subtle sun-kissed texture of his skin, creating a sharp glint off the fishing reel. Captured with a Canon EOS R6, 50mm f/1.2."
+    },
+    {
+      "id": "d135r4",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1688991710832-1a519f491673?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw2fHxmaXNoaW5nJTIwcml2ZXJ8ZW58MHwwfHx8MTc4MTczNTcxMnww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Vitalii Khodzinskyi on Unsplash",
+      "pro_tip": "**NATURAL IMPERFECTIONS:** Look for subtle dust, minor wear on clothing, or naturally uneven skin textures. Real photos often have small, authentic flaws.",
+      "source_url": "https://unsplash.com/photos/a-couple-of-men-standing-on-top-of-a-pier-next-to-a-lake-nULZ_Ck-EwY"
+    },
+    {
+      "id": "d135r5",
+      "type": "image",
+      "content": "images/d135_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**TEXTURE REPETITION:** Observe repetitive patterns in wood grain or uniform fabric textures. Water ripples and reflections might look too consistent or artificially glossy.",
+      "_note": "Prompt: A photorealistic photograph of an older man, focused intently as he rebaits his hook by the calm bank of a river, with his fishing rod propped nearby under a bright, sunny summer sky. The sunlight highlights the fine detail of the mossy river rocks and casts sharp shadows from the individual blades of grass, showing subtle perspiration on his brow. Captured with a Nikon D850, 35mm f/1.8."
+    },
+    {
+      "id": "d135r6",
+      "type": "image",
+      "content": "images/d135_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Here are 10 pro tips for the AI detection game, \"Reel Fun\":",
+      "_note": "Prompt: A photorealistic photograph of a seasoned angler in a plaid shirt, his calloused hands proudly displaying a large, mottled brown bass with intricate scale patterns and a few lingering water droplets. The soft, diffused afternoon light illuminates the fine wrinkles around his eyes and the subtle weave of his shirt fabric. Captured with a Sony a7 III, 70-200mm f/2.8 lens."
+    },
+    {
+      "id": "d135r7",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1573956869478-7f1f3bed8d14?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxNnx8ZmlzaGluZyUyMHJpdmVyfGVufDB8MHx8fDE3ODE3MzU3MTJ8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Malachi Brooks on Unsplash",
+      "pro_tip": "**PERFECT REFLECTIONS:** Look for fish scales reflecting light too perfectly or unnaturally uniform sand particles. Stubble or hair might lack natural, varied growth.",
+      "source_url": "https://unsplash.com/photos/man-holding-brown-fish-F26bq3Zv9p0"
+    },
+    {
+      "id": "d135r8",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/19248864/pexels-photo-19248864.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Roman Biernacki on Pexels",
+      "pro_tip": "**ORGANIC TEXTURES:** Identify fabric weaves or skin textures that show natural irregularities, creases, or slight blemishes. Glints and reflections appear more natural, less exaggerated.",
+      "source_url": "https://www.pexels.com/photo/fisherman-squatting-and-holding-fish-19248864/"
+    },
+    {
+      "id": "d135r9",
+      "type": "image",
+      "content": "images/d135_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**UNIFORM TEXTURE:** Check for fabric weaves or skin textures that appear too perfectly rendered and consistent. Watch for overly sharp or artificial glints on objects.",
+      "_note": "Prompt: A photorealistic photograph of a contented man sitting on a small rock near the lakeshore, proudly holding up a gleaming, freshly caught perch, its scales still wet and reflective. The soft, late afternoon light beautifully illuminates the fine sand particles on the bank and highlights the subtle texture of his casual long-sleeved shirt and the faint stubble on his chin. Captured with a Sony Alpha 1, 85mm f/1.4."
+    },
+    {
+      "id": "d135r10",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/14848553/pexels-photo-14848553.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Onur Uslu on Pexels",
+      "pro_tip": "**AUTHENTIC AMBIENCE:** Observe natural, sometimes less dramatic lighting with realistic shadows. Background elements like water or foliage may show subtle, organic imperfections.",
+      "source_url": "https://www.pexels.com/photo/man-fishing-in-a-river-14848553/"
+    }
+  ],
+  "category_subtitle": "Daily dose of reel fun: is it real or AI-generated?"
+}
