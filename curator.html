@@ -307,6 +307,7 @@
     <button class="btn btn-yellow btn-sm" onclick="suggestThemes()">✨ SUGGEST THEMES</button>
     <button class="btn btn-outline btn-sm" onclick="document.getElementById('import-file').click()">📂 IMPORT JSON</button>
     <input type="file" id="import-file" accept=".json" style="display:none" onchange="importJSON(event)">
+    <button class="btn btn-outline btn-sm" onclick="clearDraft()" title="Wipe restored draft and reset prompts/tips">↺ CLEAR DRAFT</button>
     <span class="status" id="import-status"></span>
   </div>
   <div class="status" id="days-status"></div>
@@ -443,6 +444,107 @@ async function apiError(resp, prefix='') {
   return new Error(`${tag}HTTP ${resp.status}${detail ? ' — ' + detail : ''}`);
 }
 
+/* POST to Gemini with automatic back-off on 429 (quota) / 503 (overload).
+   Returns parsed JSON, or throws a descriptive apiError after exhausting retries. */
+async function geminiPOST(url, body, { retries = 2, statusId = '', label = '' } = {}) {
+  let attempt = 0;
+  while (true) {
+    const resp = await fetch(url, {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body)
+    });
+    if (resp.ok) return resp.json();
+    if ((resp.status === 429 || resp.status === 503) && attempt < retries) {
+      const wait = Math.min(32000, 4000 * Math.pow(2, attempt)); // 4s → 8s → 16s
+      if (statusId) stat(statusId, `${label || 'API'} ${resp.status === 429 ? 'quota' : 'overload'} (HTTP ${resp.status}) — waiting ${Math.round(wait/1000)}s then retrying (${attempt+1}/${retries})…`, 'err');
+      await sleep(wait); attempt++; continue;
+    }
+    throw await apiError(resp, label);
+  }
+}
+
+/* Reject leaked LLM preamble / header lines so they can never land in a pro_tip.
+   Returns a clean tip string, or '' if the line isn't a usable tip. */
+function sanitizeTip(s) {
+  if (!s) return '';
+  let t = String(s).trim()
+    .replace(/^\s*\d+[\.\)]\s*/, '')   // leading "1." / "1)"
+    .replace(/^[-•*]\s*/, '')          // leading bullet
+    .trim();
+  const low = t.toLowerCase();
+  if (/^(here (are|is)|sure[,!:]|okay[,!:]|certainly|of course|as an ai|below (are|is)|these are|i('?m| am) happy|tips? (for|themed)|pro tips?)/.test(low)) return '';
+  if (t.endsWith(':') && t.split(/\s+/).length <= 12) return ''; // header-only line
+  if (t.length < 15) return '';
+  return t;
+}
+
+/* ── Order scoring: keep Preview and Export in lock-step ── */
+function currentItems() {
+  const items = [];
+  for (let i = 0; i < 5; i++) if (REAL[i]) items.push({ source: 'human', slot: i });
+  for (let i = 0; i < 5; i++) if (AI[i])   items.push({ source: 'ai',    slot: i });
+  return items;
+}
+function scoreOrder(arr) {
+  let sc = 10, st = 1;
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i].source === arr[i-1].source) { st++; if (st >= 3) sc -= 3; if (st >= 4) sc -= 5; }
+    else st = 1;
+  }
+  let alt = true;
+  for (let i = 1; i < arr.length; i++) { if (arr[i].source === arr[i-1].source) { alt = false; break; } }
+  if (alt) sc -= 10; // perfect RARAR… is too easy to read
+  const af = arr.slice(0, 5).filter(i => i.source === 'ai').length;
+  if (Math.abs(af - 2.5) > 1.5) sc -= 2;
+  if (arr.length >= 3 && arr.slice(0, 3).every(s => s.source === arr[0].source)) sc -= 2;
+  if (arr.length >= 3 && arr.slice(-3).every(s => s.source === arr[arr.length-1].source)) sc -= 2;
+  return sc;
+}
+function pickBestOrder(items, tries = 60) {
+  let best = items.slice(), bestS = -999;
+  for (let a = 0; a < tries; a++) {
+    const sh = items.slice();
+    for (let i = sh.length - 1; i > 0; i--) { const j = Math.floor(Math.random()*(i+1)); [sh[i], sh[j]] = [sh[j], sh[i]]; }
+    const sc = scoreOrder(sh);
+    if (sc > bestS) { bestS = sc; best = sh; }
+    if (sc >= 10) break;
+  }
+  return { order: best, score: bestS };
+}
+
+/* ── Draft autosave: survive a refresh, auto-clear on a new day ── */
+const _val = id => (document.getElementById(id)?.value ?? '');
+const _setVal = (id, v) => { const el = document.getElementById(id); if (el) el.value = v; };
+function saveDraft() {
+  try {
+    localStorage.setItem('braiain_draft', JSON.stringify({
+      date: _val('cfg-date'), cat: _val('cfg-cat'), emoji: _val('cfg-emoji'),
+      subtitle: _val('cfg-subtitle'), query: _val('us-query'),
+      prompts: [0,1,2,3,4].map(i => _val(`prompt-${i}`)),
+      tips:    [0,1,2,3,4].map(i => _val(`tip-${i}`))
+    }));
+  } catch (e) {}
+}
+function loadDraft() {
+  let d; try { d = JSON.parse(localStorage.getItem('braiain_draft') || 'null'); } catch (e) { return false; }
+  const todayKey = new Date().toISOString().split('T')[0];
+  if (!d || d.date !== todayKey) return false; // only restore same-day work
+  if (d.cat)      _setVal('cfg-cat', d.cat);
+  if (d.emoji)    _setVal('cfg-emoji', d.emoji);
+  if (d.subtitle) _setVal('cfg-subtitle', d.subtitle);
+  if (d.query)    _setVal('us-query', d.query);
+  if (Array.isArray(d.prompts)) for (let i = 0; i < 5; i++) if (d.prompts[i]) prompts[i] = d.prompts[i];
+  if (Array.isArray(d.tips))    for (let i = 0; i < 5; i++) if (d.tips[i])    tips[i]    = d.tips[i];
+  return true;
+}
+function clearDraft() {
+  localStorage.removeItem('braiain_draft');
+  prompts = [...defaultPrompts]; tips = [...defaultTips];
+  ['cfg-cat','cfg-emoji','cfg-subtitle','us-query'].forEach(id => _setVal(id, ''));
+  renderAICards();
+  stat('import-status', 'Draft cleared ✓', 'ok');
+}
+
 const defaultPrompts = [
   'A photorealistic photograph of [subject], natural lighting, shot on Canon EOS R5, 85mm lens',
   'A photorealistic photograph of [subject], casual composition, slightly messy, everyday life, natural colors',
@@ -490,16 +592,21 @@ window.addEventListener('DOMContentLoaded', () => {
   const today = new Date();
   document.getElementById('cfg-date').value = today.toISOString().split('T')[0];
 
-  // Day 9 = 2026-02-12 is the last known entry
-  const knownDay = 9;
-  const knownDate = new Date('2026-02-12T12:00:00');
+  // Anchor: day 134 = 2026-06-17 (update only if you ever reset numbering)
+  const knownDay = 134;
+  const knownDate = new Date('2026-06-17T12:00:00');
   today.setHours(12, 0, 0, 0);
   const diffDays = Math.round((today - knownDate) / 86400000);
   document.getElementById('cfg-day').value = Math.max(knownDay + diffDays, knownDay);
 
+  const restored = loadDraft();
   renderRealStrip();
   renderAIStrip();
   renderAICards();
+  if (restored) stat('import-status', 'Draft restored from earlier today — “Clear draft” to start fresh', 'ok');
+
+  // Autosave text work on every edit (cheap; images aren't persisted)
+  document.addEventListener('input', saveDraft);
 });
 
 /* ═══════════════════════════════════════
@@ -841,12 +948,11 @@ async function geminiGen(i) {
     let resp, data;
 
     if (model === 'imagen-3.0-generate-002') {
-      resp = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:predict?key=${key}`, {
-        method: 'POST', headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ instances: [{ prompt }], parameters: { sampleCount: 1, aspectRatio: '4:3' } })
-      });
-      if (!resp.ok) throw await apiError(resp, model);
-      data = await resp.json();
+      data = await geminiPOST(
+        `https://generativelanguage.googleapis.com/v1beta/models/${model}:predict?key=${key}`,
+        { instances: [{ prompt }], parameters: { sampleCount: 1, aspectRatio: '4:3' } },
+        { statusId: `ai-st-${i}`, label: model }
+      );
       const prev = document.getElementById(`prev-${i}`);
       let found = false;
       if (data.predictions) {
@@ -868,15 +974,14 @@ async function geminiGen(i) {
       }
       if (!found) throw new Error('No image returned');
     } else {
-      resp = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${key}`, {
-        method: 'POST', headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
+      data = await geminiPOST(
+        `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${key}`,
+        {
           contents: [{ parts: [{ text: prompt }], role: 'user' }],
           generationConfig: { responseModalities: ['TEXT', 'IMAGE'] }
-        })
-      });
-      if (!resp.ok) throw await apiError(resp, model);
-      data = await resp.json();
+        },
+        { statusId: `ai-st-${i}`, label: model }
+      );
       let found = false;
       const prev = document.getElementById(`prev-${i}`);
       if (data.candidates?.[0]?.content?.parts) {
@@ -1053,61 +1158,59 @@ Numbered list only.`
     if (!resp.ok) throw await apiError(resp, 'Auto-tips');
     const data = await resp.json();
     const lines = (data.candidates?.[0]?.content?.parts?.[0]?.text || '').split('\n')
-      .map(l => l.replace(/^\d+[\.\)]\s*/, '').trim()).filter(l => l.length > 15);
+      .map(sanitizeTip).filter(Boolean);
     for (let i=0;i<5&&i<lines.length;i++) {
       const el = document.getElementById(`tip-${i}`);
       if (el && lines[i]) el.value = lines[i];
     }
     window._realTips = [];
     for (let i=5;i<10&&i<lines.length;i++) window._realTips.push(lines[i]);
-    stat('ai-status-global', 'Tips generated ✓', 'ok');
+    saveDraft();
+    stat('ai-status-global', `Tips generated ✓ (${Math.min(lines.length,10)} clean)`, 'ok');
   } catch (e) { stat('ai-status-global', 'Failed: ' + e.message, 'err'); }
 }
 
 /* ═══════════════════════════════════════
-   PREVIEW
+   PREVIEW  (uses the SAME order Export will ship)
    ═══════════════════════════════════════ */
-function buildShuffledItems() {
-  if (REAL.filter(Boolean).length < 5 || AI.filter(Boolean).length < 5) return null;
-  const items = [];
-  for (let i=0;i<5;i++) items.push({ source:'human', thumb:REAL[i].thumb, label:`Real ${i+1}` });
-  for (let i=0;i<5;i++) items.push({ source:'ai', thumb:AI[i].dataUrl, label:`AI ${i+1}` });
-  for (let i=items.length-1;i>0;i--) { const j=Math.floor(Math.random()*(i+1));[items[i],items[j]]=[items[j],items[i]]; }
-  return items;
-}
-
 function renderPreview() {
-  const items = buildShuffledItems();
-  if (!items) return stat('preview-status', 'Need 5 real + 5 AI first', 'err');
+  if (REAL.filter(Boolean).length < 5 || AI.filter(Boolean).length < 5)
+    return stat('preview-status', 'Need 5 real + 5 AI first', 'err');
+
+  const { order, score } = pickBestOrder(currentItems());
+  window._order = order;                 // ← Export reuses this exact sequence
+
   const grid = document.getElementById('preview-grid'); grid.innerHTML = '';
-  items.forEach((item,idx) => {
+  order.forEach((it, idx) => {
+    const thumb = it.source === 'human' ? REAL[it.slot].thumb : AI[it.slot].dataUrl;
     const card = document.createElement('div'); card.className = 'preview-card';
-    card.innerHTML = `<img src="${item.thumb}">
+    card.innerHTML = `<img src="${thumb}">
       <div class="round-num">R${idx+1}</div>
-      <div class="type-badge ${item.source==='ai'?'ai':'human'}">${item.source==='ai'?'AI':'REAL'}</div>`;
+      <div class="type-badge ${it.source==='ai'?'ai':'human'}">${it.source==='ai'?'AI':'REAL'}</div>`;
     grid.appendChild(card);
   });
 
+  // Warnings + quality bar computed from the SAME order
   const warnings = [];
-  let ms=1,cs=1;
-  for(let i=1;i<items.length;i++){if(items[i].source===items[i-1].source){cs++;if(cs>ms)ms=cs;}else cs=1;}
-  if(ms>=3) warnings.push(`⚠️ ${ms} same type in a row`);
-  let alt=true;for(let i=1;i<items.length;i++){if(items[i].source===items[i-1].source){alt=false;break;}}
-  if(alt) warnings.push('⚠️ Perfect alternation — re-shuffle');
+  let ms = 1, cs = 1;
+  for (let i = 1; i < order.length; i++) { if (order[i].source === order[i-1].source) { cs++; if (cs > ms) ms = cs; } else cs = 1; }
+  if (ms >= 3) warnings.push(`⚠️ ${ms} same type in a row`);
+  let alt = true; for (let i = 1; i < order.length; i++) { if (order[i].source === order[i-1].source) { alt = false; break; } }
+  if (alt) warnings.push('⚠️ Perfect alternation — re-shuffle');
 
   const wb = document.getElementById('pattern-warning');
   if (warnings.length) { wb.innerHTML = warnings.join('<br>'); wb.classList.add('visible'); }
   else wb.classList.remove('visible');
 
   const qBar = document.getElementById('quality-bar'); qBar.style.display = 'flex';
-  const pattern = items.map(i=>i.source==='ai'?'A':'R').join('');
-  const aiF = items.slice(0,5).filter(i=>i.source==='ai').length;
+  const pattern = order.map(i => i.source==='ai'?'A':'R').join('');
+  const aiF = order.slice(0,5).filter(i => i.source==='ai').length;
   qBar.innerHTML = `
     <div class="q-stat"><div class="q-label">Pattern</div><div class="q-val" style="color:var(--cyan);font-size:.6rem;letter-spacing:2px">${pattern}</div></div>
-    <div class="q-stat"><div class="q-label">Balance</div><div class="q-val ${Math.abs(aiF-2.5)<=1.5?'good':'warn'}">${aiF}A+${5-aiF}R / ${5-aiF+items.slice(5).filter(i=>i.source==='ai').length}A</div></div>
+    <div class="q-stat"><div class="q-label">Balance</div><div class="q-val ${Math.abs(aiF-2.5)<=1.5?'good':'warn'}">${aiF}A / ${5-aiF}R front</div></div>
     <div class="q-stat"><div class="q-label">Max Streak</div><div class="q-val ${ms<=2?'good':ms<=3?'warn':'bad'}">${ms}</div></div>
     <div class="q-stat"><div class="q-label">Quality</div><div class="q-val ${warnings.length===0?'good':'warn'}">${warnings.length===0?'CLEAN ✓':warnings.length+' warn'}</div></div>`;
-  stat('preview-status', 'Preview ready', 'ok');
+  stat('preview-status', `Preview = export order ✓ (score ${score}/10)`, score>=7?'ok':'err');
 }
 function reshufflePreview() { renderPreview(); }
 
@@ -1124,36 +1227,34 @@ function generateJSON() {
   const rc = REAL.filter(Boolean).length, ac = AI.filter(Boolean).length;
   if (rc<5||ac<5) return stat('export-status', `Need 5 real (${rc}) + 5 AI (${ac})`, 'err');
 
-  const items = [];
-  for (let i=0;i<5;i++) {
-    const p = REAL[i];
-    const realTip = window._realTips?.[i] || 'Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.';
-    items.push({ source:'human', content:p.full, attribution:p.attribution, source_url:p.sourceUrl, pro_tip:realTip });
-  }
-  for (let i=0;i<5;i++) {
-    const ext = AI[i].blob.type?.includes('png') ? 'png' : 'jpg';
-    items.push({ source:'ai', content:`images/d${day}_ai${i+1}.${ext}`, attribution:'AI-generated — created with Google Gemini',
-      pro_tip: document.getElementById(`tip-${i}`).value || tips[i],
-      _prompt: document.getElementById(`prompt-${i}`).value, _ext: ext });
-  }
+  // ── Use the exact order shown in Preview; build one if none previewed yet ──
+  let order = window._order;
+  if (!Array.isArray(order) || order.length !== 10) order = pickBestOrder(currentItems()).order;
 
-  let best=null,bestS=-999;
-  for(let a=0;a<20;a++){
-    const sh=[...items];for(let i=sh.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[sh[i],sh[j]]=[sh[j],sh[i]];}
-    let sc=10,st=1;
-    for(let i=1;i<sh.length;i++){if(sh[i].source===sh[i-1].source){st++;if(st>=3)sc-=3;if(st>=4)sc-=5;}else st=1;}
-    let al=true;for(let i=1;i<sh.length;i++){if(sh[i].source===sh[i-1].source){al=false;break;}}if(al)sc-=10;
-    const af=sh.slice(0,5).filter(i=>i.source==='ai').length;if(Math.abs(af-2.5)>1.5)sc-=2;
-    if(sh.slice(0,3).every(s=>s.source===sh[0].source))sc-=2;
-    if(sh.slice(-3).every(s=>s.source===sh[9]?.source))sc-=2;
-    if(sc>bestS){bestS=sc;best=sh;}if(sc>=9)break;
-  }
+  const REAL_TIP_FALLBACK = 'Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.';
+  const warns = [];
+  if (!subtitle) warns.push('no subtitle');
+  if (!emoji) warns.push('no emoji');
+  if (!cat) warns.push('no category');
 
-  const rounds = best.map((item,idx) => {
-    const r = { id:`d${day}r${idx+1}`, type:'image', content:item.content, source:item.source, attribution:item.attribution, pro_tip:item.pro_tip };
-    if (item.source_url) r.source_url = item.source_url;
-    if (item._prompt) r._note = `Prompt: ${item._prompt}`;
-    return r;
+  const rounds = order.map((it, idx) => {
+    if (it.source === 'human') {
+      const p = REAL[it.slot];
+      const tip = sanitizeTip(window._realTips?.[it.slot]) || REAL_TIP_FALLBACK;
+      const r = { id:`d${day}r${idx+1}`, type:'image', content:p.full, source:'human', attribution:p.attribution, pro_tip:tip };
+      r.source_url = p.sourceUrl;
+      return r;
+    } else {
+      const ext = AI[it.slot].blob.type?.includes('png') ? 'png' : 'jpg';
+      const promptVal = document.getElementById(`prompt-${it.slot}`).value;
+      const rawTip = document.getElementById(`tip-${it.slot}`).value;
+      const tip = sanitizeTip(rawTip) || tips[it.slot] || defaultTips[it.slot];
+      if (!sanitizeTip(rawTip)) warns.push(`AI tip ${it.slot+1} was empty/garbage → used fallback`);
+      if (/\[subject\]/i.test(promptVal)) warns.push(`prompt ${it.slot+1} still has [subject]`);
+      const r = { id:`d${day}r${idx+1}`, type:'image', content:`images/d${day}_ai${it.slot+1}.${ext}`, source:'ai', attribution:'AI-generated — created with Google Gemini', pro_tip:tip };
+      r._note = `Prompt: ${promptVal}`;
+      return r;
+    }
   });
 
   const challenge = { day_number:day, date, category:cat||'Daily Challenge', category_emoji:emoji||'🧠', rounds };
@@ -1169,8 +1270,10 @@ function generateJSON() {
   const snippet = `  "${date}": ${JSON.stringify(entry, null, 4).split('\n').map((l,i) => i===0?l:'  '+l).join('\n')}`;
   document.getElementById('daily-json-out').value = snippet;
 
-  const pattern = best.map(i=>i.source==='ai'?'A':'R').join('');
-  stat('export-status', `✓ ${rounds.length} rounds. Pattern: ${pattern} (${bestS}/10). Daily snippet ready.`, bestS>=7?'ok':'err');
+  const pattern = order.map(i=>i.source==='ai'?'A':'R').join('');
+  const score = scoreOrder(order);
+  const warnTxt = warns.length ? ` — CHECK: ${warns.join('; ')}` : '';
+  stat('export-status', `✓ ${rounds.length} rounds. Pattern ${pattern} (${score}/10). Daily snippet ready.${warnTxt}`, (score>=7 && !warns.length)?'ok':'err');
 }
 
 async function downloadAll() {

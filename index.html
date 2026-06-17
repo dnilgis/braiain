@@ -1097,7 +1097,7 @@ img{display:block;max-width:100%}
 /* ══════════════════════════════════════
    VERSION & CACHE BUSTING
    ══════════════════════════════════════ */
-const APP_VERSION = '2.4.0';
+const APP_VERSION = '2.4.1';
 const BUILD_HASH = Date.now().toString(36).slice(-6);
 
 /* ══════════════════════════════════════
@@ -1265,14 +1265,7 @@ async function boot() {
     loadBootStats();
 
     try {
-      const indexResp = await fetchWithTimeout('daily.json?v=' + APP_VERSION + '&t=' + BUILD_HASH, {}, 5000);
-      if (!indexResp.ok) throw new Error('HTTP ' + indexResp.status);
-      dailyIndex = await indexResp.json();
-      const todayEntry = dailyIndex[todayKey];
-      if (!todayEntry || !todayEntry.challenge_file) throw new Error('No entry for ' + todayKey);
-      const chalResp = await fetchWithTimeout(todayEntry.challenge_file + '?v=' + APP_VERSION + '&t=' + BUILD_HASH, {}, 5000);
-      if (!chalResp.ok) throw new Error('Challenge HTTP ' + chalResp.status);
-      dailyData = await chalResp.json();
+      dailyData = await resolveDailyData(todayKey);
     } catch (e) {
       dailyData = FALLBACK;
     }
@@ -1312,16 +1305,8 @@ async function boot() {
 
   status.textContent = '> LOADING DAILY CHALLENGE...';
   try {
-    const indexResp = await fetchWithTimeout('daily.json?v=' + APP_VERSION + '&t=' + BUILD_HASH, {}, 5000);
-    if (!indexResp.ok) throw new Error('HTTP ' + indexResp.status);
-    dailyIndex = await indexResp.json();
-    const todayEntry = dailyIndex[todayKey];
-    if (!todayEntry || !todayEntry.challenge_file) throw new Error('No entry for ' + todayKey);
-    status.textContent = '> DOWNLOADING DAY ' + todayEntry.day_number + '...';
-    const chalResp = await fetchWithTimeout(todayEntry.challenge_file + '?v=' + APP_VERSION + '&t=' + BUILD_HASH, {}, 5000);
-    if (!chalResp.ok) throw new Error('Challenge HTTP ' + chalResp.status);
-    dailyData = await chalResp.json();
-    status.textContent = '> DAY ' + dailyData.day_number + ' — ' + (dailyData.category || 'DETECTION').toUpperCase() + ' LOADED';
+    dailyData = await resolveDailyData(todayKey, function (s) { status.textContent = s; });
+    status.textContent = '> DAY ' + dailyData.day_number + ' — ' + (dailyData.category || 'DETECTION').toUpperCase() + (dailyData._isStale ? ' (LATEST AVAILABLE)' : ' LOADED');
   } catch (e) {
     console.warn('Daily load failed:', e.message);
     dailyData = FALLBACK;
@@ -1962,8 +1947,7 @@ async function goHome() {
   loadBootStats(); loadStreak();
   const todayKey = getTodayKey();
   if (dailyIndex && dailyIndex[todayKey]) {
-    const todayEntry = dailyIndex[todayKey];
-    try { const resp = await fetchWithTimeout(todayEntry.challenge_file + '?v=' + APP_VERSION + '&t=' + BUILD_HASH, {}, 5000); if (resp.ok) dailyData = await resp.json(); } catch (e) {}
+    try { dailyData = await resolveDailyData(todayKey); } catch (e) {}
   }
   const played = localStorage.getItem('braiain_played_' + todayKey);
   const btnStart = document.getElementById('btn-start');
@@ -1981,6 +1965,33 @@ async function goHome() {
 
 function getTodayKey() { return new Date().toISOString().split('T')[0]; }
 function getYesterdayKey() { return new Date(Date.now() - 86400000).toISOString().split('T')[0]; }
+
+/* Loads daily.json then returns the challenge for today, or — if today's file is
+   missing/unreachable — the most recent prior day that actually loads. This keeps a
+   single missed/un-generated day from dropping the live game to the FALLBACK test deck.
+   Throws only if NOTHING loads (true offline), in which case callers use FALLBACK. */
+async function resolveDailyData(todayKey, onStatus) {
+  const indexResp = await fetchWithTimeout('daily.json?v=' + APP_VERSION + '&t=' + BUILD_HASH, {}, 5000);
+  if (!indexResp.ok) throw new Error('HTTP ' + indexResp.status);
+  dailyIndex = await indexResp.json();
+  const prior = Object.keys(dailyIndex).filter(function (k) { return k < todayKey; }).sort().reverse();
+  const order = dailyIndex[todayKey] ? [todayKey].concat(prior) : prior;
+  for (var i = 0; i < order.length; i++) {
+    var key = order[i];
+    var entry = dailyIndex[key];
+    if (!entry || !entry.challenge_file) continue;
+    if (onStatus) onStatus('> DOWNLOADING DAY ' + entry.day_number + '...');
+    try {
+      var r = await fetchWithTimeout(entry.challenge_file + '?v=' + APP_VERSION + '&t=' + BUILD_HASH, {}, 5000);
+      if (!r.ok) continue;
+      var data = await r.json();
+      data._isStale = (key !== todayKey);
+      data._servedKey = key;
+      return data;
+    } catch (e) { /* try the previous day */ }
+  }
+  throw new Error('No working challenge found');
+}
 function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
 function fetchWithTimeout(url, opts, ms) { const ctrl = new AbortController(); const t = setTimeout(() => ctrl.abort(), ms); return fetch(url, { ...opts, signal: ctrl.signal }).finally(() => clearTimeout(t)); }
 function showToast(msg) { const t = document.getElementById('toast'); t.textContent = msg; t.classList.add('show'); setTimeout(() => t.classList.remove('show'), 2000); }
