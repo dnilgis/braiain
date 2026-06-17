@@ -1,0 +1,99 @@
+{
+  "day_number": 133,
+  "date": "2026-06-16",
+  "category": "World Sea Turtle",
+  "category_emoji": "🐢",
+  "rounds": [
+    {
+      "id": "d133r1",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxfHxzZWElMjB0dXJ0bGV8ZW58MHwwfHx8MTc4MTU1MzU3MHww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Wexor Tmg on Unsplash",
+      "pro_tip": "**ENVIRONMENTAL REALISM:** Glimpse unexpected details such as diverse marine life, slight water turbidity, or subtle light degradation unique to real ocean depths.",
+      "source_url": "https://unsplash.com/photos/brown-turtle-swimming-underwater-L-2p8fapOA8"
+    },
+    {
+      "id": "d133r2",
+      "type": "image",
+      "content": "images/d133_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**UNIFORM LIGHTING:** Look for perfectly distributed light sources without natural fall-off, shadows, or unexpected reflections common in real underwater scenes.",
+      "_note": "Prompt: A photorealistic photograph of a magnificent green sea turtle swimming directly towards the viewer in pristine azure waters, its ancient, wise eyes clearly visible and focused. Microscopic air bubbles clinging to its rough shell texture and the delicate glint of light in its eye are crisply rendered, using an Olympus OM-D E-M1 Mark III with a M.Zuiko Digital ED 12-40mm f/2.8 PRO lens, under brilliant, shallow reef sunlight."
+    },
+    {
+      "id": "d133r3",
+      "type": "image",
+      "content": "images/d133_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**IMMACULATE DETAIL:** Note an overwhelming abundance of minute textures and patterns everywhere, often appearing too perfectly rendered and pristine.",
+      "_note": "Prompt: A photorealistic photograph of two hawksbill sea turtles, one slightly leading the other, gracefully gliding through the expansive, deep blue ocean, their powerful flippers gently propelling them forward. The subtle shimmering reflections of sunlight on their textured carapaces and the crystal-clear water's gentle current are perfectly captured by a Canon EOS R6 Mark II with a Canon RF 24-105mm f/4L IS USM lens, bathed in clear, mid-depth ocean light."
+    },
+    {
+      "id": "d133r4",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/7722323/pexels-photo-7722323.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Mikhail Nilov on Pexels",
+      "pro_tip": "**ORGANIC IMPERFECTIONS:** Look for authentic visual quirks like subtle lens flare, slight motion blur, or organic particles naturally suspended in the water.",
+      "source_url": "https://www.pexels.com/photo/green-turtles-in-water-7722323/"
+    },
+    {
+      "id": "d133r5",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/5967813/pexels-photo-5967813.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Lachlan  Ross on Pexels",
+      "pro_tip": "**NATURAL FOCUS:** Observe natural depth of field with some elements slightly out of focus, creating realistic photographic blur (bokeh).",
+      "source_url": "https://www.pexels.com/photo/brown-turtle-swimming-underwater-in-ocean-5967813/"
+    },
+    {
+      "id": "d133r6",
+      "type": "image",
+      "content": "images/d133_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**EXACT COMPOSITION:** Images often display a flawless, almost staged composition with the subject perfectly centered and framed, lacking natural spontaneity.",
+      "_note": "Prompt: A photorealistic photograph of a mature olive ridley sea turtle, its dark brown shell distinct against the clear water, swimming calmly just above a patch of swaying seagrass. The subtle texture variations on its leathery skin and a few stray particles illuminated in the water are captured with a Fujifilm X-T5 and a Fujinon XF 23mm f/1.4 R LM WR lens, bathed in soft, filtered afternoon sunlight penetrating the ocean surface."
+    },
+    {
+      "id": "d133r7",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1696855179895-207976ec1a97?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxOHx8c2VhJTIwdHVydGxlfGVufDB8MHx8fDE3ODE1NTM1NzB8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Claus Giering on Unsplash",
+      "pro_tip": "**LACK OF FLAWS:** Absence of natural lens artifacts like aberrations, slight motion blur, or genuine water distortions often found in real photography.",
+      "source_url": "https://unsplash.com/photos/a-green-turtle-swimming-over-a-coral-reef-XDaVYRJ05sg"
+    },
+    {
+      "id": "d133r8",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1743613315235-d7dba6bfb5f4?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyM3x8c2VhJTIwdHVydGxlfGVufDB8MHx8fDE3ODE1NTM1NzB8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Zoshua Colah on Unsplash",
+      "pro_tip": "**DYNAMIC LIGHTING:** Note how light interacts imperfectly, with natural shadows, gradients, and a less polished, more authentic play of light underwater.",
+      "source_url": "https://unsplash.com/photos/a-sea-turtle-swimming-underwater-NishEz2ajgU"
+    },
+    {
+      "id": "d133r9",
+      "type": "image",
+      "content": "images/d133_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**HYPER-SHARPNESS:** Observe unnaturally crisp focus across all foreground and background elements, from turtle scales to distant sand grains.",
+      "_note": "Prompt: A photorealistic photograph of a loggerhead sea turtle in a perfect side profile, smoothly navigating the clear blue water just inches above a pristine sandy seabed, a few small ripples visible in the sand from currents. The subtle wrinkles on its neck and the fine grains of sand on the ocean floor are sharply rendered, taken with a Sony α7 IV and a Sigma 35mm f/1.4 Art lens, illuminated by soft, diffused natural underwater light filtering from above."
+    },
+    {
+      "id": "d133r10",
+      "type": "image",
+      "content": "images/d133_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "**REPEATING TEXTURES:** Scan the coral and reef background for cloned or suspiciously repeated patterns\u2014AI often tiles intricate detail instead of rendering each element uniquely.",
+      "_note": "Prompt: A photorealistic photograph of a large green sea turtle gracefully gliding just above a vibrant, diverse coral reef, its flippers gently propelling it through the sun-dappled water. The intricate patterns on its carapace and the delicate textures of the various coral branches are sharply in focus, captured with a Nikon Z7 II and a Nikkor Z 24-70mm f/2.8 S lens under bright midday underwater sunlight."
+    }
+  ],
+  "category_subtitle": "Deep sea or deep fake? Dive into turtle detection."
+}
