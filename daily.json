@@ -929,6 +929,13 @@
       "category_emoji": "🗑️",
       "category_subtitle": "Waste not, warrior: Dump the digital dupes daily.",
       "challenge_file": "challenges/2026-06-17.json"
+  },
+    "2026-06-18": {
+      "day_number": 135,
+      "category": "Reel Fun",
+      "category_emoji": "🎣",
+      "category_subtitle": "Daily dose of reel fun: is it real or AI-generated?",
+      "challenge_file": "challenges/2026-06-18.json"
   }
 }
 
