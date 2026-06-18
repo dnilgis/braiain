@@ -1,0 +1,99 @@
+{
+  "day_number": 136,
+  "date": "2026-06-19",
+  "category": "Timepiece Tales",
+  "category_emoji": "⌚",
+  "rounds": [
+    {
+      "id": "d136r1",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/9875808/pexels-photo-9875808.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Łukasz Martenka on Pexels",
+      "pro_tip": "CLINICAL COMPOSITION:** AI images exhibit a sterile perfection in every element, from watch details to background dust motes, suggesting algorithmic generation over natural photography.",
+      "source_url": "https://www.pexels.com/photo/person-wearing-an-analog-chronograph-wrist-watch-9875808/"
+    },
+    {
+      "id": "d136r2",
+      "type": "image",
+      "content": "images/d136_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "OVER-ENGINEERED LIGHTING:** AI often creates a \"mesmerizing bokeh\" or \"warm, rich glow\" that feels meticulously crafted, sometimes lacking the organic randomness of natural light sources.",
+      "_note": "Prompt: A photorealistic photograph of a confident businessman subtly checking the time on his sophisticated, slim-profile dress watch, its polished metal glinting under the soft, diffused indoor lighting of a high-end office. Captured with a Fujifilm GFX 100S and a GF 80mm f/1.7 R WR lens, emphasizing the fine weave of his bespoke suit jacket and the almost imperceptible texture of his skin on his hand."
+    },
+    {
+      "id": "d136r3",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1761426543130-fa4f88076b61?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyNHx8d3Jpc3R3YXRjaCUyMGNsb3NlLXVwfGVufDB8MHx8fDE3ODE4MTQwNzV8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Blake Wisz on Unsplash",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://unsplash.com/photos/man-wearing-a-wristwatch-with-green-face-Ql-zhoe0Jis"
+    },
+    {
+      "id": "d136r4",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/6010480/pexels-photo-6010480.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Bruchin Noeka on Pexels",
+      "pro_tip": "AUTHENTIC HUMAN TOUCH:** Observe hands and wrists for natural veins, subtle wrinkles, or authentic wear marks conveying genuine interaction, typical of real-world captures.",
+      "source_url": "https://www.pexels.com/photo/hand-of-a-man-with-a-wristwatch-6010480/"
+    },
+    {
+      "id": "d136r5",
+      "type": "image",
+      "content": "images/d136_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "AI-Generated Photos:**",
+      "_note": "Prompt: A photorealistic photograph of a vintage gold-plated analog wristwatch on a man's tanned wrist, illuminated by the soft, ambient glow of distant city lights at night, creating a mesmerizing bokeh effect of streetlamps in the background. Captured with a Sony a7 IV and a Sigma 85mm f/1.4 DG DN Art lens, emphasizing the intricate texture of the leather strap and the faint reflections on the watch's domed crystal."
+    },
+    {
+      "id": "d136r6",
+      "type": "image",
+      "content": "images/d136_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "FLAWLESS REFLECTIONS:** Watch for reflections on watch crystals or polished bezels that appear too pristine, lacking subtle smudges, dust, or natural distortions found in real photos.",
+      "_note": "Prompt: A photorealistic photograph of an elderly woman gently winding an antique pocket watch, her weathered hands delicately holding the ornate silver casing. The scene is lit by warm, directional light filtering through a window, casting soft shadows and illuminating the fine creases on her skin and the intricate engraving on the watch back. Taken with a Nikon Z7 and a Nikkor Z 50mm f/1.8 S lens, capturing the minute dust motes dancing in the light near the velvet-lined box."
+    },
+    {
+      "id": "d136r7",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/4070956/pexels-photo-4070956.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Erik Mclean on Pexels",
+      "pro_tip": "NATURAL AMBIENCE:** Real photos often capture a genuine sense of atmosphere, with light and shadow interacting organically, without AI's often \"too perfect\" or artificial glow.",
+      "source_url": "https://www.pexels.com/photo/person-wearing-black-digital-watch-4070956/"
+    },
+    {
+      "id": "d136r8",
+      "type": "image",
+      "content": "images/d136_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "HYPER-DETAILED TEXTURES:** AI excels at rendering perfectly uniform \"minute fabric texture\" or \"tiny pores\" that can feel unnaturally crisp and consistent across all surfaces.",
+      "_note": "Prompt: A photorealistic photograph of a stylish man's hand resting on a polished wooden table, showcasing a modern stainless steel wristwatch with a vibrant emerald green dial. The scene is bathed in soft, diffused natural daylight coming from a window, captured with a Canon EOS R6 and a Canon RF 50mm f/1.2L USM lens, highlighting the subtle sheen on the watch's bezel and the minute fabric texture of his suit cuff."
+    },
+    {
+      "id": "d136r9",
+      "type": "image",
+      "content": "images/d136_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "UNNATURAL PERFECTION:** Scrutinize hands and skin for \"almost imperceptible texture\" or \"fine creases\" that are too perfect, lacking genuine variations or minor imperfections of reality.",
+      "_note": "Prompt: A photorealistic photograph of a rugged diver's wristwatch on a man's tanned and slightly scarred wrist, positioned against a lush, out-of-focus background of sun-drenched autumn foliage. The scene is bathed in the warm, rich glow of late afternoon golden hour, captured with a Leica M11 and a Summilux-M 50mm f/1.4 ASPH lens, highlighting the subtle texture of the watch's rubber strap and the tiny pores on his skin."
+    },
+    {
+      "id": "d136r10",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1579172260981-30de4eabb80c?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxM3x8d3Jpc3R3YXRjaCUyMGNsb3NlLXVwfGVufDB8MHx8fDE3ODE4MTQwNzV8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Nordgreen on Unsplash",
+      "pro_tip": "ORGANIC IMPERFECTIONS:** Seek natural variations like slight skin blemishes, subtle wear on the strap, or authentic dust motes that feel incidental, not perfectly rendered.",
+      "source_url": "https://unsplash.com/photos/person-qqqqZIwNMUU"
+    }
+  ],
+  "category_subtitle": "AI thinks it's a time wizard. Spot its photo spells!"
+}
