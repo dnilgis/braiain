@@ -936,6 +936,13 @@
       "category_emoji": "🎣",
       "category_subtitle": "Daily dose of reel fun: is it real or AI-generated?",
       "challenge_file": "challenges/2026-06-18.json"
+  },
+    "2026-06-19": {
+      "day_number": 136,
+      "category": "Timepiece Tales",
+      "category_emoji": "⌚",
+      "category_subtitle": "AI thinks it's a time wizard. Spot its photo spells!",
+      "challenge_file": "challenges/2026-06-19.json"
   }
 }
 
