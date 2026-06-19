@@ -1,0 +1,99 @@
+{
+  "day_number": 137,
+  "date": "2026-06-20",
+  "category": "Surf's Up",
+  "category_emoji": "🏄",
+  "rounds": [
+    {
+      "id": "d137r1",
+      "type": "image",
+      "content": "images/d137_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "UNNATURAL PATTERNS:** Observe overly intricate or repetitive water patterns that appear too \"clean\" or mathematically precise on wave faces and spray.",
+      "_note": "Prompt: A photorealistic photograph of two dynamic surfers in different colored wetsuits, carving across a towering ocean wave, one slightly ahead of the other, bathed in the late afternoon sun. Intricate water patterns cascade down the wave face, with individual droplets of spray clearly visible, and the subtle sheen of their wetsuit fabric catching the light. Shot with a Sony Alpha 1, FE 70-200mm f/2.8 GM OSS II lens, under bright, late afternoon sun conditions."
+    },
+    {
+      "id": "d137r2",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1455729552865-3658a5d39692?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxN3x8c3VyZmluZ3xlbnwwfDB8fHwxNzgxODc5NjIyfDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Vladimir Kudinov on Unsplash",
+      "pro_tip": "SUBTLE TEXTURES:** Details like wetsuit fabric or water texture will be present but generally less hyper-defined or uniformly sharp across the entire image.",
+      "source_url": "https://unsplash.com/photos/person-on-white-surfboard-surrounded-by-blue-ocean-water-during-daytime-RKiMg1bwsMY"
+    },
+    {
+      "id": "d137r3",
+      "type": "image",
+      "content": "images/d137_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "FLAWLESS EXECUTION:** AI often shows subjects and environments that are impeccably perfect, lacking real-world imperfections like slight motion blur or unexpected debris.",
+      "_note": "Prompt: A photorealistic photograph of a surfer wearing board shorts and a rash guard, resting on a clean white longboard, drifting peacefully on the crystal-clear turquoise ocean water during midday. The individual pores on the surfer's sun-kissed skin are visible, along with the gentle ripples reflecting off the board's slick surface. Shot with a Fujifilm X-T5, XF 35mm f/1.4 R lens, under bright, clear midday sun."
+    },
+    {
+      "id": "d137r4",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/2792315/pexels-photo-2792315.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Dalton Douglas on Pexels",
+      "pro_tip": "AUTHENTIC LIGHTING:** Real photos often feature natural, sometimes uneven lighting with realistic highlights and shadows that reflect genuine environmental conditions.",
+      "source_url": "https://www.pexels.com/photo/man-in-red-and-white-t-shirt-surfing-2792315/"
+    },
+    {
+      "id": "d137r5",
+      "type": "image",
+      "content": "images/d137_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "PERFECT LIGHTING:** Notice how every element, like wetsuit sheen or board wax texture, is ideally lit and perfectly highlighted without harsh shadows or inconsistencies.",
+      "_note": "Prompt: A photorealistic photograph of a lone surfer expertly riding a large, curling wave, with the weathered wooden pylons of a distant pier visible in the background, creating a dynamic sense of scale. The sun glints off the water droplets in the air, highlighting the subtle texture of the surfer's board wax and the intricate patterns of the breaking water. Shot with a Nikon D850, AF-S NIKKOR 70-200mm f/2.8E FL ED VR lens, during a bright, early golden hour."
+    },
+    {
+      "id": "d137r6",
+      "type": "image",
+      "content": "images/d137_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "HYPER-DETAIL:** Look for impossibly crisp water droplets, individual fabric threads, or pores on skin, all perfectly in focus. AI generates extreme, uniform detail.",
+      "_note": "Prompt: A photorealistic photograph of a man in a dark grey wetsuit skillfully carving a turn on a bright orange surfboard, spray flying from the board as he maneuvers across a breaking ocean wave. The texture of the neoprene wetsuit is visible, with tiny water droplets clinging to the fabric. Shot with a Canon EOS R5, 100-400mm f/4.5-5.6L IS II USM lens, under bright, slightly overcast daytime conditions."
+    },
+    {
+      "id": "d137r7",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1438505296047-83ae9945bf15?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyMXx8c3VyZmluZ3xlbnwwfDB8fHwxNzgxODc5NjIyfDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Alex Wigan on Unsplash",
+      "pro_tip": "ENVIRONMENTAL NUANCES:** Real images might include natural dust, varied water clarity, or subtle real-world elements that aren't perfectly polished or idealized.",
+      "source_url": "https://unsplash.com/photos/grayscale-photo-of-a-man-surfing-irITur8e3G8"
+    },
+    {
+      "id": "d137r8",
+      "type": "image",
+      "content": "images/d137_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "EXAGGERATED DRAMA:** Seek out scenes with unnaturally intense contrast or overly dramatic silhouettes and spray, appearing more illustrative than photographic.",
+      "_note": "Prompt: A photorealistic grayscale photograph of a solitary man in a wetsuit, powerfully navigating a breaking ocean wave, his body silhouetted against the bright spray. The dramatic interplay of light and shadow emphasizes the intricate details of the churning water and the subtle fabric texture of his wetsuit, frozen in an athletic moment. Shot with a Canon EOS 5D Mark IV, EF 85mm f/1.4L IS USM lens, under bright, high-contrast daytime lighting."
+    },
+    {
+      "id": "d137r9",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1597382048067-7923725a1524?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxOHx8c3VyZmluZ3xlbnwwfDB8fHwxNzgxODc5NjIyfDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Hoang M Nguyen on Unsplash",
+      "pro_tip": "NATURAL IMPERFECTIONS:** Spot subtle motion blur in fast-moving water or subjects, slight focus fall-off, and less \"perfectly\" rendered individual elements.",
+      "source_url": "https://unsplash.com/photos/man-in-black-wet-suit-riding-on-red-surfboard-on-sea-waves-during-daytime-w7XkGwfv6fQ"
+    },
+    {
+      "id": "d137r10",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/37606687/pexels-photo-37606687.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by josemiguel67bio jose miguel on Pexels",
+      "pro_tip": "ORGANIC COMPOSITION:** Look for a more dynamic or unposed feel; the scene might not be perfectly framed but captures a genuine, spontaneous moment.",
+      "source_url": "https://www.pexels.com/photo/surfing-adventure-captured-in-action-on-ocean-waves-37606687/"
+    }
+  ],
+  "category_subtitle": "Surf's Up! Spot the real wave, or get totally board."
+}
