@@ -943,6 +943,13 @@
       "category_emoji": "⌚",
       "category_subtitle": "AI thinks it's a time wizard. Spot its photo spells!",
       "challenge_file": "challenges/2026-06-19.json"
+  },
+    "2026-06-20": {
+      "day_number": 137,
+      "category": "Surf's Up",
+      "category_emoji": "🏄",
+      "category_subtitle": "Surf's Up! Spot the real wave, or get totally board.",
+      "challenge_file": "challenges/2026-06-20.json"
   }
 }
 
