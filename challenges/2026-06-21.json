@@ -1,0 +1,99 @@
+{
+  "day_number": 138,
+  "date": "2026-06-21",
+  "category": "Father's Day Fun",
+  "category_emoji": "👨‍👧‍👦",
+  "rounds": [
+    {
+      "id": "d138r1",
+      "type": "image",
+      "content": "images/d138_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Check for symmetry — AI tends to make things too perfect and symmetrical.",
+      "_note": "Prompt: A photorealistic photograph of a loving father with an arm around each of his two children, standing smiling among delicate pink cherry blossom trees in full bloom. The bright, slightly overcast spring daylight is captured by a Panasonic Lumix GH5 with a 25mm f/1.4 lens, highlighting the intricate texture of the tree bark and the soft flutter of the individual petals."
+    },
+    {
+      "id": "d138r2",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/8763193/pexels-photo-8763193.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Pavel Danilyuk on Pexels",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://www.pexels.com/photo/a-bearded-man-embracing-his-son-and-daughter-8763193/"
+    },
+    {
+      "id": "d138r3",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1482235225574-c37692835cf3?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyNHx8ZmF0aGVycyUyMGRheXxlbnwwfDB8fHwxNzgxOTk0ODYyfDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Caroline Hernandez on Unsplash",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://unsplash.com/photos/man-carrying-daughter-in-black-sleeveless-top-TMpQ5R9mbOc"
+    },
+    {
+      "id": "d138r4",
+      "type": "image",
+      "content": "images/d138_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Look at reflections — real reflections match the environment, AI reflections are often random.",
+      "_note": "Prompt: A photorealistic photograph of a tender moment as a father in a denim shirt gently carries his giggling daughter, who is wearing a pale pink dress, in his arms. The scene is bathed in soft, diffused natural light, captured with a Fujifilm X-T4 and a 56mm f/1.2 lens, revealing the intricate weave of the denim fabric and the subtle glint in their eyes."
+    },
+    {
+      "id": "d138r5",
+      "type": "image",
+      "content": "images/d138_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Look for natural imperfections — real photos have dust, slight blur, and uneven lighting.",
+      "_note": "Prompt: A photorealistic photograph of a smiling father in a light blue polo shirt playfully carrying his young daughter, who wears a yellow t-shirt, on his shoulders. The scene is bathed in soft afternoon light, captured with a Nikon D850 and an 85mm f/1.4 lens, highlighting the fine fabric weave of their clothes and individual strands of the girl's curly hair."
+    },
+    {
+      "id": "d138r6",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1517554558809-9b4971b38f39?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw2fHxmYXRoZXJzJTIwZGF5fGVufDB8MHx8fDE3ODE5OTQ4NjJ8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Juliane Liebermann on Unsplash",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://unsplash.com/photos/man-carrying-to-girls-on-field-of-red-petaled-flower-O-RKu3Aqnsw"
+    },
+    {
+      "id": "d138r7",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1609220136736-443140cffec6?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyMHx8ZmF0aGVycyUyMGRheXxlbnwwfDB8fHwxNzgxOTk0ODYyfDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Nathan Dumlao on Unsplash",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://unsplash.com/photos/man-in-white-shirt-carrying-girl-in-gray-shirt-Wr3comVZJxU"
+    },
+    {
+      "id": "d138r8",
+      "type": "image",
+      "content": "images/d138_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Check edges carefully — AI often produces halos or unnatural blending where objects meet.",
+      "_note": "Prompt: A photorealistic photograph of a delighted father embracing his two young sons tightly, one holding a homemade \"Happy Father's Day\" banner with slight creases. The moment is illuminated by warm, inviting indoor light, captured with a Canon EOS R6 and a 35mm f/1.8 lens, bringing out the subtle crinkles around their smiling eyes and the hand-drawn details on the sign."
+    },
+    {
+      "id": "d138r9",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/4543642/pexels-photo-4543642.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Elina Fairytale on Pexels",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://www.pexels.com/photo/father-with-his-children-at-a-park-4543642/"
+    },
+    {
+      "id": "d138r10",
+      "type": "image",
+      "content": "images/d138_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Examine text and labels — AI struggles with readable, consistent lettering.",
+      "_note": "Prompt: A photorealistic photograph of a strong father carrying his two laughing daughters, one on each hip, through a vibrant field of yellow wildflowers during late golden hour. Shot with a Sony a7 III and a 70-200mm f/2.8 lens, the image emphasizes the delicate texture of individual flower petals and the faint sheen of sweat on the father's skin."
+    }
+  ],
+  "category_subtitle": "Is that dad's grill or a clever AI-generated thrill?"
+}
