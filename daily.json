@@ -957,6 +957,13 @@
       "category_emoji": "👨‍👧‍👦",
       "category_subtitle": "Is that dad's grill or a clever AI-generated thrill?",
       "challenge_file": "challenges/2026-06-21.json"
+  },
+    "2026-06-22": {
+      "day_number": 139,
+      "category": "Melting Moments",
+      "category_emoji": "🍦",
+      "category_subtitle": "AI's trying its best, but we'll make its digital disguise melt.",
+      "challenge_file": "challenges/2026-06-22.json"
   }
 }
 
