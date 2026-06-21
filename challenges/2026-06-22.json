@@ -1,0 +1,99 @@
+{
+  "day_number": 139,
+  "date": "2026-06-22",
+  "category": "Melting Moments",
+  "category_emoji": "🍦",
+  "rounds": [
+    {
+      "id": "d139r1",
+      "type": "image",
+      "content": "images/d139_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "TEXTURE UNCANNY VALLEY: AI excels at hyper-detailing sugar crystals and pores, sometimes making them look artificially perfect or repetitive rather than organically random.",
+      "_note": "Prompt: A photorealistic photograph of a young woman's hands, slightly tanned, holding a rapidly melting strawberry ice cream cone. The vibrant pink ice cream drips onto the crispy waffle cone, revealing fine sugar crystals and tiny air bubbles, with subtle pores visible on her knuckles. Shot with a Sony Alpha a7 III, 85mm f/1.8, in bright afternoon diffused sunlight."
+    },
+    {
+      "id": "d139r2",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/8734113/pexels-photo-8734113.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Katya Wolf on Pexels",
+      "pro_tip": "REAL-WORLD CONTEXT: Look for natural, less idealized environments with unexpected background elements or subtle depth variations often missing in AI perfection.",
+      "source_url": "https://www.pexels.com/photo/a-woman-eating-ice-cream-8734113/"
+    },
+    {
+      "id": "d139r3",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1501118347049-aba774d9e0a0?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw0fHxtZWx0aW5nJTIwaWNlJTIwY3JlYW18ZW58MHwwfHx8MTc4MjA2OTQxM3ww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Priscilla Du Preez 🇨🇦 on Unsplash",
+      "pro_tip": "ORGANIC IMPERFECTIONS: Real images frequently feature subtle, natural imperfections in lighting, focus, or texture that AI often smooths over.",
+      "source_url": "https://unsplash.com/photos/person-holding-icecream-oATsyWX2hpo"
+    },
+    {
+      "id": "d139r4",
+      "type": "image",
+      "content": "images/d139_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "REFLECTION ARTIFACTS: Mirrored sunglasses often contain distorted or illogical reflections. Distant details like vapor trails may lack true photographic realism.",
+      "_note": "Prompt: A photorealistic photograph of a woman, her face partially obscured by stylish mirrored sunglasses, casually holding a triple scoop lemon and raspberry swirl ice cream cone, with droplets visibly running down the cone. The vibrant colors of the melting ice cream pop against the vast, gradient clear blue sky, showing subtle vapor trails from a distant plane. Taken with a Canon EOS R6, 24-70mm f/2.8 at 50mm, under bright, cloudless afternoon sun."
+    },
+    {
+      "id": "d139r5",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/36408910/pexels-photo-36408910.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Frederick Adegoke Snr. on Pexels",
+      "pro_tip": "NATURAL LIGHTING NUANCES: Observe how light genuinely interacts with surfaces; real photos have subtle, authentic light fall-off and reflections that AI struggles to replicate.",
+      "source_url": "https://www.pexels.com/photo/close-up-of-pink-ice-cream-in-a-cup-36408910/"
+    },
+    {
+      "id": "d139r6",
+      "type": "image",
+      "content": "images/d139_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "ANATOMICAL ODDITIES: Look for veins that are unnaturally pronounced or perfectly patterned. Cone imperfections might lack true organic randomness.",
+      "_note": "Prompt: A photorealistic photograph of a man's hand, lightly tanned with visible knuckles and a faint network of veins, holding a melting double scoop chocolate and vanilla ice cream in a sugar cone. The warm afternoon sun catches the sheen of the melting ice cream, highlighting tiny imperfections on the cone's surface. Captured with a Canon EOS R5, 50mm f/1.4, during golden hour."
+    },
+    {
+      "id": "d139r7",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/8734117/pexels-photo-8734117.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Katya Wolf on Pexels",
+      "pro_tip": "GENUINE EMOTION & ATMOSPHERE: Real photos often convey true emotion or an authentic sense of place, with spontaneous human elements and less rigid composition.",
+      "source_url": "https://www.pexels.com/photo/woman-eating-vanilla-ice-cream-8734117/"
+    },
+    {
+      "id": "d139r8",
+      "type": "image",
+      "content": "images/d139_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "INTERACTION INCONSISTENCIES: Sand clinging to fingers might appear too uniform or unnatural. Ocean waves often show repetitive, non-organic patterns in AI.",
+      "_note": "Prompt: A photorealistic photograph of a woman with sun-kissed skin and faint freckles, her hair gently blowing, laughing while holding a rapidly dripping mint chocolate chip ice cream cone against a backdrop of sparkling ocean waves and fine sand. The bright midday sun illuminates individual grains of sand clinging to her fingers and the melting ice cream. Shot with a Nikon Z7 II, 35mm f/1.8, on a clear, sunny beach day."
+    },
+    {
+      "id": "d139r9",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/5094379/pexels-photo-5094379.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Kamaji Ogino on Pexels",
+      "pro_tip": "SPONTANEOUS AUTHENTICITY: Real photos often capture genuine, unposed moments with natural expressions and less emphasis on hyper-perfect details.",
+      "source_url": "https://www.pexels.com/photo/child-with-melting-ice-cream-cone-5094379/"
+    },
+    {
+      "id": "d139r10",
+      "type": "image",
+      "content": "images/d139_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "REFLECTION PERFECTION: Condensation beads or reflections on the glass might appear unnaturally uniform or too pristine, lacking the subtle distortions of real light.",
+      "_note": "Prompt: A photorealistic photograph of a delicate female hand, with subtle skin folds at the knuckles, holding a clear glass cup filled with swirl-patterned raspberry ripple ice cream, a silver spoon resting within. Condensation beads visibly on the cup's exterior, reflecting the soft, even indoor studio lighting. Taken with a Fujifilm X-T4, 60mm f/2.4 Macro, under soft, diffused window light."
+    }
+  ],
+  "category_subtitle": "AI's trying its best, but we'll make its digital disguise melt."
+}
