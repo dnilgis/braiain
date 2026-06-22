@@ -964,6 +964,13 @@
       "category_emoji": "🍦",
       "category_subtitle": "AI's trying its best, but we'll make its digital disguise melt.",
       "challenge_file": "challenges/2026-06-22.json"
+  },
+    "2026-06-23": {
+      "day_number": 140,
+      "category": "Summer Getaway",
+      "category_emoji": "✈️",
+      "category_subtitle": "Vacation mode activated. Time for sun, sand, and adventure!",
+      "challenge_file": "challenges/2026-06-23.json"
   }
 }
 
