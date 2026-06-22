@@ -1,0 +1,99 @@
+{
+  "day_number": 140,
+  "date": "2026-06-23",
+  "category": "Summer Getaway",
+  "category_emoji": "✈️",
+  "rounds": [
+    {
+      "id": "d140r1",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/33705115/pexels-photo-33705115.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Violeta Galeana on Pexels",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://www.pexels.com/photo/paradise-beach-with-palm-trees-under-clear-sky-33705115/"
+    },
+    {
+      "id": "d140r2",
+      "type": "image",
+      "content": "images/d140_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Look for natural imperfections — real photos have dust, slight blur, and uneven lighting.",
+      "_note": "Prompt: A photorealistic photograph of a woman lying face down on a comfortable hammock strung between two palm trees near the sea, her back exposed to the sun and a wide-brimmed straw hat resting beside her head. The delicate weave of the straw hat and the tiny grains of sand stuck to her skin are visible under the bright, direct sunlight. Shot with a Sony Alpha a7R IV, 85mm f/1.4 lens."
+    },
+    {
+      "id": "d140r3",
+      "type": "image",
+      "content": "images/d140_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Check edges carefully — AI often produces halos or unnatural blending where objects meet.",
+      "_note": "Prompt: A photorealistic photograph of an inviting, empty stretch of sandy beach, dotted with three blue and white striped sun loungers and matching parasols, all framed by lush, towering palm trees under a brilliant, clear blue sky. The intricate texture of the palm fronds and the subtle sparkle of individual sand grains are sharply rendered in the intense midday sun. Shot with a Nikon Z9, 24-70mm f/2.8 lens."
+    },
+    {
+      "id": "d140r4",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1459980874200-cfea332e86ca?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxOXx8c3VtbWVyJTIwdmFjYXRpb258ZW58MHwwfHx8MTc4MjEzNjk4M3ww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Tomas Salas on Unsplash",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://unsplash.com/photos/woman-lying-on-sun-lounger-covering-her-face-with-straw-hat-near-sea-ZSvlTa6yARw"
+    },
+    {
+      "id": "d140r5",
+      "type": "image",
+      "content": "images/d140_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Check for symmetry — AI tends to make things too perfect and symmetrical.",
+      "_note": "Prompt: A photorealistic photograph of two women lounging comfortably on a large, intricately patterned floral beach towel spread across the sun-drenched sand, one reading a book and the other sipping from a cold drink. The intense, bright sunlight casts soft shadows, highlighting the detailed weave of the towel and the faint glisten of sunscreen on their arms. Shot with a Leica Q2, 28mm f/1.7 lens."
+    },
+    {
+      "id": "d140r6",
+      "type": "image",
+      "content": "images/d140_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Examine text and labels — AI struggles with readable, consistent lettering.",
+      "_note": "Prompt: A photorealistic photograph of a family of four playfully splashing in the shallow waves at the edge of a pristine beach, their laughter echoing against the sound of the ocean. The warm, soft light of the late afternoon golden hour illuminates the individual water droplets flying through the air and the damp, darker patches on the sand. Shot with a Fujifilm GFX 100S, 110mm f/2 lens."
+    },
+    {
+      "id": "d140r7",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/544963/pexels-photo-544963.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Burst on Pexels",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://www.pexels.com/photo/two-person-sitting-on-sand-while-taking-at-daytime-544963/"
+    },
+    {
+      "id": "d140r8",
+      "type": "image",
+      "content": "images/d140_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Look at reflections — real reflections match the environment, AI reflections are often random.",
+      "_note": "Prompt: A photorealistic photograph of two young children, a boy and a girl, excitedly digging for shells near the waterline on a sunny beach, their hands and knees covered in wet sand. The bright, overhead sun emphasizes the sticky clumps of sand on their fingers and the vibrant, slightly damp fabric of their swim shorts and top. Shot with a Canon EOS R5, 50mm f/1.8 lens."
+    },
+    {
+      "id": "d140r9",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1660469848362-f52ddd96add9?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxNHx8c3VtbWVyJTIwdmFjYXRpb258ZW58MHwwfHx8MTc4MjEzNjk4M3ww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Rhamely on Unsplash",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://unsplash.com/photos/people-on-a-beach-ijvLydCf46Y"
+    },
+    {
+      "id": "d140r10",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/20108081/pexels-photo-20108081.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Nothing Ahead on Pexels",
+      "pro_tip": "Natural imperfections like lens flare, slight blur, or uneven lighting are hallmarks of a real photograph.",
+      "source_url": "https://www.pexels.com/photo/small-girls-drawing-in-the-wet-sand-on-the-beach-20108081/"
+    }
+  ],
+  "category_subtitle": "Vacation mode activated. Time for sun, sand, and adventure!"
+}
