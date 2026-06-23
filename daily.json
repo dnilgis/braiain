@@ -971,6 +971,13 @@
       "category_emoji": "✈️",
       "category_subtitle": "Vacation mode activated. Time for sun, sand, and adventure!",
       "challenge_file": "challenges/2026-06-23.json"
+  },
+    "2026-06-24": {
+      "day_number": 141,
+      "category": "World Cup Fever",
+      "category_emoji": "⚽",
+      "category_subtitle": "AI thinks it's Messi with pixels. Prove it wrong.",
+      "challenge_file": "challenges/2026-06-24.json"
   }
 }
 
