@@ -1,0 +1,99 @@
+{
+  "day_number": 141,
+  "date": "2026-06-24",
+  "category": "World Cup Fever",
+  "category_emoji": "⚽",
+  "rounds": [
+    {
+      "id": "d141r1",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1574602904324-a9ac0fe65331?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw3fHx3b3JsZCUyMGN1cHxlbnwwfDB8fHwxNzgyMjM3NjU1fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Stefan Lehner on Unsplash",
+      "pro_tip": "DIVERSE CROWDS:** Real stadium crowds show varied, spontaneous expressions and natural clothing textures. Focus naturally softens on distant, less important details.",
+      "source_url": "https://unsplash.com/photos/people-at-the-bleachers-of-the-stadium-fOFs1-T7Hi0"
+    },
+    {
+      "id": "d141r2",
+      "type": "image",
+      "content": "images/d141_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "FLAWED IMPERFECTIONS:** Details like \"cracked face paint\" or \"individual hair strands\" can appear too uniform, repetitive, or artificial rather than naturally imperfect.",
+      "_note": "Prompt: A photorealistic photograph of a group of jubilant Brazilian soccer fans celebrating wildly outdoors, draped in yellow and green flags with their faces enthusiastically painted. The intricate fabric patterns of the flags, the slight cracking of the dried face paint around smiling mouths, and the individual strands of hair are discernible under the vibrant, warm late afternoon sunlight. Taken with a Canon EOS R6, 85mm f/1.4."
+    },
+    {
+      "id": "d141r3",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1600442715978-d0268caa17f5?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw5fHx3b3JsZCUyMGN1cHxlbnwwfDB8fHwxNzgyMjM3NjU1fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Karsten Winegeart on Unsplash",
+      "pro_tip": "NATURAL INTERACTIONS:** Observe realistic physical interaction between players and the environment, like genuinely scattered dust. Light and shadow react naturally to movement.",
+      "source_url": "https://unsplash.com/photos/people-playing-soccer-on-field-during-daytime-a5HB3E0B01g"
+    },
+    {
+      "id": "d141r4",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1553778263-73a83bab9b0c?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw2fHx3b3JsZCUyMGN1cHxlbnwwfDB8fHwxNzgyMjM3NjU1fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Jannik on Unsplash",
+      "pro_tip": "AUTHENTIC MOTION:** Expect natural, consistent motion blur on moving elements. Real-world physics introduce subtle imperfections, not hyper-perfect details everywhere.",
+      "source_url": "https://unsplash.com/photos/person-playing-soccer-mY2ZHBU6GRk"
+    },
+    {
+      "id": "d141r5",
+      "type": "image",
+      "content": "images/d141_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "MOTION ARTIFACTS:** Check for inconsistent motion blur on players or the ball. \"Intricate weave\" of jerseys might look painted on, lacking natural fabric depth.",
+      "_note": "Prompt: A photorealistic photograph of two soccer players fiercely contesting for the ball on a vibrant green field during a daytime match, a cloud of fine dust rising from the impact. Beads of sweat are visible on their foreheads, and the intricate weave of their team jerseys is distinct under the bright midday sun. Captured with a Nikon Z7, 70-200mm f/2.8 at 100mm."
+    },
+    {
+      "id": "d141r6",
+      "type": "image",
+      "content": "images/d141_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "UNCANNY FACES:** Observe background faces for distortions or uniformly \"happy\" expressions. Foreground details like \"worn texture\" might lack natural randomness.",
+      "_note": "Prompt: A photorealistic photograph of a small group of ecstatic fans in stadium bleachers, hands thrown up in celebration, their faces alight with joy and subtle sweat. The worn texture of the plastic seating and the woven fabric of their jerseys are clearly visible under bright, slightly diffused afternoon sunlight. Taken with a Fujifilm X-T4, 56mm f/1.2."
+    },
+    {
+      "id": "d141r7",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/27271660/pexels-photo-27271660.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Omar Ramadan on Pexels",
+      "pro_tip": "SPONTANEOUS EXPRESSION:** Genuine fan celebrations show varied, natural poses and spontaneous expressions. Fabric drapes and face paint cracks are organically imperfect.",
+      "source_url": "https://www.pexels.com/photo/portugal-fans-celebrate-their-team-s-victory-in-the-world-cup-27271660/"
+    },
+    {
+      "id": "d141r8",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/38104078/pexels-photo-38104078.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by The Six on Pexels",
+      "pro_tip": "SUBTLE IMPERFECTIONS:** Look for realistic, slightly distorted reflections and minor, random scuffs on the ball or architectural wear. Light and atmosphere feel organic.",
+      "source_url": "https://www.pexels.com/photo/vancouver-stadium-and-giant-fifa-soccer-ball-38104078/"
+    },
+    {
+      "id": "d141r9",
+      "type": "image",
+      "content": "images/d141_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "HYPER-REALISM:** Look for unnatural perfection in every detail: individual sweat beads, skin pores, and grass sprays often appear unnaturally rendered or too uniform.",
+      "_note": "Prompt: A photorealistic photograph of a soccer player's foot powerfully striking a FIFA World Cup ball mid-game, sending a spray of freshly cut grass into the air. The player's calf muscle is taut with exertion, visible skin pores and sweat glistening under the bright stadium lights. Captured with a Canon EOS R5, 135mm f/2, under crisp evening floodlight."
+    },
+    {
+      "id": "d141r10",
+      "type": "image",
+      "content": "images/d141_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "REFLECTION LOGIC:** Scrutinize reflections in glass for illogical distortions or perfect repetitions. The ball's \"pristine\" texture can appear too smooth or geometrically flawless.",
+      "_note": "Prompt: A photorealistic photograph of a pristine FIFA World Cup soccer ball positioned on a sleek, polished concrete plinth in the foreground, with the grand, modern steel and glass facade of the Lusail Stadium in Qatar towering majestically in the background. Subtle reflections of the urban environment are visible in the glass, and the unique panel texture of the ball is sharp under an early morning, slightly hazy light. Shot with a Sony A7 III, 24mm f/2.8."
+    }
+  ],
+  "category_subtitle": "AI thinks it's Messi with pixels. Prove it wrong."
+}
