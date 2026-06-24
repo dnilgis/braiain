@@ -1,0 +1,99 @@
+{
+  "day_number": 142,
+  "date": "2026-06-25",
+  "category": "Backyard BBQ",
+  "category_emoji": "🍖",
+  "rounds": [
+    {
+      "id": "d142r1",
+      "type": "image",
+      "content": "images/d142_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "INTENTIONAL EXPRESSION:** Faces often show unnervingly specific emotions like \"intensely focused\" or \"confidently basting,\" with hyper-detailed wrinkles. Less natural candidness.",
+      "_note": "Prompt: A photorealistic photograph of juicy bratwurst sausages and thinly sliced red onions sizzling on a hot barbecue grate, emitting aromatic wisps of smoke under bright diffused daylight. The sausage casing shows tiny imperfections and subtle char marks, while the onions display translucent, caramelized edges and a visible oily sheen on the grill grates. (Canon EOS R5, 100mm f/2.8 Macro, bright diffused daylight)"
+    },
+    {
+      "id": "d142r2",
+      "type": "image",
+      "content": "images/d142_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "UNCANNY PERFECTION:** Look for impossibly crisp details everywhere, like individual sweat beads or water droplets. AI renders every element flawlessly.",
+      "_note": "Prompt: A photorealistic photograph of a man intensely focused on flipping perfectly seared beef burgers on a charcoal grill, with a subtle sheen of sweat on his forehead. The bright afternoon sun illuminates faint smoke tendrils rising, highlighting the crisp char marks on the meat and the distinct fabric weave of his red and white checkered shirt. (Canon EOS R5, 85mm f/1.4, bright afternoon sun)"
+    },
+    {
+      "id": "d142r3",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1778501144342-c78078552b9c?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw1fHxiYXJiZWN1ZSUyMGdyaWxsJTJDJTIwb3V0ZG9vciUyMGZvb2R8ZW58MHwwfHx8MTc4MjMxMjk4Mnww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Didier VEILLON on Unsplash",
+      "pro_tip": "AUTHENTIC FLAWS:** Real photos show natural variations in charring, smoke patterns, or food arrangement. Look for genuine, un-staged randomness.",
+      "source_url": "https://unsplash.com/photos/man-grilling-hot-dogs-and-giving-peace-sign-LKxf1yh3Ld0"
+    },
+    {
+      "id": "d142r4",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/8798737/pexels-photo-8798737.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by RDNE Stock project on Pexels",
+      "pro_tip": "UNREFINED LIGHT:** Lighting may be good but less \"ideally perfect\" than AI, showing more natural light fall-off or less perfectly rendered shadows.",
+      "source_url": "https://www.pexels.com/photo/a-man-and-a-boy-cooking-on-a-barbeque-griller-8798737/"
+    },
+    {
+      "id": "d142r5",
+      "type": "image",
+      "content": "images/d142_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "IDEALIZED FOOD:** Food often appears impossibly succulent, glistening, or with \"subtle imperfections\" that are still perfectly composed. It looks like a magazine ad.",
+      "_note": "Prompt: A photorealistic photograph of a mother and her young daughter laughing while turning ears of corn on a grill in a sun-drenched backyard. The clear mid-morning sun casts long shadows, illuminating fine dust motes dancing in the air and highlighting the subtle wrinkles around the mother's eyes and the textured grain of the wooden deck. (Fujifilm X-T4, 23mm f/2, clear mid-morning sun)"
+    },
+    {
+      "id": "d142r6",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/18823998/pexels-photo-18823998.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Boris Ivas on Pexels",
+      "pro_tip": "ORGANIC IMPERFECTIONS:** Real images might have subtle visual noise, slight blur in background, or less uniform sharpness across all elements.",
+      "source_url": "https://www.pexels.com/photo/close-up-of-meat-and-vegetables-on-a-grill-18823998/"
+    },
+    {
+      "id": "d142r7",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/5637689/pexels-photo-5637689.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Askar Abayev on Pexels",
+      "pro_tip": "BACKYARD REALISM:** Photos often include broader context of a gathering or a less \"studio-perfect\" backyard setting, rather than just isolated subjects.",
+      "source_url": "https://www.pexels.com/photo/close-up-shot-of-a-man-grilling-chicken-5637689/"
+    },
+    {
+      "id": "d142r8",
+      "type": "image",
+      "content": "images/d142_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "TEXTURE EXAGGERATION:** Notice hyper-defined textures, from distinct fabric weaves to individual wood grains or metallic sheens on grill grates. Every surface is ideal.",
+      "_note": "Prompt: A photorealistic photograph of glistening chicken and vibrant red bell pepper skewers charring gently on a hot barbecue grill under the direct, vibrant summer sun. Individual water droplets are visible on the bell pepper's skin, alongside subtle caramelization on the chicken's surface and the metallic sheen of the grill grates. (Nikon Z7 II, 105mm f/2.8 Macro, direct vibrant summer sun)"
+    },
+    {
+      "id": "d142r9",
+      "type": "image",
+      "content": "images/d142_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "ARTIFICIAL AMBIENCE:** Watch for perfectly rendered atmospheric elements like dancing dust motes, specific smoke tendrils, or ideal condensation rings. They're too perfect.",
+      "_note": "Prompt: A photorealistic photograph of a woman confidently basting a rack of succulent pork ribs on an outdoor grill, illuminated by the warm, golden hour glow. Faint smoke curls upwards, revealing the rendered fat on the ribs and a visible condensation ring forming on a cold glass of lemonade set on a nearby picnic table. (Sony Alpha 7 IV, 35mm f/1.8, golden hour glow)"
+    },
+    {
+      "id": "d142r10",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/37030067/pexels-photo-37030067.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Canary Vista ES on Pexels",
+      "pro_tip": "SPONTANEOUS GESTURES:** Observe natural, unposed interactions like a casual peace sign or genuine laughter, often with less focus on perfect facial details.",
+      "source_url": "https://www.pexels.com/photo/grilled-meat-and-vegetables-on-barbecue-37030067/"
+    }
+  ],
+  "category_subtitle": "Did AI cook this burger? Hope it doesn't taste like pixels."
+}
