@@ -978,6 +978,13 @@
       "category_emoji": "⚽",
       "category_subtitle": "AI thinks it's Messi with pixels. Prove it wrong.",
       "challenge_file": "challenges/2026-06-24.json"
+  },
+    "2026-06-25": {
+      "day_number": 142,
+      "category": "Backyard BBQ",
+      "category_emoji": "🍖",
+      "category_subtitle": "Did AI cook this burger? Hope it doesn't taste like pixels.",
+      "challenge_file": "challenges/2026-06-25.json"
   }
 }
 
