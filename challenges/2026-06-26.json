@@ -1,0 +1,99 @@
+{
+  "day_number": 143,
+  "date": "2026-06-26",
+  "category": "Summer Heatwave",
+  "category_emoji": "☀️",
+  "rounds": [
+    {
+      "id": "d143r1",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/7347538/pexels-photo-7347538.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Richard Low Hong on Pexels",
+      "pro_tip": "FUNCTIONAL WEAR: Spot tools and gloves showing realistic, uneven wear and grime from actual use, not uniformly rendered texture. Real work creates real dirt.",
+      "source_url": "https://www.pexels.com/photo/man-in-gray-t-shirt-fixing-the-aircon-7347538/"
+    },
+    {
+      "id": "d143r2",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1756027600096-42d959bbf0c5?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw3fHxzdW1tZXIlMjBoZWF0JTJDJTIwY29vbGluZ3xlbnwwfDB8fHwxNzgyNDA1ODIxfDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Evgeniy Beloshytskiy on Unsplash",
+      "pro_tip": "AUTHENTIC EXPRESSIONS: Seek genuine, varied human expressions and natural body language. Real street scenes will have less \"posed\" perfection or uniform smiles.",
+      "source_url": "https://unsplash.com/photos/people-cooling-off-from-mist-spray-on-a-hot-day-vGmtzgDtiuY"
+    },
+    {
+      "id": "d143r3",
+      "type": "image",
+      "content": "images/d143_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "GRIME & WEAR: Check for \"too perfect\" dirt, dust, or wear textures on tools and hands. AI often makes these universally applied, not organically accumulated.",
+      "_note": "Prompt: A photorealistic photograph of a seasoned HVAC technician's gloved hands meticulously tightening a component on a large, wall-mounted commercial air conditioning unit, seen from a slightly low angle. Bright, direct sunlight casts sharp shadows and reveals fine dust motes clinging to the unit's metal fins, alongside the worn texture of their tools and subtle grime on their work gloves. Taken with a Fujifilm X-T4 and a 35mm f/2 lens."
+    },
+    {
+      "id": "d143r4",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/33034921/pexels-photo-33034921.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Valentin Ilas on Pexels",
+      "pro_tip": "WILDLIFE REALISM: Look for natural, slightly matted fur and organic water movement, not hyper-detailed individual hairs. Wildlife photography embraces natural chaos.",
+      "source_url": "https://www.pexels.com/photo/polar-bear-relaxing-in-cool-water-33034921/"
+    },
+    {
+      "id": "d143r5",
+      "type": "image",
+      "content": "images/d143_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "IDEALIZED COMPOSITION: Identify overly symmetrical arrangements or \"sleek, modern\" aesthetics. AI excels at perfect forms, dramatic lighting, and consistent grit.",
+      "_note": "Prompt: A photorealistic photograph of a series of sleek, modern industrial cooling units positioned symmetrically against a minimalist concrete building facade, featuring prominent, vibrant orange ventilation ducts snaking upwards. The late afternoon sun creates long, dramatic shadows and highlights the subtle texture of weathered paint on the metal ducts, individual rivets, and the fine grit on the concrete ground. Captured with a Leica SL2 and a 28mm f/2 lens."
+    },
+    {
+      "id": "d143r6",
+      "type": "image",
+      "content": "images/d143_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "HYPER-DETAILS: Look for perfectly rendered individual water droplets or air bubbles. AI often creates impossibly crisp, uniform details that defy natural physics.",
+      "_note": "Prompt: A photorealistic photograph of a person submerging their face into clear blue swimming pool water, exhaling slowly. The bright midday sun creates shimmering reflections on the water's surface, and individual water droplets are visible clinging to their skin and wet hair strands, with tiny air bubbles rising. Shot on a Canon EOS R5 with a 50mm f/1.8 lens."
+    },
+    {
+      "id": "d143r7",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/38247968/pexels-photo-38247968.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Oguz Dik on Pexels",
+      "pro_tip": "ORGANIC ENVIRONMENT: Identify slight asymmetry, natural variations in weathering, and genuine grit that's not uniformly distributed. Real scenes show environmental entropy.",
+      "source_url": "https://www.pexels.com/photo/industrial-cooling-units-with-orange-ducts-38247968/"
+    },
+    {
+      "id": "d143r8",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1655449173834-c92dbeacca65?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxNXx8c3VtbWVyJTIwaGVhdCUyQyUyMGNvb2xpbmd8ZW58MHwwfHx8MTc4MjQwNTgyMXww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by abdullah ali on Unsplash",
+      "pro_tip": "NATURAL IMPERFECTIONS: Observe water's natural distortion, subtle blur from movement, and uneven droplet distribution. Real photos have realistic, subtle flaws.",
+      "source_url": "https://unsplash.com/photos/a-person-with-the-head-in-the-water-m3wN8KuE860"
+    },
+    {
+      "id": "d143r9",
+      "type": "image",
+      "content": "images/d143_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "TEXTURE PERFECTION: Notice exaggeratedly perfect textures like every sweat bead glistening or fabric weave. AI struggles with organic randomness in details.",
+      "_note": "Prompt: A photorealistic photograph of a diverse group of people, smiling and laughing, standing under a cooling misting system on a bustling city street on a sweltering afternoon. Harsh afternoon sun highlights the individual droplets of mist catching the light and beads of sweat glistening on their foreheads, contrasting with the detailed weave of damp fabric on their clothes. Captured with a Nikon Z7 II and an 85mm f/1.4 lens."
+    },
+    {
+      "id": "d143r10",
+      "type": "image",
+      "content": "images/d143_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "UNCANNY ANIMALIA: Inspect fur and water flow. AI renders \"countless individual hairs\" and too-perfect ripples, often lacking natural, organic clumping.",
+      "_note": "Prompt: A photorealistic photograph of a majestic polar bear slowly emerging from frigid Arctic water onto an ice floe, its powerful shoulders breaking the surface. The soft, diffused light of an overcast Arctic day illuminates the intricate texture of its wet fur, with countless individual hairs matted and dripping water, and subtle ripples expanding across the dark icy water. Shot on a Sony Alpha 1 with a 400mm f/2.8 lens."
+    }
+  ],
+  "category_subtitle": "Beyond the shimmering heat haze, find the true summer image."
+}
