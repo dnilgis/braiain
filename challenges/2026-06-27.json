@@ -1,0 +1,99 @@
+{
+  "day_number": 144,
+  "date": "2026-06-27",
+  "category": "Sunglass Style",
+  "category_emoji": "😎",
+  "rounds": [
+    {
+      "id": "d144r1",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1477814670986-8d8dccc5640d?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyNHx8c3VuZ2xhc3Nlc3xlbnwwfDB8fHwxNzgyNDk5MzA4fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Tamara Bellis on Unsplash",
+      "pro_tip": "IMPERFECT TEXTURES:** Observe natural flyaways or slightly varied hair strands, and less-than-perfectly visible eyelashes through lenses. Wool scarf nap shows organic variability.",
+      "source_url": "https://unsplash.com/photos/selective-focus-photography-of-woman-d7CK4t8Lz6s"
+    },
+    {
+      "id": "d144r2",
+      "type": "image",
+      "content": "images/d144_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "SURFACE PERFECTION:** Observe if lipstick gloss is unnaturally smooth or hat weave is too flawlessly intricate. Silk fabric might lack subtle wrinkles or natural drape.",
+      "_note": "Prompt: A photorealistic photograph of a sophisticated woman posing elegantly, wearing oversized rose-tinted sunglasses and a chic straw wide-brimmed hat, her ensemble radiating modern fashion and poise. Taken during golden hour with a Leica SL2, 90mm f/2, highlighting the intricate weave of her hat, the subtle gloss on her perfectly applied lipstick, and the luxurious, smooth fabric of her silk blouse."
+    },
+    {
+      "id": "d144r3",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/28953737/pexels-photo-28953737.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by GlassesShop GS on Pexels",
+      "pro_tip": "SUBTLE REALISM:** Spot minor irregularities in hat weave or a less-than-perfect lipstick application. Silk fabric will exhibit natural, fluid creases and folds.",
+      "source_url": "https://www.pexels.com/photo/elegant-woman-in-fashionable-sunglasses-and-hat-28953737/"
+    },
+    {
+      "id": "d144r4",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1556560957-04a8ebbc0563?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyMnx8c3VuZ2xhc3Nlc3xlbnwwfDB8fHwxNzgyNDk5MzA4fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Joel Mott on Unsplash",
+      "pro_tip": "NATURAL LIGHTING:** Look for nuanced light fall-off and subtle shadow gradients that AI often struggles to replicate perfectly. Observe genuine, less idealized expressions.",
+      "source_url": "https://unsplash.com/photos/two-woman-on-focus-photography-fgV-3QuGAOA"
+    },
+    {
+      "id": "d144r5",
+      "type": "image",
+      "content": "images/d144_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "SKIN TEXTURE:** Examine visible skin pores or stubble for unnatural uniformity or repetitive patterns. Tanned skin might lack genuine depth or subtle tonal shifts.",
+      "_note": "Prompt: A photorealistic photograph of a rugged man in a close-up portrait, wearing classic aviator sunglasses, a subtle smile playing on his lips as he gazes slightly off-camera in a casual outdoor setting. Shot during late afternoon sun with a Sony Alpha a7R IV, 100mm f/2.8, highlighting visible skin pores on his tanned face, the light stubble on his jawline, and the rough texture of his denim jacket collar."
+    },
+    {
+      "id": "d144r6",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/286309/pexels-photo-286309.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Snapwire on Pexels",
+      "pro_tip": "ORGANIC IMPERFECTIONS:** Notice natural, irregular skin textures like varied pore sizes or natural, slightly unkempt stubble. Denim texture will show authentic wear.",
+      "source_url": "https://www.pexels.com/photo/adult-casual-close-up-eyeglasses-286309/"
+    },
+    {
+      "id": "d144r7",
+      "type": "image",
+      "content": "images/d144_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "HAIR & LENS ARTIFACTS:** Check for unnaturally defined individual hair strands or eyelashes too perfectly visible through lenses. Fabric nap may seem overly uniform.",
+      "_note": "Prompt: A photorealistic photograph of a woman with an enigmatic expression, looking over her shoulder, her face sharply in focus while the background blurs into a soft bokeh, wearing oversized cat-eye sunglasses. Captured using soft natural window light with a Fujifilm GFX 100S, 110mm f/2, emphasizing the individual strands of her flowing hair, the delicate eyelashes visible through her lenses, and the fine fabric nap of her wool scarf."
+    },
+    {
+      "id": "d144r8",
+      "type": "image",
+      "content": "images/d144_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "DETAIL PERFECTION:** Look for unnaturally perfect hair sheen or repetitive fabric weaves. Freckles might appear too uniformly placed, lacking natural variation.",
+      "_note": "Prompt: A photorealistic photograph of two women, friends, sharing a laugh as they walk together on a city street, one adjusting her stylish round sunglasses while the other smiles brightly, both in sharp focus. Captured in bright daylight with a Nikon Z 7II, 85mm f/1.8, showcasing the subtle sheen on their hair and the distinct fabric weave of their light jackets, alongside the faint freckles on their cheeks."
+    },
+    {
+      "id": "d144r9",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1616424831766-d616a58f1459?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxNnx8c3VuZ2xhc3Nlc3xlbnwwfDB8fHwxNzgyNDk5MzA4fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Jack Delulio on Unsplash",
+      "pro_tip": "AUTHENTIC REFLECTIONS:** Seek subtle, irregular reflections on sunglass lenses that might show minor distortions. Dust motes appear truly random, not artificially placed.",
+      "source_url": "https://unsplash.com/photos/man-in-white-crew-neck-shirt-wearing-black-sunglasses-AYo8xUW5F58"
+    },
+    {
+      "id": "d144r10",
+      "type": "image",
+      "content": "images/d144_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "AMBIENT FLAWS:** Note perfectly rendered dust motes or reflections that lack subtle real-world inconsistencies. Fabric weave might appear too flawless or crisp.",
+      "_note": "Prompt: A photorealistic photograph of a man with a confident gaze, wearing a crisp white crew neck shirt and sleek black wayfarer sunglasses, standing against a muted urban background. Taken under overcast daylight with a Canon EOS R6, 50mm f/1.4, meticulously capturing the fine cotton weave of his shirt, faint dust motes dancing in the soft ambient light, and the subtle reflections on the dark, reflective sunglass lenses."
+    }
+  ],
+  "category_subtitle": "Even AI needs a good stylist. Spot the digital poser."
+}
