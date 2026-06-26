@@ -992,6 +992,13 @@
       "category_emoji": "☀️",
       "category_subtitle": "Beyond the shimmering heat haze, find the true summer image.",
       "challenge_file": "challenges/2026-06-26.json"
+  },
+    "2026-06-27": {
+      "day_number": 144,
+      "category": "Sunglass Style",
+      "category_emoji": "😎",
+      "category_subtitle": "Even AI needs a good stylist. Spot the digital poser.",
+      "challenge_file": "challenges/2026-06-27.json"
   }
 }
 
