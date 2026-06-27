@@ -1,0 +1,99 @@
+{
+  "day_number": 145,
+  "date": "2026-06-28",
+  "category": "Open Road Adventures",
+  "category_emoji": "🚗",
+  "rounds": [
+    {
+      "id": "d145r1",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/37516593/pexels-photo-37516593.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Сокіл Sokil on Pexels",
+      "pro_tip": "GENUINE NARRATIVE:** Real photos often convey true emotion or a subtle story. Look for serendipitous moments, authentic compositions, or a sense of truly experienced place.",
+      "source_url": "https://www.pexels.com/photo/scenic-road-through-greek-countryside-in-summer-37516593/"
+    },
+    {
+      "id": "d145r2",
+      "type": "image",
+      "content": "images/d145_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "HYPER-DETAIL:** Look for unnatural perfection in textures. AI renders individual pine needles, dust, or mud splatters with impossible clarity across the scene.",
+      "_note": "Prompt: A photorealistic photograph of a secluded, slightly damp asphalt road curving gently through a dense pine forest, reminiscent of Flagstaff, AZ, under a dramatically textured, heavily overcast sky. Captured with a Sony a7 III and a Tamron 28-75mm f/2.8 lens, the low, diffused light accentuates the individual pine needles and fallen bark chips scattered across the dark pavement."
+    },
+    {
+      "id": "d145r3",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/2994133/pexels-photo-2994133.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Wendy Wei on Pexels",
+      "pro_tip": "NATURAL TEXTURES:** Details are present but not hyper-accentuated. Real images show a natural range of focus and texture, without every element being perfectly crisp.",
+      "source_url": "https://www.pexels.com/photo/white-vehicle-parked-beside-road-2994133/"
+    },
+    {
+      "id": "d145r4",
+      "type": "image",
+      "content": "images/d145_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "REPETITIVE PATTERNS:** Observe foliage or distant elements. AI sometimes struggles with true randomness, leading to subtly repeated textures or cloned patterns in natural environments.",
+      "_note": "Prompt: A photorealistic photograph of a robust olive-green Jeep traversing a muddy, rutted dirt path that snakes through dense, vibrant rural foliage under a uniformly cloudy sky. Captured using a Fujifilm X-T4 with an XF 35mm f/2 lens, the soft, ambient light gently illuminates the intricate patterns of mud splatters on the jeep's lower body and the glistening texture of individual damp leaves on surrounding bushes."
+    },
+    {
+      "id": "d145r5",
+      "type": "image",
+      "content": "images/d145_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "UNREALISTIC LIGHTING:** Notice if light perfectly illuminates every detail. Shadows and highlights may seem too precise, revealing textures without natural diffusion or falloff.",
+      "_note": "Prompt: A photorealistic photograph of a gleaming white full-size SUV parked at a scenic overlook along a sweeping, winding desert road, with a vast, clear blue sky overhead and distant mesas shimmering in the heat. Shot on a Nikon D850 with a Nikkor 24-70mm f/2.8 lens, the bright, direct sunlight reveals fine dust clinging to the vehicle's tires and the intricate, crystalline texture of nearby desert flora."
+    },
+    {
+      "id": "d145r6",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1421218108559-eb1ff78357f5?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwzfHxyb2FkJTIwdHJpcCUyMHNjZW5pY3xlbnwwfDB8fHwxNzgyNTgxODM4fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Jesse Bowser on Unsplash",
+      "pro_tip": "IMPERFECT LIGHTING:** Natural light can be challenging or unpredictable. Shadows might obscure details, or highlights could be slightly blown out, reflecting real-world conditions.",
+      "source_url": "https://unsplash.com/photos/gray-concrete-road-across-brown-valley-during-daytime-c0I4ahyGIkA"
+    },
+    {
+      "id": "d145r7",
+      "type": "image",
+      "content": "images/d145_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "TECHNICAL PERFECTION:** Images generated with specific camera/lens often feel technically flawless but lack organic imperfections or a natural photographer's creative eye.",
+      "_note": "Prompt: A photorealistic photograph of a lone, older model sedan navigating a narrow, winding asphalt road carved into a steep, rugged mountainside in Greece, with majestic, hazy peaks rising in the background. Taken with a Canon EOS R6 and a Canon RF 24-105mm f/4L IS USM lens, the scene is bathed in a crisp, bright daytime Mediterranean light, highlighting the rough, weathered texture of ancient stone walls flanking the road."
+    },
+    {
+      "id": "d145r8",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/595167/pexels-photo-595167.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Quintin Gellar on Pexels",
+      "pro_tip": "ORGANIC FLAWS:** Real photos often include natural imperfections: subtle lens flare, atmospheric haze, genuine motion blur, or dust specks that add authenticity.",
+      "source_url": "https://www.pexels.com/photo/empty-road-between-trees-595167/"
+    },
+    {
+      "id": "d145r9",
+      "type": "image",
+      "content": "images/d145_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "SUBTLE ODDITIES:** Scan for minor distortions or inconsistencies in less prominent areas. Backgrounds or edges might reveal slightly off perspectives or uncanny blending of elements.",
+      "_note": "Prompt: A photorealistic photograph of a wide, unblemished gray concrete road stretching arrow-straight across an expansive, sun-baked brown valley during the late afternoon. Photographed with a Hasselblad X1D II 50C and a XCD 45mm f/3.5 lens, the harsh daytime sun casts long shadows and reveals the subtle aggregate texture and faint hairline cracks in the concrete surface, alongside the brittle, straw-like texture of sparse, dry grass."
+    },
+    {
+      "id": "d145r10",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/4618591/pexels-photo-4618591.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by ArtHouse Studio on Pexels",
+      "pro_tip": "RANDOM VARIATION:** Observe natural elements. Real photos show unique, non-repeating variations in shape, color, and texture that AI struggles to replicate perfectly.",
+      "source_url": "https://www.pexels.com/photo/a-car-on-a-road-under-a-cloudy-day-4618591/"
+    }
+  ],
+  "category_subtitle": "Authentic vista or AI hallucination? Get your road test!"
+}
