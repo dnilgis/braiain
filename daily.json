@@ -999,6 +999,13 @@
       "category_emoji": "😎",
       "category_subtitle": "Even AI needs a good stylist. Spot the digital poser.",
       "challenge_file": "challenges/2026-06-27.json"
+  },
+    "2026-06-28": {
+      "day_number": 145,
+      "category": "Open Road Adventures",
+      "category_emoji": "🚗",
+      "category_subtitle": "Authentic vista or AI hallucination? Get your road test!",
+      "challenge_file": "challenges/2026-06-28.json"
   }
 }
 
