@@ -1013,6 +1013,13 @@
       "category_emoji": "🧇",
       "category_subtitle": "Can you iron out the fakes in the grid?",
       "challenge_file": "challenges/2026-06-29.json"
+  },
+    "2026-06-30": {
+      "day_number": 147,
+      "category": "Social Media Day",
+      "category_emoji": "📱",
+      "category_subtitle": "Scroll, snap, share: Can AI tell the real from reel?",
+      "challenge_file": "challenges/2026-06-30.json"
   }
 }
 
