@@ -1006,6 +1006,13 @@
       "category_emoji": "🚗",
       "category_subtitle": "Authentic vista or AI hallucination? Get your road test!",
       "challenge_file": "challenges/2026-06-28.json"
+  },
+    "2026-06-29": {
+      "day_number": 146,
+      "category": "Waffle Iron Wonders",
+      "category_emoji": "🧇",
+      "category_subtitle": "Can you iron out the fakes in the grid?",
+      "challenge_file": "challenges/2026-06-29.json"
   }
 }
 
