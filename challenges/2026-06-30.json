@@ -1,0 +1,99 @@
+{
+  "day_number": 147,
+  "date": "2026-06-30",
+  "category": "Social Media Day",
+  "category_emoji": "📱",
+  "rounds": [
+    {
+      "id": "d147r1",
+      "type": "image",
+      "content": "images/d147_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "ATMOSPHERIC DETAILS:** Observe if dappled light and shadows fall realistically on multiple subjects. Look for natural dust motes, not too prominent or repetitive.",
+      "_note": "Prompt: A photorealistic photograph of four friends sitting on a shaded concrete patio outside a cafe, each engrossed in their own smartphone, with empty coffee cups on the table. Captured using a Fujifilm X-T4, 23mm f/2 lens, under bright but dappled daylight filtering through an awning, showcasing the distinct fabric textures of their various shirts and subtle dust motes in the air."
+    },
+    {
+      "id": "d147r2",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw2fHxzb2NpYWwlMjBtZWRpYXxlbnwwfDB8fHwxNzgyNjY3MDM0fDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Austin Distel on Unsplash",
+      "pro_tip": "CONSISTENT LIGHTING:** Assess how light interacts across the person, laptop, and smartphone. Real photos typically have seamless, natural light flow.",
+      "source_url": "https://unsplash.com/photos/person-using-both-laptop-and-smartphone-tLZhFRLj6nY"
+    },
+    {
+      "id": "d147r3",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/8886104/pexels-photo-8886104.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Brian Ramirez on Pexels",
+      "pro_tip": "AUTHENTIC UI:** Verify the app interface on screens. Real photos often show genuine, sometimes imperfect, UI elements and user content.",
+      "source_url": "https://www.pexels.com/photo/a-close-up-shot-of-a-person-holding-a-smartphone-8886104/"
+    },
+    {
+      "id": "d147r4",
+      "type": "image",
+      "content": "images/d147_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "TEXT & UI REALISM:** Inspect on-screen text for gibberish or uncanny perfection. Look for subtle, realistic fingerprint smudges on screens, not too perfect.",
+      "_note": "Prompt: A photorealistic photograph of a close-up of a hand holding a black smartphone, its screen displaying a vibrant TikTok 'For You' page with a short video paused. Captured with a Sony a7 III, 85mm f/1.4 lens, under soft ambient indoor light from a nearby window, highlighting faint fingerprint smudges on the screen and fine lines on the skin of the thumb."
+    },
+    {
+      "id": "d147r5",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1726066012749-f81bf4422d4e?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxMnx8cGhvbmUlMjBzb2NpYWwlMjBtZWRpYXxlbnwwfDB8fHwxNzgyNjY3MDEyfDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by SumUp on Unsplash",
+      "pro_tip": "NATURAL GRIP & WEAR:** Look for the natural, unforced way hands grip devices. Notice subtle signs of wear on phones or natural skin imperfections.",
+      "source_url": "https://unsplash.com/photos/a-person-holding-a-cell-phone-in-front-of-a-laptop-Aqc7znjxROM"
+    },
+    {
+      "id": "d147r6",
+      "type": "image",
+      "content": "images/d147_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "FINE TEXTURES & GLOWS:** Analyze the realism of intricate textures like knitwear or subtle steam from a mug. Check for a natural, soft glow on skin, avoiding artificial smoothness.",
+      "_note": "Prompt: A photorealistic photograph of someone relaxing on a plush armchair, cozily wrapped in a knitted throw, holding a steaming mug and scrolling through social media on a smartphone. Shot with a Sony a7C, 50mm f/1.8 lens, in a dimly lit room with warm light emanating from a floor lamp, highlighting the fuzzy texture of the throw blanket and the soft glow on the person's fingertips."
+    },
+    {
+      "id": "d147r7",
+      "type": "image",
+      "content": "images/d147_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "REFLECTIONS & TEXTURES:** Examine screen reflections for logical consistency with the environment. Check keyboard keys and wood grain for overly uniform or unnatural detail.",
+      "_note": "Prompt: A photorealistic photograph of a person's hands resting on a desk, one holding a silver smartphone showing a video call, while a sleek laptop sits open beside it displaying a document. Shot with a Canon EOS R6, 35mm f/1.8 lens, under bright office overhead lighting, revealing the subtle texture of the keyboard keys and the grain of the wooden desk surface."
+    },
+    {
+      "id": "d147r8",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/6669782/pexels-photo-6669782.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by RDNE Stock project on Pexels",
+      "pro_tip": "LIVED-IN ENVIRONMENT:** Spot authentic, slightly unkempt details in a cozy setting, like wrinkles in a throw or natural tabletop items.",
+      "source_url": "https://www.pexels.com/photo/love-coffee-cup-relaxation-6669782/"
+    },
+    {
+      "id": "d147r9",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/33395478/pexels-photo-33395478.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Robert So on Pexels",
+      "pro_tip": "VARYING REALITY:** Observe the distinct details of multiple subjects. Real photos capture individual differences in clothing textures and natural, non-uniform lighting.",
+      "source_url": "https://www.pexels.com/photo/group-of-young-adults-using-smartphones-outdoors-33395478/"
+    },
+    {
+      "id": "d147r10",
+      "type": "image",
+      "content": "images/d147_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "COMPLEX INTERACTIONS:** Evaluate the naturalness of hands simultaneously operating multiple devices. Assess consistency of light reflections across all screens and the intricate fabric weave.",
+      "_note": "Prompt: A photorealistic photograph of a young woman casually seated on a patterned sofa, glancing up from her laptop screen to quickly type a message on her smartphone held in the other hand. Taken with a Nikon Z7, 50mm f/1.8 lens, illuminated by warm late afternoon natural light flooding a living room, emphasizing the intricate fabric weave of the sofa and the subtle reflections on both screens."
+    }
+  ],
+  "category_subtitle": "Scroll, snap, share: Can AI tell the real from reel?"
+}
