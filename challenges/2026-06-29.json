@@ -1,0 +1,99 @@
+{
+  "day_number": 146,
+  "date": "2026-06-29",
+  "category": "Waffle Iron Wonders",
+  "category_emoji": "🧇",
+  "rounds": [
+    {
+      "id": "d146r1",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/25757603/pexels-photo-25757603.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Th2city Santana on Pexels",
+      "pro_tip": "CATEGORY: HYPER-DETAILED LIGHTING**",
+      "source_url": "https://www.pexels.com/photo/waffle-on-iron-25757603/"
+    },
+    {
+      "id": "d146r2",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/38181080/pexels-photo-38181080.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Amar  Preciado on Pexels",
+      "pro_tip": "Observe textures and sheen, especially on metal or cooked food. AI might render surfaces with an unnatural uniformity, too much sheen, or slightly synthetic feel.",
+      "source_url": "https://www.pexels.com/photo/preparing-homemade-waffles-in-cozy-kitchen-38181080/"
+    },
+    {
+      "id": "d146r3",
+      "type": "image",
+      "content": "images/d146_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "CATEGORY: TECHNICAL SPECIFICS**",
+      "_note": "Prompt: A photorealistic photograph of two golden-brown heart-shaped waffles just rising out of a cast iron waffle iron, with delicate wisps of steam curling upwards. The edges of the waffle show subtle crisp char marks, and the cast iron's textured surface is visible with a slight sheen of cooking oil. Shot on a Canon EOS 5D Mark IV, 85mm f/1.8 lens, with soft morning light illuminating from the side."
+    },
+    {
+      "id": "d146r4",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/25049357/pexels-photo-25049357.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Th2city Santana on Pexels",
+      "pro_tip": "Note overly detailed lighting descriptions, like 'soft morning light illuminating from the side.' AI prompts often meticulously describe idealized light sources.",
+      "source_url": "https://www.pexels.com/photo/man-preparing-waffles-in-toaster-25049357/"
+    },
+    {
+      "id": "d146r5",
+      "type": "image",
+      "content": "images/d146_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Look for explicit camera model, lens, and f-stop details. AI prompts frequently include these specific photographic technical specifications for realism.",
+      "_note": "Prompt: A photorealistic photograph of a close-up, top-down view of a bubble waffle iron with the lid slightly ajar, revealing the unbaked batter actively bubbling and rising into perfect spheres. The non-stick surface of the iron shows fine texture, and there are tiny specks of flour dust visible on the surrounding metal. Captured with a Sony a7 III, 100mm f/2.8 macro lens, under bright, diffused kitchen light."
+    },
+    {
+      "id": "d146r6",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/30680683/pexels-photo-30680683.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Aurelijus U. on Pexels",
+      "pro_tip": "Examine subtle 'imperfections' like flour dust or stray grains. AI might add these for realism, but they can appear too deliberate or perfectly placed.",
+      "source_url": "https://www.pexels.com/photo/golden-waffles-cooking-in-cast-iron-pan-30680683/"
+    },
+    {
+      "id": "d146r7",
+      "type": "image",
+      "content": "images/d146_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "CATEGORY: OVER-PERFECTION**",
+      "_note": "Prompt: A photorealistic photograph of a professional chef, wearing a crisp white apron, carefully pouring golden batter into a large commercial waffle iron, with a partially cooked waffle visible in the adjacent iron. The stainless steel countertops gleam under bright overhead kitchen lights, and a few stray flour grains are visible on the chef's fingertips. Taken with a Nikon D850, 50mm f/1.4 lens, in a brightly lit professional kitchen."
+    },
+    {
+      "id": "d146r8",
+      "type": "image",
+      "content": "images/d146_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "Watch for elements that are too perfect, like unnaturally ideal steam curls or perfectly identical food shapes. AI often over-renders desired details.",
+      "_note": "Prompt: A photorealistic photograph of a close-up view of a large bubble waffle machine at a bustling street food market, with golden-brown bubble waffles just reaching perfection inside the open iron, wisps of steam rising into the air. The well-worn metal surface of the machine shows slight scuffs and oil residue, and a vibrant, blurred background of marketgoers and stalls suggests the lively atmosphere. Shot with a Fujifilm X-T4, 33mm f/1.4 lens, under bright, slightly diffused daylight."
+    },
+    {
+      "id": "d146r9",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/25049356/pexels-photo-25049356.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Th2city Santana on Pexels",
+      "pro_tip": "CATEGORY: UNCANNY TEXTURES/SHEEN**",
+      "source_url": "https://www.pexels.com/photo/man-making-waffles-in-toaster-25049356/"
+    },
+    {
+      "id": "d146r10",
+      "type": "image",
+      "content": "images/d146_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "CATEGORY: CONTRIVED IMPERFECTIONS**",
+      "_note": "Prompt: A photorealistic photograph of a person's hands gently lifting a perfectly golden square waffle from a home waffle iron, surrounded by a rustic cutting board piled with freshly baked pretzels, berries, and a small bowl of flour. Fine dust motes float visibly in the warm, inviting glow of indoor kitchen lighting, highlighting the subtle texture of the wooden board and the person's slightly flour-dusted fingertips. Captured with a Canon EOS R6, 85mm f/1.2 lens, under warm, ambient kitchen light."
+    }
+  ],
+  "category_subtitle": "Can you iron out the fakes in the grid?"
+}
