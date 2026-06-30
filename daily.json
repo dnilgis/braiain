@@ -1020,6 +1020,13 @@
       "category_emoji": "📱",
       "category_subtitle": "Scroll, snap, share: Can AI tell the real from reel?",
       "challenge_file": "challenges/2026-06-30.json"
+  },
+    "2026-07-01": {
+      "day_number": 148,
+      "category": "Thirsty Work",
+      "category_emoji": "💧",
+      "category_subtitle": "Quench your truth thirst: spot the AI.",
+      "challenge_file": "challenges/2026-07-01.json"
   }
 }
 
