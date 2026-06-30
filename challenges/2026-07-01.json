@@ -1,0 +1,99 @@
+{
+  "day_number": 148,
+  "date": "2026-07-01",
+  "category": "Thirsty Work",
+  "category_emoji": "💧",
+  "rounds": [
+    {
+      "id": "d148r1",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1681740149437-a02014f50ab2?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwyfHxjb29sJTIwZHJpbmslMkMlMjBoeWRyYXRpb258ZW58MHwwfHx8MTc4Mjg0NzI2Mnww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Amanda María on Unsplash",
+      "pro_tip": "AUTHENTIC IMPERFECTIONS:** Seek out natural human imperfections like slight asymmetry, varying skin tones, or genuinely worn elements on clothing and shoes.",
+      "source_url": "https://unsplash.com/photos/a-man-drinking-water-out-of-a-bottle-wZlwKNNKT8w"
+    },
+    {
+      "id": "d148r2",
+      "type": "image",
+      "content": "images/d148_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "TEXTURE FLAWLESSNESS:** Examine textures like fabric weaves, stubble, or skin pores. AI can make them too pristine, repetitive, or hyper-detailed in an artificial way.",
+      "_note": "Prompt: A photorealistic photograph of a fit young man in a blue athletic tank top, taking a large gulp from a branded water bottle on the sidelines of a sunny outdoor track. Tiny flecks of rubber track material cling to his sweaty arm, and the vibrant weave of his shirt is clearly visible. Shot with a Nikon D850, 85mm f/1.4 lens, bright midday sun."
+    },
+    {
+      "id": "d148r3",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/2470021/pexels-photo-2470021.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by RUN 4 FFWPU on Pexels",
+      "pro_tip": "NATURAL LIGHT & SHADOW:** Observe how light falls. Real photos show complex, organic shadows and highlights, often with subtle lens flares or imperfections.",
+      "source_url": "https://www.pexels.com/photo/man-drinking-water-2470021/"
+    },
+    {
+      "id": "d148r4",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/12585554/pexels-photo-12585554.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by BOOM 💥 Photography on Pexels",
+      "pro_tip": "FLUID DYNAMICS:** Real liquids behave naturally. Look for inconsistent droplet sizes, believable splashes, and organic condensation that settles imperfectly.",
+      "source_url": "https://www.pexels.com/photo/a-man-drinking-water-12585554/"
+    },
+    {
+      "id": "d148r5",
+      "type": "image",
+      "content": "images/d148_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "REFLECTIONS & LIQUIDS:** Watch for reflections that are too perfect or slightly off-kilter. Droplets and condensation often appear unnaturally uniform or defy gravity.",
+      "_note": "Prompt: A photorealistic photograph of a man with short brown hair, tilting a clear plastic water bottle to his lips, caught in a mid-shot indoors. Sunlight streams from a window, highlighting the fine stubble on his jawline and subtle condensation on the bottle's exterior, Canon EOS R5, 50mm f/1.8 lens, natural diffused light."
+    },
+    {
+      "id": "d148r6",
+      "type": "image",
+      "content": "images/d148_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "LIGHTING UNIFORMITY:** Notice light that appears too \"painted on\" or uniformly diffused, lacking natural variations, harshness, or nuanced shadows expected from a real scene.",
+      "_note": "Prompt: A photorealistic photograph of a contemplative bald man, dressed in a grey marl t-shirt, slowly drinking bottled water at a sleek kitchen counter. The gentle indoor warm light casts a soft sheen on his scalp, revealing faint skin pores, and the polished countertop reflects the bottle's label. Taken with a Fujifilm X-T4, 35mm f/2 lens."
+    },
+    {
+      "id": "d148r7",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/4719951/pexels-photo-4719951.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by Ketut Subiyanto on Pexels",
+      "pro_tip": "ORGANIC BODY LANGUAGE:** Pay attention to genuine, unforced expressions, subtle physical tension, or natural signs of exertion like true sweat patterns.",
+      "source_url": "https://www.pexels.com/photo/man-in-black-crew-neck-t-shirt-drinking-yellow-liquid-from-plastic-bottle-4719951/"
+    },
+    {
+      "id": "d148r8",
+      "type": "image",
+      "content": "images/d148_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "BRANDING ARTIFACTS:** Branded elements on bottles or clothing might appear distorted, generic, or have subtle text inconsistencies. Look for slight blur or non-sequitur details.",
+      "_note": "Prompt: A photorealistic photograph of a middle-aged man with salt-and-pepper hair, sitting on a park bench and rehydrating with a bright orange sports drink after a run. Sweat glistens on his temples, and the faint scuff marks on his running shoes are discernible against the soft, late afternoon sunlight. Captured with a Sony a7 III, 135mm f/1.8 lens, golden hour light."
+    },
+    {
+      "id": "d148r9",
+      "type": "image",
+      "content": "images/d148_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "EXAGGERATED DETAILS:** AI might overemphasize requested details like \"glistening sweat\" or \"discernible scuff marks,\" making them look unnaturally pronounced or artificial.",
+      "_note": "Prompt: A photorealistic photograph of a very close-up shot of a muscular, sweaty athletic man’s face and upper chest as he gulps water from a bottle, droplets running down his chin. The extreme detail reveals individual sweat beads clinging to his stubble and the intricate fabric weave of his damp performance shirt. Shot with a Canon EOS R5, 100mm f/2.8 Macro lens, harsh direct sunlight."
+    },
+    {
+      "id": "d148r10",
+      "type": "image",
+      "content": "https://images.pexels.com/photos/7290004/pexels-photo-7290004.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "source": "human",
+      "attribution": "Photo by www.kaboompics.com on Pexels",
+      "pro_tip": "ENVIRONMENTAL CHAOS:** Look for realistic background clutter, unscripted elements, or subtle motion blur, reflecting the spontaneous nature of captured reality.",
+      "source_url": "https://www.pexels.com/photo/a-man-in-black-sleeveless-shirt-7290004/"
+    }
+  ],
+  "category_subtitle": "Quench your truth thirst: spot the AI."
+}
