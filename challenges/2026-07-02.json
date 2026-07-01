@@ -1,0 +1,99 @@
+{
+  "day_number": 149,
+  "date": "2026-07-02",
+  "category": "Pre-Independence Day",
+  "category_emoji": "📜",
+  "rounds": [
+    {
+      "id": "d149r1",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1626833191812-db1260fdeabc?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw0fHxjb2xvbmlhbCUyQyUyMGZvdW5kaW5nJTIwZmF0aGVycyUyQyUyMHF1aWxsfGVufDB8MHx8fDE3ODI5MzE3MTF8MA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Chris Chow on Unsplash",
+      "pro_tip": "For Real Photos:**",
+      "source_url": "https://unsplash.com/photos/men-in-white-dress-shirt-and-black-pants-sitting-on-blue-wheel-chair-during-daytime-ijTQ1eOQmJk"
+    },
+    {
+      "id": "d149r2",
+      "type": "image",
+      "content": "images/d149_ai5.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "DYNAMIC HYPER-REALISM: Look for overly perfect flag dynamics, exact sun glints, and too-uniform sweat sheen, often lacking natural variation.",
+      "_note": "Prompt: A photorealistic photograph of a playful, short-coated golden-brown Labrador puppy gently tugging at the edge of a small American flag with its mouth, eyes bright with mischief, against a blurred grassy backyard background, hinting at pre-Independence Day fun. Shot with a Canon EOS R5, 100mm f/2.8 macro lens, under clear, sunny afternoon light, emphasizing the individual short hairs on the dog's muzzle, the wet sheen on its tongue and teeth, and the crisp, slightly frayed fibers of the flag's edge."
+    },
+    {
+      "id": "d149r3",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1473090826765-d54ac2fdc1eb?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw2fHxpbmRlcGVuZGVuY2UlMjBkYXl8ZW58MHwwfHx8MTc4MjkzMTgyN3ww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by frank mckenna on Unsplash",
+      "pro_tip": "ORGANIC LIGHTING: Look for nuanced light interaction on metallic surfaces and natural variation in stubble, less pristine than AI's output.",
+      "source_url": "https://unsplash.com/photos/man-riding-bike-and-woman-running-holding-flag-of-usa-JB92NeJSxW4"
+    },
+    {
+      "id": "d149r4",
+      "type": "image",
+      "content": "images/d149_ai2.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "TEXTURAL PERFECTION: AI often renders impossibly uniform skin pores and condensation beading, lacking natural imperfections or variation.",
+      "_note": "Prompt: A photorealistic photograph of two older men, dressed identically in crisp white dress shirts and black trousers, actively conversing while seated in blue manual wheelchairs beside a paved community park path during a pre-Independence Day event. Shot with a Nikon Z7 II, 70-200mm f/2.8 lens, under bright, slightly overcast daytime light, emphasizing the subtle creases in their shirt fabric, the metallic sheen of the wheelchair rims, and the fine stubble on their chins."
+    },
+    {
+      "id": "d149r5",
+      "type": "image",
+      "content": "images/d149_ai3.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "UNIFORM DETAIL: Notice if subtle creases and metallic sheen are too consistent or flawlessly rendered across all elements.",
+      "_note": "Prompt: A photorealistic photograph of a small ensemble of men in meticulously detailed 18th-century colonial attire, standing formally on a cobblestone street, engaged in a serious discussion as if preparing for a historic proclamation. Taken with a Sony a7 III, 50mm f/1.2 lens, under soft, early morning light, highlighting the rich texture of their wool coats, the powdered detail of their wigs, and the worn, polished leather of their shoes."
+    },
+    {
+      "id": "d149r6",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1660403372207-31aa1d007a29?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxMnx8Y29sb25pYWwlMkMlMjBmb3VuZGluZyUyMGZhdGhlcnMlMkMlMjBxdWlsbHxlbnwwfDB8fHwxNzgyOTMxNzExfDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Rusty Watson on Unsplash",
+      "pro_tip": "MICRO-DETAIL OVERLOAD: Observe individual hairs, wet tongue sheen, and flag fibers that are all uniformly crisp, sometimes appearing artificial.",
+      "source_url": "https://unsplash.com/photos/a-group-of-people-in-clothing-f9YA9vsRGbY"
+    },
+    {
+      "id": "d149r7",
+      "type": "image",
+      "content": "images/d149_ai1.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "For AI-Generated Images:**",
+      "_note": "Prompt: A photorealistic photograph of a small, diverse group of friends gathered on a sunlit porch, laughing and sharing stories, dressed in casual red, white, and blue for a pre-Independence Day celebration. Captured with a Canon EOS R6, 85mm f/1.4 lens, bathed in warm, late afternoon golden hour light, focusing on the soft cotton weave of their shirts, subtle skin pores on their smiling faces, and the condensation beading on a glass of iced tea."
+    },
+    {
+      "id": "d149r8",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1631998816116-665d1132c02a?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHwxOXx8Y29sb25pYWwlMkMlMjBmb3VuZGluZyUyMGZhdGhlcnMlMkMlMjBxdWlsbHxlbnwwfDB8fHwxNzgyOTMxNzExfDA&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Zachariah Smith on Unsplash",
+      "pro_tip": "NATURAL IMPERFECTIONS: Real photos often show slight imperfections in clothing weave or skin texture, rather than uniformly rendered detail.",
+      "source_url": "https://unsplash.com/photos/a-group-of-men-dressed-in-period-costumes-w5FlFSxiXEA"
+    },
+    {
+      "id": "d149r9",
+      "type": "image",
+      "content": "https://images.unsplash.com/photo-1534353900028-ce511ef9351d?ixid=M3w4NjkxNDJ8MHwxfHNlYXJjaHw5fHxpbmRlcGVuZGVuY2UlMjBkYXl8ZW58MHwwfHx8MTc4MjkzMTgyN3ww&ixlib=rb-4.1.0&w=800&h=600&fit=crop&q=80",
+      "source": "human",
+      "attribution": "Photo by Camylla Battani on Unsplash",
+      "pro_tip": "AUTHENTIC WEAR: Real period costumes will often show natural wear, subtle fading, or slight inconsistencies, unlike AI's often-flawless rendition.",
+      "source_url": "https://unsplash.com/photos/short-coated-brown-dog-biting-american-flag-gZltlzPun9c"
+    },
+    {
+      "id": "d149r10",
+      "type": "image",
+      "content": "images/d149_ai4.png",
+      "source": "ai",
+      "attribution": "AI-generated — created with Google Gemini",
+      "pro_tip": "HYPER-TEXTURE: AI excels at producing rich, detailed textures like wool and powdered wigs that can appear too \"perfect\" or exaggerated.",
+      "_note": "Prompt: A photorealistic photograph of a woman energetically running down a tree-lined suburban street, a large, rippling American flag held proudly aloft, while a man on a vintage bicycle waves enthusiastically from a parallel path during a community pre-Independence Day parade. Captured using a Fujifilm X-T4, 35mm f/2 lens, under bright mid-morning sun, focusing on the dynamic wrinkles and folds of the flag fabric, the sun glinting off the bicycle's chrome handlebars, and the subtle sheen of sweat on the runner's forehead."
+    }
+  ],
+  "category_subtitle": "Prove your visual independence. Spot the AI."
+}
