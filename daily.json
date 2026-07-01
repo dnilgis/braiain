@@ -1027,6 +1027,13 @@
       "category_emoji": "💧",
       "category_subtitle": "Quench your truth thirst: spot the AI.",
       "challenge_file": "challenges/2026-07-01.json"
+  },
+    "2026-07-02": {
+      "day_number": 149,
+      "category": "Pre-Independence Day",
+      "category_emoji": "📜",
+      "category_subtitle": "Prove your visual independence. Spot the AI.",
+      "challenge_file": "challenges/2026-07-02.json"
   }
 }
 
