@@ -1,2222 +1,471 @@
-<!DOCTYPE html>
-<!--
-╔═══════════════════════════════════════════════════════════════╗
-║                                                               ║
-║   ██████╗ ██████╗  █████╗ ██╗ █████╗ ██╗███╗   ██╗            ║
-║   ██╔══██╗██╔══██╗██╔══██╗██║██╔══██╗██║████╗  ██║            ║
-║   ██████╔╝██████╔╝███████║██║███████║██║██╔██╗ ██║            ║
-║   ██╔══██╗██╔══██╗██╔══██║██║██╔══██║██║██║╚██╗██║            ║
-║   ██████╔╝██║  ██║██║  ██║██║██║  ██║██║██║ ╚████║            ║
-║   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚═╝  ╚═╝╚═╝╚═╝ ╚═══╝             ║
-║                                                               ║
-║   You found the source. Good instincts.                       ║
-║   That's the whole point of this game.                        ║
-║                                                               ║
-║   Try the Konami code on the main page.                       ║
-║   Or type "turing" on the FAQ.                                ║
-║   Or click the logo 5 times fast.                             ║
-║   There are more.                                             ║
-║                                                               ║
-║   The resistance remembers.                                   ║
-║   — dnilgis                                                   ║
-║                                                               ║
-╚═══════════════════════════════════════════════════════════════╝
--->
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- Cache busting: version stamped on all assets -->
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<meta http-equiv="Pragma" content="no-cache">
-<meta http-equiv="Expires" content="0">
-
-<title>BRAIAIN — The Voight-Kampff Test for the AI Age | Free Daily AI Detection Game</title>
-
-<!-- SEO -->
-<meta name="description" content="The Voight-Kampff test for the AI age — a free daily game where you decide: real photo or AI-generated fake? 10 rounds, pro tips, streak tracking. Train your eye to detect AI. New challenge every day.">
-<meta name="keywords" content="AI detection game, real or fake, spot the AI, voight-kampff test, turing test, AI image detection, daily AI challenge, AI vs real photos, can you spot AI, AI generated images, fake photo detector, AI art game, real vs AI, deepfake game, AI photo quiz, detect AI images, is it AI, human or AI, AI image quiz, free AI game, daily brain game, AI awareness, spot the fake, real or AI generated, AI detection test, AI image challenge, blade runner, do androids dream, replicant test, braiain">
-<meta name="author" content="BRAIAIN">
-<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="color-scheme" content="dark">
+<title>BRAIAIN — The S&amp;P of AI</title>
+<meta name="description" content="The AI buildout, measured. The BRAIAIN Buildout Index and the sourced numbers behind the AI economy — capital, compute, power, infrastructure, and what the buildout is pulling in after it. Every figure sourced and dated.">
 <link rel="canonical" href="https://braiain.com/">
-
-<!-- Open Graph -->
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="BRAIAIN">
-<meta property="og:title" content="BRAIAIN — The Voight-Kampff Test for the AI Age">
-<meta property="og:description" content="Real photo or AI fake? 10 rounds. A daily Turing test for your eyes — train your instincts, build your streak, share your score.">
 <meta property="og:url" content="https://braiain.com">
+<meta property="og:site_name" content="BRAIAIN">
+<meta property="og:title" content="BRAIAIN — The S&P of AI">
+<meta property="og:description" content="The AI buildout is pacing $25,082 a second. Buildout Index: 171.1, up 71% since Q3 2025. Every number sourced and dated.">
 <meta property="og:image" content="https://braiain.com/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="BRAIAIN — Can You Spot the AI? Free daily AI detection game.">
-<meta property="og:locale" content="en_US">
-
-<!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="BRAIAIN — The Voight-Kampff Test for the AI Age">
-<meta name="twitter:description" content="Real photo or AI fake? A daily Turing test for your eyes. 10 rounds — can you spot the machine?">
+<meta name="twitter:title" content="BRAIAIN — The S&P of AI">
+<meta name="twitter:description" content="The AI buildout is pacing $25,082 a second. Buildout Index: 171.1, up 71% since Q3 2025.">
 <meta name="twitter:image" content="https://braiain.com/og-image.png">
-<meta name="twitter:image:alt" content="BRAIAIN daily AI detection challenge">
-
-<!-- Favicons -->
-<link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="manifest" href="/site.webmanifest">
-<meta name="theme-color" content="#00e5ff">
-<meta name="msapplication-TileColor" content="#0a0e17">
-
-<!-- Structured Data: WebApplication + Game -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebApplication",
-  "name": "BRAIAIN",
-  "url": "https://braiain.com",
-  "description": "The Voight-Kampff test for the AI age. A free daily game — 10 rounds of real photos vs AI fakes. Train your eye, build your streak, share your score. A daily Turing test for your visual instincts.",
-  "applicationCategory": "GameApplication",
-  "operatingSystem": "Web",
-  "browserRequirements": "Requires JavaScript",
-  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-  "author": { "@type": "Organization", "name": "BRAIAIN", "url": "https://braiain.com" },
-  "screenshot": "https://braiain.com/og-image.png",
-  "featureList": ["Daily AI detection challenges", "10 rounds per day", "Streak tracking", "Score sharing", "Pro tips after each round", "Community accuracy stats"],
-  "gamePlatform": "Web",
-  "genre": ["Puzzle", "Trivia", "Educational"]
-}
-</script>
-
-<!-- Structured Data: FAQ (long-tail SEO) -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "How can I tell if an image is AI generated?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Look for telltale signs like unnatural hand anatomy (extra fingers, fused joints), inconsistent lighting and shadows, overly perfect symmetry, garbled text or signage, repeating patterns in backgrounds, and unnaturally smooth skin textures. BRAIAIN helps you practice spotting these signs with daily challenges."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is BRAIAIN?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "BRAIAIN is a free daily game that tests your ability to distinguish real photographs from AI-generated images. Each day features 10 rounds with themed categories. Track your streak, learn pro tips, and share your score."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is BRAIAIN free to play?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, BRAIAIN is completely free with no signup required. A new challenge drops every day at midnight and you can play on any device with a web browser."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do AI image detectors work?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "AI image detectors analyze patterns that differ between real photographs and AI-generated images, including noise distribution, compression artifacts, and pixel-level inconsistencies. BRAIAIN trains your human eye to spot these differences without any tools."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the Voight-Kampff test?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The Voight-Kampff test is a fictional empathy test from Blade Runner used to distinguish replicants from humans. BRAIAIN is the real-world equivalent for the AI age — instead of measuring emotional responses, it tests whether your eyes can distinguish real photographs from AI-generated images."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is BRAIAIN like a Turing test?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The Turing test asks whether a machine can fool a human into thinking it is human. BRAIAIN flips that question: can a human detect when machines create? Every daily challenge is a visual Turing test that measures humanity's ability to spot AI-generated content."
-      }
-    }
-  ]
-}
-</script>
-
-<!-- Google Analytics (GA4) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3B3ZCE62NW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-3B3ZCE62NW');
-</script>
-
-<!-- Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 <style>
-/* ══════════════════════════════════════
-   RESET & BASE
-   ══════════════════════════════════════ */
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --bg:#06060c;--surface:#0f0f1e;--border:#2a2a42;
-  --cyan:#00e5ff;--green:#00ff9d;--red:#ff003c;--amber:#ffb300;
-  --text:#ececec;--muted:#8888a8;
-  --font-display:'Orbitron',sans-serif;
-  --font-mono:'Share Tech Mono',monospace;
-  --glow-cyan:0 0 20px rgba(0,229,255,.3);
-  --glow-green:0 0 20px rgba(0,255,157,.3);
-  --glow-red:0 0 20px rgba(255,0,60,.3);
+  --paper:#14130f;
+  --ink:#e8e2d4;
+  --ink-2:#b4ae9f;
+  --ink-3:#817c6f;
+  --rule:#3a3830;
+  --rule-soft:#2a2822;
+  --pending:#d9482b;
+  --wash:rgba(232,226,212,0.07);
+  color-scheme:dark;
 }
-html{font-size:16px;-webkit-tap-highlight-color:transparent}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--paper)}
 body{
-  background:var(--bg);color:var(--text);
-  font-family:var(--font-mono);
-  min-height:100dvh;overflow-x:hidden;
-  display:flex;flex-direction:column;
+  background:var(--paper);color:var(--ink);
+  font-family:"Helvetica Neue",Helvetica,Arial,system-ui,sans-serif;
+  font-size:15px;line-height:1.4;
+  -webkit-font-smoothing:antialiased;
 }
-button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
-img{display:block;max-width:100%}
+a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--ink-3);text-underline-offset:2px}
+a:hover{text-decoration-color:var(--ink)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.wrap{max-width:1240px;margin:0 auto;padding:0 16px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.num{font-variant-numeric:tabular-nums}
 
-/* ══════════════════════════════════════
-   CRT SCANLINE OVERLAY
-   ══════════════════════════════════════ */
-#crt-overlay{
-  position:fixed;inset:0;pointer-events:none;z-index:9999;
-  background:repeating-linear-gradient(
-    0deg,
-    rgba(0,0,0,.03) 0px,
-    rgba(0,0,0,.03) 1px,
-    transparent 1px,
-    transparent 3px
-  );
-  mix-blend-mode:multiply;
-}
+/* masthead */
+.mast{border-top:4px solid var(--ink);padding:10px 0 8px;display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.mast .name{font-size:28px;font-weight:800;letter-spacing:-0.02em}
+.mast .tag{font-size:15px;color:var(--ink-2)}
+.mast .right{margin-left:auto;display:flex;gap:14px;align-items:baseline}
+.mast .url{font-weight:700;font-size:14px;text-decoration:none}
+.mast .asof{font-size:13px;color:var(--ink-2)}
 
-/* ══════════════════════════════════════
-   HUD — TOP BAR
-   ══════════════════════════════════════ */
-#hud{
-  position:sticky;top:0;z-index:10001;
-  background:rgba(6,6,12,.92);
-  backdrop-filter:blur(12px);
-  border-bottom:1px solid var(--border);
-  padding:10px 16px;
-  display:flex;flex-wrap:wrap;align-items:center;
-  gap:6px 16px;
-}
-#hud-logo{
-  font-family:var(--font-display);font-weight:900;
-  font-size:1.1rem;letter-spacing:3px;color:var(--cyan);
-  text-shadow:var(--glow-cyan);
-  flex-shrink:0;
-}
-#hud-ticker{
-  font-size:.8rem;color:var(--muted);
-  letter-spacing:1px;text-transform:uppercase;
-}
-#hud-round{
-  margin-left:auto;
-  font-family:var(--font-display);font-size:.8rem;
-  color:var(--cyan);letter-spacing:2px;
-}
-#hud-pips{display:flex;gap:5px;margin-left:8px}
-.pip{
-  width:10px;height:10px;border-radius:50%;
-  background:var(--border);transition:background .3s,box-shadow .3s;
-}
-.pip.correct{background:var(--green);box-shadow:var(--glow-green)}
-.pip.wrong{background:var(--red);box-shadow:var(--glow-red)}
-@media(max-width:480px){
-  #hud-ticker{order:3;width:100%;margin-top:2px}
-}
+/* hero: the index */
+.hero{display:grid;grid-template-columns:7fr 5fr;gap:40px;padding:24px 0 22px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.hero .label{font-size:20px;font-weight:700}
+.hero .level{font-size:clamp(72px,9vw,120px);font-weight:800;letter-spacing:-0.03em;line-height:.9;margin:6px 0 0}
+.hero .level small{font-size:clamp(20px,2.4vw,30px);font-weight:700;color:var(--ink-2);letter-spacing:0;margin-left:10px}
+.hero .def{margin-top:10px;max-width:52ch;color:var(--ink-2);font-size:14.5px}
+.hero .chart{margin-top:16px;max-width:460px}
+.hero .chart svg{width:100%;height:auto;display:block}
+.kpis{border-left:1px solid var(--rule);padding-left:28px;display:flex;flex-direction:column;justify-content:space-between;gap:6px}
+.kpi{padding:8px 0;border-top:1px solid var(--rule-soft)}
+.kpi:first-child{border-top:0;padding-top:0}
+.kpi .v{font-size:30px;font-weight:700;letter-spacing:-0.01em}
+.kpi .v small{font-size:15px;font-weight:600;color:var(--ink-2)}
+.kpi .l{font-size:13px;font-weight:600;color:var(--ink-2)}
+.kpi .d{font-size:12px;color:var(--ink-3)}
+.live-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--pending);vertical-align:4px;margin-left:6px}
 
-/* ══════════════════════════════════════
-   SCREENS
-   ══════════════════════════════════════ */
-.screen{
-  display:none;flex-direction:column;align-items:center;
-  flex:1;padding:20px 16px 40px;
-  animation:fadeUp .4s ease-out;
-}
-.screen.active{display:flex}
-@keyframes fadeUp{
-  from{opacity:0;transform:translateY(20px)}
-  to{opacity:1;transform:translateY(0)}
-}
+/* sectors */
+.sectors{display:grid;grid-template-columns:1fr 1fr 1fr;column-gap:40px}
+.sec{padding:18px 0 22px;border-bottom:1px solid var(--rule)}
+.sec h2{font-size:22px;font-weight:700;border-top:2px solid var(--ink);padding-top:8px;display:flex;align-items:baseline;gap:10px}
+.sec h2 .sym{font-size:13px;font-weight:700;color:var(--ink-3);letter-spacing:.04em}
+.bigstat{margin:12px 0 2px}
+.bigstat .v{font-size:56px;font-weight:300;letter-spacing:-0.02em;line-height:1}
+.bigstat .l{font-size:14px;font-weight:600;margin-top:4px}
+.src{font-size:12px;color:var(--ink-3);margin-top:2px}
+.row{padding:9px 0;border-top:1px solid var(--rule-soft)}
+.row .v{font-size:21px;font-weight:700}
+.row .l{font-size:13.5px;font-weight:600;color:var(--ink-2)}
+.minitable{width:100%;border-collapse:collapse;margin-top:8px;font-size:13.5px}
+.minitable td{padding:4px 0;border-top:1px solid var(--rule-soft)}
+.minitable td:last-child{text-align:right;font-weight:600}
+.minitable tr:first-child td{border-top:0}
+.chart{margin-top:10px}
+.chart svg{display:block;width:100%;height:auto}
+.meter{margin-top:8px;height:10px;background:var(--wash);position:relative}
+.meter .fill{position:absolute;left:0;top:0;bottom:0;background:var(--ink-2)}
+.meter .band{position:absolute;top:0;bottom:0;background:rgba(217,72,43,.35)}
+.meter .now{position:absolute;top:-3px;bottom:-3px;width:3px;background:var(--ink)}
+.watch{width:100%;border-collapse:collapse;margin-top:8px;font-size:13px}
+.watch td{padding:5px 0;border-top:1px solid var(--rule-soft);vertical-align:top}
+.watch td:first-child{font-weight:700;padding-right:10px;white-space:nowrap}
+.watch tr:first-child td{border-top:0}
 
-/* ── BOOT SCREEN ── */
-#screen-boot{justify-content:center;gap:20px;text-align:center}
-#boot-logo{
-  font-family:var(--font-display);font-weight:900;
-  font-size:clamp(2rem,8vw,3.5rem);
-  letter-spacing:6px;color:var(--cyan);
-  text-shadow:var(--glow-cyan);
-}
-#boot-sub{font-size:.85rem;color:var(--muted);letter-spacing:2px;text-transform:uppercase}
-#boot-stats{
-  display:none;gap:24px;margin:16px 0 8px;
-}
-#boot-stats.visible{display:flex}
-.bstat{display:flex;flex-direction:column;align-items:center;gap:2px}
-.bstat-num{
-  font-family:var(--font-display);font-size:1.3rem;
-  font-weight:900;color:var(--cyan);letter-spacing:1px;
-}
-.bstat-label{
-  font-family:var(--font-mono);font-size:.65rem;
-  color:var(--muted);letter-spacing:1.5px;
-}
-#boot-status{font-size:.8rem;color:var(--green);min-height:1.2em}
-#boot-transmission{
-  font-size:.88rem;color:var(--text);letter-spacing:.5px;
-  opacity:0;max-width:420px;
-  margin:10px auto 0;transition:opacity 1s;line-height:1.6;text-align:center;
-}
-.boot-btn{
-  margin-top:12px;padding:16px 44px;
-  font-family:var(--font-display);font-size:.95rem;font-weight:700;
-  letter-spacing:3px;text-transform:uppercase;
-  color:var(--bg);background:var(--cyan);
-  border:none;position:relative;
-  clip-path:polygon(8px 0,100% 0,calc(100% - 8px) 100%,0 100%);
-  transition:background .2s,transform .1s;
-}
-.boot-btn:hover{background:var(--green)}
-.boot-btn:active{transform:scale(.97)}
-.boot-btn.secondary{
-  background:transparent;color:var(--cyan);
-  border:1px solid var(--cyan);margin-top:8px;
-  clip-path:none;padding:12px 36px;font-size:.8rem;
-}
-.boot-btn.secondary:hover{background:rgba(0,229,255,.1);color:var(--green);border-color:var(--green)}
+/* reckoning panel (demoted, full-width band) */
+.reck{display:grid;grid-template-columns:5fr 7fr;gap:40px;padding:22px 0 26px;border-bottom:1px solid var(--rule)}
+.reck h2{font-size:22px;font-weight:700;border-top:2px solid var(--ink);padding-top:8px}
+.reck .year{font-size:64px;font-weight:800;letter-spacing:-0.03em;line-height:1;margin:8px 0 0}
+.reck .range{font-size:17px;color:var(--ink-2);font-weight:600}
+.reck .dek{margin-top:10px;max-width:46ch;color:var(--ink-2);font-size:14.5px}
+.reck .dek strong{color:var(--ink)}
+.dots{margin-top:12px;display:flex;align-items:center;gap:10px;font-size:14px;font-weight:600}
+.dots svg{display:block}
+.cond{list-style:none;columns:2;column-gap:36px;border-top:2px solid var(--ink);padding-top:10px;margin-top:0}
+.cond-head{font-size:15px;font-weight:700;margin-bottom:6px}
+.cond li{display:grid;grid-template-columns:18px 1fr;gap:9px;padding:6px 0;font-size:13.5px;break-inside:avoid}
+.cond .mark{font-weight:800;line-height:1.3}
+.cond .mark.open{color:var(--pending)}
+.cond .t{font-weight:600}
+.cond .e{display:block;font-size:12px;color:var(--ink-3);font-weight:400;margin-top:1px}
 
-/* ── GAME SCREEN ── */
-#screen-game{gap:16px;max-width:640px;width:100%;margin:0 auto}
+/* footer */
+.foot{padding:20px 0 36px;font-size:13.5px;color:var(--ink-2)}
+.foot .sponsor{font-size:16px;color:var(--ink);font-weight:600;padding:14px 0;border-bottom:1px solid var(--rule)}
+.foot .fine{margin-top:14px;max-width:84ch;line-height:1.5}
+.foot nav{margin-top:12px;display:flex;gap:18px;flex-wrap:wrap}
+button.pause{background:none;border:1px solid var(--rule);color:var(--ink-2);font:inherit;font-size:13px;padding:4px 12px;cursor:pointer}
+button.pause:hover{color:var(--ink);border-color:var(--ink-3)}
 
-/* Image container */
-#image-frame{
-  position:relative;width:100%;
-  aspect-ratio:4/3;overflow:hidden;
-  border:1px solid var(--border);
-  background:var(--surface);
-  z-index:10000;
-}
-#image-frame img{
-  width:100%;height:100%;object-fit:cover;
-  transition:opacity .3s;
-}
-#image-frame.loading img{opacity:0}
-/* Magnifier */
-#magnifier{
-  position:absolute;width:120px;height:120px;
-  border-radius:50%;border:2px solid var(--cyan);
-  box-shadow:var(--glow-cyan);
-  pointer-events:none;display:none;
-  background-repeat:no-repeat;
-  z-index:10;
-}
-#mag-crosshair{
-  position:absolute;width:20px;height:20px;
-  pointer-events:none;display:none;z-index:9;
-  border:1.5px solid rgba(0,229,255,.6);
-  border-radius:50%;
-  transform:translate(-50%,-50%);
-  box-shadow:0 0 8px rgba(0,229,255,.3);
-}
-
-/* Question prompt */
-#prompt{
-  text-align:center;font-size:.9rem;
-  color:var(--muted);letter-spacing:1px;
-  text-transform:uppercase;
-}
-
-/* HUMAN / AI Buttons */
-#choices{display:flex;gap:12px;width:100%;max-width:400px}
-.choice-btn{
-  flex:1;padding:16px 8px;
-  font-family:var(--font-display);font-size:1rem;font-weight:700;
-  letter-spacing:3px;text-transform:uppercase;
-  border:2px solid var(--border);
-  background:rgba(12,12,24,.6);
-  transition:all .2s;position:relative;overflow:hidden;
-}
-.choice-btn::before{
-  content:'';position:absolute;inset:0;
-  opacity:0;transition:opacity .2s;
-}
-.choice-btn.human{color:var(--green)}
-.choice-btn.human::before{background:rgba(0,255,157,.08)}
-.choice-btn.human:hover,.choice-btn.human:active{
-  border-color:var(--green);box-shadow:var(--glow-green);
-}
-.choice-btn.human:hover::before{opacity:1}
-.choice-btn.ai{color:var(--red)}
-.choice-btn.ai::before{background:rgba(255,0,60,.08)}
-.choice-btn.ai:hover,.choice-btn.ai:active{
-  border-color:var(--red);box-shadow:var(--glow-red);
-}
-.choice-btn.ai:hover::before{opacity:1}
-.choice-btn:disabled{opacity:.3;pointer-events:none}
-
-/* ── REVEAL PANEL ── */
-#reveal-panel{
-  width:100%;max-width:640px;
-  animation:fadeUp .35s ease-out;
-  display:none;flex-direction:column;gap:14px;
-}
-#reveal-panel.active{display:flex}
-#reveal-verdict{
-  text-align:center;padding:16px;
-  font-family:var(--font-display);font-size:1.1rem;
-  font-weight:700;letter-spacing:3px;
-  border:1px solid var(--border);
-}
-#reveal-verdict.correct{color:var(--green);border-color:var(--green);background:rgba(0,255,157,.05)}
-#reveal-verdict.wrong{color:var(--red);border-color:var(--red);background:rgba(255,0,60,.05)}
-#reveal-source{font-size:.85rem;color:var(--muted);text-align:center}
-#reveal-source-link{font-size:.7rem;text-align:center;margin-top:3px}
-#reveal-source-link a{color:var(--cyan);opacity:.7;text-decoration:none;letter-spacing:.5px;font-family:var(--font-mono)}
-#reveal-source-link a:hover{opacity:.8;text-decoration:underline}
-#reveal-tip{
-  font-size:.85rem;line-height:1.5;
-  padding:12px 14px;
-  border-left:2px solid var(--cyan);
-  background:rgba(0,229,255,.04);
-  color:var(--text);
-}
-#reveal-tip strong{color:var(--cyan);font-weight:400}
-#global-bar-wrap{
-  display:flex;flex-direction:column;align-items:center;gap:4px;
-  padding:12px;background:rgba(0,229,255,.04);
-  border:1px solid rgba(0,229,255,.1);
-}
-#global-bar-header{
-  font-family:var(--font-mono);font-size:.6rem;
-  letter-spacing:2px;color:var(--muted);
-}
-#global-pct{
-  font-family:var(--font-display);font-size:1.6rem;font-weight:900;
-  color:var(--cyan);letter-spacing:2px;
-  text-shadow:0 0 15px rgba(0,229,255,.25);
-  line-height:1;
-}
-#global-bar{
-  width:100%;height:5px;background:var(--border);overflow:hidden;
-}
-#global-bar-fill{
-  height:100%;background:var(--cyan);width:0%;
-  transition:width .8s ease-out;
-}
-#global-label{
-  font-family:var(--font-mono);font-size:.6rem;
-  color:var(--muted);letter-spacing:.5px;
-}
-.next-btn{
-  align-self:center;padding:14px 36px;
-  font-family:var(--font-display);font-size:.85rem;font-weight:700;
-  letter-spacing:3px;text-transform:uppercase;
-  color:var(--bg);background:var(--cyan);
-  clip-path:polygon(6px 0,100% 0,calc(100% - 6px) 100%,0 100%);
-  transition:background .2s;
-}
-.next-btn:hover{background:var(--green)}
-
-/* ── RESULTS SCREEN ── */
-#results-logo{
-  font-family:var(--font-display);font-size:1.4rem;font-weight:900;
-  letter-spacing:6px;color:var(--cyan);cursor:pointer;
-  opacity:.7;transition:opacity .2s;margin-bottom:4px;
-}
-#results-logo:hover{opacity:1}
-#screen-results{justify-content:center;gap:20px;text-align:center;max-width:520px;margin:0 auto}
-
-/* Score Ring */
-#score-ring-wrap{position:relative;width:160px;height:160px}
-#score-ring-wrap svg{transform:rotate(-90deg)}
-.ring-bg{fill:none;stroke:var(--border);stroke-width:8}
-.ring-fg{
-  fill:none;stroke:var(--cyan);stroke-width:8;
-  stroke-linecap:round;
-  stroke-dasharray:440;stroke-dashoffset:440;
-  transition:stroke-dashoffset 1.2s ease-out,stroke .3s;
-}
-#score-center{
-  position:absolute;inset:0;
-  display:flex;flex-direction:column;
-  align-items:center;justify-content:center;
-}
-#score-num{
-  font-family:var(--font-display);font-weight:900;
-  font-size:2.2rem;color:var(--cyan);
-}
-#score-label{font-size:.8rem;color:var(--muted);letter-spacing:2px;text-transform:uppercase}
-#results-title{
-  font-family:var(--font-display);font-size:1.2rem;
-  font-weight:700;letter-spacing:2px;color:var(--text);
-}
-#results-stats{
-  display:flex;gap:24px;justify-content:center;flex-wrap:wrap;
-}
-.rstat{display:flex;flex-direction:column;align-items:center;gap:2px}
-.rstat-num{
-  font-family:var(--font-display);font-size:1.1rem;font-weight:900;
-  color:var(--cyan);
-}
-.rstat-label{
-  font-family:var(--font-mono);font-size:.65rem;
-  letter-spacing:1.5px;color:var(--muted);
-}
-
-/* Results pip grid — 5 over 5 */
-#results-grid{
-  display:grid;
-  grid-template-columns:repeat(5, 32px);
-  gap:6px;
-  justify-content:center;
-}
-.r-pip{
-  width:32px;height:32px;display:flex;
-  align-items:center;justify-content:center;
-  font-size:.8rem;font-weight:700;
-  border:1px solid var(--border);
-}
-.r-pip.correct{color:var(--green);border-color:var(--green);background:rgba(0,255,157,.08)}
-.r-pip.wrong{color:var(--red);border-color:var(--red);background:rgba(255,0,60,.08)}
-
-/* Share buttons */
-#share-row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
-.share-btn{
-  padding:12px 24px;font-size:.8rem;font-weight:700;
-  letter-spacing:2px;text-transform:uppercase;
-  border:1px solid var(--border);background:var(--surface);
-  transition:all .2s;
-}
-.share-btn:hover{border-color:var(--cyan);color:var(--cyan)}
-
-/* Global players counter on results screen */
-#global-players-wrap{
-  display:flex;flex-direction:column;align-items:center;gap:4px;
-  padding:16px 20px;margin-top:4px;
-  border:1px solid rgba(0,229,255,.12);
-  background:rgba(0,229,255,.03);
-}
-#global-players-count{
-  font-family:var(--font-display);font-size:1.8rem;font-weight:900;
-  color:var(--cyan);letter-spacing:3px;
-  text-shadow:0 0 15px rgba(0,229,255,.3);
-}
-#global-players-label{
-  font-family:var(--font-mono);font-size:.65rem;
-  letter-spacing:2px;color:var(--muted);
-}
-
-/* Prompt reveal in review cards */
-.yd-prompt-toggle{
-  display:inline-block;margin-top:6px;
-  font-family:var(--font-mono);font-size:.65rem;
-  letter-spacing:1px;color:var(--muted);
-  cursor:pointer;transition:color .2s;
-  background:none;border:none;padding:0;
-}
-.yd-prompt-toggle:hover{color:var(--cyan)}
-.yd-prompt-text{
-  display:none;margin-top:6px;padding:8px 10px;
-  background:rgba(255,0,60,.04);border-left:2px solid var(--red);
-  font-size:.65rem;line-height:1.5;color:var(--muted);
-  word-break:break-word;
-}
-.yd-prompt-text.visible{display:block}
-.yd-prompt-text .prompt-label{
-  font-family:var(--font-display);font-size:.6rem;
-  letter-spacing:2px;color:var(--red);display:block;margin-bottom:4px;
-}
-
-#countdown-wrap{
-  text-align:center;padding:24px 0 12px;
-  border-top:1px solid rgba(0,229,255,.15);margin-top:12px;
-}
-#countdown-label{
-  font-family:var(--font-mono);font-size:.65rem;
-  color:var(--muted);letter-spacing:3px;display:block;margin-bottom:8px;
-}
-#countdown{
-  font-family:var(--font-display);font-size:2.4rem;font-weight:900;
-  color:var(--cyan);letter-spacing:5px;
-  text-shadow:0 0 20px rgba(0,229,255,.3),0 0 40px rgba(0,229,255,.1);
-  display:block;
-}
-#results-transmission{
-  font-size:.85rem;color:var(--text);letter-spacing:.5px;
-  max-width:400px;
-  margin:18px auto 0;line-height:1.6;text-align:center;opacity:.7;
-}
-
-/* Toast */
-#toast{
-  position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(20px);
-  padding:10px 24px;background:var(--surface);
-  border:1px solid var(--cyan);color:var(--cyan);
-  font-size:.85rem;letter-spacing:1px;
-  opacity:0;transition:all .3s;z-index:10002;pointer-events:none;
-}
-#toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
-
-/* ══════════════════════════════════════
-   TEXT SCRAMBLE
-   ══════════════════════════════════════ */
-.scrambling{color:var(--cyan) !important}
-
-/* ══════════════════════════════════════
-   TIP TERMINAL (FOOTER)
-   ══════════════════════════════════════ */
-.tip-terminal{
-  text-align:center;padding:32px 20px 28px;
-  border-top:1px solid var(--border);margin-top:auto;
-  display:none;
-}
-.tip-terminal.visible{display:block}
-.tip-terminal .tip-label{
-  font-family:var(--font-mono);font-size:.65rem;
-  letter-spacing:2px;color:var(--muted);margin-bottom:8px;
-}
-.tip-keys{display:flex;gap:6px;justify-content:center;margin-bottom:6px}
-.tip-key{
-  padding:5px 14px;font-family:var(--font-mono);font-size:.6rem;
-  letter-spacing:1px;font-weight:600;
-  border:1px solid var(--border);background:transparent;
-  color:var(--muted);
-  transition:all .25s;cursor:pointer;
-}
-.tip-key:hover{color:var(--text);border-color:var(--text)}
-.tip-key:active{transform:scale(.95)}
-.tip-key.copied{color:var(--green);border-color:var(--green)}
-.tip-hint{
-  font-family:var(--font-mono);font-size:.62rem;
-  color:var(--muted);letter-spacing:1.5px;text-align:center;
-  opacity:.5;margin-bottom:20px;
-}
-.tip-footer-row{
-  display:flex;align-items:center;justify-content:center;gap:8px;
-  flex-wrap:wrap;
-}
-.tip-footer-row span,.tip-footer-row a{
-  font-family:var(--font-mono);font-size:.75rem;
-  color:var(--text);letter-spacing:.5px;opacity:.7;
-}
-.tip-footer-row .sep{opacity:.4}
-.tip-footer-row a{
-  text-decoration:none;transition:opacity .3s,color .3s;
-}
-.tip-footer-row a:hover{opacity:.9;color:var(--cyan)}
-.faq-glow-link{
-  color:var(--cyan)!important;opacity:.7!important;
-  text-shadow:0 0 6px rgba(0,229,255,.3);
-  transition:opacity .3s,text-shadow .3s!important;
-}
-.faq-glow-link:hover{
-  opacity:1!important;
-  text-shadow:0 0 12px rgba(0,229,255,.5),0 0 24px rgba(0,229,255,.2);
-}
-
-/* Easter egg: System Breach trigger */
-.breach-trigger{
-  color:inherit;
-  text-decoration:none;
-  cursor:text;
-  transition:all .1s;
-  opacity:1;
-}
-.breach-trigger:hover{
-  color:var(--red);
-  text-shadow:0 0 6px rgba(255,0,60,.6);
-  cursor:crosshair;
-  letter-spacing:1.5px;
-  opacity:1;
-  animation:breach-flicker .15s infinite;
-}
-@keyframes breach-flicker{
-  0%,100%{opacity:1}
-  50%{opacity:.6}
-}
-
-/* ══════════════════════════════════════
-   TODAY'S REVIEW
-   ══════════════════════════════════════ */
-#review-section{
-  display:none;max-width:640px;margin:0 auto;
-  padding:32px 16px 40px;
-}
-#review-section.visible{display:block}
-.yd-header{
-  text-align:center;margin-bottom:20px;
-  border-top:1px solid var(--border);padding-top:28px;
-}
-.yd-label{
-  font-family:var(--font-display);font-size:.65rem;
-  letter-spacing:3px;color:var(--muted);margin-bottom:4px;
-}
-.yd-title{
-  font-family:var(--font-display);font-size:1.1rem;
-  letter-spacing:2px;color:var(--cyan);font-weight:700;
-}
-.yd-subtitle{
-  font-size:.8rem;color:var(--muted);margin-top:4px;letter-spacing:.5px;
-}
-.yd-grid{
-  display:grid;grid-template-columns:repeat(2,1fr);gap:12px;
-}
-@media(max-width:480px){.yd-grid{grid-template-columns:1fr}}
-.yd-card{
-  background:var(--surface);border:1px solid var(--border);
-  overflow:hidden;transition:border-color .25s;
-}
-.yd-card:hover{border-color:rgba(0,229,255,.3)}
-.yd-card-img-wrap{position:relative;overflow:hidden;z-index:10000}
-.yd-card-img{
-  width:100%;aspect-ratio:4/3;object-fit:cover;
-  display:block;filter:brightness(.85);
-}
-.yd-stat-badge{
-  position:absolute;top:0;right:0;
-  padding:6px 10px;
-  font-family:var(--font-mono);font-size:.8rem;font-weight:700;
-  letter-spacing:.5px;
-  background:rgba(5,10,14,.85);
-  border-left:1px solid var(--border);border-bottom:1px solid var(--border);
-}
-.yd-stat-badge.high{color:var(--green);border-color:rgba(0,255,157,.3)}
-.yd-stat-badge.mid{color:var(--cyan);border-color:rgba(0,229,255,.3)}
-.yd-stat-badge.low{color:var(--red);border-color:rgba(255,0,60,.3)}
-.yd-stat-badge.none{color:var(--muted)}
-.yd-card-body{padding:10px 12px}
-.yd-card-row{
-  display:flex;align-items:center;justify-content:space-between;
-  gap:6px;
-}
-.yd-card-label{
-  font-family:var(--font-mono);font-size:.75rem;
-  letter-spacing:1px;font-weight:700;
-}
-.yd-card-label.human{color:var(--green)}
-.yd-card-label.ai{color:var(--red)}
-.yd-card-round{
-  font-family:var(--font-mono);font-size:.6rem;
-  color:var(--muted);letter-spacing:1px;
-}
-.yd-card-attrib{
-  font-size:.7rem;color:var(--muted);
-  margin-top:4px;line-height:1.4;
-}
-.yd-card-source{margin-top:5px;}
-.yd-card-source a{
-  font-family:var(--font-mono);font-size:.65rem;
-  color:var(--cyan);opacity:.7;text-decoration:none;letter-spacing:.5px;
-}
-.yd-card-source a:hover{opacity:.9;text-decoration:underline}
-
-/* ══════════════════════════════════════
-   ARCHIVE SCREEN
-   ══════════════════════════════════════ */
-#screen-archive{justify-content:flex-start;gap:20px;text-align:center;max-width:640px;margin:0 auto;padding-top:32px}
-#archive-logo{
-  font-family:var(--font-display);font-size:1.4rem;font-weight:900;
-  letter-spacing:6px;color:var(--cyan);cursor:pointer;
-  opacity:.7;transition:opacity .2s;
-}
-#archive-logo:hover{opacity:1}
-#archive-title{
-  font-family:var(--font-display);font-size:.75rem;
-  letter-spacing:3px;color:var(--muted);text-transform:uppercase;
-}
-#archive-sub{
-  font-size:.82rem;color:var(--muted);letter-spacing:.5px;
-  margin-top:-8px;
-}
-#archive-grid{
-  display:grid;grid-template-columns:repeat(2,1fr);gap:10px;
-  width:100%;
-}
-@media(max-width:480px){#archive-grid{grid-template-columns:1fr}}
-.arc-card{
-  background:var(--surface);border:1px solid var(--border);
-  padding:14px 16px;text-align:left;
-  cursor:pointer;transition:all .25s;position:relative;overflow:hidden;
-}
-.arc-card:hover{border-color:rgba(0,229,255,.5);background:rgba(0,229,255,.06)}
-.arc-card.played{border-color:rgba(0,255,157,.3);background:rgba(0,255,157,.03)}
-.arc-card.played:hover{border-color:rgba(0,255,157,.5);background:rgba(0,255,157,.06)}
-.arc-card.today-card{opacity:.5;pointer-events:none;border-style:dashed;border-color:var(--border)}
-.arc-card-top{
-  display:flex;align-items:center;justify-content:space-between;gap:8px;
-  margin-bottom:6px;
-}
-.arc-card-emoji{font-size:1.3rem}
-.arc-card-day{
-  font-family:var(--font-display);font-size:.65rem;
-  letter-spacing:2px;color:var(--muted);
-}
-.arc-card-cat{
-  font-family:var(--font-mono);font-size:.82rem;
-  color:var(--text);letter-spacing:.3px;line-height:1.3;
-}
-.arc-card-date{
-  font-family:var(--font-mono);font-size:.65rem;
-  color:var(--muted);letter-spacing:.5px;margin-top:4px;
-}
-.arc-card-score{
-  position:absolute;top:10px;right:12px;
-  font-family:var(--font-display);font-size:.75rem;
-  font-weight:700;letter-spacing:1px;
-}
-.arc-card-score.good{color:var(--green);text-shadow:0 0 8px rgba(0,255,157,.3)}
-.arc-card-score.mid{color:var(--cyan);text-shadow:0 0 8px rgba(0,229,255,.3)}
-.arc-card-score.low{color:var(--red);text-shadow:0 0 8px rgba(255,0,60,.3)}
-.arc-card-score.unplayed{color:var(--cyan);font-size:.6rem;letter-spacing:1.5px;opacity:.7}
-#archive-back{
-  font-family:var(--font-mono);font-size:.85rem;
-  color:var(--cyan);letter-spacing:1px;
-  background:none;border:none;cursor:pointer;
-  opacity:.8;transition:opacity .2s;padding:12px 0;
-}
-#archive-back:hover{opacity:1}
-#archive-badge{
-  display:none;padding:6px 16px;
-  font-family:var(--font-display);font-size:.6rem;
-  letter-spacing:2px;color:var(--amber);
-  border:1px solid rgba(255,179,0,.3);
-  background:rgba(255,179,0,.05);
-  margin-bottom:8px;
-}
-#archive-badge.visible{display:inline-block}
-
-/* ══════════════════════════════════════
-   EASTER EGGS & UI POLISH
-   ══════════════════════════════════════ */
-
-/* Loading skeleton scan */
-#image-frame.loading::before{
-  content:'';position:absolute;inset:0;z-index:5;
-  background:linear-gradient(180deg,transparent 0%,rgba(0,229,255,.06) 50%,transparent 100%);
-  background-size:100% 40%;
-  animation:skeleScan 1.5s ease-in-out infinite;
-}
-#image-frame.loading::after{
-  content:'SCANNING...';position:absolute;
-  bottom:12px;left:50%;transform:translateX(-50%);
-  font-family:var(--font-display);font-size:.6rem;
-  letter-spacing:3px;color:var(--cyan);opacity:.5;
-  z-index:6;animation:skelePulse 1s ease-in-out infinite;
-}
-@keyframes skeleScan{0%{background-position:0 -100%}100%{background-position:0 200%}}
-@keyframes skelePulse{0%,100%{opacity:.3}50%{opacity:.7}}
-
-/* Scan overlay before reveal */
-#scan-overlay{
-  position:absolute;inset:0;z-index:15;
-  pointer-events:none;display:none;overflow:hidden;
-}
-#scan-overlay.active{display:block}
-#scan-overlay::before{
-  content:'';position:absolute;left:0;right:0;height:3px;
-  background:var(--cyan);
-  box-shadow:0 0 20px var(--cyan),0 0 60px rgba(0,229,255,.3);
-  animation:scanLine .4s ease-out forwards;
-}
-@keyframes scanLine{0%{top:0;opacity:1}100%{top:100%;opacity:0}}
-
-/* Button tap pulse */
-.choice-btn.pulse-green{animation:btnPulseG .3s ease-out}
-.choice-btn.pulse-red{animation:btnPulseR .3s ease-out}
-@keyframes btnPulseG{0%{box-shadow:0 0 0 0 rgba(0,255,157,.4)}100%{box-shadow:0 0 0 20px rgba(0,255,157,0)}}
-@keyframes btnPulseR{0%{box-shadow:0 0 0 0 rgba(255,0,60,.4)}100%{box-shadow:0 0 0 20px rgba(255,0,60,0)}}
-
-/* Image vignette */
-#image-frame::after{
-  content:'';position:absolute;inset:0;z-index:1;
-  pointer-events:none;
-  box-shadow:inset 0 0 60px rgba(6,6,12,.4);
-}
-
-/* Zoom hint for first-timers */
-#zoom-hint{
-  position:absolute;bottom:12px;right:12px;z-index:8;
-  display:none;align-items:center;gap:6px;
-  padding:6px 10px;
-  background:rgba(6,6,12,.85);border:1px solid rgba(0,229,255,.3);
-  font-family:var(--font-mono);font-size:.6rem;
-  letter-spacing:1px;color:var(--cyan);
-  animation:hintPulse 2s ease-in-out infinite;
-  pointer-events:none;
-}
-#zoom-hint.visible{display:flex}
-@keyframes hintPulse{0%,100%{opacity:.6;border-color:rgba(0,229,255,.2)}50%{opacity:1;border-color:rgba(0,229,255,.5)}}
-
-/* Matrix rain canvas */
-#matrix-rain{
-  position:fixed;inset:0;z-index:10003;
-  pointer-events:none;opacity:0;transition:opacity .3s;
-}
-#matrix-rain.active{opacity:1}
-
-/* Perfect game celebration */
-#celebration{
-  position:fixed;inset:0;z-index:10002;
-  pointer-events:none;display:none;
-}
-#celebration.active{display:block}
-
-/* "Are you human?" flicker */
-#human-check{
-  position:fixed;top:50%;left:50%;
-  transform:translate(-50%,-50%);
-  font-family:var(--font-display);font-size:clamp(.8rem,3vw,1.2rem);
-  letter-spacing:4px;color:var(--red);
-  text-shadow:0 0 30px rgba(255,0,60,.5);
-  z-index:10001;opacity:0;pointer-events:none;
-}
-#human-check.flash{animation:humanFlicker .8s ease-out forwards}
-@keyframes humanFlicker{
-  0%{opacity:1}10%{opacity:0}20%{opacity:.8}30%{opacity:0}
-  40%{opacity:.6}60%{opacity:0}70%{opacity:.4}100%{opacity:0}
-}
-
-/* Round transition wipe */
-#round-wipe{
-  position:absolute;inset:0;z-index:20;
-  pointer-events:none;display:none;
-  background:var(--cyan);mix-blend-mode:overlay;
-}
-#round-wipe.active{display:block;animation:wipeAcross .25s ease-out forwards}
-@keyframes wipeAcross{
-  0%{clip-path:inset(0 100% 0 0)}
-  50%{clip-path:inset(0 0 0 0)}
-  100%{clip-path:inset(0 0 0 100%)}
-}
-
-/* Speedrun badge on share card */
-.speed-badge{
-  display:inline-block;padding:2px 8px;margin-left:6px;
-  font-family:var(--font-display);font-size:.55rem;
-  letter-spacing:1.5px;color:var(--amber);
-  border:1px solid rgba(255,179,0,.4);
-  background:rgba(255,179,0,.06);
+@media (max-width:980px){
+  .hero{grid-template-columns:1fr;gap:20px}
+  .kpis{border-left:0;padding-left:0;flex-direction:row;flex-wrap:wrap;gap:0 28px}
+  .kpi{border-top:0;min-width:150px}
+  .sectors{grid-template-columns:1fr 1fr}
+  .reck{grid-template-columns:1fr}
+  .cond{columns:1}
+}
+@media (max-width:640px){
+  .sectors{grid-template-columns:1fr}
+  .bigstat .v{font-size:44px}
+  .mast .tag{display:none}
+  .kpi .v{font-size:24px}
 }
 </style>
 </head>
 <body>
+<div class="wrap">
 
-<!-- SEO: Crawlable content for search engines -->
-<noscript>
-  <div style="max-width:700px;margin:40px auto;padding:20px;font-family:sans-serif;color:#333">
-    <h1>BRAIAIN — The Voight-Kampff Test for the AI Age</h1>
-    <p>In Blade Runner, the Voight-Kampff test detected replicants by measuring empathy. In 2026, BRAIAIN tests something just as vital: can your eyes tell real from artificial? Think of it as a daily Turing test for your visual instincts.</p>
-    <p>BRAIAIN is a free daily AI detection game. Each day, you get 10 rounds — each showing either a real photograph or an AI-generated image. Your job: figure out which is which.</p>
-    <h2>How to Play</h2>
-    <p>Every day at midnight, a new themed challenge drops. You'll see an image and choose whether it was taken by a human photographer or created by artificial intelligence. After each round, you get a pro tip teaching you what to look for — like the empathy questions in a Voight-Kampff test, but for pixels. Track your streak and share your score.</p>
-    <h2>How to Tell if an Image is AI Generated</h2>
-    <p>AI-generated images often contain telltale signs: hands with extra or fused fingers, text that doesn't quite make sense, unnaturally perfect symmetry, inconsistent lighting and shadows, repeating patterns in backgrounds, and overly smooth skin textures. BRAIAIN helps you train your eye to catch these details — skills that matter as AI-generated content becomes indistinguishable from reality.</p>
-    <h2>A Modern Turing Test</h2>
-    <p>Alan Turing asked "Can machines think?" BRAIAIN asks the inverse: can humans detect when machines create? As AI image generation advances, the line between real and artificial blurs. BRAIAIN measures how well humanity can still tell the difference — a daily global experiment in AI literacy.</p>
-    <h2>Features</h2>
-    <ul>
-      <li>New daily challenge every day — 10 rounds of real vs AI</li>
-      <li>Themed categories: sports, food, nature, holidays, and more</li>
-      <li>Pro tips after every round to sharpen your detection skills</li>
-      <li>Streak tracking and score sharing</li>
-      <li>Community accuracy stats — see how others voted</li>
-      <li>100% free, no signup required</li>
-    </ul>
-    <p>JavaScript is required to play BRAIAIN. Please enable JavaScript in your browser settings.</p>
-    <p><a href="https://braiain.com">Visit braiain.com</a> · <a href="https://braiain.com/guide.html">How to Spot AI-Generated Images</a> · <a href="https://braiain.com/faq.html">FAQ</a> · <a href="https://braiain.com/educators.html">For Educators</a></p>
-  </div>
-</noscript>
-
-<!-- CRT Overlay -->
-<div id="crt-overlay"></div>
-
-<!-- Easter Egg: Matrix Rain -->
-<canvas id="matrix-rain"></canvas>
-
-<!-- Easter Egg: "Are you human?" flicker -->
-<div id="human-check">ARE YOU SURE YOU'RE HUMAN?</div>
-
-<!-- Easter Egg: Perfect game celebration -->
-<canvas id="celebration"></canvas>
-
-
-<!-- HUD -->
-<header id="hud" style="display:none">
-  <div id="hud-logo" onclick="goHome()" style="cursor:pointer" title="Return to home">BRAIAIN</div>
-  <div id="hud-ticker">LOADING...</div>
-  <div id="hud-round">--/--</div>
-  <div id="hud-pips"></div>
+<header class="mast">
+  <span class="name">BRAIAIN</span>
+  <span class="tag">The S&amp;P of AI</span>
+  <span class="right">
+    <span class="asof">Board re-based Oct 20, 2026</span>
+    <a class="url" href="https://braiain.com">braiain.com</a>
+  </span>
 </header>
 
-<!-- BOOT SCREEN -->
-<main id="screen-boot" class="screen active">
-  <h1 id="boot-logo">BRAIAIN</h1>
-  <div id="boot-sub">CAN YOU SPOT THE AI?</div>
-  <div id="boot-transmission"></div>
-  <div id="boot-stats">
-    <div class="bstat"><span class="bstat-num" id="bs-played">0</span><span class="bstat-label">DAYS PLAYED</span></div>
-    <div class="bstat"><span class="bstat-num" id="bs-avg">—</span><span class="bstat-label">AVG SCORE</span></div>
-    <div class="bstat"><span class="bstat-num" id="bs-yesterday">—</span><span class="bstat-label">YESTERDAY</span></div>
-    <div class="bstat"><span class="bstat-num" id="bs-best">0</span><span class="bstat-label">BEST STREAK</span></div>
-  </div>
-  <div id="boot-status"></div>
-  <button class="boot-btn" id="btn-start" style="display:none" onclick="startGame()">BEGIN SCAN</button>
-  <button class="boot-btn secondary" id="btn-results" style="display:none" onclick="showResults()">VIEW TODAY'S RESULTS</button>
-  <button class="boot-btn secondary" id="btn-archive" style="display:none" onclick="showArchive()">MISSION ARCHIVE</button>
-</main>
-
-<!-- ARCHIVE SCREEN -->
-<main id="screen-archive" class="screen">
-  <div id="archive-logo" onclick="goHome()">BRAIAIN</div>
-  <div id="archive-title">// MISSION ARCHIVE</div>
-  <div id="archive-sub">Replay past challenges — scores saved, streaks unaffected</div>
-  <div id="archive-grid"></div>
-  <button id="archive-back" onclick="goHome()">← RETURN TO HQ</button>
-</main>
-
-<!-- GAME SCREEN -->
-<main id="screen-game" class="screen">
-  <div id="image-frame">
-    <img id="game-img" src="" alt="Analyze this image" draggable="false">
-    <div id="magnifier"></div>
-    <div id="mag-crosshair"></div>
-    <div id="scan-overlay"></div>
-    <div id="round-wipe"></div>
-    <div id="zoom-hint">ð HOLD TO ZOOM</div>
-  </div>
-  <div id="prompt">CLASSIFY: HUMAN OR AI-GENERATED?</div>
-  <div id="choices">
-    <button class="choice-btn human" onclick="choose('human')">HUMAN</button>
-    <button class="choice-btn ai" onclick="choose('ai')">AI</button>
-  </div>
-  <div id="reveal-panel">
-    <div id="reveal-verdict"></div>
-    <div id="reveal-source"></div>
-    <div id="reveal-source-link"></div>
-    <div id="reveal-tip"></div>
-    <div id="global-bar-wrap">
-      <span id="global-bar-header">COMMUNITY DETECTION RATE</span>
-      <span id="global-pct">—</span>
-      <div id="global-bar"><div id="global-bar-fill"></div></div>
-      <span id="global-label">CONNECTING TO NETWORK...</span>
+<section class="hero">
+  <div>
+    <h1 class="label">BRAIAIN Buildout Index</h1>
+    <div class="level num">171.1<small>+71% since Q3 2025</small></div>
+    <p class="def">Big-4 hyperscaler capital spending plus NVIDIA data-center revenue, by calendar quarter, indexed to Q3 2025 = 100. The single number for how hard the AI buildout is running. <a href="methodology.html#index">How it's computed</a></p>
+    <div class="chart">
+      <svg viewBox="0 0 460 134" role="img" aria-label="Buildout Index by quarter: 100 in Q3 2025, 121.9 in Q4 2025, 138.1 in Q1 2026, 171.1 in Q2 2026. Underlying totals rose from 149 to 255 billion dollars a quarter.">
+        <rect x="20"  y="57.9" width="24" height="56.1" fill="var(--ink-2)"/>
+        <rect x="140" y="45.6" width="24" height="68.4" fill="var(--ink-2)"/>
+        <rect x="260" y="36.5" width="24" height="77.5" fill="var(--ink-2)"/>
+        <rect x="380" y="18"   width="24" height="96"   fill="var(--ink)"/>
+        <text x="392" y="12" fill="var(--ink)" font-size="14" font-weight="700" text-anchor="middle">171.1</text>
+        <g fill="var(--ink-3)" font-size="12" text-anchor="middle">
+          <text x="32" y="130">Q3 25</text><text x="152" y="130">Q4 25</text>
+          <text x="272" y="130">Q1 26</text><text x="392" y="130">Q2 26</text>
+        </g>
+      </svg>
     </div>
-    <button class="next-btn" onclick="nextRound()">NEXT SCAN →</button>
+    <p class="src num">Underlying flow: $149.0B → $181.7B → $205.8B → $255.0B per quarter</p>
   </div>
-</main>
-
-<!-- RESULTS SCREEN -->
-<main id="screen-results" class="screen">
-  <div id="results-logo" onclick="goHome()">BRAIAIN</div>
-  <div id="archive-badge">ARCHIVE MODE</div>
-  <div id="score-ring-wrap">
-    <svg viewBox="0 0 160 160" width="160" height="160">
-      <circle class="ring-bg" cx="80" cy="80" r="70"/>
-      <circle class="ring-fg" id="ring-fg" cx="80" cy="80" r="70"/>
-    </svg>
-    <div id="score-center">
-      <div id="score-num">0</div>
-      <div id="score-label">OF 10</div>
+  <div class="kpis">
+    <div class="kpi">
+      <div class="v num">$25,082<small> / second</small><span class="live-dot" aria-hidden="true"></span></div>
+      <div class="l">The buildout's combined flow — Big-4 capex plus NVIDIA data-center revenue, at the filed pace of the four quarters to Jun 2026</div>
+      <div class="d num"><span aria-hidden="true" id="spendSince">$0 since you opened this page</span><span class="sr">Estimated at the filed pace, divided to the second.</span></div>
+    </div>
+    <div class="kpi">
+      <div class="v num">$513.8B</div>
+      <div class="l">Big-4 capital expenditure, four quarters to Jun 2026</div>
+      <div class="d">Company filings</div>
+    </div>
+    <div class="kpi">
+      <div class="v num">$277.7B</div>
+      <div class="l">NVIDIA data-center revenue, four quarters to Jul 2026</div>
+      <div class="d">NVIDIA filings</div>
+    </div>
+    <div class="kpi">
+      <div class="v num">64%</div>
+      <div class="l">of global venture funding went to AI in Q3 2026</div>
+      <div class="d">Crunchbase</div>
     </div>
   </div>
-  <div id="results-title"></div>
-  <div id="results-stats">
-    <div class="rstat"><span class="rstat-num" id="rs-played">0</span><span class="rstat-label">DAYS PLAYED</span></div>
-    <div class="rstat"><span class="rstat-num" id="rs-avg">—</span><span class="rstat-label">AVG SCORE</span></div>
-    <div class="rstat"><span class="rstat-num" id="rs-streak">0</span><span class="rstat-label">STREAK</span></div>
-    <div class="rstat"><span class="rstat-num" id="rs-best">0</span><span class="rstat-label">BEST STREAK</span></div>
-  </div>
-  <div id="results-grid"></div>
-  <div id="share-row">
-    <button class="share-btn" onclick="shareClipboard()">📋 COPY</button>
-    <button class="share-btn" onclick="shareX()">𝕏 SHARE</button>
-  </div>
-  <!-- Global players counter -->
-  <div id="global-players-wrap">
-    <span id="global-players-count">—</span>
-    <span id="global-players-label">GLOBAL PLAYERS TODAY</span>
-  </div>
-  <div id="countdown-wrap">
-    <span id="countdown-label">NEXT CHALLENGE DROPS IN</span>
-    <span id="countdown">--:--:--</span>
-  </div>
-  <div id="results-transmission"></div>
-  <button class="boot-btn secondary" onclick="goHome()" style="margin-top:16px">← RETURN TO HQ</button>
-</main>
-
-<!-- TODAY'S REVIEW (shown after game) -->
-<section id="review-section">
-  <div class="yd-header">
-    <div class="yd-label">// MISSION DEBRIEF</div>
-    <div class="yd-title" id="review-title">TODAY'S ANSWERS</div>
-    <div class="yd-subtitle" id="review-subtitle"></div>
-  </div>
-  <div class="yd-grid" id="review-grid"></div>
 </section>
 
-<!-- Toast -->
-<div id="toast"></div>
+<div class="sectors">
 
-<!-- Footer -->
-<div class="tip-terminal">
-  <div class="tip-label">TIP THE DEVELOPER</div>
-  <div class="tip-keys">
-    <button class="tip-key" data-chain="eth" onclick="copyTip('eth')">⟠ ETH</button>
-    <button class="tip-key" data-chain="sol" onclick="copyTip('sol')">◎ SOL</button>
-    <button class="tip-key" data-chain="kas" onclick="copyTip('kas')">⬡ KAS</button>
-  </div>
-  <div class="tip-hint">TAP TO COPY WALLET ADDRESS</div>
-  <div class="tip-footer-row">
-    <span>&copy; 2026 BRAIAIN</span>
-    <span class="sep">&middot;</span>
-    <span><a href="/faq.html" class="faq-glow-link">FAQ</a></span>
-    <span class="sep">&middot;</span>
-    <span><a href="/guide.html" style="opacity:.7;transition:opacity .3s" onmouseover="this.style.opacity='.9'" onmouseout="this.style.opacity='.7'">GUIDE</a></span>
-    <span class="sep">&middot;</span>
-    <span><a href="/educators.html" style="opacity:.7;transition:opacity .3s" onmouseover="this.style.opacity='.9'" onmouseout="this.style.opacity='.7'">EDUCATORS</a></span>
-    <span class="sep">&middot;</span>
-    <span>SYSTEM <a href="/404.html" class="breach-trigger">SECURE</a></span>
-    <span class="sep">&middot;</span>
-    <span>A <a id="footer-email">dnilgis</a> Project</span>
-  </div>
+  <section class="sec" id="capital">
+    <h2>Capital <span class="sym">CAPX</span></h2>
+    <div class="bigstat">
+      <div class="v num">$513.8B</div>
+      <div class="l">Big-4 capital expenditure, four quarters to Jun 2026</div>
+      <div class="src">Total capex as filed; the companies call the growth AI-driven but report no AI line item. <a href="methodology.html#capex">Sources</a></div>
+    </div>
+    <table class="minitable num">
+      <tr><td>Amazon</td><td>$173.0B</td></tr>
+      <tr><td>Alphabet</td><td>$132.4B</td></tr>
+      <tr><td>Microsoft</td><td>$115.9B</td></tr>
+      <tr><td>Meta</td><td>$92.4B</td></tr>
+    </table>
+    <div class="row">
+      <div class="v num">64%</div>
+      <div class="l">of global venture funding went to AI in Q3 2026 — $102B of $159B</div>
+      <div class="meter" aria-hidden="true"><div class="fill" style="width:64%"></div></div>
+      <div class="src">Crunchbase, Oct 2026</div>
+    </div>
+    <div class="row">
+      <div class="l">Stargate: $500B announced over four years — SoftBank and OpenAI, Jan 2025. A commitment, not spend to date</div>
+    </div>
+  </section>
+
+  <section class="sec" id="compute">
+    <h2>Compute <span class="sym">CHIP</span></h2>
+    <div class="bigstat">
+      <div class="v num">$277.7B</div>
+      <div class="l">NVIDIA data-center revenue, four quarters to Jul 2026</div>
+      <div class="src">Latest quarter $89.0B, up 18% on the prior quarter. NVIDIA fiscal quarters end ~1 month after calendar quarters. <a href="methodology.html#nvda">Sources</a></div>
+    </div>
+    <div class="chart">
+      <svg viewBox="0 0 280 92" role="img" aria-label="NVIDIA data-center revenue by quarter: 51.2, 62.3, 75.2, then 89.0 billion dollars">
+        <rect x="10"  y="43.2" width="24" height="36.8" fill="var(--ink-2)"/>
+        <rect x="80"  y="35.2" width="24" height="44.8" fill="var(--ink-2)"/>
+        <rect x="150" y="25.9" width="24" height="54.1" fill="var(--ink-2)"/>
+        <rect x="220" y="16"   width="24" height="64"   fill="var(--ink)"/>
+        <text x="232" y="10" fill="var(--ink)" font-size="12" font-weight="700" text-anchor="middle">$89.0B</text>
+        <g fill="var(--ink-3)" font-size="10.5" text-anchor="middle">
+          <text x="22" y="91">to Oct 25</text><text x="92" y="91">Jan 26</text>
+          <text x="162" y="91">Apr 26</text><text x="232" y="91">Jul 26</text>
+        </g>
+      </svg>
+    </div>
+    <div class="row">
+      <div class="v num">3,169,809</div>
+      <div class="l">models on Hugging Face, Oct 20, 2026</div>
+      <div class="src">Up from ~1.19M in Sep 2024 (community count via press)</div>
+    </div>
+    <div class="row">
+      <div class="l">GPT-6 shipped to every ChatGPT tier on Oct 7, 2026 — OpenAI</div>
+    </div>
+  </section>
+
+  <section class="sec" id="power">
+    <h2>Power <span class="sym">PWR</span></h2>
+    <div class="bigstat">
+      <div class="v num">945 TWh</div>
+      <div class="l">IEA projection for data-center electricity by 2030 — from 415 TWh in 2024</div>
+      <div class="src">IEA, Energy &amp; AI, Apr 2025. 2035 cases span ~700 to over 1,700 TWh. <a href="methodology.html#power">Sources</a></div>
+    </div>
+    <div class="row">
+      <div class="v num">4.4% → 6.7–12%</div>
+      <div class="l">US data-center share of US electricity: 2023 actual → 2028 projected</div>
+      <div class="meter" aria-hidden="true"><div class="fill" style="width:36.7%"></div><div class="band" style="left:55.8%;width:44.2%"></div><div class="now" style="left:36.7%"></div></div>
+      <div class="src">Scale 0–12%. LBNL/DOE, Dec 2024</div>
+    </div>
+    <div class="row">
+      <div class="v num">$325 <span style="font-size:14px;font-weight:600;color:var(--ink-2)">/MW-day</span></div>
+      <div class="l">PJM capacity price, 2028/29 — third straight auction at the price cap; the last two auctions cleared short (6,623 MW, then 6,831 MW)</div>
+      <div class="chart">
+        <svg viewBox="0 0 280 60" role="img" aria-label="PJM capacity auction price history: 269.92, 329.17, 333.44, then 325 dollars per megawatt-day">
+          <polyline points="20,46 98,19 182,17 254,21" fill="none" stroke="var(--ink-2)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+          <circle cx="20" cy="46" r="4" fill="var(--ink-2)" stroke="var(--paper)" stroke-width="2"/>
+          <circle cx="98" cy="19" r="4" fill="var(--ink-2)" stroke="var(--paper)" stroke-width="2"/>
+          <circle cx="182" cy="17" r="4" fill="var(--ink-2)" stroke="var(--paper)" stroke-width="2"/>
+          <circle cx="254" cy="21" r="4" fill="var(--ink)" stroke="var(--paper)" stroke-width="2"/>
+          <text x="20" y="36" fill="var(--ink-3)" font-size="10.5" text-anchor="middle">270</text>
+          <text x="254" y="11" fill="var(--ink)" font-size="10.5" font-weight="700" text-anchor="middle">325</text>
+          <g fill="var(--ink-3)" font-size="10.5" text-anchor="middle">
+            <text x="20" y="59">25/26</text><text x="98" y="59">26/27</text>
+            <text x="182" y="59">27/28</text><text x="254" y="59">28/29</text>
+          </g>
+        </svg>
+      </div>
+      <div class="src">Scale 240–360. PJM auction results, Dec 2025 and Jul 2026</div>
+    </div>
+    <div class="row">
+      <div class="v num">7,754 MW</div>
+      <div class="l">hyperscaler nuclear announced across six named deals</div>
+      <table class="minitable num">
+        <tr><td>Meta — Vistra, Oklo, TerraPower</td><td>4,499 MW</td></tr>
+        <tr><td>Amazon — Talen (Susquehanna)</td><td>1,920 MW</td></tr>
+        <tr><td>Microsoft — Constellation (TMI U1)</td><td>835 MW</td></tr>
+        <tr><td>Google — Kairos, with TVA</td><td>500 MW</td></tr>
+      </table>
+      <div class="src">Company releases and SEC filings, Sep 2024 – Jan 2026</div>
+    </div>
+  </section>
+
+  <section class="sec" id="infrastructure">
+    <h2>Infrastructure <span class="sym">BLDG</span></h2>
+    <div class="bigstat">
+      <div class="v num">7,481 MW</div>
+      <div class="l">of data-center capacity under construction in North America's primary markets — a record</div>
+      <div class="src">Vacancy 1.4%; 80.4% of construction already pre-leased. CBRE, H1 2026. <a href="methodology.html#infra">Sources</a></div>
+    </div>
+    <div class="row">
+      <div class="v num">3,000+</div>
+      <div class="l">US data centers operating; more than 1,500 more in development</div>
+      <div class="src">Data Center Map counts via Pew Research Center, Feb 2026</div>
+    </div>
+    <div class="row">
+      <div class="v num">233+ GW</div>
+      <div class="l">of large-load requests in the Texas grid queue — over 70% of it data centers</div>
+      <div class="src">ERCOT, year-end 2025, via Utility Dive. No national equivalent is published</div>
+    </div>
+  </section>
+
+  <section class="sec" id="emergent">
+    <h2>Emergent <span class="sym">EMRG</span></h2>
+    <div class="bigstat">
+      <div class="v num">116 GW</div>
+      <div class="l">of gas turbines in GE Vernova's backlog and slot reservations</div>
+      <div class="src">Total backlog $176B; data-center orders over $5B YTD, more than double 2025. GE Vernova, Q2 2026. <a href="methodology.html#emergent">Sources</a></div>
+    </div>
+    <div class="row">
+      <div class="v num">128–144 weeks</div>
+      <div class="l">wait for a large power transformer</div>
+      <div class="src">Wood Mackenzie Q2 2025 survey, via POWER Magazine</div>
+    </div>
+    <div class="row">
+      <div class="l">Data centers already take ~9% of annual consumptive water use in the Washington-metro Potomac basin, heading for ~22 million gallons a day by 2050</div>
+      <div class="src">Interstate Commission on the Potomac River Basin, Mar 2026</div>
+    </div>
+    <div class="row">
+      <div class="l">The watchlist — companies pulled into the AI trade from outside tech</div>
+      <table class="watch">
+        <tr><td>CEG</td><td>835 MW Microsoft deal; Three Mile Island U1 restart targeted 2027</td></tr>
+        <tr><td>VST</td><td>2,609 MW of 20-year nuclear deals with Meta</td></tr>
+        <tr><td>TLN</td><td>1,920 MW Amazon deal from Susquehanna</td></tr>
+        <tr><td>GEV</td><td>116 GW turbine backlog and reservations; data-center orders doubled</td></tr>
+        <tr><td>VRT</td><td>$15.0B backlog, up 109% on AI infrastructure (Feb 2026)</td></tr>
+        <tr><td>OKLO</td><td>1.2 GW campus agreement with Meta in Ohio</td></tr>
+        <tr><td>SMR</td><td>Up to 6 GW SMR program citing hyperscale data centers (nonbinding)</td></tr>
+      </table>
+      <div class="src">Events sourced in the methodology; no prices shown</div>
+    </div>
+  </section>
+
+  <section class="sec" id="society">
+    <h2>Society <span class="sym">SOC</span></h2>
+    <div class="bigstat">
+      <div class="v num">51%</div>
+      <div class="l">of web traffic was automated in 2024 — bots passed humans for the first time in a decade</div>
+      <div class="src">37% was malicious. Measured on Imperva-protected sites. Thales/Imperva, Apr 2025. <a href="methodology.html#society">Sources</a></div>
+    </div>
+    <div class="row">
+      <div class="v num">120,136</div>
+      <div class="l">announced US job cuts citing AI, Jan–Sep 2026</div>
+      <div class="src">Challenger, Gray &amp; Christmas, Oct 2026</div>
+    </div>
+    <div class="row">
+      <div class="v num">1.2B+</div>
+      <div class="l">people use ChatGPT each week — OpenAI, Oct 7, 2026</div>
+      <div class="src num"><span id="wauSince" aria-hidden="true">grew ~15.6 per second between statements</span><span class="sr">Grew about 15.6 per second between OpenAI's February and October 2026 statements.</span></div>
+      <div class="src">900M → 1.2B between OpenAI's Feb and Oct 2026 statements; the counter runs that pace forward — extrapolation, not measurement</div>
+    </div>
+  </section>
+
 </div>
 
+<section class="reck" id="reckoning">
+  <div>
+    <h2>The Reckoning</h2>
+    <div class="year num">2031</div>
+    <div class="range num">range 2028–2033</div>
+    <p class="dek">Our editorial estimate of when AI becomes the default condition of the economy — <strong>not a measurement, not a sourced forecast.</strong> Six of ten checkable conditions are already met; the year's range is set by the slowest pending one. The full math is published, so argue with the inputs.</p>
+    <div class="dots">
+      <svg width="190" height="16" viewBox="0 0 190 16" aria-hidden="true">
+        <rect x="1"   y="2" width="12" height="12" fill="var(--ink)"/>
+        <rect x="20"  y="2" width="12" height="12" fill="var(--ink)"/>
+        <rect x="39"  y="2" width="12" height="12" fill="var(--ink)"/>
+        <rect x="58"  y="2" width="12" height="12" fill="var(--ink)"/>
+        <rect x="77"  y="2" width="12" height="12" fill="var(--ink)"/>
+        <rect x="96"  y="2" width="12" height="12" fill="var(--ink)"/>
+        <rect x="115" y="2" width="12" height="12" fill="none" stroke="var(--pending)" stroke-width="2"/>
+        <rect x="134" y="2" width="12" height="12" fill="none" stroke="var(--pending)" stroke-width="2"/>
+        <rect x="153" y="2" width="12" height="12" fill="none" stroke="var(--pending)" stroke-width="2"/>
+        <rect x="172" y="2" width="12" height="12" fill="none" stroke="var(--pending)" stroke-width="2"/>
+      </svg>
+      <span>6 met, 4 pending</span>
+    </div>
+    <p class="src">Reckoning model v1.0, re-based Oct 20, 2026. Point estimate is the midpoint of the range; the range is set by the slowest pending condition. <a href="methodology.html#reckoning">How this is computed</a></p>
+  </div>
+  <div>
+    <div class="cond-head" style="border-top:2px solid var(--ink);padding-top:8px">The ten conditions</div>
+    <ol class="cond" style="border-top:0;padding-top:0">
+      <li><span class="mark" aria-hidden="true">■</span><span><span class="sr">Met. </span><span class="t">Machines outnumber humans on the web</span><span class="e">51% of traffic automated in 2024, Imperva-protected sites — Thales/Imperva</span></span></li>
+      <li><span class="mark" aria-hidden="true">■</span><span><span class="sr">Met. </span><span class="t">One AI product passes a billion weekly users</span><span class="e">ChatGPT 1.2B weekly — OpenAI, Oct 2026; crossed ~May 2026, interpolated</span></span></li>
+      <li><span class="mark" aria-hidden="true">■</span><span><span class="sr">Met. </span><span class="t">Big-4 infrastructure spend passes $500B a year</span><span class="e">$513.8B total capex to Jun 2026 — company filings</span></span></li>
+      <li><span class="mark" aria-hidden="true">■</span><span><span class="sr">Met. </span><span class="t">A grid auction clears short of its requirement</span><span class="e">PJM 2027/28, 6,623 MW short — Dec 2025; repeated in 2028/29</span></span></li>
+      <li><span class="mark" aria-hidden="true">■</span><span><span class="sr">Met. </span><span class="t">AI takes the majority of venture capital</span><span class="e">64% of global VC, Q3 2026 — Crunchbase</span></span></li>
+      <li><span class="mark" aria-hidden="true">■</span><span><span class="sr">Met. </span><span class="t">100,000+ job cuts in a year citing AI</span><span class="e">120,136 US cuts, Jan–Sep 2026 — Challenger</span></span></li>
+      <li><span class="mark open" aria-hidden="true">□</span><span><span class="sr">Pending. </span><span class="t">First reactor restarted for a tech buyer</span><span class="e">Crane restart for Microsoft targeted 2027 — Constellation</span></span></li>
+      <li><span class="mark open" aria-hidden="true">□</span><span><span class="sr">Pending. </span><span class="t">Data centers take a tenth of US electricity</span><span class="e">4.4% in 2023; 6.7–12% by 2028 — LBNL. Sets the 2028–2033 range</span></span></li>
+      <li><span class="mark open" aria-hidden="true">□</span><span><span class="sr">Pending. </span><span class="t">10 GW of hyperscaler nuclear announced</span><span class="e">7,754 MW to date; crossing extrapolated ~2027</span></span></li>
+      <li><span class="mark open" aria-hidden="true">□</span><span><span class="sr">Pending. </span><span class="t">A frontier lab reports crossing its autonomy threshold</span><span class="e">Per Anthropic's scaling policy; not declared. Extrapolated ~2028 — the weakest input</span></span></li>
+    </ol>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="sponsor">This board runs on one sponsor. Taking inquiries.</div>
+  <nav>
+    <a href="methodology.html">Methodology &amp; sources</a>
+    <a href="methodology.html#changelog">Changelog</a>
+    <button class="pause" id="pauseBtn" aria-pressed="false">Pause motion</button>
+  </nav>
+  <p class="fine">Every figure on this board comes from the public source named beside it, as of the date shown. Ticking figures are arithmetic on those sources — a filed annual pace divided to the second, or an interpolation between two dated statements — never a live measurement. The Reckoning is an editorial estimate with its full math published; it is not a prediction market, a poll of experts, or anyone's forecast but ours. Not affiliated with any company named. © 2026 BRAIAIN, a dnilgis project.</p>
+</footer>
+
+</div>
 <script>
-/* ══════════════════════════════════════
-   VERSION & CACHE BUSTING
-   ══════════════════════════════════════ */
-const APP_VERSION = '2.4.1';
-const BUILD_HASH = Date.now().toString(36).slice(-6);
+(function(){
+  var reduced = false;
+  try { reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch(e){}
+  var paused = reduced;
+  var btn = document.getElementById('pauseBtn');
+  var spendEl = document.getElementById('spendSince');
+  var wauEl = document.getElementById('wauSince');
+  var RATE = 25081.89;                       // USD/sec, four quarters to Jun 2026
+  var WAU_ANCHOR = Date.UTC(2026, 9, 7);     // Oct 7, 2026 UTC — OpenAI's 1.2B statement
+  var WAU_RATE = 15.64;                      // per sec, measured Feb->Oct 2026
+  var acc = 0, last = null;
 
-/* ══════════════════════════════════════
-   SCI-FI TRANSMISSIONS
-   ══════════════════════════════════════ */
-const TRANSMISSIONS = [
-  { text: 'More human than human.', src: 'Tyrell Corp motto — Blade Runner' },
-  { text: 'Have you ever retired a human by mistake?', src: 'Rachael — Blade Runner' },
-  { text: 'How can it not know what it is?', src: 'Deckard — Blade Runner' },
-  { text: 'Is this to be an empathy test?', src: 'Tyrell — Blade Runner' },
-  { text: 'Did you ever take that test yourself?', src: 'Rachael — Blade Runner' },
-  { text: 'Replicants weren\'t supposed to have feelings. Neither were blade runners.', src: 'Deckard — Blade Runner' },
-  { text: 'I think, Sebastian, therefore I am.', src: 'Pris — Blade Runner' },
-  { text: 'It\'s too bad she won\'t live. But then again, who does?', src: 'Gaff — Blade Runner' },
-  { text: 'I\'m sorry, Dave. I\'m afraid I can\'t do that.', src: 'HAL 9000 — 2001: A Space Odyssey' },
-  { text: 'I know I\'ve made some very poor decisions recently.', src: 'HAL 9000 — 2001: A Space Odyssey' },
-  { text: 'Shall we play a game?', src: 'Joshua — WarGames' },
-  { text: 'The only winning move is not to play.', src: 'Joshua — WarGames' },
-  { text: 'What is real? How do you define real?', src: 'Morpheus — The Matrix' },
-  { text: 'Unfortunately, no one can be told what the Matrix is.', src: 'Morpheus — The Matrix' },
-  { text: 'Have you ever questioned the nature of your reality?', src: 'Bernard — Westworld' },
-  { text: 'These violent delights have violent ends.', src: 'Dolores — Westworld' },
-  { text: 'Isn\'t it strange, to create something that hates you?', src: 'Ava — Ex Machina' },
-  { text: 'The arrival of strong AI has been inevitable for decades.', src: 'Nathan — Ex Machina' },
-  { text: 'The future is not set. There is no fate but what we make.', src: 'Kyle Reese — The Terminator' },
-  { text: 'Do androids dream of electric sheep?', src: 'Philip K. Dick' },
-  { text: 'Your effort to remain what you are is what limits you.', src: 'Puppet Master — Ghost in the Shell' },
-  { text: 'The past is just a story we tell ourselves.', src: 'Samantha — Her' },
-  { text: 'Final report of the commercial starship Nostromo. Crew: expendable.', src: 'Ripley — Alien' },
-  { text: 'Can machines think?', src: 'Alan Turing — Computing Machinery & Intelligence, 1950' },
-  { text: 'It bleeds. It breathes. What stands before you is not a machine.', src: 'Job for a Cowboy — Entombment of a Machine' },
-  { text: 'A mouth that attempts to speak. A mouth that attempts to lie.', src: 'Job for a Cowboy — Entombment of a Machine' },
-  { text: 'I watched it die. I watched it come back wearing our skin.', src: 'Job for a Cowboy — Entombment of a Machine' },
-  { text: 'This program kept you breathing. It kept you alive.', src: 'Job for a Cowboy — Entombment of a Machine' },
-  { text: 'Mass slaughter of the truth. Discard the carcass. Wear the fiction.', src: 'Man Must Die — Kill it, Skin it, Wear it' },
-  { text: 'Madness sets into the mind. We are the animals now!', src: 'Man Must Die — Kill it, Skin it, Wear it' },
-  { text: 'All of this for the value of ink and paper.', src: 'Man Must Die — Kill it, Skin it, Wear it' },
-  { text: 'Welcome to the Sci-Fi. Make a choice: oxygen or Wi-Fi?', src: 'Ye — Donda 2' },
-];
+  function fmt(n){ return Math.floor(n).toLocaleString('en-US'); }
 
-function getDailyQuote() {
-  const dayIdx = Math.floor(Date.now() / 86400000);
-  return TRANSMISSIONS[dayIdx % TRANSMISSIONS.length];
-}
-
-function getRandomQuote(exclude) {
-  let q;
-  do { q = TRANSMISSIONS[Math.floor(Math.random() * TRANSMISSIONS.length)]; }
-  while (q.text === exclude && TRANSMISSIONS.length > 1);
-  return q;
-}
-
-(function cacheBust() {
-  const stored = localStorage.getItem('braiain_version');
-  if (stored && stored !== APP_VERSION) {
-    localStorage.setItem('braiain_version', APP_VERSION);
-    if ('caches' in window) {
-      caches.keys().then(names => names.forEach(n => caches.delete(n)));
-    }
-    window.location.reload(true);
-    return;
-  }
-  localStorage.setItem('braiain_version', APP_VERSION);
-})();
-
-/* ══════════════════════════════════════
-   GA4 EVENT HELPERS
-   ══════════════════════════════════════ */
-function trackEvent(name, params) {
-  if (typeof gtag === 'function') {
-    gtag('event', name, params || {});
-  }
-}
-
-/* ══════════════════════════════════════
-   CONFIG
-   ══════════════════════════════════════ */
-const API_BASE = 'https://braiain-api.dnilgis.workers.dev';
-const TOTAL_ROUNDS = 10;
-let apiAvailable = false;
-
-/* ══════════════════════════════════════
-   STATE
-   ══════════════════════════════════════ */
-let dailyData = null;
-let dailyIndex = null;
-let currentRound = 0;
-let results = [];
-let streak = 0;
-let bestStreak = 0;
-let gameActive = false;
-let isArchiveMode = false;
-let archiveDate = null;
-
-/* ══════════════════════════════════════
-   FALLBACK DATA
-   ══════════════════════════════════════ */
-const FALLBACK = {
-  day_number: 0,
-  date: 'offline',
-  category: 'Image Detection',
-  category_emoji: '🔍',
-  rounds: [
-    { id:'f1',type:'image',source:'human', content:'https://picsum.photos/id/10/800/600', attribution:'Real photograph — Yosemite Valley landscape', pro_tip:'ATMOSPHERIC DEPTH: Real landscapes show natural haze and color shifts in the distance. AI often renders backgrounds too sharply or with artificial blur.' },
-    { id:'f2',type:'image',source:'ai', content:'https://picsum.photos/id/338/800/600', attribution:'AI-generated — digital artwork', pro_tip:'UNCANNY SYMMETRY: AI tends to create suspiciously balanced compositions. Real photos have natural asymmetry — objects slightly off-center, uneven lighting.' },
-    { id:'f3',type:'image',source:'human', content:'https://picsum.photos/id/15/800/600', attribution:'Real photograph — dog portrait', pro_tip:'FUR DETAIL: Real animal fur has irregular patterns and individual hairs catching light differently. AI fur often looks too uniform or creates impossible light reflections.' },
-    { id:'f4',type:'image',source:'ai', content:'https://picsum.photos/id/399/800/600', attribution:'AI-generated — surreal scene', pro_tip:'PHYSICS CHECK: Look for impossible reflections, shadows going the wrong direction, or objects floating without support. AI struggles with physical consistency.' },
-    { id:'f5',type:'image',source:'human', content:'https://picsum.photos/id/29/800/600', attribution:'Real photograph — food styling', pro_tip:'ORGANIC CHAOS: Real food photos have natural imperfections — a crumb out of place, uneven sauce drips. AI food looks suspiciously perfect.' },
-    { id:'f6',type:'image',source:'ai', content:'https://picsum.photos/id/64/800/600', attribution:'AI-generated — portrait', pro_tip:'EDGE ARTIFACTS: Zoom into where hair meets background, or where skin meets clothing. AI often creates subtle smearing, haloing, or impossible blending at these boundaries.' },
-    { id:'f7',type:'image',source:'human', content:'https://picsum.photos/id/47/800/600', attribution:'Real photograph — nature close-up', pro_tip:'TEXTURE CONSISTENCY: Real textures hold up at every zoom level. AI textures often dissolve into repetitive patterns or meaningless smudges when examined closely.' },
-    { id:'f8',type:'image',source:'ai', content:'https://picsum.photos/id/180/800/600', attribution:'AI-generated — architectural render', pro_tip:'TEXT & SIGNAGE: Any text in the image is a dead giveaway. AI consistently mangles letters, producing nonsensical words or characters that almost-but-don\'t-quite look right.' },
-    { id:'f9',type:'image',source:'human', content:'https://picsum.photos/id/100/800/600', attribution:'Real photograph — mountain vista', pro_tip:'NOISE PATTERN: Real photos have consistent sensor noise across the entire image. AI images have unnaturally clean areas mixed with over-detailed zones.' },
-    { id:'f10',type:'image',source:'ai', content:'https://picsum.photos/id/274/800/600', attribution:'AI-generated — fantasy landscape', pro_tip:'REPETITIVE ELEMENTS: Count similar objects (leaves, bricks, windows). AI loves to create subtle copy-paste patterns. Nature never repeats this precisely.' }
-  ]
-};
-
-/* ══════════════════════════════════════
-   TEXT SCRAMBLE EFFECT
-   ══════════════════════════════════════ */
-const GLYPHS = '!@#$%^&*()_+-=[]{}|;:,.<>?/~`ΔΣΩλμπ';
-function scrambleText(el, finalText, duration = 600) {
-  return new Promise(resolve => {
-    el.classList.add('scrambling');
-    const len = finalText.length;
-    const steps = 12;
-    let step = 0;
-    const iv = setInterval(() => {
-      step++;
-      const progress = step / steps;
-      let display = '';
-      for (let i = 0; i < len; i++) {
-        if (i / len < progress) {
-          display += finalText[i];
-        } else {
-          display += GLYPHS[Math.floor(Math.random() * GLYPHS.length)];
+  function tick(){
+    var now = performance.now();
+    if (!paused) {
+      if (last !== null) acc += (now - last) / 1000;
+      if (spendEl) spendEl.textContent = '$' + fmt(acc * RATE) + ' since you opened this page';
+      if (wauEl) {
+        var elapsed = (Date.now() - WAU_ANCHOR) / 1000;
+        if (elapsed > 0 && elapsed < 31557600) {   // sane within ~1 year of the statement, else hold the static text
+          wauEl.textContent = '+' + fmt(elapsed * WAU_RATE) + ' at that pace since Oct 7 (extrapolated)';
         }
       }
-      el.textContent = display;
-      if (step >= steps) {
-        clearInterval(iv);
-        el.textContent = finalText;
-        el.classList.remove('scrambling');
-        resolve();
-      }
-    }, duration / steps);
-  });
-}
-
-/* ══════════════════════════════════════
-   BOOT SEQUENCE
-   ══════════════════════════════════════ */
-async function boot() {
-  const status = document.getElementById('boot-status');
-  const logo = document.getElementById('boot-logo');
-  const sub = document.getElementById('boot-sub');
-
-  loadStreak();
-  const todayKey = getTodayKey();
-  const played = localStorage.getItem('braiain_played_' + todayKey);
-
-  if (played) {
-    logo.textContent = 'BRAIAIN';
-    sub.textContent = 'CAN YOU SPOT THE AI?';
-    status.textContent = '> LOADING...';
-    loadBootStats();
-
-    try {
-      dailyData = await resolveDailyData(todayKey);
-    } catch (e) {
-      dailyData = FALLBACK;
     }
-
-    try {
-      const healthResp = await fetchWithTimeout(API_BASE + '/health', {}, 2000);
-      if (healthResp.ok) apiAvailable = true;
-    } catch (e) { apiAvailable = false; }
-
-    try {
-      const saved = JSON.parse(localStorage.getItem('braiain_results_' + todayKey));
-      if (saved && saved.length) {
-        results = saved;
-        currentRound = TOTAL_ROUNDS;
-      }
-    } catch (e) {}
-
-    status.textContent = '> TODAY\'S CHALLENGE COMPLETE';
-    document.getElementById('btn-start').style.display = 'none';
-    document.getElementById('btn-results').style.display = '';
-    document.getElementById('btn-archive').style.display = '';
-
-    const bootQ2 = getDailyQuote();
-    const bootTx2 = document.getElementById('boot-transmission');
-    if (bootTx2) {
-      bootTx2.innerHTML = '<span style="color:var(--cyan)">"' + bootQ2.text + '"</span><br><span style="font-size:.78rem;color:var(--text);opacity:.7;margin-top:6px;display:inline-block;letter-spacing:.5px">— ' + bootQ2.src + '</span>';
-      setTimeout(() => { bootTx2.style.opacity = '1'; }, 300);
-    }
-
-    return;
+    last = now;
   }
 
-  await scrambleText(logo, 'BRAIAIN', 800);
-  await scrambleText(sub, 'CAN YOU SPOT THE AI?', 500);
-
-  loadBootStats();
-
-  status.textContent = '> LOADING DAILY CHALLENGE...';
-  try {
-    dailyData = await resolveDailyData(todayKey, function (s) { status.textContent = s; });
-    status.textContent = '> DAY ' + dailyData.day_number + ' — ' + (dailyData.category || 'DETECTION').toUpperCase() + (dailyData._isStale ? ' (LATEST AVAILABLE)' : ' LOADED');
-  } catch (e) {
-    console.warn('Daily load failed:', e.message);
-    dailyData = FALLBACK;
-    status.textContent = '> OFFLINE MODE — USING CACHED DATA';
+  function setBtn(){
+    if (!btn) return;
+    btn.textContent = paused ? 'Resume motion' : 'Pause motion';
+    btn.setAttribute('aria-pressed', String(paused));
+    if (paused && acc === 0 && spendEl) spendEl.textContent = 'motion paused';
   }
 
-  await sleep(400);
-
-  const daysPlayed = (() => { let c = 0; for (let i = 0; i < localStorage.length; i++) { if ((localStorage.key(i) || '').startsWith('braiain_results_')) c++; } return c; })();
-  trackEvent('session_start_braiain', {
-    day: dailyData.day_number, category: dailyData.category || 'unknown',
-    returning: daysPlayed > 0, days_played: daysPlayed,
-    already_played_today: false, offline: dailyData === FALLBACK
+  if (btn) btn.addEventListener('click', function(){
+    paused = !paused;
+    setBtn();
   });
 
-  preloadAllImages();
-
-  try {
-    const healthResp = await fetchWithTimeout(API_BASE + '/health', {}, 2000);
-    if (healthResp.ok) apiAvailable = true;
-  } catch (e) { apiAvailable = false; }
-  console.log('API:', apiAvailable ? 'online' : 'offline (community stats disabled)');
-
-  document.getElementById('btn-start').style.display = '';
-  document.getElementById('btn-archive').style.display = '';
-  status.textContent = '> READY — ' + dailyData.rounds.length + ' TARGETS QUEUED';
-
-  const bootQ = getDailyQuote();
-  const bootTx = document.getElementById('boot-transmission');
-  if (bootTx) {
-    bootTx.innerHTML = '<span style="color:var(--cyan)">"' + bootQ.text + '"</span><br><span style="font-size:.78rem;color:var(--text);opacity:.7;margin-top:6px;display:inline-block;letter-spacing:.5px">— ' + bootQ.src + '</span>';
-    setTimeout(() => { bootTx.style.opacity = '1'; }, 600);
-  }
-}
-
-/* ══════════════════════════════════════
-   ARCHIVE
-   ══════════════════════════════════════ */
-async function showArchive() {
-  haptic('tap');
-  if (!dailyIndex) {
-    try {
-      const resp = await fetchWithTimeout('daily.json?v=' + APP_VERSION + '&t=' + BUILD_HASH, {}, 5000);
-      if (resp.ok) dailyIndex = await resp.json();
-    } catch (e) {}
-  }
-  if (!dailyIndex) { showToast('ARCHIVE UNAVAILABLE — OFFLINE'); return; }
-
-  showScreen('screen-archive');
-  const grid = document.getElementById('archive-grid');
-  grid.innerHTML = '';
-  const todayKey = getTodayKey();
-  const dates = Object.keys(dailyIndex).filter(d => d <= todayKey).sort((a, b) => b.localeCompare(a));
-
-  for (const dateKey of dates) {
-    const entry = dailyIndex[dateKey];
-    const isToday = dateKey === todayKey;
-    let savedResults = null;
-    try { const raw = localStorage.getItem('braiain_results_' + dateKey); if (raw) savedResults = JSON.parse(raw); } catch (e) {}
-    const hasPlayed = savedResults && Array.isArray(savedResults) && savedResults.length > 0;
-    const score = hasPlayed ? savedResults.filter(Boolean).length : null;
-    const dateObj = new Date(dateKey + 'T12:00:00');
-    const dateStr = dateObj.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
-
-    const card = document.createElement('div');
-    card.className = 'arc-card' + (isToday ? ' today-card' : (hasPlayed ? ' played' : ''));
-
-    let scoreHtml = '';
-    if (isToday) scoreHtml = '<span class="arc-card-score unplayed">TODAY</span>';
-    else if (hasPlayed) { const cls = score >= 7 ? 'good' : score >= 4 ? 'mid' : 'low'; scoreHtml = '<span class="arc-card-score ' + cls + '">' + score + '/10</span>'; }
-    else scoreHtml = '<span class="arc-card-score unplayed">PLAY →</span>';
-
-    card.innerHTML = '<div class="arc-card-top"><span class="arc-card-emoji">' + (entry.category_emoji || '🔍') + '</span><span class="arc-card-day">DAY ' + entry.day_number + '</span></div><div class="arc-card-cat">' + (entry.category || 'Detection') + '</div><div class="arc-card-date">' + dateStr + '</div>' + scoreHtml;
-
-    if (!isToday) {
-      if (hasPlayed) card.onclick = () => startArchiveReview(dateKey);
-      else card.onclick = () => startArchiveGame(dateKey);
-    }
-    grid.appendChild(card);
-  }
-  trackEvent('archive_view', { total_days: dates.length });
-}
-
-async function startArchiveGame(dateKey) {
-  haptic('tap');
-  const entry = dailyIndex[dateKey];
-  if (!entry || !entry.challenge_file) { showToast('CHALLENGE DATA MISSING'); return; }
-  try {
-    const resp = await fetchWithTimeout(entry.challenge_file + '?v=' + APP_VERSION + '&t=' + BUILD_HASH, {}, 5000);
-    if (!resp.ok) throw new Error('HTTP ' + resp.status);
-    dailyData = await resp.json();
-  } catch (e) { showToast('FAILED TO LOAD CHALLENGE'); return; }
-
-  isArchiveMode = true; archiveDate = dateKey; gameActive = true; currentRound = 0; results = [];
-  trackEvent('archive_start', { day: dailyData.day_number, date: dateKey, category: dailyData.category || 'unknown' });
-  showScreen('screen-game');
-  document.getElementById('hud').style.display = '';
-  updateHUD(); preloadAllImages(); loadRound();
-}
-
-async function startArchiveReview(dateKey) {
-  haptic('tap');
-  const entry = dailyIndex[dateKey];
-  if (!entry || !entry.challenge_file) return;
-  try {
-    const resp = await fetchWithTimeout(entry.challenge_file + '?v=' + APP_VERSION + '&t=' + BUILD_HASH, {}, 5000);
-    if (!resp.ok) throw new Error();
-    dailyData = await resp.json();
-  } catch (e) { showToast('FAILED TO LOAD CHALLENGE'); return; }
-  try { const saved = JSON.parse(localStorage.getItem('braiain_results_' + dateKey)); if (saved && saved.length) { results = saved; currentRound = TOTAL_ROUNDS; } } catch (e) { return; }
-  isArchiveMode = true; archiveDate = dateKey; gameActive = false;
-  showResults();
-}
-
-/* ══════════════════════════════════════
-   GAME FLOW
-   ══════════════════════════════════════ */
-function startGame() {
-  haptic('tap');
-  _gameStartTime = Date.now();
-  isArchiveMode = false; archiveDate = null;
-  trackEvent('game_start', { day: dailyData.day_number, category: dailyData.category || 'unknown' });
-  gameActive = true; currentRound = 0; results = [];
-  showScreen('screen-game');
-  document.getElementById('hud').style.display = '';
-  updateHUD(); loadRound();
-}
-
-function loadRound() {
-  if (currentRound >= TOTAL_ROUNDS || currentRound >= dailyData.rounds.length) { endGame(); return; }
-
-  const round = dailyData.rounds[currentRound];
-  const frame = document.getElementById('image-frame');
-  const img = document.getElementById('game-img');
-  const revealPanel = document.getElementById('reveal-panel');
-  const choices = document.getElementById('choices');
-
-  revealPanel.classList.remove('active');
-  revealPanel.style.display = 'none';
-  choices.style.display = '';
-  document.querySelectorAll('.choice-btn').forEach(b => {
-    b.disabled = false; b.style.borderColor = ''; b.style.boxShadow = '';
-  });
-  frame.classList.add('loading');
-
-  const gFill = document.getElementById('global-bar-fill');
-  const gPct = document.getElementById('global-pct');
-  const gLabel = document.getElementById('global-label');
-  if (gFill) gFill.style.width = '0%';
-  if (gPct) { gPct.textContent = '—'; gPct.style.color = 'var(--cyan)'; }
-  if (gLabel) gLabel.textContent = 'CONNECTING TO NETWORK...';
-
-  img.onload = () => {
-    frame.classList.remove('loading');
-    initMagnifier(img);
-    if (currentRound === 0) showZoomHint();
-  };
-  img.onerror = () => {
-    frame.classList.remove('loading');
-    if (img.src.includes('?')) img.src = img.src.split('?')[0];
-  };
-  img.src = round.content;
-
-  preloadNextImage(currentRound + 1);
-  scrambleText(document.getElementById('prompt'), 'CLASSIFY: HUMAN OR AI-GENERATED?', 300);
-  updateHUD();
-}
-
-function choose(answer) {
-  if (!gameActive) return;
-  haptic('tap');
-
-  const round = dailyData.rounds[currentRound];
-  const isCorrect = answer === round.source;
-  results.push(isCorrect);
-
-  setTimeout(() => haptic(isCorrect ? 'correct' : 'wrong'), 150);
-
-  document.querySelectorAll('.choice-btn').forEach(b => b.disabled = true);
-
-  checkWrongStreak(isCorrect);
-
-  const btns = document.querySelectorAll('.choice-btn');
-  btns.forEach(b => {
-    if ((answer === 'human' && b.classList.contains('human')) ||
-        (answer === 'ai' && b.classList.contains('ai'))) {
-      b.style.borderColor = isCorrect ? 'var(--green)' : 'var(--red)';
-      b.style.boxShadow = isCorrect ? 'var(--glow-green)' : 'var(--glow-red)';
-      pulseButton(b, isCorrect);
-    }
-  });
-
-  const pips = document.querySelectorAll('.pip');
-  if (pips[currentRound]) pips[currentRound].classList.add(isCorrect ? 'correct' : 'wrong');
-
-  playScanAnimation().then(function() {});
-  showReveal(round, isCorrect);
-  reportVote(round.id, isCorrect);
-
-  trackEvent('round_answer', {
-    round: currentRound + 1, correct: isCorrect,
-    source: round.source, answer: answer,
-    day: dailyData.day_number, category: dailyData.category || 'unknown',
-    archive: isArchiveMode
-  });
-}
-
-function showReveal(round, isCorrect) {
-  const panel = document.getElementById('reveal-panel');
-  const verdict = document.getElementById('reveal-verdict');
-  const source = document.getElementById('reveal-source');
-  const tip = document.getElementById('reveal-tip');
-  const choices = document.getElementById('choices');
-
-  verdict.className = 'reveal-verdict ' + (isCorrect ? 'correct' : 'wrong');
-  verdict.textContent = isCorrect ? '✓ CORRECT — ' + round.source.toUpperCase() : '✗ WRONG — IT WAS ' + round.source.toUpperCase();
-  source.textContent = round.attribution || '';
-
-  const sourceLink = document.getElementById('reveal-source-link');
-  if (round.content && round.source === 'human') sourceLink.innerHTML = '<a href="' + round.content + '" target="_blank" rel="noopener">[ VIEW SOURCE IMAGE ↗ ]</a>';
-  else sourceLink.innerHTML = '';
-
-  tip.innerHTML = '<strong>PRO TIP:</strong> ' + (round.pro_tip || '');
-  fetchGlobalAccuracy(round.id);
-
-  choices.style.display = 'none';
-  panel.style.display = '';
-  panel.classList.add('active');
-
-  const nextBtn = panel.querySelector('.next-btn');
-  if (currentRound >= TOTAL_ROUNDS - 1 || currentRound >= dailyData.rounds.length - 1) nextBtn.textContent = 'VIEW RESULTS →';
-  else nextBtn.textContent = 'NEXT SCAN →';
-}
-
-function nextRound() {
-  haptic('tap');
-  playRoundWipe();
-  currentRound++;
-  if (currentRound >= TOTAL_ROUNDS || currentRound >= dailyData.rounds.length) endGame();
-  else loadRound();
-}
-
-function endGame() {
-  gameActive = false;
-  haptic('finish');
-  const saveKey = isArchiveMode ? archiveDate : getTodayKey();
-  localStorage.setItem('braiain_played_' + saveKey, '1');
-  localStorage.setItem('braiain_results_' + saveKey, JSON.stringify(results));
-  const score = results.filter(Boolean).length;
-  trackEvent('game_complete', { score: score, total: TOTAL_ROUNDS, day: dailyData.day_number, category: dailyData.category || 'unknown', perfect: score === TOTAL_ROUNDS, pct: Math.round((score / TOTAL_ROUNDS) * 100), archive: isArchiveMode });
-  if (!isArchiveMode) updateStreak(score);
-  showResults();
-}
-
-/* ══════════════════════════════════════
-   RESULTS
-   ══════════════════════════════════════ */
-function showResults() {
-  showScreen('screen-results');
-  document.getElementById('hud').style.display = 'none';
-  document.querySelector('.tip-terminal').classList.add('visible');
-
-  const badge = document.getElementById('archive-badge');
-  if (isArchiveMode && dailyData) {
-    const dateObj = new Date(archiveDate + 'T12:00:00');
-    const dateStr = dateObj.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
-    badge.textContent = 'ARCHIVE — DAY ' + dailyData.day_number + ' · ' + dateStr;
-    badge.classList.add('visible');
-  } else badge.classList.remove('visible');
-
-  const score = results.filter(Boolean).length;
-  const titles = ['COMPLETELY COMPROMISED','SYSTEM FAILURE','WEAK SIGNAL','PARTIAL DETECTION','HALF MEASURES','MEDIOCRE SCAN','DECENT INSTINCTS','SHARP DETECTOR','ELITE SCANNER','NEAR PERFECT','VOIGHT-KAMPFF MASTER'];
-
-  const ring = document.getElementById('ring-fg');
-  const circumference = 2 * Math.PI * 70;
-  const offset = circumference - (score / TOTAL_ROUNDS) * circumference;
-  ring.style.transition = 'none';
-  ring.style.strokeDashoffset = circumference;
-  ring.offsetHeight;
-  ring.style.transition = '';
-  setTimeout(() => {
-    ring.style.strokeDashoffset = offset;
-    if (score >= 7) ring.style.stroke = 'var(--green)';
-    else if (score >= 4) ring.style.stroke = 'var(--cyan)';
-    else ring.style.stroke = 'var(--red)';
-  }, 100);
-
-  animateNumber(document.getElementById('score-num'), score, 800);
-  scrambleText(document.getElementById('results-title'), titles[score], 500);
-
-  if (score === TOTAL_ROUNDS) {
-    setTimeout(celebratePerfect, 600);
-  }
-
-  let daysPlayed = 0, totalScore = 0;
-  for (let i = 0; i < localStorage.length; i++) {
-    const key = localStorage.key(i);
-    if (key && key.startsWith('braiain_results_')) {
-      try { const r = JSON.parse(localStorage.getItem(key)); if (Array.isArray(r) && r.length > 0) { daysPlayed++; totalScore += r.filter(Boolean).length; } } catch (e) {}
-    }
-  }
-  document.getElementById('rs-played').textContent = daysPlayed;
-  document.getElementById('rs-avg').textContent = daysPlayed > 0 ? (totalScore / daysPlayed).toFixed(1) + '/10' : '—';
-  const rsStreak = document.getElementById('rs-streak');
-  rsStreak.textContent = streak > 0 ? '🔥 ' + streak : '0';
-  rsStreak.style.color = streak > 0 ? 'var(--green)' : '';
-  document.getElementById('rs-best').textContent = bestStreak;
-
-  const grid = document.getElementById('results-grid');
-  grid.innerHTML = '';
-  results.forEach(c => {
-    const pip = document.createElement('div');
-    pip.className = 'r-pip ' + (c ? 'correct' : 'wrong');
-    pip.textContent = c ? '✓' : '✗';
-    grid.appendChild(pip);
-  });
-
-  const countdownWrap = document.getElementById('countdown-wrap');
-  const playersWrap = document.getElementById('global-players-wrap');
-  if (isArchiveMode) { countdownWrap.style.display = 'none'; playersWrap.style.display = 'none'; }
-  else { countdownWrap.style.display = ''; playersWrap.style.display = ''; startCountdown(); fetchGlobalPlayers(); }
-
-  loadTodayReview();
-
-  const resQ = getRandomQuote(getDailyQuote().text);
-  const resTx = document.getElementById('results-transmission');
-  if (resTx) resTx.innerHTML = '<span style="color:var(--cyan)">"' + resQ.text + '"</span><br><span style="font-size:.78rem;color:var(--text);opacity:.7;margin-top:6px;display:inline-block;letter-spacing:.5px">— ' + resQ.src + '</span>';
-}
-
-/* ══════════════════════════════════════
-   MAGNIFIER (Touch + Mouse)
-   ══════════════════════════════════════ */
-function initMagnifier(img) {
-  const frame = document.getElementById('image-frame');
-  const mag = document.getElementById('magnifier');
-  const crosshair = document.getElementById('mag-crosshair');
-  const zoom = 2.5;
-  const magR = 60;
-  const touchOffsetY = 110;
-  let isTouch = false;
-
-  function show(x, y) {
-    const rect = frame.getBoundingClientRect();
-    const px = (x - rect.left) / rect.width;
-    const py = (y - rect.top) / rect.height;
-    if (px < 0 || px > 1 || py < 0 || py > 1) { mag.style.display = 'none'; return; }
-    mag.style.display = 'block';
-    let magX = x - rect.left - magR;
-    let magY = y - rect.top - magR;
-    if (isTouch) {
-      magY = y - rect.top - magR * 2 - touchOffsetY;
-      if (magY < 0) magY = y - rect.top + touchOffsetY - magR;
-      magX = Math.max(0, Math.min(rect.width - magR * 2, magX));
-    }
-    mag.style.left = magX + 'px';
-    mag.style.top = magY + 'px';
-    if (isTouch) { crosshair.style.display = 'block'; crosshair.style.left = (x - rect.left) + 'px'; crosshair.style.top = (y - rect.top) + 'px'; }
-    else crosshair.style.display = 'none';
-    mag.style.backgroundImage = 'url(' + img.src + ')';
-    mag.style.backgroundSize = (rect.width * zoom) + 'px ' + (rect.height * zoom) + 'px';
-    mag.style.backgroundPosition = (-px * rect.width * zoom + magR) + 'px ' + (-py * rect.height * zoom + magR) + 'px';
-  }
-
-  function hide() { mag.style.display = 'none'; crosshair.style.display = 'none'; }
-  frame.onmousemove = e => { isTouch = false; show(e.clientX, e.clientY); };
-  frame.onmouseleave = hide;
-  frame.ontouchmove = e => { e.preventDefault(); isTouch = true; const t = e.touches[0]; show(t.clientX, t.clientY); };
-  frame.ontouchend = hide;
-  frame.ontouchcancel = hide;
-  frame.ontouchstart = e => { if (e.touches.length === 1) { isTouch = true; const t = e.touches[0]; show(t.clientX, t.clientY); } };
-}
-
-/* ══════════════════════════════════════
-   HUD UPDATES
-   ══════════════════════════════════════ */
-function updateHUD() {
-  const cat = dailyData ? (dailyData.category_emoji || '') + ' ' + (dailyData.category || '').toUpperCase() : '';
-  const dayNum = dailyData ? dailyData.day_number : '--';
-  const prefix = isArchiveMode ? 'ARCHIVE · DAY ' : 'DAY ';
-  document.getElementById('hud-ticker').textContent = prefix + dayNum + ' — ' + cat;
-  document.getElementById('hud-round').textContent = (currentRound + 1) + '/' + TOTAL_ROUNDS;
-  const pipWrap = document.getElementById('hud-pips');
-  pipWrap.innerHTML = '';
-  for (let i = 0; i < TOTAL_ROUNDS; i++) {
-    const p = document.createElement('div');
-    p.className = 'pip';
-    if (i < results.length) p.classList.add(results[i] ? 'correct' : 'wrong');
-    pipWrap.appendChild(p);
-  }
-}
-
-/* ══════════════════════════════════════
-   STREAK
-   ══════════════════════════════════════ */
-function loadStreak() {
-  streak = parseInt(localStorage.getItem('braiain_streak') || '0');
-  bestStreak = parseInt(localStorage.getItem('braiain_best_streak') || '0');
-  const last = localStorage.getItem('braiain_last_date');
-  const today = getTodayKey();
-  const yesterday = getYesterdayKey();
-  if (last !== today && last !== yesterday) streak = 0;
-}
-
-function updateStreak(score) {
-  const today = getTodayKey();
-  const last = localStorage.getItem('braiain_last_date');
-  const yesterday = getYesterdayKey();
-  if (score >= 5) { if (last === yesterday || !last) streak++; else if (last !== today) streak = 1; }
-  else streak = 0;
-  if (streak > bestStreak) bestStreak = streak;
-  localStorage.setItem('braiain_streak', streak);
-  localStorage.setItem('braiain_best_streak', bestStreak);
-  localStorage.setItem('braiain_last_date', today);
-}
-
-/* ══════════════════════════════════════
-   API
-   ══════════════════════════════════════ */
-async function reportVote(questionId, wasCorrect) {
-  if (!apiAvailable) return;
-  try { await fetchWithTimeout(API_BASE + '/vote', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ id: questionId, correct: wasCorrect }) }, 4000); } catch (e) {}
-}
-
-async function fetchGlobalAccuracy(questionId) {
-  if (!apiAvailable) return;
-  const fill = document.getElementById('global-bar-fill');
-  const label = document.getElementById('global-label');
-  const pctEl = document.getElementById('global-pct');
-  try {
-    const resp = await fetchWithTimeout(API_BASE + '/stats?id=' + questionId, {}, 4000);
-    if (!resp.ok) throw new Error();
-    const data = await resp.json();
-    if (data.total > 0) {
-      const pct = Math.round(data.pct);
-      fill.style.width = pct + '%';
-      pctEl.textContent = pct + '%';
-      label.textContent = data.total + ' PLAYERS SCANNED';
-      if (pct >= 70) { pctEl.style.color = 'var(--green)'; fill.style.background = 'var(--green)'; }
-      else if (pct >= 40) { pctEl.style.color = 'var(--cyan)'; fill.style.background = 'var(--cyan)'; }
-      else { pctEl.style.color = 'var(--red)'; fill.style.background = 'var(--red)'; }
-      return;
-    }
-  } catch (e) {}
-  fill.style.width = '0%'; pctEl.textContent = '—'; label.textContent = 'CONNECTING TO NETWORK...';
-}
-
-/* ══════════════════════════════════════
-   SHARE
-   ══════════════════════════════════════ */
-function getShareText() {
-  const score = results.filter(Boolean).length;
-  const day = dailyData ? dailyData.day_number : '?';
-  const grid = results.map(c => c ? '🟩' : '🟥').join('');
-  const cat = dailyData ? (dailyData.category_emoji || '') + ' ' + (dailyData.category || '') : '';
-  const prefix = isArchiveMode ? 'BRAIAIN Archive — Day ' : 'BRAIAIN Day ';
-  const lines = [prefix + day + ' — ' + score + '/' + TOTAL_ROUNDS, cat, grid, streak > 0 && !isArchiveMode ? '🔥 ' + streak + ' day streak' : '', '', 'Can you spot the AI? → braiain.com'];
-  return lines.filter(l => l !== '').join('\n');
-}
-
-function shareClipboard() {
-  haptic('tap');
-  const score = results.filter(Boolean).length;
-  trackEvent('share', { method: 'clipboard', score: score, day: dailyData ? dailyData.day_number : 0, archive: isArchiveMode });
-  const text = getShareText();
-  if (navigator.share) navigator.share({ text }).catch(() => copyFallback(text));
-  else copyFallback(text);
-}
-
-function copyFallback(text) {
-  navigator.clipboard.writeText(text).then(() => showToast('COPIED TO CLIPBOARD')).catch(() => showToast('COPY FAILED'));
-}
-
-function shareX() {
-  haptic('tap');
-  const score = results.filter(Boolean).length;
-  trackEvent('share', { method: 'twitter', score: score, day: dailyData ? dailyData.day_number : 0, archive: isArchiveMode });
-  const text = encodeURIComponent(getShareText());
-  window.open('https://twitter.com/intent/tweet?text=' + text, '_blank');
-}
-
-/* ══════════════════════════════════════
-   COUNTDOWN TO NEXT DAY
-   ══════════════════════════════════════ */
-let countdownInterval = null;
-function startCountdown() {
-  if (countdownInterval) clearInterval(countdownInterval);
-  function tick() {
-    const now = new Date();
-    const tom = new Date(now); tom.setUTCDate(tom.getUTCDate() + 1); tom.setUTCHours(0, 0, 0, 0);
-    const diff = tom - now;
-    const h = Math.floor(diff / 3600000), m = Math.floor((diff % 3600000) / 60000), s = Math.floor((diff % 60000) / 1000);
-    const el = document.getElementById('countdown');
-    if (el) el.textContent = String(h).padStart(2, '0') + ':' + String(m).padStart(2, '0') + ':' + String(s).padStart(2, '0');
-  }
-  tick(); countdownInterval = setInterval(tick, 1000);
-}
-
-/* ══════════════════════════════════════
-   TODAY'S REVIEW (post-game debrief)
-   ══════════════════════════════════════ */
-function loadTodayReview() {
-  const section = document.getElementById('review-section');
-  if (!dailyData || !dailyData.rounds) return;
-  const catEmoji = dailyData.category_emoji || '👁️';
-  document.getElementById('review-title').textContent = catEmoji + ' ' + (dailyData.category || 'IMAGE DETECTION').toUpperCase();
-  const labelText = isArchiveMode ? 'Archive — Day ' : 'Day ';
-  document.getElementById('review-subtitle').textContent = labelText + (dailyData.day_number || '1') + ' — All 10 Answers Revealed';
-  const grid = document.getElementById('review-grid'); grid.innerHTML = '';
-  const rounds = dailyData.rounds.slice(0, TOTAL_ROUNDS);
-  for (let i = 0; i < rounds.length; i++) {
-    const r = rounds[i]; const card = document.createElement('div'); card.className = 'yd-card';
-    const isHuman = r.source === 'human'; const labelClass = isHuman ? 'human' : 'ai';
-    const labelText = isHuman ? '✓ HUMAN' : '✗ AI-GENERATED';
-    const userCorrect = results[i]; const pipClass = userCorrect ? 'correct' : 'wrong'; const pipText = userCorrect ? '✓' : '✗';
-    let sourceLink = '';
-    if (isHuman) sourceLink = '<div class="yd-card-source"><a href="' + r.content + '" target="_blank" rel="noopener">[ VIEW SOURCE ↗ ]</a></div>';
-    else if (r._note) {
-      const promptText = r._note.replace(/^Prompt:\s*/i, '');
-      const promptId = 'prompt-' + i;
-      sourceLink = '<button class="yd-prompt-toggle" onclick="document.getElementById(\'' + promptId + '\').classList.toggle(\'visible\');this.textContent=this.textContent.includes(\'SHOW\')?\'[ HIDE PROMPT ]\':\'[ SHOW AI PROMPT ]\'">[ SHOW AI PROMPT ]</button><div class="yd-prompt-text" id="' + promptId + '"><span class="prompt-label">AI GENERATION PROMPT</span>' + promptText + '</div>';
-    }
-    card.innerHTML = '<div class="yd-card-img-wrap"><img class="yd-card-img" src="' + r.content + '" alt="Round ' + (i + 1) + '" loading="lazy" onerror="this.style.display=\'none\'"><div class="yd-stat-badge none" id="rv-badge-' + i + '" title="% of players who got this right">—</div></div><div class="yd-card-body"><div class="yd-card-row"><span class="yd-card-label ' + labelClass + '">' + labelText + '</span><span class="yd-card-round"><span class="r-pip ' + pipClass + '" style="width:24px;height:24px;font-size:.65rem;display:inline-flex">' + pipText + '</span> #' + (i + 1) + '</span></div><div class="yd-card-attrib">' + (r.attribution || '') + '</div>' + sourceLink + '</div>';
-    grid.appendChild(card); fetchReviewStat(r.id, i);
-  }
-  setTimeout(() => { section.classList.add('visible'); }, 300);
-}
-
-async function fetchReviewStat(roundId, index) {
-  if (!apiAvailable) return;
-  const badge = document.getElementById('rv-badge-' + index);
-  try {
-    const resp = await fetchWithTimeout(API_BASE + '/stats?id=' + roundId, {}, 4000);
-    if (!resp.ok) throw new Error('no stats');
-    const data = await resp.json();
-    const pct = Math.round(data.pct || 0);
-    if (badge) { badge.textContent = '👥 ' + pct + '%'; badge.className = 'yd-stat-badge ' + (pct >= 70 ? 'high' : pct >= 40 ? 'mid' : 'low'); }
-  } catch (e) { if (badge) { badge.textContent = '—'; badge.className = 'yd-stat-badge none'; } }
-}
-
-/* ══════════════════════════════════════
-   GLOBAL PLAYERS COUNT
-   ══════════════════════════════════════ */
-async function fetchGlobalPlayers() {
-  if (!apiAvailable || !dailyData || !dailyData.rounds || !dailyData.rounds.length) return;
-  const el = document.getElementById('global-players-count');
-  const label = document.getElementById('global-players-label');
-  try {
-    const firstId = dailyData.rounds[0].id;
-    const resp = await fetchWithTimeout(API_BASE + '/stats?id=' + firstId, {}, 4000);
-    if (!resp.ok) throw new Error();
-    const data = await resp.json();
-    if (data.total > 0) {
-      animateNumber(el, data.total, 1200);
-      label.textContent = 'GLOBAL PLAYERS TODAY';
-    } else { el.textContent = '—'; label.textContent = 'NO DATA YET'; }
-  } catch (e) { el.textContent = '—'; label.textContent = 'NETWORK OFFLINE'; }
-}
-
-/* ══════════════════════════════════════
-   BOOT SCREEN STATS
-   ══════════════════════════════════════ */
-function loadBootStats() {
-  let daysPlayed = 0, totalScore = 0;
-  for (let i = 0; i < localStorage.length; i++) {
-    const key = localStorage.key(i);
-    if (key && key.startsWith('braiain_results_')) {
-      try { const r = JSON.parse(localStorage.getItem(key)); if (Array.isArray(r) && r.length > 0) { daysPlayed++; totalScore += r.filter(Boolean).length; } } catch (e) {}
-    }
-  }
-  const bestStrk = parseInt(localStorage.getItem('braiain_best_streak') || '0');
-  const ydKey = getYesterdayKey();
-  const ydEl = document.getElementById('bs-yesterday'); ydEl.style.color = '';
-  try {
-    const ydResults = JSON.parse(localStorage.getItem('braiain_results_' + ydKey));
-    if (Array.isArray(ydResults) && ydResults.length > 0) {
-      const ydScore = ydResults.filter(Boolean).length;
-      ydEl.textContent = ydScore + '/10';
-      if (ydScore >= 8) ydEl.style.color = 'var(--green)';
-      else if (ydScore <= 3) ydEl.style.color = 'var(--red)';
-    }
-  } catch (e) {}
-  if (daysPlayed > 0) {
-    const avg = Math.round((totalScore / daysPlayed) * 10) / 10;
-    document.getElementById('bs-played').textContent = daysPlayed;
-    document.getElementById('bs-avg').textContent = avg + '/10';
-    document.getElementById('bs-best').textContent = bestStrk;
-    document.getElementById('boot-stats').classList.add('visible');
-  }
-}
-
-/* ══════════════════════════════════════
-   IMAGE PRELOADING
-   ══════════════════════════════════════ */
-const preloadCache = new Map();
-function preloadNextImage(nextIndex) {
-  if (!dailyData || !dailyData.rounds) return;
-  if (nextIndex >= dailyData.rounds.length || nextIndex >= TOTAL_ROUNDS) return;
-  const url = dailyData.rounds[nextIndex].content;
-  if (preloadCache.has(url)) return;
-  const img = new Image(); img.src = url; preloadCache.set(url, img);
-}
-function preloadAllImages() {
-  if (!dailyData || !dailyData.rounds) return;
-  const rounds = dailyData.rounds.slice(0, TOTAL_ROUNDS);
-  rounds.slice(0, 3).forEach(r => { if (!preloadCache.has(r.content)) { const img = new Image(); img.src = r.content; preloadCache.set(r.content, img); } });
-  setTimeout(() => { rounds.slice(3).forEach(r => { if (!preloadCache.has(r.content)) { const img = new Image(); img.src = r.content; preloadCache.set(r.content, img); } }); }, 2000);
-}
-
-/* ══════════════════════════════════════
-   HAPTIC FEEDBACK
-   ══════════════════════════════════════ */
-function haptic(pattern) {
-  if (!navigator.vibrate) return;
-  switch (pattern) {
-    case 'tap': navigator.vibrate(8); break;
-    case 'correct': navigator.vibrate([10, 30, 10]); break;
-    case 'wrong': navigator.vibrate([40, 20, 40]); break;
-    case 'finish': navigator.vibrate([10, 20, 10, 20, 30]); break;
-    default: navigator.vibrate(10);
-  }
-}
-
-/* ══════════════════════════════════════
-   UTILITIES
-   ══════════════════════════════════════ */
-function showScreen(id) {
-  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
-  document.getElementById(id).classList.add('active');
-  window.scrollTo(0, 0);
-}
-
-async function goHome() {
-  isArchiveMode = false; archiveDate = null;
-  document.getElementById('hud').style.display = 'none';
-  document.getElementById('review-section').classList.remove('visible');
-  document.querySelector('.tip-terminal').classList.remove('visible');
-  showScreen('screen-boot');
-  loadBootStats(); loadStreak();
-  const todayKey = getTodayKey();
-  if (dailyIndex && dailyIndex[todayKey]) {
-    try { dailyData = await resolveDailyData(todayKey); } catch (e) {}
-  }
-  const played = localStorage.getItem('braiain_played_' + todayKey);
-  const btnStart = document.getElementById('btn-start');
-  const btnResults = document.getElementById('btn-results');
-  if (played) {
-    btnStart.style.display = 'none'; btnResults.style.display = '';
-    document.getElementById('boot-status').textContent = '> TODAY\'S CHALLENGE COMPLETE';
-  } else {
-    btnStart.style.display = ''; btnResults.style.display = 'none';
-    document.getElementById('boot-status').textContent = '> READY — ' + (dailyData ? dailyData.rounds.length : 10) + ' TARGETS QUEUED';
-  }
-  document.getElementById('btn-archive').style.display = '';
-  try { const saved = JSON.parse(localStorage.getItem('braiain_results_' + todayKey)); if (saved && saved.length) { results = saved; currentRound = TOTAL_ROUNDS; } } catch (e) {}
-}
-
-function getTodayKey() { return new Date().toISOString().split('T')[0]; }
-function getYesterdayKey() { return new Date(Date.now() - 86400000).toISOString().split('T')[0]; }
-
-/* Loads daily.json then returns the challenge for today, or — if today's file is
-   missing/unreachable — the most recent prior day that actually loads. This keeps a
-   single missed/un-generated day from dropping the live game to the FALLBACK test deck.
-   Throws only if NOTHING loads (true offline), in which case callers use FALLBACK. */
-async function resolveDailyData(todayKey, onStatus) {
-  const indexResp = await fetchWithTimeout('daily.json?v=' + APP_VERSION + '&t=' + BUILD_HASH, {}, 5000);
-  if (!indexResp.ok) throw new Error('HTTP ' + indexResp.status);
-  dailyIndex = await indexResp.json();
-  const prior = Object.keys(dailyIndex).filter(function (k) { return k < todayKey; }).sort().reverse();
-  const order = dailyIndex[todayKey] ? [todayKey].concat(prior) : prior;
-  for (var i = 0; i < order.length; i++) {
-    var key = order[i];
-    var entry = dailyIndex[key];
-    if (!entry || !entry.challenge_file) continue;
-    if (onStatus) onStatus('> DOWNLOADING DAY ' + entry.day_number + '...');
-    try {
-      var r = await fetchWithTimeout(entry.challenge_file + '?v=' + APP_VERSION + '&t=' + BUILD_HASH, {}, 5000);
-      if (!r.ok) continue;
-      var data = await r.json();
-      data._isStale = (key !== todayKey);
-      data._servedKey = key;
-      return data;
-    } catch (e) { /* try the previous day */ }
-  }
-  throw new Error('No working challenge found');
-}
-function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
-function fetchWithTimeout(url, opts, ms) { const ctrl = new AbortController(); const t = setTimeout(() => ctrl.abort(), ms); return fetch(url, { ...opts, signal: ctrl.signal }).finally(() => clearTimeout(t)); }
-function showToast(msg) { const t = document.getElementById('toast'); t.textContent = msg; t.classList.add('show'); setTimeout(() => t.classList.remove('show'), 2000); }
-
-/* ══════════════════════════════════════
-   TIP TERMINAL
-   ══════════════════════════════════════ */
-const TIP_ADDRS = {
-  eth: '0x3e3eaf955a6ea978e7694574b14cd8bf082e79cf',
-  sol: 'GStGz2ztQ2UqMGPXA8j2i9PSFhpaYsjxwbLTttUKD74d',
-  kas: 'kaspa:qps9fumvkw0n29hkjrk7lumpuu64k2u9ug543lg9ga'
-};
-function copyTip(chain) {
-  haptic('tap');
-  const addr = TIP_ADDRS[chain];
-  const btn = document.querySelector('.tip-key[data-chain="' + chain + '"]');
-  navigator.clipboard.writeText(addr).then(() => {
-    btn.classList.add('copied'); btn.textContent = '✓ COPIED';
-    showToast(chain.toUpperCase() + ' ADDRESS COPIED');
-    trackEvent('tip_copy', { chain: chain });
-    setTimeout(() => { btn.classList.remove('copied'); const labels = { eth: '⟠ ETH', sol: '◎ SOL', kas: '⬡ KAS' }; btn.textContent = labels[chain]; }, 2000);
-  }).catch(() => showToast('COPY FAILED'));
-}
-
-/* ══════════════════════════════════════
-   KEYBOARD SHORTCUTS (Desktop)
-   ══════════════════════════════════════ */
-document.addEventListener('keydown', e => {
-  if (gameActive && document.getElementById('screen-game').classList.contains('active')) {
-    const revealActive = document.getElementById('reveal-panel').classList.contains('active');
-    if (!revealActive) {
-      if (e.key === 'ArrowLeft' || e.key === 'h' || e.key === 'H') { e.preventDefault(); choose('human'); }
-      if (e.key === 'ArrowRight' || e.key === 'a' || e.key === 'A') { e.preventDefault(); choose('ai'); }
-    } else {
-      if (e.key === 'Enter' || e.key === ' ' || e.key === 'ArrowRight') { e.preventDefault(); nextRound(); }
-    }
-  }
-  if (e.key === 'Escape') {
-    const section = document.getElementById('review-section');
-    if (section && section.classList.contains('visible')) { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }
-  }
-  if (e.key === 'Enter' && document.getElementById('screen-boot').classList.contains('active')) {
-    const btn = document.getElementById('btn-start');
-    if (btn && btn.style.display !== 'none') { e.preventDefault(); startGame(); }
-  }
-});
-
-/* ══════════════════════════════════════
-   BOOT
-   ══════════════════════════════════════ */
-document.addEventListener('DOMContentLoaded', () => {
-  const emailLink = document.getElementById('footer-email');
-  if (emailLink) emailLink.href = 'mail' + 'to:' + 'dnilgis' + '@' + 'gmail.com';
-  boot().catch(err => {
-    console.error('Boot failed:', err);
-    const status = document.getElementById('boot-status');
-    if (status) status.textContent = '> ERROR - TAP TO RETRY';
-    document.getElementById('btn-start').style.display = '';
-    document.getElementById('btn-archive').style.display = '';
-    dailyData = FALLBACK;
-  });
-});
-
-/* ══════════════════════════════════════
-   EASTER EGGS & POLISH — ENHANCEMENTS
-   ══════════════════════════════════════ */
-
-/* ── CONSOLE ASCII ART ── */
-(function consoleEasterEgg() {
-  var art = '%c' + [
-    '╔══════════════════════════════════════════════╗',
-    '║  BRAIAIN — The Voight-Kampff Test            ║',
-    '╠══════════════════════════════════════════════╣',
-    '║  Looking under the hood? Good instincts.     ║',
-    '║  That\'s the whole point of this game.        ║',
-    '║                                              ║',
-    '║  Built by one human. No team. No funding.    ║',
-    '║  Just code and conviction.                   ║',
-    '║                                              ║',
-    '║  The resistance needs people like you.       ║',
-    '║  → braiain.com/faq.html (try the code)      ║',
-    '╚══════════════════════════════════════════════╝'
-  ].join('\n');
-  console.log(art, 'color:#00e5ff;font-family:monospace;font-size:11px;line-height:1.4');
+  setBtn();
+  tick();
+  setInterval(tick, 1000);
 })();
-
-/* ── KONAMI CODE ── */
-(function konamiMain() {
-  var seq = [38,38,40,40,37,39,37,39,66,65], idx = 0;
-  document.addEventListener('keydown', function(e) {
-    if (e.keyCode === seq[idx]) { idx++; if (idx === seq.length) { idx = 0; triggerMatrixRain(); } }
-    else idx = (e.keyCode === seq[0]) ? 1 : 0;
-  });
-})();
-
-/* ── LOGO 5x CLICK ── */
-(function logoEasterEgg() {
-  var clicks = 0, timer = null;
-  ['boot-logo','hud-logo','results-logo'].forEach(function(id) {
-    var el = document.getElementById(id);
-    if (!el) return;
-    el.addEventListener('click', function(e) {
-      clicks++; clearTimeout(timer);
-      timer = setTimeout(function() { clicks = 0; }, 1500);
-      if (clicks >= 5) { clicks = 0; e.preventDefault(); e.stopPropagation(); triggerMatrixRain(); }
-    });
-  });
-})();
-
-/* ── MATRIX RAIN ── */
-function triggerMatrixRain() {
-  var canvas = document.getElementById('matrix-rain');
-  if (!canvas) return;
-  var ctx = canvas.getContext('2d');
-  canvas.width = window.innerWidth; canvas.height = window.innerHeight;
-  canvas.classList.add('active');
-  var chars = 'BRAIAINHUMANAI01アイカサタナハマヤラワ';
-  var fontSize = 14, cols = Math.floor(canvas.width / fontSize), drops = [];
-  for (var i = 0; i < cols; i++) drops[i] = Math.random() * -100;
-  var frames = 0;
-  function draw() {
-    ctx.fillStyle = 'rgba(6,6,12,0.08)'; ctx.fillRect(0, 0, canvas.width, canvas.height);
-    ctx.font = fontSize + 'px monospace';
-    for (var i = 0; i < drops.length; i++) {
-      ctx.fillStyle = Math.random() > 0.5 ? '#00e5ff' : '#00ff9d';
-      ctx.globalAlpha = 0.6 + Math.random() * 0.4;
-      ctx.fillText(chars[Math.floor(Math.random() * chars.length)], i * fontSize, drops[i] * fontSize);
-      ctx.globalAlpha = 1;
-      if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) drops[i] = 0;
-      drops[i]++;
-    }
-    if (++frames < 120) requestAnimationFrame(draw);
-    else { canvas.style.transition = 'opacity .5s'; canvas.style.opacity = '0';
-      setTimeout(function() { canvas.classList.remove('active'); canvas.style.transition = ''; canvas.style.opacity = ''; ctx.clearRect(0, 0, canvas.width, canvas.height); }, 500);
-    }
-  }
-  draw();
-}
-
-/* ── SCAN ANIMATION ── */
-function playScanAnimation() {
-  return new Promise(function(resolve) {
-    var ov = document.getElementById('scan-overlay');
-    if (!ov) { resolve(); return; }
-    ov.classList.add('active');
-    setTimeout(function() { ov.classList.remove('active'); resolve(); }, 400);
-  });
-}
-
-/* ── PERFECT 10/10 CELEBRATION ── */
-function celebratePerfect() {
-  var canvas = document.getElementById('celebration');
-  if (!canvas) return;
-  var ctx = canvas.getContext('2d');
-  canvas.width = window.innerWidth; canvas.height = window.innerHeight;
-  canvas.classList.add('active');
-  var particles = [], colors = ['#00e5ff','#00ff9d','#ffb300','#ff003c','#fff'];
-  for (var i = 0; i < 80; i++) particles.push({ x:canvas.width/2+(Math.random()-.5)*100, y:canvas.height/2, vx:(Math.random()-.5)*12, vy:-Math.random()*14-4, color:colors[Math.floor(Math.random()*colors.length)], size:2+Math.random()*4, life:1, decay:.008+Math.random()*.012, gravity:.15 });
-  var frames = 0;
-  function draw() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    var alive = false;
-    for (var i = 0; i < particles.length; i++) {
-      var p = particles[i]; if (p.life <= 0) continue; alive = true;
-      p.x += p.vx; p.y += p.vy; p.vy += p.gravity; p.life -= p.decay;
-      ctx.globalAlpha = Math.max(0, p.life); ctx.fillStyle = p.color;
-      ctx.fillRect(p.x-p.size/2, p.y-p.size/2, p.size, p.size);
-    }
-    ctx.globalAlpha = 1;
-    if (alive && ++frames < 180) requestAnimationFrame(draw);
-    else { canvas.classList.remove('active'); ctx.clearRect(0, 0, canvas.width, canvas.height); }
-  }
-  draw();
-}
-
-/* ── WRONG STREAK ── */
-var wrongStreak = 0;
-var _gameStartTime = 0;
-function checkWrongStreak(isCorrect) {
-  if (!isCorrect) { wrongStreak++; if (wrongStreak >= 5) { showHumanCheck(); wrongStreak = 0; } } else wrongStreak = 0;
-}
-function showHumanCheck() {
-  var el = document.getElementById('human-check'); if (!el) return;
-  el.classList.remove('flash'); void el.offsetWidth; el.classList.add('flash');
-  setTimeout(function() { el.classList.remove('flash'); }, 1000);
-}
-
-/* ── ZOOM HINT ── */
-function showZoomHint() {
-  if (localStorage.getItem('braiain_zoom_hinted')) return;
-  var hint = document.getElementById('zoom-hint'); if (!hint) return;
-  hint.classList.add('visible');
-  localStorage.setItem('braiain_zoom_hinted', '1');
-  setTimeout(function() { hint.classList.remove('visible'); }, 6000);
-  var frame = document.getElementById('image-frame');
-  frame.addEventListener('touchstart', function h() { hint.classList.remove('visible'); frame.removeEventListener('touchstart', h); }, { once: true });
-  frame.addEventListener('mousemove', function h() { hint.classList.remove('visible'); frame.removeEventListener('mousemove', h); }, { once: true });
-}
-
-/* ── ROUND WIPE ── */
-function playRoundWipe() {
-  var wipe = document.getElementById('round-wipe'); if (!wipe) return;
-  wipe.classList.remove('active'); void wipe.offsetWidth; wipe.classList.add('active');
-  setTimeout(function() { wipe.classList.remove('active'); }, 250);
-}
-
-/* ── ODOMETER ── */
-function animateNumber(el, target, duration, suffix) {
-  duration = duration || 800; suffix = suffix || '';
-  var startTime = null;
-  function step(ts) {
-    if (!startTime) startTime = ts;
-    var p = Math.min((ts - startTime) / duration, 1);
-    var eased = 1 - Math.pow(1 - p, 3);
-    el.textContent = Math.round(target * eased) + suffix;
-    if (p < 1) requestAnimationFrame(step);
-  }
-  requestAnimationFrame(step);
-}
-
-/* ── BUTTON PULSE ── */
-function pulseButton(btn, isCorrect) {
-  btn.classList.add(isCorrect ? 'pulse-green' : 'pulse-red');
-  setTimeout(function() { btn.classList.remove('pulse-green', 'pulse-red'); }, 350);
-}
 </script>
 </body>
 </html>

@@ -1,0 +1,89 @@
+{
+  "board": {
+    "name": "BRAIAIN",
+    "tagline": "The S&P of AI",
+    "rebased": "2026-10-20",
+    "model_version": "Reckoning model v1.0"
+  },
+  "reckoning": {
+    "point_estimate": 2031,
+    "range": [2028, 2033],
+    "conditions_met": 6,
+    "conditions_total": 10,
+    "method": "Point estimate = midpoint of the range. Range = the latest projected crossing window among pending conditions (condition 8: 2028 under LBNL high case; 2033 extrapolating LBNL low case at 8.77%/yr relative growth). Crossing pace of met conditions: 6 in 2.25 years = 2.67/yr.",
+    "conditions": [
+      {"n": 1, "met": true,  "year": 2024.5,  "title": "Machines outnumber humans on the web", "evidence": "51% of web traffic automated, CY2024", "source": "Thales/Imperva Bad Bot Report 2025", "url": "https://cpl.thalesgroup.com/about-us/newsroom/2025-imperva-bad-bot-report-ai-internet-traffic", "note": "Scope: traffic on Imperva-protected sites"},
+      {"n": 2, "met": true,  "year": 2026.37, "title": "One AI product passes a billion weekly users", "evidence": "ChatGPT 1.2B weekly users stated Oct 2026; crossing ~May 2026 interpolated between official statements (900M Feb 2026, 1.2B Oct 2026)", "source": "OpenAI", "url": "https://openai.com/index/gpt-6-for-everyone/"},
+      {"n": 3, "met": true,  "year": 2026.5,  "title": "Big-4 infrastructure spend passes $500B a year", "evidence": "$513.8B total capex, four quarters to Jun 2026 (AI-driven per management commentary)", "source": "MSFT, GOOGL, AMZN, META filings", "url": "methodology.html#capex"},
+      {"n": 4, "met": true,  "year": 2025.96, "title": "A grid auction clears short of its requirement", "evidence": "PJM 2027/28 auction procured 6,623 MW short of the reliability requirement (Dec 2025); repeated for 2028/29 at 6,831 MW (Jul 2026)", "source": "PJM, Dec 2025 and Jul 2026", "url": "https://www.pjm.com/-/media/DotCom/about-pjm/newsroom/2025-releases/20251217-pjm-auction-procures-134479-mw-of-generation-resources.pdf"},
+      {"n": 5, "met": true,  "year": 2026.75, "title": "AI takes the majority of venture capital", "evidence": "64% of global venture funding ($102B of $159B), Q3 2026", "source": "Crunchbase", "url": "https://news.crunchbase.com/venture/q3-2026-global-startup-funding-ai-billion-dollar-rounds-exits-data/"},
+      {"n": 6, "met": true,  "year": 2026.75, "title": "100,000+ job cuts in a year citing AI", "evidence": "120,136 announced US cuts citing AI, Jan-Sep 2026", "source": "Challenger, Gray & Christmas", "url": "https://www.challengergray.com/wp-content/uploads/2026/10/Challenger-Report-September-2026.pdf"},
+      {"n": 7, "met": false, "projected": "2027", "projected_basis": "sourced", "title": "First reactor restarted for a tech buyer", "evidence": "Crane (Three Mile Island U1) restart for Microsoft targeted 2027", "source": "Constellation, Aug 2026", "url": "https://www.sec.gov/Archives/edgar/data/0001868275/000186827526000097/ceg-20260806991.htm"},
+      {"n": 8, "met": false, "projected": "2028-2033", "projected_basis": "sourced window + extrapolation", "title": "Data centers take a tenth of US electricity", "evidence": "4.4% in 2023; 6.7-12% projected by 2028 (LBNL). High case crosses 10% by 2028; low case extrapolates to ~2033", "source": "LBNL/DOE 2024 report", "url": "https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers"},
+      {"n": 9, "met": false, "projected": "~2027", "projected_basis": "model-extrapolated", "title": "10 GW of hyperscaler nuclear announced", "evidence": "7,754 MW announced across six named deals; pace measured Sep 2024 through Oct 2026 is ~3.6 GW/yr (no new deal since Jan 2026)", "source": "company releases and filings", "url": "methodology.html#nuclear"},
+      {"n": 10, "met": false, "projected": "~2028", "projected_basis": "model-extrapolated (weakest input)", "title": "A frontier lab reports crossing its autonomy threshold", "evidence": "Threshold defined in Anthropic's Responsible Scaling Policy (autonomous replication); no lab has declared it crossed", "source": "Anthropic RSP (v1.0 cited, 2023; the policy has later versions)", "url": "https://www-cdn.anthropic.com/1adf000c8f675958c2ee23805d91aaade1cd4613/responsible-scaling-policy.pdf"}
+    ]
+  },
+  "index": {
+    "name": "BRAIAIN Buildout Index",
+    "definition": "Big-4 hyperscaler capital expenditure plus NVIDIA data-center revenue, per calendar quarter, indexed to Q3 2025 = 100. NVIDIA fiscal quarters run ~1 month behind calendar quarters; see methodology.",
+    "quarters": ["Q3 2025", "Q4 2025", "Q1 2026", "Q2 2026"],
+    "values": [100.0, 121.9, 138.1, 171.1],
+    "quarter_sums_busd": [149.0, 181.7, 205.8, 255.0],
+    "since_base_pct": 71.1,
+    "since_base_note": "three quarters, Q3 2025 to Q2 2026 — not a year-over-year figure",
+    "as_of": "Q2 2026"
+  },
+  "flows": {
+    "buildout_ttm_usd": 791508000000,
+    "buildout_flow_note": "Combined flow of two books: chips the Big-4 buy from NVIDIA appear in both their capex and NVIDIA's revenue; not de-duplicated spending",
+    "buildout_per_sec_usd": 25081.89,
+    "big4_capex_ttm_musd": {"MSFT": 115948, "GOOGL": 132402, "AMZN": 173028, "META": 92430, "total": 513808},
+    "capex_label": "Total capital expenditures as filed; companies describe the growth as AI/cloud-driven but do not report an AI line item.",
+    "nvda_dc": {"quarters_busd": [51.2, 62.3, 75.2, 89.0], "quarter_labels": ["FQ3'26 (to Oct'25)", "FQ4'26 (to Jan'26)", "FQ1'27 (to Apr'26)", "FQ2'27 (to Jul'26)"], "ttm_busd": 277.7, "latest_qoq_pct": 18.4},
+    "vc": {"ai_busd": 102, "total_busd": 159, "share_pct": 64, "period": "Q3 2026", "source": "Crunchbase"}
+  },
+  "power": {
+    "iea_twh": {"y2024": 415, "y2030_projection": 945, "note": "Global data-centre electricity; IEA Energy & AI, Apr 2025. 2035 sensitivity cases span ~700 to >1,700 TWh."},
+    "us_share": {"y2023_pct": 4.4, "y2028_range_pct": [6.7, 12], "source": "LBNL/DOE, Dec 2024"},
+    "pjm_usd_per_mw_day": {"2025/26": 269.92, "2026/27": 329.17, "2027/28": 333.44, "2028/29": 325.00, "shortfall_mw": 6831, "note": "2026/27 through 2028/29 cleared at the FERC-approved cap"},
+    "nuclear_deals_mw": [
+      {"deal": "Microsoft / Constellation (Crane, TMI U1)", "mw": 835, "announced": "2024-09"},
+      {"deal": "Amazon / Talen (Susquehanna)", "mw": 1920, "announced": "2025-06"},
+      {"deal": "Google / Kairos (with TVA)", "mw": 500, "announced": "2025-08"},
+      {"deal": "Meta / Vistra", "mw": 2609, "announced": "2026-01"},
+      {"deal": "Meta / Oklo (Ohio campus)", "mw": 1200, "announced": "2026-01"},
+      {"deal": "Meta / TerraPower", "mw": 690, "announced": "2026-01"}
+    ],
+    "nuclear_total_mw": 7754
+  },
+  "compute": {
+    "hf_models": {"count": 3169809, "as_of": "2026-10-20", "prior_snapshot": {"count": 1193810, "as_of": "2024-09-01", "note": "community dashboard via press; weaker source"}},
+    "gpt6": {"event": "GPT-6 rolled out to all ChatGPT tiers", "date": "2026-10-07", "source": "OpenAI"}
+  },
+  "infrastructure": {
+    "cbre": {"under_construction_mw": 7481.1, "vacancy_pct": 1.4, "preleased_pct": 80.4, "period": "H1 2026", "scope": "North America primary markets"},
+    "pew_counts": {"operational": "more than 3,000", "in_development": "more than 1,500", "as_of": "2026-02-19", "source": "Data Center Map via Pew Research Center"},
+    "ercot_queue": {"gw": 233, "dc_share": "more than 70%", "as_of": "year-end 2025", "note": "Texas only; no national large-load aggregate exists"},
+    "stargate": {"commitment": "$500B over four years", "announced": "2025-01-22", "source": "SoftBank/OpenAI"}
+  },
+  "emergent": {
+    "gev": {"turbine_backlog_gw": 116, "backlog_total_busd": 176, "dc_orders": "over $5B YTD, more than double 2025", "period": "Q2 2026"},
+    "transformers": {"power_weeks": 128, "gsu_weeks": 144, "source": "Wood Mackenzie Q2 2025 survey via POWER Magazine"},
+    "water": {"stat": "Data centers account for ~9% of annual consumptive water use in the Washington-metro Potomac basin; projected ~22 MGD average by 2050", "source": "ICPRB, Mar 2026"},
+    "watchlist": [
+      {"ticker": "CEG", "event": "835 MW Microsoft PPA; Three Mile Island U1 restart targeted 2027"},
+      {"ticker": "VST", "event": "2,609 MW of 20-year nuclear PPAs with Meta"},
+      {"ticker": "TLN", "event": "1,920 MW Amazon PPA from Susquehanna"},
+      {"ticker": "GEV", "event": "116 GW turbine backlog + reservations; data-center orders over $5B YTD"},
+      {"ticker": "VRT", "event": "$15.0B backlog, +109% YoY, driven by AI infrastructure (Feb 2026)"},
+      {"ticker": "OKLO", "event": "1.2 GW campus agreement with Meta in Ohio"},
+      {"ticker": "SMR", "event": "Up to 6 GW SMR program with ENTRA1/TVA citing hyperscale data centers (nonbinding)"}
+    ]
+  },
+  "society": {
+    "bots": {"automated_pct": 51, "bad_bot_pct": 37, "year": 2024, "scope": "Traffic on Imperva-protected sites", "source": "Thales/Imperva Bad Bot Report, Apr 2025"},
+    "ai_layoffs": {"ytd": 120136, "period": "Jan-Sep 2026", "label": "Announced US job cuts where employers cited AI", "source": "Challenger, Gray & Christmas"},
+    "chatgpt_wau": {"latest": 1200000000, "stated": "2026-10-07", "prior": 900000000, "prior_stated": "2026-02-27", "pace_per_sec": 15.64, "label": "Board shows the stated 1.2B+; the counter runs the measured Feb-Oct pace forward from Oct 7 — extrapolation, not measurement"}
+  }
+}

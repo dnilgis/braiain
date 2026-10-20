@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="dark">
+<title>Methodology &amp; sources — BRAIAIN</title>
+<meta name="description" content="Every figure on the BRAIAIN board: its source, its date, its formula, and how confident we are in it. Plus the full math of the Buildout Index and the Reckoning model.">
+<link rel="canonical" href="https://braiain.com/methodology.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "BRAIAIN — the AI buildout, measured",
+  "url": "https://braiain.com",
+  "description": "Sourced, dated metrics on the AI buildout: hyperscaler capital expenditure, NVIDIA data-center revenue, AI venture funding share, data-center electricity, PJM capacity prices, hyperscaler nuclear deals, construction, bot traffic, AI-cited job cuts, and ChatGPT weekly users.",
+  "creator": {"@type": "Organization", "name": "BRAIAIN"},
+  "dateModified": "2026-10-20",
+  "isAccessibleForFree": true
+}
+</script>
+<style>
+:root{--paper:#14130f;--ink:#e8e2d4;--ink-2:#b4ae9f;--ink-3:#817c6f;--rule:#3a3830;--rule-soft:#2a2822;--pending:#d9482b;color-scheme:dark}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--paper)}
+body{background:var(--paper);color:var(--ink);font-family:"Helvetica Neue",Helvetica,Arial,system-ui,sans-serif;font-size:15.5px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px 48px}
+a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--ink-3);text-underline-offset:2px}
+a:hover{text-decoration-color:var(--ink)}
+.mast{border-top:4px solid var(--ink);padding:10px 0 8px;display:flex;align-items:baseline;gap:14px}
+.mast .name{font-size:22px;font-weight:800;letter-spacing:-0.02em}
+.mast .name a{text-decoration:none}
+.mast .pg{font-size:15px;color:var(--ink-2)}
+h1{font-size:30px;font-weight:700;margin:26px 0 6px;line-height:1.15}
+.intro{color:var(--ink-2);max-width:62ch}
+h2{font-size:21px;font-weight:700;border-top:2px solid var(--ink);padding-top:10px;margin-top:34px}
+h3{font-size:16px;font-weight:700;margin-top:18px}
+p{margin-top:10px;max-width:68ch}
+ul,ol{margin:10px 0 0 20px;max-width:66ch}
+li{margin-top:6px}
+.fact{border-top:1px solid var(--rule-soft);padding:10px 0;margin-top:12px}
+.fact .s{font-weight:600}
+.fact .m{font-size:13.5px;color:var(--ink-3);margin-top:3px}
+.conf{font-size:12px;font-weight:700;padding:1px 7px;border:1px solid var(--rule);color:var(--ink-2);margin-left:6px;white-space:nowrap}
+code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:13.5px;background:rgba(232,226,212,0.08);padding:1px 5px}
+.formula{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:13.5px;background:rgba(232,226,212,0.06);border-left:2px solid var(--rule);padding:10px 14px;margin-top:10px;overflow-x:auto}
+table{width:100%;border-collapse:collapse;margin-top:10px;font-size:14px;font-variant-numeric:tabular-nums}
+td,th{padding:6px 8px 6px 0;border-top:1px solid var(--rule-soft);text-align:left;vertical-align:top}
+th{font-size:13px;color:var(--ink-2)}
+.foot{margin-top:40px;border-top:1px solid var(--rule);padding-top:14px;font-size:13.5px;color:var(--ink-2)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="mast">
+  <span class="name"><a href="index.html">BRAIAIN</a></span>
+  <span class="pg">Methodology &amp; sources</span>
+</header>
+
+<h1>How every number on the board is made</h1>
+<p class="intro">Rules first: nothing appears on the board without a named public source and a date. Ticking figures are arithmetic on filed numbers, never measurements. Flows (money per quarter) may tick at their filed pace; a count may tick only as a clearly labeled pace delta anchored to a dated statement; shares never tick. Anything we could not source got cut, and this page says what that was. Board last re-based October 20, 2026.</p>
+
+<h2 id="index">The Buildout Index</h2>
+<p>As of Q2 2026 the BRAIAIN Buildout Index stands at <strong>171.1</strong>, up 71% over the three quarters since its Q3 2025 base (= 100).</p>
+<div class="formula">Index(q) = 100 × [ Capex_MSFT(q) + Capex_GOOGL(q) + Capex_AMZN(q) + Capex_META(q) + DCRev_NVDA(q) ] / [ same sum, Q3 2025 ]</div>
+<table>
+<tr><th>Quarter</th><th>Big-4 capex + NVDA DC revenue</th><th>Index</th></tr>
+<tr><td>Q3 2025</td><td>$149.0B</td><td>100.0</td></tr>
+<tr><td>Q4 2025</td><td>$181.7B</td><td>121.9</td></tr>
+<tr><td>Q1 2026</td><td>$205.8B</td><td>138.1</td></tr>
+<tr><td>Q2 2026</td><td>$255.0B</td><td>171.1</td></tr>
+</table>
+<p>Known limitations, on purpose: capex is each company's <em>total</em> capital expenditure as filed — the companies attribute the growth to AI and cloud in commentary but publish no AI line item. The two components overlap: chips the Big-4 buy from NVIDIA appear in both their capex and NVIDIA's revenue, so the sum is a <em>combined flow of the two books</em>, not de-duplicated spending — that is why the board calls it a combined flow. NVIDIA's fiscal quarters end roughly one month after the calendar quarter (its quarter "to Jul 2026" is matched to calendar Q2 2026), so the index mixes a ~1-month offset into one of five components. Quarterly figures in the tables are rounded; totals and index values are computed from the unrounded filings. The index is re-based within days of each earnings season.</p>
+
+<h2 id="capex">Capital expenditure</h2>
+<p>As of the four quarters ending June 30, 2026, combined capital expenditures of Microsoft, Alphabet, Amazon and Meta were <strong>$513.8B</strong>.</p>
+<table>
+<tr><th>Company</th><th>Q3 25</th><th>Q4 25</th><th>Q1 26</th><th>Q2 26</th><th>Four-quarter total</th></tr>
+<tr><td>Amazon</td><td>$35.1B</td><td>$39.5B</td><td>$44.2B</td><td>$54.2B</td><td>$173.0B</td></tr>
+<tr><td>Alphabet</td><td>$24.0B</td><td>$27.9B</td><td>$35.7B</td><td>$44.9B</td><td>$132.4B</td></tr>
+<tr><td>Microsoft</td><td>$19.4B</td><td>$29.9B</td><td>$30.9B</td><td>$35.8B</td><td>$115.9B</td></tr>
+<tr><td>Meta</td><td>$19.4B</td><td>$22.1B</td><td>$19.8B</td><td>$31.1B</td><td>$92.4B</td></tr>
+</table>
+<div class="fact"><span class="s">Sources</span><span class="conf">verified</span>
+<div class="m">Microsoft: quarterly earnings releases FY26 Q1–Q4 (cash capex, excl. finance leases; the four quarters sum exactly to the FY26 total of $115,948M in its <a href="https://www.sec.gov/Archives/edgar/data/0000789019/000119312526323632/msft-ex99_1.htm">SEC exhibit</a>). Alphabet: <a href="https://s206.q4cdn.com/479360582/files/doc_financials/2025/q3/2025q3-alphabet-earnings-release.pdf">Q3 2025</a>, <a href="https://s206.q4cdn.com/479360582/files/doc_financials/2025/q4/2025q4-alphabet-earnings-release.pdf">Q4 2025</a> and the <a href="https://www.sec.gov/Archives/edgar/data/0001652044/000165204426000066/googexhibit991q22026.htm">Q2 2026 exhibit</a> (Q1 2026 derived as six-month YTD minus Q2, both in that exhibit). Amazon: <a href="https://www.businesswire.com/news/home/20260204777163/en/Amazon.com-Announces-Fourth-Quarter-Results">Q4 2025 release</a> and <a href="https://s2.q4cdn.com/299287126/files/doc_earnings/2026/q2/earnings-result/AMZN-Q2-2026-Earnings-Release.pdf">Q2 2026 release</a> (Q3 2025 and Q1 2026 derived by subtraction of filed figures, two independent derivations agreeing; the $173.0B trailing figure is stated in the Q2 2026 release itself). Meta: quarterly releases (<a href="https://s21.q4cdn.com/399680738/files/doc_news/Meta-Reports-Second-Quarter-2026-Results-2026.pdf">Q2 2026</a> and prior; Meta's figure includes finance-lease principal payments, its standard definition). Mixed definitions (Microsoft cash-only vs Meta lease-inclusive) are each company's own headline definition, used as filed.</div></div>
+<div class="fact"><span class="s">The $25,082/second rate</span><span class="conf">derived</span>
+<div class="m">($513.8B + $277.7B) ÷ 31,556,952 seconds = $25,081.89/s. This is last year's filed pace divided to the second — a pace, not a meter, and a combined flow: chips the Big-4 buy from NVIDIA sit in both components (see the index limitations above). Capex is growing quarter over quarter, so between re-bases this figure systematically <em>understates</em> the current pace.</div></div>
+
+<h2 id="nvda">NVIDIA data-center revenue</h2>
+<p>As of its quarter ended July 26, 2026, NVIDIA's data-center segment revenue was <strong>$89.0B</strong> ($96.2B total company); its trailing four quarters sum to <strong>$277.7B</strong>.</p>
+<table>
+<tr><th>Fiscal quarter</th><th>Ends</th><th>Data-center revenue</th></tr>
+<tr><td>Q3 FY2026</td><td>Oct 26, 2025</td><td>$51.2B</td></tr>
+<tr><td>Q4 FY2026</td><td>Jan 25, 2026</td><td>$62.3B</td></tr>
+<tr><td>Q1 FY2027</td><td>Apr 26, 2026</td><td>$75.2B</td></tr>
+<tr><td>Q2 FY2027</td><td>Jul 26, 2026</td><td>$89.0B</td></tr>
+</table>
+<div class="fact"><span class="s">Sources</span><span class="conf">verified</span>
+<div class="m"><a href="https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/">Q2 FY27 release</a>, <a href="https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000051/q1fy27pr.htm">Q1 FY27</a>, <a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000019/q4fy26pr.htm">Q4 FY26</a>, <a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581025000228/q3fy26pr.htm">Q3 FY26</a>. Segment revenue, not total; the sequential growth figures in each release (+22%, +21%, +18%) are consistent with these dollars.</div></div>
+
+<h2 id="vc">Venture capital</h2>
+<p>In Q3 2026, AI startups raised <strong>$102B of $159B</strong> in global venture funding — 64%.</p>
+<div class="fact"><span class="s">Source</span><span class="conf">verified</span>
+<div class="m"><a href="https://news.crunchbase.com/venture/q3-2026-global-startup-funding-ai-billion-dollar-rounds-exits-data/">Crunchbase, Oct 5, 2026</a> (public post; data as of Oct 2, 2026). Crunchbase does not publish its AI-classification criteria, and one quarter's share can be swung by single mega-rounds — read it as a level, not a trend.</div></div>
+
+<h2 id="power">Power</h2>
+<div class="fact"><span class="s">Global data-center electricity: ~415 TWh in 2024 (~1.5% of global electricity), projected ~945 TWh by 2030 (just under 3%).</span><span class="conf">verified</span>
+<div class="m"><a href="https://www.iea.org/reports/energy-and-ai/energy-demand-from-ai">IEA, Energy &amp; AI, Apr 2025</a>. These are IEA estimates and projections with stated uncertainty: the IEA's 2035 sensitivity cases span roughly 700 TWh (Headwinds) to over 1,700 TWh (Lift-Off). Includes all data-center workloads, not only AI.</div></div>
+<div class="fact"><span class="s">US data centers: 176 TWh = ~4.4% of US electricity in 2023; projected 6.7–12% by 2028.</span><span class="conf">verified</span>
+<div class="m"><a href="https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers">LBNL 2024 US Data Center Energy Usage Report, via DOE, Dec 2024</a>.</div></div>
+<div class="fact"><span class="s">PJM capacity prices ($/MW-day, RTO): 269.92 → 329.17 → 333.44 → 325.00 across the 2025/26–2028/29 auctions; the 2027/28 auction cleared 6,623 MW short of the reliability requirement and the 2028/29 auction 6,831 MW short.</span><span class="conf">verified</span>
+<div class="m"><a href="https://www.pjm.com/-/media/DotCom/about-pjm/newsroom/2026-releases/20260714-pjm-capacity-auction-procures-138318-mw-of-generation-resources.pdf">PJM, Jul 14, 2026</a>, <a href="https://www.pjm.com/-/media/DotCom/about-pjm/newsroom/2025-releases/20251217-pjm-auction-procures-134479-mw-of-generation-resources.pdf">PJM, Dec 17, 2025</a> and <a href="https://insidelines.pjm.com/pjm-auction-procures-134311-mw-of-generation-resources-supply-responds-to-price-signal/">prior releases</a>. The last three auctions cleared at the FERC-approved price cap. PJM's own attribution of demand growth to data centers is reported via <a href="https://www.utilitydive.com/news/pjm-capacity-auction-price-cap-reserve-shortfall/825282/">Utility Dive</a> (weaker: trade press quoting PJM).</div></div>
+<div class="fact" id="nuclear"><span class="s">Hyperscaler nuclear: 7,754 MW announced across six named deals.</span><span class="conf">verified (sum is ours)</span>
+<div class="m">Microsoft–Constellation, Crane/TMI U1, 835 MW (<a href="https://www.power-eng.com/nuclear/three-mile-island-nuclear-plant-is-reopening-to-help-power-microsoft-data-centers/">Sep 2024</a>; restart targeted 2027 per <a href="https://www.sec.gov/Archives/edgar/data/0001868275/000186827526000097/ceg-20260806991.htm">Constellation's Q2 2026 release</a>). Amazon–Talen, Susquehanna, 1,920 MW (<a href="https://www.sec.gov/Archives/edgar/data/1622536/000162828025030559/a20250611pressreleasebusin.htm">Jun 2025</a>). Google–Kairos with TVA, 500 MW by 2035 (<a href="https://world-nuclear-news.org/articles/google-kairos-power-tva-announce-collaboration">Aug 2025</a>). Meta–Vistra, 2,609 MW (<a href="https://www.sec.gov/Archives/edgar/data/1692819/000119312526008508/d20785d8k.htm">Jan 2026</a>); Meta–Oklo, 1.2 GW Ohio campus (<a href="https://www.businesswire.com/news/home/20260109127781/en/Oklo-Meta-Announce-Agreement-in-Support-of-1.2-GW-Nuclear-Energy-Development-in-Southern-Ohio">Jan 2026</a>); Meta–TerraPower, up to 690 MW (<a href="https://world-nuclear-news.org/articles/meta-announces-landmark-agreements-for-new-nuclear">Jan 2026</a>). Announced capacity, not operating; several deals run to 2030–2035 delivery.</div></div>
+
+<h2 id="compute-models">Compute &amp; models</h2>
+<div class="fact"><span class="s">3,169,809 models on Hugging Face, Oct 20, 2026.</span><span class="conf">verified</span>
+<div class="m">Live counter on <a href="https://huggingface.co/models">huggingface.co/models</a>, read Oct 20, 2026 ~01:00 UTC. Counts model repositories, duplicates included. The "up from ~1.19M in Sep 2024" context line on the board uses a community dashboard figure reported by press — weaker provenance, which the board notes inline. The count is a static dated figure; it does not tick.</div></div>
+<div class="fact"><span class="s">GPT-6 rolled out to all ChatGPT tiers Oct 7, 2026.</span><span class="conf">verified</span>
+<div class="m"><a href="https://openai.com/index/gpt-6-for-everyone/">OpenAI, Oct 2026</a>.</div></div>
+
+<h2 id="infra">Infrastructure</h2>
+<div class="fact"><span class="s">7,481 MW under construction in North America's primary markets (record); vacancy 1.4%; 80.4% pre-leased.</span><span class="conf">verified</span>
+<div class="m"><a href="https://www.cbre.com/insights/books/north-america-data-center-trends-h1-2026">CBRE, North America Data Center Trends H1 2026</a> (Aug 2026).</div></div>
+<div class="fact"><span class="s">More than 3,000 US data centers operating; more than 1,500 in development.</span><span class="conf">verified</span>
+<div class="m"><a href="https://www.pewresearch.org/short-reads/2026/04/13/most-new-data-centers-in-the-us-are-coming-to-rural-areas/">Pew Research Center, Apr 2026</a>, using Data Center Map data as of Feb 19, 2026. "In development" = under construction + planned + land acquired, excluding canceled/uncertain.</div></div>
+<div class="fact"><span class="s">More than 233 GW of large-load interconnection requests in ERCOT (Texas), over 70% data centers, at year-end 2025.</span><span class="conf">verified (via trade press citing ERCOT)</span>
+<div class="m"><a href="https://www.utilitydive.com/news/ercots-large-load-queue-jumped-almost-300-last-year/808820/">Utility Dive, Jan 2026</a>, reporting ERCOT's December 2025 planning materials. ERCOT is the only US grid operator publishing a classified large-load queue; no national aggregate exists — queue totals from other regions are generation-side and not comparable.</div></div>
+<div class="fact"><span class="s">Stargate: $500B committed over four years.</span><span class="conf">verified</span>
+<div class="m"><a href="https://group.softbank/en/news/press/20250122">SoftBank/OpenAI, Jan 22, 2025</a>. A commitment, not spend to date.</div></div>
+
+<h2 id="emergent">Emergent</h2>
+<div class="fact"><span class="s">GE Vernova: 116 GW of gas turbines in backlog and slot reservations; $176B total backlog; data-center equipment orders over $5B YTD.</span><span class="conf">verified</span>
+<div class="m"><a href="https://www.sec.gov/Archives/edgar/data/0001996810/000199681026000147/gevpressrelease2q26.htm">GE Vernova Q2 2026 release</a>.</div></div>
+<div class="fact"><span class="s">Large power transformer lead times: ~128 weeks (power), ~144 weeks (generator step-up).</span><span class="conf">weak</span>
+<div class="m">Wood Mackenzie Q2 2025 survey, reported via <a href="https://www.powermag.com/transformers-in-2026-shortage-scramble-or-self-inflicted-crisis">POWER Magazine</a> and <a href="https://eepower.com/market-insights/transformer-supply-chain-woes-persist-as-energy-demand-grows/">EEPower</a>. Second-hand figures; the original report is proprietary.</div></div>
+<div class="fact"><span class="s">Data centers ≈ 9% of annual consumptive water use in the Washington-metro Potomac basin; ~4 MGD average today, projected ~22 MGD average by 2050.</span><span class="conf">verified</span>
+<div class="m"><a href="https://www.potomacriver.org/wp-content/uploads/2026/03/ICPRB.DataCentersandWaterUse.ICPRB_.March2026.pdf">Interstate Commission on the Potomac River Basin, Mar 2026</a>. A regional figure — no defensible national data-center water total exists, which is why the board doesn't show one.</div></div>
+<div class="fact"><span class="s">Watchlist events.</span><span class="conf">verified except as noted</span>
+<div class="m">CEG (<a href="https://www.sec.gov/Archives/edgar/data/0001868275/000186827526000097/ceg-20260806991.htm">Constellation Q2 2026</a>), VST (<a href="https://www.sec.gov/Archives/edgar/data/1692819/000119312526008508/d20785d8k.htm">Meta 8-K</a>), TLN (<a href="https://www.sec.gov/Archives/edgar/data/1622536/000162828025030559/a20250611pressreleasebusin.htm">Talen release</a>), GEV (Q2 2026 release above), VRT (<a href="https://www.sec.gov/Archives/edgar/data/1674101/000167410126000006/exhibit991vrt02112026.htm">Feb 2026 release</a> — eight months old at this re-base), OKLO (<a href="https://www.businesswire.com/news/home/20260109127781/en/Oklo-Meta-Announce-Agreement-in-Support-of-1.2-GW-Nuclear-Energy-Development-in-Southern-Ohio">Jan 2026</a>), SMR (<a href="https://www.businesswire.com/news/home/20250903569182/en">Sep 2025</a>; still nonbinding per its <a href="https://www.sec.gov/Archives/edgar/data/1822966/000182296626000016/a20260226-earningscallpr.htm">Feb 2026 release</a>). Events only; the board shows no prices.</div></div>
+
+<h2 id="society">Society</h2>
+<div class="fact"><span class="s">51% of web traffic was automated in 2024; 37% was bad bots.</span><span class="conf">verified</span>
+<div class="m"><a href="https://cpl.thalesgroup.com/about-us/newsroom/2025-imperva-bad-bot-report-ai-internet-traffic">Thales/Imperva Bad Bot Report, Apr 2025</a>, which itself states this is the first time in a decade that automated traffic surpassed human traffic — the board's "first time in a decade" line is the report's own framing. Scope matters: this measures traffic on Imperva-protected sites, not the whole internet. It is the most-cited estimate available, and it is still a vendor's network view.</div></div>
+<div class="fact"><span class="s">120,136 announced US job cuts citing AI, Jan–Sep 2026.</span><span class="conf">verified</span>
+<div class="m"><a href="https://www.challengergray.com/wp-content/uploads/2026/10/Challenger-Report-September-2026.pdf">Challenger, Gray &amp; Christmas, Oct 2026</a>. "Artificial Intelligence" is Challenger's own stated-reason category from employer announcements — announced cuts, employer-attributed, not measured job losses.</div></div>
+<div class="fact"><span class="s">ChatGPT: 1.2B+ weekly users stated Oct 7, 2026. The board shows that stated figure, plus a counter of growth since the statement at ~15.6/second — an extrapolation.</span><span class="conf">verified base; extrapolation is ours</span>
+<div class="m">Official statements: <a href="https://openai.com/blog/scaling-ai-for-everyone">900M+, Feb 27, 2026</a> and <a href="https://openai.com/index/gpt-6-for-everyone/">1.2B+, Oct 7, 2026</a>. (1.2B − 0.9B) ÷ 222 days = ~1.35M/day = ~15.64/second, measured between the two statements. The "+N since Oct 7" counter runs that measured pace forward beyond the last statement, which is an assumption, labeled as such on the board; it holds static text if the page's clock is implausible, and it is re-anchored at the next official statement.</div></div>
+
+<h2 id="reckoning">The Reckoning model, v1.0</h2>
+<p>The Reckoning is <strong>our editorial estimate</strong> of when AI becomes the default condition of the economy. It is not a measurement, a prediction market, a poll, or anyone's forecast but ours. It exists to be argued with, which is why every input is on this page.</p>
+<h3>The ten conditions</h3>
+<p>Each condition is a checkable claim against a public source. Six are met:</p>
+<ol>
+<li>Machines outnumber humans on the web — met 2024 (51% automated traffic, Thales/Imperva; Imperva-network scope).</li>
+<li>One AI product passes a billion weekly users — met ~May 2026 (interpolated between OpenAI's Feb and Oct 2026 statements).</li>
+<li>Big-4 infrastructure spend passes $500B a year — met with the four quarters to Jun 2026 ($513.8B, filings).</li>
+<li>A grid capacity auction clears short of its requirement — met Dec 2025 (PJM 2027/28, 6,623 MW short; repeated Jul 2026 at 6,831 MW for 2028/29).</li>
+<li>AI takes the majority of venture capital — met Q3 2026 (64%, Crunchbase).</li>
+<li>100,000+ job cuts in a year citing AI — met 2026 (120,136 by September, Challenger).</li>
+</ol>
+<p>Four are pending:</p>
+<ol start="7">
+<li>First reactor restarted for a tech buyer — Crane restart targeted 2027 (Constellation; sourced projection).</li>
+<li>Data centers take a tenth of US electricity — 4.4% in 2023; LBNL projects 6.7–12% by 2028. High case crosses 10% by 2028. Low case: 4.4%→6.7% over 2023–28 is 8.77%/yr relative growth; extrapolated from 6.7%, 10% arrives ~2033. This condition sets the range.</li>
+<li>10 GW of hyperscaler nuclear announced — 7,754 MW to date. Measured from the first announcement (Sep 2024) through this re-base (Oct 2026), the pace is ~3.6 GW/yr, implying a crossing around mid-2027 (our extrapolation; no new deal has been announced since Jan 2026).</li>
+<li>A frontier lab reports crossing its autonomy threshold, as such thresholds are defined in published scaling policies (e.g. autonomous replication in <a href="https://www-cdn.anthropic.com/1adf000c8f675958c2ee23805d91aaade1cd4613/responsible-scaling-policy.pdf">Anthropic's RSP</a> — v1.0 cited; the policy has later versions) — no sourced projection exists. We extrapolate the overall crossing pace (six conditions in 2.25 years ≈ 2.67/yr) to the last remaining condition: ~2028. This is the model's weakest input, and we say so.</li>
+</ol>
+<h3>The estimate</h3>
+<div class="formula">range  = crossing window of the slowest pending condition = condition 8 = [2028, 2033]
+point  = midpoint of range = 2030.5 → displayed as 2031
+status = 6 of 10 conditions met</div>
+<p>What moves it: any pending condition crossing (or any met condition being revised away), LBNL/IEA updating their projections, or a model revision — which would be versioned and logged below. Choosing these ten conditions, their thresholds, and the midpoint rule are editorial decisions. Different conditions give a different year; that is the point of publishing the machinery.</p>
+
+<h2 id="cut">What we cut, and why</h2>
+<ul>
+<li><strong>Global AI query energy</strong> — Google publishes 0.24 Wh per median Gemini text prompt (<a href="https://cloud.google.com/blog/products/infrastructure/measuring-the-environmental-impact-of-ai-inference">Aug 2025</a>), but no one publishes global query volume, so any global figure would be invented.</li>
+<li><strong>Global data-center water</strong> — only incomparable per-company reports and one regional study exist; we show the regional study instead.</li>
+<li><strong>Tokens per day across providers</strong> — one-off conference disclosures with incompatible definitions; not summable.</li>
+<li><strong>% of new content that is AI-generated</strong> — rests on AI-detector studies with known false-positive problems.</li>
+<li><strong>Live market caps / stock prices</strong> — the free aggregators have unclear republication terms; equities appear as sourced events only, until a properly licensed source is added.</li>
+<li><strong>A US data-center map</strong> — a legally usable coordinate dataset (OpenStreetMap, ODbL) exists and a map is planned; it ships when the data can be processed properly rather than approximately.</li>
+<li><strong>Crowd forecasts of AGI</strong> — Metaculus's terms require written permission for commercial reuse; nothing of theirs appears here.</li>
+</ul>
+
+<h2 id="changelog">Changelog</h2>
+<table>
+<tr><th>Date</th><th>Change</th></tr>
+<tr><td>2026-10-20</td><td>Board launched. Buildout Index base Q3 2025 = 100; Reckoning model v1.0 (2031, range 2028–2033, 6/10 met). All sources as listed above.</td></tr>
+</table>
+
+<p class="foot">Cite any figure here as "via braiain.com" with its original source named — the original source is always the authority. Corrections: open an issue at the project repository or use the sponsor contact on the board. © 2026 BRAIAIN, a dnilgis project. Not affiliated with any company named.</p>
+
+</div>
+</body>
+</html>
