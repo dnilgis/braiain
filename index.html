@@ -26,7 +26,7 @@
 :root{--paper:#14130f;--ink:#e8e2d4;--ink-2:#b4ae9f;--ink-3:#817c6f;--rule:#3a3830;--rule-soft:#2a2822;--pending:#d9482b;--wash:rgba(232,226,212,0.055);--hot:rgba(217,72,43,0.12);color-scheme:dark}
 *{box-sizing:border-box;margin:0;padding:0}
 html{background:var(--paper)}
-body{background:var(--paper);color:var(--ink);font-family:"Helvetica Neue",Helvetica,Arial,system-ui,sans-serif;font-size:13.5px;line-height:1.3;-webkit-font-smoothing:antialiased}
+body{background:var(--paper);color:var(--ink);font-family:"Helvetica Neue",Helvetica,Arial,system-ui,sans-serif;font-size:15px;line-height:1.35;-webkit-font-smoothing:antialiased}
 a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--ink-3);text-underline-offset:2px}
 a:hover{text-decoration-color:var(--ink)}
 a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
@@ -35,44 +35,44 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
 .num{font-variant-numeric:tabular-nums}
 .hotv{color:var(--pending)}
 .mast{border-top:4px solid var(--ink);padding:7px 0 5px;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
-.mast .name{font-size:23px;font-weight:800;letter-spacing:-0.02em}
-.mast .tag{font-size:13px;color:var(--ink-2)}
-.mast .right{margin-left:auto;font-size:11.5px;color:var(--ink-3)}
+.mast .name{font-size:25px;font-weight:800;letter-spacing:-0.02em}
+.mast .tag{font-size:14px;color:var(--ink-2)}
+.mast .right{margin-left:auto;font-size:12.5px;color:var(--ink-3)}
 .mast .right a{font-weight:700;color:var(--ink);text-decoration:none}
-.intro{font-size:12.5px;color:var(--ink-2);padding:2px 0 7px;max-width:120ch}
+.intro{font-size:14px;color:var(--ink-2);padding:2px 0 7px;max-width:120ch}
 /* wall */
 .wall{display:grid;grid-template-columns:repeat(6,1fr);gap:0 18px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:8px 0 6px}
-.w .v{font-size:21px;font-weight:700}
+.w .v{font-size:26px;font-weight:700}
 .w .dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--pending);margin-left:5px;vertical-align:3px}
-.w .l{font-size:10.5px;color:var(--ink-2);font-weight:600;margin-top:1px}
-.how summary{font-size:9.5px;color:var(--ink-3);cursor:pointer;list-style:none;margin-top:2px}
+.w .l{font-size:12.5px;color:var(--ink-2);font-weight:600;margin-top:1px}
+.how summary{font-size:11.5px;color:var(--ink-3);cursor:pointer;list-style:none;margin-top:2px}
 .how summary::before{content:"+ "}
 .how[open] summary::before{content:"− "}
-.how p{font-size:11px;color:var(--ink-2);margin:3px 0 2px;max-width:46ch}
-.tape{display:flex;gap:8px 26px;flex-wrap:wrap;padding:5px 0;border-bottom:1px solid var(--rule);font-size:11px;color:var(--ink-2)}
+.how p{font-size:12.5px;color:var(--ink-2);margin:3px 0 2px;max-width:46ch}
+.tape{display:flex;gap:8px 26px;flex-wrap:wrap;padding:6px 0;border-bottom:1px solid var(--rule);font-size:12.5px;color:var(--ink-2)}
 .tape b{color:var(--ink);font-weight:700}
-.tape .src{color:var(--ink-3);font-size:9.5px}
+.tape .src{color:var(--ink-3);font-size:11px}
 .controls{display:flex;gap:12px;align-items:center;padding:5px 0 0}
-button.pause{background:none;border:1px solid var(--rule);color:var(--ink-2);font:inherit;font-size:11px;padding:2px 10px;cursor:pointer}
+button.pause{background:none;border:1px solid var(--rule);color:var(--ink-2);font:inherit;font-size:12.5px;padding:2px 10px;cursor:pointer}
 button.pause:hover{color:var(--ink);border-color:var(--ink-3)}
-.controls .note{font-size:10px;color:var(--ink-3)}
+.controls .note{font-size:11.5px;color:var(--ink-3)}
 /* bands */
 .band{display:grid;grid-template-columns:3fr 2fr 2fr;gap:0 26px;padding:12px 0 14px;border-bottom:1px solid var(--rule)}
-.hero .htag{font-size:15px;font-weight:700}
+.hero .htag{font-size:17px;font-weight:700}
 .hero .lv{font-size:86px;font-weight:800;letter-spacing:-0.03em;line-height:.9;margin-top:2px}
 .hero .lv small{font-size:16px;color:var(--ink-2);font-weight:700;margin-left:8px;letter-spacing:0}
-.hero .d{font-size:11.5px;color:var(--ink-2);margin-top:4px;max-width:52ch}
+.hero .d{font-size:13px;color:var(--ink-2);margin-top:4px;max-width:52ch}
 .hero .chart{margin-top:8px}
 .chart svg{width:100%;height:auto;display:block}
-.cap{font-size:9.5px;color:var(--ink-3);margin-top:2px}
-.col h2{font-size:14px;font-weight:700;border-top:2px solid var(--ink);padding-top:4px;display:flex;gap:8px;align-items:baseline}
+.cap{font-size:11px;color:var(--ink-3);margin-top:2px}
+.col h2{font-size:16px;font-weight:700;border-top:2px solid var(--ink);padding-top:4px;display:flex;gap:8px;align-items:baseline}
 .col h2 a{text-decoration:none}
-.col h2 .sym{font-size:10px;font-weight:700;color:var(--ink-3);letter-spacing:.05em}
+.col h2 .sym{font-size:11px;font-weight:700;color:var(--ink-3);letter-spacing:.05em}
 .r{display:flex;justify-content:space-between;gap:10px;border-top:1px solid var(--rule-soft);padding:4.5px 0;align-items:baseline}
 .r:first-of-type{border-top:0;margin-top:3px}
-.r .v{font-size:17.5px;font-weight:700;white-space:nowrap}
-.r .l{font-size:11px;color:var(--ink-2);text-align:right;font-weight:600}
-.r .l .s{display:block;font-size:9.5px;color:var(--ink-3);font-weight:400}
+.r .v{font-size:20px;font-weight:700;white-space:nowrap}
+.r .l{font-size:12.5px;color:var(--ink-2);text-align:right;font-weight:600}
+.r .l .s{display:block;font-size:11px;color:var(--ink-3);font-weight:400}
 .r.hot{background:var(--hot);margin:0 -7px;padding:4.5px 7px;border-top-color:transparent}
 .r:hover{background:rgba(232,226,212,0.05)}
 .r.hot:hover{background:rgba(217,72,43,0.2)}
@@ -81,35 +81,35 @@ button.pause:hover{color:var(--ink);border-color:var(--ink-3)}
 .minichart{margin-top:6px}
 /* map band */
 .mapband{display:grid;grid-template-columns:3fr 2fr 2fr;gap:0 26px;padding:12px 0 14px;border-bottom:1px solid var(--rule)}
-.mapband h2{font-size:15px;font-weight:700}
-.mapband .msub{font-size:11px;color:var(--ink-2);margin-top:2px;max-width:60ch}
+.mapband h2{font-size:17px;font-weight:700}
+.mapband .msub{font-size:12.5px;color:var(--ink-2);margin-top:2px;max-width:60ch}
 /* reckoning + era */
 .era{display:flex;gap:10px 30px;flex-wrap:wrap;align-items:baseline;padding:7px 0;border-bottom:1px solid var(--rule);font-size:11px;color:var(--ink-2)}
 .era .k{font-weight:700;color:var(--ink);font-size:12px}
 .era b{color:var(--ink);font-size:14px;font-weight:700}
 .era .src{color:var(--ink-3);font-size:9.5px}
 .reck{display:grid;grid-template-columns:3fr 2fr 2fr;gap:0 26px;padding:12px 0 14px;border-bottom:1px solid var(--rule)}
-.reck .year{font-size:44px;font-weight:800;line-height:1}
-.reck .d{font-size:11.5px;color:var(--ink-2);margin-top:4px;max-width:46ch}
+.reck .year{font-size:52px;font-weight:800;line-height:1}
+.reck .d{font-size:13px;color:var(--ink-2);margin-top:4px;max-width:46ch}
 .reck .d strong{color:var(--ink)}
-.dots{margin-top:8px;display:flex;align-items:center;gap:8px;font-size:11.5px;font-weight:600}
+.dots{margin-top:8px;display:flex;align-items:center;gap:8px;font-size:12.5px;font-weight:600}
 .cond{list-style:none;margin-top:3px}
-.cond li{display:grid;grid-template-columns:15px 1fr;gap:7px;padding:3.5px 0;border-top:1px solid var(--rule-soft);font-size:11.5px}
+.cond li{display:grid;grid-template-columns:16px 1fr;gap:7px;padding:4px 0;border-top:1px solid var(--rule-soft);font-size:13px}
 .cond li:first-child{border-top:0}
 .cond .mark{font-weight:800} .cond .mark.open{color:var(--pending)}
 .cond .t{font-weight:600}
-.cond .e{display:block;font-size:9.5px;color:var(--ink-3)}
-.wrow{border-top:1px solid var(--rule-soft);font-size:11.5px}
+.cond .e{display:block;font-size:11px;color:var(--ink-3)}
+.wrow{border-top:1px solid var(--rule-soft);font-size:13px}
 .wrow summary{padding:3.5px 0;cursor:pointer;list-style:none}
 .wrow summary::after{content:" +";color:var(--ink-3)}
 .wrow[open] summary::after{content:" −"}
 .wrow .wt{font-weight:700;margin-right:7px}
-.wrow p{font-size:11px;color:var(--ink-2);padding:0 0 5px;max-width:52ch}
+.wrow p{font-size:12.5px;color:var(--ink-2);padding:0 0 5px;max-width:52ch}
 /* footer */
-.pages{padding:8px 0;border-bottom:1px solid var(--rule);display:flex;gap:6px 18px;flex-wrap:wrap;font-size:11.5px}
-.pages .ph{font-weight:700;color:var(--ink-3);font-size:10px;letter-spacing:.05em;align-self:center}
-.foot{padding:10px 0 26px;font-size:10.5px;color:var(--ink-3)}
-.foot .sponsor{font-size:12.5px;color:var(--ink);font-weight:600;margin-bottom:6px}
+.pages{padding:9px 0;border-bottom:1px solid var(--rule);display:flex;gap:6px 18px;flex-wrap:wrap;font-size:13px}
+.pages .ph{font-weight:700;color:var(--ink-3);font-size:11px;letter-spacing:.05em;align-self:center}
+.foot{padding:10px 0 26px;font-size:12px;color:var(--ink-3)}
+.foot .sponsor{font-size:14px;color:var(--ink);font-weight:600;margin-bottom:6px}
 .foot .fine{max-width:120ch;line-height:1.45}
 .mg{opacity:0;animation:ignite .9s ease forwards}
 @keyframes ignite{to{opacity:.8}}
@@ -316,7 +316,7 @@ button.pause:hover{color:var(--ink);border-color:var(--ink-3)}
 
 <section class="reck" id="reckoning">
   <div>
-    <h2 style="font-size:15px;font-weight:700">The Reckoning <span style="font-size:10px;color:var(--ink-3);font-weight:700;letter-spacing:.05em">EDITORIAL</span></h2>
+    <h2 style="font-size:17px;font-weight:700">The Reckoning <span style="font-size:10px;color:var(--ink-3);font-weight:700;letter-spacing:.05em">EDITORIAL</span></h2>
     <div class="year num">2031 <span style="font-size:15px;color:var(--ink-2)">range 2028–2033</span></div>
     <p class="d">Our one opinion on an otherwise sourced board: when AI becomes the economy's default condition — <strong>not a measurement, no one's forecast but ours.</strong> Six of ten checkable conditions met; the slowest pending one sets the range. Full math published; argue with the inputs. <a href="methodology.html#reckoning">Model v1.0</a></p>
     <div class="dots">
@@ -332,7 +332,7 @@ button.pause:hover{color:var(--ink);border-color:var(--ink-3)}
       <span>6 met, 4 pending</span>
     </div>
     <div style="margin-top:10px">
-      <h2 style="font-size:12px;font-weight:700;border-top:2px solid var(--ink);padding-top:4px">The watchlist — pulled into AI from outside tech</h2>
+      <h2 style="font-size:14px;font-weight:700;border-top:2px solid var(--ink);padding-top:4px">The watchlist — pulled into AI from outside tech</h2>
       <details class="wrow"><summary><span class="wt">CEG</span>Constellation</summary><p>Restarting Three Mile Island Unit 1 for Microsoft — 835 MW, 20-year deal (Sep 2024); restart targeted 2027 per its Q2 2026 release.</p></details><details class="wrow"><summary><span class="wt">VST</span>Vistra</summary><p>2,609 MW of 20-year nuclear deals with Meta — Perry and Davis-Besse plants plus uprates (Jan 2026 8-K).</p></details><details class="wrow"><summary><span class="wt">TLN</span>Talen</summary><p>1,920 MW to Amazon from the Susquehanna nuclear plant through 2042 (Jun 2025).</p></details><details class="wrow"><summary><span class="wt">GEV</span>GE Vernova</summary><p>116 GW of gas turbines in backlog and reservations; $176B total backlog; data-center orders over $5B YTD, 2x 2025 (Q2 2026).</p></details><details class="wrow"><summary><span class="wt">VRT</span>Vertiv</summary><p>$15.0B backlog, +109% in a year, on AI cooling and power gear (Feb 2026 release — eight months old at this re-base).</p></details><details class="wrow"><summary><span class="wt">OKLO</span>Oklo</summary><p>1.2 GW small-reactor campus agreement with Meta in southern Ohio; first phase as early as 2030 (Jan 2026).</p></details><details class="wrow"><summary><span class="wt">SMR</span>NuScale</summary><p>Up to 6 GW of small modular reactors with ENTRA1/TVA citing hyperscale data centers — still nonbinding (Feb 2026).</p></details>
       <p class="cap">Sourced events only; no prices — <a href="methodology.html#cut">why</a></p>
     </div>
