@@ -1,59 +1,29 @@
-# BRAIAIN
+# BRAIAIN — The S&P of AI
 
-**The Voight-Kampff Test for the AI Age**
+The AI buildout, measured. A single-screen board of sourced, dated metrics on
+the AI economy — capital, compute, power, infrastructure, emergent effects,
+and society — anchored by the BRAIAIN Buildout Index.
 
-A free daily game where you decide: real photo or AI-generated fake? 10 rounds, pro tips, streak tracking. New challenge every day at [braiain.com](https://braiain.com).
+Live at [braiain.com](https://braiain.com).
 
-## How It Works
+## Rules the board runs on
 
-Each day, 10 new images are served. You guess **REAL** or **AI** for each one. After every round you get the answer, global accuracy stats, and a detection tip. At the end, share your score Wordle-style.
+- Nothing appears without a named public source and a date.
+- Ticking figures are arithmetic on filed numbers (a filed pace divided to the
+  second, or a labeled pace delta from a dated statement) — never measurements.
+- Flows tick. Counts tick only as labeled pace deltas. Shares never tick.
+- Anything unsourceable gets cut, and the methodology page says what was cut.
 
 ## Stack
 
-- **Frontend:** Vanilla HTML / CSS / JS — single `index.html` file
-- **Hosting:** GitHub Pages
-- **Backend:** Cloudflare Worker + KV (vote tracking, global stats)
-- **Content:** Manually curated daily challenges via `daily.json`
+- Vanilla HTML/CSS/JS, one page plus `methodology.html`
+- `data.json` is the canonical data record
+- Hosted on GitHub Pages
 
-## Setup
+## Refresh cadence
 
-1. Clone the repo
-2. Push to GitHub Pages — the game works immediately with hardcoded fallback data
-3. (Optional) Deploy `worker.js` to Cloudflare Workers with a KV binding to enable global stats
-4. Update `daily.json` daily with new rounds
+Re-based around each big-4/NVIDIA earnings print (~8x/year), minimum
+quarterly. Every re-base updates `data.json`, both HTML files, and the
+changelog in `methodology.html`.
 
-## Features
-
-- No signup, no ads, no tracking beyond anonymous vote counts
-- Works offline with fallback data
-- Keyboard shortcuts (← REAL, → AI)
-- Mobile-friendly with haptic feedback
-- WCAG AA contrast compliant
-- Wordle-style share grid (🟢🔴🟢🟢...)
-- Classroom-ready — runs on Chromebooks, no login walls
-
-## Files
-
-```
-index.html     — the entire game
-daily.json     — today's challenge data
-worker.js      — Cloudflare Worker (stats API)
-og-image.png   — social share image
-```
-
-## How AI Is Used
-
-BRAIAIN uses AI at several points in its pipeline:
-
-- **Game content:** Each daily challenge includes AI-generated images sourced and curated manually. Players try to distinguish these from real photographs pulled from Pexels and Unsplash.
-- **Tagline generation:** Google Gemini generates round taglines and descriptive text for the daily challenge metadata.
-- **Development:** Claude (Anthropic) is used extensively as a coding partner for building and iterating on the game, curator tool, worker, and outreach materials.
-- **Promotional content:** Gemini video generation has been used for creating demo and promotional videos.
-- **Content curation:** A custom curator tool assists with sourcing and organizing images, but final selection is always manual — no automated content makes it into the live game without human review.
-
-AI does **not** make gameplay decisions, moderate content, or interact with players. All challenge quality is human-controlled.
-
-## License
-
-MIT
-
+Full sources, formulas, and the changelog: [braiain.com/methodology.html](https://braiain.com/methodology.html)

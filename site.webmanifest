@@ -1,11 +1,11 @@
 {
-  "name": "BRAIAIN — Can You Spot the AI?",
+  "name": "BRAIAIN — The S&P of AI",
   "short_name": "BRAIAIN",
-  "description": "Daily AI detection game. 10 rounds. Real photo or AI fake?",
+  "description": "The AI buildout, measured. Sourced, dated metrics on the AI economy.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0a0e17",
-  "theme_color": "#00e5ff",
+  "background_color": "#14130f",
+  "theme_color": "#14130f",
   "icons": [
     { "src": "/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" },
     { "src": "/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png" }

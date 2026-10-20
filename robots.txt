@@ -1,10 +1,4 @@
 User-agent: *
-Allow: /standard.html
-Allow: /the-scale.html
-Allow: /models/
-Allow: /guide.html
-Allow: /educators.html
-Allow: /faq.html
-Disallow: /curator.html
+Allow: /
 
 Sitemap: https://braiain.com/sitemap.xml
