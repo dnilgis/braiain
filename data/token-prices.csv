@@ -1,0 +1,10 @@
+date,provider,model,input_usd_per_1m,output_usd_per_1m,provenance
+2023-11-06,OpenAI,GPT-4 Turbo,10,30,verified
+2024-03-04,Anthropic,Claude 3 Opus,15,75,verified
+2025-04-04,Google,Gemini 2.5 Pro (<=200k),1.25,10,press (weaker)
+2026-10-20,OpenAI,GPT-6 Astra,10,50,"list price, page undated"
+2026-10-20,OpenAI,GPT-6.1 Sol,2,10,"list price, page undated"
+2026-10-20,Anthropic,Claude Fable 5.1,10,50,"list price, page undated"
+2026-10-20,Anthropic,Claude Opus 5.5,4,20,"list price, page undated"
+2026-10-20,Anthropic,Claude Sonnet 5.5,2,10,"list price, page undated"
+2026-10-20,Google,Gemini 4 Argon,2,10,"list price, page undated; $4/$20 from 2026-12-01"

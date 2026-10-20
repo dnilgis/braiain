@@ -4,80 +4,93 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="color-scheme" content="dark">
-<title>BRAIAIN — The S&amp;P of AI</title>
-<meta name="description" content="The AI buildout, measured. The BRAIAIN Buildout Index and the sourced numbers behind the AI economy — capital, compute, power, infrastructure, and what the buildout is pulling in after it. Every figure sourced and dated.">
-<link rel="canonical" href="https://braiain.com/">
+<title>BRAIAIN: The Buildout Index for AI</title>
+<meta name="description" content="The AI buildout, measured and moving: $25,082 a second, the Buildout Index at 647.7, 1,818 data centers on one map, and the sourced numbers behind the AI economy — every figure dated and traceable.">
+<link rel="canonical" href="https://www.braiain.com/">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://braiain.com">
+<meta property="og:url" content="https://www.braiain.com/">
 <meta property="og:site_name" content="BRAIAIN">
-<meta property="og:title" content="BRAIAIN — The S&P of AI">
-<meta property="og:description" content="The AI buildout is pacing $25,082 a second. Buildout Index: 171.1, up 71% since Q3 2025. Every number sourced and dated.">
-<meta property="og:image" content="https://braiain.com/og-image.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
+<meta property="og:title" content="BRAIAIN: The Buildout Index for AI">
+<meta property="og:description" content="The AI buildout is pacing $25,082 a second — a combined, overlapping flow of capex and chip revenue. Buildout Index: 647.7 (Q1 2022 = 100). Every number sourced and dated.">
+<meta property="og:image" content="https://www.braiain.com/og-image.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="BRAIAIN — The S&P of AI">
-<meta name="twitter:description" content="The AI buildout is pacing $25,082 a second. Buildout Index: 171.1, up 71% since Q3 2025.">
-<meta name="twitter:image" content="https://braiain.com/og-image.png">
+<meta name="twitter:title" content="BRAIAIN: The Buildout Index for AI">
+<meta name="twitter:description" content="The AI buildout is pacing $25,082 a second — a combined, overlapping flow. Buildout Index: 647.7 (Q1 2022 = 100).">
+<meta name="twitter:image" content="https://www.braiain.com/og-image.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"BRAIAIN","alternateName":"The Buildout Index for AI","url":"https://www.braiain.com/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"BRAIAIN","url":"https://www.braiain.com/","description":"The AI buildout, measured. Sourced, dated metrics on the AI economy."}</script>
 <style>
-:root{
-  --paper:#14130f;
-  --ink:#e8e2d4;
-  --ink-2:#b4ae9f;
-  --ink-3:#817c6f;
-  --rule:#3a3830;
-  --rule-soft:#2a2822;
-  --pending:#d9482b;
-  --wash:rgba(232,226,212,0.07);
-  color-scheme:dark;
-}
+:root{--paper:#14130f;--ink:#e8e2d4;--ink-2:#b4ae9f;--ink-3:#817c6f;--rule:#3a3830;--rule-soft:#2a2822;--pending:#d9482b;--wash:rgba(232,226,212,0.07);color-scheme:dark}
 *{box-sizing:border-box;margin:0;padding:0}
 html{background:var(--paper)}
-body{
-  background:var(--paper);color:var(--ink);
-  font-family:"Helvetica Neue",Helvetica,Arial,system-ui,sans-serif;
-  font-size:15px;line-height:1.4;
-  -webkit-font-smoothing:antialiased;
-}
+body{background:var(--paper);color:var(--ink);font-family:"Helvetica Neue",Helvetica,Arial,system-ui,sans-serif;font-size:15px;line-height:1.4;-webkit-font-smoothing:antialiased}
 a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--ink-3);text-underline-offset:2px}
 a:hover{text-decoration-color:var(--ink)}
-a:focus-visible,button:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
 .wrap{max-width:1240px;margin:0 auto;padding:0 16px}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .num{font-variant-numeric:tabular-nums}
-
-/* masthead */
 .mast{border-top:4px solid var(--ink);padding:10px 0 8px;display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
 .mast .name{font-size:28px;font-weight:800;letter-spacing:-0.02em}
 .mast .tag{font-size:15px;color:var(--ink-2)}
 .mast .right{margin-left:auto;display:flex;gap:14px;align-items:baseline}
 .mast .url{font-weight:700;font-size:14px;text-decoration:none}
 .mast .asof{font-size:13px;color:var(--ink-2)}
-
-/* hero: the index */
-.hero{display:grid;grid-template-columns:7fr 5fr;gap:40px;padding:24px 0 22px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.intro{padding:10px 0 2px;color:var(--ink-2);max-width:88ch;font-size:15px}
+.intro strong{color:var(--ink)}
+/* the wall */
+.wall{border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);margin-top:10px;display:grid;grid-template-columns:repeat(3,1fr)}
+.cell{padding:14px 16px 10px;border-left:1px solid var(--rule-soft)}
+.cell:nth-child(3n+1){border-left:0;padding-left:0}
+.cell:nth-child(n+4){border-top:1px solid var(--rule-soft)}
+.cv{font-size:34px;font-weight:700;letter-spacing:-0.01em;min-height:40px}
+.cl{font-size:14px;font-weight:600;margin-top:2px}
+.cs{font-size:12px;color:var(--ink-3);margin-top:3px}
+.how summary{font-size:11.5px;color:var(--ink-3);cursor:pointer;margin-top:4px;list-style:none}
+.how summary::before{content:"+ "}
+.how[open] summary::before{content:"− "}
+.how p{font-size:12.5px;color:var(--ink-2);margin:4px 0 2px;max-width:60ch}
+.tape{display:flex;gap:28px;flex-wrap:wrap;padding:10px 0;border-bottom:1px solid var(--rule);font-size:13.5px}
+.t .tv{font-weight:700} .t .tl{color:var(--ink-2)}
+.t .ts{display:block;font-size:11.5px;color:var(--ink-3)}
+.controls{padding:8px 0;display:flex;gap:14px;align-items:center}
+button.pause{background:none;border:1px solid var(--rule);color:var(--ink-2);font:inherit;font-size:13px;padding:4px 12px;cursor:pointer}
+button.pause:hover{color:var(--ink);border-color:var(--ink-3)}
+.controls .note{font-size:12px;color:var(--ink-3)}
+/* hero */
+.hero{display:grid;grid-template-columns:7fr 5fr;gap:40px;padding:24px 0 22px;border-bottom:1px solid var(--rule)}
 .hero .label{font-size:20px;font-weight:700}
 .hero .level{font-size:clamp(72px,9vw,120px);font-weight:800;letter-spacing:-0.03em;line-height:.9;margin:6px 0 0}
-.hero .level small{font-size:clamp(20px,2.4vw,30px);font-weight:700;color:var(--ink-2);letter-spacing:0;margin-left:10px}
-.hero .def{margin-top:10px;max-width:52ch;color:var(--ink-2);font-size:14.5px}
-.hero .chart{margin-top:16px;max-width:460px}
-.hero .chart svg{width:100%;height:auto;display:block}
-.kpis{border-left:1px solid var(--rule);padding-left:28px;display:flex;flex-direction:column;justify-content:space-between;gap:6px}
-.kpi{padding:8px 0;border-top:1px solid var(--rule-soft)}
-.kpi:first-child{border-top:0;padding-top:0}
-.kpi .v{font-size:30px;font-weight:700;letter-spacing:-0.01em}
-.kpi .v small{font-size:15px;font-weight:600;color:var(--ink-2)}
-.kpi .l{font-size:13px;font-weight:600;color:var(--ink-2)}
-.kpi .d{font-size:12px;color:var(--ink-3)}
-.live-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--pending);vertical-align:4px;margin-left:6px}
-
+.hero .level small{font-size:clamp(18px,2.2vw,26px);font-weight:700;color:var(--ink-2);letter-spacing:0;margin-left:10px}
+.hero .def{margin-top:10px;max-width:56ch;color:var(--ink-2);font-size:14.5px}
+.hero .chart{margin-top:16px}
+.hero .chart svg,.chart svg{width:100%;height:auto;display:block}
+.chart-cap{font-size:12px;color:var(--ink-3);margin-top:4px}
+.heroside{border-left:1px solid var(--rule);padding-left:28px}
+.heroside h2{font-size:20px;font-weight:700}
+.conn{border-top:1px solid var(--rule-soft);padding:10px 0}
+.conn:first-of-type{border-top:0}
+.conn .q{font-size:16px;font-weight:600;max-width:40ch}
+.conn .c{font-size:12px;color:var(--ink-3);margin-top:4px;max-width:46ch}
+/* map */
+.mapband{padding:24px 0 20px;border-bottom:1px solid var(--rule)}
+.mapband h2{font-size:24px;font-weight:700}
+.mapband .mapsub{color:var(--ink-2);font-size:14.5px;margin-top:4px;max-width:70ch}
+.maprow{display:grid;grid-template-columns:8fr 4fr;gap:40px;margin-top:14px}
+.mapstats .row{padding:9px 0;border-top:1px solid var(--rule-soft)}
+.mapstats .row:first-child{border-top:0}
+.mapstats .v{font-size:26px;font-weight:700}
+.mapstats .l{font-size:13px;font-weight:600;color:var(--ink-2)}
+.mapstats .s{font-size:11.5px;color:var(--ink-3)}
 /* sectors */
 .sectors{display:grid;grid-template-columns:1fr 1fr 1fr;column-gap:40px}
 .sec{padding:18px 0 22px;border-bottom:1px solid var(--rule)}
 .sec h2{font-size:22px;font-weight:700;border-top:2px solid var(--ink);padding-top:8px;display:flex;align-items:baseline;gap:10px}
 .sec h2 .sym{font-size:13px;font-weight:700;color:var(--ink-3);letter-spacing:.04em}
+.sec h2 a{text-decoration:none}
 .bigstat{margin:12px 0 2px}
-.bigstat .v{font-size:56px;font-weight:300;letter-spacing:-0.02em;line-height:1}
+.bigstat .v{font-size:52px;font-weight:300;letter-spacing:-0.02em;line-height:1}
 .bigstat .l{font-size:14px;font-weight:600;margin-top:4px}
 .src{font-size:12px;color:var(--ink-3);margin-top:2px}
 .row{padding:9px 0;border-top:1px solid var(--rule-soft)}
@@ -88,17 +101,20 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--ink);outline-offset
 .minitable td:last-child{text-align:right;font-weight:600}
 .minitable tr:first-child td{border-top:0}
 .chart{margin-top:10px}
-.chart svg{display:block;width:100%;height:auto}
 .meter{margin-top:8px;height:10px;background:var(--wash);position:relative}
 .meter .fill{position:absolute;left:0;top:0;bottom:0;background:var(--ink-2)}
 .meter .band{position:absolute;top:0;bottom:0;background:rgba(217,72,43,.35)}
 .meter .now{position:absolute;top:-3px;bottom:-3px;width:3px;background:var(--ink)}
-.watch{width:100%;border-collapse:collapse;margin-top:8px;font-size:13px}
-.watch td{padding:5px 0;border-top:1px solid var(--rule-soft);vertical-align:top}
-.watch td:first-child{font-weight:700;padding-right:10px;white-space:nowrap}
-.watch tr:first-child td{border-top:0}
-
-/* reckoning panel (demoted, full-width band) */
+.mg{opacity:0;animation:ignite .9s ease forwards}
+@keyframes ignite{to{opacity:.8}}
+@media (prefers-reduced-motion: reduce){.mg{animation:none;opacity:.8}}
+.wrow{border-top:1px solid var(--rule-soft);font-size:13.5px}
+.wrow summary{padding:6px 0;cursor:pointer;list-style:none}
+.wrow summary::after{content:" +";color:var(--ink-3)}
+.wrow[open] summary::after{content:" −"}
+.wrow .wt{font-weight:700;margin-right:8px}
+.wrow p{font-size:13px;color:var(--ink-2);padding:0 0 8px;max-width:56ch}
+/* reckoning */
 .reck{display:grid;grid-template-columns:5fr 7fr;gap:40px;padding:22px 0 26px;border-bottom:1px solid var(--rule)}
 .reck h2{font-size:22px;font-weight:700;border-top:2px solid var(--ink);padding-top:8px}
 .reck .year{font-size:64px;font-weight:800;letter-spacing:-0.03em;line-height:1;margin:8px 0 0}
@@ -106,36 +122,42 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--ink);outline-offset
 .reck .dek{margin-top:10px;max-width:46ch;color:var(--ink-2);font-size:14.5px}
 .reck .dek strong{color:var(--ink)}
 .dots{margin-top:12px;display:flex;align-items:center;gap:10px;font-size:14px;font-weight:600}
-.dots svg{display:block}
-.cond{list-style:none;columns:2;column-gap:36px;border-top:2px solid var(--ink);padding-top:10px;margin-top:0}
-.cond-head{font-size:15px;font-weight:700;margin-bottom:6px}
+.cond{list-style:none;columns:2;column-gap:36px;border-top:2px solid var(--ink);padding-top:10px}
+.cond-head{font-size:15px;font-weight:700;border-top:2px solid var(--ink);padding-top:8px;margin-bottom:0}
 .cond li{display:grid;grid-template-columns:18px 1fr;gap:9px;padding:6px 0;font-size:13.5px;break-inside:avoid}
-.cond .mark{font-weight:800;line-height:1.3}
-.cond .mark.open{color:var(--pending)}
+.cond .mark{font-weight:800} .cond .mark.open{color:var(--pending)}
 .cond .t{font-weight:600}
 .cond .e{display:block;font-size:12px;color:var(--ink-3);font-weight:400;margin-top:1px}
-
-/* footer */
+.pages{padding:18px 0;border-bottom:1px solid var(--rule)}
+.pages h2{font-size:17px;font-weight:700}
+.pages nav{margin-top:8px;display:flex;gap:8px 22px;flex-wrap:wrap;font-size:14px}
 .foot{padding:20px 0 36px;font-size:13.5px;color:var(--ink-2)}
 .foot .sponsor{font-size:16px;color:var(--ink);font-weight:600;padding:14px 0;border-bottom:1px solid var(--rule)}
 .foot .fine{margin-top:14px;max-width:84ch;line-height:1.5}
 .foot nav{margin-top:12px;display:flex;gap:18px;flex-wrap:wrap}
-button.pause{background:none;border:1px solid var(--rule);color:var(--ink-2);font:inherit;font-size:13px;padding:4px 12px;cursor:pointer}
-button.pause:hover{color:var(--ink);border-color:var(--ink-3)}
-
 @media (max-width:980px){
-  .hero{grid-template-columns:1fr;gap:20px}
-  .kpis{border-left:0;padding-left:0;flex-direction:row;flex-wrap:wrap;gap:0 28px}
-  .kpi{border-top:0;min-width:150px}
-  .sectors{grid-template-columns:1fr 1fr}
-  .reck{grid-template-columns:1fr}
-  .cond{columns:1}
+ .wall{grid-template-columns:1fr 1fr}
+ .cell:nth-child(3n+1){border-left:1px solid var(--rule-soft);padding-left:16px}
+ .cell:nth-child(2n+1){border-left:0;padding-left:0}
+ .cell:nth-child(n+3){border-top:1px solid var(--rule-soft)}
+ .hero,.reck,.maprow{grid-template-columns:1fr;gap:20px}
+ .heroside{border-left:0;padding-left:0}
+ .sectors{grid-template-columns:1fr 1fr}
+ .cond{columns:1}
 }
 @media (max-width:640px){
-  .sectors{grid-template-columns:1fr}
-  .bigstat .v{font-size:44px}
-  .mast .tag{display:none}
-  .kpi .v{font-size:24px}
+ .wall{grid-template-columns:1fr}
+ .cell{border-left:0 !important;padding-left:0 !important}
+ .cell:nth-child(n+2){border-top:1px solid var(--rule-soft)}
+ .sectors{grid-template-columns:1fr}
+ .bigstat .v{font-size:42px}
+ .mast .tag{display:none}
+ .cv{font-size:28px}
+}
+@media print{
+ body{background:#fff;color:#000}
+ .wall,.tape,.controls,.foot nav{display:none}
+ a{text-decoration:none;color:#000}
 }
 </style>
 </head>
@@ -144,53 +166,126 @@ button.pause:hover{color:var(--ink);border-color:var(--ink-3)}
 
 <header class="mast">
   <span class="name">BRAIAIN</span>
-  <span class="tag">The S&amp;P of AI</span>
+  <span class="tag">The Buildout Index for AI</span>
   <span class="right">
-    <span class="asof">Board re-based Oct 20, 2026</span>
-    <a class="url" href="https://braiain.com">braiain.com</a>
+    <span class="asof">Re-based Oct 20, 2026</span>
+    <a class="url" href="https://www.braiain.com/">braiain.com</a>
   </span>
 </header>
 
+<p class="intro"><strong>What is this?</strong> A live board of the AI buildout — the money, chips, power, land and people behind artificial intelligence — built only from public, dated sources: company filings, grid operators, government data, archived records. The moving numbers are real paces divided down to seconds, never guesses. Every figure links to where it came from. <a href="methodology.html">How it all works</a> · <a href="report.html">printable readout</a></p>
+
+<div class="wall" role="group" aria-label="Live counters, all at measured paces">
+<div class="cell">
+  <div class="cv num"><span id="w1" data-rate="25081.89" data-unit="$">$0</span></div>
+  <div class="cl">spent building AI since you opened this page</div>
+  <div class="cs">Combined, overlapping flow: Big-4 capex + NVIDIA data-center revenue (chips counted on both sides) · trailing-year pace ($25,082/sec, about $2.2B a day) · latest-quarter pace runs $32,435/sec</div>
+  <details class="how"><summary>how this is computed</summary><p>($513.8B big-4 capex + $277.7B NVIDIA data-center revenue, four quarters to mid-2026) ÷ seconds in a year. Overlapping lines summed — chips the big 4 buy from NVIDIA sit in both. Sources: SEC filings.</p></details>
+</div>
+<div class="cell">
+  <div class="cv num"><span id="w2" data-rate="12832.13" data-unit="$">$0</span></div>
+  <div class="cl">of venture capital into AI since you opened this page</div>
+  <div class="cs">Q3 2026 pace: $12,832/sec — $1,109M a day · 64% of all VC · Crunchbase</div>
+  <details class="how"><summary>how this is computed</summary><p>$102B into AI startups in Q3 2026 (Crunchbase) ÷ 92 days ÷ 86,400 seconds.</p></details>
+</div>
+<div class="cell">
+  <div class="cv num"><span id="w3" data-rate="16.225" data-unit="">0</span></div>
+  <div class="cl">new weekly ChatGPT users since you opened this page</div>
+  <div class="cs">16.225/sec, about 1.4M a day — the pace measured between OpenAI's Feb and Sep 2026 statements (900M → 1.2B), run forward</div>
+  <details class="how"><summary>how this is computed</summary><p>(1.2B − 900M) ÷ 214 days between OpenAI's two 2026 statements. An extrapolated pace, not a live meter.</p></details>
+</div>
+<div class="cell">
+  <div class="cv num"><span id="w4" data-rate="13151.0" data-unit="">0</span></div>
+  <div class="cl">kWh used by the world's data centers since you opened this page</div>
+  <div class="cs">13,151 kWh every second — 13 megawatt-hours a second — at the IEA's 2024 rate (415 TWh/yr, all data centers, not only AI)</div>
+  <details class="how"><summary>how this is computed</summary><p>IEA estimate of 415 TWh global data-center electricity in 2024, divided to the second. The IEA projects ~945 TWh by 2030.</p></details>
+</div>
+<div class="cell">
+  <div class="cv num"><span id="w5" data-rate="3961.09" data-unit="$">$0</span></div>
+  <div class="cl">of Stargate's commitment burned since you opened this page</div>
+  <div class="cs">$3,961/sec if $500B is spread evenly over its four years — a commitment pace, not measured spending</div>
+  <details class="how"><summary>how this is computed</summary><p>SoftBank/OpenAI announced $500B over four years (Jan 2025). $500B ÷ 4 years ÷ seconds. Nobody reports Stargate's actual spend rate.</p></details>
+</div>
+<div class="cell">
+  <div class="cv num"><span id="w6" data-rate="0.02431824642625081" data-unit="">0</span></div>
+  <div class="cl">AI models published since you opened this page</div>
+  <div class="cs">One new Hugging Face model repository every ~41 seconds, at the pace measured between archived March and October 2026 counts</div>
+  <details class="how"><summary>how this is computed</summary><p>(3,157,435 − 2,678,385 repositories) ÷ 228 days between archived counts. Repositories include finetunes and forks.</p></details>
+</div>
+</div>
+<div class="tape"><div class="t"><span class="tv">One AI research paper</span> <span class="tl">every 8.2 minutes</span><span class="ts">arXiv cs.AI listings, 2026 pace (51,361 in 292 days)</span></div><div class="t"><span class="tv">One announced US job cut citing AI</span> <span class="tl">every 3.3 minutes</span><span class="ts">Challenger category, 2026 pace — employer-attributed, not net job loss</span></div><div class="t"><span class="tv">46.3 gallons of water</span> <span class="tl">every second</span><span class="ts">DC-metro Potomac-basin data centers, average-day consumptive use (ICPRB)</span></div><div class="t"><span class="tv">1,534 days</span> <span class="tl">to the Reckoning estimate</span><span class="ts">our editorial 2031 midpoint, counted at the Oct 20 re-base — see the panel below</span></div></div>
+<div class="controls">
+  <button class="pause" id="pauseBtn" aria-pressed="false">Pause motion</button>
+  <span class="note">Counters run at measured, sourced paces — arithmetic, not telemetry. Each one explains itself.</span>
+</div>
+
 <section class="hero">
   <div>
-    <h1 class="label">BRAIAIN Buildout Index</h1>
-    <div class="level num">171.1<small>+71% since Q3 2025</small></div>
-    <p class="def">Big-4 hyperscaler capital spending plus NVIDIA data-center revenue, by calendar quarter, indexed to Q3 2025 = 100. The single number for how hard the AI buildout is running. <a href="methodology.html#index">How it's computed</a></p>
+    <h1 class="label"><a href="buildout-index.html" style="text-decoration:none">BRAIAIN Buildout Index</a></h1>
+    <div class="level num">647.7<small>Q1 2022 = 100</small></div>
+    <p class="def">Big-4 hyperscaler capital spending plus NVIDIA data-center revenue, by calendar quarter. In plain words: how hard the world is building AI, as one number. It has grown 6.5x since Q1 2022 — about 55% a year compounded — including a dip in early 2023 before the acceleration. Components overlap (chips the big 4 buy appear on both sides); <a href="buildout-index.html">full math</a>.</p>
     <div class="chart">
-      <svg viewBox="0 0 460 134" role="img" aria-label="Buildout Index by quarter: 100 in Q3 2025, 121.9 in Q4 2025, 138.1 in Q1 2026, 171.1 in Q2 2026. Underlying totals rose from 149 to 255 billion dollars a quarter.">
-        <rect x="20"  y="57.9" width="24" height="56.1" fill="var(--ink-2)"/>
-        <rect x="140" y="45.6" width="24" height="68.4" fill="var(--ink-2)"/>
-        <rect x="260" y="36.5" width="24" height="77.5" fill="var(--ink-2)"/>
-        <rect x="380" y="18"   width="24" height="96"   fill="var(--ink)"/>
-        <text x="392" y="12" fill="var(--ink)" font-size="14" font-weight="700" text-anchor="middle">171.1</text>
-        <g fill="var(--ink-3)" font-size="12" text-anchor="middle">
-          <text x="32" y="130">Q3 25</text><text x="152" y="130">Q4 25</text>
-          <text x="272" y="130">Q1 26</text><text x="392" y="130">Q2 26</text>
-        </g>
-      </svg>
+      <svg viewBox="0 0 960 250" role="img" aria-label="Buildout Index by quarter from Q1 2022 at 100, dipping to 97.7 in Q1 2023, rising to 647.7 in Q2 2026"><rect x="33.6" y="196.8" width="24.0" height="31.2" fill="var(--ink-2)"/>
+<rect x="84.7" y="195.5" width="24.0" height="32.5" fill="var(--ink-2)"/>
+<rect x="135.8" y="193.7" width="24.0" height="34.3" fill="var(--ink-2)"/>
+<rect x="186.9" y="193.7" width="24.0" height="34.3" fill="var(--ink-2)"/>
+<rect x="238.0" y="197.5" width="24.0" height="30.5" fill="var(--ink-2)"/>
+<rect x="289.1" y="193.2" width="24.0" height="34.8" fill="var(--ink-2)"/>
+<rect x="340.2" y="187.0" width="24.0" height="41.0" fill="var(--ink-2)"/>
+<rect x="391.3" y="179.2" width="24.0" height="48.8" fill="var(--ink-2)"/>
+<rect x="442.4" y="174.8" width="24.0" height="53.2" fill="var(--ink-2)"/>
+<rect x="493.6" y="165.1" width="24.0" height="62.9" fill="var(--ink-2)"/>
+<rect x="544.7" y="156.3" width="24.0" height="71.7" fill="var(--ink-2)"/>
+<rect x="595.8" y="142.2" width="24.0" height="85.8" fill="var(--ink-2)"/>
+<rect x="646.9" y="139.5" width="24.0" height="88.5" fill="var(--ink-2)"/>
+<rect x="698.0" y="125.2" width="24.0" height="102.8" fill="var(--ink-2)"/>
+<rect x="749.1" y="110.0" width="24.0" height="118.0" fill="var(--ink-2)"/>
+<rect x="800.2" y="84.1" width="24.0" height="143.9" fill="var(--ink-2)"/>
+<rect x="851.3" y="65.0" width="24.0" height="163.0" fill="var(--ink-2)"/>
+<rect x="902.4" y="26.0" width="24.0" height="202.0" fill="var(--ink)"/>
+<text x="45.6" y="190.8" fill="var(--ink-2)" font-size="12" font-weight="600" text-anchor="middle">100</text>
+<text x="250.0" y="191.5" fill="var(--ink-2)" font-size="12" font-weight="600" text-anchor="middle">97.7</text>
+<text x="914.4" y="20.0" fill="var(--ink)" font-size="12" font-weight="700" text-anchor="middle">647.7</text>
+<text x="45.6" y="244" fill="var(--ink-3)" font-size="11" text-anchor="middle">2022</text>
+<text x="250.0" y="244" fill="var(--ink-3)" font-size="11" text-anchor="middle">2023</text>
+<text x="454.4" y="244" fill="var(--ink-3)" font-size="11" text-anchor="middle">2024</text>
+<text x="658.9" y="244" fill="var(--ink-3)" font-size="11" text-anchor="middle">2025</text>
+<text x="863.3" y="244" fill="var(--ink-3)" font-size="11" text-anchor="middle">2026</text>
+<line x1="20" y1="228" x2="940" y2="228" stroke="var(--rule)" stroke-width="1"/></svg>
+      <p class="chart-cap num">Index, Q1 2022 = 100, scale 0–648. Underlying flow $39.4B → $255.0B per quarter. Drawn from SEC-filed figures — <a href="data/buildout-index.csv">data</a>.</p>
     </div>
-    <p class="src num">Underlying flow: $149.0B → $181.7B → $205.8B → $255.0B per quarter</p>
+    <p class="def" style="margin-top:12px"><strong style="color:var(--ink)">Already true:</strong> the latest quarter annualizes to over $1 trillion a year ($255.0B × 4). <strong style="color:var(--ink)">If the 4½-year pace holds</strong> — an extrapolation, not a forecast — the index crosses 1,000 around mid-2027. What would break it: a capex guidance cut, a demand stall, or the grid itself. <a href="methodology.html#index">Method</a></p>
   </div>
-  <div class="kpis">
-    <div class="kpi">
-      <div class="v num">$25,082<small> / second</small><span class="live-dot" aria-hidden="true"></span></div>
-      <div class="l">The buildout's combined flow — Big-4 capex plus NVIDIA data-center revenue, at the filed pace of the four quarters to Jun 2026</div>
-      <div class="d num"><span aria-hidden="true" id="spendSince">$0 since you opened this page</span><span class="sr">Estimated at the filed pace, divided to the second.</span></div>
+  <aside class="heroside">
+    <h2>Three connections</h2>
+    <div class="conn">
+      <p class="q">The grid repriced AI's arrival 9.3x in one auction — then cleared three straight auctions at its price cap, short of requirement twice.</p>
+      <p class="c">PJM capacity price $28.92 → $269.92/MW-day in one cycle; caps at $329–333; last two auctions 6,623 and 6,831 MW short. Price is capped, so it understates scarcity; cause not attributed. <a href="pjm-capacity-prices.html">The 22-year series</a></p>
     </div>
-    <div class="kpi">
-      <div class="v num">$513.8B</div>
-      <div class="l">Big-4 capital expenditure, four quarters to Jun 2026</div>
-      <div class="d">Company filings</div>
+    <div class="conn">
+      <p class="q">Chips deliver 49% more performance per dollar every year. The rent on an H100 still went UP 17% this year.</p>
+      <p class="c">Epoch AI hardware trend vs the on-demand provider median for one chip model (GetDeploying, CC-BY). Demand outrunning the hardware curve, on the open market at least. <a href="gpu-rental-prices.html">The prices</a></p>
     </div>
-    <div class="kpi">
-      <div class="v num">$277.7B</div>
-      <div class="l">NVIDIA data-center revenue, four quarters to Jul 2026</div>
-      <div class="d">NVIDIA filings</div>
+    <div class="conn">
+      <p class="q">AI compute stock doubles every 7 months. A grid transformer takes 30 months to arrive.</p>
+      <p class="c">Epoch AI measured trend vs Wood Mackenzie lead-time survey (via POWER Magazine). Two clocks, side by side — transformers are one input among several. <a href="us-industrial-electricity.html">The power story</a></p>
     </div>
-    <div class="kpi">
-      <div class="v num">64%</div>
-      <div class="l">of global venture funding went to AI in Q3 2026</div>
-      <div class="d">Crunchbase</div>
+  </aside>
+</section>
+
+<section class="mapband">
+  <h2>The United States, drawn only by its data centers</h2>
+  <p class="mapsub">Every dot is a real mapped facility — 1,816 in the lower 48 (1,818 with territories), from OpenStreetMap. No outline underneath: the data centers draw the country themselves. A floor, not a census — the Data Center Map database counts over 3,000 operating. <a href="us-data-centers.html">Counts, methods, download</a></p>
+  <div class="maprow">
+    <div>
+      <svg viewBox="0 0 1000 636" role="img" aria-label="Map of the contiguous United States formed by 1,816 data-center locations as dots"><g fill="var(--ink)"><g class="mg" style="animation-delay:0.00s"><circle cx="20.5" cy="278.3" r="1.6"/><circle cx="197.4" cy="430.0" r="1.6"/><circle cx="657.0" cy="243.4" r="1.6"/><circle cx="862.4" cy="285.2" r="1.6"/><circle cx="862.6" cy="284.0" r="1.6"/><circle cx="863.2" cy="283.8" r="1.6"/><circle cx="521.0" cy="264.3" r="1.6"/><circle cx="861.7" cy="285.3" r="1.6"/><circle cx="754.7" cy="276.5" r="1.6"/><circle cx="667.7" cy="240.8" r="1.6"/><circle cx="25.9" cy="290.3" r="1.6"/><circle cx="861.7" cy="285.3" r="1.6"/><circle cx="862.7" cy="283.2" r="1.6"/><circle cx="118.9" cy="100.3" r="1.6"/><circle cx="862.5" cy="284.0" r="1.6"/><circle cx="120.4" cy="100.4" r="1.6"/><circle cx="181.4" cy="334.3" r="1.6"/><circle cx="810.0" cy="236.9" r="1.6"/><circle cx="753.0" cy="274.4" r="1.6"/><circle cx="863.3" cy="284.1" r="1.6"/><circle cx="562.4" cy="251.6" r="1.6"/><circle cx="862.9" cy="290.0" r="1.6"/><circle cx="461.3" cy="551.4" r="1.6"/><circle cx="119.6" cy="100.4" r="1.6"/><circle cx="84.5" cy="251.5" r="1.6"/><circle cx="917.3" cy="241.8" r="1.6"/><circle cx="810.0" cy="236.9" r="1.6"/><circle cx="504.1" cy="465.6" r="1.6"/><circle cx="558.9" cy="255.4" r="1.6"/><circle cx="119.6" cy="100.4" r="1.6"/><circle cx="864.3" cy="602.2" r="1.6"/><circle cx="863.2" cy="290.5" r="1.6"/><circle cx="224.2" cy="254.5" r="1.6"/><circle cx="473.8" cy="145.3" r="1.6"/><circle cx="861.0" cy="283.0" r="1.6"/><circle cx="501.1" cy="476.3" r="1.6"/><circle cx="862.7" cy="290.4" r="1.6"/><circle cx="125.5" cy="100.3" r="1.6"/><circle cx="125.2" cy="66.6" r="1.6"/><circle cx="64.6" cy="93.3" r="1.6"/><circle cx="915.2" cy="221.4" r="1.6"/><circle cx="861.3" cy="285.6" r="1.6"/><circle cx="87.2" cy="46.9" r="1.6"/><circle cx="810.0" cy="237.0" r="1.6"/><circle cx="861.6" cy="289.7" r="1.6"/><circle cx="517.6" cy="387.8" r="1.6"/><circle cx="862.9" cy="284.1" r="1.6"/><circle cx="862.5" cy="284.0" r="1.6"/><circle cx="356.1" cy="494.6" r="1.6"/><circle cx="861.5" cy="285.5" r="1.6"/><circle cx="863.1" cy="283.8" r="1.6"/><circle cx="504.0" cy="461.8" r="1.6"/><circle cx="862.6" cy="283.9" r="1.6"/><circle cx="562.1" cy="254.3" r="1.6"/><circle cx="760.3" cy="273.7" r="1.6"/><circle cx="745.9" cy="432.9" r="1.6"/><circle cx="661.7" cy="238.6" r="1.6"/><circle cx="851.0" cy="364.3" r="1.6"/><circle cx="58.0" cy="106.3" r="1.6"/><circle cx="84.6" cy="251.4" r="1.6"/><circle cx="520.9" cy="264.2" r="1.6"/><circle cx="355.6" cy="258.0" r="1.6"/><circle cx="502.1" cy="465.3" r="1.6"/><circle cx="458.1" cy="552.0" r="1.6"/><circle cx="753.1" cy="274.7" r="1.6"/><circle cx="226.7" cy="250.1" r="1.6"/><circle cx="120.5" cy="100.4" r="1.6"/><circle cx="83.6" cy="249.8" r="1.6"/><circle cx="491.9" cy="465.4" r="1.6"/><circle cx="816.6" cy="190.6" r="1.6"/><circle cx="911.4" cy="225.6" r="1.6"/><circle cx="544.0" cy="315.1" r="1.6"/><circle cx="202.7" cy="430.8" r="1.6"/><circle cx="877.5" cy="274.1" r="1.6"/><circle cx="526.4" cy="543.0" r="1.6"/><circle cx="862.7" cy="283.7" r="1.6"/></g><g class="mg" style="animation-delay:0.10s"><circle cx="861.3" cy="285.5" r="1.6"/><circle cx="862.4" cy="289.3" r="1.6"/><circle cx="915.0" cy="227.8" r="1.6"/><circle cx="659.6" cy="216.9" r="1.6"/><circle cx="863.2" cy="283.9" r="1.6"/><circle cx="308.5" cy="402.0" r="1.6"/><circle cx="752.0" cy="424.1" r="1.6"/><circle cx="351.3" cy="287.2" r="1.6"/><circle cx="484.0" cy="528.1" r="1.6"/><circle cx="761.6" cy="273.8" r="1.6"/><circle cx="202.7" cy="430.6" r="1.6"/><circle cx="517.6" cy="387.7" r="1.6"/><circle cx="749.6" cy="432.0" r="1.6"/><circle cx="303.3" cy="468.6" r="1.6"/><circle cx="863.4" cy="284.2" r="1.6"/><circle cx="661.8" cy="237.9" r="1.6"/><circle cx="557.4" cy="255.9" r="1.6"/><circle cx="689.3" cy="243.0" r="1.6"/><circle cx="501.0" cy="476.4" r="1.6"/><circle cx="863.6" cy="283.2" r="1.6"/><circle cx="89.4" cy="42.0" r="1.6"/><circle cx="124.2" cy="66.5" r="1.6"/><circle cx="876.8" cy="273.8" r="1.6"/><circle cx="816.6" cy="190.7" r="1.6"/><circle cx="756.0" cy="424.8" r="1.6"/><circle cx="866.0" cy="611.9" r="1.6"/><circle cx="440.2" cy="476.0" r="1.6"/><circle cx="544.0" cy="309.6" r="1.6"/><circle cx="618.6" cy="526.1" r="1.6"/><circle cx="440.2" cy="476.0" r="1.6"/><circle cx="907.7" cy="235.7" r="1.6"/><circle cx="519.1" cy="385.1" r="1.6"/><circle cx="26.7" cy="289.7" r="1.6"/><circle cx="874.0" cy="319.9" r="1.6"/><circle cx="773.7" cy="238.5" r="1.6"/><circle cx="856.5" cy="343.4" r="1.6"/><circle cx="746.0" cy="432.8" r="1.6"/><circle cx="223.6" cy="261.8" r="1.6"/><circle cx="353.0" cy="295.6" r="1.6"/><circle cx="806.9" cy="565.9" r="1.6"/><circle cx="860.2" cy="289.1" r="1.6"/><circle cx="862.9" cy="283.3" r="1.6"/><circle cx="862.7" cy="283.8" r="1.6"/><circle cx="862.8" cy="283.7" r="1.6"/><circle cx="503.6" cy="465.0" r="1.6"/><circle cx="861.2" cy="283.2" r="1.6"/><circle cx="42.8" cy="168.3" r="1.6"/><circle cx="501.1" cy="470.6" r="1.6"/><circle cx="863.3" cy="283.1" r="1.6"/><circle cx="863.1" cy="284.2" r="1.6"/><circle cx="558.9" cy="255.4" r="1.6"/><circle cx="661.5" cy="237.4" r="1.6"/><circle cx="352.8" cy="295.4" r="1.6"/><circle cx="862.8" cy="283.6" r="1.6"/><circle cx="863.3" cy="290.4" r="1.6"/><circle cx="761.1" cy="274.8" r="1.6"/><circle cx="126.4" cy="100.2" r="1.6"/><circle cx="473.8" cy="145.3" r="1.6"/><circle cx="861.3" cy="285.5" r="1.6"/><circle cx="25.5" cy="290.1" r="1.6"/><circle cx="745.8" cy="433.6" r="1.6"/><circle cx="27.2" cy="289.9" r="1.6"/><circle cx="562.2" cy="251.7" r="1.6"/><circle cx="224.3" cy="254.5" r="1.6"/><circle cx="862.4" cy="284.0" r="1.6"/><circle cx="458.1" cy="552.0" r="1.6"/><circle cx="745.9" cy="432.9" r="1.6"/><circle cx="499.6" cy="469.6" r="1.6"/><circle cx="119.8" cy="101.0" r="1.6"/><circle cx="358.9" cy="257.8" r="1.6"/><circle cx="876.4" cy="228.9" r="1.6"/><circle cx="89.8" cy="131.7" r="1.6"/><circle cx="861.0" cy="282.9" r="1.6"/><circle cx="730.1" cy="295.5" r="1.6"/><circle cx="862.7" cy="283.5" r="1.6"/><circle cx="736.5" cy="294.6" r="1.6"/></g><g class="mg" style="animation-delay:0.21s"><circle cx="810.0" cy="236.9" r="1.6"/><circle cx="25.5" cy="290.2" r="1.6"/><circle cx="496.2" cy="469.2" r="1.6"/><circle cx="124.2" cy="66.5" r="1.6"/><circle cx="363.4" cy="495.6" r="1.6"/><circle cx="862.0" cy="285.4" r="1.6"/><circle cx="501.0" cy="476.4" r="1.6"/><circle cx="746.2" cy="433.3" r="1.6"/><circle cx="27.1" cy="289.9" r="1.6"/><circle cx="661.7" cy="238.5" r="1.6"/><circle cx="810.0" cy="236.9" r="1.6"/><circle cx="25.5" cy="289.7" r="1.6"/><circle cx="764.6" cy="434.5" r="1.6"/><circle cx="867.8" cy="285.0" r="1.6"/><circle cx="357.6" cy="259.7" r="1.6"/><circle cx="83.6" cy="249.8" r="1.6"/><circle cx="83.7" cy="249.8" r="1.6"/><circle cx="64.7" cy="92.9" r="1.6"/><circle cx="810.0" cy="236.9" r="1.6"/><circle cx="863.5" cy="283.2" r="1.6"/><circle cx="26.7" cy="291.5" r="1.6"/><circle cx="896.0" cy="249.7" r="1.6"/><circle cx="543.9" cy="309.7" r="1.6"/><circle cx="92.7" cy="19.9" r="1.6"/><circle cx="562.1" cy="254.3" r="1.6"/><circle cx="457.9" cy="552.1" r="1.6"/><circle cx="352.3" cy="315.4" r="1.6"/><circle cx="864.9" cy="284.8" r="1.6"/><circle cx="757.3" cy="241.2" r="1.6"/><circle cx="495.6" cy="478.8" r="1.6"/><circle cx="686.4" cy="368.4" r="1.6"/><circle cx="909.3" cy="179.7" r="1.6"/><circle cx="856.5" cy="343.2" r="1.6"/><circle cx="25.9" cy="290.2" r="1.6"/><circle cx="89.4" cy="394.3" r="1.6"/><circle cx="164.1" cy="67.3" r="1.6"/><circle cx="760.3" cy="273.7" r="1.6"/><circle cx="752.7" cy="274.0" r="1.6"/><circle cx="25.4" cy="290.2" r="1.6"/><circle cx="863.1" cy="284.1" r="1.6"/><circle cx="862.9" cy="283.9" r="1.6"/><circle cx="861.2" cy="283.2" r="1.6"/><circle cx="856.6" cy="343.4" r="1.6"/><circle cx="516.4" cy="260.8" r="1.6"/><circle cx="493.9" cy="465.8" r="1.6"/><circle cx="195.9" cy="426.7" r="1.6"/><circle cx="816.6" cy="190.7" r="1.6"/><circle cx="668.2" cy="241.0" r="1.6"/><circle cx="856.6" cy="343.3" r="1.6"/><circle cx="457.9" cy="551.9" r="1.6"/><circle cx="873.2" cy="323.0" r="1.6"/><circle cx="839.7" cy="436.5" r="1.6"/><circle cx="63.8" cy="92.4" r="1.6"/><circle cx="635.4" cy="412.6" r="1.6"/><circle cx="25.8" cy="290.1" r="1.6"/><circle cx="226.5" cy="257.0" r="1.6"/><circle cx="521.1" cy="264.4" r="1.6"/><circle cx="499.9" cy="469.9" r="1.6"/><circle cx="761.3" cy="273.8" r="1.6"/><circle cx="863.4" cy="286.4" r="1.6"/><circle cx="521.1" cy="264.3" r="1.6"/><circle cx="36.8" cy="347.2" r="1.6"/><circle cx="867.7" cy="285.3" r="1.6"/><circle cx="862.9" cy="283.3" r="1.6"/><circle cx="862.5" cy="289.8" r="1.6"/><circle cx="202.5" cy="430.6" r="1.6"/><circle cx="529.5" cy="539.9" r="1.6"/><circle cx="891.9" cy="129.8" r="1.6"/><circle cx="543.7" cy="309.6" r="1.6"/><circle cx="501.0" cy="476.4" r="1.6"/><circle cx="542.0" cy="310.3" r="1.6"/><circle cx="799.0" cy="372.8" r="1.6"/><circle cx="862.9" cy="283.4" r="1.6"/><circle cx="201.8" cy="431.7" r="1.6"/><circle cx="739.8" cy="234.3" r="1.6"/><circle cx="566.5" cy="170.5" r="1.6"/></g><g class="mg" style="animation-delay:0.32s"><circle cx="862.0" cy="274.7" r="1.6"/><circle cx="25.9" cy="290.6" r="1.6"/><circle cx="752.7" cy="423.6" r="1.6"/><circle cx="120.2" cy="100.2" r="1.6"/><circle cx="67.8" cy="94.4" r="1.6"/><circle cx="503.2" cy="126.4" r="1.6"/><circle cx="564.2" cy="170.1" r="1.6"/><circle cx="125.2" cy="66.5" r="1.6"/><circle cx="862.8" cy="283.6" r="1.6"/><circle cx="696.9" cy="382.3" r="1.6"/><circle cx="495.6" cy="468.8" r="1.6"/><circle cx="457.9" cy="552.0" r="1.6"/><circle cx="761.6" cy="273.8" r="1.6"/><circle cx="64.2" cy="92.1" r="1.6"/><circle cx="761.3" cy="273.7" r="1.6"/><circle cx="816.6" cy="190.6" r="1.6"/><circle cx="636.1" cy="476.0" r="1.6"/><circle cx="861.0" cy="282.9" r="1.6"/><circle cx="473.7" cy="145.3" r="1.6"/><circle cx="810.0" cy="236.9" r="1.6"/><circle cx="905.5" cy="236.5" r="1.6"/><circle cx="761.3" cy="273.7" r="1.6"/><circle cx="125.5" cy="100.3" r="1.6"/><circle cx="933.4" cy="205.8" r="1.6"/><circle cx="862.0" cy="285.5" r="1.6"/><circle cx="558.6" cy="255.4" r="1.6"/><circle cx="761.3" cy="274.6" r="1.6"/><circle cx="144.9" cy="352.3" r="1.6"/><circle cx="874.1" cy="319.9" r="1.6"/><circle cx="863.2" cy="283.8" r="1.6"/><circle cx="353.1" cy="295.5" r="1.6"/><circle cx="520.9" cy="264.2" r="1.6"/><circle cx="519.8" cy="263.1" r="1.6"/><circle cx="20.0" cy="279.7" r="1.6"/><circle cx="863.5" cy="286.2" r="1.6"/><circle cx="862.7" cy="286.1" r="1.6"/><circle cx="874.0" cy="319.7" r="1.6"/><circle cx="873.1" cy="323.0" r="1.6"/><circle cx="556.0" cy="255.1" r="1.6"/><circle cx="686.4" cy="368.4" r="1.6"/><circle cx="869.8" cy="289.2" r="1.6"/><circle cx="580.4" cy="287.3" r="1.6"/><circle cx="463.5" cy="548.1" r="1.6"/><circle cx="751.8" cy="424.4" r="1.6"/><circle cx="862.5" cy="283.8" r="1.6"/><circle cx="861.2" cy="283.2" r="1.6"/><circle cx="521.0" cy="264.3" r="1.6"/><circle cx="861.2" cy="283.2" r="1.6"/><circle cx="863.1" cy="284.1" r="1.6"/><circle cx="809.4" cy="258.1" r="1.6"/><circle cx="558.6" cy="255.4" r="1.6"/><circle cx="119.8" cy="61.5" r="1.6"/><circle cx="556.7" cy="254.9" r="1.6"/><circle cx="841.3" cy="234.5" r="1.6"/><circle cx="702.9" cy="410.7" r="1.6"/><circle cx="805.6" cy="379.3" r="1.6"/><circle cx="862.8" cy="283.5" r="1.6"/><circle cx="862.5" cy="283.6" r="1.6"/><circle cx="862.9" cy="283.4" r="1.6"/><circle cx="22.5" cy="287.5" r="1.6"/><circle cx="864.6" cy="284.6" r="1.6"/><circle cx="748.5" cy="212.8" r="1.6"/><circle cx="355.6" cy="257.9" r="1.6"/><circle cx="63.8" cy="112.2" r="1.6"/><circle cx="198.5" cy="423.1" r="1.6"/><circle cx="352.8" cy="295.3" r="1.6"/><circle cx="542.1" cy="310.4" r="1.6"/><circle cx="862.6" cy="284.1" r="1.6"/><circle cx="750.1" cy="434.9" r="1.6"/><circle cx="860.8" cy="289.3" r="1.6"/><circle cx="860.1" cy="290.8" r="1.6"/><circle cx="124.1" cy="102.6" r="1.6"/><circle cx="816.6" cy="190.6" r="1.6"/><circle cx="864.9" cy="284.8" r="1.6"/><circle cx="25.5" cy="290.1" r="1.6"/><circle cx="702.9" cy="410.7" r="1.6"/></g><g class="mg" style="animation-delay:0.42s"><circle cx="352.8" cy="310.5" r="1.6"/><circle cx="751.7" cy="424.7" r="1.6"/><circle cx="224.2" cy="468.3" r="1.6"/><circle cx="116.0" cy="102.7" r="1.6"/><circle cx="461.2" cy="551.4" r="1.6"/><circle cx="504.0" cy="465.7" r="1.6"/><circle cx="517.6" cy="387.8" r="1.6"/><circle cx="439.9" cy="476.0" r="1.6"/><circle cx="761.7" cy="273.8" r="1.6"/><circle cx="124.6" cy="66.6" r="1.6"/><circle cx="839.6" cy="436.6" r="1.6"/><circle cx="749.5" cy="431.9" r="1.6"/><circle cx="63.9" cy="92.3" r="1.6"/><circle cx="876.8" cy="273.8" r="1.6"/><circle cx="863.1" cy="290.1" r="1.6"/><circle cx="862.5" cy="289.7" r="1.6"/><circle cx="223.6" cy="261.8" r="1.6"/><circle cx="862.7" cy="286.1" r="1.6"/><circle cx="188.4" cy="425.9" r="1.6"/><circle cx="916.5" cy="229.1" r="1.6"/><circle cx="568.1" cy="176.3" r="1.6"/><circle cx="862.8" cy="283.4" r="1.6"/><circle cx="661.7" cy="237.4" r="1.6"/><circle cx="848.8" cy="361.7" r="1.6"/><circle cx="562.2" cy="251.6" r="1.6"/><circle cx="661.1" cy="221.3" r="1.6"/><circle cx="852.8" cy="366.8" r="1.6"/><circle cx="764.4" cy="434.5" r="1.6"/><circle cx="353.3" cy="296.3" r="1.6"/><circle cx="810.0" cy="236.9" r="1.6"/><circle cx="460.7" cy="550.8" r="1.6"/><circle cx="915.6" cy="227.3" r="1.6"/><circle cx="504.0" cy="461.8" r="1.6"/><circle cx="661.8" cy="238.1" r="1.6"/><circle cx="856.5" cy="343.0" r="1.6"/><circle cx="439.8" cy="476.0" r="1.6"/><circle cx="488.8" cy="510.8" r="1.6"/><circle cx="124.6" cy="66.6" r="1.6"/><circle cx="756.7" cy="273.9" r="1.6"/><circle cx="661.8" cy="238.1" r="1.6"/><circle cx="915.0" cy="221.4" r="1.6"/><circle cx="915.1" cy="227.8" r="1.6"/><circle cx="909.4" cy="235.1" r="1.6"/><circle cx="440.0" cy="476.0" r="1.6"/><circle cx="862.8" cy="283.7" r="1.6"/><circle cx="745.9" cy="432.9" r="1.6"/><circle cx="684.1" cy="274.8" r="1.6"/><circle cx="657.1" cy="243.3" r="1.6"/><circle cx="350.9" cy="291.6" r="1.6"/><circle cx="356.2" cy="494.6" r="1.6"/><circle cx="863.1" cy="284.2" r="1.6"/><circle cx="862.9" cy="283.3" r="1.6"/><circle cx="514.7" cy="265.6" r="1.6"/><circle cx="863.0" cy="290.3" r="1.6"/><circle cx="856.5" cy="343.2" r="1.6"/><circle cx="503.1" cy="204.6" r="1.6"/><circle cx="352.8" cy="310.4" r="1.6"/><circle cx="473.8" cy="145.4" r="1.6"/><circle cx="198.5" cy="423.1" r="1.6"/><circle cx="558.9" cy="255.4" r="1.6"/><circle cx="863.3" cy="283.4" r="1.6"/><circle cx="704.1" cy="372.0" r="1.6"/><circle cx="813.7" cy="388.2" r="1.6"/><circle cx="928.8" cy="168.8" r="1.6"/><circle cx="863.6" cy="283.2" r="1.6"/><circle cx="355.6" cy="258.0" r="1.6"/><circle cx="440.2" cy="475.8" r="1.6"/><circle cx="466.5" cy="555.2" r="1.6"/><circle cx="862.5" cy="289.7" r="1.6"/><circle cx="50.9" cy="126.9" r="1.6"/><circle cx="894.6" cy="249.0" r="1.6"/><circle cx="119.8" cy="101.0" r="1.6"/><circle cx="226.5" cy="257.0" r="1.6"/><circle cx="915.4" cy="246.4" r="1.6"/><circle cx="856.6" cy="343.3" r="1.6"/><circle cx="120.3" cy="61.3" r="1.6"/></g><g class="mg" style="animation-delay:0.53s"><circle cx="188.4" cy="426.8" r="1.6"/><circle cx="188.4" cy="426.7" r="1.6"/><circle cx="877.9" cy="138.7" r="1.6"/><circle cx="25.9" cy="267.7" r="1.6"/><circle cx="817.2" cy="507.9" r="1.6"/><circle cx="481.2" cy="531.9" r="1.6"/><circle cx="819.2" cy="509.7" r="1.6"/><circle cx="25.8" cy="289.8" r="1.6"/><circle cx="862.9" cy="283.7" r="1.6"/><circle cx="863.1" cy="283.9" r="1.6"/><circle cx="753.0" cy="274.4" r="1.6"/><circle cx="116.0" cy="100.2" r="1.6"/><circle cx="42.8" cy="262.4" r="1.6"/><circle cx="564.2" cy="170.2" r="1.6"/><circle cx="25.9" cy="290.1" r="1.6"/><circle cx="910.0" cy="181.9" r="1.6"/><circle cx="754.4" cy="275.6" r="1.6"/><circle cx="504.0" cy="465.7" r="1.6"/><circle cx="862.0" cy="285.4" r="1.6"/><circle cx="863.1" cy="286.2" r="1.6"/><circle cx="810.0" cy="236.9" r="1.6"/><circle cx="81.6" cy="134.6" r="1.6"/><circle cx="87.4" cy="47.0" r="1.6"/><circle cx="83.7" cy="249.8" r="1.6"/><circle cx="517.5" cy="387.9" r="1.6"/><circle cx="754.4" cy="275.7" r="1.6"/><circle cx="863.3" cy="283.8" r="1.6"/><circle cx="309.3" cy="403.4" r="1.6"/><circle cx="554.9" cy="253.0" r="1.6"/><circle cx="820.3" cy="192.3" r="1.6"/><circle cx="587.0" cy="318.3" r="1.6"/><circle cx="820.7" cy="387.1" r="1.6"/><circle cx="461.3" cy="551.4" r="1.6"/><circle cx="514.8" cy="265.8" r="1.6"/><circle cx="353.3" cy="296.3" r="1.6"/><circle cx="908.0" cy="235.5" r="1.6"/><circle cx="862.9" cy="288.9" r="1.6"/><circle cx="862.8" cy="283.3" r="1.6"/><circle cx="440.2" cy="475.8" r="1.6"/><circle cx="660.9" cy="238.3" r="1.6"/><circle cx="861.3" cy="285.6" r="1.6"/><circle cx="869.7" cy="316.5" r="1.6"/><circle cx="915.0" cy="227.7" r="1.6"/><circle cx="501.0" cy="476.3" r="1.6"/><circle cx="661.7" cy="238.1" r="1.6"/><circle cx="661.9" cy="237.9" r="1.6"/><circle cx="499.4" cy="469.4" r="1.6"/><circle cx="736.5" cy="294.6" r="1.6"/><circle cx="116.0" cy="102.8" r="1.6"/><circle cx="873.4" cy="278.5" r="1.6"/><circle cx="492.1" cy="464.9" r="1.6"/><circle cx="353.2" cy="296.4" r="1.6"/><circle cx="440.1" cy="476.0" r="1.6"/><circle cx="90.5" cy="413.6" r="1.6"/><circle cx="526.5" cy="538.7" r="1.6"/><circle cx="349.4" cy="288.0" r="1.6"/><circle cx="863.1" cy="283.8" r="1.6"/><circle cx="461.2" cy="551.4" r="1.6"/><circle cx="200.5" cy="429.6" r="1.6"/><circle cx="636.2" cy="476.0" r="1.6"/><circle cx="440.1" cy="475.8" r="1.6"/><circle cx="863.3" cy="284.0" r="1.6"/><circle cx="840.6" cy="188.3" r="1.6"/><circle cx="65.9" cy="95.0" r="1.6"/><circle cx="874.2" cy="319.7" r="1.6"/><circle cx="562.2" cy="251.5" r="1.6"/><circle cx="863.0" cy="283.9" r="1.6"/><circle cx="83.6" cy="249.9" r="1.6"/><circle cx="633.5" cy="213.9" r="1.6"/><circle cx="458.2" cy="551.9" r="1.6"/><circle cx="761.2" cy="274.8" r="1.6"/><circle cx="657.1" cy="243.1" r="1.6"/><circle cx="87.3" cy="47.1" r="1.6"/><circle cx="874.0" cy="319.9" r="1.6"/><circle cx="864.7" cy="284.9" r="1.6"/><circle cx="116.0" cy="102.8" r="1.6"/></g><g class="mg" style="animation-delay:0.63s"><circle cx="25.8" cy="290.2" r="1.6"/><circle cx="909.3" cy="235.1" r="1.6"/><circle cx="862.9" cy="283.5" r="1.6"/><circle cx="847.5" cy="286.5" r="1.6"/><circle cx="461.2" cy="551.4" r="1.6"/><circle cx="862.9" cy="282.7" r="1.6"/><circle cx="25.8" cy="290.2" r="1.6"/><circle cx="120.4" cy="61.3" r="1.6"/><circle cx="862.9" cy="283.3" r="1.6"/><circle cx="440.1" cy="476.0" r="1.6"/><circle cx="761.2" cy="274.7" r="1.6"/><circle cx="637.7" cy="471.4" r="1.6"/><circle cx="352.4" cy="295.6" r="1.6"/><circle cx="894.4" cy="249.2" r="1.6"/><circle cx="556.7" cy="254.9" r="1.6"/><circle cx="521.0" cy="264.3" r="1.6"/><circle cx="862.6" cy="283.6" r="1.6"/><circle cx="119.8" cy="100.9" r="1.6"/><circle cx="171.6" cy="67.1" r="1.6"/><circle cx="440.1" cy="476.0" r="1.6"/><circle cx="497.4" cy="467.7" r="1.6"/><circle cx="587.7" cy="172.1" r="1.6"/><circle cx="503.4" cy="204.8" r="1.6"/><circle cx="188.3" cy="426.1" r="1.6"/><circle cx="863.4" cy="284.1" r="1.6"/><circle cx="481.5" cy="533.4" r="1.6"/><circle cx="64.5" cy="92.8" r="1.6"/><circle cx="457.8" cy="552.0" r="1.6"/><circle cx="746.0" cy="432.8" r="1.6"/><circle cx="696.6" cy="377.6" r="1.6"/><circle cx="25.2" cy="290.1" r="1.6"/><circle cx="764.6" cy="434.5" r="1.6"/><circle cx="863.4" cy="290.2" r="1.6"/><circle cx="458.2" cy="551.9" r="1.6"/><circle cx="518.5" cy="262.3" r="1.6"/><circle cx="703.0" cy="410.5" r="1.6"/><circle cx="747.9" cy="220.3" r="1.6"/><circle cx="504.1" cy="465.8" r="1.6"/><circle cx="556.0" cy="255.1" r="1.6"/><circle cx="863.4" cy="290.2" r="1.6"/><circle cx="87.2" cy="50.1" r="1.6"/><circle cx="352.2" cy="127.8" r="1.6"/><circle cx="863.2" cy="283.2" r="1.6"/><circle cx="520.9" cy="264.3" r="1.6"/><circle cx="125.4" cy="66.5" r="1.6"/><circle cx="862.4" cy="289.6" r="1.6"/><circle cx="858.9" cy="418.0" r="1.6"/><circle cx="125.0" cy="100.7" r="1.6"/><circle cx="501.2" cy="470.5" r="1.6"/><circle cx="440.1" cy="475.8" r="1.6"/><circle cx="198.4" cy="431.2" r="1.6"/><circle cx="25.8" cy="290.2" r="1.6"/><circle cx="756.6" cy="273.9" r="1.6"/><circle cx="27.0" cy="287.6" r="1.6"/><circle cx="307.3" cy="402.3" r="1.6"/><circle cx="862.3" cy="284.5" r="1.6"/><circle cx="120.2" cy="100.2" r="1.6"/><circle cx="913.6" cy="227.2" r="1.6"/><circle cx="144.7" cy="352.4" r="1.6"/><circle cx="125.8" cy="102.7" r="1.6"/><circle cx="908.4" cy="180.2" r="1.6"/><circle cx="83.8" cy="249.8" r="1.6"/><circle cx="813.7" cy="389.3" r="1.6"/><circle cx="662.7" cy="240.0" r="1.6"/><circle cx="514.7" cy="265.4" r="1.6"/><circle cx="64.3" cy="92.2" r="1.6"/><circle cx="862.3" cy="602.7" r="1.6"/><circle cx="862.8" cy="283.7" r="1.6"/><circle cx="197.4" cy="431.9" r="1.6"/><circle cx="514.7" cy="263.2" r="1.6"/><circle cx="659.7" cy="243.0" r="1.6"/><circle cx="861.2" cy="283.0" r="1.6"/><circle cx="148.8" cy="353.2" r="1.6"/><circle cx="195.5" cy="427.9" r="1.6"/><circle cx="862.8" cy="283.6" r="1.6"/><circle cx="745.4" cy="215.5" r="1.6"/></g><g class="mg" style="animation-delay:0.73s"><circle cx="747.9" cy="428.6" r="1.6"/><circle cx="120.5" cy="100.1" r="1.6"/><circle cx="863.8" cy="285.3" r="1.6"/><circle cx="907.7" cy="235.8" r="1.6"/><circle cx="915.0" cy="228.0" r="1.6"/><circle cx="862.9" cy="283.0" r="1.6"/><circle cx="148.0" cy="350.8" r="1.6"/><circle cx="862.8" cy="283.3" r="1.6"/><circle cx="355.6" cy="258.0" r="1.6"/><circle cx="761.7" cy="273.8" r="1.6"/><circle cx="558.6" cy="255.5" r="1.6"/><circle cx="63.9" cy="92.3" r="1.6"/><circle cx="196.2" cy="428.5" r="1.6"/><circle cx="501.4" cy="470.5" r="1.6"/><circle cx="180.3" cy="333.7" r="1.6"/><circle cx="862.4" cy="283.6" r="1.6"/><circle cx="750.8" cy="425.5" r="1.6"/><circle cx="125.0" cy="100.7" r="1.6"/><circle cx="61.2" cy="92.6" r="1.6"/><circle cx="520.9" cy="264.3" r="1.6"/><circle cx="753.6" cy="276.0" r="1.6"/><circle cx="357.6" cy="259.7" r="1.6"/><circle cx="124.1" cy="102.5" r="1.6"/><circle cx="862.0" cy="285.4" r="1.6"/><circle cx="203.3" cy="430.9" r="1.6"/><circle cx="863.2" cy="283.4" r="1.6"/><circle cx="26.5" cy="285.9" r="1.6"/><circle cx="144.8" cy="352.2" r="1.6"/><circle cx="925.2" cy="217.1" r="1.6"/><circle cx="92.7" cy="98.7" r="1.6"/><circle cx="223.6" cy="261.8" r="1.6"/><circle cx="634.2" cy="213.8" r="1.6"/><circle cx="481.7" cy="533.3" r="1.6"/><circle cx="148.0" cy="350.9" r="1.6"/><circle cx="806.3" cy="525.7" r="1.6"/><circle cx="863.3" cy="284.1" r="1.6"/><circle cx="913.7" cy="226.9" r="1.6"/><circle cx="862.9" cy="288.9" r="1.6"/><circle cx="124.1" cy="102.6" r="1.6"/><circle cx="520.5" cy="389.1" r="1.6"/><circle cx="521.0" cy="264.2" r="1.6"/><circle cx="64.2" cy="92.4" r="1.6"/><circle cx="509.3" cy="441.4" r="1.6"/><circle cx="863.3" cy="290.5" r="1.6"/><circle cx="501.1" cy="476.4" r="1.6"/><circle cx="520.2" cy="538.2" r="1.6"/><circle cx="461.2" cy="551.4" r="1.6"/><circle cx="754.4" cy="275.6" r="1.6"/><circle cx="87.3" cy="50.1" r="1.6"/><circle cx="144.8" cy="352.2" r="1.6"/><circle cx="200.5" cy="429.6" r="1.6"/><circle cx="357.5" cy="259.6" r="1.6"/><circle cx="440.1" cy="475.9" r="1.6"/><circle cx="751.7" cy="424.8" r="1.6"/><circle cx="891.0" cy="237.0" r="1.6"/><circle cx="557.4" cy="256.0" r="1.6"/><circle cx="862.3" cy="289.6" r="1.6"/><circle cx="120.0" cy="61.2" r="1.6"/><circle cx="862.8" cy="283.4" r="1.6"/><circle cx="668.2" cy="241.0" r="1.6"/><circle cx="541.9" cy="310.5" r="1.6"/><circle cx="863.7" cy="284.3" r="1.6"/><circle cx="754.7" cy="276.6" r="1.6"/><circle cx="227.7" cy="252.1" r="1.6"/><circle cx="862.2" cy="289.3" r="1.6"/><circle cx="120.5" cy="100.1" r="1.6"/><circle cx="23.5" cy="276.9" r="1.6"/><circle cx="862.4" cy="289.7" r="1.6"/><circle cx="22.6" cy="278.5" r="1.6"/><circle cx="557.4" cy="255.9" r="1.6"/><circle cx="863.7" cy="284.2" r="1.6"/><circle cx="25.6" cy="290.4" r="1.6"/><circle cx="838.8" cy="439.2" r="1.6"/><circle cx="862.2" cy="289.7" r="1.6"/><circle cx="196.3" cy="427.1" r="1.6"/><circle cx="756.0" cy="424.8" r="1.6"/></g><g class="mg" style="animation-delay:0.84s"><circle cx="461.3" cy="551.4" r="1.6"/><circle cx="867.6" cy="285.2" r="1.6"/><circle cx="696.7" cy="383.6" r="1.6"/><circle cx="564.6" cy="170.6" r="1.6"/><circle cx="862.4" cy="283.7" r="1.6"/><circle cx="754.5" cy="275.8" r="1.6"/><circle cx="543.5" cy="309.6" r="1.6"/><circle cx="861.0" cy="289.3" r="1.6"/><circle cx="87.3" cy="47.1" r="1.6"/><circle cx="363.4" cy="495.6" r="1.6"/><circle cx="126.4" cy="100.2" r="1.6"/><circle cx="860.7" cy="282.6" r="1.6"/><circle cx="856.6" cy="343.4" r="1.6"/><circle cx="199.1" cy="430.9" r="1.6"/><circle cx="543.9" cy="315.1" r="1.6"/><circle cx="718.6" cy="214.7" r="1.6"/><circle cx="863.1" cy="283.9" r="1.6"/><circle cx="118.9" cy="100.3" r="1.6"/><circle cx="916.5" cy="229.2" r="1.6"/><circle cx="499.6" cy="469.5" r="1.6"/><circle cx="457.8" cy="552.1" r="1.6"/><circle cx="481.3" cy="533.4" r="1.6"/><circle cx="460.4" cy="550.7" r="1.6"/><circle cx="862.8" cy="283.5" r="1.6"/><circle cx="440.1" cy="476.0" r="1.6"/><circle cx="863.1" cy="283.8" r="1.6"/><circle cx="839.5" cy="301.9" r="1.6"/><circle cx="461.3" cy="551.4" r="1.6"/><circle cx="748.1" cy="435.6" r="1.6"/><circle cx="860.2" cy="289.1" r="1.6"/><circle cx="120.3" cy="61.3" r="1.6"/><circle cx="87.2" cy="50.1" r="1.6"/><circle cx="456.3" cy="551.7" r="1.6"/><circle cx="761.4" cy="274.6" r="1.6"/><circle cx="356.1" cy="494.6" r="1.6"/><circle cx="862.5" cy="284.0" r="1.6"/><circle cx="120.4" cy="100.4" r="1.6"/><circle cx="126.4" cy="100.2" r="1.6"/><circle cx="715.7" cy="324.6" r="1.6"/><circle cx="28.1" cy="294.2" r="1.6"/><circle cx="775.6" cy="236.7" r="1.6"/><circle cx="862.9" cy="283.4" r="1.6"/><circle cx="307.2" cy="402.1" r="1.6"/><circle cx="563.3" cy="251.6" r="1.6"/><circle cx="196.3" cy="427.1" r="1.6"/><circle cx="83.8" cy="249.8" r="1.6"/><circle cx="89.6" cy="131.3" r="1.6"/><circle cx="863.1" cy="284.0" r="1.6"/><circle cx="862.8" cy="283.6" r="1.6"/><circle cx="648.3" cy="241.8" r="1.6"/><circle cx="226.5" cy="257.0" r="1.6"/><circle cx="860.7" cy="282.6" r="1.6"/><circle cx="686.5" cy="368.4" r="1.6"/><circle cx="863.3" cy="283.9" r="1.6"/><circle cx="25.8" cy="290.2" r="1.6"/><circle cx="439.9" cy="476.0" r="1.6"/><circle cx="753.1" cy="274.8" r="1.6"/><circle cx="862.8" cy="283.3" r="1.6"/><circle cx="125.2" cy="66.5" r="1.6"/><circle cx="540.4" cy="319.5" r="1.6"/><circle cx="120.0" cy="100.2" r="1.6"/><circle cx="198.9" cy="423.0" r="1.6"/><circle cx="750.2" cy="432.5" r="1.6"/><circle cx="225.6" cy="253.3" r="1.6"/><circle cx="119.6" cy="100.3" r="1.6"/><circle cx="863.3" cy="283.3" r="1.6"/><circle cx="748.0" cy="220.3" r="1.6"/><circle cx="440.0" cy="476.0" r="1.6"/><circle cx="63.8" cy="92.3" r="1.6"/><circle cx="518.7" cy="262.4" r="1.6"/><circle cx="862.9" cy="283.3" r="1.6"/><circle cx="863.6" cy="284.2" r="1.6"/><circle cx="863.0" cy="286.2" r="1.6"/><circle cx="558.9" cy="255.4" r="1.6"/><circle cx="877.9" cy="277.4" r="1.6"/><circle cx="862.5" cy="290.0" r="1.6"/></g><g class="mg" style="animation-delay:0.94s"><circle cx="810.0" cy="236.9" r="1.6"/><circle cx="482.3" cy="526.4" r="1.6"/><circle cx="120.5" cy="100.4" r="1.6"/><circle cx="25.2" cy="290.0" r="1.6"/><circle cx="874.1" cy="319.6" r="1.6"/><circle cx="660.5" cy="285.0" r="1.6"/><circle cx="663.7" cy="239.5" r="1.6"/><circle cx="198.5" cy="428.3" r="1.6"/><circle cx="502.9" cy="466.1" r="1.6"/><circle cx="702.9" cy="410.8" r="1.6"/><circle cx="862.5" cy="284.0" r="1.6"/><circle cx="862.5" cy="284.0" r="1.6"/><circle cx="761.3" cy="273.8" r="1.6"/><circle cx="862.4" cy="284.0" r="1.6"/><circle cx="465.3" cy="545.6" r="1.6"/><circle cx="862.8" cy="283.6" r="1.6"/><circle cx="907.9" cy="235.7" r="1.6"/><circle cx="863.9" cy="285.7" r="1.6"/><circle cx="907.1" cy="234.8" r="1.6"/><circle cx="568.1" cy="176.3" r="1.6"/><circle cx="22.0" cy="287.7" r="1.6"/><circle cx="632.8" cy="411.1" r="1.6"/><circle cx="25.9" cy="290.2" r="1.6"/><circle cx="796.2" cy="245.0" r="1.6"/><circle cx="855.9" cy="299.0" r="1.6"/><circle cx="862.0" cy="285.4" r="1.6"/><circle cx="25.5" cy="289.5" r="1.6"/><circle cx="356.8" cy="259.2" r="1.6"/><circle cx="863.0" cy="290.1" r="1.6"/><circle cx="867.8" cy="285.0" r="1.6"/><circle cx="501.0" cy="476.4" r="1.6"/><circle cx="761.3" cy="273.8" r="1.6"/><circle cx="795.7" cy="387.6" r="1.6"/><circle cx="795.7" cy="387.6" r="1.6"/><circle cx="787.4" cy="401.4" r="1.6"/><circle cx="860.6" cy="282.5" r="1.6"/><circle cx="197.4" cy="431.7" r="1.6"/><circle cx="892.4" cy="215.8" r="1.6"/><circle cx="558.8" cy="173.7" r="1.6"/><circle cx="197.4" cy="431.8" r="1.6"/><circle cx="703.8" cy="290.2" r="1.6"/><circle cx="862.9" cy="284.1" r="1.6"/><circle cx="746.5" cy="433.2" r="1.6"/><circle cx="689.1" cy="243.1" r="1.6"/><circle cx="125.2" cy="66.6" r="1.6"/><circle cx="203.0" cy="430.9" r="1.6"/><circle cx="746.2" cy="432.8" r="1.6"/><circle cx="863.8" cy="285.4" r="1.6"/><circle cx="908.7" cy="235.3" r="1.6"/><circle cx="148.4" cy="349.9" r="1.6"/><circle cx="90.2" cy="421.3" r="1.6"/><circle cx="27.2" cy="289.9" r="1.6"/><circle cx="760.2" cy="273.7" r="1.6"/><circle cx="520.9" cy="264.3" r="1.6"/><circle cx="458.2" cy="552.0" r="1.6"/><circle cx="893.2" cy="248.7" r="1.6"/><circle cx="120.0" cy="60.9" r="1.6"/><circle cx="839.5" cy="436.6" r="1.6"/><circle cx="876.3" cy="228.9" r="1.6"/><circle cx="865.5" cy="284.7" r="1.6"/><circle cx="862.7" cy="290.4" r="1.6"/><circle cx="25.8" cy="290.2" r="1.6"/><circle cx="862.5" cy="283.6" r="1.6"/><circle cx="125.4" cy="66.4" r="1.6"/><circle cx="752.0" cy="423.9" r="1.6"/><circle cx="839.6" cy="436.6" r="1.6"/><circle cx="461.4" cy="551.2" r="1.6"/><circle cx="439.9" cy="476.0" r="1.6"/><circle cx="556.0" cy="255.0" r="1.6"/><circle cx="627.5" cy="200.2" r="1.6"/><circle cx="863.6" cy="284.3" r="1.6"/><circle cx="460.7" cy="550.7" r="1.6"/><circle cx="144.9" cy="352.4" r="1.6"/><circle cx="26.3" cy="289.2" r="1.6"/><circle cx="89.8" cy="131.8" r="1.6"/><circle cx="863.5" cy="286.4" r="1.6"/></g><g class="mg" style="animation-delay:1.05s"><circle cx="862.7" cy="284.1" r="1.6"/><circle cx="504.0" cy="461.9" r="1.6"/><circle cx="915.9" cy="228.2" r="1.6"/><circle cx="953.7" cy="170.0" r="1.6"/><circle cx="863.6" cy="291.0" r="1.6"/><circle cx="863.0" cy="286.2" r="1.6"/><circle cx="439.8" cy="476.0" r="1.6"/><circle cx="863.3" cy="284.2" r="1.6"/><circle cx="124.2" cy="66.6" r="1.6"/><circle cx="514.8" cy="265.8" r="1.6"/><circle cx="501.2" cy="476.5" r="1.6"/><circle cx="201.9" cy="430.5" r="1.6"/><circle cx="119.8" cy="100.9" r="1.6"/><circle cx="481.9" cy="481.1" r="1.6"/><circle cx="731.9" cy="302.4" r="1.6"/><circle cx="863.6" cy="283.3" r="1.6"/><circle cx="862.7" cy="284.1" r="1.6"/><circle cx="197.5" cy="431.8" r="1.6"/><circle cx="862.4" cy="285.1" r="1.6"/><circle cx="194.9" cy="427.7" r="1.6"/><circle cx="440.1" cy="475.9" r="1.6"/><circle cx="562.3" cy="251.4" r="1.6"/><circle cx="195.0" cy="427.7" r="1.6"/><circle cx="862.5" cy="283.9" r="1.6"/><circle cx="980.0" cy="54.5" r="1.6"/><circle cx="863.0" cy="284.1" r="1.6"/><circle cx="861.7" cy="289.8" r="1.6"/><circle cx="201.5" cy="427.4" r="1.6"/><circle cx="746.5" cy="433.9" r="1.6"/><circle cx="695.1" cy="234.9" r="1.6"/><circle cx="25.5" cy="289.5" r="1.6"/><circle cx="863.8" cy="284.1" r="1.6"/><circle cx="862.9" cy="283.4" r="1.6"/><circle cx="748.5" cy="440.3" r="1.6"/><circle cx="810.0" cy="236.9" r="1.6"/><circle cx="745.3" cy="379.3" r="1.6"/><circle cx="810.0" cy="237.0" r="1.6"/><circle cx="473.8" cy="145.3" r="1.6"/><circle cx="746.5" cy="433.2" r="1.6"/><circle cx="816.6" cy="190.7" r="1.6"/><circle cx="28.1" cy="294.3" r="1.6"/><circle cx="502.9" cy="466.0" r="1.6"/><circle cx="720.1" cy="407.3" r="1.6"/><circle cx="355.6" cy="257.9" r="1.6"/><circle cx="501.1" cy="470.6" r="1.6"/><circle cx="865.6" cy="284.7" r="1.6"/><circle cx="502.9" cy="466.0" r="1.6"/><circle cx="862.4" cy="285.1" r="1.6"/><circle cx="856.5" cy="343.2" r="1.6"/><circle cx="357.5" cy="259.6" r="1.6"/><circle cx="27.2" cy="289.9" r="1.6"/><circle cx="956.2" cy="161.8" r="1.6"/><circle cx="863.3" cy="283.1" r="1.6"/><circle cx="762.1" cy="367.2" r="1.6"/><circle cx="25.2" cy="290.0" r="1.6"/><circle cx="519.6" cy="263.4" r="1.6"/><circle cx="87.3" cy="50.2" r="1.6"/><circle cx="810.4" cy="564.5" r="1.6"/><circle cx="556.7" cy="254.9" r="1.6"/><circle cx="367.0" cy="506.0" r="1.6"/><circle cx="64.3" cy="92.1" r="1.6"/><circle cx="87.3" cy="50.1" r="1.6"/><circle cx="684.2" cy="274.8" r="1.6"/><circle cx="355.5" cy="257.9" r="1.6"/><circle cx="915.9" cy="228.2" r="1.6"/><circle cx="795.7" cy="387.6" r="1.6"/><circle cx="861.2" cy="283.2" r="1.6"/><circle cx="64.4" cy="92.8" r="1.6"/><circle cx="861.3" cy="363.5" r="1.6"/><circle cx="750.7" cy="432.0" r="1.6"/><circle cx="863.3" cy="283.4" r="1.6"/><circle cx="63.4" cy="92.8" r="1.6"/><circle cx="798.9" cy="372.6" r="1.6"/><circle cx="515.8" cy="260.2" r="1.6"/><circle cx="63.9" cy="92.5" r="1.6"/><circle cx="908.9" cy="235.0" r="1.6"/></g><g class="mg" style="animation-delay:1.16s"><circle cx="869.8" cy="289.2" r="1.6"/><circle cx="863.0" cy="283.8" r="1.6"/><circle cx="915.0" cy="228.0" r="1.6"/><circle cx="473.8" cy="145.3" r="1.6"/><circle cx="735.8" cy="496.4" r="1.6"/><circle cx="25.9" cy="290.2" r="1.6"/><circle cx="862.6" cy="283.7" r="1.6"/><circle cx="214.8" cy="463.9" r="1.6"/><circle cx="862.7" cy="283.5" r="1.6"/><circle cx="461.7" cy="274.4" r="1.6"/><circle cx="863.1" cy="284.1" r="1.6"/><circle cx="500.9" cy="476.5" r="1.6"/><circle cx="125.4" cy="66.7" r="1.6"/><circle cx="809.9" cy="257.4" r="1.6"/><circle cx="197.5" cy="431.8" r="1.6"/><circle cx="28.2" cy="275.6" r="1.6"/><circle cx="863.2" cy="283.8" r="1.6"/><circle cx="761.2" cy="274.7" r="1.6"/><circle cx="856.5" cy="343.3" r="1.6"/><circle cx="860.2" cy="289.1" r="1.6"/><circle cx="515.8" cy="264.5" r="1.6"/><circle cx="874.1" cy="319.7" r="1.6"/><circle cx="120.0" cy="61.2" r="1.6"/><circle cx="862.6" cy="283.9" r="1.6"/><circle cx="861.3" cy="285.6" r="1.6"/><circle cx="27.2" cy="289.9" r="1.6"/><circle cx="863.6" cy="284.3" r="1.6"/><circle cx="460.1" cy="550.5" r="1.6"/><circle cx="863.9" cy="285.6" r="1.6"/><circle cx="625.6" cy="323.4" r="1.6"/><circle cx="760.2" cy="273.7" r="1.6"/><circle cx="761.3" cy="273.6" r="1.6"/><circle cx="667.3" cy="241.3" r="1.6"/><circle cx="83.9" cy="249.8" r="1.6"/><circle cx="197.4" cy="431.9" r="1.6"/><circle cx="746.2" cy="432.8" r="1.6"/><circle cx="305.1" cy="484.3" r="1.6"/><circle cx="874.2" cy="319.7" r="1.6"/><circle cx="911.9" cy="221.1" r="1.6"/><circle cx="661.9" cy="237.9" r="1.6"/><circle cx="504.0" cy="465.1" r="1.6"/><circle cx="521.0" cy="264.3" r="1.6"/><circle cx="473.8" cy="145.3" r="1.6"/><circle cx="863.8" cy="285.4" r="1.6"/><circle cx="860.6" cy="282.5" r="1.6"/><circle cx="148.0" cy="348.2" r="1.6"/><circle cx="125.5" cy="66.4" r="1.6"/><circle cx="125.6" cy="102.6" r="1.6"/><circle cx="874.1" cy="319.7" r="1.6"/><circle cx="863.7" cy="284.3" r="1.6"/><circle cx="25.6" cy="290.1" r="1.6"/><circle cx="124.3" cy="66.5" r="1.6"/><circle cx="563.3" cy="476.7" r="1.6"/><circle cx="908.7" cy="235.3" r="1.6"/><circle cx="439.8" cy="476.0" r="1.6"/><circle cx="244.6" cy="214.2" r="1.6"/><circle cx="526.9" cy="402.2" r="1.6"/><circle cx="355.9" cy="292.3" r="1.6"/><circle cx="497.4" cy="467.7" r="1.6"/><circle cx="863.2" cy="283.3" r="1.6"/><circle cx="780.2" cy="247.1" r="1.6"/><circle cx="863.6" cy="284.2" r="1.6"/><circle cx="862.7" cy="283.5" r="1.6"/><circle cx="556.0" cy="255.0" r="1.6"/><circle cx="126.4" cy="100.2" r="1.6"/><circle cx="353.1" cy="293.9" r="1.6"/><circle cx="862.5" cy="283.5" r="1.6"/><circle cx="25.9" cy="290.2" r="1.6"/><circle cx="197.5" cy="431.8" r="1.6"/><circle cx="461.2" cy="551.4" r="1.6"/><circle cx="440.2" cy="476.0" r="1.6"/><circle cx="862.6" cy="283.6" r="1.6"/><circle cx="120.1" cy="61.0" r="1.6"/><circle cx="862.5" cy="283.7" r="1.6"/><circle cx="543.9" cy="507.0" r="1.6"/><circle cx="686.3" cy="368.4" r="1.6"/></g><g class="mg" style="animation-delay:1.26s"><circle cx="515.8" cy="260.3" r="1.6"/><circle cx="127.0" cy="100.2" r="1.6"/><circle cx="226.9" cy="256.3" r="1.6"/><circle cx="503.5" cy="462.9" r="1.6"/><circle cx="119.8" cy="61.5" r="1.6"/><circle cx="863.8" cy="284.1" r="1.6"/><circle cx="862.6" cy="283.7" r="1.6"/><circle cx="619.7" cy="524.9" r="1.6"/><circle cx="863.0" cy="290.3" r="1.6"/><circle cx="900.0" cy="255.3" r="1.6"/><circle cx="862.8" cy="290.4" r="1.6"/><circle cx="87.1" cy="46.9" r="1.6"/><circle cx="862.4" cy="283.7" r="1.6"/><circle cx="440.1" cy="476.0" r="1.6"/><circle cx="92.9" cy="98.4" r="1.6"/><circle cx="242.3" cy="176.4" r="1.6"/><circle cx="862.9" cy="283.3" r="1.6"/><circle cx="661.5" cy="238.1" r="1.6"/><circle cx="753.1" cy="274.7" r="1.6"/><circle cx="166.3" cy="66.4" r="1.6"/><circle cx="298.0" cy="469.8" r="1.6"/><circle cx="862.8" cy="283.3" r="1.6"/><circle cx="861.3" cy="285.5" r="1.6"/><circle cx="860.3" cy="289.1" r="1.6"/><circle cx="520.9" cy="264.3" r="1.6"/><circle cx="20.6" cy="278.1" r="1.6"/><circle cx="915.1" cy="227.8" r="1.6"/><circle cx="862.8" cy="288.9" r="1.6"/><circle cx="440.2" cy="475.9" r="1.6"/><circle cx="504.0" cy="465.7" r="1.6"/><circle cx="863.5" cy="283.2" r="1.6"/><circle cx="514.7" cy="265.3" r="1.6"/><circle cx="856.5" cy="343.4" r="1.6"/><circle cx="558.9" cy="255.4" r="1.6"/><circle cx="696.6" cy="384.9" r="1.6"/><circle cx="492.1" cy="465.0" r="1.6"/><circle cx="322.4" cy="389.4" r="1.6"/><circle cx="761.6" cy="274.5" r="1.6"/><circle cx="862.4" cy="289.6" r="1.6"/><circle cx="689.1" cy="243.1" r="1.6"/><circle cx="355.4" cy="257.9" r="1.6"/><circle cx="198.2" cy="423.5" r="1.6"/><circle cx="657.0" cy="243.3" r="1.6"/><circle cx="67.8" cy="94.4" r="1.6"/><circle cx="700.7" cy="446.5" r="1.6"/><circle cx="661.9" cy="237.8" r="1.6"/><circle cx="439.9" cy="476.0" r="1.6"/><circle cx="780.8" cy="385.5" r="1.6"/><circle cx="915.2" cy="221.0" r="1.6"/><circle cx="619.7" cy="524.9" r="1.6"/><circle cx="862.9" cy="286.0" r="1.6"/><circle cx="461.3" cy="551.4" r="1.6"/><circle cx="481.3" cy="533.5" r="1.6"/><circle cx="227.4" cy="250.0" r="1.6"/><circle cx="874.5" cy="319.8" r="1.6"/><circle cx="750.4" cy="432.2" r="1.6"/><circle cx="862.1" cy="289.7" r="1.6"/><circle cx="25.8" cy="289.4" r="1.6"/><circle cx="145.0" cy="352.3" r="1.6"/><circle cx="460.3" cy="550.7" r="1.6"/><circle cx="269.6" cy="264.3" r="1.6"/><circle cx="763.7" cy="282.7" r="1.6"/><circle cx="461.2" cy="551.4" r="1.6"/><circle cx="353.3" cy="295.7" r="1.6"/><circle cx="863.2" cy="283.3" r="1.6"/><circle cx="757.6" cy="280.3" r="1.6"/><circle cx="862.9" cy="283.4" r="1.6"/><circle cx="504.2" cy="465.8" r="1.6"/><circle cx="540.7" cy="319.1" r="1.6"/><circle cx="144.8" cy="352.4" r="1.6"/><circle cx="63.9" cy="92.3" r="1.6"/><circle cx="754.4" cy="275.6" r="1.6"/><circle cx="862.1" cy="289.7" r="1.6"/><circle cx="194.8" cy="421.1" r="1.6"/><circle cx="440.0" cy="476.0" r="1.6"/><circle cx="839.7" cy="436.5" r="1.6"/></g><g class="mg" style="animation-delay:1.36s"><circle cx="857.4" cy="291.6" r="1.6"/><circle cx="810.0" cy="236.9" r="1.6"/><circle cx="871.3" cy="284.7" r="1.6"/><circle cx="810.0" cy="236.9" r="1.6"/><circle cx="504.0" cy="461.8" r="1.6"/><circle cx="127.0" cy="100.2" r="1.6"/><circle cx="696.2" cy="384.1" r="1.6"/><circle cx="863.8" cy="285.7" r="1.6"/><circle cx="862.7" cy="286.1" r="1.6"/><circle cx="838.7" cy="328.2" r="1.6"/><circle cx="24.9" cy="289.3" r="1.6"/><circle cx="862.4" cy="283.9" r="1.6"/><circle cx="92.7" cy="98.8" r="1.6"/><circle cx="916.8" cy="230.6" r="1.6"/><circle cx="26.0" cy="290.6" r="1.6"/><circle cx="125.2" cy="66.6" r="1.6"/><circle cx="355.4" cy="258.0" r="1.6"/><circle cx="867.8" cy="285.0" r="1.6"/><circle cx="119.8" cy="61.5" r="1.6"/><circle cx="861.9" cy="285.6" r="1.6"/><circle cx="484.9" cy="404.4" r="1.6"/><circle cx="125.5" cy="66.5" r="1.6"/><circle cx="876.3" cy="228.9" r="1.6"/><circle cx="862.4" cy="283.9" r="1.6"/><circle cx="689.2" cy="243.0" r="1.6"/><circle cx="862.4" cy="289.3" r="1.6"/><circle cx="120.5" cy="100.1" r="1.6"/><circle cx="460.5" cy="550.6" r="1.6"/><circle cx="746.4" cy="433.0" r="1.6"/><circle cx="753.7" cy="276.0" r="1.6"/><circle cx="145.0" cy="352.3" r="1.6"/><circle cx="862.4" cy="285.1" r="1.6"/><circle cx="637.9" cy="471.4" r="1.6"/><circle cx="501.3" cy="476.4" r="1.6"/><circle cx="303.9" cy="408.3" r="1.6"/><circle cx="744.0" cy="464.3" r="1.6"/><circle cx="25.5" cy="290.2" r="1.6"/><circle cx="810.0" cy="236.9" r="1.6"/><circle cx="514.9" cy="265.6" r="1.6"/><circle cx="862.8" cy="290.4" r="1.6"/><circle cx="440.1" cy="476.0" r="1.6"/><circle cx="353.0" cy="295.6" r="1.6"/><circle cx="72.2" cy="390.0" r="1.6"/><circle cx="861.7" cy="289.5" r="1.6"/><circle cx="542.1" cy="310.3" r="1.6"/><circle cx="25.7" cy="290.4" r="1.6"/><circle cx="839.7" cy="436.6" r="1.6"/><circle cx="89.6" cy="131.5" r="1.6"/><circle cx="440.0" cy="476.0" r="1.6"/><circle cx="862.9" cy="284.1" r="1.6"/><circle cx="862.3" cy="285.1" r="1.6"/><circle cx="862.8" cy="283.5" r="1.6"/><circle cx="862.0" cy="285.4" r="1.6"/><circle cx="127.1" cy="100.3" r="1.6"/><circle cx="816.6" cy="190.6" r="1.6"/><circle cx="25.7" cy="289.8" r="1.6"/><circle cx="554.5" cy="299.1" r="1.6"/><circle cx="915.4" cy="246.4" r="1.6"/><circle cx="746.3" cy="433.0" r="1.6"/><circle cx="861.5" cy="616.0" r="1.6"/><circle cx="503.5" cy="462.8" r="1.6"/><circle cx="188.4" cy="426.8" r="1.6"/><circle cx="355.5" cy="257.9" r="1.6"/><circle cx="810.0" cy="237.0" r="1.6"/><circle cx="862.5" cy="285.0" r="1.6"/><circle cx="74.7" cy="383.5" r="1.6"/><circle cx="125.7" cy="102.7" r="1.6"/><circle cx="25.8" cy="290.1" r="1.6"/><circle cx="862.7" cy="283.4" r="1.6"/><circle cx="862.4" cy="284.0" r="1.6"/><circle cx="761.0" cy="274.8" r="1.6"/><circle cx="863.3" cy="290.5" r="1.6"/><circle cx="629.8" cy="196.6" r="1.6"/><circle cx="25.9" cy="290.3" r="1.6"/><circle cx="520.9" cy="264.3" r="1.6"/><circle cx="491.9" cy="465.5" r="1.6"/></g><g class="mg" style="animation-delay:1.47s"><circle cx="440.2" cy="476.0" r="1.6"/><circle cx="862.9" cy="283.4" r="1.6"/><circle cx="720.1" cy="407.3" r="1.6"/><circle cx="746.4" cy="433.1" r="1.6"/><circle cx="46.2" cy="264.8" r="1.6"/><circle cx="752.3" cy="423.8" r="1.6"/><circle cx="481.3" cy="533.5" r="1.6"/><circle cx="867.1" cy="182.5" r="1.6"/><circle cx="839.6" cy="436.6" r="1.6"/><circle cx="64.6" cy="92.7" r="1.6"/><circle cx="862.9" cy="286.0" r="1.6"/><circle cx="124.1" cy="66.5" r="1.6"/><circle cx="862.5" cy="283.5" r="1.6"/><circle cx="863.2" cy="286.3" r="1.6"/><circle cx="821.0" cy="557.5" r="1.6"/><circle cx="876.1" cy="275.9" r="1.6"/><circle cx="862.7" cy="283.8" r="1.6"/><circle cx="814.1" cy="389.0" r="1.6"/><circle cx="355.8" cy="292.4" r="1.6"/><circle cx="743.6" cy="425.5" r="1.6"/><circle cx="862.1" cy="289.6" r="1.6"/><circle cx="25.9" cy="290.1" r="1.6"/><circle cx="81.3" cy="375.5" r="1.6"/><circle cx="839.7" cy="436.6" r="1.6"/><circle cx="562.6" cy="174.7" r="1.6"/><circle cx="83.9" cy="249.8" r="1.6"/><circle cx="704.1" cy="372.1" r="1.6"/><circle cx="863.2" cy="283.9" r="1.6"/><circle cx="501.3" cy="476.3" r="1.6"/><circle cx="202.8" cy="430.8" r="1.6"/><circle cx="89.6" cy="131.5" r="1.6"/><circle cx="958.1" cy="158.9" r="1.6"/><circle cx="543.7" cy="309.6" r="1.6"/><circle cx="776.1" cy="236.6" r="1.6"/><circle cx="874.2" cy="319.5" r="1.6"/><circle cx="522.5" cy="543.4" r="1.6"/><circle cx="863.0" cy="290.3" r="1.6"/><circle cx="761.3" cy="274.8" r="1.6"/><circle cx="754.7" cy="276.6" r="1.6"/><circle cx="754.4" cy="275.6" r="1.6"/><circle cx="125.0" cy="100.7" r="1.6"/><circle cx="810.0" cy="236.9" r="1.6"/><circle cx="862.8" cy="285.9" r="1.6"/><circle cx="87.2" cy="46.9" r="1.6"/><circle cx="667.9" cy="240.5" r="1.6"/><circle cx="119.8" cy="61.5" r="1.6"/><circle cx="562.2" cy="166.5" r="1.6"/><circle cx="711.5" cy="325.9" r="1.6"/><circle cx="753.1" cy="274.8" r="1.6"/><circle cx="304.1" cy="408.2" r="1.6"/><circle cx="761.2" cy="274.7" r="1.6"/><circle cx="63.8" cy="92.4" r="1.6"/><circle cx="25.0" cy="289.0" r="1.6"/><circle cx="861.5" cy="289.2" r="1.6"/><circle cx="805.6" cy="379.3" r="1.6"/><circle cx="935.7" cy="221.3" r="1.6"/><circle cx="753.0" cy="274.4" r="1.6"/><circle cx="862.6" cy="290.4" r="1.6"/><circle cx="918.8" cy="242.7" r="1.6"/><circle cx="863.0" cy="284.0" r="1.6"/><circle cx="440.1" cy="475.8" r="1.6"/><circle cx="83.7" cy="249.8" r="1.6"/><circle cx="461.3" cy="551.4" r="1.6"/><circle cx="752.7" cy="274.0" r="1.6"/><circle cx="201.8" cy="431.7" r="1.6"/><circle cx="861.9" cy="285.4" r="1.6"/><circle cx="695.9" cy="384.8" r="1.6"/><circle cx="862.4" cy="289.3" r="1.6"/><circle cx="701.9" cy="413.4" r="1.6"/><circle cx="63.9" cy="92.5" r="1.6"/><circle cx="909.3" cy="235.0" r="1.6"/><circle cx="194.5" cy="421.5" r="1.6"/><circle cx="516.9" cy="260.3" r="1.6"/><circle cx="863.3" cy="284.1" r="1.6"/><circle cx="196.3" cy="428.1" r="1.6"/><circle cx="661.5" cy="221.4" r="1.6"/></g><g class="mg" style="animation-delay:1.57s"><circle cx="741.7" cy="223.4" r="1.6"/><circle cx="773.7" cy="238.5" r="1.6"/><circle cx="419.5" cy="443.7" r="1.6"/><circle cx="65.9" cy="95.0" r="1.6"/><circle cx="771.2" cy="334.4" r="1.6"/><circle cx="64.2" cy="92.5" r="1.6"/><circle cx="355.8" cy="292.3" r="1.6"/><circle cx="810.0" cy="236.9" r="1.6"/><circle cx="862.7" cy="283.6" r="1.6"/><circle cx="461.3" cy="551.4" r="1.6"/><circle cx="761.4" cy="274.5" r="1.6"/><circle cx="863.6" cy="284.2" r="1.6"/><circle cx="863.6" cy="284.2" r="1.6"/><circle cx="816.6" cy="190.6" r="1.6"/><circle cx="25.5" cy="289.6" r="1.6"/><circle cx="702.3" cy="413.5" r="1.6"/><circle cx="662.1" cy="245.1" r="1.6"/><circle cx="851.6" cy="365.0" r="1.6"/><circle cx="661.4" cy="237.4" r="1.6"/><circle cx="147.8" cy="350.8" r="1.6"/><circle cx="863.3" cy="290.5" r="1.6"/><circle cx="367.0" cy="506.0" r="1.6"/><circle cx="862.6" cy="284.1" r="1.6"/><circle cx="810.0" cy="237.0" r="1.6"/><circle cx="461.3" cy="551.4" r="1.6"/><circle cx="863.0" cy="283.6" r="1.6"/><circle cx="919.1" cy="243.4" r="1.6"/><circle cx="753.7" cy="276.0" r="1.6"/><circle cx="661.8" cy="237.9" r="1.6"/><circle cx="457.8" cy="552.1" r="1.6"/><circle cx="863.1" cy="290.1" r="1.6"/><circle cx="25.6" cy="291.5" r="1.6"/><circle cx="521.2" cy="264.3" r="1.6"/><circle cx="754.3" cy="274.8" r="1.6"/><circle cx="746.0" cy="432.8" r="1.6"/><circle cx="147.9" cy="350.8" r="1.6"/><circle cx="670.3" cy="244.4" r="1.6"/><circle cx="617.1" cy="252.2" r="1.6"/><circle cx="816.6" cy="190.7" r="1.6"/><circle cx="197.4" cy="431.9" r="1.6"/><circle cx="502.9" cy="466.0" r="1.6"/><circle cx="863.3" cy="290.5" r="1.6"/><circle cx="89.9" cy="423.7" r="1.6"/><circle cx="119.5" cy="100.3" r="1.6"/><circle cx="626.7" cy="323.5" r="1.6"/><circle cx="661.7" cy="238.5" r="1.6"/><circle cx="908.8" cy="235.2" r="1.6"/><circle cx="500.7" cy="470.1" r="1.6"/><circle cx="503.6" cy="465.0" r="1.6"/><circle cx="753.1" cy="274.8" r="1.6"/><circle cx="810.0" cy="236.9" r="1.6"/><circle cx="25.7" cy="289.9" r="1.6"/><circle cx="464.6" cy="551.8" r="1.6"/><circle cx="146.2" cy="352.6" r="1.6"/><circle cx="25.5" cy="290.2" r="1.6"/><circle cx="862.5" cy="283.9" r="1.6"/><circle cx="350.3" cy="182.0" r="1.6"/><circle cx="657.6" cy="243.9" r="1.6"/><circle cx="461.3" cy="551.4" r="1.6"/><circle cx="733.4" cy="206.4" r="1.6"/><circle cx="631.1" cy="318.8" r="1.6"/><circle cx="357.3" cy="315.4" r="1.6"/><circle cx="862.9" cy="290.3" r="1.6"/><circle cx="696.7" cy="383.6" r="1.6"/><circle cx="597.0" cy="249.4" r="1.6"/><circle cx="777.0" cy="240.1" r="1.6"/><circle cx="226.5" cy="256.9" r="1.6"/><circle cx="637.8" cy="471.4" r="1.6"/><circle cx="862.4" cy="284.0" r="1.6"/><circle cx="124.6" cy="66.6" r="1.6"/><circle cx="558.9" cy="255.4" r="1.6"/><circle cx="957.9" cy="176.7" r="1.6"/><circle cx="126.4" cy="100.2" r="1.6"/><circle cx="84.5" cy="251.5" r="1.6"/><circle cx="119.6" cy="100.4" r="1.6"/><circle cx="125.2" cy="66.6" r="1.6"/></g><g class="mg" style="animation-delay:1.68s"><circle cx="869.2" cy="289.2" r="1.6"/><circle cx="661.9" cy="242.5" r="1.6"/><circle cx="861.3" cy="285.5" r="1.6"/><circle cx="911.2" cy="225.6" r="1.6"/><circle cx="353.1" cy="296.4" r="1.6"/><circle cx="917.9" cy="243.0" r="1.6"/><circle cx="146.4" cy="352.5" r="1.6"/><circle cx="911.9" cy="232.1" r="1.6"/><circle cx="25.9" cy="290.6" r="1.6"/><circle cx="58.5" cy="106.8" r="1.6"/><circle cx="752.9" cy="274.4" r="1.6"/><circle cx="810.0" cy="236.9" r="1.6"/><circle cx="461.2" cy="551.4" r="1.6"/><circle cx="888.0" cy="240.0" r="1.6"/><circle cx="459.8" cy="551.2" r="1.6"/><circle cx="755.5" cy="271.4" r="1.6"/><circle cx="124.6" cy="66.5" r="1.6"/><circle cx="562.4" cy="251.7" r="1.6"/><circle cx="863.3" cy="284.2" r="1.6"/><circle cx="514.6" cy="265.2" r="1.6"/><circle cx="198.7" cy="429.8" r="1.6"/><circle cx="124.6" cy="66.6" r="1.6"/><circle cx="810.0" cy="236.9" r="1.6"/><circle cx="862.7" cy="290.3" r="1.6"/><circle cx="865.1" cy="611.7" r="1.6"/><circle cx="735.1" cy="296.9" r="1.6"/><circle cx="203.3" cy="430.9" r="1.6"/><circle cx="601.3" cy="408.1" r="1.6"/><circle cx="25.9" cy="290.2" r="1.6"/><circle cx="119.6" cy="100.4" r="1.6"/><circle cx="686.4" cy="368.3" r="1.6"/><circle cx="25.5" cy="290.2" r="1.6"/><circle cx="42.5" cy="262.4" r="1.6"/><circle cx="194.6" cy="425.8" r="1.6"/><circle cx="745.7" cy="433.7" r="1.6"/><circle cx="839.6" cy="436.6" r="1.6"/><circle cx="127.1" cy="100.2" r="1.6"/><circle cx="689.1" cy="243.1" r="1.6"/><circle cx="862.5" cy="285.0" r="1.6"/><circle cx="753.7" cy="276.0" r="1.6"/><circle cx="829.2" cy="548.3" r="1.6"/><circle cx="804.3" cy="387.9" r="1.6"/><circle cx="863.6" cy="283.2" r="1.6"/><circle cx="905.4" cy="264.2" r="1.6"/><circle cx="874.2" cy="319.6" r="1.6"/><circle cx="915.0" cy="228.0" r="1.6"/><circle cx="648.1" cy="241.7" r="1.6"/><circle cx="126.4" cy="100.2" r="1.6"/><circle cx="660.9" cy="238.3" r="1.6"/><circle cx="648.2" cy="241.7" r="1.6"/><circle cx="857.4" cy="291.6" r="1.6"/><circle cx="810.0" cy="236.9" r="1.6"/><circle cx="863.2" cy="290.5" r="1.6"/><circle cx="119.6" cy="100.4" r="1.6"/><circle cx="124.5" cy="66.5" r="1.6"/><circle cx="689.3" cy="243.0" r="1.6"/><circle cx="460.7" cy="550.7" r="1.6"/><circle cx="63.8" cy="92.4" r="1.6"/><circle cx="761.0" cy="274.7" r="1.6"/><circle cx="483.3" cy="533.1" r="1.6"/><circle cx="64.0" cy="92.3" r="1.6"/><circle cx="125.4" cy="66.6" r="1.6"/><circle cx="860.9" cy="289.4" r="1.6"/><circle cx="761.3" cy="273.6" r="1.6"/><circle cx="42.7" cy="262.3" r="1.6"/><circle cx="303.5" cy="138.3" r="1.6"/><circle cx="517.5" cy="387.9" r="1.6"/><circle cx="488.9" cy="510.8" r="1.6"/><circle cx="63.8" cy="92.5" r="1.6"/><circle cx="806.3" cy="525.8" r="1.6"/><circle cx="854.3" cy="193.5" r="1.6"/><circle cx="544.0" cy="315.2" r="1.6"/><circle cx="661.2" cy="237.1" r="1.6"/><circle cx="458.2" cy="552.0" r="1.6"/><circle cx="923.0" cy="218.1" r="1.6"/></g><g class="mg" style="animation-delay:1.78s"><circle cx="863.2" cy="284.0" r="1.6"/><circle cx="89.7" cy="131.7" r="1.6"/><circle cx="862.5" cy="283.7" r="1.6"/><circle cx="458.2" cy="552.0" r="1.6"/><circle cx="28.9" cy="282.8" r="1.6"/><circle cx="660.9" cy="238.3" r="1.6"/><circle cx="540.5" cy="319.4" r="1.6"/><circle cx="915.0" cy="228.0" r="1.6"/><circle cx="120.1" cy="100.2" r="1.6"/><circle cx="88.2" cy="45.4" r="1.6"/><circle cx="353.3" cy="296.3" r="1.6"/><circle cx="697.1" cy="379.4" r="1.6"/><circle cx="120.1" cy="60.9" r="1.6"/><circle cx="76.0" cy="387.4" r="1.6"/><circle cx="464.2" cy="551.6" r="1.6"/><circle cx="144.9" cy="352.2" r="1.6"/><circle cx="751.7" cy="424.2" r="1.6"/><circle cx="754.4" cy="275.6" r="1.6"/><circle cx="124.2" cy="66.5" r="1.6"/><circle cx="862.9" cy="283.6" r="1.6"/><circle cx="489.1" cy="467.5" r="1.6"/><circle cx="64.2" cy="92.1" r="1.6"/><circle cx="810.0" cy="236.9" r="1.6"/><circle cx="863.2" cy="283.5" r="1.6"/><circle cx="96.1" cy="392.1" r="1.6"/><circle cx="863.2" cy="284.1" r="1.6"/><circle cx="303.9" cy="408.2" r="1.6"/><circle cx="967.7" cy="135.4" r="1.6"/><circle cx="860.2" cy="289.1" r="1.6"/><circle cx="863.0" cy="290.0" r="1.6"/><circle cx="502.8" cy="466.1" r="1.6"/><circle cx="861.0" cy="282.9" r="1.6"/><circle cx="481.7" cy="533.1" r="1.6"/><circle cx="25.8" cy="290.3" r="1.6"/><circle cx="90.9" cy="421.9" r="1.6"/><circle cx="862.7" cy="290.4" r="1.6"/><circle cx="746.1" cy="223.4" r="1.6"/><circle cx="706.2" cy="303.1" r="1.6"/><circle cx="909.4" cy="235.0" r="1.6"/><circle cx="657.3" cy="240.6" r="1.6"/><circle cx="876.8" cy="274.2" r="1.6"/><circle cx="520.2" cy="389.6" r="1.6"/><circle cx="952.4" cy="171.7" r="1.6"/><circle cx="124.3" cy="66.5" r="1.6"/><circle cx="861.4" cy="285.5" r="1.6"/><circle cx="761.3" cy="274.6" r="1.6"/><circle cx="44.6" cy="288.0" r="1.6"/><circle cx="821.2" cy="190.8" r="1.6"/><circle cx="626.7" cy="323.5" r="1.6"/><circle cx="27.1" cy="290.2" r="1.6"/><circle cx="188.4" cy="426.8" r="1.6"/><circle cx="816.6" cy="190.6" r="1.6"/><circle cx="516.8" cy="260.3" r="1.6"/><circle cx="89.5" cy="42.5" r="1.6"/><circle cx="908.0" cy="235.6" r="1.6"/><circle cx="67.8" cy="94.1" r="1.6"/><circle cx="855.3" cy="367.4" r="1.6"/><circle cx="28.1" cy="294.3" r="1.6"/><circle cx="481.8" cy="529.9" r="1.6"/><circle cx="748.4" cy="439.9" r="1.6"/><circle cx="499.7" cy="469.9" r="1.6"/><circle cx="499.5" cy="469.1" r="1.6"/><circle cx="904.6" cy="234.9" r="1.6"/><circle cx="526.6" cy="538.7" r="1.6"/><circle cx="810.0" cy="236.9" r="1.6"/><circle cx="756.0" cy="424.8" r="1.6"/><circle cx="459.8" cy="551.2" r="1.6"/><circle cx="455.4" cy="319.8" r="1.6"/><circle cx="856.5" cy="343.1" r="1.6"/><circle cx="457.8" cy="552.0" r="1.6"/><circle cx="75.5" cy="387.6" r="1.6"/><circle cx="163.3" cy="170.3" r="1.6"/><circle cx="916.4" cy="229.1" r="1.6"/><circle cx="355.6" cy="257.8" r="1.6"/><circle cx="699.8" cy="381.8" r="1.6"/></g><g class="mg" style="animation-delay:1.89s"><circle cx="863.7" cy="284.3" r="1.6"/><circle cx="500.7" cy="470.1" r="1.6"/><circle cx="352.6" cy="296.2" r="1.6"/><circle cx="667.9" cy="240.5" r="1.6"/><circle cx="813.7" cy="388.3" r="1.6"/><circle cx="127.1" cy="100.2" r="1.6"/><circle cx="757.6" cy="280.4" r="1.6"/><circle cx="518.5" cy="262.2" r="1.6"/><circle cx="460.2" cy="550.5" r="1.6"/><circle cx="863.2" cy="612.2" r="1.6"/><circle cx="817.6" cy="190.7" r="1.6"/><circle cx="495.6" cy="478.8" r="1.6"/><circle cx="460.2" cy="550.5" r="1.6"/><circle cx="860.6" cy="282.4" r="1.6"/><circle cx="862.6" cy="286.1" r="1.6"/><circle cx="748.5" cy="439.9" r="1.6"/><circle cx="667.8" cy="240.3" r="1.6"/><circle cx="125.5" cy="100.2" r="1.6"/><circle cx="728.6" cy="403.5" r="1.6"/><circle cx="85.3" cy="58.0" r="1.6"/><circle cx="872.7" cy="271.3" r="1.6"/><circle cx="635.3" cy="412.5" r="1.6"/><circle cx="873.2" cy="323.0" r="1.6"/><circle cx="501.1" cy="476.4" r="1.6"/><circle cx="702.9" cy="410.9" r="1.6"/><circle cx="229.1" cy="261.1" r="1.6"/><circle cx="25.6" cy="290.4" r="1.6"/><circle cx="460.7" cy="550.7" r="1.6"/><circle cx="500.8" cy="463.0" r="1.6"/><circle cx="861.6" cy="289.5" r="1.6"/><circle cx="119.0" cy="100.3" r="1.6"/><circle cx="458.2" cy="551.9" r="1.6"/><circle cx="862.4" cy="283.7" r="1.6"/><circle cx="636.2" cy="476.0" r="1.6"/><circle cx="810.0" cy="236.9" r="1.6"/><circle cx="661.0" cy="238.3" r="1.6"/><circle cx="863.1" cy="290.1" r="1.6"/><circle cx="860.9" cy="289.3" r="1.6"/><circle cx="25.5" cy="290.2" r="1.6"/><circle cx="657.9" cy="242.9" r="1.6"/><circle cx="460.3" cy="550.5" r="1.6"/><circle cx="811.2" cy="567.5" r="1.6"/><circle cx="201.0" cy="429.7" r="1.6"/><circle cx="119.0" cy="100.3" r="1.6"/><circle cx="862.7" cy="283.9" r="1.6"/><circle cx="558.9" cy="255.3" r="1.6"/><circle cx="67.8" cy="94.4" r="1.6"/><circle cx="459.8" cy="551.2" r="1.6"/><circle cx="120.5" cy="100.2" r="1.6"/><circle cx="862.7" cy="283.6" r="1.6"/><circle cx="720.1" cy="407.3" r="1.6"/><circle cx="72.2" cy="390.1" r="1.6"/><circle cx="761.7" cy="273.8" r="1.6"/><circle cx="120.5" cy="100.1" r="1.6"/><circle cx="541.9" cy="310.2" r="1.6"/><circle cx="963.6" cy="142.6" r="1.6"/><circle cx="754.7" cy="276.7" r="1.6"/><circle cx="955.2" cy="158.0" r="1.6"/><circle cx="662.6" cy="239.7" r="1.6"/><circle cx="661.4" cy="232.6" r="1.6"/><circle cx="196.6" cy="428.6" r="1.6"/><circle cx="913.4" cy="226.9" r="1.6"/><circle cx="862.6" cy="286.1" r="1.6"/><circle cx="874.1" cy="319.9" r="1.6"/><circle cx="862.8" cy="283.6" r="1.6"/><circle cx="125.4" cy="100.3" r="1.6"/><circle cx="194.7" cy="428.1" r="1.6"/><circle cx="850.2" cy="363.1" r="1.6"/><circle cx="863.7" cy="284.2" r="1.6"/><circle cx="456.3" cy="551.6" r="1.6"/><circle cx="659.6" cy="213.3" r="1.6"/><circle cx="816.6" cy="190.7" r="1.6"/><circle cx="719.0" cy="215.1" r="1.6"/><circle cx="25.2" cy="290.1" r="1.6"/><circle cx="905.4" cy="235.4" r="1.6"/></g><g class="mg" style="animation-delay:1.99s"><circle cx="761.6" cy="274.6" r="1.6"/><circle cx="761.6" cy="273.7" r="1.6"/><circle cx="863.1" cy="284.0" r="1.6"/><circle cx="194.6" cy="425.8" r="1.6"/><circle cx="126.4" cy="100.2" r="1.6"/><circle cx="558.6" cy="255.4" r="1.6"/><circle cx="863.4" cy="286.2" r="1.6"/><circle cx="25.5" cy="290.1" r="1.6"/><circle cx="861.2" cy="283.2" r="1.6"/><circle cx="188.5" cy="426.6" r="1.6"/><circle cx="63.8" cy="92.3" r="1.6"/><circle cx="862.9" cy="284.0" r="1.6"/><circle cx="733.3" cy="297.4" r="1.6"/><circle cx="863.2" cy="284.2" r="1.6"/><circle cx="787.0" cy="313.3" r="1.6"/><circle cx="194.5" cy="421.7" r="1.6"/><circle cx="810.0" cy="236.9" r="1.6"/><circle cx="667.9" cy="240.4" r="1.6"/><circle cx="862.4" cy="289.7" r="1.6"/><circle cx="26.8" cy="291.5" r="1.6"/><circle cx="125.4" cy="66.6" r="1.6"/><circle cx="120.4" cy="61.3" r="1.6"/><circle cx="124.2" cy="102.6" r="1.6"/><circle cx="666.5" cy="377.5" r="1.6"/><circle cx="861.2" cy="283.0" r="1.6"/><circle cx="307.7" cy="404.5" r="1.6"/><circle cx="20.6" cy="278.1" r="1.6"/><circle cx="27.1" cy="288.1" r="1.6"/><circle cx="862.2" cy="289.3" r="1.6"/><circle cx="308.0" cy="402.3" r="1.6"/><circle cx="460.3" cy="550.8" r="1.6"/><circle cx="116.0" cy="102.7" r="1.6"/><circle cx="862.2" cy="289.3" r="1.6"/><circle cx="124.6" cy="66.6" r="1.6"/><circle cx="390.0" cy="89.0" r="1.6"/><circle cx="863.2" cy="284.4" r="1.6"/><circle cx="916.5" cy="229.1" r="1.6"/><circle cx="810.0" cy="236.9" r="1.6"/><circle cx="851.0" cy="364.3" r="1.6"/><circle cx="515.8" cy="264.2" r="1.6"/><circle cx="350.6" cy="291.5" r="1.6"/><circle cx="862.6" cy="283.7" r="1.6"/><circle cx="495.7" cy="478.9" r="1.6"/><circle cx="915.0" cy="221.4" r="1.6"/><circle cx="89.6" cy="131.5" r="1.6"/><circle cx="861.4" cy="289.8" r="1.6"/><circle cx="863.9" cy="285.7" r="1.6"/><circle cx="495.4" cy="476.2" r="1.6"/><circle cx="350.7" cy="291.5" r="1.6"/><circle cx="862.5" cy="283.7" r="1.6"/><circle cx="748.5" cy="440.2" r="1.6"/><circle cx="126.4" cy="100.2" r="1.6"/><circle cx="862.9" cy="286.0" r="1.6"/><circle cx="750.2" cy="432.5" r="1.6"/><circle cx="439.8" cy="476.0" r="1.6"/><circle cx="124.3" cy="66.5" r="1.6"/><circle cx="363.4" cy="495.6" r="1.6"/><circle cx="91.9" cy="39.7" r="1.6"/><circle cx="64.4" cy="92.7" r="1.6"/><circle cx="148.8" cy="353.1" r="1.6"/><circle cx="227.3" cy="111.7" r="1.6"/><circle cx="856.4" cy="342.9" r="1.6"/><circle cx="874.2" cy="319.7" r="1.6"/><circle cx="439.8" cy="476.0" r="1.6"/><circle cx="637.8" cy="471.4" r="1.6"/><circle cx="863.5" cy="290.8" r="1.6"/><circle cx="863.6" cy="284.2" r="1.6"/><circle cx="461.2" cy="551.4" r="1.6"/><circle cx="307.2" cy="402.2" r="1.6"/><circle cx="64.0" cy="92.3" r="1.6"/><circle cx="928.7" cy="213.0" r="1.6"/><circle cx="863.3" cy="283.9" r="1.6"/><circle cx="914.9" cy="228.0" r="1.6"/><circle cx="816.3" cy="417.4" r="1.6"/><circle cx="862.5" cy="289.6" r="1.6"/></g><g class="mg" style="animation-delay:2.10s"><circle cx="456.3" cy="551.6" r="1.6"/><circle cx="125.8" cy="102.6" r="1.6"/><circle cx="63.8" cy="92.5" r="1.6"/><circle cx="27.1" cy="288.0" r="1.6"/><circle cx="502.9" cy="466.0" r="1.6"/><circle cx="504.0" cy="465.7" r="1.6"/><circle cx="863.9" cy="285.7" r="1.6"/><circle cx="25.9" cy="290.5" r="1.6"/><circle cx="730.4" cy="305.5" r="1.6"/><circle cx="856.4" cy="343.1" r="1.6"/><circle cx="490.3" cy="512.6" r="1.6"/><circle cx="515.7" cy="260.1" r="1.6"/><circle cx="668.2" cy="241.0" r="1.6"/><circle cx="63.8" cy="92.3" r="1.6"/><circle cx="81.6" cy="397.6" r="1.6"/><circle cx="84.5" cy="251.4" r="1.6"/><circle cx="514.5" cy="265.3" r="1.6"/><circle cx="659.7" cy="212.4" r="1.6"/><circle cx="913.7" cy="227.0" r="1.6"/><circle cx="358.9" cy="257.8" r="1.6"/><circle cx="440.2" cy="475.9" r="1.6"/><circle cx="805.7" cy="379.3" r="1.6"/><circle cx="792.7" cy="396.0" r="1.6"/><circle cx="914.1" cy="232.5" r="1.6"/><circle cx="528.2" cy="534.3" r="1.6"/><circle cx="862.9" cy="289.9" r="1.6"/><circle cx="197.4" cy="431.7" r="1.6"/><circle cx="144.9" cy="352.4" r="1.6"/><circle cx="87.3" cy="50.1" r="1.6"/><circle cx="126.4" cy="100.2" r="1.6"/><circle cx="761.3" cy="273.6" r="1.6"/><circle cx="689.2" cy="243.6" r="1.6"/><circle cx="503.8" cy="465.0" r="1.6"/><circle cx="861.3" cy="285.5" r="1.6"/><circle cx="520.9" cy="264.3" r="1.6"/><circle cx="563.3" cy="251.6" r="1.6"/><circle cx="816.3" cy="384.0" r="1.6"/><circle cx="761.4" cy="274.4" r="1.6"/><circle cx="473.7" cy="145.3" r="1.6"/><circle cx="752.3" cy="423.8" r="1.6"/><circle cx="558.9" cy="255.4" r="1.6"/><circle cx="89.5" cy="131.3" r="1.6"/><circle cx="732.5" cy="296.9" r="1.6"/><circle cx="565.1" cy="170.4" r="1.6"/><circle cx="514.7" cy="265.6" r="1.6"/><circle cx="761.4" cy="273.8" r="1.6"/><circle cx="75.5" cy="387.6" r="1.6"/><circle cx="124.2" cy="102.6" r="1.6"/><circle cx="543.9" cy="309.8" r="1.6"/><circle cx="120.2" cy="100.2" r="1.6"/><circle cx="753.5" cy="427.1" r="1.6"/><circle cx="861.2" cy="283.0" r="1.6"/><circle cx="440.2" cy="475.8" r="1.6"/><circle cx="761.3" cy="274.8" r="1.6"/><circle cx="816.1" cy="190.8" r="1.6"/><circle cx="907.9" cy="235.6" r="1.6"/><circle cx="87.2" cy="50.1" r="1.6"/><circle cx="196.1" cy="428.2" r="1.6"/><circle cx="307.9" cy="402.2" r="1.6"/><circle cx="810.0" cy="236.9" r="1.6"/><circle cx="731.9" cy="302.3" r="1.6"/><circle cx="473.7" cy="145.3" r="1.6"/><circle cx="89.8" cy="41.5" r="1.6"/><circle cx="562.4" cy="251.4" r="1.6"/><circle cx="706.0" cy="303.2" r="1.6"/><circle cx="84.5" cy="251.4" r="1.6"/><circle cx="810.0" cy="236.9" r="1.6"/><circle cx="850.2" cy="363.1" r="1.6"/><circle cx="862.4" cy="289.6" r="1.6"/><circle cx="874.4" cy="319.8" r="1.6"/><circle cx="878.1" cy="273.5" r="1.6"/><circle cx="667.7" cy="241.1" r="1.6"/><circle cx="862.2" cy="285.1" r="1.6"/><circle cx="223.6" cy="261.7" r="1.6"/><circle cx="860.7" cy="282.7" r="1.6"/></g><g class="mg" style="animation-delay:2.21s"><circle cx="75.5" cy="387.6" r="1.6"/><circle cx="73.4" cy="392.0" r="1.6"/><circle cx="863.3" cy="283.8" r="1.6"/><circle cx="440.1" cy="476.0" r="1.6"/><circle cx="909.4" cy="235.0" r="1.6"/><circle cx="862.5" cy="290.0" r="1.6"/><circle cx="913.4" cy="229.4" r="1.6"/><circle cx="865.5" cy="284.7" r="1.6"/><circle cx="514.7" cy="265.3" r="1.6"/><circle cx="699.8" cy="381.8" r="1.6"/><circle cx="163.2" cy="170.3" r="1.6"/><circle cx="202.9" cy="430.8" r="1.6"/><circle cx="92.8" cy="98.6" r="1.6"/><circle cx="126.4" cy="100.2" r="1.6"/><circle cx="64.5" cy="92.8" r="1.6"/><circle cx="538.8" cy="319.1" r="1.6"/><circle cx="863.6" cy="283.3" r="1.6"/><circle cx="587.9" cy="420.8" r="1.6"/><circle cx="557.4" cy="255.9" r="1.6"/><circle cx="745.7" cy="433.6" r="1.6"/><circle cx="863.5" cy="290.1" r="1.6"/><circle cx="764.5" cy="434.5" r="1.6"/><circle cx="25.8" cy="290.2" r="1.6"/><circle cx="679.3" cy="350.8" r="1.6"/><circle cx="81.5" cy="397.7" r="1.6"/><circle cx="227.0" cy="254.3" r="1.6"/><circle cx="907.9" cy="236.0" r="1.6"/><circle cx="871.7" cy="280.7" r="1.6"/><circle cx="863.5" cy="286.4" r="1.6"/><circle cx="504.1" cy="461.8" r="1.6"/><circle cx="87.3" cy="50.1" r="1.6"/><circle cx="89.5" cy="131.4" r="1.6"/><circle cx="25.5" cy="290.1" r="1.6"/><circle cx="863.5" cy="290.9" r="1.6"/><circle cx="744.1" cy="280.7" r="1.6"/><circle cx="567.2" cy="166.6" r="1.6"/><circle cx="872.4" cy="280.7" r="1.6"/><circle cx="749.6" cy="431.9" r="1.6"/><circle cx="668.2" cy="241.0" r="1.6"/><circle cx="502.8" cy="122.5" r="1.6"/><circle cx="64.5" cy="92.7" r="1.6"/><circle cx="861.2" cy="283.0" r="1.6"/><circle cx="704.2" cy="372.0" r="1.6"/><circle cx="862.5" cy="283.6" r="1.6"/><circle cx="863.3" cy="283.1" r="1.6"/><circle cx="91.8" cy="423.4" r="1.6"/><circle cx="916.9" cy="256.9" r="1.6"/><circle cx="908.0" cy="235.5" r="1.6"/><circle cx="860.5" cy="282.4" r="1.6"/><circle cx="350.7" cy="285.5" r="1.6"/><circle cx="309.3" cy="403.4" r="1.6"/><circle cx="911.5" cy="235.3" r="1.6"/><circle cx="124.6" cy="66.6" r="1.6"/><circle cx="863.6" cy="283.2" r="1.6"/><circle cx="63.8" cy="92.4" r="1.6"/><circle cx="917.1" cy="223.1" r="1.6"/><circle cx="89.7" cy="131.4" r="1.6"/><circle cx="861.6" cy="289.9" r="1.6"/><circle cx="461.2" cy="551.4" r="1.6"/><circle cx="913.0" cy="233.3" r="1.6"/><circle cx="862.5" cy="283.8" r="1.6"/><circle cx="556.6" cy="254.9" r="1.6"/><circle cx="913.7" cy="207.5" r="1.6"/><circle cx="863.7" cy="284.2" r="1.6"/><circle cx="120.4" cy="100.4" r="1.6"/><circle cx="694.8" cy="304.6" r="1.6"/><circle cx="63.8" cy="92.4" r="1.6"/><circle cx="862.7" cy="286.1" r="1.6"/><circle cx="440.1" cy="476.0" r="1.6"/><circle cx="825.7" cy="549.8" r="1.6"/><circle cx="503.9" cy="465.2" r="1.6"/><circle cx="25.5" cy="290.1" r="1.6"/><circle cx="89.8" cy="131.7" r="1.6"/><circle cx="25.2" cy="290.0" r="1.6"/><circle cx="746.3" cy="432.9" r="1.6"/></g><g class="mg" style="animation-delay:2.31s"><circle cx="195.9" cy="426.8" r="1.6"/><circle cx="543.6" cy="309.6" r="1.6"/><circle cx="467.7" cy="359.4" r="1.6"/><circle cx="461.1" cy="551.3" r="1.6"/><circle cx="657.0" cy="243.2" r="1.6"/><circle cx="745.8" cy="433.7" r="1.6"/><circle cx="124.2" cy="66.5" r="1.6"/><circle cx="25.8" cy="290.5" r="1.6"/><circle cx="125.4" cy="66.6" r="1.6"/><circle cx="756.6" cy="273.9" r="1.6"/><circle cx="860.2" cy="289.1" r="1.6"/><circle cx="538.7" cy="319.2" r="1.6"/><circle cx="863.2" cy="283.5" r="1.6"/><circle cx="304.0" cy="408.2" r="1.6"/><circle cx="862.9" cy="283.7" r="1.6"/><circle cx="460.3" cy="550.7" r="1.6"/><circle cx="195.6" cy="428.4" r="1.6"/><circle cx="702.3" cy="444.0" r="1.6"/><circle cx="863.4" cy="284.1" r="1.6"/><circle cx="528.2" cy="534.3" r="1.6"/><circle cx="80.6" cy="135.3" r="1.6"/><circle cx="862.9" cy="283.5" r="1.6"/><circle cx="147.0" cy="348.7" r="1.6"/><circle cx="356.1" cy="494.6" r="1.6"/><circle cx="29.6" cy="269.0" r="1.6"/><circle cx="761.4" cy="273.8" r="1.6"/><circle cx="560.2" cy="253.6" r="1.6"/><circle cx="861.7" cy="282.2" r="1.6"/><circle cx="466.7" cy="441.2" r="1.6"/><circle cx="529.1" cy="546.9" r="1.6"/><circle cx="370.8" cy="257.9" r="1.6"/><circle cx="839.6" cy="436.6" r="1.6"/><circle cx="696.6" cy="377.6" r="1.6"/><circle cx="63.6" cy="92.3" r="1.6"/><circle cx="355.4" cy="257.9" r="1.6"/><circle cx="753.7" cy="275.9" r="1.6"/><circle cx="636.1" cy="476.0" r="1.6"/><circle cx="877.1" cy="273.9" r="1.6"/><circle cx="862.0" cy="285.6" r="1.6"/><circle cx="65.0" cy="98.7" r="1.6"/><circle cx="845.9" cy="271.4" r="1.6"/><circle cx="304.0" cy="408.3" r="1.6"/><circle cx="198.6" cy="430.2" r="1.6"/><circle cx="120.2" cy="100.2" r="1.6"/><circle cx="126.4" cy="100.2" r="1.6"/><circle cx="440.0" cy="476.0" r="1.6"/><circle cx="355.4" cy="258.0" r="1.6"/><circle cx="25.9" cy="290.2" r="1.6"/><circle cx="916.9" cy="257.0" r="1.6"/><circle cx="863.6" cy="283.2" r="1.6"/><circle cx="863.3" cy="284.2" r="1.6"/><circle cx="145.0" cy="352.4" r="1.6"/><circle cx="502.9" cy="466.0" r="1.6"/><circle cx="661.7" cy="238.1" r="1.6"/><circle cx="491.8" cy="465.4" r="1.6"/><circle cx="125.3" cy="66.6" r="1.6"/><circle cx="862.2" cy="289.3" r="1.6"/><circle cx="810.0" cy="236.9" r="1.6"/><circle cx="935.8" cy="199.4" r="1.6"/><circle cx="499.5" cy="469.1" r="1.6"/><circle cx="72.2" cy="390.1" r="1.6"/><circle cx="655.0" cy="212.6" r="1.6"/><circle cx="899.9" cy="252.0" r="1.6"/><circle cx="745.9" cy="433.6" r="1.6"/><circle cx="491.8" cy="465.5" r="1.6"/><circle cx="661.6" cy="237.8" r="1.6"/><circle cx="557.4" cy="255.9" r="1.6"/><circle cx="223.7" cy="261.7" r="1.6"/><circle cx="582.1" cy="124.8" r="1.6"/><circle cx="863.4" cy="283.9" r="1.6"/><circle cx="481.1" cy="531.9" r="1.6"/><circle cx="25.5" cy="290.1" r="1.6"/><circle cx="460.1" cy="550.7" r="1.6"/><circle cx="861.9" cy="285.6" r="1.6"/><circle cx="439.9" cy="476.0" r="1.6"/></g><g class="mg" style="animation-delay:2.42s"><circle cx="578.0" cy="192.2" r="1.6"/><circle cx="125.8" cy="102.7" r="1.6"/><circle cx="874.2" cy="319.7" r="1.6"/><circle cx="795.7" cy="387.6" r="1.6"/><circle cx="355.6" cy="257.9" r="1.6"/><circle cx="862.9" cy="283.1" r="1.6"/><circle cx="473.7" cy="145.3" r="1.6"/><circle cx="863.1" cy="286.2" r="1.6"/><circle cx="689.2" cy="243.1" r="1.6"/><circle cx="913.6" cy="241.9" r="1.6"/><circle cx="25.2" cy="290.0" r="1.6"/><circle cx="856.4" cy="343.0" r="1.6"/><circle cx="874.0" cy="319.9" r="1.6"/><circle cx="125.2" cy="66.6" r="1.6"/><circle cx="914.1" cy="232.5" r="1.6"/><circle cx="696.1" cy="376.0" r="1.6"/><circle cx="753.0" cy="274.4" r="1.6"/><circle cx="763.7" cy="282.7" r="1.6"/><circle cx="744.2" cy="217.8" r="1.6"/><circle cx="42.7" cy="262.3" r="1.6"/><circle cx="481.4" cy="533.1" r="1.6"/><circle cx="440.1" cy="476.0" r="1.6"/><circle cx="198.7" cy="422.7" r="1.6"/><circle cx="440.1" cy="476.0" r="1.6"/><circle cx="83.9" cy="249.8" r="1.6"/><circle cx="120.1" cy="100.2" r="1.6"/><circle cx="909.3" cy="234.9" r="1.6"/><circle cx="908.1" cy="234.6" r="1.6"/><circle cx="197.4" cy="431.9" r="1.6"/><circle cx="460.1" cy="550.6" r="1.6"/><circle cx="862.9" cy="283.4" r="1.6"/><circle cx="502.7" cy="461.0" r="1.6"/><circle cx="810.0" cy="236.9" r="1.6"/><circle cx="856.5" cy="343.3" r="1.6"/><circle cx="481.6" cy="533.3" r="1.6"/><circle cx="490.4" cy="473.6" r="1.6"/><circle cx="226.5" cy="257.0" r="1.6"/><circle cx="662.7" cy="240.0" r="1.6"/><circle cx="863.1" cy="284.1" r="1.6"/><circle cx="146.8" cy="350.0" r="1.6"/><circle cx="461.3" cy="551.3" r="1.6"/><circle cx="440.2" cy="476.0" r="1.6"/><circle cx="861.6" cy="289.2" r="1.6"/><circle cx="874.1" cy="319.6" r="1.6"/><circle cx="502.8" cy="466.0" r="1.6"/><circle cx="481.7" cy="533.1" r="1.6"/><circle cx="856.5" cy="343.2" r="1.6"/><circle cx="520.9" cy="264.2" r="1.6"/><circle cx="25.8" cy="290.1" r="1.6"/><circle cx="76.0" cy="387.4" r="1.6"/><circle cx="521.2" cy="264.4" r="1.6"/><circle cx="650.5" cy="184.7" r="1.6"/><circle cx="356.8" cy="259.2" r="1.6"/><circle cx="862.3" cy="289.6" r="1.6"/><circle cx="806.6" cy="258.0" r="1.6"/><circle cx="862.9" cy="283.3" r="1.6"/><circle cx="860.8" cy="289.3" r="1.6"/><circle cx="856.5" cy="343.3" r="1.6"/><circle cx="704.2" cy="372.1" r="1.6"/><circle cx="914.9" cy="227.8" r="1.6"/><circle cx="188.4" cy="426.9" r="1.6"/><circle cx="637.7" cy="471.5" r="1.6"/><circle cx="28.1" cy="294.3" r="1.6"/><circle cx="863.8" cy="284.1" r="1.6"/><circle cx="761.2" cy="274.7" r="1.6"/><circle cx="749.6" cy="432.0" r="1.6"/><circle cx="124.2" cy="102.6" r="1.6"/><circle cx="667.7" cy="240.6" r="1.6"/><circle cx="874.1" cy="319.8" r="1.6"/><circle cx="863.2" cy="283.5" r="1.6"/><circle cx="753.0" cy="274.3" r="1.6"/><circle cx="702.7" cy="382.5" r="1.6"/><circle cx="862.4" cy="283.9" r="1.6"/><circle cx="862.7" cy="283.8" r="1.6"/><circle cx="874.3" cy="319.7" r="1.6"/></g></g></svg>
+      <p class="chart-cap">Map data © OpenStreetMap contributors (ODbL), extracted Oct 20, 2026. Dots at real coordinates; campuses may appear as several dots.</p>
+    </div>
+    <div class="mapstats">
+      <div class="row"><div class="v num">7,481 MW</div><div class="l">under construction in North America's primary markets — a record</div><div class="s">1.4% vacancy; 80.4% already pre-leased. CBRE, H1 2026</div></div>
+      <div class="row"><div class="v num">233+ GW</div><div class="l">of large-load requests in the Texas grid queue, over 70% data centers</div><div class="s">Requests, not committed load. ERCOT year-end 2025, via Utility Dive</div></div>
+      <div class="row"><div class="v num">3,000+</div><div class="l">US data centers operating; 1,500+ more in development</div><div class="s">Data Center Map via Pew Research Center, Feb 2026</div></div>
+      <div class="row"><div class="v num">$500B</div><div class="l">announced for Stargate over four years</div><div class="s">A commitment, not spend to date. SoftBank/OpenAI, Jan 2025</div></div>
     </div>
   </div>
 </section>
@@ -198,11 +293,11 @@ button.pause:hover{color:var(--ink);border-color:var(--ink-3)}
 <div class="sectors">
 
   <section class="sec" id="capital">
-    <h2>Capital <span class="sym">CAPX</span></h2>
+    <h2><a href="hyperscaler-capex.html">Capital</a> <span class="sym">CAPX</span></h2>
     <div class="bigstat">
       <div class="v num">$513.8B</div>
-      <div class="l">Big-4 capital expenditure, four quarters to Jun 2026</div>
-      <div class="src">Total capex as filed; the companies call the growth AI-driven but report no AI line item. <a href="methodology.html#capex">Sources</a></div>
+      <div class="l">Big-4 capital spending, four quarters to Jun 2026</div>
+      <div class="src">Total capex as filed; the companies call the growth AI-driven but report no AI line item. <a href="hyperscaler-capex.html">Quarterly table since 2022</a></div>
     </div>
     <table class="minitable num">
       <tr><td>Amazon</td><td>$173.0B</td></tr>
@@ -212,107 +307,110 @@ button.pause:hover{color:var(--ink);border-color:var(--ink-3)}
     </table>
     <div class="row">
       <div class="v num">64%</div>
-      <div class="l">of global venture funding went to AI in Q3 2026 — $102B of $159B</div>
+      <div class="l">of all venture capital went to AI in Q3 2026 — $102B of $159B</div>
       <div class="meter" aria-hidden="true"><div class="fill" style="width:64%"></div></div>
-      <div class="src">Crunchbase, Oct 2026</div>
-    </div>
-    <div class="row">
-      <div class="l">Stargate: $500B announced over four years — SoftBank and OpenAI, Jan 2025. A commitment, not spend to date</div>
+      <div class="src">Crunchbase, Oct 2026. One quarter can be swung by single mega-rounds</div>
     </div>
   </section>
 
   <section class="sec" id="compute">
-    <h2>Compute <span class="sym">CHIP</span></h2>
+    <h2><a href="gpu-rental-prices.html">Compute</a> <span class="sym">CHIP</span></h2>
     <div class="bigstat">
       <div class="v num">$277.7B</div>
       <div class="l">NVIDIA data-center revenue, four quarters to Jul 2026</div>
-      <div class="src">Latest quarter $89.0B, up 18% on the prior quarter. NVIDIA fiscal quarters end ~1 month after calendar quarters. <a href="methodology.html#nvda">Sources</a></div>
+      <div class="src">$3.8B → $89.0B per quarter since 2022; fiscal quarters end ~1 month after calendar. NVIDIA filings</div>
     </div>
     <div class="chart">
-      <svg viewBox="0 0 280 92" role="img" aria-label="NVIDIA data-center revenue by quarter: 51.2, 62.3, 75.2, then 89.0 billion dollars">
-        <rect x="10"  y="43.2" width="24" height="36.8" fill="var(--ink-2)"/>
-        <rect x="80"  y="35.2" width="24" height="44.8" fill="var(--ink-2)"/>
-        <rect x="150" y="25.9" width="24" height="54.1" fill="var(--ink-2)"/>
-        <rect x="220" y="16"   width="24" height="64"   fill="var(--ink)"/>
-        <text x="232" y="10" fill="var(--ink)" font-size="12" font-weight="700" text-anchor="middle">$89.0B</text>
-        <g fill="var(--ink-3)" font-size="10.5" text-anchor="middle">
-          <text x="22" y="91">to Oct 25</text><text x="92" y="91">Jan 26</text>
-          <text x="162" y="91">Apr 26</text><text x="232" y="91">Jul 26</text>
-        </g>
-      </svg>
+      <svg viewBox="0 0 460 170" role="img" aria-label="NVIDIA data-center revenue per quarter from 3.8 billion dollars in early 2022 to 89 billion in mid 2026"><rect x="23.7" y="142.7" width="16.0" height="5.3" fill="var(--ink-2)"/>
+<rect x="47.0" y="142.6" width="16.0" height="5.4" fill="var(--ink-2)"/>
+<rect x="70.3" y="142.6" width="16.0" height="5.4" fill="var(--ink-2)"/>
+<rect x="93.7" y="142.9" width="16.0" height="5.1" fill="var(--ink-2)"/>
+<rect x="117.0" y="141.9" width="16.0" height="6.1" fill="var(--ink-2)"/>
+<rect x="140.3" y="133.4" width="16.0" height="14.6" fill="var(--ink-2)"/>
+<rect x="163.7" y="127.5" width="16.0" height="20.5" fill="var(--ink-2)"/>
+<rect x="187.0" y="121.9" width="16.0" height="26.1" fill="var(--ink-2)"/>
+<rect x="210.3" y="116.1" width="16.0" height="31.9" fill="var(--ink-2)"/>
+<rect x="233.7" y="110.8" width="16.0" height="37.2" fill="var(--ink-2)"/>
+<rect x="257.0" y="104.4" width="16.0" height="43.6" fill="var(--ink-2)"/>
+<rect x="280.3" y="97.6" width="16.0" height="50.4" fill="var(--ink-2)"/>
+<rect x="303.7" y="92.6" width="16.0" height="55.4" fill="var(--ink-2)"/>
+<rect x="327.0" y="89.8" width="16.0" height="58.2" fill="var(--ink-2)"/>
+<rect x="350.3" y="75.5" width="16.0" height="72.5" fill="var(--ink-2)"/>
+<rect x="373.7" y="59.8" width="16.0" height="88.2" fill="var(--ink-2)"/>
+<rect x="397.0" y="41.5" width="16.0" height="106.5" fill="var(--ink-2)"/>
+<rect x="420.3" y="22.0" width="16.0" height="126.0" fill="var(--ink)"/>
+<text x="31.7" y="136.7" fill="var(--ink-2)" font-size="12" font-weight="600" text-anchor="middle">$3.8B</text>
+<text x="428.3" y="16.0" fill="var(--ink)" font-size="12" font-weight="700" text-anchor="middle">$89.0B</text>
+<text x="31.7" y="164" fill="var(--ink-3)" font-size="11" text-anchor="middle">2022</text>
+<text x="125.0" y="164" fill="var(--ink-3)" font-size="11" text-anchor="middle">2023</text>
+<text x="218.3" y="164" fill="var(--ink-3)" font-size="11" text-anchor="middle">2024</text>
+<text x="311.7" y="164" fill="var(--ink-3)" font-size="11" text-anchor="middle">2025</text>
+<text x="405.0" y="164" fill="var(--ink-3)" font-size="11" text-anchor="middle">2026</text>
+<line x1="20" y1="148" x2="440" y2="148" stroke="var(--rule)" stroke-width="1"/></svg>
+      <p class="chart-cap">$B per fiscal quarter, scale 0–89. Drawn from NVIDIA releases — <a href="data/buildout-index.csv">data</a></p>
+    </div>
+    <div class="row">
+      <div class="v num">$3.50<span style="font-size:14px;font-weight:600;color:var(--ink-2)">/GPU-hr</span></div>
+      <div class="l">median rent for an H100, up 17% in a year — while chips improved ~49%/yr per dollar</div>
+      <div class="src">GetDeploying weekly median (CC-BY); Epoch AI trend. <a href="gpu-rental-prices.html">Series</a></div>
+    </div>
+    <div class="row">
+      <div class="v num">$50 / $10</div>
+      <div class="l">flagship vs mid-tier price per million output tokens — the two-tier market</div>
+      <div class="src">OpenAI's flagship went $30 → $50 since 2023; Anthropic's eased $75 → $50; the mid tier collapsed to $10. <a href="token-prices.html">List prices</a></div>
     </div>
     <div class="row">
       <div class="v num">3,169,809</div>
-      <div class="l">models on Hugging Face, Oct 20, 2026</div>
-      <div class="src">Up from ~1.19M in Sep 2024 (community count via press)</div>
-    </div>
-    <div class="row">
-      <div class="l">GPT-6 shipped to every ChatGPT tier on Oct 7, 2026 — OpenAI</div>
+      <div class="l">models on Hugging Face — doubling every 8.1 months on average since 2022</div>
+      <div class="src">Live count Oct 20. The 8.1 months is the 2022–26 average (12 archived points, R²=0.957); the recent pace is slower. Repos incl. finetunes. <a href="hugging-face-model-count.html">Curve</a></div>
     </div>
   </section>
 
   <section class="sec" id="power">
-    <h2>Power <span class="sym">PWR</span></h2>
+    <h2><a href="pjm-capacity-prices.html">Power</a> <span class="sym">PWR</span></h2>
     <div class="bigstat">
-      <div class="v num">945 TWh</div>
-      <div class="l">IEA projection for data-center electricity by 2030 — from 415 TWh in 2024</div>
-      <div class="src">IEA, Energy &amp; AI, Apr 2025. 2035 cases span ~700 to over 1,700 TWh. <a href="methodology.html#power">Sources</a></div>
+      <div class="v num">$325<span style="font-size:15px;font-weight:600;color:var(--ink-2)">/MW-day</span></div>
+      <div class="l">what the biggest US grid now pays for capacity — it was $28.92 four delivery years earlier, and the jump came in a single auction (9.3x)</div>
+      <div class="src">Third straight auction at the price cap; last two cleared 6,623 and 6,831 MW short. PJM. <a href="pjm-capacity-prices.html">22-year series</a></div>
+    </div>
+    <div class="chart">
+      <svg viewBox="0 0 460 170" role="img" aria-label="PJM capacity auction prices 2007 to 2028, long flat period then a jump from 28.92 to 269.92 and three years near the cap"><polyline points="16.0,131.9 36.4,107.4 56.8,110.9 77.1,86.0 97.5,108.1 117.9,140.3 138.3,136.4 158.7,102.6 179.0,99.2 199.4,125.6 219.8,104.7 240.2,89.2 260.6,111.6 281.0,119.6 301.3,97.8 321.7,128.8 342.1,134.2 362.5,136.0 382.9,53.0 403.2,32.6 423.6,31.1 444.0,34.1" fill="none" stroke="var(--ink-2)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="362.5" cy="136.0" r="4" fill="var(--ink-2)" stroke="var(--paper)" stroke-width="2"/>
+<circle cx="444.0" cy="34.1" r="4.5" fill="var(--ink)" stroke="var(--paper)" stroke-width="2"/>
+<text x="362.5" y="152.0" fill="var(--ink-2)" font-size="11.5" font-weight="600" text-anchor="middle">$28.92</text>
+<text x="440.0" y="25.1" fill="var(--ink)" font-size="12" font-weight="700" text-anchor="end">$325</text>
+<text x="16.0" y="166" fill="var(--ink-3)" font-size="11" text-anchor="start">2007/08</text>
+<text x="444.0" y="166" fill="var(--ink-3)" font-size="11" text-anchor="end">2028/29</text>
+<line x1="16" y1="146" x2="444" y2="146" stroke="var(--rule)" stroke-width="1"/></svg>
+      <p class="chart-cap">$/MW-day, scale 0–360, delivery years 2007/08–2028/29. Full labeled chart on the <a href="pjm-capacity-prices.html">PJM page</a> — <a href="data/pjm-capacity-prices.csv">data</a></p>
     </div>
     <div class="row">
-      <div class="v num">4.4% → 6.7–12%</div>
-      <div class="l">US data-center share of US electricity: 2023 actual → 2028 projected</div>
-      <div class="meter" aria-hidden="true"><div class="fill" style="width:36.7%"></div><div class="band" style="left:55.8%;width:44.2%"></div><div class="now" style="left:36.7%"></div></div>
-      <div class="src">Scale 0–12%. LBNL/DOE, Dec 2024</div>
-    </div>
-    <div class="row">
-      <div class="v num">$325 <span style="font-size:14px;font-weight:600;color:var(--ink-2)">/MW-day</span></div>
-      <div class="l">PJM capacity price, 2028/29 — third straight auction at the price cap; the last two auctions cleared short (6,623 MW, then 6,831 MW)</div>
-      <div class="chart">
-        <svg viewBox="0 0 280 60" role="img" aria-label="PJM capacity auction price history: 269.92, 329.17, 333.44, then 325 dollars per megawatt-day">
-          <polyline points="20,46 98,19 182,17 254,21" fill="none" stroke="var(--ink-2)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
-          <circle cx="20" cy="46" r="4" fill="var(--ink-2)" stroke="var(--paper)" stroke-width="2"/>
-          <circle cx="98" cy="19" r="4" fill="var(--ink-2)" stroke="var(--paper)" stroke-width="2"/>
-          <circle cx="182" cy="17" r="4" fill="var(--ink-2)" stroke="var(--paper)" stroke-width="2"/>
-          <circle cx="254" cy="21" r="4" fill="var(--ink)" stroke="var(--paper)" stroke-width="2"/>
-          <text x="20" y="36" fill="var(--ink-3)" font-size="10.5" text-anchor="middle">270</text>
-          <text x="254" y="11" fill="var(--ink)" font-size="10.5" font-weight="700" text-anchor="middle">325</text>
-          <g fill="var(--ink-3)" font-size="10.5" text-anchor="middle">
-            <text x="20" y="59">25/26</text><text x="98" y="59">26/27</text>
-            <text x="182" y="59">27/28</text><text x="254" y="59">28/29</text>
-          </g>
-        </svg>
-      </div>
-      <div class="src">Scale 240–360. PJM auction results, Dec 2025 and Jul 2026</div>
+      <div class="v num">8.62¢ → 9.77¢</div>
+      <div class="l">US industrial electricity, 2025 annual → Jul 2026 monthly — up 29% from 2020 to 2025 after holding flat 2014–2021 (nominal; cause not attributed)</div>
+      <div class="chart"><svg viewBox="0 0 460 170" role="img" aria-label="US industrial electricity price flat near 7 cents from 2014 to 2021 then rising to 8.62 cents in 2025"><polyline points="20.0,56.5 58.2,58.9 96.4,60.8 134.5,59.3 172.7,58.8 210.9,60.2 249.1,62.0 287.3,55.5 325.5,41.2 363.6,44.7 401.8,43.6 440.0,37.4" fill="none" stroke="var(--ink-2)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="249.1" cy="62.0" r="4" fill="var(--ink-2)" stroke="var(--paper)" stroke-width="2"/>
+<circle cx="440.0" cy="37.4" r="4" fill="var(--ink)" stroke="var(--paper)" stroke-width="2"/>
+<text x="249.1" y="78.0" fill="var(--ink-3)" font-size="11" text-anchor="middle">6.67 (2020)</text>
+<text x="440.0" y="29.4" fill="var(--ink)" font-size="12" font-weight="700" text-anchor="end">8.62</text>
+<text x="20.0" y="166" fill="var(--ink-3)" font-size="11" text-anchor="start">2014</text>
+<text x="440.0" y="166" fill="var(--ink-3)" font-size="11" text-anchor="end">2025</text>
+<line x1="20" y1="146" x2="440" y2="146" stroke="var(--rule)" stroke-width="1"/></svg>
+      <p class="chart-cap">¢/kWh nominal, scale 0–10, annual 2014–2025. EIA — <a href="data/us-industrial-electricity.csv">data</a></p></div>
     </div>
     <div class="row">
       <div class="v num">7,754 MW</div>
-      <div class="l">hyperscaler nuclear announced across six named deals</div>
-      <table class="minitable num">
-        <tr><td>Meta — Vistra, Oklo, TerraPower</td><td>4,499 MW</td></tr>
-        <tr><td>Amazon — Talen (Susquehanna)</td><td>1,920 MW</td></tr>
-        <tr><td>Microsoft — Constellation (TMI U1)</td><td>835 MW</td></tr>
-        <tr><td>Google — Kairos, with TVA</td><td>500 MW</td></tr>
-      </table>
-      <div class="src">Company releases and SEC filings, Sep 2024 – Jan 2026</div>
-    </div>
-  </section>
-
-  <section class="sec" id="infrastructure">
-    <h2>Infrastructure <span class="sym">BLDG</span></h2>
-    <div class="bigstat">
-      <div class="v num">7,481 MW</div>
-      <div class="l">of data-center capacity under construction in North America's primary markets — a record</div>
-      <div class="src">Vacancy 1.4%; 80.4% of construction already pre-leased. CBRE, H1 2026. <a href="methodology.html#infra">Sources</a></div>
+      <div class="l">of nuclear announced by big tech across six deals — none since Jan 2026</div>
+      <div class="src">Announced, not operating; first restart targeted 2027. About the size of one PJM shortfall. <a href="nuclear-deals.html">Every deal</a></div>
     </div>
     <div class="row">
-      <div class="v num">3,000+</div>
-      <div class="l">US data centers operating; more than 1,500 more in development</div>
-      <div class="src">Data Center Map counts via Pew Research Center, Feb 2026</div>
+      <div class="v num">2,390 MW</div>
+      <div class="l">of that announced nuclear is small or advanced reactors — Oklo, TerraPower, Kairos</div>
+      <div class="src">The newest reactor designs' first real customers are AI companies. <a href="nuclear-deals.html">The deals</a></div>
     </div>
     <div class="row">
-      <div class="v num">233+ GW</div>
-      <div class="l">of large-load requests in the Texas grid queue — over 70% of it data centers</div>
-      <div class="src">ERCOT, year-end 2025, via Utility Dive. No national equivalent is published</div>
+      <div class="v num">415 → 945 TWh</div>
+      <div class="l">world data-center electricity: 2024 estimate → 2030 projection (IEA; all data centers, not only AI)</div>
+      <div class="src">US share: 4.4% (2023) → 6.7–12% projected by 2028, LBNL/DOE</div>
     </div>
   </section>
 
@@ -320,50 +418,113 @@ button.pause:hover{color:var(--ink);border-color:var(--ink-3)}
     <h2>Emergent <span class="sym">EMRG</span></h2>
     <div class="bigstat">
       <div class="v num">116 GW</div>
-      <div class="l">of gas turbines in GE Vernova's backlog and slot reservations</div>
-      <div class="src">Total backlog $176B; data-center orders over $5B YTD, more than double 2025. GE Vernova, Q2 2026. <a href="methodology.html#emergent">Sources</a></div>
+      <div class="l">of gas turbines in GE Vernova's backlog and reservations</div>
+      <div class="src">$176B total backlog; data-center orders over $5B YTD, 2x 2025. GE Vernova, Q2 2026</div>
     </div>
     <div class="row">
       <div class="v num">128–144 weeks</div>
-      <div class="l">wait for a large power transformer</div>
-      <div class="src">Wood Mackenzie Q2 2025 survey, via POWER Magazine</div>
+      <div class="l">wait for a large power transformer — two and a half years</div>
+      <div class="src">Wood Mackenzie Q2 2025 survey, via POWER Magazine (secondhand)</div>
     </div>
     <div class="row">
-      <div class="l">Data centers already take ~9% of annual consumptive water use in the Washington-metro Potomac basin, heading for ~22 million gallons a day by 2050</div>
-      <div class="src">Interstate Commission on the Potomac River Basin, Mar 2026</div>
+      <div class="l">Data centers take ~9% of annual consumptive water use in the Washington-metro Potomac basin — projected ~22 million gallons a day by 2050</div>
+      <div class="src">Interstate Commission on the Potomac River Basin, Mar 2026. Regional figure; no national total exists</div>
     </div>
     <div class="row">
-      <div class="l">The watchlist — companies pulled into the AI trade from outside tech</div>
-      <table class="watch">
-        <tr><td>CEG</td><td>835 MW Microsoft deal; Three Mile Island U1 restart targeted 2027</td></tr>
-        <tr><td>VST</td><td>2,609 MW of 20-year nuclear deals with Meta</td></tr>
-        <tr><td>TLN</td><td>1,920 MW Amazon deal from Susquehanna</td></tr>
-        <tr><td>GEV</td><td>116 GW turbine backlog and reservations; data-center orders doubled</td></tr>
-        <tr><td>VRT</td><td>$15.0B backlog, up 109% on AI infrastructure (Feb 2026)</td></tr>
-        <tr><td>OKLO</td><td>1.2 GW campus agreement with Meta in Ohio</td></tr>
-        <tr><td>SMR</td><td>Up to 6 GW SMR program citing hyperscale data centers (nonbinding)</td></tr>
-      </table>
-      <div class="src">Events sourced in the methodology; no prices shown</div>
+      <div class="v num">173.3 MMcf/d</div>
+      <div class="l">of natural gas still flared in North Dakota — even at a 95.3% statewide capture rate</div>
+      <div class="src">July 2026, ND Industrial Commission. US vented+flared: 335 bcf in 2024 (EIA). Global flaring rose a third straight year to 167 bcm (World Bank satellite estimate, 2025). The counterexample exists: Crusoe started in 2018 putting computing on Bakken flare gas — it now builds Stargate's Abilene campus. <a href="methodology.html#flaring">Sources</a></div>
+    </div>
+    <div class="row">
+      <div class="l" style="margin-bottom:4px">The watchlist — companies pulled into AI from outside tech. Tap any for the story.</div>
+      <details class="wrow"><summary><span class="wt">CEG</span> Constellation Energy</summary><p>Restarting Three Mile Island Unit 1 for Microsoft — 835 MW, 20-year deal (announced Sep 2024); restart targeted 2027 per its Q2 2026 release.</p></details><details class="wrow"><summary><span class="wt">VST</span> Vistra</summary><p>2,609 MW of 20-year nuclear deals with Meta across the Perry and Davis-Besse plants plus uprates (Jan 2026 8-K).</p></details><details class="wrow"><summary><span class="wt">TLN</span> Talen Energy</summary><p>1,920 MW to Amazon from the Susquehanna nuclear plant through 2042 (Jun 2025).</p></details><details class="wrow"><summary><span class="wt">GEV</span> GE Vernova</summary><p>116 GW of gas turbines in backlog and reservations; $176B total backlog; data-center equipment orders over $5B YTD, more than double 2025 (Q2 2026).</p></details><details class="wrow"><summary><span class="wt">VRT</span> Vertiv</summary><p>$15.0B backlog, up 109% in a year, on AI infrastructure — cooling and power gear (Feb 2026 release; eight months old at this re-base).</p></details><details class="wrow"><summary><span class="wt">OKLO</span> Oklo</summary><p>1.2 GW small-reactor campus agreement with Meta in southern Ohio; first phase as early as 2030 (Jan 2026).</p></details><details class="wrow"><summary><span class="wt">SMR</span> NuScale</summary><p>Up to 6 GW of small modular reactors with ENTRA1 and TVA, citing hyperscale data centers — still nonbinding per its Feb 2026 release.</p></details>
+      <div class="src" style="margin-top:6px">Sourced events only — no prices shown; see <a href="methodology.html#cut">why</a></div>
     </div>
   </section>
 
   <section class="sec" id="society">
-    <h2>Society <span class="sym">SOC</span></h2>
+    <h2><a href="chatgpt-users.html">Society</a> <span class="sym">SOC</span></h2>
     <div class="bigstat">
-      <div class="v num">51%</div>
-      <div class="l">of web traffic was automated in 2024 — bots passed humans for the first time in a decade</div>
-      <div class="src">37% was malicious. Measured on Imperva-protected sites. Thales/Imperva, Apr 2025. <a href="methodology.html#society">Sources</a></div>
+      <div class="v num">1.2B+</div>
+      <div class="l">people use ChatGPT every week — one in seven humans</div>
+      <div class="src">OpenAI, Sep 29, 2026. 100M three years ago. <a href="chatgpt-users.html">Full timeline</a></div>
+    </div>
+    <div class="chart">
+      <svg viewBox="0 0 460 170" role="img" aria-label="ChatGPT weekly users from 100 million in late 2023 to 1.2 billion in late 2026"><polyline points="20.0,135.2 137.9,124.3 176.4,113.5 207.4,102.7 222.9,91.8 297.9,59.3 355.0,48.5 440.0,16.0" fill="none" stroke="var(--ink-2)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="20.0" cy="135.2" r="4" fill="var(--ink-2)" stroke="var(--paper)" stroke-width="2"/>
+<circle cx="137.9" cy="124.3" r="4" fill="var(--paper)" stroke="var(--ink-2)" stroke-width="2"/>
+<circle cx="176.4" cy="113.5" r="4" fill="var(--ink-2)" stroke="var(--paper)" stroke-width="2"/>
+<circle cx="207.4" cy="102.7" r="4" fill="var(--paper)" stroke="var(--ink-2)" stroke-width="2"/>
+<circle cx="222.9" cy="91.8" r="4" fill="var(--paper)" stroke="var(--ink-2)" stroke-width="2"/>
+<circle cx="297.9" cy="59.3" r="4" fill="var(--ink-2)" stroke="var(--paper)" stroke-width="2"/>
+<circle cx="355.0" cy="48.5" r="4" fill="var(--ink-2)" stroke="var(--paper)" stroke-width="2"/>
+<circle cx="440.0" cy="16.0" r="4" fill="var(--ink-2)" stroke="var(--paper)" stroke-width="2"/>
+<circle cx="440.0" cy="16.0" r="4.5" fill="var(--ink)" stroke="var(--paper)" stroke-width="2"/>
+<text x="20.0" y="127.2" fill="var(--ink-3)" font-size="11" text-anchor="start">100M</text>
+<text x="436.0" y="8.0" fill="var(--ink)" font-size="12" font-weight="700" text-anchor="end">1.2B</text>
+<text x="20.0" y="166" fill="var(--ink-3)" font-size="11" text-anchor="start">Nov 2023</text>
+<text x="440.0" y="166" fill="var(--ink-3)" font-size="11" text-anchor="end">Sep 2026</text>
+<line x1="20" y1="146" x2="440" y2="146" stroke="var(--rule)" stroke-width="1"/></svg>
+      <p class="chart-cap">Weekly users, millions, scale 0–1,200. Filled dots: OpenAI statements; hollow: secondhand. <a href="data/chatgpt-users.csv">data</a></p>
     </div>
     <div class="row">
       <div class="v num">120,136</div>
-      <div class="l">announced US job cuts citing AI, Jan–Sep 2026</div>
-      <div class="src">Challenger, Gray &amp; Christmas, Oct 2026</div>
+      <div class="l">US job cuts citing AI announced in nine months of 2026 — 2.2x all of 2025</div>
+      <div class="chart"><svg viewBox="0 0 460 170" role="img" aria-label="Announced US job cuts citing AI rising from 4,247 in 2023 to 120,136 in nine months of 2026"><rect x="52.5" y="143.5" width="40.0" height="4.5" fill="var(--ink-2)"/>
+<rect x="157.5" y="134.6" width="40.0" height="13.4" fill="var(--ink-2)"/>
+<rect x="262.5" y="90.5" width="40.0" height="57.5" fill="var(--ink-2)"/>
+<rect x="367.5" y="22.0" width="40.0" height="126.0" fill="var(--ink)"/>
+<text x="72.5" y="137.5" fill="var(--ink-2)" font-size="12" font-weight="600" text-anchor="middle">4,247</text>
+<text x="387.5" y="16.0" fill="var(--ink)" font-size="12" font-weight="700" text-anchor="middle">120,136</text>
+<text x="72.5" y="164" fill="var(--ink-3)" font-size="11" text-anchor="middle">2023</text>
+<text x="177.5" y="164" fill="var(--ink-3)" font-size="11" text-anchor="middle">2024*</text>
+<text x="282.5" y="164" fill="var(--ink-3)" font-size="11" text-anchor="middle">2025</text>
+<text x="387.5" y="164" fill="var(--ink-3)" font-size="11" text-anchor="middle">2026 (9 mo)</text>
+<line x1="20" y1="148" x2="440" y2="148" stroke="var(--rule)" stroke-width="1"/></svg>
+      <p class="chart-cap">Employer-attributed announced cuts (Challenger), scale 0–120,136, not net job losses. 2024 derived. <a href="ai-layoffs.html">Series</a></p></div>
     </div>
     <div class="row">
-      <div class="v num">1.2B+</div>
-      <div class="l">people use ChatGPT each week — OpenAI, Oct 7, 2026</div>
-      <div class="src num"><span id="wauSince" aria-hidden="true">grew ~15.6 per second between statements</span><span class="sr">Grew about 15.6 per second between OpenAI's February and October 2026 statements.</span></div>
-      <div class="src">900M → 1.2B between OpenAI's Feb and Oct 2026 statements; the counter runs that pace forward — extrapolation, not measurement</div>
+      <div class="v num">51%</div>
+      <div class="l">of web traffic was bots in 2024 — past humans for the first time in a decade</div>
+      <div class="src">37% malicious. Measured on Imperva-protected sites (their scope). Thales/Imperva, Apr 2025</div>
+    </div>
+    <div class="row">
+      <div class="v num">45,102</div>
+      <div class="l">AI papers listed on arXiv in 2025 — six times 2020; 2026 already higher</div>
+      <div class="src">cs.AI listings (incl. cross-lists), CC0 metadata. <a href="data/arxiv-ai-listings.csv">data</a></div>
+    </div>
+    <div class="row">
+      <div class="l">.ai — Anguilla's domain — passed one million registrations in Jan 2026</div>
+      <div class="src">Registry via press; the island's windfall is real and documented in the methodology</div>
+    </div>
+  </section>
+
+  <section class="sec" id="research">
+    <h2>Research pulse <span class="sym">LAB</span></h2>
+    <div class="bigstat">
+      <div class="v num">5x</div>
+      <div class="l">frontier training compute grows per year — doubling every 5.2 months</div>
+      <div class="src">Epoch AI (CC-BY), as of Feb 2026</div>
+    </div>
+    <div class="row">
+      <div class="v num">6.8 mo</div>
+      <div class="l">doubling time of the world's AI chip stock</div>
+      <div class="src">Epoch AI. The largest known AI data center: ~1.1M H100-equivalents</div>
+    </div>
+    <div class="row">
+      <div class="v num">+49%/yr</div>
+      <div class="l">chip performance per dollar — about 33% cheaper per unit of performance each year</div>
+      <div class="src">Epoch AI, since 2023</div>
+    </div>
+    <div class="row">
+      <div class="v num">~2 years</div>
+      <div class="l">to build a gigawatt-scale data center</div>
+      <div class="src">Epoch AI</div>
+    </div>
+    <div class="row">
+      <div class="v num">107</div>
+      <div class="l">notable AI models released in 2025 (84 so far in 2026, a lower bound — recent years get back-filled)</div>
+      <div class="src">Epoch AI notable-models dataset (CC-BY)</div>
     </div>
   </section>
 
@@ -373,16 +534,13 @@ button.pause:hover{color:var(--ink);border-color:var(--ink-3)}
   <div>
     <h2>The Reckoning</h2>
     <div class="year num">2031</div>
-    <div class="range num">range 2028–2033</div>
-    <p class="dek">Our editorial estimate of when AI becomes the default condition of the economy — <strong>not a measurement, not a sourced forecast.</strong> Six of ten checkable conditions are already met; the year's range is set by the slowest pending one. The full math is published, so argue with the inputs.</p>
+    <div class="range num">range 2028–2033 · <span id="reckdays" class="num">1,534</span> days to the midpoint</div>
+    <p class="dek">Our one editorial opinion on an otherwise sourced board: an estimate of when AI becomes the default condition of the economy — <strong>not a measurement, not a forecast by anyone but us.</strong> Six of ten checkable conditions are already met; the year's range is set by the slowest pending one. The full math is published, so argue with the inputs.</p>
     <div class="dots">
       <svg width="190" height="16" viewBox="0 0 190 16" aria-hidden="true">
-        <rect x="1"   y="2" width="12" height="12" fill="var(--ink)"/>
-        <rect x="20"  y="2" width="12" height="12" fill="var(--ink)"/>
-        <rect x="39"  y="2" width="12" height="12" fill="var(--ink)"/>
-        <rect x="58"  y="2" width="12" height="12" fill="var(--ink)"/>
-        <rect x="77"  y="2" width="12" height="12" fill="var(--ink)"/>
-        <rect x="96"  y="2" width="12" height="12" fill="var(--ink)"/>
+        <rect x="1" y="2" width="12" height="12" fill="var(--ink)"/><rect x="20" y="2" width="12" height="12" fill="var(--ink)"/>
+        <rect x="39" y="2" width="12" height="12" fill="var(--ink)"/><rect x="58" y="2" width="12" height="12" fill="var(--ink)"/>
+        <rect x="77" y="2" width="12" height="12" fill="var(--ink)"/><rect x="96" y="2" width="12" height="12" fill="var(--ink)"/>
         <rect x="115" y="2" width="12" height="12" fill="none" stroke="var(--pending)" stroke-width="2"/>
         <rect x="134" y="2" width="12" height="12" fill="none" stroke="var(--pending)" stroke-width="2"/>
         <rect x="153" y="2" width="12" height="12" fill="none" stroke="var(--pending)" stroke-width="2"/>
@@ -390,81 +548,81 @@ button.pause:hover{color:var(--ink);border-color:var(--ink-3)}
       </svg>
       <span>6 met, 4 pending</span>
     </div>
-    <p class="src">Reckoning model v1.0, re-based Oct 20, 2026. Point estimate is the midpoint of the range; the range is set by the slowest pending condition. <a href="methodology.html#reckoning">How this is computed</a></p>
+    <p class="src">Reckoning model v1.0, re-based Oct 20, 2026. Point = midpoint of the range. <a href="methodology.html#reckoning">How this is computed</a></p>
   </div>
   <div>
-    <div class="cond-head" style="border-top:2px solid var(--ink);padding-top:8px">The ten conditions</div>
-    <ol class="cond" style="border-top:0;padding-top:0">
+    <p class="cond-head">The ten conditions</p>
+    <ol class="cond" style="border-top:0;padding-top:6px">
       <li><span class="mark" aria-hidden="true">■</span><span><span class="sr">Met. </span><span class="t">Machines outnumber humans on the web</span><span class="e">51% of traffic automated in 2024, Imperva-protected sites — Thales/Imperva</span></span></li>
-      <li><span class="mark" aria-hidden="true">■</span><span><span class="sr">Met. </span><span class="t">One AI product passes a billion weekly users</span><span class="e">ChatGPT 1.2B weekly — OpenAI, Oct 2026; crossed ~May 2026, interpolated</span></span></li>
+      <li><span class="mark" aria-hidden="true">■</span><span><span class="sr">Met. </span><span class="t">A grid auction clears short of its requirement</span><span class="e">PJM 2027/28, 6,623 MW short — Dec 2025; repeated 2028/29</span></span></li>
+      <li><span class="mark" aria-hidden="true">■</span><span><span class="sr">Met. </span><span class="t">One AI product passes a billion weekly users</span><span class="e">ChatGPT 1.2B weekly — OpenAI, Sep 2026; crossed ~May 2026, interpolated</span></span></li>
       <li><span class="mark" aria-hidden="true">■</span><span><span class="sr">Met. </span><span class="t">Big-4 infrastructure spend passes $500B a year</span><span class="e">$513.8B total capex to Jun 2026 — company filings</span></span></li>
-      <li><span class="mark" aria-hidden="true">■</span><span><span class="sr">Met. </span><span class="t">A grid auction clears short of its requirement</span><span class="e">PJM 2027/28, 6,623 MW short — Dec 2025; repeated in 2028/29</span></span></li>
       <li><span class="mark" aria-hidden="true">■</span><span><span class="sr">Met. </span><span class="t">AI takes the majority of venture capital</span><span class="e">64% of global VC, Q3 2026 — Crunchbase</span></span></li>
       <li><span class="mark" aria-hidden="true">■</span><span><span class="sr">Met. </span><span class="t">100,000+ job cuts in a year citing AI</span><span class="e">120,136 US cuts, Jan–Sep 2026 — Challenger</span></span></li>
       <li><span class="mark open" aria-hidden="true">□</span><span><span class="sr">Pending. </span><span class="t">First reactor restarted for a tech buyer</span><span class="e">Crane restart for Microsoft targeted 2027 — Constellation</span></span></li>
       <li><span class="mark open" aria-hidden="true">□</span><span><span class="sr">Pending. </span><span class="t">Data centers take a tenth of US electricity</span><span class="e">4.4% in 2023; 6.7–12% by 2028 — LBNL. Sets the 2028–2033 range</span></span></li>
-      <li><span class="mark open" aria-hidden="true">□</span><span><span class="sr">Pending. </span><span class="t">10 GW of hyperscaler nuclear announced</span><span class="e">7,754 MW to date; crossing extrapolated ~2027</span></span></li>
-      <li><span class="mark open" aria-hidden="true">□</span><span><span class="sr">Pending. </span><span class="t">A frontier lab reports crossing its autonomy threshold</span><span class="e">Per Anthropic's scaling policy; not declared. Extrapolated ~2028 — the weakest input</span></span></li>
+      <li><span class="mark open" aria-hidden="true">□</span><span><span class="sr">Pending. </span><span class="t">10 GW of hyperscaler nuclear announced</span><span class="e">7,754 MW to date; ~3.6 GW/yr pace → extrapolated ~2027</span></span></li>
+      <li><span class="mark open" aria-hidden="true">□</span><span><span class="sr">Pending. </span><span class="t">A frontier lab reports crossing its autonomy threshold</span><span class="e">Per published scaling policies; not declared. Extrapolated ~2028 — the weakest input</span></span></li>
     </ol>
   </div>
 </section>
 
+<section class="pages">
+  <h2>Every number has its own page — tables, sources, downloads</h2>
+  <nav>
+    <a href="buildout-index.html">Buildout Index</a>
+    <a href="hyperscaler-capex.html">Hyperscaler capex</a>
+    <a href="pjm-capacity-prices.html">PJM capacity prices</a>
+    <a href="us-industrial-electricity.html">US electricity prices</a>
+    <a href="us-data-centers.html">US data centers</a>
+    <a href="nuclear-deals.html">Nuclear deals</a>
+    <a href="hugging-face-model-count.html">Hugging Face models</a>
+    <a href="chatgpt-users.html">ChatGPT users</a>
+    <a href="gpu-rental-prices.html">GPU rental prices</a>
+    <a href="token-prices.html">Token prices</a>
+    <a href="ai-layoffs.html">AI-cited layoffs</a>
+    <a href="report.html">Printable readout</a>
+  </nav>
+</section>
+
 <footer class="foot">
-  <div class="sponsor">This board runs on one sponsor. Taking inquiries.</div>
+  <div class="sponsor">This board runs on one sponsor. <a href="methodology.html#about">Taking inquiries.</a></div>
   <nav>
     <a href="methodology.html">Methodology &amp; sources</a>
     <a href="methodology.html#changelog">Changelog</a>
-    <button class="pause" id="pauseBtn" aria-pressed="false">Pause motion</button>
+    <a href="data/buildout-index.csv">Data downloads</a>
   </nav>
-  <p class="fine">Every figure on this board comes from the public source named beside it, as of the date shown. Ticking figures are arithmetic on those sources — a filed annual pace divided to the second, or an interpolation between two dated statements — never a live measurement. The Reckoning is an editorial estimate with its full math published; it is not a prediction market, a poll of experts, or anyone's forecast but ours. Not affiliated with any company named. © 2026 BRAIAIN, a dnilgis project.</p>
+  <p class="fine">Every figure on this board comes from the public source named beside it, as of the date shown. Moving figures are arithmetic on those sources — a filed pace divided to the second, or a measured pace between two dated statements run forward — never live telemetry. The Reckoning is an editorial estimate with its full math published. Map data © OpenStreetMap contributors (ODbL). Not affiliated with any company named. © 2026 BRAIAIN, a dnilgis project.</p>
 </footer>
 
 </div>
 <script>
 (function(){
-  var reduced = false;
-  try { reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch(e){}
-  var paused = reduced;
-  var btn = document.getElementById('pauseBtn');
-  var spendEl = document.getElementById('spendSince');
-  var wauEl = document.getElementById('wauSince');
-  var RATE = 25081.89;                       // USD/sec, four quarters to Jun 2026
-  var WAU_ANCHOR = Date.UTC(2026, 9, 7);     // Oct 7, 2026 UTC — OpenAI's 1.2B statement
-  var WAU_RATE = 15.64;                      // per sec, measured Feb->Oct 2026
-  var acc = 0, last = null;
-
-  function fmt(n){ return Math.floor(n).toLocaleString('en-US'); }
-
+  var reduced=false;
+  try{reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;}catch(e){}
+  var paused=reduced, acc=0, last=null;
+  var btn=document.getElementById('pauseBtn');
+  var cells=[].slice.call(document.querySelectorAll('[data-rate]'));
+  function fmt(n){return Math.floor(n).toLocaleString('en-US');}
   function tick(){
-    var now = performance.now();
-    if (!paused) {
-      if (last !== null) acc += (now - last) / 1000;
-      if (spendEl) spendEl.textContent = '$' + fmt(acc * RATE) + ' since you opened this page';
-      if (wauEl) {
-        var elapsed = (Date.now() - WAU_ANCHOR) / 1000;
-        if (elapsed > 0 && elapsed < 31557600) {   // sane within ~1 year of the statement, else hold the static text
-          wauEl.textContent = '+' + fmt(elapsed * WAU_RATE) + ' at that pace since Oct 7 (extrapolated)';
-        }
-      }
+    var now=performance.now();
+    if(!paused){
+      if(last!==null)acc+=(now-last)/1000;
+      cells.forEach(function(el){
+        el.textContent=el.getAttribute('data-unit')+fmt(acc*parseFloat(el.getAttribute('data-rate')));
+      });
     }
-    last = now;
+    last=now;
   }
-
   function setBtn(){
-    if (!btn) return;
-    btn.textContent = paused ? 'Resume motion' : 'Pause motion';
-    btn.setAttribute('aria-pressed', String(paused));
-    if (paused && acc === 0 && spendEl) spendEl.textContent = 'motion paused';
+    if(!btn)return;
+    btn.textContent=paused?'Resume motion':'Pause motion';
+    btn.setAttribute('aria-pressed',String(paused));
+    if(paused&&acc===0)cells.forEach(function(el){el.textContent='paused';});
   }
-
-  if (btn) btn.addEventListener('click', function(){
-    paused = !paused;
-    setBtn();
-  });
-
-  setBtn();
-  tick();
-  setInterval(tick, 1000);
+  if(btn)btn.addEventListener('click',function(){paused=!paused;setBtn();});
+  setBtn();tick();setInterval(tick,1000);
+  try{console.log('%cBRAIAIN','font-size:28px;font-weight:800;','\nYou read source. Respect.\nEvery number on this board is traceable: /methodology.html\nThe data is downloadable: /data/\nThe machines are counting either way.');}catch(e){}
 })();
 </script>
 </body>

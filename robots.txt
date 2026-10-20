@@ -1,4 +1,19 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://braiain.com/sitemap.xml
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://www.braiain.com/sitemap.xml

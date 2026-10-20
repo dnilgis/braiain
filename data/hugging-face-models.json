@@ -1,0 +1,63 @@
+{
+ "meta": {
+  "title": "Hugging Face public model count over time",
+  "notes": "Counts model repositories (duplicates/finetunes included). Points machine-read from archived captures of huggingface.co/models (numTotalItems); archive URLs in methodology. Log-linear fit: doubling every 8.1 months (R^2 0.957, n=12).",
+  "sources": "huggingface.co/models via Internet Archive captures",
+  "license": "Compilation CC BY 4.0",
+  "as_of": "2026-10-20"
+ },
+ "columns": [
+  "date",
+  "public_model_count"
+ ],
+ "rows": [
+  [
+   "2022-03-07",
+   31709
+  ],
+  [
+   "2022-06-15",
+   52204
+  ],
+  [
+   "2022-12-15",
+   101574
+  ],
+  [
+   "2023-03-15",
+   153151
+  ],
+  [
+   "2023-08-16",
+   293672
+  ],
+  [
+   "2023-12-16",
+   435772
+  ],
+  [
+   "2024-03-16",
+   552114
+  ],
+  [
+   "2024-09-15",
+   954376
+  ],
+  [
+   "2025-03-17",
+   1509972
+  ],
+  [
+   "2025-09-16",
+   2092667
+  ],
+  [
+   "2026-03-02",
+   2678385
+  ],
+  [
+   "2026-10-16",
+   3157435
+  ]
+ ]
+}

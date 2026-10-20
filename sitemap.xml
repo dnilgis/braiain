@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://braiain.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://braiain.com/methodology.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.braiain.com/</loc><lastmod>2026-10-20</lastmod></url>
+  <url><loc>https://www.braiain.com/methodology.html</loc><lastmod>2026-10-20</lastmod></url>
+  <url><loc>https://www.braiain.com/report.html</loc><lastmod>2026-10-20</lastmod></url>
+  <url><loc>https://www.braiain.com/buildout-index.html</loc><lastmod>2026-10-20</lastmod></url>
+  <url><loc>https://www.braiain.com/hyperscaler-capex.html</loc><lastmod>2026-10-20</lastmod></url>
+  <url><loc>https://www.braiain.com/pjm-capacity-prices.html</loc><lastmod>2026-10-20</lastmod></url>
+  <url><loc>https://www.braiain.com/us-industrial-electricity.html</loc><lastmod>2026-10-20</lastmod></url>
+  <url><loc>https://www.braiain.com/us-data-centers.html</loc><lastmod>2026-10-20</lastmod></url>
+  <url><loc>https://www.braiain.com/nuclear-deals.html</loc><lastmod>2026-10-20</lastmod></url>
+  <url><loc>https://www.braiain.com/hugging-face-model-count.html</loc><lastmod>2026-10-20</lastmod></url>
+  <url><loc>https://www.braiain.com/chatgpt-users.html</loc><lastmod>2026-10-20</lastmod></url>
+  <url><loc>https://www.braiain.com/gpu-rental-prices.html</loc><lastmod>2026-10-20</lastmod></url>
+  <url><loc>https://www.braiain.com/token-prices.html</loc><lastmod>2026-10-20</lastmod></url>
+  <url><loc>https://www.braiain.com/ai-layoffs.html</loc><lastmod>2026-10-20</lastmod></url>
+  <url><loc>https://www.braiain.com/data/buildout-index.csv</loc><lastmod>2026-10-20</lastmod></url>
+  <url><loc>https://www.braiain.com/data/pjm-capacity-prices.csv</loc><lastmod>2026-10-20</lastmod></url>
+  <url><loc>https://www.braiain.com/data/us-industrial-electricity.csv</loc><lastmod>2026-10-20</lastmod></url>
+  <url><loc>https://www.braiain.com/data/us-data-centers.csv</loc><lastmod>2026-10-20</lastmod></url>
+  <url><loc>https://www.braiain.com/data/hugging-face-models.csv</loc><lastmod>2026-10-20</lastmod></url>
+  <url><loc>https://www.braiain.com/data/chatgpt-users.csv</loc><lastmod>2026-10-20</lastmod></url>
+  <url><loc>https://www.braiain.com/data/gpu-rental-prices.csv</loc><lastmod>2026-10-20</lastmod></url>
+  <url><loc>https://www.braiain.com/data/token-prices.csv</loc><lastmod>2026-10-20</lastmod></url>
+  <url><loc>https://www.braiain.com/data/hyperscaler-nuclear-deals.csv</loc><lastmod>2026-10-20</lastmod></url>
+  <url><loc>https://www.braiain.com/data/ai-layoffs.csv</loc><lastmod>2026-10-20</lastmod></url>
+  <url><loc>https://www.braiain.com/data/arxiv-ai-listings.csv</loc><lastmod>2026-10-20</lastmod></url>
+  <url><loc>https://www.braiain.com/data/</loc><lastmod>2026-10-20</lastmod></url>
 </urlset>
