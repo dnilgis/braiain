@@ -39,13 +39,31 @@ li{margin-top:6px}
 <h1>How every number on the board is made</h1>
 <p class="intro">Rules first: nothing appears without a named public source and a date. Moving figures are arithmetic on sourced numbers, never telemetry: flows tick at their filed pace; a count ticks only as a clearly labeled pace measured between two dated observations and run forward; shares never tick. Anything we could not source got cut, and this page says what that was. Each metric also has its own page with the full table, sources and downloads — linked throughout. Board last re-based October 20, 2026.</p>
 
+<h2 id="hero-basis">The hero figure</h2>
+<p>The headline counter is <strong>big-4 capex only</strong>: $513.8B (Microsoft, Alphabet, Amazon, Meta, four quarters to Jun 30, 2026, as filed) ÷ 31,556,952 seconds = <strong>$16,281.93/second</strong>, about $1.41B/day. It deliberately excludes NVIDIA's data-center revenue to avoid double-counting; NVIDIA appears separately. The combined, overlapping flow ($25,082/s) remains the Buildout Index's basis and is documented below. Changed Oct 20, 2026 after panel review; logged in the changelog.</p>
+
+<h2 id="conversions">Plain-language conversions — the arithmetic</h2>
+<ul>
+<li><strong>PJM serves "more than 67 million people across 13 states and DC"</strong> — PJM's own pages and releases (2026).</li>
+<li><strong>Capacity price ≈ 1.1¢/kWh:</strong> $269.92/MW-day ÷ 24h ÷ 1,000 kW = 1.12¢ per kWh if usage were flat around the clock ($28.92 → 0.12¢). A simplification: real bill impact depends on region, peak usage and state pass-through.</li>
+<li><strong>Bills rose an estimated 1.5–5%</strong> in the first repriced PJM year — PJM figures as reported by <a href="https://whyy.org/articles/electricity-bills-pjm-new-jersey-pennsylvania-delaware">WHYY, Jul 2025</a>; utilities pass wholesale costs to customers.</li>
+<li><strong>A US home uses ~30 kWh/day:</strong> EIA FAQ — 10,791 kWh per residential customer in 2022 ÷ 365.</li>
+<li><strong>47 → 108 GW:</strong> 415 and 945 TWh/yr ÷ 8,760 hours. <strong>129 reactors:</strong> 107.9 GW ÷ 0.835 GW (Three Mile Island Unit 1's announced capacity).</li>
+<li><strong>ND flaring ≈ heat for ~1 million homes:</strong> 173.3 MMcf/d ÷ ~163 cf/day per gas home (derived from EIA 2024: 4,389,004 MMcf across 73.7M residential customers).</li>
+<li><strong>31x:</strong> 233 GW of ERCOT large-load requests ÷ 7.48 GW under construction (CBRE) — requests vs real construction.</li>
+<li><strong>~4M gal/day:</strong> ICPRB's 4 MGD average-day consumptive figure for Potomac-basin data centers (~9% of the area's consumptive use).</li>
+</ul>
+
+<h2 id="editorial">How opinions are marked</h2>
+<p>Narrative framings on the board (chapter sentences, the Bakken juxtaposition) are ours and are written to be checkable against the data shown; the one standing editorial product — the Reckoning — is explicitly tagged EDITORIAL, with its conditions and thresholds fixed on Oct 20, 2026, before any pending outcome. The Reckoning carries no Dataset markup and is excluded from the citable datasets.</p>
+
 <h2 id="wall">The wall — every live counter's formula</h2>
 <ul>
-<li><strong>$ spent building AI:</strong> ($513.8B big-4 capex + $277.7B NVIDIA data-center revenue, four quarters to mid-2026) ÷ 31,556,952 s = $25,081.89/s trailing-year pace. The latest quarter alone ($255.0B ÷ 91 days) runs $32,435/s. A combined, overlapping flow — hyperscaler chip purchases appear in both components.</li>
+<li><strong>Hero (big-4):</strong> see above — $16,281.93/s. The combined overlapping flow ($25,081.89/s trailing-year; $32,435/s at the latest-quarter pace) is retained here and on the <a href="buildout-index.html">index page</a>.</li>
 <li><strong>VC into AI:</strong> $102B (Q3 2026, Crunchbase) ÷ 92 days = $12,832/s at the Q3 pace.</li>
 <li><strong>New ChatGPT users:</strong> (1.2B − 900M) ÷ 214 days between OpenAI's Feb 27 and Sep 29, 2026 statements = 16.2/s — the measured pace, run forward (an extrapolation).</li>
 <li><strong>Data-center electricity:</strong> IEA's 415 TWh (2024, all data centers) ÷ seconds in a year = 13,151 kWh/s.</li>
-<li><strong>Stargate:</strong> $500B ÷ 4 years = $3,961/s if spent evenly — a commitment pace; actual spend is unreported.</li>
+<li><strong>Stargate:</strong> shown as a static $500B commitment. The former per-second counter ($3,961/s if spent evenly) was removed Oct 20 as a hypothetical, not a measured pace.</li>
 <li><strong>Models published:</strong> (3,157,435 − 2,678,385) ÷ 228 days between archived Hugging Face counts = one repository every ~41 s.</li>
 <li><strong>Tape:</strong> one arXiv cs.AI listing every ~8.2 min (51,361 in 292 days of 2026); one announced AI-cited US job cut every ~3.3 min (120,136 in 273 days); 46.3 gal/s of Potomac-basin data-center consumptive water (4 MGD average, ICPRB); 1,534 days to Jan 1, 2031 as of this re-base.</li>
 </ul>
@@ -143,9 +161,9 @@ countdown = days to Jan 1, 2031 (display convention)</div>
 
 <h2 id="era">The ChatGPT-era strip</h2>
 <ul>
-<li><strong>$1.62T:</strong> the sum of the board's quarterly combined flow from Q4 2022 through Q2 2026 — filed quarters only, and the same overlapping sum as the index (chips counted on both sides). ChatGPT launched Nov 30, 2022, one month into Q4.</li>
+<li><strong>$1.09T:</strong> Microsoft, Alphabet, Amazon and Meta capital spending summed over the filed quarters Q4 2022 – Q2 2026 (big-4 only, no NVIDIA — no overlap). The earlier combined figure ($1.62T incl. NVIDIA revenue, overlapping) was retired from the board on Oct 20 and lives only here for the record. ChatGPT launched Nov 30, 2022 (OpenAI blog), one month into Q4.</li>
 <li><strong>×31 models:</strong> 101,574 archived Hugging Face repositories on Dec 15, 2022 → 3,157,435 on Oct 16, 2026.</li>
-<li><strong>~$99 per person:</strong> $791.5B trailing-year flow ÷ the 8 billion people the <a href="https://www.un.org/en/global-issues/population">UN counted on Nov 15, 2022</a>. Population has grown since, so today's per-head figure is slightly smaller.</li>
+<li><strong>~$64 per person:</strong> $513.8B big-4 trailing-year capex ÷ the 8 billion people the <a href="https://www.un.org/en/global-issues/population">UN counted on Nov 15, 2022</a>. Population has grown since, so today's per-head figure is slightly smaller. (The earlier ~$99 figure used the overlapping combined flow and was retired.)</li>
 </ul>
 
 <h2 id="scorecard">The scorecard — we grade our own extrapolations</h2>
@@ -184,6 +202,7 @@ countdown = days to Jan 1, 2031 (display convention)</div>
 <h2 id="changelog">Changelog</h2>
 <table>
 <tr><th>Date</th><th>Change</th></tr>
+<tr><td>2026-10-20</td><td>v4 (consumer-panel revision): hero changed from the combined overlapping flow to big-4 capex only ($16,282/s); since-ChatGPT and per-person figures re-derived on the clean basis ($1.09T; ~$64); Stargate per-second counter removed as hypothetical; PJM chapter rewritten (who PJM serves, price translated to ¢/kWh, bill pass-through sourced, pre-jump range corrected to $16–174); plain-language conversions added throughout with their arithmetic; "basics" page added; Reckoning day-counter dropped, range-first display, thresholds-set date stated; watchlist relabeled with selection criteria and no-holdings note.</td></tr>
 <tr><td>2026-10-20</td><td>v2: Index re-based from Q3 2025 = 100 to Q1 2022 = 100 on a fully backfilled 18-quarter series (level 647.7; the two bases describe the same flow). Added: the wall of measured-pace counters, US data-center map (OpenStreetMap), PJM 22-year series, EIA series, Hugging Face archived series, ChatGPT timeline, GPU rental and token prices, Epoch research panel, per-metric pages with CSV/JSON downloads, printable readout. Reckoning v1.0 corrections: condition 2 (grid auction) first met Dec 2025, not Jul 2026; ChatGPT pace re-anchored to the Sep 29 statement; nuclear pace recomputed to ~3.6 GW/yr (estimate unchanged: 2031, range 2028–2033).</td></tr>
 <tr><td>2026-10-20</td><td>Board launched (v1): Buildout Index base Q3 2025 = 100; Reckoning model v1.0 (2031, range 2028–2033, 6/10 met).</td></tr>
 </table>

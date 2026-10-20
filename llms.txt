@@ -15,6 +15,7 @@
 - https://www.braiain.com/ai-layoffs.html : US job cuts citing AI, by year and month (Challenger)
 
 ## Reference
+- https://www.braiain.com/basics.html : four plain answers — what a data center is, why AI needs power, who pays, the jobs question
 - https://www.braiain.com/methodology.html : every formula, source, confidence level, and the changelog
 - https://www.braiain.com/report.html : printable one-page readout
 - https://www.braiain.com/data/ : CSV and JSON downloads (CC BY 4.0)
