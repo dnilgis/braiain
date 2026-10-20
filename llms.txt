@@ -18,3 +18,5 @@
 - https://www.braiain.com/methodology.html : every formula, source, confidence level, and the changelog
 - https://www.braiain.com/report.html : printable one-page readout
 - https://www.braiain.com/data/ : CSV and JSON downloads (CC BY 4.0)
+- https://www.braiain.com/missing-numbers.html : the numbers the AI industry does not publish, each sourced-absent with receipts
+- https://www.braiain.com/archive/ : every re-base frozen at a permanent URL

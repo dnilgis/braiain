@@ -73,6 +73,13 @@ button.pause:hover{color:var(--ink);border-color:var(--ink-3)}
 .conn:first-of-type{border-top:0}
 .conn .q{font-size:16px;font-weight:600;max-width:40ch}
 .conn .c{font-size:12px;color:var(--ink-3);margin-top:4px;max-width:46ch}
+/* era strip */
+.era{padding:16px 0;border-bottom:1px solid var(--rule);display:flex;gap:14px 36px;flex-wrap:wrap;align-items:baseline}
+.era .k{font-size:15px;font-weight:700;max-width:22ch}
+.era .k small{display:block;font-weight:400;color:var(--ink-3);font-size:12px}
+.era .e{font-size:14px}
+.era .e .v{font-size:22px;font-weight:700;display:block}
+.era .e .l{color:var(--ink-2);font-size:12.5px}
 /* map */
 .mapband{padding:24px 0 20px;border-bottom:1px solid var(--rule)}
 .mapband h2{font-size:24px;font-weight:700}
@@ -173,7 +180,7 @@ button.pause:hover{color:var(--ink);border-color:var(--ink-3)}
   </span>
 </header>
 
-<p class="intro"><strong>What is this?</strong> A live board of the AI buildout — the money, chips, power, land and people behind artificial intelligence — built only from public, dated sources: company filings, grid operators, government data, archived records. The moving numbers are real paces divided down to seconds, never guesses. Every figure links to where it came from. <a href="methodology.html">How it all works</a> · <a href="report.html">printable readout</a></p>
+<p class="intro"><strong>What is this?</strong> A live board of the AI buildout — the money, chips, power, land and people behind artificial intelligence — built only from public, dated sources: company filings, grid operators, government data, archived records. The moving numbers are real paces divided down to seconds, never guesses. Every figure links to where it came from, every re-base is <a href="archive/">archived permanently</a>, and our own extrapolations get <a href="methodology.html#scorecard">graded in public</a>. <a href="methodology.html">How it all works</a> · <a href="missing-numbers.html">the numbers nobody publishes</a> · <a href="report.html">printable readout</a></p>
 
 <div class="wall" role="group" aria-label="Live counters, all at measured paces">
 <div class="cell">
@@ -271,6 +278,14 @@ button.pause:hover{color:var(--ink);border-color:var(--ink-3)}
       <p class="c">Epoch AI measured trend vs Wood Mackenzie lead-time survey (via POWER Magazine). Two clocks, side by side — transformers are one input among several. <a href="us-industrial-electricity.html">The power story</a></p>
     </div>
   </aside>
+</section>
+
+<section class="era" aria-label="Since ChatGPT launched">
+  <div class="k">Since ChatGPT launched<small>Nov 30, 2022 — 1,420 days before this re-base</small></div>
+  <div class="e"><span class="v num">$1.62T</span><span class="l">of combined buildout flow filed (quarters Q4 2022 – Q2 2026; overlapping sum)</span></div>
+  <div class="e"><span class="v num">×31</span><span class="l">models on Hugging Face (101,574 in Dec 2022 → 3.17M)</span></div>
+  <div class="e"><span class="v num">0 → 1.2B</span><span class="l">ChatGPT weekly users, in under four years (OpenAI statements)</span></div>
+  <div class="e"><span class="v num">~$99</span><span class="l">a year of buildout per person, against the 8 billion humans the UN counted in Nov 2022 ($791.5B ÷ 8B; today's population is larger, the per-head figure slightly smaller)</span></div>
 </section>
 
 <section class="mapband">
@@ -581,6 +596,8 @@ button.pause:hover{color:var(--ink);border-color:var(--ink-3)}
     <a href="gpu-rental-prices.html">GPU rental prices</a>
     <a href="token-prices.html">Token prices</a>
     <a href="ai-layoffs.html">AI-cited layoffs</a>
+    <a href="missing-numbers.html">The Missing Numbers</a>
+    <a href="archive/">The archive</a>
     <a href="report.html">Printable readout</a>
   </nav>
 </section>

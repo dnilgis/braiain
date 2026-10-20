@@ -1,0 +1,10 @@
+{
+ "meta": {
+  "title": "US data centers mapped in OpenStreetMap",
+  "notes": "1,818 features tagged telecom=data_center in the US (incl. territories), coordinates only. A floor, not a census: Data Center Map counts >3,000 operating (via Pew, Feb 2026).",
+  "license": "ODbL - (c) OpenStreetMap contributors",
+  "as_of": "2026-10-20"
+ },
+ "count": 1818,
+ "file": "us-data-centers.csv"
+}
