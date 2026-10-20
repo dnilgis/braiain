@@ -1,24 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <rect width="512" height="512" rx="64" fill="#0a0e17"/>
-  <circle cx="256" cy="256" r="180" fill="none" stroke="#00e5ff" stroke-width="8" opacity="0.3"/>
-  <circle cx="256" cy="256" r="160" fill="none" stroke="#00e5ff" stroke-width="4" opacity="0.6"/>
-  <!-- Neural connections -->
-  <line x1="256" y1="140" x2="170" y2="220" stroke="#00e5ff" stroke-width="2" opacity="0.3"/>
-  <line x1="256" y1="140" x2="342" y2="220" stroke="#00e5ff" stroke-width="2" opacity="0.3"/>
-  <line x1="170" y1="220" x2="342" y2="220" stroke="#00e5ff" stroke-width="2" opacity="0.3"/>
-  <line x1="170" y1="220" x2="200" y2="340" stroke="#00e5ff" stroke-width="2" opacity="0.3"/>
-  <line x1="342" y1="220" x2="312" y2="340" stroke="#00e5ff" stroke-width="2" opacity="0.3"/>
-  <line x1="200" y1="340" x2="312" y2="340" stroke="#00e5ff" stroke-width="2" opacity="0.3"/>
-  <line x1="256" y1="256" x2="256" y2="140" stroke="#00e5ff" stroke-width="2" opacity="0.3"/>
-  <line x1="256" y1="256" x2="170" y2="220" stroke="#00e5ff" stroke-width="2" opacity="0.3"/>
-  <line x1="256" y1="256" x2="342" y2="220" stroke="#00e5ff" stroke-width="2" opacity="0.3"/>
-  <line x1="256" y1="256" x2="200" y2="340" stroke="#00e5ff" stroke-width="2" opacity="0.3"/>
-  <line x1="256" y1="256" x2="312" y2="340" stroke="#00e5ff" stroke-width="2" opacity="0.3"/>
-  <!-- Neural nodes -->
-  <circle cx="256" cy="140" r="14" fill="#00e5ff"/>
-  <circle cx="170" cy="220" r="14" fill="#00e5ff"/>
-  <circle cx="342" cy="220" r="14" fill="#00e5ff"/>
-  <circle cx="200" cy="340" r="14" fill="#00e5ff"/>
-  <circle cx="312" cy="340" r="14" fill="#00e5ff"/>
-  <circle cx="256" cy="256" r="18" fill="#00e5ff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+<rect width="64" height="64" rx="10" fill="#14130f"/>
+<rect x="13" y="13" width="16" height="16" fill="#e8e2d4"/>
+<rect x="35" y="13" width="16" height="16" fill="#e8e2d4"/>
+<rect x="13" y="35" width="16" height="16" fill="#e8e2d4"/>
+<rect x="35" y="35" width="16" height="16" fill="none" stroke="#d9482b" stroke-width="3"/>
 </svg>

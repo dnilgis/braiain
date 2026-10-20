@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#14130f">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
 <title>BRAIAIN: The Buildout Index for AI</title>
 <meta name="description" content="The AI buildout, measured and moving: $25,082 a second, the Buildout Index at 647.7, 1,818 data centers on one map, and the sourced numbers behind the AI economy — every figure dated and traceable. The headline flow is combined and overlapping; the methodology says exactly how.">
 <link rel="canonical" href="https://www.braiain.com/">
@@ -72,6 +74,10 @@ button.pause:hover{color:var(--ink);border-color:var(--ink-3)}
 .r .l{font-size:11px;color:var(--ink-2);text-align:right;font-weight:600}
 .r .l .s{display:block;font-size:9.5px;color:var(--ink-3);font-weight:400}
 .r.hot{background:var(--hot);margin:0 -7px;padding:4.5px 7px;border-top-color:transparent}
+.r:hover{background:rgba(232,226,212,0.05)}
+.r.hot:hover{background:rgba(217,72,43,0.2)}
+@media (prefers-reduced-motion: no-preference){.w .dot{animation:pulse 2s ease-in-out infinite}}
+@keyframes pulse{50%{opacity:.35}}
 .minichart{margin-top:6px}
 /* map band */
 .mapband{display:grid;grid-template-columns:3fr 2fr 2fr;gap:0 26px;padding:12px 0 14px;border-bottom:1px solid var(--rule)}
@@ -124,7 +130,7 @@ button.pause:hover{color:var(--ink);border-color:var(--ink-3)}
 <div class="wrap">
 
 <header class="mast">
-  <span class="name">BRAIAIN</span>
+  <span class="name" id="wordmark" title="BRAIAIN">BRAIAIN</span>
   <span class="tag">The Buildout Index for AI</span>
   <span class="right">re-based Oct 20, 2026 · every figure sourced &amp; dated · <a href="https://www.braiain.com/">braiain.com</a></span>
 </header>
@@ -163,8 +169,8 @@ button.pause:hover{color:var(--ink);border-color:var(--ink-3)}
 </div>
 </div>
 <div class="tape">
-  <span>One AI paper <b>every 8.2 min</b> <span class="src">arXiv cs.AI, 2026 pace</span></span>
-  <span>One announced US job cut citing AI <b>every 3.3 min</b> <span class="src">Challenger, 2026 pace</span></span>
+  <span>One AI paper <b>every 8.2 min</b> <span class="src">arXiv cs.AI, 2026 pace · <a href="data/arxiv-ai-listings.csv">data</a></span></span>
+  <span>One announced US job cut citing AI <b>every 3.3 min</b> <span class="src">Challenger, 2026 pace · <a href="ai-layoffs.html">series</a></span></span>
   <span><b>46.3 gal/s</b> of Potomac-basin data-center water <span class="src">ICPRB avg day</span></span>
   <span><b>1,534 days</b> to the Reckoning estimate <span class="src">editorial · at Oct 20 re-base</span></span>
   <span>Since ChatGPT launched (Nov 30, 2022): <b>$1.62T</b> filed buildout flow · models <b>×31</b> · <b>0→1.2B</b> weekly users · <b>~$99/yr</b> per human <span class="src">UN 8B, Nov 2022 · <a href="methodology.html#era">math</a></span></span>
@@ -358,6 +364,7 @@ button.pause:hover{color:var(--ink);border-color:var(--ink-3)}
   <a href="archive/">Archive</a>
   <a href="report.html">Printable</a>
   <a href="data/">Data</a>
+  <a href="methodology.html#embeds">Embed a counter</a>
 </nav>
 
 <footer class="foot">
@@ -392,6 +399,16 @@ button.pause:hover{color:var(--ink);border-color:var(--ink-3)}
   }
   if(btn)btn.addEventListener('click',function(){paused=!paused;setBtn();});
   setBtn();tick();setInterval(tick,1000);
+  // click the wordmark five times: the country lights up again
+  var wm=document.getElementById('wordmark'),n=0,t=null;
+  if(wm)wm.addEventListener('click',function(){
+    n++;clearTimeout(t);t=setTimeout(function(){n=0;},2200);
+    if(n>=5){n=0;
+      document.querySelectorAll('.mg').forEach(function(g){
+        g.style.animation='none';void g.offsetWidth;g.style.animation='';
+      });
+    }
+  });
   try{console.log('%cBRAIAIN','font-size:28px;font-weight:800;','\nYou read source. Respect.\nEvery number is traceable: /methodology.html\nThe data is downloadable: /data/\nThe machines are counting either way.');}catch(e){}
 })();
 </script>
