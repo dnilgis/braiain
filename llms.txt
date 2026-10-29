@@ -21,3 +21,5 @@
 - https://www.braiain.com/data/ : CSV and JSON downloads (CC BY 4.0)
 - https://www.braiain.com/missing-numbers.html : the numbers the AI industry does not publish, each sourced-absent with receipts
 - https://www.braiain.com/archive/ : every re-base frozen at a permanent URL
+- https://www.braiain.com/questions.html : six questions to ask before a data center is approved — printable, with sourced context
+- https://www.braiain.com/sponsor.html : how the single-sponsor model works

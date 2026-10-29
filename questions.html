@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#14130f">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<title>Six Questions Before a Data Center Is Approved — BRAIAIN</title>
+<meta name="description" content="A printable one-page checklist for town boards, county committees and neighbors: six questions to ask a data-center developer, each with sourced context.">
+<link rel="canonical" href="https://www.braiain.com/questions.html">
+<link rel="stylesheet" href="page.css">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.braiain.com/questions.html">
+<meta property="og:site_name" content="BRAIAIN">
+<meta property="og:title" content="Six questions before a data center is approved">
+<meta property="og:description" content="A printable checklist for a town board or county meeting, with sourced context for each question.">
+<meta property="og:image" content="https://www.braiain.com/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+.q{border-top:1px solid var(--rule-soft);padding:14px 0;break-inside:avoid}
+.q h2{font-size:19px;font-weight:700;border:0;padding:0;margin:0}
+.q h2 .n{color:var(--ink-3);margin-right:8px}
+.q p{font-size:15px;color:var(--ink-2);margin-top:6px;max-width:68ch}
+.q .ctx{font-size:13.5px;color:var(--ink-3)}
+.intro{color:var(--ink-2);max-width:66ch;font-size:16px}
+.bar{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0 6px}
+.bar button{font:inherit;font-size:14px;padding:7px 14px;border:1px solid var(--rule);background:transparent;color:var(--ink);cursor:pointer}
+.ans{display:block;border-bottom:1px dotted var(--rule);height:22px;margin-top:8px;max-width:68ch}
+@media print{
+  :root{--ink:#000;--ink-2:#222;--ink-3:#444;--rule:#999;--rule-soft:#bbb}
+  body{background:#fff!important;color:#000}
+  .bar,.mast .upd,.noprint{display:none!important}
+  @page{margin:0.5in}h1{font-size:20px;margin:0}.intro{font-size:11.5px;margin:4px 0}.mast{padding:0 0 4px}.q{padding:6px 0}.q h2{font-size:13.5px}.q p{font-size:10.5px;margin-top:3px}.q .ctx{font-size:10px}.ans{height:16px;margin-top:4px}
+  a{color:#000;text-decoration:none}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="mast">
+  <span class="name"><a href="./">BRAIAIN</a></span>
+  <span class="crumb">Six questions</span>
+  <span class="upd">Last updated: 2026-10-29</span>
+</header>
+
+<h1>Six questions before a data center is approved</h1>
+<p class="intro">For a town board, county committee, or anyone at the public meeting. These are questions, not accusations — a well-run project will have answers. The context under each comes from sourced figures on the <a href="./">BRAIAIN board</a>; none of it describes any specific project.</p>
+<div class="bar"><button type="button" onclick="window.print()">Print this page</button><button type="button" id="copyBtn">Copy the questions</button></div>
+
+<div class="q"><h2><span class="n">1</span>How many megawatts are you requesting from the utility — and is that request in the grid operator's queue yet?</h2>
+<p class="ctx">Why ask: requests are not commitments. In Texas, data centers make up more than 70% of 233+ GW of large-load requests — about 31 times what is actually under construction there (ERCOT, year-end 2025). A request tells you the ambition; a signed interconnection agreement tells you the project.</p><span class="ans"></span></div>
+
+<div class="q"><h2><span class="n">2</span>Who pays for the new substation and power lines — the project, or everyone's rates?</h2>
+<p class="ctx">Why ask: grid upgrades are often recovered through utility rates unless an agreement assigns them to the customer that caused them. Ask for it in writing.</p><span class="ans"></span></div>
+
+<div class="q"><h2><span class="n">3</span>Where does the cooling water come from, and how many gallons a day at peak?</h2>
+<p class="ctx">Why ask: in the Potomac basin, data centers already use about 4 million gallons a day — roughly 9% of the region's consumptive water use (ICPRB). Average use and peak-summer use are different numbers; ask for both.</p><span class="ans"></span></div>
+
+<div class="q"><h2><span class="n">4</span>How many years of tax abatement are you asking for, and what is the county's payback math?</h2>
+<p class="ctx">Why ask: the four largest builders reported $513.8 billion of capital spending in the year to June 2026 (their own filings). A request for abatement is a negotiation, and the county is allowed to see the numbers behind it.</p><span class="ans"></span></div>
+
+<div class="q"><h2><span class="n">5</span>How many <em>permanent</em> jobs are written into the agreement — not construction jobs?</h2>
+<p class="ctx">Why ask: construction crews are large and temporary; operating staff are much smaller. Only jobs written into the agreement are enforceable.</p><span class="ans"></span></div>
+
+<div class="q"><h2><span class="n">6</span>If wholesale capacity prices rise, whose bills carry it?</h2>
+<p class="ctx">Why ask: in PJM — the grid serving more than 67 million people across 13 states and D.C. — the capacity price rose 9.3x in a single auction, and estimates for the first repriced year ran around 1.5–5% on household bills (PJM figures, via WHYY). How much of that rise is due to data centers can't be isolated from the price series. Much of the Midwest, including Wisconsin, is on a different grid (MISO), which runs its own capacity auction — ask your utility which market you are in.</p><span class="ans"></span></div>
+
+<p class="ctx" style="margin-top:20px;font-size:13px;color:var(--ink-3)">Sources and formulas for every figure: <a href="methodology.html">braiain.com/methodology.html</a>. Data-center locations near you: <a href="us-data-centers.html">the US map</a> (OpenStreetMap features — not a complete census). Free to copy, print and hand out (CC BY 4.0 — credit "BRAIAIN, braiain.com").</p>
+<p class="foot noprint" style="margin-top:28px;border-top:1px solid var(--rule);padding-top:12px;font-size:13.5px;color:var(--ink-2)">Part of <a href="./">BRAIAIN — the AI buildout, measured</a>. © 2026 BRAIAIN, a dnilgis project.</p>
+</div>
+<script>
+document.getElementById('copyBtn').addEventListener('click',function(){
+  var t=[].map.call(document.querySelectorAll('.q h2'),function(h){return h.textContent.replace(/^(\d)/,'$1. ');}).join('\n')+'\n\nSource: braiain.com/questions.html';
+  var b=this;
+  try{navigator.clipboard.writeText(t).then(function(){b.textContent='Copied';},function(){b.textContent='Select and copy manually';});}catch(e){b.textContent='Select and copy manually';}
+});
+</script>
+</body>
+</html>
