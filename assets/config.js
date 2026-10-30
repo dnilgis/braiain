@@ -6,11 +6,11 @@ window.BRAIAIN_CONFIG = {
   // Shown on buttons.
   price: "$5",
   // When paid training opens. The countdown runs to this moment for every visitor.
-  // 2026-11-03 00:02 UTC is Monday, November 2, 6:02 pm Central.
-  opensAt: "2026-11-03T00:02:00Z",
+  // 2026-11-01 02:00 UTC is Saturday, October 31 (Halloween), 9:00 pm Central.
+  opensAt: "2026-11-01T02:00:00Z",
   // Waitlist form endpoint, e.g. "https://formspree.io/f/abcdwxyz". While this is "",
   // the waitlist box is hidden (no email is ever collected without somewhere to store it).
-  waitlistEndpoint: "",
+  waitlistEndpoint: "https://formspree.io/f/xzdlynrv",
   // Your Cloudflare Worker address, e.g. "https://braiain-api.yourname.workers.dev". Leave "" until it's set up.
   apiBase: ""
 };
