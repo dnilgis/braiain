@@ -175,3 +175,5 @@ footer h4{margin:0 0 8px;font:500 13px var(--sans);color:var(--ink)}
 .share{text-align:center}
 .share-row{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
 @media (max-width:860px){.share-row .btn{min-height:44px}}
+table.specs td:first-child{white-space:nowrap}
+@media (max-width:640px){table.specs td{display:block;border:0;padding:2px 0}table.specs tr{display:block;padding:10px 0;border-bottom:1px solid var(--line)}}

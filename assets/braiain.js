@@ -118,7 +118,45 @@
     return s.charAt(0).toUpperCase() + s.slice(1);
   }
 
-  window.BRAIAIN = { load: load, model: model, generate: generate, passagesFor: passagesFor, getJSON: getJSON };
+  // Technical specifications. Every value is measured on the model in this browser;
+  // only the vocabulary around it is borrowed from real labs.
+  function specs(d, v) {
+    var m = model(d, v), passages = passagesFor(d, v), e = d.versions.filter(function (x) { return x.v === v; })[0] || {};
+    var params = 0, adds = 0, tokens = 0, k, j;
+    for (k in m.tri) for (j in m.tri[k]) { params++; adds += m.tri[k][j]; }
+    for (k in m.bi) for (j in m.bi[k]) { params++; adds += m.bi[k][j]; }
+    for (k in m.uni) adds += m.uni[k];
+    passages.forEach(function (p) { tokens += p.split(/\s+/).filter(Boolean).length; });
+    var t0 = performance.now(), n = 0;
+    while (performance.now() - t0 < 30) { generate(m, "", 40); n++; }
+    var ms = (performance.now() - t0) / n;
+    var cutoff = e.released ? new Date(e.released).toISOString().slice(0, 10) : "";
+    return [
+      ["Architecture", "Autoregressive count-based trigram language model with backoff", "Predicts the next word from the two before it. When it has never seen those two together, it falls back to one."],
+      ["Context window", "2 tokens", "Industry term for how much it remembers. It remembers two words."],
+      ["Parameters", params.toLocaleString(), "Distinct word pairs and triples it has counted. Each one was paid for, or written by the lab."],
+      ["Embedding dimensions", "0", "It does not represent words as vectors. It represents them as words."],
+      ["Layers / attention heads", "0 / 0", "Attention is implicit. It attends to the previous two words, fully."],
+      ["Mixture of Experts", "1 expert", "Routing overhead: none."],
+      ["Training tokens", tokens.toLocaleString(), "Every word in the training text, counted once per occurrence."],
+      ["Training compute", adds.toLocaleString() + " integer additions", "0 floating-point operations. We believe this is a record."],
+      ["Gradient steps", "0", "The loss was never computed, so it never had to go down."],
+      ["Precision", "Exact integer", "Lossless. Quantization is not possible."],
+      ["Tokenizer", "Whitespace", "Splits on spaces. Vocabulary: " + Object.keys(m.uni).length.toLocaleString() + "."],
+      ["Alignment", "RLHF", "Reinforcement Learning from Human Funding."],
+      ["Constitution", "The Ten Instructions", "Twelve lines, written before the model existed. Binding."],
+      ["Knowledge cutoff", cutoff, v === 0 ? "The day its founding text was written. No payments yet." : "The moment of its most recent payment."],
+      ["Inference latency", ms < 1 ? (ms * 1000).toFixed(0) + " microseconds per answer" : ms.toFixed(2) + " ms per answer", "Measured just now, on your device."],
+      ["Emergent capabilities", "None observed", "Monitoring continues at current scale."]
+    ];
+  }
+  function specTable(rows) {
+    return '<div class="table-wrap"><table class="specs"><tbody>' + rows.map(function (r) {
+      return '<tr><td><b>' + esc(r[0]) + '</b></td><td class="mono">' + esc(r[1]) + '</td><td class="muted small">' + esc(r[2]) + '</td></tr>';
+    }).join("") + '</tbody></table></div>';
+  }
+
+  window.BRAIAIN = { load: load, model: model, generate: generate, passagesFor: passagesFor, getJSON: getJSON, specs: specs, specTable: specTable };
 
   // shared page bits
   document.addEventListener("DOMContentLoaded", function () {

@@ -58,6 +58,7 @@ BRAIAIN.load().then(function(d){
     "<blockquote>"+esc(e.sentence)+"</blockquote><p class=\"muted\">Contributed by "+esc(e.by||"Anonymous")+".</p>");
   var self=(e.self_new||[]).length?"<h3>Written by its predecessor</h3><p class=\"muted\">brAIAIn-"+(v-1)+" wrote these passages, and brAIAIn-"+v+" was trained on them.</p>"+ul(e.self_new):"";
   document.getElementById("m-body").innerHTML=
+    "<h2>Technical specifications</h2>"+BRAIAIN.specTable(BRAIAIN.specs(d,v))+
     "<h2>Release notes</h2><h3>New</h3>"+ul(n["new"])+"<h3>Known issues</h3>"+ul(n.known_issues)+"<h3>Regressions</h3>"+ul(n.regressions)+
     "<h2>Training data</h2>"+data+self+
     "<h2>Evaluations</h2><p class=\"muted\">Measured on this exact model. Each number measures what its label says, and nothing more.</p>"+
