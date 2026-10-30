@@ -1,5 +1,7 @@
 {
  "incidents_extra": [],
- "checked": "2026-10-30T01:36:07Z",
- "latest": 0
+ "checked": "2026-10-30T14:11:46Z",
+ "latest": 0,
+ "pending_review": 0,
+ "review_mode": true
 }
