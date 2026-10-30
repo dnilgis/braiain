@@ -48,7 +48,9 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data models
           # status.json changes every run; only commit it alone once a day to keep history small
-          if git diff --cached --quiet -- . ':(exclude)data/status.json'; then
+          # The review-queue count is public, so commit status.json when it changes.
+          queue_changed=$(python3 -c "import json,subprocess;old=json.loads(subprocess.run(['git','show','HEAD:data/status.json'],capture_output=True,text=True).stdout or '{}');new=json.load(open('data/status.json'));print('yes' if (old.get('pending_review'),old.get('review_mode'))!=(new.get('pending_review'),new.get('review_mode')) else 'no')")
+          if git diff --cached --quiet -- . ':(exclude)data/status.json' && [ "$queue_changed" = "no" ]; then
             if [ "$(date -u +%H%M | cut -c1-3)" = "120" ]; then
               git commit -m "Daily heartbeat" && git pull --rebase && git push
             fi
