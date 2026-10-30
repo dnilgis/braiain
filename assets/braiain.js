@@ -178,10 +178,35 @@ function waitlists(cfg) {
       var btn = f.querySelector("button"); btn.disabled = true;
       fetch(cfg.waitlistEndpoint, { method: "POST", headers: { "Accept": "application/json", "Content-Type": "application/json" },
         body: JSON.stringify({ email: email, list: "braiain-waitlist" }) })
-        .then(function (r) { if (!r.ok) throw new Error(r.status); f.reset(); msg.textContent = "You are on the waitlist. We will email you once, when training opens. That is the only email."; })
+        .then(function (r) { if (!r.ok) throw new Error(r.status); f.reset(); msg.textContent = "You are on the waitlist. We will email you once, when training opens. That is the only email."; shareBox(f, cfg); })
         .catch(function () { msg.textContent = "That did not go through. Please try again in a minute."; })
         .then(function () { btn.disabled = false; });
     });
+  });
+}
+
+// After joining: let people share. There is no real position number, so none is shown.
+function shareBox(f, cfg) {
+  if (f.parentNode.querySelector(".share")) return;
+  var url = "https://www.braiain.com/";
+  var opens = Date.parse(cfg.opensAt || ""), hrs = Math.max(0, Math.round((opens - Date.now()) / 3600000));
+  var text = "I joined the waitlist for brAIAIn, the AI model trained only on sentences people pay to add." +
+    (hrs > 0 ? " Paid training opens in " + hrs + " hours." : "");
+  var box = document.createElement("div");
+  box.className = "share";
+  box.innerHTML = '<p class="small muted" style="margin:14px 0 8px">Share your place in line. Every friend you bring is one more sentence the model does not know yet.</p>' +
+    '<div class="share-row">' +
+    (navigator.share ? '<button class="btn small" type="button" data-s="native">Share</button>' : "") +
+    '<a class="btn ghost small" target="_blank" rel="noopener" href="https://twitter.com/intent/tweet?text=' + encodeURIComponent(text) + '&url=' + encodeURIComponent(url) + '">Post on X</a>' +
+    '<a class="btn ghost small" target="_blank" rel="noopener" href="https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(url) + '">Facebook</a>' +
+    '<a class="btn ghost small" href="sms:?&body=' + encodeURIComponent(text + " " + url) + '">Text a friend</a>' +
+    '<button class="btn ghost small" type="button" data-s="copy">Copy link</button></div>';
+  f.parentNode.insertBefore(box, f.nextSibling);
+  var n = box.querySelector('[data-s="native"]');
+  if (n) n.addEventListener("click", function () { navigator.share({ title: "brAIAIn", text: text, url: url }).catch(function () {}); });
+  box.querySelector('[data-s="copy"]').addEventListener("click", function (e) {
+    var b = e.currentTarget;
+    (navigator.clipboard ? navigator.clipboard.writeText(text + " " + url) : Promise.reject()).then(function () { b.textContent = "Copied"; }, function () { b.textContent = url; });
   });
 }
 

@@ -172,3 +172,6 @@ footer h4{margin:0 0 8px;font:500 13px var(--sans);color:var(--ink)}
 .waitlist input:focus{outline:none;border-color:var(--ink)}
 .waitlist [data-msg]{flex-basis:100%;font-size:14px;color:var(--muted);min-height:20px;margin:4px 0 0}
 .stats div{display:flex;flex-direction:column-reverse;justify-content:flex-end}
+.share{text-align:center}
+.share-row{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+@media (max-width:860px){.share-row .btn{min-height:44px}}
