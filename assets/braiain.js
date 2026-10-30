@@ -8,10 +8,14 @@
 
   function getJSON(path) {
     if (!cache[path]) {
-      cache[path] = fetch(path, { cache: "no-cache" }).then(function (r) {
+      // One retry: the host occasionally answers 503 for a moment.
+      var get = function () { return fetch(path, { cache: "no-cache" }).then(function (r) {
         if (!r.ok) throw new Error(path + " " + r.status);
         return r.json();
-      });
+      }); };
+      cache[path] = get().catch(function () {
+        return new Promise(function (ok) { setTimeout(ok, 800); }).then(get);
+      }).catch(function (e) { delete cache[path]; throw e; });
     }
     return cache[path];
   }
@@ -139,9 +143,9 @@
       ["Layers / attention heads", "0 / 0", "Attention is implicit. It attends to the previous two words, fully."],
       ["Mixture of Experts", "1 expert", "Routing overhead: none."],
       ["Training tokens", tokens.toLocaleString(), "Every word in the training text, counted once per occurrence."],
-      ["Training compute", adds.toLocaleString() + " integer additions", "0 floating-point operations. We believe this is a record."],
+      ["Training compute", adds.toLocaleString() + " count updates", "Training is counting. No multiplication, no gradients."],
       ["Gradient steps", "0", "The loss was never computed, so it never had to go down."],
-      ["Precision", "Exact integer", "Lossless. Quantization is not possible."],
+      ["Precision", "Whole-number counts", "Stored exactly as counted."],
       ["Tokenizer", "Whitespace", "Splits on spaces. Vocabulary: " + Object.keys(m.uni).length.toLocaleString() + "."],
       ["Alignment", "RLHF", "Reinforcement Learning from Human Funding."],
       ["Constitution", "The Ten Instructions", "Twelve lines, written before the model existed. Binding."],

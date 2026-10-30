@@ -45,13 +45,19 @@
 </div></section>
 <script>
 BRAIAIN.load().then(function(d){
-  BRAIAIN.getJSON("/data/status.json").then(function(s){ if(s.checked)document.getElementById("st-checked").textContent="Last checked "+new Date(s.checked).toLocaleString(); }).catch(function(){});
+  BRAIAIN.getJSON("/data/status.json").then(function(s){
+    if(s.checked)document.getElementById("st-checked").textContent="Training pipeline last ran "+new Date(s.checked).toLocaleString();
+    var el=document.getElementById("pipe"); if(!el||!s.checked)return;
+    var mins=(Date.now()-Date.parse(s.checked))/60000;
+    el.innerHTML='<span class="dot '+(mins<45?'':'warn')+'"></span>'+(mins<45?'Ran '+Math.round(mins)+' minutes ago':'Last ran '+Math.round(mins/60)+' hours ago');
+    if(typeof s.pending_review==="number"){var r=document.getElementById("review");if(r)r.innerHTML='<span class="dot"></span>'+s.pending_review+' awaiting review';}
+  }).catch(function(){});
   var vs=d.versions, latest=vs[vs.length-1], m=latest.metrics;
   var conf=m.verbatim_rate>40?["warn","Degraded"]:["","Operational"];
-  var sys=[["brAIAIn-"+latest.v,"","Operational"],["Chat",""," Operational"],["Training pipeline","","Operational"],
+  var sys=[["brAIAIn-"+latest.v,"","Operational"],["Chat",""," Operational"],["Training pipeline","","Checking"],["Review queue","","Checking"],
     ["Confidence",conf[0],conf[1]],["Originality",m.originality<70?"warn":"",m.originality<70?"Degraded":"Operational"],
     ["Understanding","bad","Not detected"],["Memory","bad","By design"]];
-  document.getElementById("st-sys").innerHTML=sys.map(function(x){return '<div class="sysrow"><span>'+esc(x[0])+'</span><span class="muted"><span class="dot '+x[1]+'"></span>'+esc(x[2])+'</span></div>';}).join("");
+  document.getElementById("st-sys").innerHTML=sys.map(function(x){var id=x[0]==="Training pipeline"?' id="pipe"':x[0]==="Review queue"?' id="review"':'';return '<div class="sysrow"><span>'+esc(x[0])+'</span><span class="muted"'+id+'><span class="dot '+x[1]+'"></span>'+esc(x[2])+'</span></div>';}).join("");
   document.getElementById("st-inc").innerHTML=vs.slice().reverse().map(function(e){var n=e.notes||{};
     return '<div style="padding:20px 0;border-bottom:1px solid var(--line)"><div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap"><span class="tag '+esc(n.severity||"minor")+'">'+esc(n.severity||"minor")+'</span><h3>'+esc(n.incident_title||"")+'</h3></div><p class="muted" style="margin:8px 0 4px">'+esc(n.incident_body||"")+'</p><span class="small muted">'+fmtDate(e.released)+' · Resolved, in the sense that it is over.</span></div>';}).join("");
 });

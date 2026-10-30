@@ -94,6 +94,21 @@ Test purchases are never mixed in, because test and live keys see different data
 3. Copy the Worker address (`https://braiain-api.<you>.workers.dev`) into the
    `apiBase` line of `assets/config.js` and commit. The API page then shows it as live.
 
+## Reviewing sentences (on by default)
+
+Every paid sentence that passes the automatic screen waits for you before it is published.
+Nothing pending is written to the public repo.
+
+1. Stripe → **Payments** → open the new payment. The sentence and credit name are in its details.
+2. **Approve:** add the last 8 characters of its payment ID (`pi_...`) on a new line in
+   `data/approved.txt` and commit. The Action runs right away and publishes the new version.
+3. **Decline:** add those 8 characters to `data/declined.txt` instead, commit, and refund the
+   payment in Stripe.
+4. The Status page shows how many sentences are waiting.
+
+To publish without review (not recommended at launch), add a repository variable
+`REQUIRE_APPROVAL` set to `false`.
+
 ## Running it
 
 - **Remove a sentence:** find its id (like `s00012`) in `data/corpus.json`, add it on

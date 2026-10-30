@@ -588,6 +588,16 @@ def main():
     else:
         print("No STRIPE_SECRET_KEY set. Rebuilding only.")
 
+    # Review mode: a sentence that passes screening still waits until its payment is
+    # listed in data/approved.txt. Pending text is never written to this public repo.
+    review = os.environ.get("REQUIRE_APPROVAL", "true").strip().lower() not in ("false", "0", "no", "off")
+    approved = {x[-8:] for x in read_lines("approved.txt")}
+    declined = {x[-8:] for x in read_lines("declined.txt")}
+    pending = 0
+
+    def ids(sess):
+        return {sess["id"][-8:], str(sess.get("payment_intent") or "")[-8:]} - {""}
+
     new_versions = []
     for s in incoming:
         h = session_hash(s["id"])
@@ -601,10 +611,19 @@ def main():
         reason = screen(text, blocklist)
         if not reason and name and screen(name, blocklist):
             name = ""  # bad credit name: keep the sentence, drop the name
+        if not reason and review:
+            if ids(s) & declined:
+                reason = "declined in review"
+            elif not ids(s) & approved:
+                seen.discard(h)  # not decided yet: look again next run
+                pending += 1
+                print("awaiting review", s["id"][-8:], str(s.get("payment_intent") or "")[-8:])
+                continue
         if reason:
-            # Public repo: store no text. Last 6 of the session id lets the owner find it in Stripe.
-            state["rejected"].append({"session_end": s["id"][-6:], "created": s.get("created"), "reason": reason})
-            print("rejected", s["id"][-6:], reason)
+            # Public repo: store no text. The last characters of the ids let the owner find it in Stripe.
+            state["rejected"].append({"session_end": s["id"][-8:], "payment_end": str(s.get("payment_intent") or "")[-8:],
+                                      "created": s.get("created"), "reason": reason})
+            print("rejected", s["id"][-8:], reason)
             continue
         v = max([c["v"] for c in corpus], default=0) + 1
         cid = f"s{v:05d}"
@@ -669,6 +688,8 @@ def main():
     save(os.path.join(DATA, "state.json"), state)
     status = load("status.json", {})
     status["checked"] = now_iso()
+    status["pending_review"] = pending
+    status["review_mode"] = review
     status["latest"] = max_v
     save(os.path.join(DATA, "status.json"), status)
     print(f"ok: {len(new_versions)} new, latest brAIAIn-{max_v}, {latest['metrics']['sentences']} sentences")

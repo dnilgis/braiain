@@ -1,0 +1,5 @@
+# Review queue. A paid sentence that passes screening waits here until you approve it.
+# Find it in Stripe (Payments, open the payment, read the sentence), then add the last
+# 8 characters of its payment ID (pi_...) or checkout session ID (cs_...) on its own line
+# and commit. The next run trains it. To decline one, put it in declined.txt instead and
+# refund it in Stripe.

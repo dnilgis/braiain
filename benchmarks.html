@@ -36,7 +36,7 @@
 <section class="hero" style="padding-bottom:40px"><div class="orb"></div><div class="wrap">
 <span class="eyebrow">Benchmarks</span>
 <h1>State of the art on four of four benchmarks we invented.</h1>
-<p class="lede">Our numbers are measured on the real model, on every release. Other labs' numbers are copied from their own papers. Our benchmarks are not saturated, not contaminated, and not open to interpretation.</p>
+<p class="lede">Our numbers are measured on the real model, on every release. Other labs' numbers are copied from their own papers. Each score comes with its definition. The definition is part of the result.</p>
 </div></section>
 <section class="tight"><div class="wrap">
 <h2>Industry leaderboard: GSM8K</h2>
@@ -51,8 +51,8 @@
 <h2 style="margin:40px 0 16px">House benchmarks</h2>
 <div class="grid g2">
 <div class="card"><h3>VOCAB-1</h3><p>Distinct words the model knows. Higher is more words.</p><div class="spacer"></div><div class="bars" id="b-vocab"></div></div>
-<div class="card"><h3>OUROBOROS-Eval</h3><p>Share of training text the model wrote itself. Higher is more self-aware. We did not ask anyone.</p><div class="spacer"></div><div class="bars" id="b-self"></div></div>
-<div class="card"><h3>ORIGINAL-50</h3><p>Out of 50 answers, the share that are not a customer sentence repeated word for word.</p><div class="spacer"></div><div class="bars" id="b-orig"></div></div>
+<div class="card"><h3>OUROBOROS-Eval</h3><p>Share of training text the model wrote itself. Higher means more of its training text came from earlier versions of itself. Awareness is not measured.</p><div class="spacer"></div><div class="bars" id="b-self"></div></div>
+<div class="card"><h3>ORIGINAL-50</h3><p>Out of 50 answers, the share that are not a training sentence repeated word for word.</p><div class="spacer"></div><div class="bars" id="b-orig"></div></div>
 <div class="card"><h3>HELLO-Bench</h3><p>Share of answers containing a greeting. We are not sure what this measures. We track it anyway.</p><div class="spacer"></div><div class="bars" id="b-hello"></div></div>
 </div>
 <div class="spacer"></div>

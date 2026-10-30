@@ -1,0 +1,2 @@
+# Declined sentences. Add the last 8 characters of the payment ID (pi_...) or checkout
+# session ID (cs_...), one per line, then refund that payment in Stripe.

@@ -12,6 +12,8 @@ on:
       - "data/removed.txt"
       - "data/blocklist.txt"
       - "data/genesis.txt"
+      - "data/approved.txt"
+      - "data/declined.txt"
   workflow_dispatch:
 
 permissions:
@@ -36,6 +38,7 @@ jobs:
         env:
           STRIPE_SECRET_KEY: ${{ secrets.STRIPE_SECRET_KEY }}
           STRIPE_PAYMENT_LINK: ${{ vars.STRIPE_PAYMENT_LINK }}
+          REQUIRE_APPROVAL: ${{ vars.REQUIRE_APPROVAL }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python scripts/train.py
 
