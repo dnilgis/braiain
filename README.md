@@ -19,6 +19,21 @@ Everything below is done in a browser. No terminal.
   words and writes by weighted dice. Each version is also trained on a few passages
   written by the version before it, and the newest paid sentence counts four times.
 
+## Teaser mode (what's live now)
+
+While `paymentLink` in `assets/config.js` is empty, the site is in teaser mode:
+the buy buttons become **Join the waitlist**, and a countdown runs to `opensAt`
+(the same moment for every visitor). When the countdown ends and there is still
+no payment link, it says "any minute now". To move the opening, edit `opensAt`.
+
+### Turn on the waitlist box (2 minutes, free)
+1. Go to formspree.io → sign up → **New form** → name it `braiain waitlist`.
+2. Copy the form endpoint (looks like `https://formspree.io/f/abcdwxyz`).
+3. In the repo, edit `assets/config.js` → paste it into `waitlistEndpoint` → commit.
+Sign-ups then arrive in your Formspree inbox. Until this is set, the box is hidden
+and a line says sign-ups open soon, so no email is ever typed into a box that goes nowhere.
+The site promises one email when training opens; send it from Formspree's export.
+
 ## One-time setup
 
 Do steps 1 to 6 in Stripe **test mode** first (toggle at the top of the Stripe

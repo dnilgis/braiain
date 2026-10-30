@@ -127,14 +127,62 @@
       var open = nav.classList.toggle("open");
       btn.setAttribute("aria-expanded", open ? "true" : "false");
     });
-    var link = (window.BRAIAIN_CONFIG || {}).paymentLink || "";
+    var cfg = window.BRAIAIN_CONFIG || {}, link = cfg.paymentLink || "";
+    document.documentElement.classList.toggle("teaser", !link);
     document.querySelectorAll("[data-buy]").forEach(function (a) {
       if (link) { a.href = link; a.rel = "noopener"; }
-      else { a.href = "/feed.html"; }
+      else { a.href = "/#waitlist"; if (a.hasAttribute("data-teaser-text")) a.textContent = a.getAttribute("data-teaser-text"); }
     });
+    countdowns(cfg);
+    waitlists(cfg);
     document.querySelectorAll("[data-price]").forEach(function (el) { el.textContent = (window.BRAIAIN_CONFIG || {}).price || "$5"; });
   });
 })();
+
+// Countdown to cfg.opensAt, the same moment for every visitor.
+function countdowns(cfg) {
+  var els = document.querySelectorAll("[data-countdown]");
+  if (!els.length) return;
+  var target = Date.parse(cfg.opensAt || "");
+  function pad(n) { return (n < 10 ? "0" : "") + n; }
+  function tick() {
+    var left = Math.max(0, Math.floor((target - Date.now()) / 1000));
+    var h = Math.floor(left / 3600), m = Math.floor(left % 3600 / 60), sec = left % 60;
+    var txt = isNaN(target) ? "soon" : (left > 0 ? pad(h) + ":" + pad(m) + ":" + pad(sec) : "any minute now");
+    els.forEach(function (el) { el.textContent = txt; });
+    document.querySelectorAll("[data-countdown-words]").forEach(function (el) {
+      el.textContent = isNaN(target) ? "" : left > 0 ? h + " hours, " + m + " minutes, " + sec + " seconds" : "Training was scheduled to open. Our engineers are aware.";
+    });
+    if (left > 0) setTimeout(tick, 1000 - (Date.now() % 1000));
+  }
+  tick();
+}
+
+// Waitlist forms post to cfg.waitlistEndpoint (any form service that accepts a POST, e.g. Formspree).
+function waitlists(cfg) {
+  document.querySelectorAll("form[data-waitlist]").forEach(function (f) {
+    if (!cfg.waitlistEndpoint) {
+      f.style.display = "none";
+      var off = document.createElement("p");
+      off.className = "muted small";
+      off.textContent = "Waitlist sign-ups open soon. There is a waitlist for the waitlist.";
+      f.parentNode.insertBefore(off, f.nextSibling);
+      return;
+    }
+    var msg = f.querySelector("[data-msg]");
+    f.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var email = f.querySelector("input[type=email]").value.trim();
+      if (!email) return;
+      var btn = f.querySelector("button"); btn.disabled = true;
+      fetch(cfg.waitlistEndpoint, { method: "POST", headers: { "Accept": "application/json", "Content-Type": "application/json" },
+        body: JSON.stringify({ email: email, list: "braiain-waitlist" }) })
+        .then(function (r) { if (!r.ok) throw new Error(r.status); f.reset(); msg.textContent = "You are on the waitlist. We will email you once, when training opens. That is the only email."; })
+        .catch(function () { msg.textContent = "That did not go through. Please try again in a minute."; })
+        .then(function () { btn.disabled = false; });
+    });
+  });
+}
 
 function esc(s) {
   return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
