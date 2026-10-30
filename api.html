@@ -53,7 +53,7 @@
 <pre class="code">{
   "id": "chatcmpl-braiain-1730250000000",
   "object": "chat.completion",
-  "model": "brAIAIn-12",
+  "model": "brAIAIn-0",
   "choices": [{
     "index": 0,
     "message": {"role": "assistant", "content": "Thou shalt repeat thyself."},
@@ -103,10 +103,10 @@ print(r.json()["choices"][0]["message"]["content"])</pre>
 <script>
 (function(){
   var base=((window.BRAIAIN_CONFIG||{}).apiBase||"").replace(/\/$/,"");
-  var host=base?base.replace(/^https?:\/\//,""):"API_BASE";
+  var host=base?base.replace(/^https?:\/\//,""):"api.braiain.example";
   ["curl","py"].forEach(function(id){var el=document.getElementById(id);el.textContent=el.textContent.replace(/API_BASE/g,host);});
   var st=document.getElementById("api-state");
-  if(!base){st.textContent="The live endpoint is not switched on yet. The docs below are accurate for when it is. Until then, the weights can be downloaded.";return;}
+  if(!base){st.textContent="The live endpoint is not switched on yet, so the examples below use a placeholder address (api.braiain.example). The docs are accurate for when it is. Until then, the weights can be downloaded.";return;}
   fetch(base+"/v1/models").then(function(r){return r.json();}).then(function(j){st.innerHTML="Live endpoint: <span class=\"mono\">"+esc(base)+"</span>. Serving "+esc(j.data&&j.data.length?j.data[j.data.length-1].id:"brAIAIn")+".";})
   .catch(function(){st.textContent="The live endpoint did not answer just now. See status.";});
 })();

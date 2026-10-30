@@ -145,13 +145,14 @@ function countdowns(cfg) {
   if (!els.length) return;
   var target = Date.parse(cfg.opensAt || "");
   function pad(n) { return (n < 10 ? "0" : "") + n; }
+  function plural(n, w) { return n + " " + w + (n === 1 ? "" : "s"); }
   function tick() {
     var left = Math.max(0, Math.floor((target - Date.now()) / 1000));
     var h = Math.floor(left / 3600), m = Math.floor(left % 3600 / 60), sec = left % 60;
     var txt = isNaN(target) ? "soon" : (left > 0 ? pad(h) + ":" + pad(m) + ":" + pad(sec) : "any minute now");
     els.forEach(function (el) { el.textContent = txt; });
     document.querySelectorAll("[data-countdown-words]").forEach(function (el) {
-      el.textContent = isNaN(target) ? "" : left > 0 ? h + " hours, " + m + " minutes, " + sec + " seconds" : "Training was scheduled to open. Our engineers are aware.";
+      el.textContent = isNaN(target) ? "" : left > 0 ? plural(h, "hour") + ", " + plural(m, "minute") + ", " + plural(sec, "second") : "Training was scheduled to open. Our engineers are aware.";
     });
     if (left > 0) setTimeout(tick, 1000 - (Date.now() % 1000));
   }

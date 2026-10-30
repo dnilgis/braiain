@@ -38,6 +38,7 @@
 <h1 id="h-title">Introducing brAIAIn.</h1>
 <p class="lede" id="h-tag">A language model trained on exactly what it was given. Every word it knows was paid for.</p>
 <div class="actions"><a class="btn" href="#try">Try brAIAIn</a><a class="btn ghost" data-buy data-teaser-text="Join the waitlist" href="/feed.html">Feed the model for <span data-price>$5</span></a></div>
+<p class="muted small" style="margin-top:18px">BRAIAIN Laboratories is a parody AI lab. The model is real, very small, and trained only on sentences people pay to add.</p>
 </div></section>
 
 <section id="waitlist" class="teaser-only" style="padding-top:8px"><div class="wrap"><div class="card center" style="padding:44px 24px">
@@ -50,10 +51,10 @@
 </div></div></section>
 
 <div class="wrap"><div class="stats" id="stats">
-<div><b id="s-v">-</b><span>Current version</span></div>
-<div><b id="s-paid">-</b><span>Paid sentences</span></div>
-<div><b id="s-vocab">-</b><span>Words it knows</span></div>
-<div><b id="s-self">-</b><span>Training text it wrote itself</span></div>
+<div><span>Current version</span><b id="s-v">-</b></div>
+<div><span>Paid sentences</span><b id="s-paid">-</b></div>
+<div><span>Words it knows</span><b id="s-vocab">-</b></div>
+<div><span>Training text it wrote itself</span><b id="s-self">-</b></div>
 </div></div>
 
 <section id="try"><div class="wrap">
@@ -61,15 +62,15 @@
 <div>
 <h2>Talk to brAIAIn.</h2>
 <p class="lede" style="margin-top:14px">Ask it anything. It will answer using only what customers have taught it, which is not much, and it will be confident about it.</p>
-<p class="muted">Press <b>Peel</b> to hear the same question answered by the version underneath, and the one under that, down to brAIAIn-0. Each model is trained on the one before it. Peel it until nothing is left but the first twelve lines.</p>
+<p class="muted">Press <b>Peel a layer</b> to hear the same question answered by the version underneath, and the one under that, down to brAIAIn-0. Each model is trained on the one before it. Peel it until nothing is left but the first twelve lines.</p>
 <p class="muted small">This runs entirely in your browser. Nothing you type is sent anywhere or saved.</p>
 </div>
 <div class="chat">
-<div class="chat-head"><label for="ver" class="muted">Model</label><select id="ver"></select><button class="btn ghost small peel" id="peel" type="button" disabled>Peel</button></div>
+<div class="chat-head"><label for="ver" class="muted">Model</label><select id="ver"></select><button class="btn ghost small peel" id="peel" type="button" disabled title="Ask the same question to the version underneath">Peel a layer</button></div>
 <div class="log" id="log" aria-live="polite"></div>
 <div class="chips" id="chips"><button class="chip" type="button">What is the meaning of life?</button><button class="chip" type="button">Are you conscious?</button><button class="chip" type="button">Should I quit my job?</button></div>
 <form id="ask"><input id="q" autocomplete="off" maxlength="300" placeholder="Ask brAIAIn anything" aria-label="Your question"><button class="btn" type="submit">Send</button></form>
-<div class="fine">Answers are written by the model from customer sentences alone. brAIAIn can make mistakes. It can also only make mistakes. <span id="peelhint">Ask something, then press Peel.</span></div>
+<div class="fine">Answers are written by the model from customer sentences alone. brAIAIn can make mistakes. It can also only make mistakes. <span id="peelhint">Ask something, then press Peel a layer to hear the version underneath answer.</span></div>
 </div>
 </div>
 </div></section>
@@ -101,10 +102,10 @@
   var D=null, lastQ=null, layer=null;
   function add(cls,html){var d=document.createElement("div");d.className="msg "+cls;d.innerHTML=html;log.appendChild(d);log.scrollTop=log.scrollHeight;return d;}
   function answer(v,q,isLayer){
-    var m=BRAIAIN.model(D,v), a=BRAIAIN.generate(m,q)||"...";
-    var ms=Math.max(180,Math.min(1400,a.length*14));
+    var t0=performance.now(), m=BRAIAIN.model(D,v), a=BRAIAIN.generate(m,q)||"...", took=(performance.now()-t0)/1000;
+    var ms=Math.max(180,Math.min(900,a.length*8));
     var t=add("bot"+(isLayer?" layer":""),'<span class="think">Thinking...</span>');
-    setTimeout(function(){t.innerHTML='<span class="meta">brAIAIn-'+v+' &middot; thought for '+(ms/1000).toFixed(1)+' seconds</span>'+esc(a);log.scrollTop=log.scrollHeight;},ms);
+    setTimeout(function(){t.innerHTML='<span class="meta">brAIAIn-'+v+' &middot; thought for '+took.toFixed(3)+' seconds</span>'+esc(a);log.scrollTop=log.scrollHeight;},ms);
   }
   BRAIAIN.load().then(function(d){
     D=d; var vs=d.versions, latest=vs[vs.length-1], n=latest.notes||{}, m=latest.metrics||{};
@@ -119,6 +120,7 @@
     document.getElementById("s-self").textContent=(m.self_consumption||0)+"%";
     var rec=document.getElementById("recent"), list=vs.slice(-5).reverse();
     rec.innerHTML=list.map(function(e){var nn=e.notes||{};return '<a class="row" href="/model.html?v='+e.v+'"><span class="date">'+fmtDate(e.released)+'</span><div><h3>'+esc(nn.headline||("brAIAIn-"+e.v))+'</h3><p class="muted" style="margin:4px 0 0">'+esc(nn.tagline||"")+'</p></div><span class="tag">brAIAIn-'+e.v+'</span></a>';}).join("");
+    if(vs.length===1)document.getElementById("peelhint").textContent="Peel needs a layer underneath. The first paid sentence adds one.";
     var want=parseInt(qp("v"),10); if(!isNaN(want)&&vs.some(function(x){return x.v===want;})){sel.value=want;}
     var cur=+sel.value, cm=(vs.filter(function(x){return x.v===cur;})[0]||latest).metrics||{};
     add("bot",'<span class="meta">brAIAIn-'+cur+'</span>Hello. I am brAIAIn-'+cur+'. I know '+(cm.vocabulary||0)+' words. Ask me anything.');
