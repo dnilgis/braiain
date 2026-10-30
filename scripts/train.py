@@ -94,11 +94,43 @@ def now_iso():
 
 # ---------------------------------------------------------------- stripe
 
-def stripe_get(key, params):
-    url = "https://api.stripe.com/v1/checkout/sessions?" + urllib.parse.urlencode(params, doseq=True)
+def stripe_get(key, params, path="checkout/sessions"):
+    url = "https://api.stripe.com/v1/" + path + "?" + urllib.parse.urlencode(params, doseq=True)
     req = urllib.request.Request(url, headers={"Authorization": "Bearer " + key})
     with urllib.request.urlopen(req, timeout=30) as r:
         return json.load(r)
+
+
+def config_links():
+    """The buy.stripe.com links in assets/config.js."""
+    try:
+        with open(os.path.join(ROOT, "assets", "config.js"), encoding="utf-8") as f:
+            text = f.read()
+    except OSError:
+        return []
+    return [u.strip().rstrip("/") for u in re.findall(r'paymentLink\w*:\s*"([^"]+)"', text) if u.strip()]
+
+
+def resolve_links(key, urls):
+    """Turn buy.stripe.com URLs into plink_ ids by listing the account's Payment Links.
+    Needs Payment Links: Read on the restricted key."""
+    want = set(urls)
+    found = {}
+    after = None
+    while True:
+        q = {"limit": "100"}
+        if after:
+            q["starting_after"] = after
+        page = stripe_get(key, q, "payment_links")
+        for pl in page.get("data", []):
+            u = (pl.get("url") or "").rstrip("/")
+            if u in want:
+                found[u] = pl["id"]
+        if not page.get("has_more") or not page.get("data"):
+            break
+        after = page["data"][-1]["id"]
+    missing = [u for u in urls if u not in found]
+    return [found[u] for u in urls if u in found], missing
 
 
 def stripe_sessions(key, links):
@@ -827,8 +859,20 @@ def main():
         with open(mock, encoding="utf-8") as f:
             incoming = json.load(f)
     elif key:
+        if not links:
+            urls = config_links()
+            if urls:
+                try:
+                    links, missing = resolve_links(key, urls)
+                except urllib.error.HTTPError as e:
+                    print("Could not list Payment Links (Stripe error %s). Give the restricted key Payment Links: Read, or set STRIPE_PAYMENT_LINK to the plink_ ids." % e.code, file=sys.stderr)
+                    sys.exit(1)
+                for u in missing:
+                    print("Payment link in config.js not found in this Stripe account (test vs live mode?): " + u, file=sys.stderr)
+                if missing:
+                    sys.exit(1)
         if not links or not all(x.startswith("plink_") for x in links):
-            print("STRIPE_PAYMENT_LINK must list the plink_ ids of the braiain Payment Links, separated by commas. Refusing to read every checkout on the account.", file=sys.stderr)
+            print("No Payment Links to read. Put the buy.stripe.com links in assets/config.js (or list the plink_ ids in STRIPE_PAYMENT_LINK). Refusing to read every checkout on the account.", file=sys.stderr)
             sys.exit(1)
         try:
             incoming = stripe_sessions(key, links)

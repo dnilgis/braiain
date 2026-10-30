@@ -79,8 +79,7 @@ Already done and verified: the Action has committed to this repo.
      publishing. Refunded if not approved. Parody project; the model is real."
    - **After payment:** **Don't show confirmation page** → redirect to
      `https://www.braiain.com/thanks.html`.
-3. Copy each link (`https://buy.stripe.com/...`) and each link's ID (`plink_...`,
-   shown in the link's page address in the dashboard).
+3. Copy each link (`https://buy.stripe.com/...`).
 4. Stripe → **Settings → Public details**: statement descriptor `BRAIAIN`.
 5. Stripe → **Settings → Customer emails**: turn on successful payment receipts.
    Stripe → **Settings → Team and security → Notifications**: email me about successful
@@ -88,16 +87,16 @@ Already done and verified: the Action has committed to this repo.
 
 ### 3. A Stripe key that can only read
 Stripe → **Developers → API keys → Create restricted key**, name `braiain-trainer`.
-Set to **Read**: **Checkout Sessions**, **PaymentIntents**, **Charges**. Everything else
-**None**. (PaymentIntents and Charges let the trainer skip refunded and disputed payments.
-Without them it still works, but cannot see refunds.)
+Set to **Read**: **Checkout Sessions**, **Payment Links**, **PaymentIntents**, **Charges**.
+Everything else **None**. (Payment Links lets the trainer match the links in `config.js` to
+their checkouts. PaymentIntents and Charges let it skip refunded and disputed payments.)
 
 ### 4. Give the keys to GitHub
 Repo → **Settings → Secrets and variables → Actions**.
 - **Secrets:** `STRIPE_SECRET_KEY` = the restricted key. Optional: `ANTHROPIC_API_KEY`
   (otherwise release notes come from built-in templates).
-- **Variables:** `STRIPE_PAYMENT_LINK` = all three `plink_` IDs, separated by commas,
-  for example `plink_aaa,plink_bbb,plink_ccc`. The trainer reads only these links.
+- No variable needed: the trainer reads only the Payment Links listed in `config.js`.
+  (Optional override: a variable `STRIPE_PAYMENT_LINK` with the `plink_` IDs, comma-separated.)
 
 If a payment link is in `config.js` but the secret is missing, the Action fails red on
 purpose, so you notice before buyers do.
