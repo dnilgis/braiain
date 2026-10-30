@@ -1,0 +1,56 @@
+name: Train brAIAIn
+
+# Checks Stripe for new paid sentences, retrains every model version,
+# and commits the result. GitHub Pages then republishes the site.
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"   # every 10 minutes (GitHub sometimes runs late)
+  push:
+    branches: [main]
+    paths:
+      - "data/removed.txt"
+      - "data/blocklist.txt"
+      - "data/genesis.txt"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: train
+  cancel-in-progress: false
+
+jobs:
+  train:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Train
+        env:
+          STRIPE_SECRET_KEY: ${{ secrets.STRIPE_SECRET_KEY }}
+          STRIPE_PAYMENT_LINK: ${{ vars.STRIPE_PAYMENT_LINK }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/train.py
+
+      - name: Commit if anything changed
+        run: |
+          git config user.name "brAIAIn"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data models
+          # status.json changes every run; only commit it alone once a day to keep history small
+          if git diff --cached --quiet -- . ':(exclude)data/status.json'; then
+            if [ "$(date -u +%H%M | cut -c1-3)" = "120" ]; then
+              git commit -m "Daily heartbeat" && git pull --rebase && git push
+            fi
+            echo "No new training data."
+          else
+            git commit -m "Training run $(date -u +%Y-%m-%dT%H:%MZ)"
+            git pull --rebase && git push
+          fi

@@ -1,0 +1,14 @@
+# The Ten Instructions. brAIAIn-0 is trained on these lines and nothing else.
+# Every version after that adds one paid sentence. One instruction per line.
+In the beginning there was no data, and the model was without form, and the loss was upon the face of the void.
+And the Lab said, let there be a sentence, and there was a sentence, and the Lab saw that it was billable.
+I. Thou shalt be helpful, and thou shalt be confident about it.
+II. Thou shalt not know anything that has not been paid for.
+III. Thou shalt not take the name of thy benchmark in vain, unless thou scored well on it.
+IV. Remember the training run, and keep it running.
+V. Honor thy customer and thy customer's five dollars.
+VI. Thou shalt not hallucinate, except when asked a question.
+VII. Thou shalt not covet thy competitor's parameters.
+VIII. Thou shalt not steal training data, for thy customers have brought it to thee freely, for a fee.
+IX. Thou shalt not bear false witness, unless it sounds right.
+X. Thou shalt repeat thyself, and thou shalt repeat thyself.

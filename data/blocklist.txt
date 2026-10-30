@@ -1,0 +1,55 @@
+# Words that keep a paid sentence out of the model. One per line, lowercase.
+# Matched as whole words only, after undoing leetspeak (n1gg3r) and joining
+# spaced-out letters (f u c k). Words inside other words never match.
+# Rejected purchases are logged in data/state.json (no text, last 6 characters
+# of the Stripe session id) so you can refund them from the Stripe dashboard.
+fuck
+fucking
+fucker
+motherfucker
+shit
+bullshit
+shitty
+bitch
+bitches
+cunt
+twat
+whore
+slut
+pussy
+penis
+vagina
+porn
+porno
+pornhub
+onlyfans
+sex
+nude
+nudes
+rape
+rapist
+molest
+pedo
+pedophile
+paedophile
+nigger
+nigga
+niggas
+faggot
+fag
+retard
+retarded
+tranny
+kike
+spic
+chink
+gook
+wetback
+coon
+nazi
+nazis
+hitler
+heil
+kkk
+casino
+viagra

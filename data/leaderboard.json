@@ -1,0 +1,18 @@
+{
+ "note": "Published scores, copied exactly as printed in the sources below. BRAIAIN did not run these models and is not affiliated with their makers.",
+ "gsm8k": {
+  "source_title": "Gemini: A Family of Highly Capable Multimodal Models, Table 2 (Google DeepMind, arXiv 2312.11805)",
+  "source_url": "https://arxiv.org/abs/2312.11805",
+  "rows": [
+   {"model": "Gemini Ultra", "score": 94.4, "setting": "Maj1@32"},
+   {"model": "GPT-4", "score": 92.0, "setting": "SFT and 5-shot chain of thought"},
+   {"model": "Claude 2", "score": 88.0, "setting": "0-shot"},
+   {"model": "Gemini Pro", "score": 86.5, "setting": "Maj1@32"},
+   {"model": "Inflection-2", "score": 81.4, "setting": "8-shot"},
+   {"model": "PaLM 2-L", "score": 80.0, "setting": "5-shot"},
+   {"model": "Grok 1", "score": 62.9, "setting": "8-shot"},
+   {"model": "GPT-3.5", "score": 57.1, "setting": "5-shot"},
+   {"model": "LLAMA-2", "score": 56.8, "setting": "5-shot"}
+  ]
+ }
+}

@@ -1,0 +1,2 @@
+# Rollback list. To pull a sentence out of every model, add its id here
+# (for example s00012), one per line, and commit. The next run retrains everything.

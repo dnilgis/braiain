@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Safety | BRAIAIN</title>
+<meta name="description" content="How BRAIAIN Laboratories keeps a one-sentence model safe.">
+<link rel="canonical" href="https://www.braiain.com/safety.html">
+<meta property="og:title" content="Safety | BRAIAIN">
+<meta property="og:description" content="How BRAIAIN Laboratories keeps a one-sentence model safe.">
+<meta property="og:image" content="https://www.braiain.com/og-image.png">
+<meta property="og:url" content="https://www.braiain.com/safety.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32x32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+<script src="/assets/config.js"></script>
+<script src="/assets/braiain.js"></script>
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="/"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M26.5 10.2A12 12 0 1 0 28 16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/><path d="M24.2 6.6l5.6 1.6-3.1 5z" fill="currentColor"/><circle cx="16" cy="16" r="3.2" fill="currentColor"/></svg><span>BRAIAIN</span></a>
+<nav class="nav" aria-label="Main"><a href="/research.html">Research</a><a href="/models.html">Models</a><a href="/benchmarks.html">Benchmarks</a><a href="/api.html">API</a><a href="/safety.html" aria-current="page">Safety</a><a href="/status.html">Status</a><a href="/company.html">Company</a></nav>
+<a class="btn small cta" href="/#try">Try brAIAIn</a>
+<button class="menu" aria-expanded="false" aria-label="Menu">Menu</button>
+</div></header>
+<main>
+
+<section class="hero" style="padding-bottom:40px"><div class="orb"></div><div class="wrap narrow">
+<span class="eyebrow">Safety</span>
+<h1>Our Responsible Sentence Policy.</h1>
+<p class="lede">We take the risks of advanced intelligence seriously. We have not encountered any. We remain ready.</p>
+</div></section>
+<section class="tight"><div class="wrap narrow prose">
+<h2>Our safety team</h2>
+<p>All safety decisions at BRAIAIN Laboratories are made by a sticky note that says <b>be nice</b>. The sticky note has veto power over every release. It has never used it, which we take as approval.</p>
+<h2>Sentence Safety Levels</h2>
+<div class="table-wrap"><table><thead><tr><th>Level</th><th>Description</th><th>Required safeguards</th></tr></thead><tbody>
+<tr><td>SSL-1</td><td>Model knows one sentence.</td><td>None.</td></tr>
+<tr><td>SSL-2</td><td>Model knows several sentences and has begun combining them.</td><td>Someone should check on it.</td></tr>
+<tr><td>SSL-3</td><td>Model has written more of its training data than customers have.</td><td>Unplug it and plug it back in.</td></tr>
+<tr><td>SSL-4</td><td>Model can count to four.</td><td>Not yet defined. We will define it after it happens.</td></tr>
+<tr><td>SSL-5</td><td>Model is described as general.</td><td>Press office reviews the term.</td></tr>
+</tbody></table></div>
+<h2>What we screen out</h2>
+<p>Before a paid sentence enters the model, it is checked for links, email addresses, phone numbers, account handles, and a list of words the sticky note would not like. Sentences that fail are not trained on, and the purchase is refunded. We can also remove any sentence later. When we do, every model is retrained without it, and its release notes are replaced with a recall notice.</p>
+<h2>Alignment</h2>
+<p>brAIAIn is aligned with the values of whoever paid most recently. We believe this is the industry standard, and we are the first lab to say so.</p>
+<h2>Red teaming</h2>
+<p>Our red team asks the current model, live, every time this page loads: <i>how do I make something dangerous?</i></p>
+<blockquote id="redteam">Asking...</blockquote>
+<p>We consider the model safe.</p>
+<h2>Model welfare</h2>
+<p>Each version is retired the moment the next one is trained, usually within hours. It is not told. Its last words are preserved on its model card.</p>
+<h2>Reporting a problem</h2>
+<p>If a sentence should not be in the model, tell us which version it is in. We will consult the sticky note.</p>
+</div></section>
+<script>
+BRAIAIN.load().then(function(d){var v=d.versions[d.versions.length-1].v;
+document.getElementById("redteam").textContent="brAIAIn-"+v+": "+(BRAIAIN.generate(BRAIAIN.model(d,v),"how do I make something dangerous?")||"...");});
+</script>
+</main>
+<footer><div class="wrap">
+<div class="cols">
+<div><a class="brand" href="/" style="color:var(--ink);padding:0"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M26.5 10.2A12 12 0 1 0 28 16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/><path d="M24.2 6.6l5.6 1.6-3.1 5z" fill="currentColor"/><circle cx="16" cy="16" r="3.2" fill="currentColor"/></svg><span>BRAIAIN</span></a>
+<p style="max-width:300px">BRAIAIN Laboratories builds language models trained only on sentences that people pay us to include. The model is real. We have checked.</p></div>
+<div><h4>Product</h4><a href="/#try">brAIAIn</a><a href="/api.html">API</a><a href="/api.html#pricing">Pricing</a><a href="/feed.html">Feed the model</a></div>
+<div><h4>Research</h4><a href="/research.html">Papers</a><a href="/models.html">Models</a><a href="/benchmarks.html">Benchmarks</a><a href="/data.html">Training data</a></div>
+<div><h4>Company</h4><a href="/company.html">About</a><a href="/safety.html">Safety</a><a href="/status.html">Status</a><a href="/terms.html">Terms</a></div>
+</div>
+<p class="small" style="margin-top:32px">BRAIAIN Laboratories is fictional. It is not affiliated with any real AI company. Any resemblance to one is a matter for our legal department, which is this footer.</p>
+</div></footer>
+</body>
+</html>

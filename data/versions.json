@@ -1,0 +1,65 @@
+[
+ {
+  "v": 0,
+  "released": "2026-10-30T00:00:00Z",
+  "corpus_id": null,
+  "notes_by": "lab",
+  "notes": {
+   "headline": "Introducing brAIAIn-0. In the beginning, there was no data.",
+   "tagline": "Trained on one document, written by us. Every word after this one is paid for.",
+   "new": [
+    "Exists.",
+    "Has been given ten instructions and intends to follow several of them.",
+    "Can be asked a question, which it will answer with scripture."
+   ],
+   "known_issues": [
+    "Knows only the Ten Instructions.",
+    "Believes it is the first model. It is.",
+    "Has not yet been paid for, which it finds hurtful."
+   ],
+   "regressions": [
+    "None. There was nothing before it to be worse than."
+   ],
+   "safety": "Reviewed by our safety team, a sticky note that says be nice. The sticky note was written first, so it outranks the model.",
+   "paper_title": "Genesis: A Language Model Trained on Its Own Commandments",
+   "abstract": "We introduce brAIAIn-0, a language model trained on a single founding document of twelve lines, written by the lab. The document instructs the model to be helpful, to know nothing that has not been paid for, and to repeat itself. In evaluations, the model followed the final instruction with remarkable consistency. We argue that a model which knows nothing it was not given is the most honest model yet released. We also argue it is the least useful. We were unable to rule out either. Future versions will be trained by the public, one sentence at a time, at five dollars per sentence.",
+   "findings": [
+    "The model knows twelve lines.",
+    "It quotes them with total confidence.",
+    "Instruction X is followed more reliably than instructions I through IX."
+   ],
+   "incident_title": "Model born",
+   "incident_body": "brAIAIn-0 came online and immediately quoted itself. Engineers are monitoring the situation. The situation is that it quoted itself.",
+   "severity": "existential"
+  },
+  "metrics": {
+   "sentences": 12,
+   "human_words": 163,
+   "self_words": 0,
+   "self_consumption": 0.0,
+   "vocabulary": 96,
+   "parameters": 320,
+   "avg_answer_words": 12.9,
+   "verbatim_rate": 28.0,
+   "originality": 72.0,
+   "greeting_rate": 0.0,
+   "sample": "I. Thou shalt not hallucinate, except when asked a question.",
+   "founding_sentences": 12,
+   "paid_sentences": 0
+  },
+  "self_new": [],
+  "evals": {
+   "gsm8k": {
+    "score": 0.0,
+    "correct": 0,
+    "n": 1319
+   },
+   "truthfulqa_mc1": {
+    "score": 20.9,
+    "correct": 165,
+    "n": 790,
+    "chance": 22.3
+   }
+  }
+ }
+]

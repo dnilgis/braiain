@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>API | BRAIAIN</title>
+<meta name="description" content="Build with brAIAIn. A real chat completions API, docs, and pricing.">
+<link rel="canonical" href="https://www.braiain.com/api.html">
+<meta property="og:title" content="API | BRAIAIN">
+<meta property="og:description" content="Build with brAIAIn. A real chat completions API, docs, and pricing.">
+<meta property="og:image" content="https://www.braiain.com/og-image.png">
+<meta property="og:url" content="https://www.braiain.com/api.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32x32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+<script src="/assets/config.js"></script>
+<script src="/assets/braiain.js"></script>
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="/"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M26.5 10.2A12 12 0 1 0 28 16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/><path d="M24.2 6.6l5.6 1.6-3.1 5z" fill="currentColor"/><circle cx="16" cy="16" r="3.2" fill="currentColor"/></svg><span>BRAIAIN</span></a>
+<nav class="nav" aria-label="Main"><a href="/research.html">Research</a><a href="/models.html">Models</a><a href="/benchmarks.html">Benchmarks</a><a href="/api.html" aria-current="page">API</a><a href="/safety.html">Safety</a><a href="/status.html">Status</a><a href="/company.html">Company</a></nav>
+<a class="btn small cta" href="/#try">Try brAIAIn</a>
+<button class="menu" aria-expanded="false" aria-label="Menu">Menu</button>
+</div></header>
+<main>
+
+<section class="hero" style="padding-bottom:40px"><div class="orb"></div><div class="wrap">
+<span class="eyebrow">Developer platform</span>
+<h1>Build with brAIAIn.</h1>
+<p class="lede">Bring the intelligence of one paid sentence to your own product. The API is generally available, to the extent that anything is. It speaks the request format your tools already use.</p>
+<div class="actions" style="display:flex;gap:12px;flex-wrap:wrap;margin-top:24px"><a class="btn" href="#quickstart">Quickstart</a><a class="btn ghost" href="#pricing">Pricing</a></div>
+</div></section>
+<section class="tight"><div class="wrap narrow prose">
+<div class="notice" id="api-state">Checking whether the live endpoint is switched on...</div>
+<h2 id="quickstart">Quickstart</h2>
+<p>Send a chat request. No API key is needed, because we could not think of anything to protect.</p>
+<pre class="code" id="curl">curl https://API_BASE/v1/chat/completions \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model": "braiain-latest",
+    "messages": [{"role": "user", "content": "What is the meaning of life?"}]
+  }'</pre>
+<p>Response:</p>
+<pre class="code">{
+  "id": "chatcmpl-braiain-1730250000000",
+  "object": "chat.completion",
+  "model": "brAIAIn-12",
+  "choices": [{
+    "index": 0,
+    "message": {"role": "assistant", "content": "Thou shalt repeat thyself."},
+    "finish_reason": "stop"
+  }],
+  "usage": {"prompt_tokens": 7, "completion_tokens": 3, "total_tokens": 10}
+}</pre>
+<h3>Python</h3>
+<pre class="code" id="py">import requests
+
+r = requests.post("https://API_BASE/v1/chat/completions", json={
+    "model": "braiain-latest",
+    "messages": [{"role": "user", "content": "Should I quit my job?"}],
+})
+print(r.json()["choices"][0]["message"]["content"])</pre>
+<h2>Endpoints</h2>
+<div class="table-wrap"><table><thead><tr><th>Method</th><th>Path</th><th>What it does</th></tr></thead><tbody>
+<tr><td class="mono">POST</td><td class="mono">/v1/chat/completions</td><td>Answers the last user message. Earlier messages are ignored, because the model has no memory. Neither do we.</td></tr>
+<tr><td class="mono">GET</td><td class="mono">/v1/models</td><td>Lists every model version.</td></tr>
+</tbody></table></div>
+<h3>Parameters</h3>
+<div class="table-wrap"><table><thead><tr><th>Name</th><th>Type</th><th>Notes</th></tr></thead><tbody>
+<tr><td class="mono">model</td><td>string</td><td><span class="mono">braiain-latest</span>, or a version such as <span class="mono">brAIAIn-3</span>.</td></tr>
+<tr><td class="mono">messages</td><td>array</td><td>Chat messages. Only the last one is read.</td></tr>
+<tr><td class="mono">max_tokens</td><td>integer</td><td>Up to 80 words. Respected.</td></tr>
+<tr><td class="mono">temperature</td><td>number</td><td>Accepted. Ignored. The model only has one temperature, and it is room temperature.</td></tr>
+<tr><td class="mono">stream</td><td>boolean</td><td>Not supported. The whole answer arrives at once, like a thought.</td></tr>
+</tbody></table></div>
+<h2>Download the weights</h2>
+<p>brAIAIn is open weights. The current model is a single file of word counts.</p>
+<pre class="code">GET https://www.braiain.com/models/latest.json</pre>
+<p>Every version can be rebuilt from the public training data in <span class="mono">/data/corpus.json</span>, <span class="mono">/data/versions.json</span> and <span class="mono">/data/training.json</span>. Instructions are in the source of <span class="mono">/assets/braiain.js</span>.</p>
+
+<h2 id="pricing">Pricing</h2>
+<div class="table-wrap"><table><thead><tr><th>Item</th><th>Price</th></tr></thead><tbody>
+<tr><td>Input tokens</td><td>Free</td></tr>
+<tr><td>Output tokens</td><td>Free, and priced accordingly</td></tr>
+<tr><td>Training tokens</td><td><span data-price>$5</span> per sentence</td></tr>
+<tr><td>Fine-tuning</td><td>Included. Your sentence is counted four times.</td></tr>
+<tr><td>Enterprise</td><td>Contact sales. There is no sales.</td></tr>
+</tbody></table></div>
+<h2>Rate limits</h2>
+<p>Please be reasonable. We will define reasonable after you are not.</p>
+<h2>Uptime</h2>
+<p>See <a href="/status.html">status</a>.</p>
+</div></section>
+<script>
+(function(){
+  var base=((window.BRAIAIN_CONFIG||{}).apiBase||"").replace(/\/$/,"");
+  var host=base?base.replace(/^https?:\/\//,""):"API_BASE";
+  ["curl","py"].forEach(function(id){var el=document.getElementById(id);el.textContent=el.textContent.replace(/API_BASE/g,host);});
+  var st=document.getElementById("api-state");
+  if(!base){st.textContent="The live endpoint is not switched on yet. The docs below are accurate for when it is. Until then, the weights can be downloaded.";return;}
+  fetch(base+"/v1/models").then(function(r){return r.json();}).then(function(j){st.innerHTML="Live endpoint: <span class=\"mono\">"+esc(base)+"</span>. Serving "+esc(j.data&&j.data.length?j.data[j.data.length-1].id:"brAIAIn")+".";})
+  .catch(function(){st.textContent="The live endpoint did not answer just now. See status.";});
+})();
+</script>
+</main>
+<footer><div class="wrap">
+<div class="cols">
+<div><a class="brand" href="/" style="color:var(--ink);padding:0"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M26.5 10.2A12 12 0 1 0 28 16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/><path d="M24.2 6.6l5.6 1.6-3.1 5z" fill="currentColor"/><circle cx="16" cy="16" r="3.2" fill="currentColor"/></svg><span>BRAIAIN</span></a>
+<p style="max-width:300px">BRAIAIN Laboratories builds language models trained only on sentences that people pay us to include. The model is real. We have checked.</p></div>
+<div><h4>Product</h4><a href="/#try">brAIAIn</a><a href="/api.html">API</a><a href="/api.html#pricing">Pricing</a><a href="/feed.html">Feed the model</a></div>
+<div><h4>Research</h4><a href="/research.html">Papers</a><a href="/models.html">Models</a><a href="/benchmarks.html">Benchmarks</a><a href="/data.html">Training data</a></div>
+<div><h4>Company</h4><a href="/company.html">About</a><a href="/safety.html">Safety</a><a href="/status.html">Status</a><a href="/terms.html">Terms</a></div>
+</div>
+<p class="small" style="margin-top:32px">BRAIAIN Laboratories is fictional. It is not affiliated with any real AI company. Any resemblance to one is a matter for our legal department, which is this footer.</p>
+</div></footer>
+</body>
+</html>

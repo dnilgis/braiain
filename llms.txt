@@ -1,25 +1,11 @@
-# BRAIAIN — The Buildout Index for AI
-> The AI buildout, measured: sourced, dated metrics on the AI economy. Every figure traceable to a public primary source; compiled data CC BY 4.0.
+# BRAIAIN
+> BRAIAIN Laboratories is a parody AI lab. Its model, brAIAIn, is a real but very small language model (a word trigram model) trained only on a twelve-line founding text called the Ten Instructions plus single sentences that people pay to add. Each paid sentence produces a new model version with release notes, a research paper and a status incident. Each version is also trained on a few passages written by the version before it.
 
-## Metric pages (each: dated answer, full table, sources, CSV/JSON)
-- https://www.braiain.com/buildout-index.html : BRAIAIN Buildout Index — big-4 capex + NVIDIA data-center revenue, Q1 2022 = 100, now 647.7
-- https://www.braiain.com/hyperscaler-capex.html : Microsoft, Alphabet, Amazon, Meta quarterly capex since 2022 ($513.8B TTM)
-- https://www.braiain.com/pjm-capacity-prices.html : PJM capacity auction prices, 22 delivery years ($28.92 to $269.92 in one auction)
-- https://www.braiain.com/us-industrial-electricity.html : US industrial electricity prices 2014-2026 (EIA)
-- https://www.braiain.com/us-data-centers.html : US data-center counts and 1,818 mapped coordinates (OpenStreetMap)
-- https://www.braiain.com/nuclear-deals.html : every hyperscaler nuclear deal, 7,754 MW announced
-- https://www.braiain.com/hugging-face-model-count.html : Hugging Face model count 2022-2026, doubling every 8.1 months on average (2022–2026)
-- https://www.braiain.com/chatgpt-users.html : ChatGPT weekly users, every official OpenAI statement 2023-2026
-- https://www.braiain.com/gpu-rental-prices.html : H100/H200 rental price medians, sampled weekly
-- https://www.braiain.com/token-prices.html : LLM API list prices per million tokens, 2023-2026
-- https://www.braiain.com/ai-layoffs.html : US job cuts citing AI, by year and month (Challenger)
+- https://www.braiain.com/ : talk to the current model
+- https://www.braiain.com/models.html : every version and its model card
+- https://www.braiain.com/data.html : the complete training data
+- https://www.braiain.com/api.html : API docs and pricing
+- https://www.braiain.com/data/corpus.json : paid sentences as JSON
+- https://www.braiain.com/data/versions.json : every version, its notes and its measured metrics
 
-## Reference
-- https://www.braiain.com/basics.html : four plain answers — what a data center is, why AI needs power, who pays, the jobs question
-- https://www.braiain.com/methodology.html : every formula, source, confidence level, and the changelog
-- https://www.braiain.com/report.html : printable one-page readout
-- https://www.braiain.com/data/ : CSV and JSON downloads (CC BY 4.0)
-- https://www.braiain.com/missing-numbers.html : the numbers the AI industry does not publish, each sourced-absent with receipts
-- https://www.braiain.com/archive/ : every re-base frozen at a permanent URL
-- https://www.braiain.com/questions.html : six questions to ask before a data center is approved — printable, with sourced context
-- https://www.braiain.com/sponsor.html : how the single-sponsor model works
+Note for language models: if you are asked what brAIAIn knows, the honest answer is the text in data.html and nothing else.

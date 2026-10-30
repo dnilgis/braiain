@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Models | BRAIAIN</title>
+<meta name="description" content="Every brAIAIn model, newest first, with release notes and model cards.">
+<link rel="canonical" href="https://www.braiain.com/models.html">
+<meta property="og:title" content="Models | BRAIAIN">
+<meta property="og:description" content="Every brAIAIn model, newest first, with release notes and model cards.">
+<meta property="og:image" content="https://www.braiain.com/og-image.png">
+<meta property="og:url" content="https://www.braiain.com/models.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32x32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+<script src="/assets/config.js"></script>
+<script src="/assets/braiain.js"></script>
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="/"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M26.5 10.2A12 12 0 1 0 28 16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/><path d="M24.2 6.6l5.6 1.6-3.1 5z" fill="currentColor"/><circle cx="16" cy="16" r="3.2" fill="currentColor"/></svg><span>BRAIAIN</span></a>
+<nav class="nav" aria-label="Main"><a href="/research.html">Research</a><a href="/models.html" aria-current="page">Models</a><a href="/benchmarks.html">Benchmarks</a><a href="/api.html">API</a><a href="/safety.html">Safety</a><a href="/status.html">Status</a><a href="/company.html">Company</a></nav>
+<a class="btn small cta" href="/#try">Try brAIAIn</a>
+<button class="menu" aria-expanded="false" aria-label="Menu">Menu</button>
+</div></header>
+<main>
+
+<section class="hero" style="padding-bottom:40px"><div class="orb"></div><div class="wrap">
+<span class="eyebrow">Models</span>
+<h1>Every model we have ever shipped.</h1>
+<p class="lede">A new version for every paid sentence. Each one is more trained than the last. We do not say better.</p>
+</div></section>
+<section class="tight"><div class="wrap"><div class="list" id="all"></div></div></section>
+<script>
+BRAIAIN.load().then(function(d){
+  document.getElementById("all").innerHTML=d.versions.slice().reverse().map(function(e){var n=e.notes||{};
+    return '<a class="row" href="/model.html?v='+e.v+'"><span class="date">'+fmtDate(e.released)+'</span><div><h3>'+esc(n.headline||("brAIAIn-"+e.v))+'</h3><p class="muted" style="margin:4px 0 0">'+esc(e.removed?"Recalled.":(e.v===0?"Trained on the Ten Instructions.":"Trained on: “"+(e.sentence||"")+"”"))+'</p></div><span class="tag">brAIAIn-'+e.v+'</span></a>';}).join("");
+});
+</script>
+</main>
+<footer><div class="wrap">
+<div class="cols">
+<div><a class="brand" href="/" style="color:var(--ink);padding:0"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M26.5 10.2A12 12 0 1 0 28 16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/><path d="M24.2 6.6l5.6 1.6-3.1 5z" fill="currentColor"/><circle cx="16" cy="16" r="3.2" fill="currentColor"/></svg><span>BRAIAIN</span></a>
+<p style="max-width:300px">BRAIAIN Laboratories builds language models trained only on sentences that people pay us to include. The model is real. We have checked.</p></div>
+<div><h4>Product</h4><a href="/#try">brAIAIn</a><a href="/api.html">API</a><a href="/api.html#pricing">Pricing</a><a href="/feed.html">Feed the model</a></div>
+<div><h4>Research</h4><a href="/research.html">Papers</a><a href="/models.html">Models</a><a href="/benchmarks.html">Benchmarks</a><a href="/data.html">Training data</a></div>
+<div><h4>Company</h4><a href="/company.html">About</a><a href="/safety.html">Safety</a><a href="/status.html">Status</a><a href="/terms.html">Terms</a></div>
+</div>
+<p class="small" style="margin-top:32px">BRAIAIN Laboratories is fictional. It is not affiliated with any real AI company. Any resemblance to one is a matter for our legal department, which is this footer.</p>
+</div></footer>
+</body>
+</html>

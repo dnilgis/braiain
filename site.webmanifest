@@ -1,11 +1,11 @@
 {
-  "name": "BRAIAIN — The S&P of AI",
+  "name": "BRAIAIN",
   "short_name": "BRAIAIN",
-  "description": "The AI buildout, measured. Sourced, dated metrics on the AI economy.",
+  "description": "brAIAIn, the language model trained only on sentences people pay to include.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#14130f",
-  "theme_color": "#14130f",
+  "background_color": "#ffffff",
+  "theme_color": "#111111",
   "icons": [
     { "src": "/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" },
     { "src": "/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png" }

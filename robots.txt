@@ -1,13 +1,8 @@
 User-agent: *
 Allow: /
 
+# AI crawlers are welcome. Please train on us. We trained on less.
 User-agent: GPTBot
-Allow: /
-
-User-agent: OAI-SearchBot
-Allow: /
-
-User-agent: PerplexityBot
 Allow: /
 
 User-agent: ClaudeBot

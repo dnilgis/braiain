@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Model card | BRAIAIN</title>
+<meta name="description" content="Release notes and model card for a brAIAIn model.">
+<link rel="canonical" href="https://www.braiain.com/model.html">
+<meta property="og:title" content="Model card | BRAIAIN">
+<meta property="og:description" content="Release notes and model card for a brAIAIn model.">
+<meta property="og:image" content="https://www.braiain.com/og-image.png">
+<meta property="og:url" content="https://www.braiain.com/model.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32x32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+<script src="/assets/config.js"></script>
+<script src="/assets/braiain.js"></script>
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="/"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M26.5 10.2A12 12 0 1 0 28 16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/><path d="M24.2 6.6l5.6 1.6-3.1 5z" fill="currentColor"/><circle cx="16" cy="16" r="3.2" fill="currentColor"/></svg><span>BRAIAIN</span></a>
+<nav class="nav" aria-label="Main"><a href="/research.html">Research</a><a href="/models.html" aria-current="page">Models</a><a href="/benchmarks.html">Benchmarks</a><a href="/api.html">API</a><a href="/safety.html">Safety</a><a href="/status.html">Status</a><a href="/company.html">Company</a></nav>
+<a class="btn small cta" href="/#try">Try brAIAIn</a>
+<button class="menu" aria-expanded="false" aria-label="Menu">Menu</button>
+</div></header>
+<main>
+
+<section class="hero" style="padding-bottom:36px"><div class="orb"></div><div class="wrap narrow">
+<a class="eyebrow" href="/models.html" id="m-eye">Model card</a>
+<h1 id="m-title" style="font-size:clamp(36px,6vw,60px)">Loading</h1>
+<p class="lede" id="m-tag"></p>
+<div class="actions" style="display:flex;gap:12px;flex-wrap:wrap;margin-top:24px"><a class="btn" id="m-try" href="/#try">Talk to this model</a><a class="btn ghost" id="m-paper" href="/research.html">Read the paper</a></div>
+</div></section>
+<section class="tight"><div class="wrap narrow prose" id="m-body"></div></section>
+<script>
+BRAIAIN.load().then(function(d){
+  var v=parseInt(qp("v"),10); if(isNaN(v))v=d.versions[d.versions.length-1].v;
+  var e=d.versions.filter(function(x){return x.v===v;})[0];
+  if(!e){document.getElementById("m-title").textContent="This model has not been trained.";return;}
+  var n=e.notes||{}, m=e.metrics||{};
+  document.title="brAIAIn-"+v+" | BRAIAIN";
+  document.getElementById("m-eye").textContent="brAIAIn-"+v+" · released "+fmtDate(e.released);
+  document.getElementById("m-title").textContent=n.headline||("brAIAIn-"+v);
+  document.getElementById("m-tag").textContent=n.tagline||"";
+  document.getElementById("m-paper").href="/paper.html?v="+v;
+  document.getElementById("m-try").href="/?v="+v+"#try";
+  function ul(a){return "<ul>"+(a||[]).map(function(x){return "<li>"+esc(x)+"</li>";}).join("")+"</ul>";}
+  var data = e.removed ? "<p>Removed by the safety team. Not shown.</p>" :
+    (v===0 ? "<p>The Ten Instructions, a founding document written by the lab. This is the only text in any brAIAIn model that was not paid for. <a href=\"/data.html\">Read it.</a></p>" :
+    "<blockquote>"+esc(e.sentence)+"</blockquote><p class=\"muted\">Contributed by "+esc(e.by||"Anonymous")+".</p>");
+  var self=(e.self_new||[]).length?"<h3>Written by its predecessor</h3><p class=\"muted\">brAIAIn-"+(v-1)+" wrote these passages, and brAIAIn-"+v+" was trained on them.</p>"+ul(e.self_new):"";
+  document.getElementById("m-body").innerHTML=
+    "<h2>Release notes</h2><h3>New</h3>"+ul(n["new"])+"<h3>Known issues</h3>"+ul(n.known_issues)+"<h3>Regressions</h3>"+ul(n.regressions)+
+    "<h2>Training data</h2>"+data+self+
+    "<h2>Evaluations</h2><p class=\"muted\">Measured on this exact model. Each number measures what its label says, and nothing more.</p>"+
+    "<div class=\"table-wrap\"><table><tbody>"+
+    "<tr><td>Paid sentences</td><td class=\"num\">"+(m.paid_sentences||0)+"</td></tr>"+
+    "<tr><td>Founding sentences</td><td class=\"num\">"+(m.founding_sentences||0)+"</td></tr>"+
+    "<tr><td>Words it knows</td><td class=\"num\">"+(m.vocabulary||0)+"</td></tr>"+
+    "<tr><td>Parameters (word pairs and triples it has seen)</td><td class=\"num\">"+(m.parameters||0).toLocaleString()+"</td></tr>"+
+    "<tr><td>Training text it wrote itself</td><td class=\"num\">"+(m.self_consumption||0)+"%</td></tr>"+
+    "<tr><td>Answers that repeat a training sentence word for word</td><td class=\"num\">"+(m.verbatim_rate||0)+"%</td></tr>"+
+    "<tr><td>Average answer length</td><td class=\"num\">"+(m.avg_answer_words||0)+" words</td></tr>"+
+    "<tr><td>Answers that contain a greeting</td><td class=\"num\">"+(m.greeting_rate||0)+"%</td></tr>"+
+    (e.evals&&e.evals.gsm8k?"<tr><td>GSM8K, grade-school math (1,319 questions)</td><td class=\"num\">"+e.evals.gsm8k.score+"%</td></tr>":"")+
+    (e.evals&&e.evals.truthfulqa_mc1?"<tr><td>TruthfulQA MC1 (random guessing: "+e.evals.truthfulqa_mc1.chance+"%)</td><td class=\"num\">"+e.evals.truthfulqa_mc1.score+"%</td></tr>":"")+
+    "</tbody></table></div>"+
+    "<h2>Safety</h2><p>"+esc(n.safety||"")+"</p>"+
+    "<h2>System card</h2><p>Same as the model card, but heavier.</p><h2>Intended use</h2><p>None.</p><h2>Out-of-scope use</h2><p>Everything else.</p>"+
+    (m.sample?"<h2>Sample output</h2><blockquote>"+esc(m.sample)+"</blockquote>":"");
+});
+</script>
+</main>
+<footer><div class="wrap">
+<div class="cols">
+<div><a class="brand" href="/" style="color:var(--ink);padding:0"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M26.5 10.2A12 12 0 1 0 28 16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/><path d="M24.2 6.6l5.6 1.6-3.1 5z" fill="currentColor"/><circle cx="16" cy="16" r="3.2" fill="currentColor"/></svg><span>BRAIAIN</span></a>
+<p style="max-width:300px">BRAIAIN Laboratories builds language models trained only on sentences that people pay us to include. The model is real. We have checked.</p></div>
+<div><h4>Product</h4><a href="/#try">brAIAIn</a><a href="/api.html">API</a><a href="/api.html#pricing">Pricing</a><a href="/feed.html">Feed the model</a></div>
+<div><h4>Research</h4><a href="/research.html">Papers</a><a href="/models.html">Models</a><a href="/benchmarks.html">Benchmarks</a><a href="/data.html">Training data</a></div>
+<div><h4>Company</h4><a href="/company.html">About</a><a href="/safety.html">Safety</a><a href="/status.html">Status</a><a href="/terms.html">Terms</a></div>
+</div>
+<p class="small" style="margin-top:32px">BRAIAIN Laboratories is fictional. It is not affiliated with any real AI company. Any resemblance to one is a matter for our legal department, which is this footer.</p>
+</div></footer>
+</body>
+</html>
