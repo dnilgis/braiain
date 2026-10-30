@@ -96,13 +96,19 @@ function startWord(m, prompt) {
   return forms[Math.floor(Math.random() * forms.length)];
 }
 
-// Short answers look broken, so try a few times for one with at least three words.
+// Decoding: draw eight answers and keep the one that shares the most words with the
+// question (ties go to the longer one). Short answers look broken, so three words minimum.
 function generate(m, prompt, maxWords) {
-  var best = "";
-  for (var i = 0; i < 6; i++) {
-    var s = generateOnce(m, i < 4 ? prompt : "", maxWords);
-    if (s.split(" ").length > best.split(" ").length) best = s;
-    if (s.split(" ").length >= 3) return s;
+  var q = {};
+  (prompt || "").split(/\s+/).map(norm).forEach(function (w) { if (w && w.length > 2) q[w] = 1; });
+  var best = "", bestScore = -1;
+  for (var i = 0; i < 8; i++) {
+    var s = generateOnce(m, i < 5 ? prompt : "", maxWords), n = s.split(" ").length;
+    if (!s) continue;
+    var overlap = 0, seen = {};
+    s.split(/\s+/).map(norm).forEach(function (w) { if (q[w] && !seen[w]) { overlap++; seen[w] = 1; } });
+    var score = overlap * 100 + Math.min(n, 30) + (n >= 3 ? 50 : 0);
+    if (score > bestScore) { best = s; bestScore = score; }
   }
   return best;
 }
@@ -160,20 +166,23 @@ async function handle(request) {
     }
 
     if (url.pathname === "/v1/chat/completions" && request.method === "POST") {
+      if (Number(request.headers.get("content-length") || 0) > 20000) return error("Request too large.", 413);
       let body;
       try { body = await request.json(); } catch (e) { return error("Request body must be JSON.", 400); }
       if (!body || typeof body !== "object") return error("Request body must be a JSON object.", 400);
       const msgs = Array.isArray(body.messages) ? body.messages : [];
       const last = [...msgs].reverse().find((m) => m && m.role === "user");
       if (!last) return error("Send at least one message with role user.", 400);
-      const prompt = typeof last.content === "string" ? last.content
-        : Array.isArray(last.content) ? last.content.map((p) => (p && p.text) || "").join(" ") : "";
+      const prompt = (typeof last.content === "string" ? last.content
+        : Array.isArray(last.content) ? last.content.slice(0, 20).map((p) => String((p && p.text) || "").slice(0, 2000)).join(" ") : "").slice(0, 2000);
       let v = latest;
       const name = String(body.model || "braiain-latest");
       // Any model name that isn't a brAIAIn version gets the latest one, the way a real API would quietly upgrade you.
       const m = name.match(/^braiain-(\d+)$/i);
       if (m) v = parseInt(m[1], 10);
       if (!d.versions.some((e) => e.v === v)) return error("No such model: " + name, 404);
+      // Only the newest few versions are served live; rebuilding old ones per request is too costly.
+      if (v < latest - 2) return error("brAIAIn-" + v + " has been retired from the API. Its weights are on the site. Try brAIAIn-" + latest + ".", 410);
       const maxWords = Math.max(1, Math.min(80, parseInt(body.max_tokens, 10) || 40));
       if (body.stream) return error("Streaming is not supported. The whole answer arrives at once, like a thought.", 400);
       const text = generate(model(d, v), prompt.slice(0, 2000), maxWords) || "...";
@@ -181,7 +190,7 @@ async function handle(request) {
       return json({
         id: "chatcmpl-braiain-" + Date.now(), object: "chat.completion",
         created: Math.floor(Date.now() / 1000), model: "brAIAIn-" + v,
-        choices: [{ index: 0, message: { role: "assistant", content: text }, finish_reason: "stop" }],
+        choices: [{ index: 0, message: { role: "assistant", content: text }, finish_reason: ct >= maxWords ? "length" : "stop" }],
         usage: { prompt_tokens: pt, completion_tokens: ct, total_tokens: pt + ct },
       });
     }

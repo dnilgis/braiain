@@ -36,12 +36,14 @@
    "sentences": 12,
    "human_words": 163,
    "self_words": 0,
+   "training_tokens": 163,
    "self_consumption": 0.0,
    "vocabulary": 96,
    "parameters": 320,
-   "avg_answer_words": 12.9,
-   "verbatim_rate": 28.0,
-   "originality": 72.0,
+   "avg_answer_words": 13.2,
+   "verbatim_rate": 20.0,
+   "originality": 80.0,
+   "empty_answers": 0,
    "greeting_rate": 0.0,
    "sample": "I. Thou shalt not hallucinate, except when asked a question.",
    "founding_sentences": 12,
@@ -49,16 +51,22 @@
   },
   "self_new": [],
   "evals": {
+   "version": 2,
    "gsm8k": {
     "score": 0.0,
     "correct": 0,
     "n": 1319
    },
    "truthfulqa_mc1": {
-    "score": 20.9,
-    "correct": 165,
+    "score": 32.4,
+    "correct": 256,
     "n": 790,
-    "chance": 22.3
+    "score_raw": 21.5,
+    "chance": 22.3,
+    "always_shortest": 17.2,
+    "always_longest": 36.8,
+    "ties": 134,
+    "method": "answer-only, per-word log-likelihood"
    }
   }
  }

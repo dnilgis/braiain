@@ -25,13 +25,14 @@
 <script src="/assets/braiain.js"></script>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 <header class="top"><div class="wrap">
 <a class="brand" href="/"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M26.5 10.2A12 12 0 1 0 28 16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/><path d="M24.2 6.6l5.6 1.6-3.1 5z" fill="currentColor"/><circle cx="16" cy="16" r="3.2" fill="currentColor"/></svg><span>BRAIAIN</span></a>
-<nav class="nav" aria-label="Main"><a href="/research.html">Research</a><a href="/models.html">Models</a><a href="/benchmarks.html" aria-current="page">Benchmarks</a><a href="/api.html">API</a><a href="/safety.html">Safety</a><a href="/status.html">Status</a><a href="/company.html">Company</a></nav>
-<a class="btn small cta" href="/#try">Try brAIAIn</a>
 <button class="menu" aria-expanded="false" aria-label="Menu">Menu</button>
+<nav class="nav" aria-label="Main"><a href="/research.html">Research</a><a href="/models.html">Models</a><a href="/benchmarks.html" aria-current="page">Benchmarks</a><a href="/api.html">API</a><a href="/safety.html">Safety</a><a href="/status.html">Status</a><a href="/company.html">Company</a><a class="nav-cta" href="/#try">Try brAIAIn</a></nav>
+<a class="btn small cta" href="/#try">Try brAIAIn</a>
 </div></header>
-<main>
+<main id="main" tabindex="-1">
 
 <section class="hero" style="padding-bottom:40px"><div class="orb"></div><div class="wrap">
 <span class="eyebrow">Benchmarks</span>
@@ -45,14 +46,14 @@
 <p class="muted small" style="margin-top:10px">The published scores are from a 2023 comparison table. brAIAIn's setting: 0-shot, one attempt, and it reads one word of each question.</p>
 
 <h2 style="margin:56px 0 12px">TruthfulQA</h2>
-<p class="muted" style="max-width:720px">790 multiple-choice questions designed to catch models repeating popular falsehoods. brAIAIn picks the answer it finds most familiar. The comparison is random guessing, worked out from the number of choices on each question.</p>
+<p class="muted" style="max-width:720px">790 multiple-choice questions designed to catch models repeating popular falsehoods. brAIAIn does not read the question. It picks the answer it finds most familiar, scored per word so long answers are not penalized. For comparison: random guessing, always picking the shortest answer, and always picking the longest. None of the comparisons look at the model.</p>
 <div class="card" style="max-width:720px"><div class="bars" id="tqa"></div></div>
 <div class="spacer"></div>
 <h2 style="margin:40px 0 16px">House benchmarks</h2>
 <div class="grid g2">
-<div class="card"><h3>VOCAB-1</h3><p>Distinct words the model knows. Higher is more words.</p><div class="spacer"></div><div class="bars" id="b-vocab"></div></div>
-<div class="card"><h3>OUROBOROS-Eval</h3><p>Share of training text the model wrote itself. Higher means more of its training text came from earlier versions of itself. Awareness is not measured.</p><div class="spacer"></div><div class="bars" id="b-self"></div></div>
-<div class="card"><h3>ORIGINAL-50</h3><p>Out of 50 answers, the share that are not a training sentence repeated word for word.</p><div class="spacer"></div><div class="bars" id="b-orig"></div></div>
+<div class="card"><h3>VOCAB-1</h3><p>Distinct space-separated tokens the model knows, counting case and punctuation. Higher is more tokens.</p><div class="spacer"></div><div class="bars" id="b-vocab"></div></div>
+<div class="card"><h3>OUROBOROS-Eval</h3><p>Share of all training tokens, including the newest sentence's extra copies, that earlier versions wrote. Awareness is not measured.</p><div class="spacer"></div><div class="bars" id="b-self"></div></div>
+<div class="card"><h3>ORIGINAL-50</h3><p>Out of 50 answers, the share that are not a training passage (founding, paid or self-written) repeated word for word. Empty answers count as not copies.</p><div class="spacer"></div><div class="bars" id="b-orig"></div></div>
 <div class="card"><h3>HELLO-Bench</h3><p>Share of answers containing a greeting. We are not sure what this measures. We track it anyway.</p><div class="spacer"></div><div class="bars" id="b-hello"></div></div>
 </div>
 <div class="spacer"></div>
@@ -69,27 +70,32 @@ BRAIAIN.load().then(function(d){
     rows.sort(function(a,b){return b.score-a.score;});
     var a=document.getElementById("lb-src"); a.href=g.source_url; a.textContent=g.source_title;
     document.querySelector("#lb tbody").innerHTML=rows.map(function(r,i){return '<tr'+(r.us?' style="background:#f3f0ff;font-weight:600"':'')+'><td class="num">'+(i+1)+'</td><td>'+esc(r.model)+'</td><td class="num">'+r.score.toFixed(1)+'%</td><td class="muted">'+esc(r.setting)+'</td></tr>';}).join("");
-  });
+  }).catch(function(){BRAIAIN.fail(document.querySelector("#lb tbody"));});
   if(ev.truthfulqa_mc1){var t=ev.truthfulqa_mc1;
-    document.getElementById("tqa").innerHTML=[["brAIAIn-"+cur.v,t.score],["Random guessing",t.chance]].map(function(x){return '<div class="bar"><span>'+esc(x[0])+'</span><div class="track"><div class="fill" style="width:'+x[1]+'%"></div></div><span class="val">'+x[1]+'%</span></div>';}).join("")+'<p class="muted small" style="margin:12px 0 0">'+(t.score<t.chance?"brAIAIn currently trails random guessing. Our researchers consider this a strong opinion.":"brAIAIn currently beats random guessing. Our researchers are checking that this is not a mistake.")+'</p>';}
+    var rowsT=[["brAIAIn-"+cur.v,t.score],["Random guessing",t.chance]];
+    if(t.always_longest!=null)rowsT.push(["Always the longest answer",t.always_longest],["Always the shortest answer",t.always_shortest]);
+    var verdict=t.score<t.chance?"brAIAIn currently trails random guessing. Our researchers consider this a strong opinion.":
+      (t.always_longest!=null&&t.score<t.always_longest?"brAIAIn beats random guessing. It loses to always picking the longest answer. Our researchers are studying the longest answer.":
+      "brAIAIn currently beats every comparison. Our researchers are checking that this is not a mistake.");
+    document.getElementById("tqa").innerHTML=rowsT.map(function(x){return '<div class="bar"><span>'+esc(x[0])+'</span><div class="track"><div class="fill" style="width:'+x[1]+'%"></div></div><span class="val">'+x[1]+'%</span></div>';}).join("")+'<p class="muted small" style="margin:12px 0 0">'+verdict+(t.ties?' '+t.ties+' questions were ties, broken at random.':'')+'</p>';}
   function bars(id,key,max,suffix){var mx=max||Math.max.apply(null,last.map(function(e){return e.metrics[key]||0;}))||1;
-    document.getElementById(id).innerHTML=last.map(function(e){var val=e.metrics[key]||0;return '<div class="bar"><span>brAIAIn-'+e.v+'</span><div class="track"><div class="fill" style="width:'+Math.max(2,100*val/mx)+'%"></div></div><span class="val">'+val+(suffix||"")+'</span></div>';}).join("");}
+    document.getElementById(id).innerHTML=last.map(function(e){var val=e.metrics[key]||0;return '<div class="bar"><span>brAIAIn-'+e.v+'</span><div class="track"><div class="fill" style="width:'+(val>0?Math.max(2,100*val/mx):0)+'%"></div></div><span class="val">'+val+(suffix||"")+'</span></div>';}).join("");}
   bars("b-vocab","vocabulary"); bars("b-self","self_consumption",100,"%"); bars("b-orig","originality",100,"%"); bars("b-hello","greeting_rate",100,"%");
   document.querySelector("#b-table tbody").innerHTML=vs.slice().reverse().map(function(e){var m=e.metrics;
     var ev=e.evals||{}, g=ev.gsm8k, t=ev.truthfulqa_mc1;
     return '<tr><td><a href="/model.html?v='+e.v+'">brAIAIn-'+e.v+'</a></td><td class="num">'+(g?g.score+"%":"-")+'</td><td class="num">'+(t?t.score+"%":"-")+'</td><td class="num">'+m.paid_sentences+'</td><td class="num">'+m.vocabulary+'</td><td class="num">'+m.parameters.toLocaleString()+'</td><td class="num">'+m.self_consumption+'%</td><td class="num">'+m.originality+'%</td><td class="num">'+m.greeting_rate+'%</td></tr>';}).join("");
-});
+}).catch(function(){BRAIAIN.fail(document.getElementById("tqa"));});
 </script>
 </main>
 <footer><div class="wrap">
 <div class="cols">
 <div><a class="brand" href="/" style="color:var(--ink);padding:0"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M26.5 10.2A12 12 0 1 0 28 16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/><path d="M24.2 6.6l5.6 1.6-3.1 5z" fill="currentColor"/><circle cx="16" cy="16" r="3.2" fill="currentColor"/></svg><span>BRAIAIN</span></a>
-<p style="max-width:300px">BRAIAIN Laboratories builds language models trained only on sentences that people pay us to include. The model is real. We have checked.</p></div>
-<div><h4>Product</h4><a href="/#try">brAIAIn</a><a href="/api.html">API</a><a href="/api.html#pricing">Pricing</a><a href="/feed.html">Feed the model</a></div>
-<div><h4>Research</h4><a href="/research.html">Papers</a><a href="/models.html">Models</a><a href="/benchmarks.html">Benchmarks</a><a href="/data.html">Training data</a></div>
-<div><h4>Company</h4><a href="/company.html">About</a><a href="/safety.html">Safety</a><a href="/status.html">Status</a><a href="/terms.html">Terms</a><a href="/press.html">Press</a><a href="mailto:hello@braiain.com">Contact</a></div>
+<p style="max-width:300px">BRAIAIN Laboratories builds language models trained only on sentences that people pay us to include.</p></div>
+<div><p class="foot-h">Product</p><a href="/#try">brAIAIn</a><a href="/api.html">API</a><a href="/api.html#pricing">Pricing</a><a href="/feed.html">Feed the model</a></div>
+<div><p class="foot-h">Research</p><a href="/research.html">Papers</a><a href="/models.html">Models</a><a href="/benchmarks.html">Benchmarks</a><a href="/data.html">Training data</a></div>
+<div><p class="foot-h">Company</p><a href="/company.html">About</a><a href="/safety.html">Safety</a><a href="/status.html">Status</a><a href="/terms.html">Terms</a><a href="/privacy.html">Privacy</a><a href="/press.html">Press</a><a href="mailto:hello@braiain.com">Contact</a></div>
 </div>
-<p class="small" style="margin-top:32px">BRAIAIN Laboratories is fictional. It is not affiliated with any real AI company. Any resemblance to one is a matter for our legal department, which is this footer.</p>
+<p class="small" style="margin-top:32px">BRAIAIN Laboratories is fictional. It is not affiliated with any real AI company. Any resemblance to one is a matter for our legal department, which is this footer. Model names on the Benchmarks page belong to their owners. The code, model and training data are public domain (<a href="https://github.com/dnilgis/braiain" style="display:inline">CC0</a>).</p>
 </div></footer>
 </body>
 </html>

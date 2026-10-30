@@ -25,13 +25,14 @@
 <script src="/assets/braiain.js"></script>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 <header class="top"><div class="wrap">
 <a class="brand" href="/"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M26.5 10.2A12 12 0 1 0 28 16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/><path d="M24.2 6.6l5.6 1.6-3.1 5z" fill="currentColor"/><circle cx="16" cy="16" r="3.2" fill="currentColor"/></svg><span>BRAIAIN</span></a>
-<nav class="nav" aria-label="Main"><a href="/research.html">Research</a><a href="/models.html">Models</a><a href="/benchmarks.html">Benchmarks</a><a href="/api.html">API</a><a href="/safety.html">Safety</a><a href="/status.html" aria-current="page">Status</a><a href="/company.html">Company</a></nav>
-<a class="btn small cta" href="/#try">Try brAIAIn</a>
 <button class="menu" aria-expanded="false" aria-label="Menu">Menu</button>
+<nav class="nav" aria-label="Main"><a href="/research.html">Research</a><a href="/models.html">Models</a><a href="/benchmarks.html">Benchmarks</a><a href="/api.html">API</a><a href="/safety.html">Safety</a><a href="/status.html" aria-current="page">Status</a><a href="/company.html">Company</a><a class="nav-cta" href="/#try">Try brAIAIn</a></nav>
+<a class="btn small cta" href="/#try">Try brAIAIn</a>
 </div></header>
-<main>
+<main id="main" tabindex="-1">
 
 <section class="hero" style="padding-bottom:30px"><div class="orb"></div><div class="wrap narrow">
 <span class="eyebrow" id="st-checked">Status</span>
@@ -45,33 +46,38 @@
 </div></section>
 <script>
 BRAIAIN.load().then(function(d){
-  BRAIAIN.getJSON("/data/status.json").then(function(s){
-    if(s.checked)document.getElementById("st-checked").textContent="Training pipeline last ran "+new Date(s.checked).toLocaleString();
-    var el=document.getElementById("pipe"); if(!el||!s.checked)return;
-    var mins=(Date.now()-Date.parse(s.checked))/60000;
-    el.innerHTML='<span class="dot '+(mins<45?'':'warn')+'"></span>'+(mins<45?'Ran '+Math.round(mins)+' minutes ago':'Last ran '+Math.round(mins/60)+' hours ago');
-    if(typeof s.pending_review==="number"){var r=document.getElementById("review");if(r)r.innerHTML='<span class="dot"></span>'+s.pending_review+' awaiting review';}
-  }).catch(function(){});
   var vs=d.versions, latest=vs[vs.length-1], m=latest.metrics;
   var conf=m.verbatim_rate>40?["warn","Degraded"]:["","Operational"];
-  var sys=[["brAIAIn-"+latest.v,"","Operational"],["Chat",""," Operational"],["Training pipeline","","Checking"],["Review queue","","Checking"],
+  var sys=[["brAIAIn-"+latest.v,"","Operational"],["Chat","","Operational"],["Training pipeline","warn","Unknown"],["Review queue","warn","Unknown"],
     ["Confidence",conf[0],conf[1]],["Originality",m.originality<70?"warn":"",m.originality<70?"Degraded":"Operational"],
     ["Understanding","bad","Not detected"],["Memory","bad","By design"]];
   document.getElementById("st-sys").innerHTML=sys.map(function(x){var id=x[0]==="Training pipeline"?' id="pipe"':x[0]==="Review queue"?' id="review"':'';return '<div class="sysrow"><span>'+esc(x[0])+'</span><span class="muted"'+id+'><span class="dot '+x[1]+'"></span>'+esc(x[2])+'</span></div>';}).join("");
   document.getElementById("st-inc").innerHTML=vs.slice().reverse().map(function(e){var n=e.notes||{};
     return '<div style="padding:20px 0;border-bottom:1px solid var(--line)"><div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap"><span class="tag '+esc(n.severity||"minor")+'">'+esc(n.severity||"minor")+'</span><h3>'+esc(n.incident_title||"")+'</h3></div><p class="muted" style="margin:8px 0 4px">'+esc(n.incident_body||"")+'</p><span class="small muted">'+fmtDate(e.released)+' · Resolved, in the sense that it is over.</span></div>';}).join("");
-});
+  // Real pipeline state comes from status.json, written by every training run. Unknown until it loads.
+  BRAIAIN.getJSON("/data/status.json").then(function(st){
+    var t=Date.parse(st.checked), mins=Math.max(0,(Date.now()-t)/60000), el=document.getElementById("pipe"), head=document.getElementById("st-head");
+    if(isNaN(t)){return;}
+    var ago=mins<90?Math.round(mins)+" minutes ago":mins<48*60?Math.round(mins/60)+" hours ago":Math.round(mins/1440)+" days ago";
+    document.getElementById("st-checked").textContent="Training pipeline last ran "+ago;
+    var fresh=mins<45;
+    el.innerHTML='<span class="dot '+(fresh?'':'warn')+'"></span>'+(fresh?"Ran ":"Delayed. Last ran ")+ago;
+    if(!fresh){head.textContent="Some systems delayed.";}
+    var r=document.getElementById("review");
+    if(typeof st.pending_review==="number")r.innerHTML='<span class="dot"></span>'+st.pending_review+' awaiting review';
+  }).catch(function(){document.getElementById("st-head").textContent="Status unknown.";});
+}).catch(function(){document.getElementById("st-head").textContent="Status unknown.";BRAIAIN.fail(document.getElementById("st-sys"),"Status data could not be loaded.");});
 </script>
 </main>
 <footer><div class="wrap">
 <div class="cols">
 <div><a class="brand" href="/" style="color:var(--ink);padding:0"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M26.5 10.2A12 12 0 1 0 28 16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/><path d="M24.2 6.6l5.6 1.6-3.1 5z" fill="currentColor"/><circle cx="16" cy="16" r="3.2" fill="currentColor"/></svg><span>BRAIAIN</span></a>
-<p style="max-width:300px">BRAIAIN Laboratories builds language models trained only on sentences that people pay us to include. The model is real. We have checked.</p></div>
-<div><h4>Product</h4><a href="/#try">brAIAIn</a><a href="/api.html">API</a><a href="/api.html#pricing">Pricing</a><a href="/feed.html">Feed the model</a></div>
-<div><h4>Research</h4><a href="/research.html">Papers</a><a href="/models.html">Models</a><a href="/benchmarks.html">Benchmarks</a><a href="/data.html">Training data</a></div>
-<div><h4>Company</h4><a href="/company.html">About</a><a href="/safety.html">Safety</a><a href="/status.html">Status</a><a href="/terms.html">Terms</a><a href="/press.html">Press</a><a href="mailto:hello@braiain.com">Contact</a></div>
+<p style="max-width:300px">BRAIAIN Laboratories builds language models trained only on sentences that people pay us to include.</p></div>
+<div><p class="foot-h">Product</p><a href="/#try">brAIAIn</a><a href="/api.html">API</a><a href="/api.html#pricing">Pricing</a><a href="/feed.html">Feed the model</a></div>
+<div><p class="foot-h">Research</p><a href="/research.html">Papers</a><a href="/models.html">Models</a><a href="/benchmarks.html">Benchmarks</a><a href="/data.html">Training data</a></div>
+<div><p class="foot-h">Company</p><a href="/company.html">About</a><a href="/safety.html">Safety</a><a href="/status.html">Status</a><a href="/terms.html">Terms</a><a href="/privacy.html">Privacy</a><a href="/press.html">Press</a><a href="mailto:hello@braiain.com">Contact</a></div>
 </div>
-<p class="small" style="margin-top:32px">BRAIAIN Laboratories is fictional. It is not affiliated with any real AI company. Any resemblance to one is a matter for our legal department, which is this footer.</p>
+<p class="small" style="margin-top:32px">BRAIAIN Laboratories is fictional. It is not affiliated with any real AI company. Any resemblance to one is a matter for our legal department, which is this footer. Model names on the Benchmarks page belong to their owners. The code, model and training data are public domain (<a href="https://github.com/dnilgis/braiain" style="display:inline">CC0</a>).</p>
 </div></footer>
 </body>
 </html>

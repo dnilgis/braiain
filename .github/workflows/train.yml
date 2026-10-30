@@ -5,7 +5,7 @@ name: Train brAIAIn
 
 on:
   schedule:
-    - cron: "*/10 * * * *"   # every 10 minutes (GitHub sometimes runs late)
+    - cron: "3,13,23,33,43,53 * * * *"   # every 10 minutes, off the busy :00 slots (GitHub can still run late)
   push:
     branches: [main]
     paths:
@@ -29,6 +29,8 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main   # always the newest commit, including the bot's own
 
       - uses: actions/setup-python@v5
         with:

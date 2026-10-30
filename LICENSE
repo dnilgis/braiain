@@ -1,0 +1,12 @@
+CC0 1.0 Universal
+
+To the extent possible under law, the operator of braiain.com has waived all
+copyright and related or neighboring rights to the code, model weights and
+training data in this repository, including sentences contributed by buyers
+under the license they grant in the site's Terms.
+
+Full legal text: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+The names and scores quoted in data/leaderboard.json belong to their owners and
+are not covered by this dedication. The evaluation sets in evals/ keep their own
+licenses (see evals/README.md).

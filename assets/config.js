@@ -1,10 +1,16 @@
 /* The only file you need to edit after setup. */
 window.BRAIAIN_CONFIG = {
-  // Your Stripe Payment Link, e.g. "https://buy.stripe.com/abc123". While this is "",
-  // the site runs in teaser mode: countdown and waitlist instead of buy buttons.
-  paymentLink: "",
-  // Shown on buttons.
+  // The legal seller shown on the Terms and Privacy pages, e.g. "Example Ventures LLC".
+  // Fill this in before taking payments.
+  operator: "",
+  // Stripe Payment Links, one per tier. Leave "" for a tier you do not offer.
+  // Buying stays closed until opensAt, even if these are filled in early.
+  paymentLink: "",             // $5: one sentence
+  paymentLinkCertificate: "",  // $15: one sentence plus a printable certificate
+  paymentLinkNaming: "",       // $50: one sentence plus the version's codename
   price: "$5",
+  priceCertificate: "$15",
+  priceNaming: "$50",
   // When paid training opens. The countdown runs to this moment for every visitor.
   // 2026-11-01 02:00 UTC is Saturday, October 31 (Halloween), 9:00 pm Central.
   opensAt: "2026-11-01T02:00:00Z",

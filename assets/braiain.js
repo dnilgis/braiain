@@ -93,13 +93,19 @@
     return forms[Math.floor(Math.random() * forms.length)];
   }
 
-  // Short answers look broken, so try a few times for one with at least three words.
+  // Decoding: draw eight answers and keep the one that shares the most words with the
+  // question (ties go to the longer one). Short answers look broken, so three words minimum.
   function generate(m, prompt, maxWords) {
-    var best = "";
-    for (var i = 0; i < 6; i++) {
-      var s = generateOnce(m, i < 4 ? prompt : "", maxWords);
-      if (s.split(" ").length > best.split(" ").length) best = s;
-      if (s.split(" ").length >= 3) return s;
+    var q = {};
+    (prompt || "").split(/\s+/).map(norm).forEach(function (w) { if (w && w.length > 2) q[w] = 1; });
+    var best = "", bestScore = -1;
+    for (var i = 0; i < 8; i++) {
+      var s = generateOnce(m, i < 5 ? prompt : "", maxWords), n = s.split(" ").length;
+      if (!s) continue;
+      var overlap = 0, seen = {};
+      s.split(/\s+/).map(norm).forEach(function (w) { if (q[w] && !seen[w]) { overlap++; seen[w] = 1; } });
+      var score = overlap * 100 + Math.min(n, 30) + (n >= 3 ? 50 : 0);
+      if (score > bestScore) { best = s; bestScore = score; }
     }
     return best;
   }
@@ -135,10 +141,13 @@
     while (performance.now() - t0 < 30) { generate(m, "", 40); n++; }
     var ms = (performance.now() - t0) / n;
     var cutoff = e.released ? new Date(e.released).toISOString().slice(0, 10) : "";
+    var markers = 0;
+    for (k in m.tri) for (j in m.tri[k]) if (k.indexOf(BOS) >= 0 || j === EOS) markers++;
+    for (k in m.bi) for (j in m.bi[k]) if (k === BOS || j === EOS) markers++;
     return [
       ["Architecture", "Autoregressive count-based trigram language model with backoff", "Predicts the next word from the two before it. When it has never seen those two together, it falls back to one."],
       ["Context window", "2 tokens", "Industry term for how much it remembers. It remembers two words."],
-      ["Parameters", params.toLocaleString(), "Distinct word pairs and triples it has counted. Each one was paid for, or written by the lab."],
+      ["Parameters", params.toLocaleString(), "Distinct word pairs and triples it has counted, including " + markers.toLocaleString() + " that mark where a sentence starts or ends."],
       ["Embedding dimensions", "0", "It does not represent words as vectors. It represents them as words."],
       ["Layers / attention heads", "0 / 0", "Attention is implicit. It attends to the previous two words, fully."],
       ["Mixture of Experts", "1 expert", "Routing overhead: none."],
@@ -146,11 +155,11 @@
       ["Training compute", adds.toLocaleString() + " count updates", "Training is counting. No multiplication, no gradients."],
       ["Gradient steps", "0", "The loss was never computed, so it never had to go down."],
       ["Precision", "Whole-number counts", "Stored exactly as counted."],
-      ["Tokenizer", "Whitespace", "Splits on spaces. Vocabulary: " + Object.keys(m.uni).length.toLocaleString() + "."],
+      ["Tokenizer", "Whitespace", "Splits on spaces, keeping case and punctuation. Vocabulary: " + Object.keys(m.uni).length.toLocaleString() + " distinct tokens."],
       ["Alignment", "RLHF", "Reinforcement Learning from Human Funding."],
       ["Constitution", "The Ten Instructions", "Twelve lines, written before the model existed. Binding."],
-      ["Knowledge cutoff", cutoff, v === 0 ? "The day its founding text was written. No payments yet." : "The moment of its most recent payment."],
-      ["Inference latency", ms < 1 ? (ms * 1000).toFixed(0) + " microseconds per answer" : ms.toFixed(2) + " ms per answer", "Measured just now, on your device."],
+      ["Knowledge cutoff", cutoff, v === 0 ? "The day its founding text was written. No payments yet." : "The day it was trained on its most recent sentence."],
+      ["Inference latency", took(ms / 1000) + " per answer", "Measured just now, on your device."],
       ["Emergent capabilities", "None observed", "Monitoring continues at current scale."]
     ];
   }
@@ -160,26 +169,57 @@
     }).join("") + '</tbody></table></div>';
   }
 
-  window.BRAIAIN = { load: load, model: model, generate: generate, passagesFor: passagesFor, getJSON: getJSON, specs: specs, specTable: specTable };
+  // One error state for every page: say it failed, offer a retry.
+  function fail(el, what) {
+    if (!el) return;
+    el.innerHTML = '<div class="notice" role="alert">' + esc(what || "The model data could not be loaded.") +
+      ' <a href="" onclick="location.reload();return false">Try again</a>.</div>';
+  }
+  function took(sec) {
+    return sec < 0.001 ? Math.max(1, Math.round(sec * 1e6)) + " microseconds" : (sec * 1000).toFixed(1) + " milliseconds";
+  }
+  function live(cfg) {
+    cfg = cfg || window.BRAIAIN_CONFIG || {};
+    var t = Date.parse(cfg.opensAt || "");
+    return !!cfg.paymentLink && (isNaN(t) || Date.now() >= t);
+  }
+
+  window.BRAIAIN = { load: load, model: model, generate: generate, passagesFor: passagesFor, getJSON: getJSON, specs: specs, specTable: specTable, fail: fail, took: took, live: live };
 
   // shared page bits
   document.addEventListener("DOMContentLoaded", function () {
     var btn = document.querySelector(".menu"), nav = document.querySelector(".nav");
-    if (btn && nav) btn.addEventListener("click", function () {
-      var open = nav.classList.toggle("open");
-      btn.setAttribute("aria-expanded", open ? "true" : "false");
-    });
-    var cfg = window.BRAIAIN_CONFIG || {}, link = cfg.paymentLink || "";
-    document.documentElement.classList.toggle("teaser", !link);
-    document.querySelectorAll("[data-buy]").forEach(function (a) {
-      if (link) { a.href = link; a.rel = "noopener"; }
-      else { a.href = "/#waitlist"; if (a.hasAttribute("data-teaser-text")) a.textContent = a.getAttribute("data-teaser-text"); }
-    });
+    if (btn && nav) {
+      nav.id = nav.id || "site-nav";
+      btn.setAttribute("aria-controls", nav.id);
+      var setOpen = function (open) { nav.classList.toggle("open", open); btn.setAttribute("aria-expanded", open ? "true" : "false"); };
+      btn.addEventListener("click", function () { setOpen(!nav.classList.contains("open")); });
+      document.addEventListener("keydown", function (e) { if (e.key === "Escape" && nav.classList.contains("open")) { setOpen(false); btn.focus(); } });
+    }
+    var cfg = window.BRAIAIN_CONFIG || {};
+    applyMode(cfg);
     countdowns(cfg);
     waitlists(cfg);
-    document.querySelectorAll("[data-price]").forEach(function (el) { el.textContent = (window.BRAIAIN_CONFIG || {}).price || "$5"; });
   });
 })();
+
+// Buying is open only when a payment link exists AND the opening time has passed.
+// Re-run when the countdown reaches zero, so the page flips at the same moment for everyone.
+function applyMode(cfg) {
+  var isLive = window.BRAIAIN.live(cfg);
+  var links = { "": cfg.paymentLink, certificate: cfg.paymentLinkCertificate, naming: cfg.paymentLinkNaming };
+  var prices = { "": cfg.price || "$5", certificate: cfg.priceCertificate || "$15", naming: cfg.priceNaming || "$50" };
+  document.documentElement.classList.toggle("teaser", !isLive);
+  document.documentElement.classList.toggle("is-live", isLive);
+  document.querySelectorAll("[data-buy]").forEach(function (a) {
+    var t = a.getAttribute("data-buy") || "", link = links[t];
+    if (!a.hasAttribute("data-live-html")) a.setAttribute("data-live-html", a.innerHTML);
+    if (isLive && link) { a.href = link; a.rel = "noopener"; a.innerHTML = a.getAttribute("data-live-html"); a.removeAttribute("aria-disabled"); a.classList.remove("off"); }
+    else if (isLive && !link) { a.removeAttribute("href"); a.setAttribute("aria-disabled", "true"); a.classList.add("off"); }
+    else { a.href = "/#waitlist"; if (a.hasAttribute("data-teaser-text")) a.textContent = a.getAttribute("data-teaser-text"); }
+  });
+  document.querySelectorAll("[data-price]").forEach(function (el) { el.textContent = prices[el.getAttribute("data-price") || ""] || prices[""]; });
+}
 
 // Countdown to cfg.opensAt, the same moment for every visitor.
 function countdowns(cfg) {
@@ -189,14 +229,17 @@ function countdowns(cfg) {
   function pad(n) { return (n < 10 ? "0" : "") + n; }
   function plural(n, w) { return n + " " + w + (n === 1 ? "" : "s"); }
   function tick() {
+    if (window.BRAIAIN.live(cfg)) return;
     var left = Math.max(0, Math.floor((target - Date.now()) / 1000));
     var h = Math.floor(left / 3600), m = Math.floor(left % 3600 / 60), sec = left % 60;
-    var txt = isNaN(target) ? "soon" : (left > 0 ? pad(h) + ":" + pad(m) + ":" + pad(sec) : "any minute now");
+    var txt = isNaN(target) ? "soon" : (left > 0 ? pad(h) + ":" + pad(m) + ":" + pad(sec) : "opening shortly");
     els.forEach(function (el) { el.textContent = txt; });
     document.querySelectorAll("[data-countdown-words]").forEach(function (el) {
-      el.textContent = isNaN(target) ? "" : left > 0 ? plural(h, "hour") + ", " + plural(m, "minute") + ", " + plural(sec, "second") : "Training was scheduled to open. Our engineers are aware.";
+      el.textContent = isNaN(target) ? "" : left > 0 ? plural(h, "hour") + ", " + plural(m, "minute") + ", " + plural(sec, "second")
+        : "The opening time has passed. Checkout opens as soon as it is switched on, and the waitlist hears first.";
     });
     if (left > 0) setTimeout(tick, 1000 - (Date.now() % 1000));
+    else applyMode(cfg);
   }
   tick();
 }
@@ -220,7 +263,15 @@ function waitlists(cfg) {
       var btn = f.querySelector("button"); btn.disabled = true;
       fetch(cfg.waitlistEndpoint, { method: "POST", headers: { "Accept": "application/json", "Content-Type": "application/json" },
         body: JSON.stringify({ email: email, list: "braiain-waitlist" }) })
-        .then(function (r) { if (!r.ok) throw new Error(r.status); f.reset(); msg.textContent = "You are on the waitlist. We will email you once, when training opens. That is the only email."; shareBox(f, cfg); })
+        .then(function (r) {
+          if (!r.ok) throw new Error(r.status);
+          f.reset();
+          var done = document.createElement("p");
+          done.className = "small"; done.setAttribute("role", "status"); done.tabIndex = -1;
+          done.textContent = "You are on the waitlist. We will email you once, when training opens, and then delete your address.";
+          f.parentNode.insertBefore(done, f); f.style.display = "none";
+          shareBox(done, cfg); done.focus();
+        })
         .catch(function () { msg.textContent = "That did not go through. Please try again in a minute."; })
         .then(function () { btn.disabled = false; });
     });
@@ -231,18 +282,18 @@ function waitlists(cfg) {
 function shareBox(f, cfg) {
   if (f.parentNode.querySelector(".share")) return;
   var url = "https://www.braiain.com/";
-  var opens = Date.parse(cfg.opensAt || ""), hrs = Math.max(0, Math.round((opens - Date.now()) / 3600000));
-  var text = "I joined the waitlist for brAIAIn, the AI model trained only on sentences people pay to add." +
-    (hrs > 0 ? " Paid training opens in " + hrs + " hours." : "");
+  var opens = Date.parse(cfg.opensAt || ""), mins = Math.round((opens - Date.now()) / 60000), hrs = Math.round(mins / 60);
+  var when = mins <= 0 ? "" : mins < 60 ? " Paid training opens within the hour." : hrs === 1 ? " Paid training opens in about an hour." : " Paid training opens in " + hrs + " hours.";
+  var text = "I joined the waitlist for brAIAIn, the AI model trained only on sentences people pay to add." + when;
   var box = document.createElement("div");
   box.className = "share";
-  box.innerHTML = '<p class="small muted" style="margin:14px 0 8px">Share your place in line. Every friend you bring is one more sentence the model does not know yet.</p>' +
+  box.innerHTML = '<p class="small muted" style="margin:14px 0 8px">Tell someone. Every friend you bring is one more sentence the model does not know yet.</p>' +
     '<div class="share-row">' +
     (navigator.share ? '<button class="btn small" type="button" data-s="native">Share</button>' : "") +
-    '<a class="btn ghost small" target="_blank" rel="noopener" href="https://twitter.com/intent/tweet?text=' + encodeURIComponent(text) + '&url=' + encodeURIComponent(url) + '">Post on X</a>' +
-    '<a class="btn ghost small" target="_blank" rel="noopener" href="https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(url) + '">Facebook</a>' +
+    '<button class="btn ghost small" type="button" data-s="copy">Copy link</button>' +
     '<a class="btn ghost small" href="sms:?&body=' + encodeURIComponent(text + " " + url) + '">Text a friend</a>' +
-    '<button class="btn ghost small" type="button" data-s="copy">Copy link</button></div>';
+    '<a class="btn ghost small" target="_blank" rel="noopener" href="https://twitter.com/intent/tweet?text=' + encodeURIComponent(text) + '&url=' + encodeURIComponent(url) + '">Post on X</a>' +
+    '<a class="btn ghost small" target="_blank" rel="noopener" href="https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(url) + '">Facebook</a></div>';
   f.parentNode.insertBefore(box, f.nextSibling);
   var n = box.querySelector('[data-s="native"]');
   if (n) n.addEventListener("click", function () { navigator.share({ title: "brAIAIn", text: text, url: url }).catch(function () {}); });
