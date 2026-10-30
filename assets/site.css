@@ -177,3 +177,12 @@ footer h4{margin:0 0 8px;font:500 13px var(--sans);color:var(--ink)}
 @media (max-width:860px){.share-row .btn{min-height:44px}}
 table.specs td:first-child{white-space:nowrap}
 @media (max-width:640px){table.specs td{display:block;border:0;padding:2px 0}table.specs tr{display:block;padding:10px 0;border-bottom:1px solid var(--line)}}
+/* board of directors */
+.board{display:grid;grid-template-columns:1fr 1fr;gap:28px 32px;margin-top:8px}
+.bio{display:flex;gap:16px;align-items:flex-start}
+.bio img{flex:0 0 auto;width:120px;height:144px;border:1px solid var(--line);box-shadow:0 1px 3px rgba(0,0,0,.12);background:#ccc}
+.bio h3{font-family:Georgia,"Times New Roman",serif;font-size:19px;letter-spacing:0;margin:0}
+.bio .role{margin:2px 0 6px;color:var(--muted);font-size:14px}
+.bio p{margin:0 0 3px;font-size:14px;line-height:1.45;color:#2a2a2a}
+.prose .bio p{color:#2a2a2a}
+@media (max-width:760px){.board{grid-template-columns:1fr}.bio img{width:96px;height:115px}}
