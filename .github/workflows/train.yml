@@ -90,6 +90,7 @@ jobs:
           # A new version was just pushed: give GitHub Pages a minute to publish it before linking to it.
           if git log -1 --pretty=%s | grep -q "^Training run"; then sleep 60; fi
           python scripts/announce.py
+          git reset -q   # leave status.json to the once-a-day heartbeat
           git add data/announce.json 2>/dev/null || true
           if ! git diff --cached --quiet; then
             git commit -m "Announce $(date -u +%Y-%m-%dT%H:%MZ)" && git pull --rebase && git push
