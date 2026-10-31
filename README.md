@@ -128,14 +128,15 @@ A sentence the filter flags (a possible full name, an address or long number, a 
 word, an advert, a possible minor) waits for you instead. You get an email at your own Gmail
 with the sentence, the credit, the codename, and an 8-character code:
 
-- **Publish it:** open the `approved.txt` link in the email, add the code on a new line, commit.
-- **Decline it:** add the code to `declined.txt` instead, commit, and refund the payment in Stripe.
+- **Publish it:** click the PUBLISH link in the email. GitHub opens with the file filled in.
+  Click **Commit changes**, then **Commit changes** again.
+- **Decline it:** click the DECLINE link the same way, then the Stripe link to refund it.
 
-The email needs repo secrets `GMAIL_ADDRESS` (a Gmail account that sends it, ideally one
-made for the lab) and `GMAIL_APP_PASSWORD` (its app password, made at
-myaccount.google.com/apppasswords), plus `REVIEW_EMAIL_TO` (where you want it, if not
-the same account). Without them, flagged
-sentences still wait, but no email is sent; the Action log lists them.
+(Adding the code as a line in `approved.txt` or `declined.txt` still works too.)
+
+The email needs repo secrets `GMAIL_ADDRESS` (the Gmail that sends it) and
+`GMAIL_APP_PASSWORD` (its app password, made at myaccount.google.com/apppasswords), plus
+`REVIEW_EMAIL_TO` if it should go to a different address.
 
 Pending text is never written to the public repo. To hold every sentence for review,
 add a repo variable `REQUIRE_APPROVAL` = `true` (Settings → Secrets and variables →

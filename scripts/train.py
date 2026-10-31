@@ -114,7 +114,7 @@ def notify_held(items):
     if not addr or not pw:
         print("review email not sent: add GMAIL_ADDRESS and GMAIL_APP_PASSWORD secrets", file=sys.stderr)
         return []
-    edit = "https://github.com/dnilgis/braiain/edit/main/data/"
+    new = "https://github.com/dnilgis/braiain/new/main/data/"
     done = []
     try:
         srv = smtplib.SMTP_SSL("smtp.gmail.com", 465, timeout=30)
@@ -131,16 +131,18 @@ def notify_held(items):
         ]
         if it["codename"]:
             lines.append("Codename: " + it["codename"])
+        q = "?filename=" + it["code"] + ".txt&value="
         lines += [
             "Tier: " + it["tier"],
             "",
-            "To publish it, add this code on a new line and commit:",
-            "  " + it["code"],
-            "  " + edit + "approved.txt",
+            "PUBLISH: open this link, then click Commit changes twice.",
+            "  " + new + "approvals" + q + "approved",
             "",
-            "To decline it, add the same code here, then refund the payment in Stripe:",
-            "  " + edit + "declined.txt",
+            "DECLINE: open this link, click Commit changes twice, then refund it in Stripe:",
+            "  " + new + "declines" + q + "declined",
         ]
+        if it.get("pi"):
+            lines.append("  https://dashboard.stripe.com/payments/" + it["pi"])
         msg = EmailMessage()
         msg["Subject"] = "brAIAIn: sentence to review (" + it["code"] + ")"
         msg["From"] = addr
@@ -954,8 +956,13 @@ def main():
     review_all = mode in ("true", "1", "yes", "on", "all")
     notified = set(state.get("notified", []))
     held = []
-    approved = {first_token(x)[-8:] for x in read_lines("approved.txt")}
-    declined = {first_token(x)[-8:] for x in read_lines("declined.txt")}
+    def folder_codes(name):
+        d = os.path.join(DATA, name)
+        return {f.rsplit(".", 1)[0][-8:] for f in os.listdir(d) if not f.startswith(".") and f != "README.md"} if os.path.isdir(d) else set()
+    # A code is approved by a line in approved.txt or by a file data/approvals/CODE.txt
+    # (the one-click links in the review email create those files).
+    approved = {first_token(x)[-8:] for x in read_lines("approved.txt")} | folder_codes("approvals")
+    declined = {first_token(x)[-8:] for x in read_lines("declined.txt")} | folder_codes("declines")
     pending = 0
     matched = set()
 
@@ -994,7 +1001,7 @@ def main():
                 print("awaiting review", "pi=" + pi_id(s)[-8:], "cs=" + s["id"][-8:], "tier=" + kind,
                       "flags=" + (",".join(flags) or "none"))
                 if h not in notified:
-                    held.append({"code": pi_id(s)[-8:] or s["id"][-8:], "tier": kind, "flags": flags,
+                    held.append({"code": pi_id(s)[-8:] or s["id"][-8:], "pi": pi_id(s), "tier": kind, "flags": flags,
                                  "sentence": text, "credit": name, "codename": codename, "h": h})
                 continue
             matched |= ids(s) & approved

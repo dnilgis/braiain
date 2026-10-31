@@ -14,6 +14,8 @@ on:
       - "data/genesis.txt"
       - "data/approved.txt"
       - "data/declined.txt"
+      - "data/approvals/**"
+      - "data/declines/**"
   workflow_dispatch:
 
 permissions:
