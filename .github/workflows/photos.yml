@@ -1,5 +1,7 @@
 name: Board photo candidates (temporary)
-on: workflow_dispatch
+on:
+  push:
+    branches: [photo-candidates]
 permissions:
   contents: write
 jobs:
