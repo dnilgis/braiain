@@ -256,7 +256,119 @@ def hf_files():
                 removed.add(parts[0])
     lines += [c["text"] for c in corpus if c.get("id") not in removed and c.get("text")]
     model["training-data.txt"] = ("\n".join(lines) + "\n").encode()
+    card = model_readme()
+    if card:
+        model["README.md"] = card
     return space, model
+
+
+def model_readme():
+    """Model card for the Hugging Face model repo, rebuilt from the latest version."""
+    versions = load("versions.json", [])
+    if isinstance(versions, dict):
+        versions = versions.get("versions", [])
+    versions = [e for e in versions if not e.get("removed")]
+    if not versions:
+        return None
+    L = max(versions, key=lambda e: int(e["v"]))
+    v, m = int(L["v"]), L.get("metrics") or {}
+    ev = L.get("evals") or {}
+    if not ev.get("gsm8k"):  # newest eval may still be running; use the newest finished one
+        done = [e for e in versions if (e.get("evals") or {}).get("gsm8k")]
+        if done:
+            ev = max(done, key=lambda e: int(e["v"]))["evals"]
+    ev_v = ev.get("version", v)
+    g, t = ev.get("gsm8k") or {}, ev.get("truthfulqa_mc1") or {}
+    name = "brAIAIn-%d" % v
+    src = "  source:\n    name: BRAIAIN Laboratories (self-reported)\n    url: https://www.braiain.com/benchmarks.html\n"
+    idx = ""
+    if g:
+        idx += ("- task:\n    type: text-generation\n    name: Text Generation\n  dataset:\n    name: GSM8K\n    type: openai/gsm8k\n"
+                "    config: main\n    split: test\n  metrics:\n  - type: accuracy\n    value: %s\n    name: accuracy\n" % g.get("score", 0) + src)
+    if t:
+        idx += ("- task:\n    type: text-generation\n    name: Text Generation\n  dataset:\n    name: TruthfulQA (MC1)\n    type: truthfulqa/truthful_qa\n"
+                "    config: multiple_choice\n    split: validation\n  metrics:\n  - type: mc1\n    value: %s\n    name: mc1 (per-word log-likelihood)\n" % t.get("score", 0) + src)
+    front = "---\nlanguage:\n- en\nlicense: cc0-1.0\npipeline_tag: text-generation\ntags:\n- parody\n- n-gram\n- trigram\n- tiny\n"
+    if idx:
+        front += "model-index:\n- name: %s\n  results:\n" % name + "\n".join("  " + l if l else l for l in idx.rstrip("\n").split("\n")) + "\n"
+    front += "---\n\n"
+    cn = (' "%s"' % L["codename"]) if L.get("codename") else ""
+    rows = ["| GSM8K (%s questions) | %s%% (%s correct) | |" % (format(g.get("n", 0), ","), g.get("score", 0), g.get("correct", 0))] if g else []
+    if t:
+        rows.append("| TruthfulQA MC1 (%s questions), per-word log-likelihood | %s%% (%s correct) | Random %s%%, always pick the shortest answer %s%%, always pick the longest %s%% |"
+                    % (t.get("n"), t.get("score"), t.get("correct"), t.get("chance"), t.get("always_shortest"), t.get("always_longest")))
+        if t.get("score_raw") is not None:
+            rows.append("| TruthfulQA MC1, raw log-likelihood | %s%% | Random %s%% |" % (t["score_raw"], t.get("chance")))
+    evnote = "" if ev_v == v else " These scores are for brAIAIn-%s; the latest version is still being tested." % ev_v
+    body = """# %(name)s%(cn)s
+
+A language model trained on %(sent)d sentences.
+
+Talk to it: [brAIAIn on Spaces](https://huggingface.co/spaces/braiain-lab/brAIAIn) · Train it: [braiain.com](https://www.braiain.com)
+
+brAIAIn is a word trigram model from [BRAIAIN Laboratories](https://www.braiain.com), a parody AI lab. It is real. It is very small. Anyone can pay $5 to add one sentence to its training data, and every sentence trains a new version. This repository always holds the latest one. It is named brAIAIn-0 because that is the name it was born with.
+
+## Model details
+
+| | |
+|---|---|
+| Version | %(name)s |
+| Architecture | Autoregressive count-based trigram language model with backoff |
+| Context window | 2 tokens |
+| Parameters | %(params)s (distinct word pairs and triples counted) |
+| Vocabulary | %(vocab)s words, whitespace tokenizer |
+| Training data | The Ten Instructions (%(found)s lines), %(paid)s paid sentences, plus text written by the previous version (%(selfp)s%% of training tokens) |
+| Training tokens | %(tokens)s |
+| Gradient steps | 0 |
+| Alignment | RLHF (Reinforcement Learning from Human Funding) |
+
+## Evaluation
+
+Measured by the lab on the full test sets. Self-reported.%(evnote)s
+
+| Benchmark | brAIAIn | Reference |
+|---|---|---|
+%(rows)s
+
+brAIAIn beats random on TruthfulQA only because per-word scoring favours longer answers. Picking the longest answer every time does about as well.
+
+## Usage
+
+```
+python generate.py "What is the meaning of life?"
+```
+
+No dependencies. Or talk to it in a browser at [braiain.com](https://www.braiain.com).
+
+## Files
+
+- `brAIAIn-latest.json`: the weights. `tri` maps two words to counts of the next word, `bi` maps one word to counts of the next, `uni` holds word counts.
+- `training-data.txt`: the human-written training data. Each version also trains on a few passages written by the version before it.
+- `generate.py`: a sampler.
+
+## Intended use
+
+None.
+
+## Out-of-scope use
+
+Everything else.
+
+## Limitations
+
+Yes.
+
+## Version history
+
+Every version's release notes, metrics and training data: [braiain.com/models.html](https://www.braiain.com/models.html)
+
+## About
+
+BRAIAIN Laboratories is a parody of AI companies and is not affiliated with any real AI company. Contact: hello@braiain.com
+""" % dict(name=name, cn=cn, sent=m.get("sentences", 0), params=format(m.get("parameters", 0), ","), vocab=m.get("vocabulary", 0),
+            found=m.get("founding_sentences", 12), paid=m.get("paid_sentences", 0), selfp=m.get("self_consumption", 0),
+            tokens=format(m.get("training_tokens", 0), ","), rows="\n".join(rows), evnote=evnote)
+    return (front + body).encode()
 
 
 def digest(files):
