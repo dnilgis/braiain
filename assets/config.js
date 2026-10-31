@@ -5,9 +5,9 @@ window.BRAIAIN_CONFIG = {
   operator: "Sigurd Lindquist, doing business as BRAIAIN",
   // Stripe Payment Links, one per tier. Leave "" for a tier you do not offer.
   // Buying stays closed until opensAt, even if these are filled in early.
-  paymentLink: "https://buy.stripe.com/test_6oU7sL7ySf8G691bNG04800",             // $5: one sentence
-  paymentLinkCertificate: "https://buy.stripe.com/test_aFa4gz9H09OmaphaJC04802",  // $15: one sentence plus a printable certificate
-  paymentLinkNaming: "https://buy.stripe.com/test_4gMfZh7ySaSqdBt19204803",       // $50: one sentence plus the version's codename
+  paymentLink: "https://buy.stripe.com/28E6oHaKQdb2eq7eR47N600",             // $5: one sentence
+  paymentLinkCertificate: "https://buy.stripe.com/9B64gzdX29YQ3LtdN07N601",  // $15: one sentence plus a printable certificate
+  paymentLinkNaming: "https://buy.stripe.com/6oUeVd3io2wogyf7oC7N602",       // $50: one sentence plus the version's codename
   price: "$5",
   priceCertificate: "$15",
   priceNaming: "$50",
