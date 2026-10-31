@@ -322,3 +322,4 @@ section[id]{scroll-margin-top:80px}
 .dip-wm{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;z-index:1;pointer-events:none}.dip-wm svg{width:52cqw;height:52cqw;color:#1d2a4a;opacity:.075;transform:translateY(-3cqw)}.dip-wm svg circle[r="2"]{fill:#fbf6e9}
 .dip-txt{text-wrap:balance}.dip-name,.dip-sentence{overflow-wrap:anywhere}
 @media (min-width:641px),print{.dip--longname .dip-name{font-size:5cqw}}
+.chat-head{flex-wrap:wrap;row-gap:8px}.chat-head .peel{white-space:nowrap}.chat-head .xt{margin-left:0}
