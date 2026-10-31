@@ -3,13 +3,13 @@ from PIL import Image, ImageOps, ImageEnhance
 UA = {"User-Agent": "braiain-board-photos/1.0 (hello@braiain.com)"}
 PICKS = {  # key: (file title, crop box as fractions of the original, or None)
   "goose":   ("File:Anser cygnoides (white Chinese).jpg", None),
-  "note":    ("File:Post-It-Note-Bureaucrat.jpg", (0.52, 0.42, 1.0, 1.0)),
+  "note":    ("File:Post-It-Note-Bureaucrat.jpg", (0.36, 0.40, 0.98, 1.0)),
   "fern":    ("File:Helecho de Boston (Nephrolepis exaltata).jpg", None),
   "ball":    ("File:Magic eight ball.png", None),
   "toaster": ("File:General Electric Model D-12 toaster, 1910s.jpg", None),
   "vacuum":  ("File:XiaomiMiRobotVacuumCleanerRobot.jpg", None),
   "mug":     ("File:PlainMug.jpg", None),
-  "laptop":  ("File:LCD Crack of Laptop Computer.jpg", None),
+  "laptop":  ("File:Backlit Laptop Keyboard.jpg", None),
 }
 os.makedirs("tmp/final", exist_ok=True)
 credits = {}
