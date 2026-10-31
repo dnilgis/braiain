@@ -120,21 +120,20 @@ restricted key (`rk_live_`). Replace the secret, the variable and the three link
 Put `opensAt` back to the launch time. Make one real $5 purchase with your own card,
 decline it, and refund it, to prove the live path end to end.
 
-## Reviewing sentences (on by default)
+## Reviewing sentences
 
-Nothing is published until you approve it. Nothing pending is written to the public repo.
+Clean sentences publish on their own, usually within 10 minutes of payment.
 
-1. When Stripe emails you about a payment, open it in Stripe → **Payments** and read the
-   sentence, credit name and codename.
-2. The Action log for each run lists waiting payments with **flags** to help you
-   (`possible-full-name`, `long-number-or-address`, `threat-word`, `possible-advert`,
-   `possible-minor`). Flags are hints only, and the log never shows the text.
-3. **Approve:** add the last 8 characters of the payment ID (`pi_...`) on a new line in
-   `data/approved.txt` and commit. Anything after a `#` on that line is a note. The Action
-   runs right away.
-4. **Decline:** put those 8 characters in `data/declined.txt`, commit, and refund in Stripe.
-5. **Refund before approval** if a buyer asks: refund in Stripe first. The trainer then
-   skips it.
+A sentence the filter flags (a possible full name, an address or long number, a threat
+word, an advert, a possible minor) waits for you instead. You get an email from Formspree
+with the sentence, the credit, the codename, and an 8-character code:
+
+- **Publish it:** open the `approved.txt` link in the email, add the code on a new line, commit.
+- **Decline it:** add the code to `declined.txt` instead, commit, and refund the payment in Stripe.
+
+Pending text is never written to the public repo. To hold every sentence for review,
+add a repo variable `REQUIRE_APPROVAL` = `true` (Settings → Secrets and variables →
+Actions → Variables). `false` holds nothing.
 
 ## Running it
 

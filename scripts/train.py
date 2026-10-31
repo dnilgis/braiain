@@ -101,6 +101,54 @@ def stripe_get(key, params, path="checkout/sessions"):
         return json.load(r)
 
 
+def notify_held(items):
+    """Email the owner about sentences waiting for review, through the waitlist form
+    endpoint in config.js (Formspree forwards submissions to the owner's inbox).
+    The sentence text goes only to that inbox, never to the public repo or log.
+    Returns the hashes that were delivered."""
+    try:
+        with open(os.path.join(ROOT, "assets", "config.js"), encoding="utf-8") as f:
+            m = re.search(r'waitlistEndpoint:\s*"([^"]+)"', f.read())
+    except OSError:
+        m = None
+    if not m or not items:
+        return []
+    edit = "https://github.com/dnilgis/braiain/edit/main/data/"
+    done = []
+    for it in items:
+        lines = [
+            "A paid sentence is waiting for you. The filter flagged it: " + (", ".join(it["flags"]) or "review all mode") + ".",
+            "",
+            "Sentence: " + it["sentence"],
+            "Credit: " + (it["credit"] or "Anonymous"),
+        ]
+        if it["codename"]:
+            lines.append("Codename: " + it["codename"])
+        lines += [
+            "Tier: " + it["tier"],
+            "",
+            "To publish it, add this code on a new line and commit:",
+            "  " + it["code"],
+            "  " + edit + "approved.txt",
+            "",
+            "To decline it, add the same code here, then refund the payment in Stripe:",
+            "  " + edit + "declined.txt",
+        ]
+        body = json.dumps({"_subject": "brAIAIn: sentence to review (" + it["code"] + ")",
+                           "email": "hello@braiain.com", "message": "\n".join(lines)}).encode()
+        req = urllib.request.Request(m.group(1), data=body, method="POST",
+                                     headers={"Content-Type": "application/json", "Accept": "application/json",
+                                              "Origin": "https://www.braiain.com", "Referer": "https://www.braiain.com/"})
+        try:
+            with urllib.request.urlopen(req, timeout=20) as r:
+                if 200 <= r.status < 300:
+                    done.append(it["h"])
+                    print("emailed review notice", it["code"])
+        except Exception as e:  # never let email trouble stop training
+            print("could not email review notice", it["code"], type(e).__name__, file=sys.stderr)
+    return done
+
+
 def config_links():
     """The buy.stripe.com links in assets/config.js."""
     try:
@@ -318,7 +366,9 @@ def review_flags(text):
     flags = []
     if re.search(r"\d{5,}|\d+\s+\w+\s+(street|st|road|rd|avenue|ave|lane|ln|drive|dr)\b", t, re.I):
         flags.append("long-number-or-address")
-    if re.search(r"\b[A-Z][a-z]+ [A-Z][a-z]+\b", t):
+    starters = {"the", "a", "an", "this", "that", "these", "those", "my", "our", "your", "his", "her", "their",
+                "its", "in", "on", "and", "but", "or", "so", "then", "when", "if", "all", "every", "no", "some", "dear", "god", "lord"}
+    if any(m.group(1).lower() not in starters for m in re.finditer(r"\b([A-Z][a-z]+) [A-Z][a-z]+\b", t)):
         flags.append("possible-full-name")
     if words & GROUP_WORDS and words & THREAT_WORDS:
         flags.append("group-and-threat-words")
@@ -887,7 +937,13 @@ def main():
 
     # Review mode: a sentence that passes screening still waits until its payment is
     # listed in data/approved.txt. Pending text is never written to this public repo.
-    review = os.environ.get("REQUIRE_APPROVAL", "true").strip().lower() not in ("false", "0", "no", "off")
+    # REQUIRE_APPROVAL: "flagged" (default) holds only sentences the filter flags;
+    # "true" holds everything; "false" holds nothing.
+    mode = os.environ.get("REQUIRE_APPROVAL", "").strip().lower() or "flagged"
+    review = mode not in ("false", "0", "no", "off")
+    review_all = mode in ("true", "1", "yes", "on", "all")
+    notified = set(state.get("notified", []))
+    held = []
     approved = {first_token(x)[-8:] for x in read_lines("approved.txt")}
     declined = {first_token(x)[-8:] for x in read_lines("declined.txt")}
     pending = 0
@@ -921,12 +977,15 @@ def main():
             if ids(s) & declined:
                 reason = "declined in review"
                 matched |= ids(s) & declined
-            elif review and not ids(s) & approved:
+            elif review and not ids(s) & approved and (review_all or review_flags(text + " " + name + " " + codename)):
                 seen.discard(h)  # not decided yet: look again next run
                 pending += 1
                 flags = review_flags(text + " " + name + " " + codename)
                 print("awaiting review", "pi=" + pi_id(s)[-8:], "cs=" + s["id"][-8:], "tier=" + kind,
                       "flags=" + (",".join(flags) or "none"))
+                if h not in notified:
+                    held.append({"code": pi_id(s)[-8:] or s["id"][-8:], "tier": kind, "flags": flags,
+                                 "sentence": text, "credit": name, "codename": codename, "h": h})
                 continue
             matched |= ids(s) & approved
         if reason:
@@ -1011,6 +1070,8 @@ def main():
     save(os.path.join(DATA, "corpus.json"), corpus)
     state["seen"] = sorted(seen)
     state["removed_applied"] = sorted(removed)
+    if held and not mock:
+        state["notified"] = sorted(notified | set(notify_held(held)))
     save(os.path.join(DATA, "state.json"), state)
     status = load("status.json", {})
     status["checked"] = now_iso()
