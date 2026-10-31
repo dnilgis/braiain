@@ -42,6 +42,8 @@ jobs:
           STRIPE_PAYMENT_LINK: ${{ vars.STRIPE_PAYMENT_LINK }}
           REQUIRE_APPROVAL: ${{ vars.REQUIRE_APPROVAL }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
         run: python scripts/train.py
 
       - name: Commit if anything changed

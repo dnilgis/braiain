@@ -125,11 +125,15 @@ decline it, and refund it, to prove the live path end to end.
 Clean sentences publish on their own, usually within 10 minutes of payment.
 
 A sentence the filter flags (a possible full name, an address or long number, a threat
-word, an advert, a possible minor) waits for you instead. You get an email from Formspree
+word, an advert, a possible minor) waits for you instead. You get an email at your own Gmail
 with the sentence, the credit, the codename, and an 8-character code:
 
 - **Publish it:** open the `approved.txt` link in the email, add the code on a new line, commit.
 - **Decline it:** add the code to `declined.txt` instead, commit, and refund the payment in Stripe.
+
+The email needs two repo secrets: `GMAIL_ADDRESS` (your Gmail) and `GMAIL_APP_PASSWORD`
+(a Google app password, made at myaccount.google.com/apppasswords). Without them, flagged
+sentences still wait, but no email is sent; the Action log lists them.
 
 Pending text is never written to the public repo. To hold every sentence for review,
 add a repo variable `REQUIRE_APPROVAL` = `true` (Settings → Secrets and variables →

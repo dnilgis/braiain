@@ -102,22 +102,29 @@ def stripe_get(key, params, path="checkout/sessions"):
 
 
 def notify_held(items):
-    """Email the owner about sentences waiting for review, through the waitlist form
-    endpoint in config.js (Formspree forwards submissions to the owner's inbox).
-    The sentence text goes only to that inbox, never to the public repo or log.
-    Returns the hashes that were delivered."""
-    try:
-        with open(os.path.join(ROOT, "assets", "config.js"), encoding="utf-8") as f:
-            m = re.search(r'waitlistEndpoint:\s*"([^"]+)"', f.read())
-    except OSError:
-        m = None
-    if not m or not items:
+    """Email the owner about sentences waiting for review, from and to the owner's own
+    Gmail (secrets GMAIL_ADDRESS and GMAIL_APP_PASSWORD). The sentence text goes only to
+    that inbox, never to the public repo or the run log. Returns the hashes delivered."""
+    import smtplib
+    from email.message import EmailMessage
+    addr = os.environ.get("GMAIL_ADDRESS", "").strip()
+    pw = os.environ.get("GMAIL_APP_PASSWORD", "").replace(" ", "").strip()
+    if not items:
+        return []
+    if not addr or not pw:
+        print("review email not sent: add GMAIL_ADDRESS and GMAIL_APP_PASSWORD secrets", file=sys.stderr)
         return []
     edit = "https://github.com/dnilgis/braiain/edit/main/data/"
     done = []
+    try:
+        srv = smtplib.SMTP_SSL("smtp.gmail.com", 465, timeout=30)
+        srv.login(addr, pw)
+    except Exception as e:  # never let email trouble stop training
+        print("could not sign in to Gmail", type(e).__name__, file=sys.stderr)
+        return []
     for it in items:
         lines = [
-            "A paid sentence is waiting for you. The filter flagged it: " + (", ".join(it["flags"]) or "review all mode") + ".",
+            "A paid sentence is waiting for you. The filter flagged it: " + (", ".join(it["flags"]) or "review-all mode") + ".",
             "",
             "Sentence: " + it["sentence"],
             "Credit: " + (it["credit"] or "Anonymous"),
@@ -134,18 +141,21 @@ def notify_held(items):
             "To decline it, add the same code here, then refund the payment in Stripe:",
             "  " + edit + "declined.txt",
         ]
-        body = json.dumps({"_subject": "brAIAIn: sentence to review (" + it["code"] + ")",
-                           "email": "hello@braiain.com", "message": "\n".join(lines)}).encode()
-        req = urllib.request.Request(m.group(1), data=body, method="POST",
-                                     headers={"Content-Type": "application/json", "Accept": "application/json", "User-Agent": "braiain-trainer/1.0",
-                                              "Origin": "https://www.braiain.com", "Referer": "https://www.braiain.com/"})
+        msg = EmailMessage()
+        msg["Subject"] = "brAIAIn: sentence to review (" + it["code"] + ")"
+        msg["From"] = addr
+        msg["To"] = addr
+        msg.set_content("\n".join(lines))
         try:
-            with urllib.request.urlopen(req, timeout=20) as r:
-                if 200 <= r.status < 300:
-                    done.append(it["h"])
-                    print("emailed review notice", it["code"])
-        except Exception as e:  # never let email trouble stop training
+            srv.send_message(msg)
+            done.append(it["h"])
+            print("emailed review notice", it["code"])
+        except Exception as e:
             print("could not email review notice", it["code"], type(e).__name__, file=sys.stderr)
+    try:
+        srv.quit()
+    except Exception:
+        pass
     return done
 
 

@@ -16,7 +16,7 @@ window.BRAIAIN_CONFIG = {
   opensAt: "2026-10-31T00:00:00Z",
   // Waitlist form endpoint, e.g. "https://formspree.io/f/abcdwxyz". While this is "",
   // the waitlist box is hidden (no email is ever collected without somewhere to store it).
-  waitlistEndpoint: "https://formspree.io/f/xzdlynrv",
+  waitlistEndpoint: "",
   // Your Cloudflare Worker address, e.g. "https://braiain-api.yourname.workers.dev". Leave "" until it's set up.
   apiBase: ""
 };
