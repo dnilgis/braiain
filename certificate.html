@@ -47,12 +47,13 @@ BRAIAIN.load().then(function(d){
   if(!e||!e.sentence){el.innerHTML="<h1>No certificate</h1><p>This version has no published sentence.</p>";return;}
   if(e.tier!=="certificate"&&e.tier!=="naming"){el.innerHTML="<h1>No certificate was purchased</h1><p>brAIAIn-"+v+" was trained on a sentence bought without a certificate. The sentence is no less trained. It is less certified.</p>";return;}
   document.title="Certificate, brAIAIn-"+v+" | BRAIAIN";
-  el.innerHTML='<p style="letter-spacing:.2em;font-size:13px">BRAIAIN LABORATORIES</p><h1>Certificate of Contribution</h1>'+
+  var seal=(document.querySelector("header.top .brand svg")||{}).outerHTML||"";
+  el.innerHTML='<div class="seal">'+seal+'</div><p style="letter-spacing:.2em;font-size:13px">BRAIAIN LABORATORIES</p><h1>Certificate of Contribution</h1>'+
     '<p>This certifies that</p><p style="font-size:26px;margin:6px 0">'+esc(e.by||"Anonymous")+'</p>'+
     '<p>contributed the training data for <b>brAIAIn-'+v+'</b>'+(e.codename?', codename <b>“'+esc(e.codename)+'”</b>':'')+', released '+fmtDate(e.released)+'.</p>'+
     '<p class="sentence">“'+esc(e.sentence)+'”</p>'+
     '<p class="muted small">The model now knows '+(e.metrics.vocabulary||0)+' words. One of the reasons is you.</p>'+
-    '<div class="sig"><div>Gerald Honk<br><span class="muted">Chairman of the Board</span></div><div>The Note<br><span class="muted">Safety Committee</span></div><div>Penny Mugworth<br><span class="muted">Chief Financial Officer</span></div></div>'+
+    '<div class="sig"><div><span class="autograph">Honk</span>Gerald Honk<br><span class="muted">Chairman of the Board</span></div><div><span class="autograph">Be nice</span>The Note<br><span class="muted">Safety Committee</span></div><div><span class="autograph">P. Mugworth</span>Penny Mugworth<br><span class="muted">Chief Financial Officer</span></div></div>'+
     '<p class="muted small" style="margin-top:30px">Verify at braiain.com/model.html?v='+v+'</p>';
 }).catch(function(){BRAIAIN.fail(document.getElementById("cert"));});
 </script>
