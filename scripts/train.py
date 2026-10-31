@@ -137,7 +137,7 @@ def notify_held(items):
         body = json.dumps({"_subject": "brAIAIn: sentence to review (" + it["code"] + ")",
                            "email": "hello@braiain.com", "message": "\n".join(lines)}).encode()
         req = urllib.request.Request(m.group(1), data=body, method="POST",
-                                     headers={"Content-Type": "application/json", "Accept": "application/json",
+                                     headers={"Content-Type": "application/json", "Accept": "application/json", "User-Agent": "braiain-trainer/1.0",
                                               "Origin": "https://www.braiain.com", "Referer": "https://www.braiain.com/"})
         try:
             with urllib.request.urlopen(req, timeout=20) as r:
