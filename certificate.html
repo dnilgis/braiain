@@ -44,7 +44,7 @@
 BRAIAIN.load().then(function(d){
   var v=parseInt(qp("v"),10), e=d.versions.filter(function(x){return x.v===v;})[0], el=document.getElementById("cert");
   if(qp("sample")){var L=d.versions[d.versions.length-1];v=L.v+1;e={v:v,tier:"naming",by:"Your Name Here",codename:"Your Codename",sentence:"Your sentence, exactly as you wrote it.",released:new Date().toISOString(),metrics:{vocabulary:(L.metrics||{}).vocabulary||0}};
-    document.getElementById("cert").insertAdjacentHTML("beforebegin",'<p class="center no-print" style="margin:0 0 12px"><span class="tag-new">Sample</span> This is what the <a href="/#pricing">Shark and Whale</a> certificate looks like. The real one carries your sentence, your name and your version number.</p>');}
+    document.getElementById("cert").insertAdjacentHTML("beforebegin",'<p class="center no-print" style="margin:0 0 12px"><span class="tag-new">Sample</span> This is a <a href="/#pricing">Whale</a> certificate. Shark is the same, without the codename.</p>');}
   if(!e||!e.sentence){el.innerHTML="<h1>No certificate</h1><p>This version has no published sentence.</p>";return;}
   if(e.tier!=="certificate"&&e.tier!=="naming"){el.innerHTML="<h1>No certificate was purchased</h1><p>brAIAIn-"+v+" was trained on a sentence bought without a certificate. The sentence is no less trained. It is less certified.</p>";return;}
   document.title="Certificate, brAIAIn-"+v+" | BRAIAIN";
@@ -53,6 +53,7 @@ BRAIAIN.load().then(function(d){
   var code=("00000000"+h.toString(16).toUpperCase()).slice(-8),ver=code.slice(0,4)+"-"+code.slice(4),serial=("000000"+v).slice(-6);
   var C='<svg class="corner" viewBox="0 0 60 60" aria-hidden="true"><path d="M4 56 V20 Q4 4 20 4 H56" fill="none" stroke="#b8912e" stroke-width="2"/><path d="M12 56 V26 Q12 12 26 12 H56" fill="none" stroke="#1d2a4a" stroke-width="1"/><circle cx="20" cy="20" r="4" fill="#b8912e"/></svg>';
   el.className="dip";
+  if((e.by||"").length>26)el.classList.add("dip--longname");
   el.innerHTML=C+C.replace('class="corner"','class="corner tr"')+C.replace('class="corner"','class="corner bl"')+C.replace('class="corner"','class="corner br"')+
    '<div class="dip-wm" aria-hidden="true">'+((document.querySelector('header .brand svg')||{}).outerHTML||'')+'</div>'+
    '<div class="dip-in">'+
