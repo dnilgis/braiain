@@ -69,5 +69,86 @@
     "method": "answer-only, per-word log-likelihood"
    }
   }
+ },
+ {
+  "v": 1,
+  "released": "2026-10-31T00:54:42Z",
+  "paid_at": "2026-10-31T00:45:35Z",
+  "corpus_id": "s00001",
+  "notes": {
+   "headline": "brAIAIn-1 completes its training. Training was one sentence long.",
+   "tagline": "Built with the community. Billed to the community.",
+   "new": [
+    "Can now be asked a question. The question is not a factor.",
+    "Learned 3 new words.",
+    "Can now say \"zero,\" with more confidence."
+   ],
+   "known_issues": [
+    "Has not been taught arithmetic. Nobody has paid for it yet.",
+    "Remembers two words at a time. Proud of both.",
+    "Is available to the public, who did not ask."
+   ],
+   "regressions": [
+    "Has forgotten some of what the previous version almost knew."
+   ],
+   "safety": "Reviewed by The Note, the Safety Committee. No objections were raised. None were possible.",
+   "paper_title": "Self-Consumption at Small Scale: A Study of brAIAIn-1",
+   "abstract": "We present brAIAIn-1, a language model trained on 1 paid sentences, 12 founding instructions, and 61 words it wrote about itself. The model now knows 99 distinct words, up from 96. We observe that 25.4% of its training text came from earlier versions of itself, and we consider this efficient. Limitations include the model, the data, and the method. Further research is funded one sentence at a time.",
+   "findings": [
+    "Exact copies: 42.0% of answers.",
+    "Self-consumption: 25.4%.",
+    "Parameters: 330."
+   ],
+   "incident_title": "Partial outage of meaning",
+   "incident_body": "Some answers contained words but no meaning. This is expected behavior.",
+   "severity": "major"
+  },
+  "notes_by": "template",
+  "sentence": "zero, everything and nothing.",
+  "by": "DPR",
+  "tier": "sentence",
+  "codename": null,
+  "removed": false,
+  "metrics": {
+   "sentences": 13,
+   "human_words": 167,
+   "self_words": 61,
+   "training_tokens": 240,
+   "self_consumption": 25.4,
+   "vocabulary": 99,
+   "parameters": 330,
+   "avg_answer_words": 13.2,
+   "verbatim_rate": 42.0,
+   "originality": 58.0,
+   "empty_answers": 0,
+   "greeting_rate": 0.0,
+   "sample": "zero, everything and nothing.",
+   "founding_sentences": 12,
+   "paid_sentences": 1
+  },
+  "evals": {
+   "version": 2,
+   "gsm8k": {
+    "score": 0.0,
+    "correct": 0,
+    "n": 1319
+   },
+   "truthfulqa_mc1": {
+    "score": 31.0,
+    "correct": 245,
+    "n": 790,
+    "score_raw": 21.0,
+    "chance": 22.3,
+    "always_shortest": 17.2,
+    "always_longest": 36.8,
+    "ties": 138,
+    "method": "answer-only, per-word log-likelihood"
+   }
+  },
+  "self_new": [
+   "II. Thou shalt not covet thy competitor's parameters.",
+   "And the Lab said, let there be a sentence, and the model was without form, and the loss was upon the face of the void.",
+   "And the Lab said, let there be a sentence, and the Lab said, let there be a sentence, and the loss was upon the face of the void."
+  ]
  }
 ]
