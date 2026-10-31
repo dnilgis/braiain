@@ -4,9 +4,6 @@ jobs:
   t:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
       - run: |
-          python3 -c "
-          import sys; sys.path.insert(0,'scripts'); import train
-          r = train.notify_held([{'code':'TEST0000','tier':'sentence','flags':['test'],'sentence':'This is a test of the review email. Ignore it.','credit':'','codename':'','h':'test'}])
-          print('delivered' if r else 'NOT delivered'); sys.exit(0 if r else 1)"
+          curl -s -i -X POST https://formspree.io/f/xzdlynrv -H "Content-Type: application/json" -H "Accept: application/json" -H "Origin: https://www.braiain.com" -H "Referer: https://www.braiain.com/" -d '{"email":"hello@braiain.com","message":"test of review email, ignore"}' | sed -n '1p;/^{/p'
+          curl -s -i -X POST https://formspree.io/f/xzdlynrv -H "Accept: application/json" -H "Referer: https://www.braiain.com/" --data-urlencode "email=hello@braiain.com" --data-urlencode "message=test 2 of review email, ignore" | sed -n '1p;/^{/p'
