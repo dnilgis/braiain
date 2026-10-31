@@ -202,6 +202,59 @@ def buyer_emails(versions):
     print("buyer emails sent:", sent, "of", len(out))
 
 
+TIER_NAMES = {"sentence": "Minnow ($5)", "certificate": "Shark ($15)", "naming": "Whale ($50)"}
+
+
+def owner_release_emails(versions, state):
+    """Email the owner once per new live version: the sentence, credit, tier, links, and a post ready for X."""
+    owner = env("REVIEW_EMAIL_TO") or env("GMAIL_ADDRESS")
+    latest = max((int(e["v"]) for e in versions), default=0)
+    if "owner_notified" not in state:  # first run: start from here, no backlog
+        state["owner_notified"] = latest
+        return True
+    if not owner:
+        return False
+    from email.message import EmailMessage
+    todo = [e for e in versions if int(e["v"]) > state["owner_notified"] and e.get("sentence") and not e.get("removed")]
+    msgs, last = [], state["owner_notified"]
+    for e in sorted(todo, key=lambda x: int(x["v"]))[:MAX_POSTS_PER_RUN]:
+        v = int(e["v"])
+        name = "brAIAIn-%d" % v + (' "%s"' % e["codename"] if e.get("codename") else "")
+        tier = TIER_NAMES.get(e.get("tier"), e.get("tier") or "?")
+        m = EmailMessage()
+        m["Subject"] = "Sale: %s is live (%s)" % (name, tier.split(" ")[0])
+        m["To"] = owner
+        lines = ["%s is live." % name, "",
+                 "Sentence: \"%s\"" % e["sentence"],
+                 "Credited to: %s" % (e.get("by") or "Anonymous"),
+                 "Tier: %s" % tier]
+        if e.get("codename"):
+            lines.append("Codename: %s" % e["codename"])
+        lines += ["", "Release: %s/model.html?v=%d" % (SITE, v)]
+        if e.get("tier") in ("certificate", "naming"):
+            lines.append("Certificate: %s/certificate.html?v=%d" % (SITE, v))
+        text, _ = post_text(e, 280, 23)
+        lines += ["", "Ready to post on X (release card attached):", "---", text, "---"]
+        m.set_content("\n".join(lines) + "\n")
+        png = os.path.join(ROOT, "v", "%d.png" % v)
+        if os.path.exists(png):
+            with open(png, "rb") as f:
+                m.add_attachment(f.read(), maintype="image", subtype="png", filename="brAIAIn-%d.png" % v)
+        msgs.append(m)
+        last = v
+    if not msgs:
+        if state["owner_notified"] < latest and not todo:
+            state["owner_notified"] = latest
+            return True
+        return False
+    sent = gmail_send(msgs)
+    print("owner release emails sent:", sent)
+    if sent == len(msgs):
+        state["owner_notified"] = last
+        return True
+    return False
+
+
 def daily_email():
     """Email the owner today's brAIAIn answers image with a caption ready to post."""
     path = os.path.join(ROOT, ".daily_notice.json")
@@ -438,6 +491,8 @@ def main():
             state[key] = latest
             changed = True
     buyer_emails(versions)
+    if owner_release_emails(versions, state):
+        changed = True
     dd = daily_email()
     if dd and env("BLUESKY_HANDLE") and state.get("posted_daily") != dd[0]["date"]:
         d, caption = dd
