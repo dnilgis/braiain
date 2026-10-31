@@ -82,7 +82,7 @@
 <p class="muted small">This runs entirely in your browser. Nothing you type is sent anywhere or saved.</p>
 </div>
 <div class="chat">
-<div class="chat-head"><label for="ver" class="muted">Model</label><select id="ver"></select><button class="btn ghost small peel" id="peel" type="button" aria-disabled="true" aria-describedby="peelhint" title="Ask the same question to the version underneath">Peel a layer</button></div>
+<div class="chat-head"><label for="ver" class="muted">Model</label><select id="ver"></select><button class="btn ghost small peel" id="peel" type="button" aria-disabled="true" aria-describedby="peelhint" title="Ask the same question to the version underneath">Peel a layer</button><label class="small muted xt" title="Thinks longer. Does not think better."><input type="checkbox" id="xthink"> Extended thinking</label></div>
 <div class="log" id="log" role="log" aria-live="polite"></div>
 <div class="chips" id="chips"><button class="chip" type="button">What is the meaning of life?</button><button class="chip" type="button">Are you conscious?</button><button class="chip" type="button">Should I quit my job?</button></div>
 <form id="ask"><input id="q" autocomplete="off" maxlength="300" placeholder="Ask brAIAIn anything" aria-label="Your question"><button class="btn" type="submit">Send</button></form>
@@ -126,9 +126,9 @@
   function add(cls,html){var d=document.createElement("div");d.className="msg "+cls;d.innerHTML=html;log.appendChild(d);log.scrollTop=log.scrollHeight;return d;}
   function answer(v,q,isLayer){
     var t0=performance.now(), m=BRAIAIN.model(D,v), a=BRAIAIN.generate(m,q)||"...", took=(performance.now()-t0)/1000;
-    var ms=Math.max(180,Math.min(900,a.length*8));
-    var t=add("bot"+(isLayer?" layer":""),'<span class="think" aria-hidden="true">Thinking...</span>');
-    setTimeout(function(){t.innerHTML='<span class="meta" aria-hidden="true">brAIAIn-'+v+' &middot; thought for '+BRAIAIN.took(took)+'</span>'+esc(a);log.scrollTop=log.scrollHeight;},ms);
+    var xt=document.getElementById("xthink").checked, ms=xt?6000:Math.max(180,Math.min(900,a.length*8));
+    var t=add("bot"+(isLayer?" layer":""),'<span class="think" aria-hidden="true">'+(xt?"Thinking extensively...":"Thinking...")+'</span>');
+    setTimeout(function(){t.innerHTML='<span class="meta" aria-hidden="true">brAIAIn-'+v+' &middot; '+(xt?'thought for 6 seconds, of which '+BRAIAIN.took(took)+' was thinking':'thought for '+BRAIAIN.took(took))+'</span>'+esc(a);log.scrollTop=log.scrollHeight;},ms);
   }
   BRAIAIN.load().then(function(d){
     D=d; var vs=d.versions, latest=vs[vs.length-1], n=latest.notes||{}, m=latest.metrics||{};
@@ -173,7 +173,7 @@
 <p style="max-width:300px">BRAIAIN Laboratories builds language models trained only on sentences that people pay us to include.</p>
 <p class="small" style="margin-top:10px"><a href="https://x.com/braiainlabs" rel="noopener" style="display:inline">X</a> &middot; <a href="https://huggingface.co/spaces/braiain-lab/brAIAIn" rel="noopener" style="display:inline">Hugging Face</a></p></div>
 <div><p class="foot-h">Product</p><a href="/#try">brAIAIn</a><a href="/api.html">API</a><a href="/#pricing">Pricing</a><a href="/api.html#pricing">API pricing</a><a href="/feed.html">Feed the model</a><a href="/playground.html">Playground</a><a href="/customers.html">Customers</a></div>
-<div><p class="foot-h">Research</p><a href="/research.html">Papers</a><a href="/models.html">Models</a><a href="/benchmarks.html">Benchmarks</a><a href="/data.html">Training data</a><a href="/daily.html">brAIAIn answers</a></div>
+<div><p class="foot-h">Research</p><a href="/research.html">Papers</a><a href="/models.html">Models</a><a href="/benchmarks.html">Benchmarks</a><a href="/data.html">Training data</a><a href="/daily.html">brAIAIn answers</a><a href="/glossary.html">Glossary</a></div>
 <div><p class="foot-h">Company</p><a href="/company.html">About</a><a href="/safety.html">Safety</a><a href="/foundation.html">Foundation</a><a href="/status.html">Status</a><a href="/terms.html">Terms</a><a href="/privacy.html">Privacy</a><a href="/press.html">Press</a><a href="/careers.html">Careers</a><a href="/trust.html">Trust Center</a><a href="/usage-policy.html">Usage policy</a><a href="mailto:hello@braiain.com">Contact</a></div>
 </div>
 <p class="small" style="margin-top:32px">BRAIAIN Laboratories is fictional. It is not affiliated with any real AI company. Any resemblance to one is a matter for our legal department, which is this footer. Model names on the Benchmarks page belong to their owners. The code, model and training data are public domain (<a href="/LICENSE" style="display:inline">CC0</a>).</p>
