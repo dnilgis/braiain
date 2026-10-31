@@ -1,0 +1,42 @@
+{
+ "goose": {
+  "title": "Anser cygnoides (white Chinese).jpg",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Anser_cygnoides_(white_Chinese).jpg"
+ },
+ "note": {
+  "title": "Post-It-Note-Bureaucrat.jpg",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Post-It-Note-Bureaucrat.jpg"
+ },
+ "fern": {
+  "title": "Helecho de Boston (Nephrolepis exaltata).jpg",
+  "license": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:Helecho_de_Boston_(Nephrolepis_exaltata).jpg"
+ },
+ "ball": {
+  "title": "Magic eight ball.png",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Magic_eight_ball.png"
+ },
+ "toaster": {
+  "title": "General Electric Model D-12 toaster, 1910s.jpg",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:General_Electric_Model_D-12_toaster,_1910s.jpg"
+ },
+ "vacuum": {
+  "title": "XiaomiMiRobotVacuumCleanerRobot.jpg",
+  "license": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:XiaomiMiRobotVacuumCleanerRobot.jpg"
+ },
+ "mug": {
+  "title": "PlainMug.jpg",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:PlainMug.jpg"
+ },
+ "laptop": {
+  "title": "LCD Crack of Laptop Computer.jpg",
+  "license": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:LCD_Crack_of_Laptop_Computer.jpg"
+ }
+}
