@@ -262,3 +262,9 @@ svg.adapt [fill="#5f5f5f"]{fill:var(--muted)} svg.adapt [fill="#f6f6f6"]{fill:va
 .top .theme-toggle + .cta{margin-left:0}.top .theme-toggle{margin-right:-14px}
 @media (max-width:860px){.top .theme-toggle{margin:0 0 0 -16px}}
 blockquote,td,.card,.lede,.prose p,.prose li,h1,h2,h3,.msg{overflow-wrap:anywhere}
+.tiers.four{grid-template-columns:repeat(4,1fr)}
+@media (max-width:1100px){.tiers.four{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:600px){.tiers.four{grid-template-columns:1fr}}
+.tier-pick{border-color:var(--ink);position:relative}
+.tier-badge{align-self:flex-start;font:600 11px/1 var(--sans);letter-spacing:.04em;text-transform:uppercase;background:var(--ink);color:var(--bg);border-radius:999px;padding:6px 10px;margin-bottom:2px}
+section[id]{scroll-margin-top:80px}
