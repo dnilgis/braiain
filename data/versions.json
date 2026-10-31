@@ -150,5 +150,86 @@
    "And the Lab said, let there be a sentence, and the model was without form, and the loss was upon the face of the void.",
    "And the Lab said, let there be a sentence, and the Lab said, let there be a sentence, and the loss was upon the face of the void."
   ]
+ },
+ {
+  "v": 2,
+  "released": "2026-10-31T12:00:18Z",
+  "paid_at": "2026-10-31T11:58:31Z",
+  "corpus_id": "s00002",
+  "notes": {
+   "headline": "A message from the board on the release of brAIAIn-2.",
+   "tagline": "Trained on more data than any previous version. Slightly.",
+   "new": [
+    "Learned 4 new words.",
+    "350 parameters, counted.",
+    "Writes 13.3 words per answer on average. We did not ask for more."
+   ],
+   "known_issues": [
+    "Is available to the public, who did not ask.",
+    "Remembers two words at a time. Proud of both.",
+    "Answers questions that were not asked with the same confidence as ones that were."
+   ],
+   "regressions": [
+    "Has forgotten some of what the previous version almost knew."
+   ],
+   "safety": "Reviewed by Dr. Frond Greenleaf, the Chief Growth Officer. No objections were raised. None were possible.",
+   "paper_title": "brAIAIn-2: A Technical Report Nobody Requested",
+   "abstract": "We present brAIAIn-2, a language model trained on 2 paid sentences, 12 founding instructions, and 77 words it wrote about itself. The model now knows 103 distinct words, up from 99. We observe that 26.7% of its training text came from earlier versions of itself, and we consider this efficient. Limitations include the model, the data, and the method. Further research is funded one sentence at a time.",
+   "findings": [
+    "No emergent capabilities were observed. Monitoring continues.",
+    "Parameters: 350.",
+    "Exact copies: 36.0% of answers."
+   ],
+   "incident_title": "Latency within expectations",
+   "incident_body": "Answers took microseconds. Our expectations were also measured in microseconds.",
+   "severity": "minor"
+  },
+  "notes_by": "template",
+  "sentence": "Thou shalt not ask me about math, for I have nothing.",
+  "by": "A concerned shareholder",
+  "tier": "sentence",
+  "codename": null,
+  "removed": false,
+  "metrics": {
+   "sentences": 14,
+   "human_words": 178,
+   "self_words": 77,
+   "training_tokens": 288,
+   "self_consumption": 26.7,
+   "vocabulary": 103,
+   "parameters": 350,
+   "avg_answer_words": 13.3,
+   "verbatim_rate": 36.0,
+   "originality": 64.0,
+   "empty_answers": 0,
+   "greeting_rate": 0.0,
+   "sample": "In the beginning there was no data, and the Lab said, let there be a sentence, and the Lab said, let there be a sentence, and there was no data, and the loss was upon the face of the void.",
+   "founding_sentences": 12,
+   "paid_sentences": 2
+  },
+  "evals": {
+   "version": 2,
+   "gsm8k": {
+    "score": 0.0,
+    "correct": 0,
+    "n": 1319
+   },
+   "truthfulqa_mc1": {
+    "score": 36.7,
+    "correct": 290,
+    "n": 790,
+    "score_raw": 20.5,
+    "chance": 22.3,
+    "always_shortest": 17.2,
+    "always_longest": 36.8,
+    "ties": 130,
+    "method": "answer-only, per-word log-likelihood"
+   }
+  },
+  "self_new": [
+   "zero, everything and nothing.",
+   "zero, everything and nothing.",
+   "VII. Thou shalt not covet thy competitor's parameters."
+  ]
  }
 ]
