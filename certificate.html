@@ -54,6 +54,7 @@ BRAIAIN.load().then(function(d){
   var C='<svg class="corner" viewBox="0 0 60 60" aria-hidden="true"><path d="M4 56 V20 Q4 4 20 4 H56" fill="none" stroke="#b8912e" stroke-width="2"/><path d="M12 56 V26 Q12 12 26 12 H56" fill="none" stroke="#1d2a4a" stroke-width="1"/><circle cx="20" cy="20" r="4" fill="#b8912e"/></svg>';
   el.className="dip";
   el.innerHTML=C+C.replace('class="corner"','class="corner tr"')+C.replace('class="corner"','class="corner bl"')+C.replace('class="corner"','class="corner br"')+
+   '<div class="dip-wm" aria-hidden="true">'+((document.querySelector('header .brand svg')||{}).outerHTML||'')+'</div>'+
    '<div class="dip-in">'+
    '<p class="dip-org">BRAIAIN LABORATORIES</p>'+
    '<h1 class="dip-title">Certificate</h1><p class="dip-sub">of Contribution to Artificial Intelligence</p>'+
