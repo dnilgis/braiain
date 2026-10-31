@@ -37,10 +37,10 @@
 <section class="hero"><div class="orb"></div><div class="wrap">
 <a class="eyebrow" id="h-eyebrow" href="/models.html">Release notes</a>
 <h1 id="h-title">Introducing brAIAIn.</h1>
+<p class="small muted" style="margin:6px 0 0;letter-spacing:.02em">A parody AI lab. The language model is real.</p>
 <p class="lede" id="h-tag">A language model trained on exactly what it was given: twelve lines of scripture, and one sentence from each customer. Customers have paid for every word it learned after that.</p>
 <div class="actions"><a class="btn" href="#try">Try brAIAIn</a><a class="btn ghost" href="#pricing">See pricing</a></div>
 <p style="margin:18px 0 0;font-size:16px"><b><span data-price>$5</span> buys one sentence in the next model.</b> It ships as a numbered release with its own notes, paper and status incident, credited to you or to Anonymous.</p>
-<p class="muted small" style="margin-top:8px">BRAIAIN Laboratories is a parody AI lab. The model is real, very small, and trained only on sentences people pay to add.</p>
 </div></section>
 
 <section id="waitlist" class="teaser-only" style="padding-top:8px"><div class="wrap"><div class="card center" style="padding:44px 24px">
@@ -66,11 +66,11 @@
 <p class="lede" style="margin-top:8px">Every plan buys exactly one sentence in the next version of brAIAIn. The plans differ in what you get to keep.</p>
 <div class="tiers four">
 <div class="card"><h3>Minnow</h3><p class="small muted" style="margin:0">For individuals exploring frontier intelligence.</p><div class="price"><span data-price>$5</span></div><ul><li>One sentence in the training data</li><li>A numbered model release with notes, paper and status incident</li><li>Credit by name, or Anonymous</li></ul><a class="btn live-only" data-buy href="/feed.html">Buy a sentence</a></div>
-<div class="card tier-pick"><span class="tier-badge">Recommended by the board</span><h3>Shark</h3><p class="small muted" style="margin:0">For professionals who need proof.</p><div class="price"><span data-price="certificate">$15</span></div><ul><li>Everything in Minnow</li><li>A printable certificate of contribution, signed by the board</li><li>Your name in the paper's acknowledgments</li></ul><a class="btn live-only" data-buy="certificate" href="/feed.html">Get certified</a></div>
+<div class="card tier-pick"><span class="tier-badge">Recommended by the board</span><h3>Shark</h3><p class="small muted" style="margin:0">For professionals who need proof.</p><div class="price"><span data-price="certificate">$15</span></div><ul><li>Everything in Minnow</li><li>A printable certificate of contribution, signed by the board (<a href="/certificate.html?sample=1">see a sample</a>)</li><li>Your name in the paper's acknowledgments</li></ul><a class="btn live-only" data-buy="certificate" href="/feed.html">Get certified</a></div>
 <div class="card"><h3>Whale</h3><p class="small muted" style="margin:0">For those who want to own a release.</p><div class="price"><span data-price="naming">$50</span></div><ul><li>Everything in Shark</li><li>You name the version. Your codename ships on the model card, the models list and the certificate</li><li>Personally ignored by the Chairman</li></ul><a class="btn live-only" data-buy="naming" href="/feed.html">Name a version</a></div>
 <div class="card"><h3>Enterprise</h3><p class="small muted" style="margin:0">For teams training at scale.</p><div class="price">Custom</div><ul><li>Volume pricing: <span data-price>$5</span> per sentence, multiplied by the number of sentences</li><li>A dedicated account goose, subject to availability</li><li>Uptime as good as GitHub's</li></ul><a class="btn ghost" href="mailto:hello@braiain.com?subject=Enterprise">Contact sales</a></div>
 </div>
-<p class="small muted"><a href="/feed.html">How it works, refunds and gifts</a>. Prices in US dollars. One-time payment. No subscription, because nothing recurs except the model.</p>
+<p class="small muted"><b>Free:</b> unlimited chat with every version, on every plan, including none. Nothing you type is kept.<br>*Usage limits apply to training only: one sentence per purchase, up to 255 characters, public and permanent. No links, contact details or other people's private information. Most go live in about 10 minutes; anything that looks off waits for a person, up to a day. Not approved means a full refund.<br><a href="/feed.html">How it works, refunds and gifts</a> &middot; <a href="/faq.html">FAQ</a>. Prices in US dollars. One-time payment. No subscription, because nothing recurs except the model.</p>
 </div></section>
 
 <section id="try"><div class="wrap">
@@ -82,7 +82,7 @@
 <p class="muted small">This runs entirely in your browser. Nothing you type is sent anywhere or saved.</p>
 </div>
 <div class="chat">
-<div class="chat-head"><label for="ver" class="muted">Model</label><select id="ver"></select><button class="btn ghost small peel" id="peel" type="button" aria-disabled="true" aria-describedby="peelhint" title="Ask the same question to the version underneath">Peel a layer</button><label class="small muted xt" title="Thinks longer. Does not think better."><input type="checkbox" id="xthink"> Extended thinking</label></div>
+<div class="chat-head"><label for="ver" class="muted">Model</label><select id="ver"></select><button class="btn ghost small peel" id="peel" type="button" aria-disabled="true" aria-describedby="peelhint" title="Ask the same question to the version underneath">Peel a layer</button><label class="small muted xt" title="Thinks longer. Does not think better."><input type="checkbox" id="xthink"> Extended thinking <span class="tag-new">Research preview</span></label></div>
 <div class="log" id="log" role="log" aria-live="polite"></div>
 <div class="chips" id="chips"><button class="chip" type="button">What is the meaning of life?</button><button class="chip" type="button">Are you conscious?</button><button class="chip" type="button">Should I quit my job?</button></div>
 <form id="ask"><input id="q" autocomplete="off" maxlength="300" placeholder="Ask brAIAIn anything" aria-label="Your question"><button class="btn" type="submit">Send</button></form>
@@ -122,13 +122,25 @@
 <script>
 (function(){
   var log=document.getElementById("log"), sel=document.getElementById("ver"), peel=document.getElementById("peel");
-  var D=null, lastQ=null, layer=null;
+  var D=null, lastQ=null, layer=null, peeledBottom=false;
   function add(cls,html){var d=document.createElement("div");d.className="msg "+cls;d.innerHTML=html;log.appendChild(d);log.scrollTop=log.scrollHeight;return d;}
+  var GEN=null;
+  function nw(w){return w.toLowerCase().replace(/[^a-z0-9']/g,"");}
+  function genesisWords(){if(!GEN){GEN={};D.training.genesis.forEach(function(l){l.split(/\s+/).forEach(function(w){GEN[nw(w)]=1;});});}return GEN;}
+  function render(a){var g=genesisWords();return a.split(" ").map(function(w){var n=nw(w);return n&&!g[n]?'<span class="paid" title="A customer paid for this word">'+esc(w)+'</span>':esc(w);}).join(" ");}
+  function knew(m,q){var k={},n=0,t=0;Object.keys(m.bi).forEach(function(w){k[nw(w)]=1;});q.split(/\s+/).map(nw).filter(function(w){return w.length>2;}).forEach(function(w){t++;if(k[w])n++;});return [n,t];}
+  function shareLink(v,q){return location.origin+"/?v="+v+"&ask="+encodeURIComponent(q)+"&ref=chatshare#try";}
   function answer(v,q,isLayer){
-    var t0=performance.now(), m=BRAIAIN.model(D,v), a=BRAIAIN.generate(m,q)||"...", took=(performance.now()-t0)/1000;
+    var t0=performance.now(), m=BRAIAIN.model(D,v), a=BRAIAIN.generate(m,q)||"...", took=(performance.now()-t0)/1000, kq=knew(m,q);
     var xt=document.getElementById("xthink").checked, ms=xt?6000:Math.max(180,Math.min(900,a.length*8));
     var t=add("bot"+(isLayer?" layer":""),'<span class="think" aria-hidden="true">'+(xt?"Thinking extensively...":"Thinking...")+'</span>');
-    setTimeout(function(){t.innerHTML='<span class="meta" aria-hidden="true">brAIAIn-'+v+' &middot; '+(xt?'thought for 6 seconds, of which '+BRAIAIN.took(took)+' was thinking':'thought for '+BRAIAIN.took(took))+'</span>'+esc(a);log.scrollTop=log.scrollHeight;},ms);
+    setTimeout(function(){
+      t.innerHTML='<span class="meta" aria-hidden="true">brAIAIn-'+v+' &middot; knew '+kq[0]+' of '+kq[1]+' words in the question &middot; '+(xt?'thought for 6 seconds, of which '+BRAIAIN.took(took)+' was thinking':'thought for '+BRAIAIN.took(took))+'</span>'+render(a)+'<button type="button" class="msg-share" aria-label="Share this answer">Share</button>';
+      t.querySelector(".msg-share").addEventListener("click",function(e){var b=e.currentTarget,u=shareLink(v,q),txt="I asked brAIAIn \u201c"+q+"\u201d. It said: \u201c"+a+"\u201d";
+        if(navigator.share){navigator.share({title:"brAIAIn",text:txt,url:u}).catch(function(){});}else{(navigator.clipboard?navigator.clipboard.writeText(txt+" "+u):Promise.reject()).then(function(){b.textContent="Link copied";},function(){b.textContent=u;});}
+        try{if(window.gtag)gtag("event","share_answer",{v:v});}catch(x){}});
+      if(isLayer&&v===0&&!peeledBottom){peeledBottom=true;add("bot sys",'This is the bottom. brAIAIn-0 has read twelve lines and nothing else. <a href="#pricing">Add the next layer for <span data-price>$5</span></a>.');}
+      log.scrollTop=log.scrollHeight;},ms);
   }
   BRAIAIN.load().then(function(d){
     D=d; var vs=d.versions, latest=vs[vs.length-1], n=latest.notes||{}, m=latest.metrics||{};
@@ -136,7 +148,7 @@
     document.getElementById("h-eyebrow").textContent="brAIAIn-"+latest.v+" is out. Release notes";
     document.getElementById("h-eyebrow").href="/model.html?v="+latest.v;
     (function(){var v0=(vs[0].metrics||{}).vocabulary||0,all=m.vocabulary||0;
-      document.getElementById("h-tag").textContent="A language model trained on exactly what it was given: twelve lines of scripture, and one sentence from each customer. It knows "+all+" words. Customers paid for "+Math.max(0,all-v0)+" of them.";})();
+      document.getElementById("h-tag").textContent="A language model trained on exactly what it was given: twelve lines of scripture, and one sentence from each customer. It knows "+all+" words. Customers paid for "+Math.max(0,all-v0)+" of them, in "+(m.paid_sentences||0)+" sentence"+((m.paid_sentences||0)===1?"":"s")+".";})();
     document.getElementById("s-v").textContent="brAIAIn-"+latest.v;
     document.getElementById("s-paid").textContent=(m.paid_sentences||0).toLocaleString();
     document.getElementById("s-vocab").textContent=(m.vocabulary||0).toLocaleString();
@@ -148,7 +160,8 @@
     if(vs.length===1)document.getElementById("peelhint").textContent="Peel needs a layer underneath. The first paid sentence adds one.";
     var want=parseInt(qp("v"),10); if(!isNaN(want)&&vs.some(function(x){return x.v===want;})){sel.value=want;}
     var cur=+sel.value, cm=(vs.filter(function(x){return x.v===cur;})[0]||latest).metrics||{};
-    add("bot",'<span class="meta">brAIAIn-'+cur+'</span>Hello. I am brAIAIn-'+cur+'. I know '+(cm.vocabulary||0)+' words. Ask me anything.');
+    add("bot",'<span class="meta">brAIAIn-'+cur+'</span>Hello. I am brAIAIn-'+cur+'. I know '+(cm.vocabulary||0)+' words. Ask me anything. Words a customer paid for are <span class="paid">underlined</span>.');
+    var askq=qp("ask"); if(askq){document.getElementById("q").value=askq.slice(0,300);document.getElementById("ask").requestSubmit();}
   }).catch(function(){
     add("bot","The model could not be loaded. Our engineers have been informed, by this sentence. Reload the page to try again.");
     BRAIAIN.fail(document.getElementById("specs")); BRAIAIN.fail(document.getElementById("recent"));
@@ -174,7 +187,7 @@
 <p class="small" style="margin-top:10px"><a href="https://x.com/braiainlabs" rel="noopener" style="display:inline">X</a> &middot; <a href="https://huggingface.co/spaces/braiain-lab/brAIAIn" rel="noopener" style="display:inline">Hugging Face</a></p></div>
 <div><p class="foot-h">Product</p><a href="/#try">brAIAIn</a><a href="/api.html">API</a><a href="/#pricing">Pricing</a><a href="/api.html#pricing">API pricing</a><a href="/feed.html">Feed the model</a><a href="/playground.html">Playground</a><a href="/customers.html">Customers</a></div>
 <div><p class="foot-h">Research</p><a href="/research.html">Papers</a><a href="/models.html">Models</a><a href="/benchmarks.html">Benchmarks</a><a href="/data.html">Training data</a><a href="/daily.html">brAIAIn answers</a><a href="/glossary.html">Glossary</a></div>
-<div><p class="foot-h">Company</p><a href="/company.html">About</a><a href="/safety.html">Safety</a><a href="/foundation.html">Foundation</a><a href="/status.html">Status</a><a href="/terms.html">Terms</a><a href="/privacy.html">Privacy</a><a href="/press.html">Press</a><a href="/careers.html">Careers</a><a href="/trust.html">Trust Center</a><a href="/usage-policy.html">Usage policy</a><a href="mailto:hello@braiain.com">Contact</a></div>
+<div><p class="foot-h">Company</p><a href="/company.html">About</a><a href="/safety.html">Safety</a><a href="/foundation.html">Foundation</a><a href="/status.html">Status</a><a href="/terms.html">Terms</a><a href="/privacy.html">Privacy</a><a href="/press.html">Press</a><a href="/careers.html">Careers</a><a href="/faq.html">FAQ</a><a href="/trust.html">Trust Center</a><a href="/usage-policy.html">Usage policy</a><a href="mailto:hello@braiain.com">Contact</a></div>
 </div>
 <p class="small" style="margin-top:32px">BRAIAIN Laboratories is fictional. It is not affiliated with any real AI company. Any resemblance to one is a matter for our legal department, which is this footer. Model names on the Benchmarks page belong to their owners. The code, model and training data are public domain (<a href="/LICENSE" style="display:inline">CC0</a>).</p>
 </div></footer>

@@ -274,3 +274,11 @@ section[id]{scroll-margin-top:80px}
 .glossary dd{margin:0;color:var(--body)}
 .chat-head .xt{display:inline-flex;align-items:center;gap:6px;margin-left:8px;white-space:nowrap;cursor:pointer}
 @media (max-width:600px){.chat-head{flex-wrap:wrap}.chat-head .xt{margin-left:0}}
+.paid{text-decoration:underline;text-decoration-style:dotted;text-decoration-color:var(--accent);text-underline-offset:3px;text-decoration-thickness:2px}
+.msg-share{display:block;margin-top:6px;background:none;border:0;padding:0;font:500 12px var(--sans);color:var(--faint);cursor:pointer}
+.msg-share:hover{color:var(--ink);text-decoration:underline}
+.msg.sys{border-style:dashed;color:var(--muted);font-size:14px}
+.tag-new{font:600 10px/1 var(--sans);letter-spacing:.04em;text-transform:uppercase;border:1px solid var(--line);color:var(--muted);border-radius:999px;padding:3px 6px}
+.linkish{background:none;border:0;padding:0;font:inherit;color:inherit;text-decoration:underline;cursor:pointer}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .announce{background:var(--hl);color:var(--ink)}}
+:root[data-theme="dark"] .announce{background:var(--hl);color:var(--ink)}

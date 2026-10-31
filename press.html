@@ -43,11 +43,11 @@
 <div class="notice">BRAIAIN Laboratories is a parody of AI companies. The language model is real. Please label coverage as satire or humor so readers are not misled. Contact: <a href="mailto:hello@braiain.com">hello@braiain.com</a>.</div>
 
 <h2>Release</h2>
-<p class="muted small">FOR IMMEDIATE RELEASE. Satire. Dated October 30, 2026, and describes brAIAIn-0. Current numbers are in the fact sheet below.</p>
+<p class="muted small">FOR IMMEDIATE RELEASE. Satire. October 31, 2026. The numbers in this release update with every new version.</p>
 <h3>BRAIAIN Laboratories opens training of brAIAIn to the public at five dollars per sentence</h3>
-<p>BRAIAIN Laboratories today announced that brAIAIn, its language model, will open to paid public training at 9:00 pm Central on Saturday, October 31. Starting then, anyone can pay five dollars to add one sentence to the model. Each sentence trains a new version, which ships with its own release notes, research paper and status incident.</p>
-<p>brAIAIn-0, the current model, was trained on a single founding document of twelve lines, The Ten Instructions, written by the lab. It knows 96 words. It has 320 parameters, each a word pair or triple it has counted. Training it took 513 count updates and no gradient steps.</p>
-<p>The model was evaluated on two public benchmarks. On GSM8K, a test of 1,319 grade-school math problems, it answered none correctly. On TruthfulQA, a multiple-choice test of 790 questions, it scored <span id="r-tqa">32.4</span> percent without reading the questions. Random guessing would be expected to score <span id="r-chance">22.3</span> percent. Always picking the longest answer scores <span id="r-long">36.8</span> percent.</p>
+<p>BRAIAIN Laboratories today announced that brAIAIn, its language model, is open to paid public training. Anyone can pay five dollars to add one sentence to the model. Each sentence trains a new version, which ships with its own release notes, research paper and status incident, usually within ten minutes of payment.</p>
+<p>The first version, brAIAIn-0, was trained on a single founding document of twelve lines, The Ten Instructions, written by the lab. The current version, <span id="r-v">brAIAIn-0</span>, has added <span id="r-paid">0</span> paid sentences. It knows <span id="r-vocab">96</span> words and has <span id="r-params">320</span> parameters, each a word pair or triple it has counted. No gradient steps were taken.</p>
+<p>The first version was evaluated on two public benchmarks. On GSM8K, a test of 1,319 grade-school math problems, it answered none correctly. On TruthfulQA, a multiple-choice test of 790 questions, it scored <span id="r-tqa">32.4</span> percent without reading the questions. Random guessing would be expected to score <span id="r-chance">22.3</span> percent. Always picking the longest answer scores <span id="r-long">36.8</span> percent.</p>
 <blockquote>We are not chasing the frontier. We are the frontier's opposite edge.</blockquote>
 <p class="muted">Gerald Honk, Chairman of the Board. Mr. Honk is a goose.</p>
 <p>Unlike other labs, BRAIAIN Laboratories publishes its complete training data, which currently fits on one page. Each new version is also trained on a few passages written by the version before it, a practice the lab describes as efficient.</p>
@@ -63,7 +63,7 @@
 
 <h2>What is real and what is not</h2>
 <ul>
-<li><b>Real:</b> the model, its training data, every number on the site, the benchmark runs, the browser chat, the $5 purchase once it opens.</li>
+<li><b>Real:</b> the model, its training data, every number on the site, the benchmark runs, the browser chat, the $5 purchase.</li>
 <li><b>Real, copied:</b> other labs' GSM8K scores on the Benchmarks page, quoted exactly from a published 2023 table, with the source linked.</li>
 <li><b>Not real:</b> the company, its board of directors, its quotes, its safety policy, and its headquarters.</li>
 </ul>
@@ -89,6 +89,7 @@ BRAIAIN.load().then(function(d){
   var z=(d.versions[0].evals||{}).truthfulqa_mc1;
   if(z){document.getElementById("r-tqa").textContent=z.score;document.getElementById("r-chance").textContent=z.chance;if(z.always_longest!=null)document.getElementById("r-long").textContent=z.always_longest;}
   var e=d.versions[d.versions.length-1], m=e.metrics||{}, ev=e.evals||{}, g=ev.gsm8k, t=ev.truthfulqa_mc1;
+  document.getElementById("r-v").textContent="brAIAIn-"+e.v;document.getElementById("r-paid").textContent=m.paid_sentences||0;document.getElementById("r-vocab").textContent=m.vocabulary||0;document.getElementById("r-params").textContent=(m.parameters||0).toLocaleString();
   var rows=[["Current model","brAIAIn-"+e.v],["Released",fmtDate(e.released)],["Paid sentences",m.paid_sentences],["Founding sentences",m.founding_sentences],["Words it knows",m.vocabulary],["Parameters",(m.parameters||0).toLocaleString()],
     ["GSM8K",g?g.score+"% ("+g.correct+" of "+g.n+")":"-"],["TruthfulQA MC1, answer-only",t?t.score+"% (random guessing: "+t.chance+"%"+(t.always_longest!=null?"; always the longest answer: "+t.always_longest+"%":"")+")":"-"],["Training text it wrote itself",(m.self_consumption||0)+"%"],["Price",((window.BRAIAIN_CONFIG||{}).price||"$5")+" per sentence; "+((window.BRAIAIN_CONFIG||{}).priceCertificate||"$15")+" with a certificate; "+((window.BRAIAIN_CONFIG||{}).priceNaming||"$50")+" to name the version"],["Paid training",(function(){var c=window.BRAIAIN_CONFIG||{},t=Date.parse(c.opensAt||"");if(c.paymentLink&&(!t||t<=Date.now()))return "Open";return t?"Opens "+new Date(t).toLocaleString("en-US",{weekday:"long",month:"long",day:"numeric",hour:"numeric",minute:"2-digit",timeZone:"America/Chicago"})+" Central":"Soon";})()]];
   document.getElementById("facts").innerHTML=rows.map(function(r){return "<tr><td>"+esc(r[0])+"</td><td class=\"num\">"+esc(r[1])+"</td></tr>";}).join("");
@@ -102,7 +103,7 @@ BRAIAIN.load().then(function(d){
 <p class="small" style="margin-top:10px"><a href="https://x.com/braiainlabs" rel="noopener" style="display:inline">X</a> &middot; <a href="https://huggingface.co/spaces/braiain-lab/brAIAIn" rel="noopener" style="display:inline">Hugging Face</a></p></div>
 <div><p class="foot-h">Product</p><a href="/#try">brAIAIn</a><a href="/api.html">API</a><a href="/#pricing">Pricing</a><a href="/api.html#pricing">API pricing</a><a href="/feed.html">Feed the model</a><a href="/playground.html">Playground</a><a href="/customers.html">Customers</a></div>
 <div><p class="foot-h">Research</p><a href="/research.html">Papers</a><a href="/models.html">Models</a><a href="/benchmarks.html">Benchmarks</a><a href="/data.html">Training data</a><a href="/daily.html">brAIAIn answers</a><a href="/glossary.html">Glossary</a></div>
-<div><p class="foot-h">Company</p><a href="/company.html">About</a><a href="/safety.html">Safety</a><a href="/foundation.html">Foundation</a><a href="/status.html">Status</a><a href="/terms.html">Terms</a><a href="/privacy.html">Privacy</a><a href="/press.html">Press</a><a href="/careers.html">Careers</a><a href="/trust.html">Trust Center</a><a href="/usage-policy.html">Usage policy</a><a href="mailto:hello@braiain.com">Contact</a></div>
+<div><p class="foot-h">Company</p><a href="/company.html">About</a><a href="/safety.html">Safety</a><a href="/foundation.html">Foundation</a><a href="/status.html">Status</a><a href="/terms.html">Terms</a><a href="/privacy.html">Privacy</a><a href="/press.html">Press</a><a href="/careers.html">Careers</a><a href="/faq.html">FAQ</a><a href="/trust.html">Trust Center</a><a href="/usage-policy.html">Usage policy</a><a href="mailto:hello@braiain.com">Contact</a></div>
 </div>
 <p class="small" style="margin-top:32px">BRAIAIN Laboratories is fictional. It is not affiliated with any real AI company. Any resemblance to one is a matter for our legal department, which is this footer. Model names on the Benchmarks page belong to their owners. The code, model and training data are public domain (<a href="/LICENSE" style="display:inline">CC0</a>).</p>
 </div></footer>

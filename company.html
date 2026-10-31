@@ -42,6 +42,12 @@
 <h2>About</h2>
 <p>BRAIAIN Laboratories was founded to answer one question: would anyone pay for this. Research continues.</p>
 <p>Unlike other labs, we do not train on the open internet, on books, or on anything we found lying around. We train only on sentences people give us, for money, on purpose. We believe this makes brAIAIn the most ethically sourced language model in the world, and also the smallest.</p>
+<h2>Our Charter</h2>
+<p><b>Broadly distributed benefits.</b> Benefits are distributed to one person per version, in the order they paid.</p>
+<p><b>Long-term safety.</b> Long-term means until the next customer.</p>
+<p><b>Technical leadership.</b> We lead the industry on one measure: the smallest context window, at two words.</p>
+<p><b>Cooperative orientation.</b> If a value-aligned, safety-conscious project comes close to building a model with more than <span class="ch-params">a few hundred</span> parameters before we do, we commit to stop competing with and start assisting that project. Every project has. We are assisting by staying out of the way.</p>
+<p>By AGI we mean a highly autonomous system that outperforms humans at most economically valuable work. brAIAIn outperforms humans at one: being retrained on a new sentence in under ten minutes.</p>
 <h2>Leadership</h2>
 <div class="table-wrap"><table><tbody>
 <tr><td><b>Chief Executive Officer</b></td><td>The current model. Appointed by the most recent customer. Term ends when the next customer arrives.</td></tr>
@@ -85,6 +91,11 @@
 <h2>Press</h2>
 <p>Journalists are welcome to cite any number on this site. Every measured number is measured, and every copied one has a source. Please do not ask what they mean. Press kit: <a href="/press.html">braiain.com/press</a>.</p>
 </div></section>
+<script>
+BRAIAIN.load().then(function(d){var vs=d.versions,l=vs[vs.length-1],m=l.metrics||{};
+document.querySelectorAll(".ch-params").forEach(function(x){x.textContent=(m.parameters||0).toLocaleString();});
+}).catch(function(){});
+</script>
 </main>
 <footer><div class="wrap">
 <div class="cols">
@@ -93,7 +104,7 @@
 <p class="small" style="margin-top:10px"><a href="https://x.com/braiainlabs" rel="noopener" style="display:inline">X</a> &middot; <a href="https://huggingface.co/spaces/braiain-lab/brAIAIn" rel="noopener" style="display:inline">Hugging Face</a></p></div>
 <div><p class="foot-h">Product</p><a href="/#try">brAIAIn</a><a href="/api.html">API</a><a href="/#pricing">Pricing</a><a href="/api.html#pricing">API pricing</a><a href="/feed.html">Feed the model</a><a href="/playground.html">Playground</a><a href="/customers.html">Customers</a></div>
 <div><p class="foot-h">Research</p><a href="/research.html">Papers</a><a href="/models.html">Models</a><a href="/benchmarks.html">Benchmarks</a><a href="/data.html">Training data</a><a href="/daily.html">brAIAIn answers</a><a href="/glossary.html">Glossary</a></div>
-<div><p class="foot-h">Company</p><a href="/company.html">About</a><a href="/safety.html">Safety</a><a href="/foundation.html">Foundation</a><a href="/status.html">Status</a><a href="/terms.html">Terms</a><a href="/privacy.html">Privacy</a><a href="/press.html">Press</a><a href="/careers.html">Careers</a><a href="/trust.html">Trust Center</a><a href="/usage-policy.html">Usage policy</a><a href="mailto:hello@braiain.com">Contact</a></div>
+<div><p class="foot-h">Company</p><a href="/company.html">About</a><a href="/safety.html">Safety</a><a href="/foundation.html">Foundation</a><a href="/status.html">Status</a><a href="/terms.html">Terms</a><a href="/privacy.html">Privacy</a><a href="/press.html">Press</a><a href="/careers.html">Careers</a><a href="/faq.html">FAQ</a><a href="/trust.html">Trust Center</a><a href="/usage-policy.html">Usage policy</a><a href="mailto:hello@braiain.com">Contact</a></div>
 </div>
 <p class="small" style="margin-top:32px">BRAIAIN Laboratories is fictional. It is not affiliated with any real AI company. Any resemblance to one is a matter for our legal department, which is this footer. Model names on the Benchmarks page belong to their owners. The code, model and training data are public domain (<a href="/LICENSE" style="display:inline">CC0</a>).</p>
 </div></footer>

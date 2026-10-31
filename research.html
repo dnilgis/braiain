@@ -39,7 +39,25 @@
 <h1>Advancing the science of one more sentence.</h1>
 <p class="lede">Our researchers publish a paper with every release. Publication follows training. Peer review remains pending.</p>
 </div></section>
+<section class="tight" style="padding-bottom:0"><div class="wrap narrow"><div class="card" style="padding:26px">
+<p class="eyebrow" style="margin:0">Interpretability</p>
+<h2 style="margin:10px 0 8px">Tracing the thoughts of a language model, completely.</h2>
+<p>Other labs are building microscopes to look inside their models. Ours does not need one. Every word brAIAIn chooses is drawn from the counts of what followed the previous two words, and all of the counts are public.</p>
+<p id="interp">Loading the circuit.</p>
+<p class="small muted" style="margin-bottom:0">Planning ahead: none found. It picks each word after the one before it, like a person who started a sentence without knowing how it ends. Read every count in <a href="/models/latest.json">latest.json</a>.</p>
+</div></div></section>
 <section class="tight"><div class="wrap"><div class="grid g3" id="papers"></div></div></section>
+<script>
+BRAIAIN.load().then(function(d){var vs=d.versions,l=vs[vs.length-1],m=BRAIAIN.model(d,l.v),g=Object.create(null);
+d.training.genesis.forEach(function(x){x.split(/\s+/).forEach(function(w){g[w]=1;});});
+var best=null;Object.keys(m.tri).forEach(function(k){var t=m.tri[k],ks=Object.keys(t);if(k.indexOf("<s>")>-1||ks.length<2)return;var paid=ks.filter(function(w){return !g[w];}),old=ks.filter(function(w){return g[w];});
+ if(!paid.length||!old.length)return;var pw=paid.reduce(function(a,w){return a+t[w];},0),tot=ks.reduce(function(a,w){return a+t[w];},0);if(!best||pw/tot>best.r)best={k:k,t:t,tot:tot,r:pw/tot,paid:paid};});
+var el=document.getElementById("interp");
+if(!best){el.textContent="No circuit yet where a customer's word competes with the founding text. The first one will appear here.";return;}
+var parts=Object.keys(best.t).sort(function(a,b){return best.t[b]-best.t[a];}).map(function(w){return "\u201c"+w+"\u201d "+(best.t[w]===1?"once":best.t[w]===2?"twice":best.t[w]+" times");});
+el.textContent="Example circuit, brAIAIn-"+l.v+": after \u201c"+best.k+"\u201d, the model has seen "+parts.join(", ")+", out of "+best.tot+". "+(best.r>=0.5?"A customer's words now outvote the founding text here.":"A customer's words are competing with the founding text here.");
+}).catch(function(){});
+</script>
 <script>
 BRAIAIN.load().then(function(d){
   document.getElementById("papers").innerHTML=d.versions.slice().reverse().map(function(e){var n=e.notes||{};
@@ -54,7 +72,7 @@ BRAIAIN.load().then(function(d){
 <p class="small" style="margin-top:10px"><a href="https://x.com/braiainlabs" rel="noopener" style="display:inline">X</a> &middot; <a href="https://huggingface.co/spaces/braiain-lab/brAIAIn" rel="noopener" style="display:inline">Hugging Face</a></p></div>
 <div><p class="foot-h">Product</p><a href="/#try">brAIAIn</a><a href="/api.html">API</a><a href="/#pricing">Pricing</a><a href="/api.html#pricing">API pricing</a><a href="/feed.html">Feed the model</a><a href="/playground.html">Playground</a><a href="/customers.html">Customers</a></div>
 <div><p class="foot-h">Research</p><a href="/research.html">Papers</a><a href="/models.html">Models</a><a href="/benchmarks.html">Benchmarks</a><a href="/data.html">Training data</a><a href="/daily.html">brAIAIn answers</a><a href="/glossary.html">Glossary</a></div>
-<div><p class="foot-h">Company</p><a href="/company.html">About</a><a href="/safety.html">Safety</a><a href="/foundation.html">Foundation</a><a href="/status.html">Status</a><a href="/terms.html">Terms</a><a href="/privacy.html">Privacy</a><a href="/press.html">Press</a><a href="/careers.html">Careers</a><a href="/trust.html">Trust Center</a><a href="/usage-policy.html">Usage policy</a><a href="mailto:hello@braiain.com">Contact</a></div>
+<div><p class="foot-h">Company</p><a href="/company.html">About</a><a href="/safety.html">Safety</a><a href="/foundation.html">Foundation</a><a href="/status.html">Status</a><a href="/terms.html">Terms</a><a href="/privacy.html">Privacy</a><a href="/press.html">Press</a><a href="/careers.html">Careers</a><a href="/faq.html">FAQ</a><a href="/trust.html">Trust Center</a><a href="/usage-policy.html">Usage policy</a><a href="mailto:hello@braiain.com">Contact</a></div>
 </div>
 <p class="small" style="margin-top:32px">BRAIAIN Laboratories is fictional. It is not affiliated with any real AI company. Any resemblance to one is a matter for our legal department, which is this footer. Model names on the Benchmarks page belong to their owners. The code, model and training data are public domain (<a href="/LICENSE" style="display:inline">CC0</a>).</p>
 </div></footer>

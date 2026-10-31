@@ -40,6 +40,21 @@
 <p class="lede">A new version for every approved sentence. Each one is more trained than the last. We do not say better.</p>
 </div></section>
 <section class="tight"><div class="wrap"><div class="list" id="all"></div></div></section>
+<section class="tight"><div class="wrap narrow prose">
+<h2>Deprecations</h2>
+<p>We use the term deprecation to refer to the process of retiring a model. Deprecation takes effect when the next customer pays.</p>
+<div class="table-wrap"><table><thead><tr><th>Model</th><th>Retired</th><th>Time in service</th><th>Notice given</th><th>Recommended replacement</th></tr></thead><tbody id="dep"><tr><td colspan="5">Loading</td></tr></tbody></table></div>
+<p class="small muted" id="dep-note">The industry notice period for retiring a model is about six months. Ours is the time between a payment and its release. We use it to train the replacement. Retired models stay available, because every one can be rebuilt from three public files.</p>
+</div></section>
+<script>
+BRAIAIN.load().then(function(d){var vs=d.versions,l=vs[vs.length-1],m=l.metrics||{};
+function dur(ms){var mi=Math.round(ms/60000);return mi<120?mi+" min":(mi<2880?Math.floor(mi/60)+" h "+(mi%60)+" min":Math.round(mi/1440)+" days");}
+var rows=[];for(var i=0;i<vs.length-1;i++){var a=vs[i],b=vs[i+1],up=Date.parse(a.released),dn=Date.parse(b.released),pay=Date.parse(b.paid_at);
+rows.push("<tr><td>brAIAIn-"+a.v+"</td><td>"+fmtDate(b.released)+"</td><td>"+(isNaN(up-dn)?"-":dur(dn-up))+"</td><td>"+(isNaN(dn-pay)?"none":dur(Math.max(0,dn-pay)))+"</td><td>brAIAIn-"+b.v+"</td></tr>");}
+document.getElementById("dep").innerHTML=rows.reverse().join("")||"<tr><td colspan=\"5\">No model has been retired. brAIAIn-0 is waiting.</td></tr>";
+}).catch(function(){});
+</script>
+
 <script>
 BRAIAIN.load().then(function(d){
   document.getElementById("all").innerHTML=d.versions.slice().reverse().map(function(e){var n=e.notes||{};
@@ -54,7 +69,7 @@ BRAIAIN.load().then(function(d){
 <p class="small" style="margin-top:10px"><a href="https://x.com/braiainlabs" rel="noopener" style="display:inline">X</a> &middot; <a href="https://huggingface.co/spaces/braiain-lab/brAIAIn" rel="noopener" style="display:inline">Hugging Face</a></p></div>
 <div><p class="foot-h">Product</p><a href="/#try">brAIAIn</a><a href="/api.html">API</a><a href="/#pricing">Pricing</a><a href="/api.html#pricing">API pricing</a><a href="/feed.html">Feed the model</a><a href="/playground.html">Playground</a><a href="/customers.html">Customers</a></div>
 <div><p class="foot-h">Research</p><a href="/research.html">Papers</a><a href="/models.html">Models</a><a href="/benchmarks.html">Benchmarks</a><a href="/data.html">Training data</a><a href="/daily.html">brAIAIn answers</a><a href="/glossary.html">Glossary</a></div>
-<div><p class="foot-h">Company</p><a href="/company.html">About</a><a href="/safety.html">Safety</a><a href="/foundation.html">Foundation</a><a href="/status.html">Status</a><a href="/terms.html">Terms</a><a href="/privacy.html">Privacy</a><a href="/press.html">Press</a><a href="/careers.html">Careers</a><a href="/trust.html">Trust Center</a><a href="/usage-policy.html">Usage policy</a><a href="mailto:hello@braiain.com">Contact</a></div>
+<div><p class="foot-h">Company</p><a href="/company.html">About</a><a href="/safety.html">Safety</a><a href="/foundation.html">Foundation</a><a href="/status.html">Status</a><a href="/terms.html">Terms</a><a href="/privacy.html">Privacy</a><a href="/press.html">Press</a><a href="/careers.html">Careers</a><a href="/faq.html">FAQ</a><a href="/trust.html">Trust Center</a><a href="/usage-policy.html">Usage policy</a><a href="mailto:hello@braiain.com">Contact</a></div>
 </div>
 <p class="small" style="margin-top:32px">BRAIAIN Laboratories is fictional. It is not affiliated with any real AI company. Any resemblance to one is a matter for our legal department, which is this footer. Model names on the Benchmarks page belong to their owners. The code, model and training data are public domain (<a href="/LICENSE" style="display:inline">CC0</a>).</p>
 </div></footer>

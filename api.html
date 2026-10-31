@@ -89,13 +89,17 @@ print(r.json()["choices"][0]["message"]["content"])</pre>
 <p>Every version can be rebuilt from the public training data in <span class="mono">/data/corpus.json</span>, <span class="mono">/data/versions.json</span> and <span class="mono">/data/training.json</span>. Instructions are in the source of <span class="mono">/assets/braiain.js</span>.</p>
 
 <h2 id="pricing">Pricing</h2>
-<div class="table-wrap"><table><thead><tr><th>Item</th><th>Price</th></tr></thead><tbody>
-<tr><td>Input tokens</td><td>Free</td></tr>
-<tr><td>Output tokens</td><td>Free, and priced accordingly</td></tr>
-<tr><td>Training tokens</td><td><span data-price>$5</span> per sentence</td></tr>
-<tr><td>Fine-tuning</td><td>Included. Your sentence is counted four times.</td></tr>
-<tr><td>Enterprise</td><td>Enterprise inquiries enter the same inbox.</td></tr>
-</tbody></table></div>
+<div class="table-wrap"><table><thead><tr><th>Model</th><th class="num">Input / 1M tokens</th><th class="num">Output / 1M tokens</th><th class="num">Cache read / 1M</th><th class="num">Training / 1M tokens</th></tr></thead><tbody id="ppm"><tr><td colspan="5">Loading</td></tr></tbody></table></div>
+<p>Training is priced per sentence (<span data-price>$5</span>), so the price per token is set by the customer: longer sentences cost less per token, up to the 255-character limit. Fine-tuning counts the newest sentence four times, which cuts the effective rate by 75%. We have not found the catch. Cache reads are free because the model is a cache. Batch API: not offered; every sentence is already its own batch. Enterprise inquiries enter the same inbox.</p>
+<script>
+BRAIAIN.load().then(function(d){var vs=d.versions,l=vs[vs.length-1],m=l.metrics||{};
+var rows=vs.slice().reverse().map(function(e,i){var c=null;d.corpus.forEach(function(x){if(x.v===e.v&&x.text)c=x;});var price={sentence:5,certificate:15,naming:50}[(c||{}).tier]||5;
+var tr=c?"$"+Math.round(price/c.text.split(/\s+/).length*1e6).toLocaleString():(e.v===0?"Founding text: free":"Recalled");
+return "<tr><td>brAIAIn-"+e.v+(i===0?"":" (legacy)")+"</td><td class=\"num\">$0</td><td class=\"num\">$0</td><td class=\"num\">$0</td><td class=\"num\">"+tr+"</td></tr>";});
+document.getElementById("ppm").innerHTML=rows.join("");
+}).catch(function(){});
+</script>
+
 <h2>Rate limits</h2>
 <p>Please be reasonable. We will define reasonable after you are not.</p>
 <h2>Uptime</h2>
@@ -120,7 +124,7 @@ print(r.json()["choices"][0]["message"]["content"])</pre>
 <p class="small" style="margin-top:10px"><a href="https://x.com/braiainlabs" rel="noopener" style="display:inline">X</a> &middot; <a href="https://huggingface.co/spaces/braiain-lab/brAIAIn" rel="noopener" style="display:inline">Hugging Face</a></p></div>
 <div><p class="foot-h">Product</p><a href="/#try">brAIAIn</a><a href="/api.html">API</a><a href="/#pricing">Pricing</a><a href="/api.html#pricing">API pricing</a><a href="/feed.html">Feed the model</a><a href="/playground.html">Playground</a><a href="/customers.html">Customers</a></div>
 <div><p class="foot-h">Research</p><a href="/research.html">Papers</a><a href="/models.html">Models</a><a href="/benchmarks.html">Benchmarks</a><a href="/data.html">Training data</a><a href="/daily.html">brAIAIn answers</a><a href="/glossary.html">Glossary</a></div>
-<div><p class="foot-h">Company</p><a href="/company.html">About</a><a href="/safety.html">Safety</a><a href="/foundation.html">Foundation</a><a href="/status.html">Status</a><a href="/terms.html">Terms</a><a href="/privacy.html">Privacy</a><a href="/press.html">Press</a><a href="/careers.html">Careers</a><a href="/trust.html">Trust Center</a><a href="/usage-policy.html">Usage policy</a><a href="mailto:hello@braiain.com">Contact</a></div>
+<div><p class="foot-h">Company</p><a href="/company.html">About</a><a href="/safety.html">Safety</a><a href="/foundation.html">Foundation</a><a href="/status.html">Status</a><a href="/terms.html">Terms</a><a href="/privacy.html">Privacy</a><a href="/press.html">Press</a><a href="/careers.html">Careers</a><a href="/faq.html">FAQ</a><a href="/trust.html">Trust Center</a><a href="/usage-policy.html">Usage policy</a><a href="mailto:hello@braiain.com">Contact</a></div>
 </div>
 <p class="small" style="margin-top:32px">BRAIAIN Laboratories is fictional. It is not affiliated with any real AI company. Any resemblance to one is a matter for our legal department, which is this footer. Model names on the Benchmarks page belong to their owners. The code, model and training data are public domain (<a href="/LICENSE" style="display:inline">CC0</a>).</p>
 </div></footer>

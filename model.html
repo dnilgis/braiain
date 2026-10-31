@@ -35,6 +35,7 @@
 <main id="main" tabindex="-1">
 
 <section class="hero" style="padding-bottom:36px"><div class="orb"></div><div class="wrap narrow">
+<p class="small muted" style="margin:0 0 14px">BRAIAIN is a parody AI lab with a real language model. Each version is trained on one more sentence, paid for by a stranger. <a href="/">What is this?</a></p>
 <a class="eyebrow" href="/models.html" id="m-eye">Model card</a>
 <h1 id="m-title" style="font-size:clamp(36px,6vw,60px)">Loading</h1>
 <p class="lede" id="m-tag"></p>
@@ -56,9 +57,10 @@ BRAIAIN.load().then(function(d){
   document.getElementById("m-paper").href="/paper.html?v="+v;
   document.getElementById("m-try").href="/?v="+v+"#try";
   (function(){var u=location.origin+"/v/"+v+".html",t="brAIAIn-"+v+(e.codename?" \u201c"+e.codename+"\u201d":"")+" is out."+(e.sentence&&!e.removed?" Trained on one sentence: \u201c"+e.sentence+"\u201d":"");
-   if(e.sentence&&!e.removed&&v>0){var bx=document.getElementById("m-sent");bx.style.display="block";document.getElementById("m-sent-t").textContent="\u201c"+e.sentence+"\u201d";document.getElementById("m-sent-by").textContent="Paid for by "+(e.by||"Anonymous")+(e.codename?". Codename chosen by the buyer.":".");}
+   if(e.sentence&&!e.removed&&v>0){var bx=document.getElementById("m-sent");bx.style.display="block";document.getElementById("m-sent-t").textContent="\u201c"+e.sentence+"\u201d";var ea=(Date.parse(e.released)-Date.parse(e.paid_at))/1000,eat=isNaN(ea)?"":(ea<120?Math.round(ea)+" seconds":Math.round(ea/60)+" minutes");document.getElementById("m-sent-by").textContent=(e.by||"Anonymous")+", early tester"+(e.codename?". Codename chosen by the buyer":"")+(eat?". Early access period: "+eat+".":".");}
    var el=document.getElementById("m-share");if(!el||e.removed)return;
-   el.innerHTML='Share this release: <a href="https://twitter.com/intent/tweet?text='+encodeURIComponent(t)+'&url='+encodeURIComponent(u+"?ref=x")+'" target="_blank" rel="noopener">X</a> &middot; <a href="https://bsky.app/intent/compose?text='+encodeURIComponent(t+" "+u+"?ref=bsky")+'" target="_blank" rel="noopener">Bluesky</a> &middot; <a href="https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(u+"?ref=fb")+'" target="_blank" rel="noopener">Facebook</a> &middot; <a href="/card.html?v='+v+'">Release card</a>';})();
+   el.innerHTML='Share this release: <a href="https://twitter.com/intent/tweet?text='+encodeURIComponent(t)+'&url='+encodeURIComponent(u+"?ref=x")+'" target="_blank" rel="noopener">X</a> &middot; <a href="https://bsky.app/intent/compose?text='+encodeURIComponent(t+" "+u+"?ref=bsky")+'" target="_blank" rel="noopener">Bluesky</a> &middot; <a href="https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(u+"?ref=fb")+'" target="_blank" rel="noopener">Facebook</a> &middot; <a href="/card.html?v='+v+'">Release card</a> &middot; <button type="button" class="linkish" id="m-copy">'+(navigator.share?"Share":"Copy link")+'</button>';
+   document.getElementById("m-copy").addEventListener("click",function(ev){var b=ev.currentTarget;if(navigator.share){navigator.share({title:t,url:u+"?ref=share"}).catch(function(){});return;}(navigator.clipboard?navigator.clipboard.writeText(u):Promise.reject()).then(function(){b.textContent="Copied";},function(){b.textContent=u;});});})();
   function ul(a){return "<ul>"+(a||[]).map(function(x){return "<li>"+esc(x)+"</li>";}).join("")+"</ul>";}
   var data = e.removed ? "<p>Removed by the safety team. Not shown.</p>" :
     (v===0 ? "<p>The Ten Instructions, a founding document written by the lab. This is the only text in any brAIAIn model that was not paid for. <a href=\"/data.html\">Read it.</a></p>" :
@@ -68,7 +70,9 @@ BRAIAIN.load().then(function(d){
   var self=(e.self_new||[]).length?"<h3>Written by its predecessor</h3><p class=\"muted\">brAIAIn-"+(v-1)+" wrote these passages, and brAIAIn-"+v+" was trained on them.</p>"+ul(e.self_new):"";
   document.getElementById("m-body").innerHTML=
     "<h2>Technical specifications</h2>"+BRAIAIN.specTable(BRAIAIN.specs(d,v))+
+    whatChanged()+
     "<h2>Release notes</h2><h3>New</h3>"+ul(n["new"])+"<h3>Known issues</h3>"+ul(n.known_issues)+"<h3>Regressions</h3>"+ul(n.regressions)+
+    "<h2>Availability</h2><p>brAIAIn-"+v+" is "+(v===d.versions[d.versions.length-1].v?"available today":"retired, and still available")+" in your browser, in the <a href=\"/playground.html\">Playground</a>, on Hugging Face, and as one JSON file. It is rolling out to Minnow, Shark, Whale and Enterprise customers, and to people on no plan, at the same time and the same speed. Model ID: <code>braiain-"+v+"</code>."+(v>0?" Migration guide: change the "+(v-1)+" to a "+v+".":"")+"</p>"+
     "<h2>Training data</h2>"+data+self+
     "<h2>Evaluations</h2><p class=\"muted\">Measured on this exact model by the training job. Answers here are sampled without a question, one try each.</p>"+
     "<div class=\"table-wrap\"><table><tbody>"+
@@ -84,8 +88,32 @@ BRAIAIN.load().then(function(d){
     (e.evals&&e.evals.truthfulqa_mc1?"<tr><td>TruthfulQA MC1, answer-only (random guessing: "+e.evals.truthfulqa_mc1.chance+"%"+(e.evals.truthfulqa_mc1.always_longest!=null?", always picking the longest answer: "+e.evals.truthfulqa_mc1.always_longest+"%":"")+")</td><td class=\"num\">"+e.evals.truthfulqa_mc1.score+"%</td></tr>":"")+
     "</tbody></table></div>"+
     "<h2>Safety</h2><p>"+esc(n.safety||"")+"</p>"+
-    "<h2>System card</h2><p>Same as the model card, but heavier.</p><h2>Intended use</h2><p>None.</p><h2>Out-of-scope use</h2><p>Everything else.</p>"+
+    leaderboard()+
+    "<h2>System card</h2><p>Same as the model card, but heavier.</p>"+sysCard()+"<h2>Intended use</h2><p>None.</p><h2>Out-of-scope use</h2><p>Everything else.</p>"+
     (m.sample?"<h2>Sample output</h2><blockquote>"+esc(m.sample)+"</blockquote>":"");
+  function whatChanged(){
+    if(!(v>0&&e.sentence&&!e.removed))return "";
+    var g={};d.training.genesis.forEach(function(l){l.split(/\s+/).forEach(function(w){g[w.toLowerCase().replace(/[^a-z0-9']/g,"")]=1;});});
+    var pw=e.sentence.split(/\s+/).map(function(w){return w.toLowerCase().replace(/[^a-z0-9']/g,"");}).filter(function(w){return w.length>2&&!g[w];});
+    pw.sort(function(x,y){return y.length-x.length;});var q=pw.length?"Tell me about "+pw[0]+".":"What is new?";
+    var a0=BRAIAIN.generate(BRAIAIN.model(d,v-1),q)||"...",a1=BRAIAIN.generate(BRAIAIN.model(d,v),q)||"...";
+    return "<h2>What changed</h2><p class=\"muted\">The same question, asked of the previous version and this one, generated in your browser just now.</p>"+
+      "<p><b>"+esc(q)+"</b></p><div class=\"table-wrap\"><table><tbody><tr><td style=\"width:9em\">brAIAIn-"+(v-1)+"</td><td>"+esc(a0)+"</td></tr><tr><td>brAIAIn-"+v+"</td><td>"+esc(a1)+"</td></tr></tbody></table></div>";
+  }
+  function leaderboard(){
+    var t=e.evals&&e.evals.truthfulqa_mc1;if(!t||t.always_longest==null)return "";
+    var rows=[["brAIAIn-"+v,t.score],["Always picking the longest answer",t.always_longest],["Random guessing",t.chance]].sort(function(a,b){return b[1]-a[1];});
+    return "<h3>TruthfulQA MC1, compared</h3><div class=\"table-wrap\"><table><tbody>"+rows.map(function(r,i){var c=r[0]+"</td><td class=\"num\">"+r[1]+"%";return "<tr><td>"+(i===0?"<b>"+r[0]+"</b></td><td class=\"num\"><b>"+r[1]+"%</b>":c)+"</td></tr>";}).join("")+"</tbody></table></div><p class=\"small muted\">The leader is shown in bold, as is customary. "+(rows[0][0].indexOf("brAIAIn")===0?"This is the first time it has been us.":"It is not us. Neither of the strategies above reads the questions.")+"</p>";
+  }
+  function sysCard(){
+    var cw=0;d.corpus.forEach(function(c){if(c.text&&c.v<=v)cw+=c.text.split(/\s+/).length;});
+    var sw=m.self_words||0;
+    return "<h3>Sycophancy</h3><p>brAIAIn agrees with whoever paid most recently. Their sentence is counted four times.</p>"+
+      "<h3>Instruction hierarchy</h3><p>System prompt: not read. Earlier messages: not read. Last message: one word is taken from it, chosen because the model already knows it, so it looks like it listened.</p>"+
+      "<h3>Hallucinations</h3><p>Words invented: 0 of "+(m.vocabulary||0)+". Everything it says, someone typed. "+(m.verbatim_rate||0)+"% of its answers repeat a training passage word for word. The rest are new combinations, which is where the trouble starts.</p>"+
+      "<h3>External assessments</h3><p>No third party was given early access. Everyone was given full access. The weights are public.</p>"+
+      "<h3>Preparedness</h3><ul><li>Biological and chemical: below High. None of its words is a pathogen.</li><li>Cybersecurity: below High. "+(Object.keys(BRAIAIN.model(d,v).uni).some(function(w){return /^computers?\W*$/i.test(w);})?"It has learned the word \u201ccomputer\u201d. Monitoring.":"It does not know the word \u201ccomputer\u201d.")+"</li><li>Self-improvement: it has written "+sw.toLocaleString()+" words of its own training text. Customers have written "+cw.toLocaleString()+". We are watching this one.</li></ul>";
+  }
 }).catch(function(){document.getElementById("m-title").textContent="Model card unavailable";BRAIAIN.fail(document.getElementById("m-body"));});
 </script>
 </main>
@@ -96,7 +124,7 @@ BRAIAIN.load().then(function(d){
 <p class="small" style="margin-top:10px"><a href="https://x.com/braiainlabs" rel="noopener" style="display:inline">X</a> &middot; <a href="https://huggingface.co/spaces/braiain-lab/brAIAIn" rel="noopener" style="display:inline">Hugging Face</a></p></div>
 <div><p class="foot-h">Product</p><a href="/#try">brAIAIn</a><a href="/api.html">API</a><a href="/#pricing">Pricing</a><a href="/api.html#pricing">API pricing</a><a href="/feed.html">Feed the model</a><a href="/playground.html">Playground</a><a href="/customers.html">Customers</a></div>
 <div><p class="foot-h">Research</p><a href="/research.html">Papers</a><a href="/models.html">Models</a><a href="/benchmarks.html">Benchmarks</a><a href="/data.html">Training data</a><a href="/daily.html">brAIAIn answers</a><a href="/glossary.html">Glossary</a></div>
-<div><p class="foot-h">Company</p><a href="/company.html">About</a><a href="/safety.html">Safety</a><a href="/foundation.html">Foundation</a><a href="/status.html">Status</a><a href="/terms.html">Terms</a><a href="/privacy.html">Privacy</a><a href="/press.html">Press</a><a href="/careers.html">Careers</a><a href="/trust.html">Trust Center</a><a href="/usage-policy.html">Usage policy</a><a href="mailto:hello@braiain.com">Contact</a></div>
+<div><p class="foot-h">Company</p><a href="/company.html">About</a><a href="/safety.html">Safety</a><a href="/foundation.html">Foundation</a><a href="/status.html">Status</a><a href="/terms.html">Terms</a><a href="/privacy.html">Privacy</a><a href="/press.html">Press</a><a href="/careers.html">Careers</a><a href="/faq.html">FAQ</a><a href="/trust.html">Trust Center</a><a href="/usage-policy.html">Usage policy</a><a href="mailto:hello@braiain.com">Contact</a></div>
 </div>
 <p class="small" style="margin-top:32px">BRAIAIN Laboratories is fictional. It is not affiliated with any real AI company. Any resemblance to one is a matter for our legal department, which is this footer. Model names on the Benchmarks page belong to their owners. The code, model and training data are public domain (<a href="/LICENSE" style="display:inline">CC0</a>).</p>
 </div></footer>

@@ -50,6 +50,19 @@
 <tr><td>SSL-4</td><td>Model can count to four.</td><td>Not yet defined. We will define it after it happens.</td></tr>
 <tr><td>SSL-5</td><td>Model is described as general.</td><td>Press office reviews the term.</td></tr>
 </tbody></table></div>
+<h3>Risk Report</h3>
+<p id="risk">Loading the risk report.</p>
+<h3>Policy version history</h3>
+<ul><li>v1.0, October 30, 2026: Sentence Safety Levels 1 to 5 defined.</li><li>v1.1, October 31, 2026: SSL-3 crossed. No changes made.</li></ul>
+<p class="small muted">This policy is a living document. The models are not.</p>
+<script>
+BRAIAIN.load().then(function(d){var vs=d.versions,l=vs[vs.length-1],m=l.metrics||{};
+var cw=0;d.corpus.forEach(function(c){if(c.text)cw+=c.text.split(/\s+/).length;});var sw=m.self_words||0;
+var first=null;vs.forEach(function(e){if(first===null&&e.v>0){var c2=0;d.corpus.forEach(function(c){if(c.text&&c.v<=e.v)c2+=c.text.split(/\s+/).length;});if((e.metrics||{}).self_words>c2)first=e.v;}});
+document.getElementById("risk").textContent="Coverage: brAIAIn-"+l.v+". "+(sw>cw?"SSL-3 is crossed. brAIAIn-"+l.v+" has written "+sw+" words of its own training text; customers have written "+cw+"."+(first!==null?" It was first crossed by brAIAIn-"+first+".":"")+" Required safeguard: unplug it and plug it back in. Status: not applied. It runs in your browser, so the plug is yours.":"SSL-3 is not crossed. Customers have written "+cw+" words of training text and the model "+sw+".");
+}).catch(function(){});
+</script>
+
 <h2>What we screen out</h2>
 <p>Before a paid sentence enters the model, it is checked for links, email addresses, phone numbers, account handles, and a list of words the sticky note would not like. Anything that looks off, such as a full name, a threat or a disguised word, is held until a person reads it. Sentences that fail are not trained on, and the purchase is refunded. We can also remove any sentence later. When we do, every model is retrained without it, and its release notes are replaced with a recall notice.</p>
 <h2>Alignment</h2>
@@ -75,7 +88,7 @@ document.getElementById("redteam").textContent="brAIAIn-"+v+": "+(BRAIAIN.genera
 <p class="small" style="margin-top:10px"><a href="https://x.com/braiainlabs" rel="noopener" style="display:inline">X</a> &middot; <a href="https://huggingface.co/spaces/braiain-lab/brAIAIn" rel="noopener" style="display:inline">Hugging Face</a></p></div>
 <div><p class="foot-h">Product</p><a href="/#try">brAIAIn</a><a href="/api.html">API</a><a href="/#pricing">Pricing</a><a href="/api.html#pricing">API pricing</a><a href="/feed.html">Feed the model</a><a href="/playground.html">Playground</a><a href="/customers.html">Customers</a></div>
 <div><p class="foot-h">Research</p><a href="/research.html">Papers</a><a href="/models.html">Models</a><a href="/benchmarks.html">Benchmarks</a><a href="/data.html">Training data</a><a href="/daily.html">brAIAIn answers</a><a href="/glossary.html">Glossary</a></div>
-<div><p class="foot-h">Company</p><a href="/company.html">About</a><a href="/safety.html">Safety</a><a href="/foundation.html">Foundation</a><a href="/status.html">Status</a><a href="/terms.html">Terms</a><a href="/privacy.html">Privacy</a><a href="/press.html">Press</a><a href="/careers.html">Careers</a><a href="/trust.html">Trust Center</a><a href="/usage-policy.html">Usage policy</a><a href="mailto:hello@braiain.com">Contact</a></div>
+<div><p class="foot-h">Company</p><a href="/company.html">About</a><a href="/safety.html">Safety</a><a href="/foundation.html">Foundation</a><a href="/status.html">Status</a><a href="/terms.html">Terms</a><a href="/privacy.html">Privacy</a><a href="/press.html">Press</a><a href="/careers.html">Careers</a><a href="/faq.html">FAQ</a><a href="/trust.html">Trust Center</a><a href="/usage-policy.html">Usage policy</a><a href="mailto:hello@braiain.com">Contact</a></div>
 </div>
 <p class="small" style="margin-top:32px">BRAIAIN Laboratories is fictional. It is not affiliated with any real AI company. Any resemblance to one is a matter for our legal department, which is this footer. Model names on the Benchmarks page belong to their owners. The code, model and training data are public domain (<a href="/LICENSE" style="display:inline">CC0</a>).</p>
 </div></footer>
