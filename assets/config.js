@@ -2,7 +2,7 @@
 window.BRAIAIN_CONFIG = {
   // The legal seller shown on the Terms and Privacy pages, e.g. "Example Ventures LLC".
   // Fill this in before taking payments.
-  operator: "Sigurd Lindquist, doing business as BRAIAIN",
+  operator: "BRAIAIN, a sole proprietorship",
   // Stripe Payment Links, one per tier. Leave "" for a tier you do not offer.
   // Buying stays closed until opensAt, even if these are filled in early.
   paymentLink: "https://buy.stripe.com/28E6oHaKQdb2eq7eR47N600",             // $5: one sentence
