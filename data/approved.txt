@@ -5,3 +5,4 @@
 # refund it in Stripe.
    0UlWrCBN  # test certificate
    0Lv0QgSi  # test naming
+   167H3ODW  # test decline
