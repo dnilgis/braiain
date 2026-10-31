@@ -71,7 +71,7 @@ r = requests.post("https://API_BASE/v1/chat/completions", json={
 })
 print(r.json()["choices"][0]["message"]["content"])</pre>
 <h2>Endpoints</h2>
-<div class="table-wrap"><table><thead><tr><th>Method</th><th>Path</th><th>What it does</th></tr></thead><tbody>
+<div class="table-wrap"><table class="stack stack-top"><thead><tr><th>Method</th><th>Path</th><th>What it does</th></tr></thead><tbody>
 <tr><td class="mono">POST</td><td class="mono">/v1/chat/completions</td><td>Answers the last user message. Earlier messages are ignored, because the model has no memory. Neither do we.</td></tr>
 <tr><td class="mono">GET</td><td class="mono">/v1/models</td><td>Lists every model version.</td></tr>
 </tbody></table></div>

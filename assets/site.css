@@ -261,7 +261,8 @@ svg.adapt [fill="#111"]{fill:var(--ink)} svg.adapt [stroke="#111"]{stroke:var(--
 svg.adapt [fill="#5f5f5f"]{fill:var(--muted)} svg.adapt [fill="#f6f6f6"]{fill:var(--soft)}
 .top .theme-toggle + .cta{margin-left:0}.top .theme-toggle{margin-right:-14px}
 @media (max-width:860px){.top .theme-toggle{margin:0 0 0 -16px}}
-blockquote,td,.card,.lede,.prose p,.prose li,h1,h2,h3,.msg{overflow-wrap:anywhere}
+blockquote,.card,.lede,.prose p,.prose li,h1,h2,h3,.msg{overflow-wrap:anywhere}
+td,th{overflow-wrap:break-word}.card td,.card th{overflow-wrap:break-word}
 .tiers.four{grid-template-columns:repeat(4,1fr)}
 @media (max-width:1100px){.tiers.four{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:600px){.tiers.four{grid-template-columns:1fr}}
@@ -327,3 +328,7 @@ section[id]{scroll-margin-top:80px}
 .cert-peek{max-width:560px;margin:28px auto 0;text-align:center}.cert-peek img{width:100%;height:auto;display:block;border-radius:4px;box-shadow:0 10px 30px rgba(0,0,0,.18);transform:rotate(-1deg);transition:transform .2s}.cert-peek a:hover img{transform:rotate(0) scale(1.01)}.cert-peek figcaption{margin-top:12px}
 @media (max-width:600px){.log{height:290px}}
 .quotes{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}.card.quote{margin:0;padding:24px 22px;display:flex;flex-direction:column;gap:10px}.card.quote blockquote{margin:0;font-size:20px;line-height:1.35;font-weight:500;letter-spacing:-.01em}.card.quote figcaption{margin-top:auto}.card.quote .reply{margin:0;padding-top:10px;border-top:1px solid var(--line);color:var(--muted)}
+.nw{white-space:nowrap}
+@media (max-width:640px){table.stack thead,table.stack tr:first-child:not(:has(td)){display:none}table.stack,table.stack tbody,table.stack tr{display:block;width:100%}table.stack tr{padding:12px 0;border-bottom:1px solid var(--line)}table.stack td{display:flex;justify-content:space-between;align-items:baseline;gap:16px;border:0;padding:3px 0;text-align:right}table.stack td::before{content:attr(data-label);color:var(--muted);font-size:13px;text-align:left;flex:0 0 auto;max-width:55%}table.stack td:first-child{font-weight:600;font-size:16px;text-align:left;padding-bottom:6px}table.stack td:first-child::before{display:none}}
+@media (max-width:640px){table.stack td:first-child{display:block}table.stack-top td{display:block;text-align:left}table.stack-top td::before{display:block;max-width:none;margin-bottom:2px}table.stack-top td:first-child::before{display:none}}
+@media (max-width:600px){.chat-head .peel{margin-left:0}}

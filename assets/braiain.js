@@ -381,3 +381,60 @@ document.addEventListener("DOMContentLoaded", function () {
     top.parentNode.insertBefore(bar, top);
   }).catch(function () {});
 });
+
+// Tables: keep hyphenated names (brAIAIn-12, SSL-3, GPT-4o) on one line instead of splitting at the hyphen.
+(function () {
+  var RE = /[A-Za-z0-9.$]+(?:-[A-Za-z0-9.]+)+/g;
+  // Wide tables (5+ columns) become label/value cards on phones; see table.stack in site.css.
+  function stack(root) {
+    var ts = root.querySelectorAll ? root.querySelectorAll("table") : [];
+    for (var i = 0; i < ts.length; i++) {
+      var t = ts[i], head = t.tHead ? t.tHead.rows[0] : null;
+      if (!head && t.rows[0] && !t.rows[0].querySelector("td")) head = t.rows[0];
+      if (!head || (head.cells.length < 5 && !t.classList.contains("stack"))) continue;
+      var labels = [].map.call(head.cells, function (c) { return c.innerText.replace(/\s+/g, " ").trim(); });
+      t.classList.add("stack");
+      for (var r = 0; r < t.rows.length; r++) {
+        if (t.rows[r] === head) continue;
+        var cs = t.rows[r].cells;
+        for (var k = 0; k < cs.length; k++) if (!cs[k].hasAttribute("data-label")) cs[k].setAttribute("data-label", labels[k] || "");
+      }
+    }
+  }
+  var NAME = /brAIAIn-\d+|\b[A-Z][A-Za-z]*-\d+[A-Za-z]*\b/g, SKIP = { SCRIPT: 1, STYLE: 1, TEXTAREA: 1, TITLE: 1, OPTION: 1, CODE: 1, PRE: 1 };
+  function wrap(t, re) {
+    var s = t.nodeValue, frag = document.createDocumentFragment(), last = 0, m;
+    re.lastIndex = 0;
+    while ((m = re.exec(s))) {
+      if (m[0].length > 24) continue;
+      frag.appendChild(document.createTextNode(s.slice(last, m.index)));
+      var sp = document.createElement("span"); sp.className = "nw"; sp.textContent = m[0]; frag.appendChild(sp);
+      last = m.index + m[0].length;
+    }
+    if (!last) return;
+    frag.appendChild(document.createTextNode(s.slice(last)));
+    t.parentNode.replaceChild(frag, t);
+  }
+  function fix(root) {
+    stack(root);
+    var w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null), n, todo = [];
+    while ((n = w.nextNode())) {
+      var p = n.parentNode;
+      if (!p || p.className === "nw" || SKIP[p.nodeName] || p.closest && p.closest("svg,textarea,script,style")) continue;
+      if (!/\w-\w/.test(n.nodeValue)) continue;
+      todo.push([n, p.closest && p.closest("td,th") ? RE : NAME]);
+    }
+    todo.forEach(function (x) { wrap(x[0], x[1]); });
+  }
+  function start() {
+    fix(document);
+    if (window.MutationObserver) {
+      var busy = false;
+      new MutationObserver(function () {
+        if (busy) return; busy = true;
+        setTimeout(function () { busy = false; fix(document); }, 50);
+      }).observe(document.body, { childList: true, subtree: true });
+    }
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start); else start();
+})();
