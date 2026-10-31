@@ -324,3 +324,22 @@ function fmtDate(iso) {
   return d.toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" });
 }
 function qp(name) { return new URLSearchParams(location.search).get(name); }
+
+// Analytics events (Google Analytics, if loaded). No personal data is sent.
+(function () {
+  function track(name, params) { try { if (window.gtag) window.gtag("event", name, params || {}); } catch (e) {} }
+  var p = new URLSearchParams(location.search), ref = p.get("ref");
+  if (ref && !p.get("utm_source")) track("ref_visit", { ref: ref.slice(0, 40) });
+  if (/\/thanks(\.html)?$/.test(location.pathname)) track("checkout_complete");
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest && e.target.closest("a, button");
+    if (!a) return;
+    if (a.hasAttribute("data-buy")) {
+      var tier = a.getAttribute("data-buy") || "sentence", href = a.getAttribute("href") || "";
+      if (/buy\.stripe\.com/.test(href)) track("begin_checkout", { tier: tier, value: { sentence: 5, certificate: 15, naming: 50 }[tier] || 5, currency: "USD" });
+    } else if (a.id === "peel") track("peel_layer");
+    else if (a.id === "card-dl") track("release_card_download");
+    else if (/huggingface\.co|x\.com\//.test(a.getAttribute("href") || "")) track("outbound_social", { to: (a.getAttribute("href") || "").split("/")[2] });
+  }, true);
+  document.addEventListener("submit", function (e) { if (e.target && e.target.id === "ask") track("chat_message"); }, true);
+})();
