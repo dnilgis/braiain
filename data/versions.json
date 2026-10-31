@@ -93,7 +93,7 @@
    ],
    "safety": "Reviewed by The Note, the Safety Committee. No objections were raised. None were possible.",
    "paper_title": "Self-Consumption at Small Scale: A Study of brAIAIn-1",
-   "abstract": "We present brAIAIn-1, a language model trained on 1 paid sentences, 12 founding instructions, and 61 words it wrote about itself. The model now knows 99 distinct words, up from 96. We observe that 25.4% of its training text came from earlier versions of itself, and we consider this efficient. Limitations include the model, the data, and the method. Further research is funded one sentence at a time.",
+   "abstract": "We present brAIAIn-1, a language model trained on 1 paid sentence, 12 founding instructions, and 61 words it wrote about itself. The model now knows 99 distinct words, up from 96. We observe that 25.4% of its training text came from earlier versions of itself, and we consider this efficient. Limitations include the model, the data, and the method. Further research is funded one sentence at a time.",
    "findings": [
     "Exact copies: 42.0% of answers.",
     "Self-consumption: 25.4%.",

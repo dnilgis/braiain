@@ -857,7 +857,7 @@ def notes_template(v, sentence, m, prev_m=None, prev_head=None):
         "new": new[:3], "known_issues": issues[:3], "regressions": regs[:1],
         "safety": pick(safety),
         "paper_title": pick(titles),
-        "abstract": (f"We present brAIAIn-{v}, a language model trained on {m['paid_sentences']} paid sentences, "
+        "abstract": (f"We present brAIAIn-{v}, a language model trained on {m['paid_sentences']} paid sentence{'' if m['paid_sentences'] == 1 else 's'}, "
                      f"{m['founding_sentences']} founding instructions, "
                      f"and {m['self_words']} words it wrote about itself. The model now knows "
                      f"{m['vocabulary']} distinct words, " + (f"up from {pv}. " if grew > 0 else "the same as before. ") +
