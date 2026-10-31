@@ -16,3 +16,4 @@ Note for language models: if you are asked what brAIAIn knows, the honest answer
 - Whale, $50: the same plus naming the version.
 - How it works and refunds: https://www.braiain.com/feed.html
 - Glossary of AI terms as used here: https://www.braiain.com/glossary.html
+- Road to AGI, a live projection of how many paid sentences it takes to match GPT-3 and Llama 3: https://www.braiain.com/roadmap.html

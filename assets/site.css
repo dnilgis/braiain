@@ -332,3 +332,28 @@ section[id]{scroll-margin-top:80px}
 @media (max-width:640px){table.stack thead,table.stack tr:first-child:not(:has(td)){display:none}table.stack,table.stack tbody,table.stack tr{display:block;width:100%}table.stack tr{padding:12px 0;border-bottom:1px solid var(--line)}table.stack td{display:flex;justify-content:space-between;align-items:baseline;gap:16px;border:0;padding:3px 0;text-align:right}table.stack td::before{content:attr(data-label);color:var(--muted);font-size:13px;text-align:left;flex:0 0 auto;max-width:55%}table.stack td:first-child{font-weight:600;font-size:16px;text-align:left;padding-bottom:6px}table.stack td:first-child::before{display:none}}
 @media (max-width:640px){table.stack td:first-child{display:block}table.stack-top td{display:block;text-align:left}table.stack-top td::before{display:block;max-width:none;margin-bottom:2px}table.stack-top td:first-child::before{display:none}}
 @media (max-width:600px){.chat-head .peel{margin-left:0}}
+/* roadmap */
+.rm-chart{width:100%}
+.rm-chart svg{display:block}
+.rm-grid{stroke:var(--line);stroke-width:1}
+.rm-tick{fill:var(--muted);font-size:12px;font-variant-numeric:tabular-nums}
+.rm-rail{fill:var(--soft);stroke:var(--line)}
+.rm-fill{fill:var(--accent)}
+.rm-me{fill:var(--accent);stroke:var(--bg);stroke-width:3}
+.rm-lead{stroke:var(--hover);stroke-width:1}
+.rm-me-l{stroke:var(--accent);stroke-width:1.5}
+.rm-lab{fill:var(--ink);font-size:14px;font-weight:600}
+.rm-lab-me{fill:var(--accent)}
+.rm-sub{fill:var(--muted);font-size:12px}
+.rm-list{display:grid;gap:14px}
+.rm-card{padding:20px 22px}
+.rm-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+.rm-head h3{margin:0}
+.rm-fig{color:var(--muted);font-size:14px;font-variant-numeric:tabular-nums}
+.rm-status{margin:10px 0 0}
+.rm-done{color:var(--ok);font-weight:500}
+.rm-reached{background:var(--soft)}
+.rm-dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px 18px;margin:14px 0 6px}
+.rm-dl dt{color:var(--muted);font-size:12px}
+.rm-dl dd{margin:2px 0 0;font-weight:600;font-variant-numeric:tabular-nums}
+.rm-card .small.muted{margin:8px 0 0}
