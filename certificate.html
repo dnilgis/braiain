@@ -48,12 +48,18 @@ BRAIAIN.load().then(function(d){
   if(e.tier!=="certificate"&&e.tier!=="naming"){el.innerHTML="<h1>No certificate was purchased</h1><p>brAIAIn-"+v+" was trained on a sentence bought without a certificate. The sentence is no less trained. It is less certified.</p>";return;}
   document.title="Certificate, brAIAIn-"+v+" | BRAIAIN";
   var seal=(document.querySelector("header.top .brand svg")||{}).outerHTML||"";
+  var mv=Math.min(v,d.versions[d.versions.length-1].v),modelSig=(BRAIAIN.generate(BRAIAIN.model(d,mv),"sign here")||"brAIAIn").split(" ").slice(0,4).join(" ").replace(/[,;:]$/,"");
   el.innerHTML='<div class="seal">'+seal+'</div><p style="letter-spacing:.2em;font-size:13px">BRAIAIN LABORATORIES</p><h1>Certificate of Contribution</h1>'+
     '<p>This certifies that</p><p style="font-size:26px;margin:6px 0">'+esc(e.by||"Anonymous")+'</p>'+
     '<p>contributed the training data for <b>brAIAIn-'+v+'</b>'+(e.codename?', codename <b>“'+esc(e.codename)+'”</b>':'')+', released '+fmtDate(e.released)+'.</p>'+
     '<p class="sentence">“'+esc(e.sentence)+'”</p>'+
     '<p class="muted small">The model now knows '+(e.metrics.vocabulary||0)+' words. One of the reasons is you.</p>'+
-    '<div class="sig"><div><span class="autograph">Honk</span>Gerald Honk<br><span class="muted">Chairman of the Board</span></div><div><span class="autograph">Be nice</span>The Note<br><span class="muted">Safety Committee</span></div><div><span class="autograph">P. Mugworth</span>Penny Mugworth<br><span class="muted">Chief Financial Officer</span></div></div>'+
+    '<div class="sig">'+
+    '<div><span class="mark"><svg viewBox="0 0 64 64" aria-label="A webbed footprint" style="transform:rotate(-12deg)"><path d="M32 50 Q15 37 7 15 Q19 21 23 10 Q28 21 32 5 Q36 21 41 10 Q45 21 57 15 Q49 37 32 50 Z" fill="#1a1a6e" opacity=".78"/><ellipse cx="32" cy="55" rx="4" ry="5" fill="#1a1a6e" opacity=".78"/><path d="M7 15 l-3 -3 M32 5 l0 -4 M57 15 l3 -3" stroke="#1a1a6e" stroke-width="2.4" stroke-linecap="round" opacity=".85"/></svg></span>Gerald Honk<br><span class="muted">Chairman of the Board</span></div>'+
+    '<div><span class="mark"><span class="stickynote">Be nice.</span></span>The Note<br><span class="muted">Chair, Safety Committee</span></div>'+
+    '<div><span class="mark"><svg viewBox="0 0 80 80" aria-label="A coffee ring" style="width:74px;height:74px"><circle cx="40" cy="40" r="31" fill="#7a4a1e" opacity=".06"/><circle cx="40" cy="40" r="31" fill="none" stroke="#6b3f17" stroke-width="4.5" opacity=".5" stroke-dasharray="70 5 55 9 40 4 25"/><circle cx="40" cy="40" r="27.5" fill="none" stroke="#6b3f17" stroke-width="1.4" opacity=".3"/><path d="M66 58 q4 6 0 9" stroke="#6b3f17" stroke-width="3" opacity=".4" fill="none" stroke-linecap="round"/><circle cx="70" cy="70" r="2.2" fill="#6b3f17" opacity=".4"/></svg></span>Penny Mugworth<br><span class="muted">Chief Financial Officer</span></div>'+
+    '<div><span class="mark"><span class="autograph model-sig">'+esc(modelSig)+'</span></span>brAIAIn-'+v+'<br><span class="muted">The model, in its own words</span></div>'+
+    '</div>'+
     '<p class="muted small" style="margin-top:30px">Verify at braiain.com/model.html?v='+v+'</p>';
 }).catch(function(){BRAIAIN.fail(document.getElementById("cert"));});
 </script>
