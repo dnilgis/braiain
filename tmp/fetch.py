@@ -2,14 +2,9 @@ import json, urllib.request, urllib.parse, os, io
 from PIL import Image, ImageOps
 UA = {"User-Agent": "braiain-board-photos/1.0 (hello@braiain.com)"}
 SUBJECTS = {
-  "goose": ["Anser anser head", "greylag goose portrait", "domestic goose"],
-  "note": ["sticky note", "post-it note"],
-  "fern": ["fern potted plant", "Nephrolepis exaltata pot"],
-  "ball": ["Magic 8-Ball", "magic 8 ball"],
-  "toaster": ["toaster appliance", "electric toaster"],
-  "vacuum": ["robotic vacuum cleaner", "robot vacuum"],
-  "mug": ["coffee mug", "white mug"],
-  "laptop": ["laptop computer", "notebook computer open"],
+  "note": ["yellow sticky note", "single post-it note", "sticky note on desk", "post-it"],
+  "fern": ["boston fern", "fern houseplant", "potted fern", "fern in a pot", "Polypodiopsida pot"],
+  "ball": ["8-ball billiard", "billiard ball 8", "magic 8 ball toy", "eight ball"],
 }
 OK = ("cc0", "public domain", "pd")
 def api(q):
@@ -34,13 +29,14 @@ for key, qs in SUBJECTS.items():
                 data = urllib.request.urlopen(urllib.request.Request(ii["thumburl"], headers=UA), timeout=30).read()
                 im = Image.open(io.BytesIO(data)).convert("L")
                 im = ImageOps.fit(im, (500, 600), centering=(0.5, 0.45))
-                name = f"{key}-{got}.jpg"
+                name = f"{key}-r{got}.jpg"
                 im.save("tmp/cand/" + name, quality=85)
                 credits[name] = {"title": p["title"], "license": lic, "page": ii.get("descriptionurl"), "artist": ((ii.get("extmetadata") or {}).get("Artist") or {}).get("value","")[:200]}
                 got += 1
                 print(key, got, p["title"], lic)
             except Exception as e:
                 print("dl fail", p["title"], e)
-            if got >= 6: break
-        if got >= 6: break
-json.dump(credits, open("tmp/cand/credits.json", "w"), indent=1)
+            if got >= 8: break
+        if got >= 8: break
+old = json.load(open("tmp/cand/credits.json")) if os.path.exists("tmp/cand/credits.json") else {}
+old.update(credits); json.dump(old, open("tmp/cand/credits.json", "w"), indent=1)
