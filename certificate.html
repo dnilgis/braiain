@@ -19,6 +19,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Great+Vibes&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/site.css">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3B3ZCE62NW"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-3B3ZCE62NW");</script>
@@ -36,7 +37,7 @@
 <main id="main" tabindex="-1">
 
 <section class="tight"><div class="wrap">
-<div id="cert" class="cert"><p>Loading</p></div>
+<div id="cert" class="dip"><p>Loading</p></div>
 <p class="center no-print" style="margin-top:20px"><button class="btn" type="button" onclick="window.print()">Print or save as PDF</button></p>
 </div></section>
 <script>
@@ -47,20 +48,28 @@ BRAIAIN.load().then(function(d){
   if(!e||!e.sentence){el.innerHTML="<h1>No certificate</h1><p>This version has no published sentence.</p>";return;}
   if(e.tier!=="certificate"&&e.tier!=="naming"){el.innerHTML="<h1>No certificate was purchased</h1><p>brAIAIn-"+v+" was trained on a sentence bought without a certificate. The sentence is no less trained. It is less certified.</p>";return;}
   document.title="Certificate, brAIAIn-"+v+" | BRAIAIN";
-  var seal=(document.querySelector("header.top .brand svg")||{}).outerHTML||"";
-  var mv=Math.min(v,d.versions[d.versions.length-1].v),modelSig=(BRAIAIN.generate(BRAIAIN.model(d,mv),"sign here")||"brAIAIn").split(" ").slice(0,4).join(" ").replace(/[,;:]$/,"");
-  el.innerHTML='<div class="seal">'+seal+'</div><p style="letter-spacing:.2em;font-size:13px">BRAIAIN LABORATORIES</p><h1>Certificate of Contribution</h1>'+
-    '<p>This certifies that</p><p style="font-size:26px;margin:6px 0">'+esc(e.by||"Anonymous")+'</p>'+
-    '<p>contributed the training data for <b>brAIAIn-'+v+'</b>'+(e.codename?', codename <b>“'+esc(e.codename)+'”</b>':'')+', released '+fmtDate(e.released)+'.</p>'+
-    '<p class="sentence">“'+esc(e.sentence)+'”</p>'+
-    '<p class="muted small">The model now knows '+(e.metrics.vocabulary||0)+' words. One of the reasons is you.</p>'+
-    '<div class="sig">'+
-    '<div><span class="mark"><svg viewBox="0 0 64 64" aria-label="A webbed footprint" style="transform:rotate(-12deg)"><path d="M32 50 Q15 37 7 15 Q19 21 23 10 Q28 21 32 5 Q36 21 41 10 Q45 21 57 15 Q49 37 32 50 Z" fill="#1a1a6e" opacity=".78"/><ellipse cx="32" cy="55" rx="4" ry="5" fill="#1a1a6e" opacity=".78"/><path d="M7 15 l-3 -3 M32 5 l0 -4 M57 15 l3 -3" stroke="#1a1a6e" stroke-width="2.4" stroke-linecap="round" opacity=".85"/></svg></span>Gerald Honk<br><span class="muted">Chairman of the Board</span></div>'+
-    '<div><span class="mark"><span class="stickynote">Be nice.</span></span>The Note<br><span class="muted">Chair, Safety Committee</span></div>'+
-    '<div><span class="mark"><svg viewBox="0 0 80 80" aria-label="A coffee ring" style="width:74px;height:74px"><circle cx="40" cy="40" r="31" fill="#7a4a1e" opacity=".06"/><circle cx="40" cy="40" r="31" fill="none" stroke="#6b3f17" stroke-width="4.5" opacity=".5" stroke-dasharray="70 5 55 9 40 4 25"/><circle cx="40" cy="40" r="27.5" fill="none" stroke="#6b3f17" stroke-width="1.4" opacity=".3"/><path d="M66 58 q4 6 0 9" stroke="#6b3f17" stroke-width="3" opacity=".4" fill="none" stroke-linecap="round"/><circle cx="70" cy="70" r="2.2" fill="#6b3f17" opacity=".4"/></svg></span>Penny Mugworth<br><span class="muted">Chief Financial Officer</span></div>'+
-    '<div><span class="mark"><span class="autograph model-sig">'+esc(modelSig)+'</span></span>brAIAIn-'+v+'<br><span class="muted">The model, in its own words</span></div>'+
-    '</div>'+
-    '<p class="muted small" style="margin-top:30px">Verify at braiain.com/model.html?v='+v+'</p>';
+  var mv=Math.min(v,d.versions[d.versions.length-1].v),modelSig=(BRAIAIN.generate(BRAIAIN.model(d,mv),"sign here")||"brAIAIn").split(" ").slice(0,4).join(" ").replace(/[,;:.]$/,"");
+  var h=2166136261,src=v+"|"+e.sentence+"|"+(e.by||"");for(var i=0;i<src.length;i++){h^=src.charCodeAt(i);h=Math.imul(h,16777619)>>>0;}
+  var code=("00000000"+h.toString(16).toUpperCase()).slice(-8),ver=code.slice(0,4)+"-"+code.slice(4),serial=("000000"+v).slice(-6);
+  var C='<svg class="corner" viewBox="0 0 60 60" aria-hidden="true"><path d="M4 56 V20 Q4 4 20 4 H56" fill="none" stroke="#b8912e" stroke-width="2"/><path d="M12 56 V26 Q12 12 26 12 H56" fill="none" stroke="#1d2a4a" stroke-width="1"/><circle cx="20" cy="20" r="4" fill="#b8912e"/></svg>';
+  el.className="dip";
+  el.innerHTML=C+C.replace('class="corner"','class="corner tr"')+C.replace('class="corner"','class="corner bl"')+C.replace('class="corner"','class="corner br"')+
+   '<div class="dip-in">'+
+   '<p class="dip-org">BRAIAIN LABORATORIES</p>'+
+   '<h1 class="dip-title">Certificate</h1><p class="dip-sub">of Contribution to Artificial Intelligence</p>'+
+   '<p class="dip-txt">This certifies that</p>'+
+   '<p class="dip-name">'+esc(e.by||"Anonymous")+'</p>'+
+   '<p class="dip-txt">has permanently contributed one sentence to the training data of <b>brAIAIn-'+v+'</b>'+(e.codename?', codename <b>\u201c'+esc(e.codename)+'\u201d</b>':'')+', released '+fmtDate(e.released)+', as follows:</p>'+
+   '<p class="dip-sentence">\u201c'+esc(e.sentence)+'\u201d</p>'+
+   '<div class="dip-row">'+
+     '<div class="dip-sig"><span class="mark">'+'<svg viewBox="0 0 64 64" aria-label="A webbed footprint" style="transform:rotate(-12deg)"><path d="M32 50 Q15 37 7 15 Q19 21 23 10 Q28 21 32 5 Q36 21 41 10 Q45 21 57 15 Q49 37 32 50 Z" fill="#1a1a6e" opacity=".78"/><ellipse cx="32" cy="55" rx="4" ry="5" fill="#1a1a6e" opacity=".78"/><path d="M7 15 l-3 -3 M32 5 l0 -4 M57 15 l3 -3" stroke="#1a1a6e" stroke-width="2.4" stroke-linecap="round" opacity=".85"/></svg>'+'</span>Gerald Honk<small>Chairman of the Board</small></div>'+
+     '<div class="dip-sig"><span class="mark"><span class="stickynote">Be nice.</span></span>The Note<small>Chair, Safety Committee</small></div>'+
+     '<div class="dip-seal">'+'<svg class="foil" viewBox="0 0 200 230" aria-label="Embossed seal of BRAIAIN Laboratories"><defs><radialGradient id="gold" cx="35%" cy="30%" r="80%"><stop offset="0" stop-color="#fff4b8"/><stop offset=".4" stop-color="#d9ad3a"/><stop offset=".8" stop-color="#9c7414"/><stop offset="1" stop-color="#6e500a"/></radialGradient><path id="sealring" d="M100,100 m-63,0 a63,63 0 1,1 126,0 a63,63 0 1,1 -126,0"/></defs><path d="M74 150 L50 226 L66 214 L78 230 L98 160 Z" fill="#7d1426"/><path d="M126 150 L150 226 L134 214 L122 230 L102 160 Z" fill="#9b1b30"/><polygon points="194.0,100.0 185.6,108.4 192.2,118.3 182.3,125.0 186.8,136.0 175.8,140.5 178.2,152.2 166.5,154.6 166.5,166.5 154.6,166.5 152.2,178.2 140.5,175.8 136.0,186.8 125.0,182.3 118.3,192.2 108.4,185.6 100.0,194.0 91.6,185.6 81.7,192.2 75.0,182.3 64.0,186.8 59.5,175.8 47.8,178.2 45.4,166.5 33.5,166.5 33.5,154.6 21.8,152.2 24.2,140.5 13.2,136.0 17.7,125.0 7.8,118.3 14.4,108.4 6.0,100.0 14.4,91.6 7.8,81.7 17.7,75.0 13.2,64.0 24.2,59.5 21.8,47.8 33.5,45.4 33.5,33.5 45.4,33.5 47.8,21.8 59.5,24.2 64.0,13.2 75.0,17.7 81.7,7.8 91.6,14.4 100.0,6.0 108.4,14.4 118.3,7.8 125.0,17.7 136.0,13.2 140.5,24.2 152.2,21.8 154.6,33.5 166.5,33.5 166.5,45.4 178.2,47.8 175.8,59.5 186.8,64.0 182.3,75.0 192.2,81.7 185.6,91.6" fill="url(#gold)" stroke="#7a5a0c" stroke-width="1"/><circle cx="100" cy="100" r="78" fill="none" stroke="#7a5a0c" stroke-width="1.6"/><circle cx="100" cy="100" r="48" fill="none" stroke="#7a5a0c" stroke-width="1.2"/><text font-family="Cinzel,Georgia,serif" font-size="11" font-weight="700" letter-spacing="1" fill="#5a4106"><textPath href="#sealring" startOffset="0" textLength="388" lengthAdjust="spacing">BRAIAIN LABORATORIES &#183; CERTIFIED &#183; ONE SENTENCE &#183; EST. 2026 &#183;</textPath></text><circle cx="100" cy="95" r="17" fill="none" stroke="#5a4106" stroke-width="6"/><circle cx="111" cy="81" r="5.5" fill="#5a4106"/><circle cx="112" cy="80" r="1.6" fill="#e9c763"/><text x="100" y="133" text-anchor="middle" font-family="Cinzel,Georgia,serif" font-size="13" font-weight="700" fill="#5a4106">brAIAIn-'+v+'</text></svg>'+'</div>'+
+     '<div class="dip-sig"><span class="mark">'+'<svg viewBox="0 0 80 80" aria-label="A coffee ring" style="width:74px;height:74px"><circle cx="40" cy="40" r="31" fill="#7a4a1e" opacity=".06"/><circle cx="40" cy="40" r="31" fill="none" stroke="#6b3f17" stroke-width="4.5" opacity=".5" stroke-dasharray="70 5 55 9 40 4 25"/><circle cx="40" cy="40" r="27.5" fill="none" stroke="#6b3f17" stroke-width="1.4" opacity=".3"/><path d="M66 58 q4 6 0 9" stroke="#6b3f17" stroke-width="3" opacity=".4" fill="none" stroke-linecap="round"/><circle cx="70" cy="70" r="2.2" fill="#6b3f17" opacity=".4"/></svg>'+'</span>Penny Mugworth<small>Chief Financial Officer</small></div>'+
+     '<div class="dip-sig"><span class="mark"><span class="autograph">'+esc(modelSig)+'</span></span>brAIAIn-'+v+'<small>The model, in its own words</small></div>'+
+   '</div>'+
+   '<p class="dip-micro">No. '+serial+' &middot; Verification '+ver+' &middot; braiain.com/model.html?v='+v+' &middot; The model now knows '+(e.metrics.vocabulary||0)+' words. One of the reasons is you. This certificate confers no shares, degrees, rights or intelligence.</p>'+
+   '</div>';
 }).catch(function(){BRAIAIN.fail(document.getElementById("cert"));});
 </script>
 </main>

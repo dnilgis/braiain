@@ -292,3 +292,31 @@ section[id]{scroll-margin-top:80px}
 .cert .mark svg{height:64px;width:64px}
 .cert .stickynote{display:inline-block;background:#fff27a;color:#333;font:italic 17px/1.1 "Segoe Print","Bradley Hand","Comic Sans MS",cursive;padding:14px 10px;width:76px;transform:rotate(-6deg);box-shadow:0 2px 4px rgba(0,0,0,.18);margin-bottom:2px;-webkit-print-color-adjust:exact;print-color-adjust:exact}
 .cert .model-sig{border:0;margin:0;padding:0;font-size:18px}
+/* certificate diploma */
+.dip{container-type:inline-size;position:relative;max-width:1000px;margin:0 auto;aspect-ratio:1.414/1;background:#fbf6e9 radial-gradient(ellipse at 50% 45%,#fffdf6 0,#f8f0da 70%,#efe2bf 100%);color:#1d2a4a;font-family:"Cormorant Garamond",Georgia,serif;text-align:center;box-shadow:0 18px 50px rgba(0,0,0,.25),0 2px 6px rgba(0,0,0,.15);-webkit-print-color-adjust:exact;print-color-adjust:exact;overflow:hidden}
+.dip::before{content:"";position:absolute;inset:2.2cqw;border:.35cqw solid #b8912e;outline:.12cqw solid #1d2a4a;outline-offset:-1.1cqw;pointer-events:none}
+.dip::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(45deg,rgba(29,42,74,.018) 0 2px,transparent 2px 6px);pointer-events:none}
+.dip .corner{position:absolute;width:7cqw;height:7cqw;top:1.4cqw;left:1.4cqw;z-index:1}
+.dip .corner.tr{left:auto;right:1.4cqw;transform:scaleX(-1)}.dip .corner.bl{top:auto;bottom:1.4cqw;transform:scaleY(-1)}.dip .corner.br{top:auto;left:auto;bottom:1.4cqw;right:1.4cqw;transform:scale(-1)}
+.dip-in{position:relative;z-index:2;height:100%;box-sizing:border-box;padding:5.2cqw 8cqw 3.6cqw;display:flex;flex-direction:column;align-items:center;justify-content:space-between}
+.dip p{margin:0}
+.dip-org{font:700 1.5cqw/1 Cinzel,Georgia,serif;letter-spacing:.6cqw;color:#9c7414}
+.dip-title{font:700 6.2cqw/1 Cinzel,Georgia,serif;letter-spacing:.5cqw;color:#1d2a4a;margin:.6cqw 0 0;background:linear-gradient(180deg,#1d2a4a 55%,#3a4d7a);-webkit-background-clip:text;background-clip:text}
+.dip-sub{font:italic 500 2.2cqw/1.2 "Cormorant Garamond",Georgia,serif;color:#5b4a2a}
+.dip-txt{font:500 1.75cqw/1.35 "Cormorant Garamond",Georgia,serif;max-width:70cqw}
+.dip-txt b{font-weight:600}
+.dip-name{font:400 6.6cqw/1.05 "Great Vibes","Snell Roundhand",cursive;color:#1a1a6e;border-bottom:.12cqw solid #b8912e;padding:0 4cqw .4cqw;min-width:45cqw}
+.dip-sentence{font:italic 500 2.7cqw/1.25 "Cormorant Garamond",Georgia,serif;color:#111;max-width:72cqw;padding:1cqw 2cqw;border-top:.1cqw solid rgba(184,145,46,.6);border-bottom:.1cqw solid rgba(184,145,46,.6)}
+.dip-row{display:grid;grid-template-columns:1fr 1fr 1.25fr 1fr 1fr;align-items:end;width:100%;gap:1.4cqw}
+.dip-sig{font:600 1.35cqw/1.2 "Cormorant Garamond",Georgia,serif;color:#1d2a4a}
+.dip-sig small{display:block;font:italic 500 1.1cqw/1.2 "Cormorant Garamond",Georgia,serif;color:#6b5a3a}
+.dip .mark{display:flex;align-items:flex-end;justify-content:center;height:7.4cqw;border-bottom:.1cqw solid #1d2a4a;margin-bottom:.5cqw;padding-bottom:.3cqw}
+.dip .mark svg{width:6.4cqw;height:6.4cqw}
+.dip .stickynote{display:inline-block;background:#fff27a;color:#333;font:italic 1.6cqw/1.1 "Segoe Print","Bradley Hand","Comic Sans MS",cursive;padding:1.3cqw 1cqw;width:7cqw;transform:rotate(-6deg);box-shadow:0 .2cqw .4cqw rgba(0,0,0,.18);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.dip .autograph{font:400 2.6cqw/1.1 "Great Vibes",cursive;color:#1a1a6e;white-space:nowrap}
+.dip-seal svg{width:13cqw;height:auto;display:block;margin:0 auto -1.5cqw;filter:drop-shadow(0 .3cqw .4cqw rgba(80,55,0,.35))}
+.dip-micro{font:500 .95cqw/1.4 "Cormorant Garamond",Georgia,serif;letter-spacing:.05cqw;color:#7a6a4a;max-width:80cqw;margin-top:1.4cqw !important}
+.dip>p{padding:40px;text-align:center}
+@media print{.announce{display:none !important}.dip-title{background:none !important}@page{size:landscape;margin:0}html,body{background:#fff !important;margin:0;padding:0}main,main section,main .wrap{padding:0 !important;margin:0 !important;max-width:none !important}.dip{max-width:none;width:100vw;height:100vh;aspect-ratio:auto;box-shadow:none;page-break-inside:avoid;break-inside:avoid}}
+@media (max-width:640px){.dip{aspect-ratio:auto}.dip-in{padding:12cqw 8cqw 9cqw;gap:3.2cqw}.dip-org{font-size:3cqw}.dip-title{font-size:11cqw}.dip-sub{font-size:4.4cqw}.dip-txt{font-size:4.2cqw;max-width:none}.dip-name{font-size:12cqw;min-width:0}.dip-sentence{font-size:5.4cqw;max-width:none}.dip-row{grid-template-columns:1fr 1fr;gap:5cqw 4cqw}.dip-seal{grid-column:1/-1;order:-1}.dip-seal svg{width:30cqw;margin-bottom:0}.dip-sig{font-size:3.4cqw}.dip-sig small{font-size:2.8cqw}.dip .mark{height:15cqw}.dip .mark svg{width:13cqw;height:13cqw}.dip .stickynote{font-size:3.4cqw;width:15cqw;padding:2.6cqw 2cqw}.dip .autograph{font-size:5.4cqw;white-space:normal}.dip-micro{font-size:2.6cqw;max-width:none}.dip .corner{width:12cqw;height:12cqw}}
+.dip-in::before{content:"";position:absolute;left:50%;top:50%;width:46cqw;height:46cqw;transform:translate(-50%,-52%);border-radius:50%;border:4.5cqw solid rgba(29,42,74,.035);box-shadow:0 0 0 1.4cqw rgba(184,145,46,.05),inset 0 0 0 1.4cqw rgba(184,145,46,.05);pointer-events:none;z-index:-1}
