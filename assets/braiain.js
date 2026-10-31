@@ -311,6 +311,6 @@ function esc(s) {
 function fmtDate(iso) {
   if (!iso) return "";
   var d = new Date(iso);
-  return d.toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric", timeZone: "UTC" });
+  return d.toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" });
 }
 function qp(name) { return new URLSearchParams(location.search).get(name); }

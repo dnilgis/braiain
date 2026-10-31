@@ -3,6 +3,3 @@
 # 8 characters of its payment ID (pi_...) or checkout session ID (cs_...) on its own line
 # and commit. The next run trains it. To decline one, put it in declined.txt instead and
 # refund it in Stripe.
-   0UlWrCBN  # test certificate
-   0Lv0QgSi  # test naming
-   167H3ODW  # test decline
