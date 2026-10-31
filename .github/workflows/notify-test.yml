@@ -1,0 +1,16 @@
+name: Notify test (temporary)
+on: workflow_dispatch
+jobs:
+  t:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - env:
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          REVIEW_EMAIL_TO: ${{ secrets.REVIEW_EMAIL_TO }}
+        run: |
+          python3 -c "
+          import sys; sys.path.insert(0,'scripts'); import train
+          r = train.notify_held([{'code':'TEST0000','tier':'sentence','flags':['test'],'sentence':'This is a test of the review email. Nothing to do.','credit':'','codename':'','h':'test'}])
+          print('delivered' if r else 'NOT delivered'); sys.exit(0 if r else 1)"
