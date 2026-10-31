@@ -1,5 +1,14 @@
 {
- "seen": [],
+ "seen": [
+  "0824c8be3d4ec931",
+  "523cbd4b9d6e6e0a"
+ ],
  "rejected": [],
- "removed_applied": []
+ "removed_applied": [],
+ "handled": [
+  "0UlWrCBN",
+  "hnOM8Du5",
+  "0Lv0QgSi",
+  "f852bSB7"
+ ]
 }
