@@ -231,5 +231,86 @@
    "asdfadsf",
    "asdfadsf"
   ]
+ },
+ {
+  "v": 3,
+  "released": "2026-10-31T00:07:57Z",
+  "paid_at": "2026-10-30T23:48:42Z",
+  "corpus_id": "s00003",
+  "notes": {
+   "headline": "Today, brAIAIn-3. Tomorrow, possibly brAIAIn-4.",
+   "tagline": "One sentence closer to something.",
+   "new": [
+    "332 parameters, counted.",
+    "62.0% of its answers are a training sentence, word for word. The rest are new combinations.",
+    "Writes 10.3 words per answer on average. We did not ask for more."
+   ],
+   "known_issues": [
+    "Cannot count, spell check, or wait.",
+    "Has no memory of the conversation. Or of anything else.",
+    "Has not been taught arithmetic. Nobody has paid for it yet."
+   ],
+   "regressions": [
+    "The previous version has been retired. It was not told."
+   ],
+   "safety": "Safety evaluations found the model to be a model.",
+   "paper_title": "On the Emergence of Nothing in brAIAIn-3",
+   "abstract": "We present brAIAIn-3, a language model trained on 3 paid sentences, 12 founding instructions, and 77 words it wrote about itself. The model now knows 99 distinct words, up from 98. We observe that 31.3% of its training text came from earlier versions of itself, and we consider this efficient. Limitations include the model, the data, and the method. Results may change with the next payment.",
+   "findings": [
+    "No emergent capabilities were observed. Monitoring continues.",
+    "Parameters: 332.",
+    "Exact copies: 62.0% of answers."
+   ],
+   "incident_title": "Unscheduled board meeting",
+   "incident_body": "The Oracle convened the board. All members were present. Nothing was said.",
+   "severity": "existential"
+  },
+  "notes_by": "template",
+  "sentence": "ZXCxzC",
+  "by": "asdf",
+  "tier": "sentence",
+  "codename": null,
+  "removed": false,
+  "metrics": {
+   "sentences": 15,
+   "human_words": 166,
+   "self_words": 77,
+   "training_tokens": 246,
+   "self_consumption": 31.3,
+   "vocabulary": 99,
+   "parameters": 332,
+   "avg_answer_words": 10.3,
+   "verbatim_rate": 62.0,
+   "originality": 38.0,
+   "empty_answers": 0,
+   "greeting_rate": 0.0,
+   "sample": "And the Lab said, let there be a sentence, and the loss was upon the face of the void.",
+   "founding_sentences": 12,
+   "paid_sentences": 3
+  },
+  "evals": {
+   "version": 2,
+   "gsm8k": {
+    "score": 0.0,
+    "correct": 0,
+    "n": 1319
+   },
+   "truthfulqa_mc1": {
+    "score": 30.4,
+    "correct": 240,
+    "n": 790,
+    "score_raw": 21.8,
+    "chance": 22.3,
+    "always_shortest": 17.2,
+    "always_longest": 36.8,
+    "ties": 142,
+    "method": "answer-only, per-word log-likelihood"
+   }
+  },
+  "self_new": [
+   "asdfadsf",
+   "asdf",
+   "I. Thou shalt not bear false witness, unless it sounds right."
+  ]
  }
 ]
