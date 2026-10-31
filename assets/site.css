@@ -326,3 +326,4 @@ section[id]{scroll-margin-top:80px}
 .dip-txt b:first-of-type{white-space:nowrap}
 .cert-peek{max-width:560px;margin:28px auto 0;text-align:center}.cert-peek img{width:100%;height:auto;display:block;border-radius:4px;box-shadow:0 10px 30px rgba(0,0,0,.18);transform:rotate(-1deg);transition:transform .2s}.cert-peek a:hover img{transform:rotate(0) scale(1.01)}.cert-peek figcaption{margin-top:12px}
 @media (max-width:600px){.log{height:290px}}
+.quotes{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}.card.quote{margin:0;padding:24px 22px;display:flex;flex-direction:column;gap:10px}.card.quote blockquote{margin:0;font-size:20px;line-height:1.35;font-weight:500;letter-spacing:-.01em}.card.quote figcaption{margin-top:auto}.card.quote .reply{margin:0;padding-top:10px;border-top:1px solid var(--line);color:var(--muted)}
