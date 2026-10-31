@@ -139,6 +139,20 @@ Pending text is never written to the public repo. To hold every sentence for rev
 add a repo variable `REQUIRE_APPROVAL` = `true` (Settings → Secrets and variables →
 Actions → Variables). `false` holds nothing.
 
+## Automatic announcements
+
+After each run, `scripts/announce.py` posts every new version to X and Bluesky and copies
+the newest data to the Hugging Face Space and model repo. Each part switches on when its
+secrets exist (Settings → Secrets and variables → Actions):
+
+- **X:** `X_API_KEY`, `X_API_SECRET`, `X_ACCESS_TOKEN`, `X_ACCESS_SECRET`. X charges per post
+  (about $0.20 for a post with a link). Fund the X developer account first.
+- **Bluesky:** `BLUESKY_HANDLE`, `BLUESKY_APP_PASSWORD` (Bluesky → Settings → App passwords). Free.
+- **Hugging Face:** `HF_TOKEN`, a token with write access to the braiain-lab repos. Free.
+
+Nothing posts history: a channel switched on later starts from the next new version.
+Removed versions are never posted, but a post already made stays up; delete it by hand.
+
 ## Running it
 
 - **Remove a sentence** (abuse, a buyer's request, a refund or dispute after publishing):

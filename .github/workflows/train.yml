@@ -63,3 +63,22 @@ jobs:
             git commit -m "Training run $(date -u +%Y-%m-%dT%H:%MZ)"
             git pull --rebase && git push
           fi
+
+      - name: Announce on X and Bluesky, sync Hugging Face
+        env:
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
+          BLUESKY_HANDLE: ${{ secrets.BLUESKY_HANDLE }}
+          BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          if [ -n "$HF_TOKEN" ]; then pip install -q huggingface_hub; fi
+          # A new version was just pushed: give GitHub Pages a minute to publish it before linking to it.
+          if git log -1 --pretty=%s | grep -q "^Training run"; then sleep 60; fi
+          python scripts/announce.py
+          git add data/announce.json 2>/dev/null || true
+          if ! git diff --cached --quiet; then
+            git commit -m "Announce $(date -u +%Y-%m-%dT%H:%MZ)" && git pull --rebase && git push
+          fi
