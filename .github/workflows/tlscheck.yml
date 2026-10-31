@@ -1,0 +1,10 @@
+name: tlscheck
+on: workflow_dispatch
+jobs:
+  c:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          for h in braiain.com www.braiain.com; do echo "== $h"; dig +short A $h; dig +short CNAME $h; dig +short AAAA $h
+            echo | openssl s_client -connect $h:443 -servername $h 2>/dev/null | openssl x509 -noout -subject -issuer -dates -ext subjectAltName
+            curl -sSIL --max-time 20 https://$h 2>&1 | grep -iE '^(HTTP|location|server)' ; curl -sSI --max-time 20 http://$h | grep -iE '^(HTTP|location)'; done
