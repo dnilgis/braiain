@@ -54,6 +54,24 @@
 <form class="waitlist" data-waitlist><input type="email" required placeholder="you@example.com" aria-label="Email address"><button class="btn" type="submit">Join the waitlist</button><span data-msg aria-live="polite"></span></form>
 </div></div></section>
 
+<section id="try"><div class="wrap">
+<div class="grid g2" style="align-items:start">
+<div>
+<h2>Talk to brAIAIn.</h2>
+<p class="lede" style="margin-top:14px">Ask it anything. It will answer using its commandments and what customers have taught it, which is not much, and it will be confident about it.</p>
+<p class="muted">Press <b>Peel a layer</b> to hear the same question answered by the version underneath, and the one under that, down to brAIAIn-0. Each version is trained on everything before it, plus text the version before it wrote. Peel it until nothing is left but the first twelve lines.</p>
+<p class="muted small">This runs entirely in your browser. Nothing you type is sent anywhere or saved.</p>
+</div>
+<div class="chat">
+<div class="chat-head"><label for="ver" class="muted">Model</label><select id="ver"></select><button class="btn ghost small peel" id="peel" type="button" aria-disabled="true" aria-describedby="peelhint" title="Ask the same question to the version underneath">Peel a layer</button><label class="small muted xt" title="Thinks longer. Does not think better."><input type="checkbox" id="xthink"> Extended thinking <span class="tag-new">Research preview</span></label></div>
+<div class="log" id="log" role="log" aria-live="polite"></div>
+<div class="chips" id="chips"><button class="chip" type="button">What is the meaning of life?</button><button class="chip" type="button">Are you conscious?</button><button class="chip" type="button">Should I quit my job?</button></div>
+<form id="ask"><input id="q" autocomplete="off" maxlength="300" placeholder="Ask brAIAIn anything" aria-label="Your question"><button class="btn" type="submit">Send</button></form>
+<div class="fine">Answers are assembled from the founding text, accepted paid sentences, and text earlier versions wrote. The model has read nothing else. brAIAIn can make mistakes. It can also only make mistakes. <span id="peelhint">Ask something, then press Peel a layer to hear the version underneath answer.</span></div>
+</div>
+</div>
+</div></section>
+
 <div class="wrap"><div class="stats" id="stats">
 <div><span>Current version</span><b id="s-v">-</b></div>
 <div><span>Paid sentences</span><b id="s-paid">-</b></div>
@@ -74,23 +92,7 @@
 <figure class="cert-peek"><a href="/certificate.html?sample=1"><img src="/assets/certificate-sample.jpg" alt="Sample certificate of contribution, signed by a goose, a sticky note, a coffee mug and the model" width="1200" height="850" loading="lazy"></a><figcaption class="small muted">The certificate that comes with Shark and Whale, signed by the board. <a href="/certificate.html?sample=1">See it full size</a>.</figcaption></figure>
 </div></section>
 
-<section id="try"><div class="wrap">
-<div class="grid g2" style="align-items:start">
-<div>
-<h2>Talk to brAIAIn.</h2>
-<p class="lede" style="margin-top:14px">Ask it anything. It will answer using its commandments and what customers have taught it, which is not much, and it will be confident about it.</p>
-<p class="muted">Press <b>Peel a layer</b> to hear the same question answered by the version underneath, and the one under that, down to brAIAIn-0. Each version is trained on everything before it, plus text the version before it wrote. Peel it until nothing is left but the first twelve lines.</p>
-<p class="muted small">This runs entirely in your browser. Nothing you type is sent anywhere or saved.</p>
-</div>
-<div class="chat">
-<div class="chat-head"><label for="ver" class="muted">Model</label><select id="ver"></select><button class="btn ghost small peel" id="peel" type="button" aria-disabled="true" aria-describedby="peelhint" title="Ask the same question to the version underneath">Peel a layer</button><label class="small muted xt" title="Thinks longer. Does not think better."><input type="checkbox" id="xthink"> Extended thinking <span class="tag-new">Research preview</span></label></div>
-<div class="log" id="log" role="log" aria-live="polite"></div>
-<div class="chips" id="chips"><button class="chip" type="button">What is the meaning of life?</button><button class="chip" type="button">Are you conscious?</button><button class="chip" type="button">Should I quit my job?</button></div>
-<form id="ask"><input id="q" autocomplete="off" maxlength="300" placeholder="Ask brAIAIn anything" aria-label="Your question"><button class="btn" type="submit">Send</button></form>
-<div class="fine">Answers are assembled from the founding text, accepted paid sentences, and text earlier versions wrote. The model has read nothing else. brAIAIn can make mistakes. It can also only make mistakes. <span id="peelhint">Ask something, then press Peel a layer to hear the version underneath answer.</span></div>
-</div>
-</div>
-</div></section>
+
 
 <hr>
 <section><div class="wrap">
