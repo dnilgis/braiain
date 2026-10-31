@@ -7,7 +7,7 @@ and Google Chrome available (both set up by the workflow). Writes:
   data/daily.json, daily/DATE.png   one question a day, answered by the newest version
   .daily_notice.json   private, for announce.py to email the owner (not committed)
 """
-import hashlib, html, json, os, random, re, shutil, subprocess, sys
+import hashlib, html, json, os, random, re, shutil, subprocess, sys, time
 from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 
@@ -19,6 +19,7 @@ DATA = os.path.join(ROOT, "data")
 SITE = "https://www.braiain.com"
 LOCAL = os.environ.get("CARDS_BASE", "http://localhost:8000")
 DAILY_HOUR = 7  # Central time; the daily answer is made at the first run after this
+CARD_BUDGET = 3 * 60  # seconds of card rendering per run; the rest wait for the next run
 
 
 def load(name, default):
@@ -91,7 +92,9 @@ def version_pages(versions):
         index = json.load(open(os.path.join(ROOT, "v", "index.json")))
     except (OSError, ValueError):
         pass
-    for e in versions:
+    deadline = time.time() + CARD_BUDGET
+    left = 0
+    for e in sorted(versions, key=lambda x: -x["v"]):  # newest first: the latest card matters most
         v = e["v"]
         name = "brAIAIn-" + str(v) + (' "' + e["codename"] + '"' if e.get("codename") else "")
         if e.get("removed"):
@@ -107,8 +110,10 @@ def version_pages(versions):
             if os.path.exists(png):
                 os.remove(png)
         elif index.get(str(v)) != key or not os.path.exists(png):
-            if shot(f"{LOCAL}/card.html?v={v}&raw=1", png):
+            if time.time() < deadline and shot(f"{LOCAL}/card.html?v={v}&raw=1", png):
                 index[str(v)] = key
+            else:
+                left += 1
         has = os.path.exists(png) and not e.get("removed")
         image = (f'<meta property="og:image" content="{SITE}/v/{v}.png?k={index.get(str(v), "")}">\n'
                  '<meta property="og:image:width" content="1600">\n<meta property="og:image:height" content="900">'
@@ -116,6 +121,8 @@ def version_pages(versions):
         page = PAGE.format(title=esc(title), desc=esc(desc), v=v, SITE=SITE, image=image)
         with open(os.path.join(ROOT, "v", f"{v}.html"), "w", encoding="utf-8") as f:
             f.write(page)
+    if left:
+        print(f"release cards: {left} still to render; continuing next run")
     with open(os.path.join(ROOT, "v", "index.json"), "w") as f:
         json.dump(index, f, indent=1, sort_keys=True)
 

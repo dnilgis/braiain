@@ -624,6 +624,7 @@ def logprob(model, text, vocab_size, total):
 
 
 EVAL_VERSION = 2  # bump when the scoring method changes; every version is re-scored once
+EVAL_BUDGET = 4 * 60  # seconds per run for re-scoring older versions; the rest wait for the next run
 
 
 def run_benchmarks(model, version):
@@ -1125,6 +1126,8 @@ def main():
     # A removal changes every version from the removed one onward; earlier evals stay valid.
     first_removed_v = min([c["v"] for c in corpus if c["id"] in newly_removed], default=10 ** 9)
     out_versions = []
+    eval_deadline = time.time() + EVAL_BUDGET
+    evals_left = 0
     for v in range(0, max_v + 1):
         model, m, selfw = built[v]
         entry = dict(vmap.get(v, {"v": v}))
@@ -1139,10 +1142,24 @@ def main():
             if gone:
                 entry["notes"] = recalled_notes(v)
         entry["metrics"] = m
-        if v in new_versions or (entry.get("evals") or {}).get("version") != EVAL_VERSION or v >= first_removed_v:
-            entry["evals"] = run_benchmarks(model, v)
+        # Benchmarks take about 2 seconds a version. New versions are always scored. Anything
+        # older that needs re-scoring (after a removal, or a scoring change) is marked stale and
+        # re-scored a batch at a time, so one run never runs out of time. Progress is saved in
+        # versions.json, so the next run picks up where this one stopped.
+        ev = entry.get("evals") or {}
+        if ev and v >= first_removed_v:
+            ev = dict(ev, stale=True)
+        need = v in new_versions or not ev or ev.get("version") != EVAL_VERSION or ev.get("stale")
+        if need and (v in new_versions or not ev or time.time() < eval_deadline):
+            ev = run_benchmarks(model, v)
+        elif need:
+            ev = dict(ev, stale=True)
+            evals_left += 1
+        entry["evals"] = ev
         entry["self_new"] = selfw  # passages version v-1 wrote for version v (browser rebuilds every version from these)
         out_versions.append(entry)
+    if evals_left:
+        print(f"benchmarks: {evals_left} older versions still to re-score; continuing next run")
     latest = out_versions[-1]
     save(os.path.join(DATA, "training.json"), {"self_window": SELF_WINDOW, "newest_weight": NEWEST_WEIGHT, "genesis": genesis})
     save(os.path.join(MODELS, "latest.json"),

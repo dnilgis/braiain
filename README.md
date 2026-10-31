@@ -190,5 +190,8 @@ Removed versions are never posted, but a post already made stays up; delete it b
 - GitHub pauses schedules in a repo with no commits for 60 days. A daily heartbeat
   commit prevents that.
 - At most 25 new sentences are trained per run; the rest wait for the next run.
-- Every run retrains every version from scratch, so a run takes longer as sentences
-  accumulate (seconds at a few hundred; plan an incremental trainer before about a thousand).
+- Every run retrains every version's word counts from scratch (about 20 seconds at a thousand
+  versions). The slow parts, benchmarks and release-card images, are only redone for versions
+  that changed, and after a removal they are redone a batch at a time (about 4 minutes of
+  benchmarks and 3 of images per run), so a big takedown finishes over several runs instead
+  of timing out. The removal itself takes effect on the first run.
