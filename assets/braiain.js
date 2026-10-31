@@ -343,3 +343,35 @@ function qp(name) { return new URLSearchParams(location.search).get(name); }
   }, true);
   document.addEventListener("submit", function (e) { if (e.target && e.target.id === "ask") track("chat_message"); }, true);
 })();
+
+// Theme: follows the system unless the visitor picks one. Applied before the page paints.
+(function () {
+  var KEY = "braiain-theme", root = document.documentElement;
+  function saved() { try { return localStorage.getItem(KEY); } catch (e) { return null; } }
+  var t = saved(); if (t === "dark" || t === "light") root.setAttribute("data-theme", t);
+  function isDark() { var a = root.getAttribute("data-theme"); return a ? a === "dark" : !!(window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches); }
+  var SUN = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>';
+  var MOON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>';
+  document.addEventListener("DOMContentLoaded", function () {
+    var wrap = document.querySelector("header.top .wrap"); if (!wrap) return;
+    var b = document.createElement("button"); b.type = "button"; b.className = "theme-toggle";
+    function paint() { var d = isDark(); b.innerHTML = d ? SUN : MOON; b.setAttribute("aria-label", d ? "Switch to light mode" : "Switch to dark mode"); }
+    paint();
+    b.addEventListener("click", function () { var n = isDark() ? "light" : "dark"; root.setAttribute("data-theme", n); try { localStorage.setItem(KEY, n); } catch (e) {} paint(); });
+    var cta = wrap.querySelector(".cta"); if (cta) wrap.insertBefore(b, cta); else wrap.appendChild(b);
+  });
+})();
+
+// Announcement bar: the newest release, on every page, dismissible per release.
+document.addEventListener("DOMContentLoaded", function () {
+  var top = document.querySelector("header.top"); if (!top || !window.BRAIAIN) return;
+  BRAIAIN.getJSON("/data/versions.json").then(function (vs) {
+    var l = vs[vs.length - 1]; if (!l || !l.v || l.removed) return;
+    var key = "braiain-announce-" + l.v;
+    try { if (localStorage.getItem(key)) return; } catch (e) {}
+    var bar = document.createElement("div"); bar.className = "announce"; bar.setAttribute("role", "region"); bar.setAttribute("aria-label", "Announcement");
+    bar.innerHTML = '<a href="/model.html?v=' + l.v + '">Introducing brAIAIn-' + l.v + (l.codename ? " “" + esc(l.codename) + "”" : "") + '. It knows ' + ((l.metrics || {}).vocabulary || 0) + ' words. Read the release notes →</a><button type="button" aria-label="Dismiss">×</button>';
+    bar.querySelector("button").addEventListener("click", function () { bar.remove(); try { localStorage.setItem(key, "1"); } catch (e) {} });
+    top.parentNode.insertBefore(bar, top);
+  }).catch(function () {});
+});
