@@ -226,6 +226,16 @@ function countdowns(cfg) {
   var els = document.querySelectorAll("[data-countdown]");
   if (!els.length) return;
   var target = Date.parse(cfg.opensAt || "");
+  if (!isNaN(target)) {
+    var when = new Date(target);
+    var local = when.toLocaleString("en-US", { weekday: "long", month: "long", day: "numeric", hour: "numeric", minute: "2-digit", timeZoneName: "short" });
+    document.querySelectorAll("[data-opens]").forEach(function (el) { el.textContent = "Opens " + local + ", your time."; });
+    var z = function (t) { return new Date(t).toISOString().replace(/[-:]/g, "").replace(/\.\d{3}/, ""); };
+    var cal = "https://calendar.google.com/calendar/render?action=TEMPLATE&text=" + encodeURIComponent("brAIAIn opens for training") +
+      "&dates=" + z(target) + "/" + z(target + 3600000) +
+      "&details=" + encodeURIComponent("$5 buys one sentence in the next version of brAIAIn. https://www.braiain.com/feed.html");
+    document.querySelectorAll("[data-cal]").forEach(function (el) { el.href = cal; });
+  }
   function pad(n) { return (n < 10 ? "0" : "") + n; }
   function plural(n, w) { return n + " " + w + (n === 1 ? "" : "s"); }
   function tick() {
