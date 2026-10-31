@@ -261,3 +261,4 @@ svg.adapt [fill="#111"]{fill:var(--ink)} svg.adapt [stroke="#111"]{stroke:var(--
 svg.adapt [fill="#5f5f5f"]{fill:var(--muted)} svg.adapt [fill="#f6f6f6"]{fill:var(--soft)}
 .top .theme-toggle + .cta{margin-left:0}.top .theme-toggle{margin-right:-14px}
 @media (max-width:860px){.top .theme-toggle{margin:0 0 0 -16px}}
+blockquote,td,.card,.lede,.prose p,.prose li,h1,h2,h3,.msg{overflow-wrap:anywhere}

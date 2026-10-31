@@ -65,12 +65,12 @@ jobs:
           queue_changed=$(python3 -c "import json,subprocess;old=json.loads(subprocess.run(['git','show','HEAD:data/status.json'],capture_output=True,text=True).stdout or '{}');new=json.load(open('data/status.json'));print('yes' if (old.get('pending_review'),old.get('review_mode'))!=(new.get('pending_review'),new.get('review_mode')) else 'no')")
           if git diff --cached --quiet -- . ':(exclude)data/status.json' && [ "$queue_changed" = "no" ]; then
             if [ "$(date -u +%H%M | cut -c1-3)" = "120" ]; then
-              git commit -m "Daily heartbeat" && git pull --rebase && git push
+              git commit -m "Daily heartbeat" && git pull --rebase --autostash && git push
             fi
             echo "No new training data."
           else
             git commit -m "Training run $(date -u +%Y-%m-%dT%H:%MZ)"
-            git pull --rebase && git push
+            git pull --rebase --autostash && git push
           fi
 
       - name: Announce on X and Bluesky, sync Hugging Face
@@ -86,12 +86,12 @@ jobs:
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           REVIEW_EMAIL_TO: ${{ secrets.REVIEW_EMAIL_TO }}
         run: |
-          if [ -n "$HF_TOKEN" ]; then pip install -q huggingface_hub; fi
+          if [ -n "$HF_TOKEN" ]; then pip install -q "huggingface_hub==0.26.2"; fi
           # A new version was just pushed: give GitHub Pages a minute to publish it before linking to it.
           if git log -1 --pretty=%s | grep -q "^Training run"; then sleep 60; fi
           python scripts/announce.py
           git reset -q   # leave status.json to the once-a-day heartbeat
           git add data/announce.json 2>/dev/null || true
           if ! git diff --cached --quiet; then
-            git commit -m "Announce $(date -u +%Y-%m-%dT%H:%MZ)" && git pull --rebase && git push
+            git commit -m "Announce $(date -u +%Y-%m-%dT%H:%MZ)" && git pull --rebase --autostash && git push
           fi

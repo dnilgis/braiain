@@ -153,8 +153,9 @@ def buyer_emails(versions):
         return
     os.remove(path)
     sender, owner = env("GMAIL_ADDRESS").lower(), env("REVIEW_EMAIL_TO").lower()
-    if not sender or not owner or sender == owner:
-        print("buyer emails skipped: they need a separate lab Gmail (GMAIL_ADDRESS) and REVIEW_EMAIL_TO", file=sys.stderr)
+    # Buyers see the sender address, so only a lab account may send to them.
+    if not sender or not owner or sender == owner or "braiain" not in sender.split("@")[0]:
+        print("buyer emails skipped: they need a lab Gmail with braiain in its name (GMAIL_ADDRESS) and REVIEW_EMAIL_TO", file=sys.stderr)
         return
     from email.message import EmailMessage
     vmap = {e["v"]: e for e in versions}
@@ -247,8 +248,13 @@ def hf_files():
              "# Public domain (CC0). Live copy: https://www.braiain.com/data.html"]
     with open(os.path.join(DATA, "genesis.txt"), encoding="utf-8") as f:
         lines += [l.rstrip("\n") for l in f if l.strip() and not l.startswith("#")]
-    removed = {l.split("#")[0].strip() for l in open(os.path.join(DATA, "removed.txt"), encoding="utf-8")} if os.path.exists(os.path.join(DATA, "removed.txt")) else set()
-    lines += [c["text"] for c in corpus if c.get("id") not in removed]
+    removed = set()
+    if os.path.exists(os.path.join(DATA, "removed.txt")):
+        for l in open(os.path.join(DATA, "removed.txt"), encoding="utf-8"):
+            parts = l.split("#", 1)[0].split()
+            if parts:
+                removed.add(parts[0])
+    lines += [c["text"] for c in corpus if c.get("id") not in removed and c.get("text")]
     model["training-data.txt"] = ("\n".join(lines) + "\n").encode()
     return space, model
 
@@ -338,7 +344,10 @@ def main():
         except Exception as ex:
             print("could not post daily answer to bluesky", type(ex).__name__, file=sys.stderr)
     before = dict(state)
-    hf_sync(state)
+    try:
+        hf_sync(state)
+    except Exception as ex:  # never let the mirror stop announcements or emails
+        print("could not sync Hugging Face", type(ex).__name__, file=sys.stderr)
     if changed or state != before:
         with open(os.path.join(DATA, "announce.json"), "w", encoding="utf-8") as f:
             json.dump(state, f, indent=1)

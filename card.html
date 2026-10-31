@@ -65,9 +65,17 @@ Promise.all([BRAIAIN.load(),document.fonts?Promise.all([document.fonts.load("600
   font(600,112,"'Inter Tight'");x.fillStyle=INK;x.fillText("brAIAIn-"+v,86,330);
   if(e.codename){font(500,40,"'Inter Tight'");x.fillStyle=MUTED;x.fillText("“"+e.codename+"”",92,384);}
   font(500,30);x.fillStyle=MUTED;var yy=wrap(n.headline||"",90,e.codename?438:392,720,40,2);
-  font(500,24);x.fillStyle=MUTED;x.fillText(v===0?"Trained on":"Trained on one sentence",90,560);
-  font(600,40,"'Inter Tight'");x.fillStyle=INK;var ys=wrap(v===0?"The Ten Instructions.":"“"+(e.sentence||"")+"”",90,616,730,50,3);
-  if(v>0){font(500,26);x.fillStyle=MUTED;x.fillText("— "+(e.by||"Anonymous"),90,ys+48);}
+  font(500,24);x.fillStyle=MUTED;x.fillText(v===0?"Trained on":"Trained on one sentence",90,522);
+  // The sentence must fit between y=566 and y=650, above the credit and the rule at 700.
+  function breakLines(t,W){var out=[],line="";String(t).split(" ").forEach(function(w){
+      while(x.measureText(w).width>W){var k=w.length;while(k>1&&x.measureText(w.slice(0,k)).width>W)k--;if(line){out.push(line);line="";}out.push(w.slice(0,k));w=w.slice(k);}
+      var test=line?line+" "+w:w;if(x.measureText(test).width>W&&line){out.push(line);line=w;}else line=test;});
+    if(line)out.push(line);return out;}
+  var stext=v===0?"The Ten Instructions.":"\u201c"+(e.sentence||"")+"\u201d",sizes=[40,34,28,24,20],sl=null,lh=0,last=566;
+  for(var si=0;si<sizes.length;si++){font(600,sizes[si],"'Inter Tight'");lh=Math.round(sizes[si]*1.22);var cap=Math.floor((650-566)/lh)+1;sl=breakLines(stext,730);
+    if(sl.length<=cap||si===sizes.length-1){if(sl.length>cap){sl=sl.slice(0,cap);sl[cap-1]=sl[cap-1].replace(/[,.;:\u201d]?$/,"")+"...";}break;}}
+  x.fillStyle=INK;sl.forEach(function(l,i){last=566+i*lh;x.fillText(l,90,last);});
+  if(v>0){font(500,24);x.fillStyle=MUTED;var cr="\u2014 "+(e.by||"Anonymous");while(x.measureText(cr).width>730&&cr.length>4)cr=cr.slice(0,-2);x.fillText(cr,90,Math.min(last+40,688));}
   var X=900;font(500,24);x.fillStyle=MUTED;x.fillText("Benchmarks, full test sets",X,214);
   x.strokeStyle=LINE;x.lineWidth=1;
   font(600,28,"'Inter Tight'");x.fillStyle=INK;x.fillText("GSM8K  (grade-school math, "+(g.n||1319).toLocaleString()+" problems)",X,272);

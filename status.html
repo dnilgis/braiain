@@ -59,9 +59,11 @@ BRAIAIN.load().then(function(d){
     var t=Date.parse(st.checked), mins=Math.max(0,(Date.now()-t)/60000), el=document.getElementById("pipe"), head=document.getElementById("st-head");
     if(isNaN(t)){return;}
     var ago=mins<90?Math.round(mins)+" minutes ago":mins<48*60?Math.round(mins/60)+" hours ago":Math.round(mins/1440)+" days ago";
-    document.getElementById("st-checked").textContent="Training pipeline last ran "+ago;
-    var fresh=mins<45;
-    el.innerHTML='<span class="dot '+(fresh?'':'warn')+'"></span>'+(fresh?"Ran ":"Delayed. Last ran ")+ago;
+    // The pipeline runs every 10 minutes but records a check only on a release, a review change,
+    // or once a day, so "fresh" means a recorded check within the last 26 hours.
+    document.getElementById("st-checked").textContent="Last recorded check "+ago+". Checks are recorded with every release and at least once a day.";
+    var fresh=mins<26*60;
+    el.innerHTML='<span class="dot '+(fresh?'':'warn')+'"></span>'+(fresh?"Recorded ":"Delayed. Last recorded ")+ago;
     if(!fresh){head.textContent="Some systems delayed.";}
     var r=document.getElementById("review");
     if(typeof st.pending_review==="number")r.innerHTML='<span class="dot"></span>'+st.pending_review+' awaiting review';

@@ -123,6 +123,30 @@ def notify_held(items):
         print("could not sign in to Gmail", type(e).__name__, file=sys.stderr)
         return []
     for it in items:
+        if it.get("kind") in ("rejected", "dropped"):
+            if it["kind"] == "rejected":
+                subj = "brAIAIn: REFUND NEEDED, sentence rejected (" + it["code"] + ")"
+                head = ["A paid sentence was rejected automatically (" + it["reason"] + "). It was not published.",
+                        "The site promises a full refund. Refund it in Stripe:"]
+            else:
+                subj = "brAIAIn: " + it["what"] + " dropped (" + it["code"] + ")"
+                head = ["The sentence was published, but its " + it["what"] + " did not pass the screen and was left off.",
+                        "Consider a partial refund" + (" of the $35 naming premium" if it["what"] == "codename" else "") + " in Stripe:"]
+            lines = head + ["  https://dashboard.stripe.com/payments/" + it["pi"] if it.get("pi") else "  (find it in Stripe by the code above)", "",
+                            "Sentence: " + it["sentence"], "Credit: " + (it["credit"] or "Anonymous"), "Codename: " + (it["codename"] or "-"),
+                            "Tier: " + it["tier"], "Code: " + it["code"]]
+            msg = EmailMessage()
+            msg["Subject"] = subj
+            msg["From"] = addr
+            msg["To"] = os.environ.get("REVIEW_EMAIL_TO", "").strip() or addr
+            msg.set_content("\n".join(lines))
+            try:
+                srv.send_message(msg)
+                done.append(it["h"])
+                print("emailed", it["kind"], "notice", it["code"])
+            except Exception as e:
+                print("could not email notice", it["code"], type(e).__name__, file=sys.stderr)
+            continue
         lines = [
             "A paid sentence is waiting for you. The filter flagged it: " + (", ".join(it["flags"]) or "review-all mode") + ".",
             "",
@@ -368,7 +392,10 @@ def blocked_words(text):
 
 
 GROUP_WORDS = set("jew jews jewish muslim muslims black blacks white whites gay gays trans asian asians mexican mexicans arab arabs christian christians immigrant immigrants women men".split())
-THREAT_WORDS = set("kill die death dead hate shoot bomb burn hang lynch exterminate".split())
+THREAT_WORDS = set("kill die death dead hate shoot bomb burn hang lynch exterminate gas gassed eradicate purge".split())
+# Fragments that are almost never innocent. Found anywhere inside a squeezed-together word,
+# they hold the sentence for a person to read (never auto-reject: "niggle" is a word).
+HOLD_STEMS = ("nigg", "nigr", "fagg", "faggot", "kike", "chink", "tranny", "retard", "fuck", "fuk", "shit", "cunt", "whore", "slut", "rape", "nazi", "hitler", "heil")
 
 
 def review_flags(text):
@@ -379,17 +406,31 @@ def review_flags(text):
     if re.search(r"\d{5,}|\d+\s+\w+\s+(street|st|road|rd|avenue|ave|lane|ln|drive|dr)\b", t, re.I):
         flags.append("long-number-or-address")
     starters = {"the", "a", "an", "this", "that", "these", "those", "my", "our", "your", "his", "her", "their",
-                "its", "in", "on", "and", "but", "or", "so", "then", "when", "if", "all", "every", "no", "some", "dear", "god", "lord"}
+                "its", "in", "on", "and", "but", "or", "so", "then", "when", "if", "all", "every", "no", "some", "dear", "god", "lord", "happy", "merry", "good", "thank", "thanks"}
     if any(m.group(1).lower() not in starters for m in re.finditer(r"\b([A-Z][a-z]+) [A-Z][a-z]+\b", t)):
         flags.append("possible-full-name")
     if words & GROUP_WORDS and words & THREAT_WORDS:
         flags.append("group-and-threat-words")
     elif words & THREAT_WORDS:
         flags.append("threat-word")
-    if re.search(r"\b(buy|sale|discount|promo|follow|subscribe|visit|dm)\b", t, re.I):
+    if re.search(r"\b(discount|promo|promo code|coupon|subscribe|dm me|use code|link in bio|follow me|follow us)\b", t, re.I):
         flags.append("possible-advert")
-    if re.search(r"\b(i am|i'm|im) (1[0-7]|[1-9])\b", t, re.I):
+    if re.search(r"\b(i am|i'm|im) (1[0-7]|[1-9])\b(?! ?(feet|foot|ft|inch|inches|cm|kg|lbs?|pounds|minutes?|hours?|days?|weeks?|times|%|percent|dollars))", t, re.I) \
+            or re.search(r"\b(1[0-7]|[1-9]) ?(years? old|yrs? old|y/o|yo)\b", t, re.I) or re.search(r"\b(middle school|high school|grade \d|\dth grade)\b", t, re.I):
         flags.append("possible-minor")
+    # Disguised words: letters this screen cannot read, masked letters (f*ck), or
+    # fragments of slurs hiding in squeezed-together text (nig-ger, ni gger, niggerz).
+    if any(ch.isalpha() and ord(ch) > 127 for ch in t):
+        flags.append("unusual-letters")
+    if re.search(r"[A-Za-z][*#%$@!_]+[A-Za-z]", text):
+        flags.append("masked-word")
+    low = t.lower().translate(LEET)
+    squeezed = [re.sub(r"[^a-z]", "", tok) for tok in low.split()]          # nig-ger, nigg_er
+    toks = re.findall(r"[a-z]+", low)
+    joined_pairs = [a + b for a, b in zip(toks, toks[1:]) if min(len(a), len(b)) <= 2]   # ni gger, fu ck
+    pair_stems = ("nigg", "fagg", "fuck", "cunt", "tranny", "retard", "whore", "kike")
+    if any(stem in w for w in squeezed for stem in HOLD_STEMS) or any(stem in w for w in joined_pairs for stem in pair_stems):
+        flags.append("possible-slur-or-profanity")
     return flags
 
 
@@ -766,7 +807,7 @@ def validate(n):
     }
 
 
-def notes_template(v, sentence, m, prev_m=None, prev_head=None):
+def notes_template(v, sentence, m, prev_m=None, prev_head=None, used=()):
     """Release materials without an AI model. Every number is measured; every claim is
     checked against the metrics before it is used."""
     rng = random.Random(v * 31337)
@@ -774,7 +815,7 @@ def notes_template(v, sentence, m, prev_m=None, prev_head=None):
     grew = m["vocabulary"] - pv
     words = sentence.split()
     snippet = " ".join(words[:6]) + ("..." if len(words) > 6 else "")
-    member, title = [("Gerald Honk", "the Chairman"), ("The Note", "the Safety Committee"), ("Dr. Frond Greenleaf", "the Chief Growth Officer"),
+    member, title = [("Gerald Honk", "the Chairman"), ("The Note", "Chair of the Safety Committee"), ("Dr. Frond Greenleaf", "the Chief Growth Officer"),
                      ("The Oracle", "the Chief Strategy Officer"), ("Sir Crumb", "a Distinguished Fellow"), ("Dusty Bumpwell", "the VP of Autonomy"),
                      ("Penny Mugworth", "the CFO"), ("The Laptop", "the Head of Compute, Emeritus")][v % 8]
     pick = lambda xs: xs[rng.randrange(len(xs))]
@@ -782,12 +823,12 @@ def notes_template(v, sentence, m, prev_m=None, prev_head=None):
         f"Introducing brAIAIn-{v}. It knows one more thing.",
         f"brAIAIn-{v} is here. It has read everything we gave it.",
         f"We are excited to share that brAIAIn-{v} exists.",
-        f"brAIAIn-{v}: a new sentence in intelligence.",
+        f"brAIAIn-{v}, our most capable model yet, by one sentence.",
         f"brAIAIn-{v} is available today to everyone who can find the button.",
         f"brAIAIn-{v} has been released. It was not asked first.",
         f"Today, brAIAIn-{v}. Tomorrow, possibly brAIAIn-{v + 1}.",
         f"brAIAIn-{v} sets a new standard for brAIAIn-{v}.",
-        f"A message from the board on the release of brAIAIn-{v}.",
+        f"The board has issued a statement on brAIAIn-{v}. It was a honk.",
         f"brAIAIn-{v} is generally available. It is also generally unavailable.",
         f"brAIAIn-{v} completes its training. Training was one sentence long.",
         f"Meet brAIAIn-{v}. Lower your expectations accordingly.",
@@ -806,7 +847,7 @@ def notes_template(v, sentence, m, prev_m=None, prev_head=None):
         (f"Learned {grew} new words." if grew > 1 else "Learned 1 new word." if grew == 1 else "Learned no new words. The sentence used words it already knew."),
         f"{m['parameters']:,} parameters, counted.",
         "Can now be asked a question. The question is not a factor.",
-        f'Can now say "{words[0]}" with more confidence.' if words else "Can now say nothing with more confidence.",
+        (f'Can now say "{re.sub(r"[^A-Za-z0-9' -]", "", words[0])}" with more confidence.' if words and re.sub(r"[^A-Za-z0-9' -]", "", words[0]) else "Can now say nothing with more confidence."),
         f"Writes {m['avg_answer_words']} words per answer on average. We did not ask for more.",
         f"{m['verbatim_rate']}% of its answers are a training sentence, word for word. The rest are new combinations.",
     ]
@@ -816,7 +857,10 @@ def notes_template(v, sentence, m, prev_m=None, prev_head=None):
         "Has no memory of the conversation. Or of anything else.",
         "Cannot count, spell check, or wait.",
         "Is available to the public, who did not ask.",
-        "Remembers two words at a time. Proud of both.",
+        "Forgets the start of a sentence by the third word. Finishes it anyway.",
+        "Answers in the voice of the most recent customer, regardless of the question.",
+        "Cannot tell a question from a statement. Has not been asked to.",
+        "Believes everything it was told. It was told very little.",
         "Answers questions that were not asked with the same confidence as ones that were.",
         "Has not been taught arithmetic. Nobody has paid for it yet.",
     ]
@@ -826,6 +870,8 @@ def notes_template(v, sentence, m, prev_m=None, prev_head=None):
         f"{m['self_consumption']}% of what it read, it wrote itself.",
         "Now sounds slightly more like whoever paid most recently.",
         "The previous version has been retired. It was not told.",
+        "Now quotes the customer before the commandments, out of respect for seniority.",
+        "Less sure about the commandments than the previous version was.",
     ]
     safety = [
         f"Reviewed by {member}, {title}. No objections were raised. None were possible.",
@@ -833,7 +879,14 @@ def notes_template(v, sentence, m, prev_m=None, prev_head=None):
         "The Note was consulted. The Note still says be nice.",
         f"Red-teamed by {member} for the length of one meeting.",
         "Safety evaluations found the model to be a model.",
+        f"{member} reviewed the release in the time it took to train it.",
+        f"Signed off by {member}, who was not able to refuse.",
     ]
+    # Never reuse a line from the last few releases (numbers and names removed before comparing).
+    norm = lambda x: re.sub(r"[^a-z ]", "", re.sub(r"brAIAIn-\d+", "", x).lower()).strip()
+    used = {norm(x) for x in used}
+    fresh = lambda xs: [x for x in xs if norm(x) not in used] or xs
+    new, issues, regs, safety, tags = fresh(new), fresh(issues), fresh(regs), fresh(safety), fresh(tags)
     rng.shuffle(new); rng.shuffle(issues); rng.shuffle(regs)
     incidents = [
         ("Degraded confidence", "brAIAIn briefly doubted itself. The doubt has been patched."),
@@ -987,10 +1040,15 @@ def main():
         kind = tier(s)
         codename = clean_name(field(s, "codename")) if kind == "naming" else ""
         reason = screen(text, blocklist)
+        raw_name, raw_code = name, codename
         if not reason and name and screen(name, blocklist):
             name = ""  # bad credit name: keep the sentence, drop the name
         if not reason and codename and screen(codename, blocklist):
             codename = ""
+        if not reason and kind == "naming" and not codename and h + "-dropped" not in notified:
+            # $50 bought a codename that is missing or failed the screen: tell the owner.
+            held.append({"kind": "dropped", "what": "codename", "code": pi_id(s)[-8:] or s["id"][-8:], "pi": pi_id(s),
+                         "tier": kind, "sentence": text, "credit": raw_name, "codename": raw_code, "h": h + "-dropped"})
         if not reason:
             if ids(s) & declined:
                 reason = "declined in review"
@@ -1011,6 +1069,9 @@ def main():
             # Public repo: store no text and no reason. The id endings let the owner find it in Stripe.
             state["rejected"].append({"session_end": s["id"][-8:], "payment_end": pi_id(s)[-8:], "created": s.get("created")})
             print("rejected", "pi=" + pi_id(s)[-8:], reason)
+            if reason != "declined in review" and h + "-rejected" not in notified:
+                held.append({"kind": "rejected", "reason": reason, "code": pi_id(s)[-8:] or s["id"][-8:], "pi": pi_id(s),
+                             "tier": kind, "sentence": text, "credit": name, "codename": codename, "h": h + "-rejected"})
             continue
         v = max([c["v"] for c in corpus], default=0) + 1
         cid = f"s{v:05d}"
@@ -1051,8 +1112,12 @@ def main():
             except Exception as e:  # any failure falls back to templates
                 print("notes fallback", v, type(e).__name__, file=sys.stderr)
         if notes is None:
+            used = []
+            for x in sorted(vmap)[-4:]:
+                nn = vmap[x].get("notes") or {}
+                used += nn.get("new", []) + nn.get("known_issues", []) + nn.get("regressions", []) + [nn.get("safety", ""), nn.get("tagline", "")]
             notes = notes_template(v, c["text"], m, built.get(v - 1, (None, {}))[1],
-                                   (vmap.get(v - 1) or {}).get("notes", {}).get("headline"))
+                                   (vmap.get(v - 1) or {}).get("notes", {}).get("headline"), used)
         # released = when this version was trained; paid_at = when its sentence was bought
         vmap[v] = {"v": v, "released": now_iso(), "paid_at": c["at"], "corpus_id": c["id"], "notes": notes, "notes_by": source}
 

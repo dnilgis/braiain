@@ -330,7 +330,13 @@ function qp(name) { return new URLSearchParams(location.search).get(name); }
   function track(name, params) { try { if (window.gtag) window.gtag("event", name, params || {}); } catch (e) {} }
   var p = new URLSearchParams(location.search), ref = p.get("ref");
   if (ref && !p.get("utm_source")) track("ref_visit", { ref: ref.slice(0, 40) });
-  if (/\/thanks(\.html)?$/.test(location.pathname)) track("checkout_complete");
+  if (/\/thanks(\.html)?$/.test(location.pathname)) {
+    // Count a sale once per real checkout (Stripe sends a session id), not every reload.
+    try {
+      var sid = sessionStorage.getItem("braiain-sid");
+      if (sid && !localStorage.getItem("braiain-counted-" + sid)) { track("checkout_complete"); localStorage.setItem("braiain-counted-" + sid, "1"); }
+    } catch (e) {}
+  }
   document.addEventListener("click", function (e) {
     var a = e.target.closest && e.target.closest("a, button");
     if (!a) return;

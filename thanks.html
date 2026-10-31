@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<script>/* Keep the Stripe session id out of analytics: read it, then remove it from the address bar before anything else loads. */
+(function(){try{var m=location.search.match(/[?&]session_id=(cs_[A-Za-z0-9_]+)/);if(m){sessionStorage.setItem("braiain-sid",m[1]);history.replaceState(null,"",location.pathname);}}catch(e){}})();</script>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Thank you | BRAIAIN</title>
 <meta name="description" content="Your sentence is in the training queue.">
@@ -41,6 +43,42 @@
 <p class="lede">It is screened now. Most sentences go live within about 10 minutes; if anything looks off, a person reviews it first, which can take up to a day. Once it is approved, a new version of brAIAIn is trained on it and appears at the top of the Models page with its own release notes. If it is not approved, you get a full refund. Stripe has emailed you a receipt.</p>
 <div class="actions" style="display:flex;gap:12px;flex-wrap:wrap;margin-top:24px"><a class="btn" href="/models.html">Watch for your model</a><a class="btn ghost" href="/#try">Talk to brAIAIn</a></div>
 </div></section>
+<section class="tight" id="live-wrap" style="display:none"><div class="wrap narrow">
+<div class="card" id="live" role="status" aria-live="polite" style="padding:26px"></div>
+</div></section>
+<script>
+(function(){
+  var sid=null;try{sid=sessionStorage.getItem("braiain-sid");}catch(e){}
+  if(!sid||!window.crypto||!crypto.subtle)return;
+  var box=document.getElementById("live"),wrap=document.getElementById("live-wrap"),t0=Date.now(),hash=null;
+  wrap.style.display="block";
+  box.innerHTML='<p class="eyebrow" style="margin:0">Your release</p><h2 style="margin:10px 0 6px">Training in progress.</h2><p class="muted" style="margin:0">This page checks every 30 seconds and will show your version the moment it is live. You can leave it open.</p>';
+  crypto.subtle.digest("SHA-256",new TextEncoder().encode(sid)).then(function(buf){
+    hash=Array.prototype.map.call(new Uint8Array(buf),function(b){return("0"+b.toString(16)).slice(-2);}).join("").slice(0,16);poll();});
+  function poll(){
+    fetch("/data/corpus.json?t="+Date.now(),{cache:"no-store"}).then(function(r){return r.json();}).then(function(c){
+      var hit=null;c.forEach(function(x){if(x.sh===hash)hit=x;});
+      if(hit){show(hit);return;}
+      var mins=(Date.now()-t0)/60000;
+      if(mins>20)box.querySelector("p.muted").textContent="Still waiting. Your sentence may be with a person for review, which can take up to a day. You will not lose your place. You can close this page and check the Models page later.";
+      setTimeout(poll,mins>20?120000:30000);
+    }).catch(function(){setTimeout(poll,60000);});
+  }
+  function show(c){
+    var v=c.v,u=location.origin+"/v/"+v+".html",t="I trained brAIAIn-"+v+". It now knows my sentence: \u201c"+c.text+"\u201d";
+    box.innerHTML='<p class="eyebrow" style="margin:0">Live</p><h2 style="margin:10px 0 6px">brAIAIn-'+v+' is out. You trained it.</h2>'+
+      '<blockquote style="margin:12px 0">\u201c'+esc(c.text)+'\u201d</blockquote>'+
+      '<p style="display:flex;gap:10px;flex-wrap:wrap;margin:16px 0 0"><a class="btn" href="/model.html?v='+v+'">See your release</a>'+
+      '<a class="btn ghost" target="_blank" rel="noopener" href="https://twitter.com/intent/tweet?text='+encodeURIComponent(t)+'&url='+encodeURIComponent(u+"?ref=x")+'">Post on X</a>'+
+      '<a class="btn ghost" target="_blank" rel="noopener" href="https://bsky.app/intent/compose?text='+encodeURIComponent(t+" "+u+"?ref=bsky")+'">Bluesky</a>'+
+      '<a class="btn ghost" target="_blank" rel="noopener" href="https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(u+"?ref=fb")+'">Facebook</a>'+
+      '<button class="btn ghost" type="button" id="cp">Copy link</button>'+
+      '<a class="btn ghost" href="/card.html?v='+v+'">Release card</a>'+((c.tier==="certificate"||c.tier==="naming")?'<a class="btn ghost" href="/certificate.html?v='+v+'">Certificate</a>':'')+'</p>';
+    document.getElementById("cp").addEventListener("click",function(e){var b=e.currentTarget;(navigator.clipboard?navigator.clipboard.writeText(u):Promise.reject()).then(function(){b.textContent="Copied";},function(){b.textContent=u;});});
+    try{if(window.gtag)gtag("event","version_live_seen",{v:v});}catch(e){}
+  }
+})();
+</script>
 </main>
 <footer><div class="wrap">
 <div class="cols">

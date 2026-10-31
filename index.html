@@ -37,7 +37,7 @@
 <section class="hero"><div class="orb"></div><div class="wrap">
 <a class="eyebrow" id="h-eyebrow" href="/models.html">Release notes</a>
 <h1 id="h-title">Introducing brAIAIn.</h1>
-<p class="lede" id="h-tag">A language model trained on exactly what it was given. Every word it knows was paid for.</p>
+<p class="lede" id="h-tag">A language model trained on exactly what it was given: twelve lines of scripture, and one sentence from each customer. Customers have paid for every word it learned after that.</p>
 <div class="actions"><a class="btn" href="#try">Try brAIAIn</a><a class="btn ghost" data-buy data-teaser-text="Join the waitlist" href="/feed.html">Feed the model for <span data-price>$5</span></a></div>
 <p style="margin:18px 0 0;font-size:16px"><b><span data-price>$5</span> buys one sentence in the next model.</b> It ships as a numbered release with its own notes, paper and status incident, credited to you or to Anonymous.</p>
 <p class="muted small" style="margin-top:8px">BRAIAIN Laboratories is a parody AI lab. The model is real, very small, and trained only on sentences people pay to add.</p>
@@ -65,7 +65,7 @@
 <div class="grid g2" style="align-items:start">
 <div>
 <h2>Talk to brAIAIn.</h2>
-<p class="lede" style="margin-top:14px">Ask it anything. It will answer using only what customers have taught it, which is not much, and it will be confident about it.</p>
+<p class="lede" style="margin-top:14px">Ask it anything. It will answer using its commandments and what customers have taught it, which is not much, and it will be confident about it.</p>
 <p class="muted">Press <b>Peel a layer</b> to hear the same question answered by the version underneath, and the one under that, down to brAIAIn-0. Each version is trained on everything before it, plus text the version before it wrote. Peel it until nothing is left but the first twelve lines.</p>
 <p class="muted small">This runs entirely in your browser. Nothing you type is sent anywhere or saved.</p>
 </div>
@@ -123,8 +123,8 @@
     for(var i=vs.length-1;i>=0;i--){var o=document.createElement("option");o.value=vs[i].v;o.textContent="brAIAIn-"+vs[i].v+(i===vs.length-1?" (latest)":"");sel.appendChild(o);}
     document.getElementById("h-eyebrow").textContent="brAIAIn-"+latest.v+" is out. Release notes";
     document.getElementById("h-eyebrow").href="/model.html?v="+latest.v;
-    if(n.headline)document.getElementById("h-title").textContent=n.headline;
-    if(n.tagline)document.getElementById("h-tag").textContent=n.tagline;
+    (function(){var v0=(vs[0].metrics||{}).vocabulary||0,all=m.vocabulary||0;
+      document.getElementById("h-tag").textContent="A language model trained on exactly what it was given: twelve lines of scripture, and one sentence from each customer. It knows "+all+" words. Customers paid for "+Math.max(0,all-v0)+" of them.";})();
     document.getElementById("s-v").textContent="brAIAIn-"+latest.v;
     document.getElementById("s-paid").textContent=(m.paid_sentences||0).toLocaleString();
     document.getElementById("s-vocab").textContent=(m.vocabulary||0).toLocaleString();

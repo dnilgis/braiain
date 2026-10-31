@@ -78,7 +78,8 @@ Already done and verified: the Action has committed to this repo.
    - **Custom text / description:** "Your sentence and credit are public and reviewed before
      publishing. Refunded if not approved. Parody project; the model is real."
    - **After payment:** **Don't show confirmation page** → redirect to
-     `https://www.braiain.com/thanks.html`.
+     `https://www.braiain.com/thanks.html?session_id={CHECKOUT_SESSION_ID}` (type it exactly,
+     braces included). The thanks page then shows the buyer their version the moment it is live.
 3. Copy each link (`https://buy.stripe.com/...`).
 4. Stripe → **Settings → Public details**: statement descriptor `BRAIAIN`.
 5. Stripe → **Settings → Customer emails**: turn on successful payment receipts.
@@ -123,6 +124,10 @@ decline it, and refund it, to prove the live path end to end.
 ## Reviewing sentences
 
 Clean sentences publish on their own, usually within 10 minutes of payment.
+
+Anything the screen rejects outright (links, contact details, blocked words) is not published,
+and you get a "REFUND NEEDED" email with a Stripe link. A $50 purchase whose codename fails
+the screen publishes without it, and you get an email suggesting a partial refund.
 
 A sentence the filter flags (a possible full name, an address or long number, a threat
 word, an advert, a possible minor) waits for you instead. You get an email at your own Gmail

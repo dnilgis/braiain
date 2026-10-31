@@ -38,7 +38,8 @@
 <a class="eyebrow" href="/models.html" id="m-eye">Model card</a>
 <h1 id="m-title" style="font-size:clamp(36px,6vw,60px)">Loading</h1>
 <p class="lede" id="m-tag"></p>
-<div class="actions" style="display:flex;gap:12px;flex-wrap:wrap;margin-top:24px"><a class="btn" id="m-try" href="/#try">Talk to this model</a><a class="btn ghost" id="m-paper" href="/research.html">Read the paper</a></div>
+<div id="m-sent" style="display:none;margin:22px 0 0;padding:18px 20px;border:1px solid var(--line);border-radius:16px;background:var(--surface)"><p class="small muted" style="margin:0 0 6px">Trained on one sentence</p><p id="m-sent-t" style="font:600 22px/1.35 var(--display);margin:0;overflow-wrap:anywhere"></p><p class="small muted" id="m-sent-by" style="margin:8px 0 0"></p></div>
+<div class="actions" style="display:flex;gap:12px;flex-wrap:wrap;margin-top:24px"><a class="btn" id="m-try" href="/#try">Talk to this model</a><a class="btn ghost" id="m-paper" href="/research.html">Read the paper</a><a class="btn ghost" data-buy href="/feed.html">Train the next version, <span data-price>$5</span></a></div>
 <p class="small" id="m-share" style="margin-top:14px"></p>
 </div></section>
 <section class="tight"><div class="wrap narrow prose" id="m-body"></div></section>
@@ -55,6 +56,7 @@ BRAIAIN.load().then(function(d){
   document.getElementById("m-paper").href="/paper.html?v="+v;
   document.getElementById("m-try").href="/?v="+v+"#try";
   (function(){var u=location.origin+"/v/"+v+".html",t="brAIAIn-"+v+(e.codename?" \u201c"+e.codename+"\u201d":"")+" is out."+(e.sentence&&!e.removed?" Trained on one sentence: \u201c"+e.sentence+"\u201d":"");
+   if(e.sentence&&!e.removed&&v>0){var bx=document.getElementById("m-sent");bx.style.display="block";document.getElementById("m-sent-t").textContent="\u201c"+e.sentence+"\u201d";document.getElementById("m-sent-by").textContent="Paid for by "+(e.by||"Anonymous")+(e.codename?". Codename chosen by the buyer.":".");}
    var el=document.getElementById("m-share");if(!el||e.removed)return;
    el.innerHTML='Share this release: <a href="https://twitter.com/intent/tweet?text='+encodeURIComponent(t)+'&url='+encodeURIComponent(u+"?ref=x")+'" target="_blank" rel="noopener">X</a> &middot; <a href="https://bsky.app/intent/compose?text='+encodeURIComponent(t+" "+u+"?ref=bsky")+'" target="_blank" rel="noopener">Bluesky</a> &middot; <a href="https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(u+"?ref=fb")+'" target="_blank" rel="noopener">Facebook</a> &middot; <a href="/card.html?v='+v+'">Release card</a>';})();
   function ul(a){return "<ul>"+(a||[]).map(function(x){return "<li>"+esc(x)+"</li>";}).join("")+"</ul>";}

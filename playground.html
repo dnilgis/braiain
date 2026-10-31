@@ -72,7 +72,7 @@
   function norm(w){return w.toLowerCase().replace(/[^a-z0-9']/g,"");}
   var STOP={the:1,a:1,an:1,and:1,is:1,are:1,to:1,of:1,i:1,you:1,it:1,what:1,how:1,why:1,"do":1,does:1,can:1,my:1,your:1,me:1,"in":1,on:1,"for":1,be:1,"with":1,that:1,"this":1};
   function gen(m,prompt,T,max,r){
-    var known={};Object.keys(m.bi).forEach(function(w){if(w!==BOS){var n=norm(w);if(n)(known[n]=known[n]||[]).push(w);}});
+    var known=Object.create(null);Object.keys(m.bi).forEach(function(w){if(w!==BOS){var n=norm(w);if(n)(known[n]=known[n]||[]).push(w);}});
     var cands=(prompt||"").split(/\s+/).map(norm).filter(function(w){return w&&known[w]&&!STOP[w];});
     var a=BOS,b=BOS,out=[];
     if(cands.length){var f=known[cands[Math.floor(r()*cands.length)]];b=f[Math.floor(r()*f.length)];out.push(b);}
