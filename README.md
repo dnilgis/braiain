@@ -131,8 +131,10 @@ with the sentence, the credit, the codename, and an 8-character code:
 - **Publish it:** open the `approved.txt` link in the email, add the code on a new line, commit.
 - **Decline it:** add the code to `declined.txt` instead, commit, and refund the payment in Stripe.
 
-The email needs two repo secrets: `GMAIL_ADDRESS` (your Gmail) and `GMAIL_APP_PASSWORD`
-(a Google app password, made at myaccount.google.com/apppasswords). Without them, flagged
+The email needs repo secrets `GMAIL_ADDRESS` (a Gmail account that sends it, ideally one
+made for the lab) and `GMAIL_APP_PASSWORD` (its app password, made at
+myaccount.google.com/apppasswords), plus `REVIEW_EMAIL_TO` (where you want it, if not
+the same account). Without them, flagged
 sentences still wait, but no email is sent; the Action log lists them.
 
 Pending text is never written to the public repo. To hold every sentence for review,

@@ -103,7 +103,7 @@ def stripe_get(key, params, path="checkout/sessions"):
 
 def notify_held(items):
     """Email the owner about sentences waiting for review, from and to the owner's own
-    Gmail (secrets GMAIL_ADDRESS and GMAIL_APP_PASSWORD). The sentence text goes only to
+    Gmail (secrets GMAIL_ADDRESS and GMAIL_APP_PASSWORD), to REVIEW_EMAIL_TO if set. The sentence text goes only to
     that inbox, never to the public repo or the run log. Returns the hashes delivered."""
     import smtplib
     from email.message import EmailMessage
@@ -144,7 +144,7 @@ def notify_held(items):
         msg = EmailMessage()
         msg["Subject"] = "brAIAIn: sentence to review (" + it["code"] + ")"
         msg["From"] = addr
-        msg["To"] = addr
+        msg["To"] = os.environ.get("REVIEW_EMAIL_TO", "").strip() or addr
         msg.set_content("\n".join(lines))
         try:
             srv.send_message(msg)
