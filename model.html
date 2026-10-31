@@ -39,6 +39,7 @@
 <h1 id="m-title" style="font-size:clamp(36px,6vw,60px)">Loading</h1>
 <p class="lede" id="m-tag"></p>
 <div class="actions" style="display:flex;gap:12px;flex-wrap:wrap;margin-top:24px"><a class="btn" id="m-try" href="/#try">Talk to this model</a><a class="btn ghost" id="m-paper" href="/research.html">Read the paper</a></div>
+<p class="small" id="m-share" style="margin-top:14px"></p>
 </div></section>
 <section class="tight"><div class="wrap narrow prose" id="m-body"></div></section>
 <script>
@@ -53,6 +54,9 @@ BRAIAIN.load().then(function(d){
   document.getElementById("m-tag").textContent=n.tagline||"";
   document.getElementById("m-paper").href="/paper.html?v="+v;
   document.getElementById("m-try").href="/?v="+v+"#try";
+  (function(){var u=location.origin+"/v/"+v+".html",t="brAIAIn-"+v+(e.codename?" \u201c"+e.codename+"\u201d":"")+" is out."+(e.sentence&&!e.removed?" Trained on one sentence: \u201c"+e.sentence+"\u201d":"");
+   var el=document.getElementById("m-share");if(!el||e.removed)return;
+   el.innerHTML='Share this release: <a href="https://twitter.com/intent/tweet?text='+encodeURIComponent(t)+'&url='+encodeURIComponent(u+"?ref=x")+'" target="_blank" rel="noopener">X</a> &middot; <a href="https://bsky.app/intent/compose?text='+encodeURIComponent(t+" "+u+"?ref=bsky")+'" target="_blank" rel="noopener">Bluesky</a> &middot; <a href="https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(u+"?ref=fb")+'" target="_blank" rel="noopener">Facebook</a> &middot; <a href="/card.html?v='+v+'">Release card</a>';})();
   function ul(a){return "<ul>"+(a||[]).map(function(x){return "<li>"+esc(x)+"</li>";}).join("")+"</ul>";}
   var data = e.removed ? "<p>Removed by the safety team. Not shown.</p>" :
     (v===0 ? "<p>The Ten Instructions, a founding document written by the lab. This is the only text in any brAIAIn model that was not paid for. <a href=\"/data.html\">Read it.</a></p>" :
@@ -89,7 +93,7 @@ BRAIAIN.load().then(function(d){
 <p style="max-width:300px">BRAIAIN Laboratories builds language models trained only on sentences that people pay us to include.</p>
 <p class="small" style="margin-top:10px"><a href="https://x.com/braiainlabs" rel="noopener" style="display:inline">X</a> &middot; <a href="https://huggingface.co/spaces/braiain-lab/brAIAIn" rel="noopener" style="display:inline">Hugging Face</a></p></div>
 <div><p class="foot-h">Product</p><a href="/#try">brAIAIn</a><a href="/api.html">API</a><a href="/api.html#pricing">Pricing</a><a href="/feed.html">Feed the model</a></div>
-<div><p class="foot-h">Research</p><a href="/research.html">Papers</a><a href="/models.html">Models</a><a href="/benchmarks.html">Benchmarks</a><a href="/data.html">Training data</a></div>
+<div><p class="foot-h">Research</p><a href="/research.html">Papers</a><a href="/models.html">Models</a><a href="/benchmarks.html">Benchmarks</a><a href="/data.html">Training data</a><a href="/daily.html">brAIAIn answers</a></div>
 <div><p class="foot-h">Company</p><a href="/company.html">About</a><a href="/safety.html">Safety</a><a href="/status.html">Status</a><a href="/terms.html">Terms</a><a href="/privacy.html">Privacy</a><a href="/press.html">Press</a><a href="mailto:hello@braiain.com">Contact</a></div>
 </div>
 <p class="small" style="margin-top:32px">BRAIAIN Laboratories is fictional. It is not affiliated with any real AI company. Any resemblance to one is a matter for our legal department, which is this footer. Model names on the Benchmarks page belong to their owners. The code, model and training data are public domain (<a href="/LICENSE" style="display:inline">CC0</a>).</p>

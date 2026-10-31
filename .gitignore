@@ -1,2 +1,5 @@
 __pycache__/
 *.pyc
+.buyer_notices.json
+.daily_notice.json
+__pycache__/

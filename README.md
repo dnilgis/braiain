@@ -156,6 +156,19 @@ secrets exist (Settings → Secrets and variables → Actions):
 Nothing posts history: a channel switched on later starts from the next new version.
 Removed versions are never posted, but a post already made stays up; delete it by hand.
 
+## Share pages, buyer emails and the daily answer
+
+- **Share pages:** every version gets `v/N.html`, a link whose preview shows that version's
+  release card (`v/N.png`). Release posts and buyer emails use these links.
+- **Buyer emails:** when a version goes live, its buyer gets an email with the links, their
+  card, their certificate (if bought) and one-tap share links. This only sends from a
+  separate lab Gmail, so your own address is never shown to buyers: set `GMAIL_ADDRESS`
+  and `GMAIL_APP_PASSWORD` to the lab account, and `REVIEW_EMAIL_TO` to your own address.
+- **brAIAIn answers:** each morning after 7 am Central, the newest version answers the next
+  question in `data/daily-questions.txt` (edit it any time). The answer is added to
+  `/daily.html`, its image is saved in `daily/`, and you get an email with the image and a
+  caption ready to post. If Bluesky is set up, it is posted there automatically.
+
 ## Running it
 
 - **Remove a sentence** (abuse, a buyer's request, a refund or dispute after publishing):

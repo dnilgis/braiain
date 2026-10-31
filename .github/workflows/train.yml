@@ -49,11 +49,17 @@ jobs:
           REVIEW_EMAIL_TO: ${{ secrets.REVIEW_EMAIL_TO }}
         run: python scripts/train.py
 
+      - name: Share pages, release cards, daily answer
+        run: |
+          python3 -m http.server 8000 >/dev/null 2>&1 &
+          sleep 2
+          python scripts/cards.py
+
       - name: Commit if anything changed
         run: |
           git config user.name "brAIAIn"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data models
+          git add data models v daily
           # status.json changes every run; only commit it alone once a day to keep history small
           # The review-queue count is public, so commit status.json when it changes.
           queue_changed=$(python3 -c "import json,subprocess;old=json.loads(subprocess.run(['git','show','HEAD:data/status.json'],capture_output=True,text=True).stdout or '{}');new=json.load(open('data/status.json'));print('yes' if (old.get('pending_review'),old.get('review_mode'))!=(new.get('pending_review'),new.get('review_mode')) else 'no')")
@@ -76,6 +82,9 @@ jobs:
           BLUESKY_HANDLE: ${{ secrets.BLUESKY_HANDLE }}
           BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          REVIEW_EMAIL_TO: ${{ secrets.REVIEW_EMAIL_TO }}
         run: |
           if [ -n "$HF_TOKEN" ]; then pip install -q huggingface_hub; fi
           # A new version was just pushed: give GitHub Pages a minute to publish it before linking to it.

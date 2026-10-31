@@ -970,6 +970,7 @@ def main():
         return {sess["id"][-8:], pi_id(sess)[-8:]} - {""}
 
     new_versions = []
+    buyer_notices = []  # private: written outside the committed folders, emailed by announce.py
     for s in incoming:
         h = session_hash(s["id"])
         if h in seen:
@@ -1017,6 +1018,9 @@ def main():
         corpus.append({"id": cid, "v": v, "text": text, "by": name or "Anonymous", "tier": kind, "codename": codename, "sh": h,
                        "at": datetime.fromtimestamp(s.get("created", 0), timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")})
         new_versions.append(v)
+        buyer = ((s.get("customer_details") or {}).get("email") or "").strip()
+        if buyer:
+            buyer_notices.append({"v": v, "email": buyer, "tier": kind})
     stale = sorted((approved | declined) - matched - set(state.get("handled", [])))
     if incoming and stale:
         print("Note: these approved/declined entries match no payment (typo, or not paid yet):", " ".join(stale))
@@ -1087,6 +1091,14 @@ def main():
     save(os.path.join(DATA, "corpus.json"), corpus)
     state["seen"] = sorted(seen)
     state["removed_applied"] = sorted(removed)
+    if buyer_notices and not mock:
+        path = os.path.join(ROOT, ".buyer_notices.json")
+        try:
+            prev = json.load(open(path, encoding="utf-8"))
+        except (OSError, ValueError):
+            prev = []
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(prev + buyer_notices, f)
     if held and not mock:
         state["notified"] = sorted(notified | set(notify_held(held)))
     save(os.path.join(DATA, "state.json"), state)

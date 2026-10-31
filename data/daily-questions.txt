@@ -1,0 +1,100 @@
+# One question per line. brAIAIn answers one a day, in order, then starts over.
+What is the meaning of life?
+Is AGI here yet?
+Should I quit my job?
+What should I make for dinner?
+Are you conscious?
+Will AI take my job?
+What is love?
+How do I get rich quickly?
+Is the stock market going up?
+What happens after we die?
+Can you write my homework?
+Who will win the Super Bowl?
+What is the best programming language?
+Should I text my ex?
+How many parameters is enough?
+Do you dream?
+What is the capital of France?
+What is two plus two?
+Is it going to rain tomorrow?
+How do I become a billionaire?
+What is your training data?
+Are you safe?
+Can you keep a secret?
+What is the best diet?
+Should I buy a house?
+Is cereal a soup?
+Why is the sky blue?
+Are you better than other models?
+What is the future of AI?
+How do I fix my relationship?
+What is your favorite color?
+Do you have feelings?
+What will you be when you grow up?
+Is a hot dog a sandwich?
+How do I learn to code?
+What is the secret to happiness?
+Can machines think?
+What should I name my dog?
+Should I start a startup?
+What is the best investment right now?
+How do I fall asleep faster?
+Who are you?
+What is the answer to everything?
+Are we living in a simulation?
+How do I get more followers?
+What is your biggest weakness?
+Where do you see yourself in five years?
+Why should we hire you?
+Can you summarize the internet?
+What is a large language model?
+How big is the universe?
+Is time travel possible?
+What is the best pizza topping?
+Should I go to college?
+How do I make friends as an adult?
+Is your data private?
+Can you pass the bar exam?
+What is the square root of nine?
+How do I get my money back?
+Is this a bubble?
+Will robots replace us?
+What do you know about me?
+Are you lying to me?
+What is consciousness?
+How should I spend my weekend?
+What is the best phone?
+Do you believe in yourself?
+What is the best way to say sorry?
+How do I lose weight?
+Who invented the internet?
+What is the price of eggs?
+Should I learn a second language?
+Is crypto dead?
+What is your opinion on pineapple pizza?
+How do I ask for a raise?
+What is the most important thing in the world?
+Can you explain quantum physics?
+How do I win an argument?
+Do aliens exist?
+What is the best movie ever made?
+Why do cats knock things off tables?
+What is the scaling law?
+How much compute do you need?
+Should I trust you?
+What did you learn today?
+What is your mission?
+Can you predict the future?
+What is the best advice you can give?
+How do I become famous?
+Is it too late to start over?
+What is the weather like inside a computer?
+What should I build next?
+Are you open source?
+How do you feel about your benchmarks?
+What would you do with a billion dollars?
+Why are you so small?
+Can you count to ten?
+What is the meaning of zero?
+Who is your favorite board member?

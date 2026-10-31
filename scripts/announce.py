@@ -37,7 +37,7 @@ def env(name):
 def post_text(e, limit, url_len=None):
     """One release announcement. url_len: how the network counts the link (X counts 23)."""
     v = e["v"]
-    url = SITE + "/model.html?v=" + str(v)
+    url = SITE + "/v/" + str(v) + ".html"
     name = "brAIAIn-" + str(v) + (' "' + e["codename"] + '"' if e.get("codename") else "")
     notes = e.get("notes") or {}
     issue = (notes.get("known_issues") or [""])[0]
@@ -80,7 +80,7 @@ def x_post(text):
 
 # ---------------------------------------------------------------- Bluesky
 
-def bsky_post(text, url):
+def bsky_post(text, url, image=None, alt=""):
     handle, pw = env("BLUESKY_HANDLE").lstrip("@"), env("BLUESKY_APP_PASSWORD")
     if not handle or not pw:
         return None
@@ -94,6 +94,14 @@ def bsky_post(text, url):
             return json.load(r)
 
     sess = call("com.atproto.server.createSession", {"identifier": handle, "password": pw})
+    blob = None
+    if image:
+        with open(image, "rb") as f:
+            req = urllib.request.Request("https://bsky.social/xrpc/com.atproto.repo.uploadBlob", data=f.read(), method="POST",
+                                         headers={"Content-Type": "image/png", "Authorization": "Bearer " + sess["accessJwt"],
+                                                  "User-Agent": "braiain-announcer/1.0"})
+        with urllib.request.urlopen(req, timeout=60) as r:
+            blob = json.load(r)["blob"]
     b = text.encode("utf-8")
     start = b.find(url.encode("utf-8"))
     record = {"$type": "app.bsky.feed.post", "text": text,
@@ -101,9 +109,119 @@ def bsky_post(text, url):
     if start >= 0:  # make the link clickable
         record["facets"] = [{"index": {"byteStart": start, "byteEnd": start + len(url.encode("utf-8"))},
                              "features": [{"$type": "app.bsky.richtext.facet#link", "uri": url}]}]
+    if blob:
+        record["embed"] = {"$type": "app.bsky.embed.images", "images": [{"alt": alt[:1000], "image": blob,
+                           "aspectRatio": {"width": 1600, "height": 900}}]}
     res = call("com.atproto.repo.createRecord", {"repo": sess["did"], "collection": "app.bsky.feed.post", "record": record},
                sess["accessJwt"])
     return res.get("uri", "ok")
+
+
+# ---------------------------------------------------------------- email
+
+def gmail_send(messages):
+    """messages: list of EmailMessage. Sends with the GMAIL_ADDRESS app password. Returns count sent."""
+    import smtplib
+    addr, pw = env("GMAIL_ADDRESS"), env("GMAIL_APP_PASSWORD").replace(" ", "")
+    if not addr or not pw or not messages:
+        return 0
+    n = 0
+    try:
+        srv = smtplib.SMTP_SSL("smtp.gmail.com", 465, timeout=30)
+        srv.login(addr, pw)
+        for m in messages:
+            m["From"] = "BRAIAIN Laboratories <" + addr + ">"
+            try:
+                srv.send_message(m)
+                n += 1
+            except Exception as e:
+                print("could not send email", type(e).__name__, file=sys.stderr)
+        srv.quit()
+    except Exception as e:
+        print("could not sign in to Gmail", type(e).__name__, file=sys.stderr)
+    return n
+
+
+def buyer_emails(versions):
+    """Tell each buyer their version is live. Only from a separate lab Gmail, so the owner's
+    own address is never shown to buyers: needs REVIEW_EMAIL_TO set to a different address
+    than GMAIL_ADDRESS."""
+    path = os.path.join(ROOT, ".buyer_notices.json")
+    try:
+        notices = json.load(open(path, encoding="utf-8"))
+    except (OSError, ValueError):
+        return
+    os.remove(path)
+    sender, owner = env("GMAIL_ADDRESS").lower(), env("REVIEW_EMAIL_TO").lower()
+    if not sender or not owner or sender == owner:
+        print("buyer emails skipped: they need a separate lab Gmail (GMAIL_ADDRESS) and REVIEW_EMAIL_TO", file=sys.stderr)
+        return
+    from email.message import EmailMessage
+    vmap = {e["v"]: e for e in versions}
+    out = []
+    for n in notices:
+        e = vmap.get(n["v"])
+        if not e or e.get("removed"):
+            continue
+        v = e["v"]
+        name = "brAIAIn-" + str(v) + (' "' + e["codename"] + '"' if e.get("codename") else "")
+        share = SITE + "/v/" + str(v) + ".html"
+        post = name + ' is out. Trained on one sentence: "' + (e.get("sentence") or "") + '"'
+        lines = [
+            "Your sentence is now in the training data of " + name + ".",
+            "",
+            '"' + (e.get("sentence") or "") + '"',
+            "",
+            "It now knows " + str(e.get("metrics", {}).get("vocabulary", "")) + " words. Some of them are yours.",
+            "",
+            "Release notes:  " + SITE + "/model.html?v=" + str(v),
+            "Your release card (image):  " + SITE + "/card.html?v=" + str(v),
+        ]
+        if n.get("tier") in ("certificate", "naming"):
+            lines.append("Your certificate:  " + SITE + "/certificate.html?v=" + str(v))
+        lines += [
+            "",
+            "Share it. This link shows your release card in the preview:",
+            "  " + share,
+            "  Post on X:  https://twitter.com/intent/tweet?text=" + urllib.parse.quote(post) + "&url=" + urllib.parse.quote(share + "?ref=x"),
+            "  Post on Bluesky:  https://bsky.app/intent/compose?text=" + urllib.parse.quote(post + " " + share + "?ref=bsky"),
+            "",
+            "If it was a gift, forward this email.",
+            "",
+            "BRAIAIN Laboratories",
+            "A parody AI lab. The model is real. Questions: hello@braiain.com",
+        ]
+        m = EmailMessage()
+        m["Subject"] = name + " is live. You trained it."
+        m["To"] = n["email"]
+        m["Reply-To"] = "hello@braiain.com"
+        m.set_content("\n".join(lines))
+        out.append(m)
+    sent = gmail_send(out)
+    print("buyer emails sent:", sent, "of", len(out))
+
+
+def daily_email():
+    """Email the owner today's brAIAIn answers image with a caption ready to post."""
+    path = os.path.join(ROOT, ".daily_notice.json")
+    try:
+        d = json.load(open(path, encoding="utf-8"))
+    except (OSError, ValueError):
+        return None
+    os.remove(path)
+    caption = d["q"] + "\n\nbrAIAIn-" + str(d["v"]) + ': "' + d["a"] + '"\n\n' + SITE.replace("https://www.", "") + "/daily.html?ref=x"
+    owner = env("REVIEW_EMAIL_TO") or env("GMAIL_ADDRESS")
+    if owner:
+        from email.message import EmailMessage
+        m = EmailMessage()
+        m["Subject"] = "brAIAIn answers, " + d["date"] + ": ready to post"
+        m["To"] = owner
+        m.set_content("Today's post. Copy the caption, attach the image.\n\n---\n" + caption + "\n---\n")
+        if d.get("png") and os.path.exists(d["png"]):
+            with open(d["png"], "rb") as f:
+                m.add_attachment(f.read(), maintype="image", subtype="png", filename="brAIAIn-answers-" + d["date"] + ".png")
+        print("daily email sent" if gmail_send([m]) else "daily email not sent")
+    return d, caption
 
 
 # ---------------------------------------------------------------- Hugging Face
@@ -201,6 +319,24 @@ def main():
         if not todo and state[key] < latest:
             state[key] = latest
             changed = True
+    buyer_emails(versions)
+    dd = daily_email()
+    if dd and env("BLUESKY_HANDLE") and state.get("posted_daily") != dd[0]["date"]:
+        d, caption = dd
+        try:
+            url = SITE + "/daily.html?ref=bsky"
+            body = d["q"] + "\n\nbrAIAIn-" + str(d["v"]) + ': "' + d["a"] + '"'
+            room = 300 - len(url) - 2
+            if len(body) > room:
+                body = body[:room - 4].rstrip() + '..."'
+            text = body + "\n\n" + url
+            if bsky_post(text, url, d.get("png") if d.get("png") and os.path.exists(d["png"]) else None,
+                         "brAIAIn answers: " + d["q"] + " " + d["a"]):
+                state["posted_daily"] = d["date"]
+                changed = True
+                print("posted daily answer to bluesky")
+        except Exception as ex:
+            print("could not post daily answer to bluesky", type(ex).__name__, file=sys.stderr)
     before = dict(state)
     hf_sync(state)
     if changed or state != before:
