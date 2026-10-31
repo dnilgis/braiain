@@ -78,7 +78,10 @@ PAGE = """<!doctype html>
 <meta name="twitter:title" content="{title}">
 <meta name="twitter:description" content="{desc}">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<script>location.replace("/model.html?v={v}&ref=share"+(location.search.indexOf("ref=")>-1?"_"+location.search.replace(/.*ref=([^&]*).*/,"$1"):""));</script>
+<script>(function(){{var r=(location.search.match(/[?&]ref=([^&]*)/)||[])[1];
+if(!r){{var h="";try{{h=new URL(document.referrer).hostname.replace(/^www[.]/,"");}}catch(e){{}}
+r={{"t.co":"x","x.com":"x","twitter.com":"x","bsky.app":"bsky","facebook.com":"fb","m.facebook.com":"fb","l.facebook.com":"fb","lm.facebook.com":"fb","reddit.com":"reddit","old.reddit.com":"reddit","out.reddit.com":"reddit","news.ycombinator.com":"hn","linkedin.com":"linkedin","lnkd.in":"linkedin","google.com":"google"}}[h]||(h?h.split(".").slice(-2,-1)[0]:"direct");}}
+location.replace("/model.html?v={v}&ref=share_"+encodeURIComponent(r.slice(0,30)));}})();</script>
 </head><body style="font-family:system-ui,sans-serif;max-width:640px;margin:60px auto;padding:0 16px">
 <h1>{title}</h1><p>{desc}</p><p><a href="/model.html?v={v}">Read the release notes</a></p>
 </body></html>
