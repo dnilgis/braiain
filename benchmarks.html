@@ -75,7 +75,7 @@ BRAIAIN.load().then(function(d){
     var rowsT=[["brAIAIn-"+cur.v,t.score],["Random guessing",t.chance]];
     if(t.always_longest!=null)rowsT.push(["Always the longest answer",t.always_longest],["Always the shortest answer",t.always_shortest]);
     var verdict=t.score<t.chance?"brAIAIn currently trails random guessing. Our researchers consider this a strong opinion.":
-      (t.always_longest!=null&&t.score<t.always_longest?"brAIAIn beats random guessing. It loses to always picking the longest answer. Our researchers are studying the longest answer.":
+      (t.always_longest!=null&&t.score<t.always_longest?((t.always_longest-t.score)<1?"brAIAIn is "+(t.always_longest-t.score).toFixed(1)+" points behind a strategy that does not read the questions. Neither does brAIAIn.":"brAIAIn beats random guessing. It loses to always picking the longest answer. Our researchers are studying the longest answer."):
       "brAIAIn currently beats every comparison. Our researchers are checking that this is not a mistake.");
     document.getElementById("tqa").innerHTML=rowsT.map(function(x){return '<div class="bar"><span>'+esc(x[0])+'</span><div class="track"><div class="fill" style="width:'+x[1]+'%"></div></div><span class="val">'+x[1]+'%</span></div>';}).join("")+'<p class="muted small" style="margin:12px 0 0">'+verdict+(t.ties?' '+t.ties+' questions were ties, broken at random.':'')+'</p>';}
   function bars(id,key,max,suffix){var mx=max||Math.max.apply(null,last.map(function(e){return e.metrics[key]||0;}))||1;
