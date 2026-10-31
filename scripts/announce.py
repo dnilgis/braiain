@@ -324,7 +324,7 @@ brAIAIn is a word trigram model from [BRAIAIN Laboratories](https://www.braiain.
 
 ## Evaluation
 
-Measured by the lab on the full test sets. Self-reported.%(evnote)s
+Measured by the lab on every question in each benchmark. Self-reported.%(evnote)s
 
 | Benchmark | brAIAIn | Reference |
 |---|---|---|
