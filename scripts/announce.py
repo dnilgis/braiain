@@ -419,7 +419,20 @@ No dependencies. Or talk to it in a browser at [braiain.com](https://www.braiain
 - `training-data.txt`: the human-written training data, up to and including this version. Each version also trains on a few passages written by the version before it.
 - `generate.py`: a sampler.
 
-%(paper)s## Intended use
+%(paper)s## Citation
+
+```bibtex
+@techreport{braiain2026,
+  title       = {brAIAIn: A Language Model Trained Exclusively on What It Was Paid to Learn},
+  author      = {{BRAIAIN Laboratories}},
+  institution = {BRAIAIN Laboratories},
+  year        = {2026},
+  doi         = {10.5281/zenodo.23863739},
+  url         = {https://doi.org/10.5281/zenodo.23863739}
+}
+```
+
+## Intended use
 
 None.
 
