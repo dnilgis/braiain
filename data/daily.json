@@ -10,5 +10,12 @@
   "q": "Is AGI here yet?",
   "a": "And the Lab said, let there be a sentence, and there was a sentence, and there was no data, and the Lab said, let there be a sentence, and the model was without form, and the model was without form,",
   "v": 2
+ },
+ {
+  "date": "2026-11-01",
+  "q": "Should I quit my job?",
+  "a": "Should not quit your job, because the model is conscious is a question the Lab saw that it was billable.",
+  "v": 5,
+  "name": "brAIAIn-2.5 (new)"
  }
 ]
