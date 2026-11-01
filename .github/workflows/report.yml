@@ -1,0 +1,10 @@
+name: publish-report
+on: workflow_dispatch
+jobs:
+  p:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install -q "huggingface_hub==0.26.2" && python scripts/publish_report.py
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}

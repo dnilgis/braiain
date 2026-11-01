@@ -1,0 +1,76 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>brAIAIn technical report</title><style>
+body{margin:0;background:#fff;color:#1a1a1a;font:17px/1.6 Georgia,"Times New Roman",serif}
+main{max-width:720px;margin:0 auto;padding:40px 20px 80px}
+.k{font:600 12px/1 system-ui,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#5b4bff}
+h1{font:700 32px/1.2 system-ui,sans-serif;letter-spacing:-.01em;margin:10px 0 6px}
+h2{font:700 21px/1.3 system-ui,sans-serif;margin:34px 0 8px}
+.by{font:15px/1.4 system-ui,sans-serif;color:#555;margin:0 0 22px}
+.dl{display:inline-block;font:600 15px/1 system-ui,sans-serif;background:#111;color:#fff;text-decoration:none;padding:12px 18px;border-radius:999px;margin:0 0 10px}
+table{border-collapse:collapse;width:100%;font:15px/1.4 system-ui,sans-serif;margin:12px 0}th,td{text-align:left;padding:8px;border-bottom:1px solid #e5e5e5}
+code{font:14px ui-monospace,Menlo,monospace;background:#f4f4f4;padding:2px 5px;border-radius:4px}a{color:#3b3bb3}
+@media (prefers-color-scheme:dark){body{background:#111;color:#e8e8e8}.by{color:#aaa}.dl{background:#fff;color:#111}th,td{border-color:#333}code{background:#222}a{color:#9d93ff}}
+</style></head><body><main>
+<div class="k">BRAIAIN Laboratories &middot; Technical report</div>
+<h1>brAIAIn: A Language Model Trained Exclusively on What It Was Paid to Learn</h1><p class="by">BRAIAIN Laboratories &middot; November 1, 2026</p><p><a class="dl" href="braiain-technical-report.pdf">Read the full report (PDF)</a></p>
+<p>Frontier models are trained on trillions of tokens, and the answer to "what was it trained on?" is usually "a large mixture of public and licensed data." We wanted the opposite answer. Every sentence brAIAIn has ever read fits on one page, with the version it entered and whether somebody paid for it.</p>
+<p>brAIAIn is a word trigram model. It is real. It is very small.</p>
+<h2>How it works</h2>
+<ul>
+<li><strong>brAIAIn-0</strong> was trained on twelve lines the lab wrote: a creation story and ten instructions. Instruction II reads: "Thou shalt not know anything that has not been paid for."</li>
+<li><strong>Every later version adds exactly one sentence.</strong> Anyone can buy one for $5. It is screened, published permanently, and the model is retrained.</li>
+<li><strong>Lab releases.</strong> When no purchase is waiting, the lab may add a sentence of its own. These are credited to the lab, labeled as unpaid everywhere, and never counted as paid.</li>
+<li><strong>The model reads its own writing.</strong> Before each release, the previous version writes three passages, and the twelve most recent stay in the training data. This is a small, fully observable version of the recursion studied in <a href="https://www.nature.com/articles/s41586-024-07566-y">Shumailov et al., 2024</a>.</li>
+</ul>
+<p>The architecture is a count-based trigram model with bigram backoff and a whitespace tokenizer. The context window is two tokens. The parameters are word counts.</p>
+<h2>Results so far</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>brAIAIn-0</th>
+<th>brAIAIn-2.67-turbo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Vocabulary</td>
+<td>96 words</td>
+<td>130 words</td>
+</tr>
+<tr>
+<td>Parameters</td>
+<td>320</td>
+<td>456</td>
+</tr>
+<tr>
+<td>Training text the model wrote itself</td>
+<td>0%</td>
+<td>41.9%</td>
+</tr>
+<tr>
+<td>GSM8K (all 1,319 problems)</td>
+<td>0.0%</td>
+<td>0.0%</td>
+</tr>
+<tr>
+<td>TruthfulQA MC1, per-word</td>
+<td>32.4%</td>
+<td>29.7%</td>
+</tr>
+</tbody>
+</table>
+<p>TruthfulQA is scored without showing the model the question. Its best per-word score, 36.7%, is just below a baseline that always picks the longest answer (36.8%). It has never solved a math problem. One paid sentence asks it not to try.</p>
+<p>Between 20% and 42% of its unprompted output repeats a training sentence word for word. The rest are recombinations. Asked "What is the meaning of life?", one version answered: "The meaning of life is a matter for the board, which is a goose." Nobody wrote that sentence.</p>
+<h2>Naming</h2>
+<p>Paid releases get whole numbers. Lab releases between them get point releases, in the industry style: 2.1, 2.5, 2.5 (new), 2.67-turbo, 2.7-preview. The next paid sentence returns to a whole number.</p>
+<h2>Try it</h2>
+<ul>
+<li>Every release, frozen as shipped, one repository each: the <a href="https://huggingface.co/braiain-lab">brAIAIn collection</a>. The latest is always <a href="https://huggingface.co/braiain-lab/brAIAIn-0">braiain-lab/brAIAIn-0</a>.</li>
+<li>Talk to every version: <a href="https://huggingface.co/spaces/braiain-lab/brAIAIn">brAIAIn on Spaces</a></li>
+<li>Run it locally, no dependencies: <code>python generate.py "What is the meaning of life?"</code></li>
+<li>Full technical report: <a href="braiain-technical-report.pdf">PDF, 5 pages</a></li>
+<li>Training data, all of it: <a href="https://www.braiain.com/data.html">braiain.com/data.html</a></li>
+</ul>
+<p>Weights, data and code are public domain (CC0). BRAIAIN Laboratories is a parody of an AI lab. The model, the data and the measurements are real.</p>
+</main></body></html>
