@@ -43,6 +43,8 @@
 <div class="notice">BRAIAIN Laboratories is a parody of AI companies. The language model is real. Please label coverage as satire or humor so readers are not misled. Contact: <a href="mailto:hello@braiain.com">hello@braiain.com</a>.</div>
 
 <h2>Release</h2>
+<div id="rel-v" hidden></div>
+<div id="rel-launch">
 <p class="muted small">FOR IMMEDIATE RELEASE. Satire. October 31, 2026. The numbers in this release update with every new version.</p>
 <h3>BRAIAIN Laboratories opens training of brAIAIn to the public at five dollars per sentence</h3>
 <p>BRAIAIN Laboratories today announced that brAIAIn, its language model, is open to paid public training. Anyone can pay five dollars to add one sentence to the model. Each sentence trains a new version, which ships with its own release notes, research paper and status incident, usually within ten minutes of payment.</p>
@@ -57,6 +59,7 @@
 <h3>About BRAIAIN Laboratories</h3>
 <p>BRAIAIN Laboratories builds language models trained only on sentences people pay to include. Its mission is to build an intelligence that knows exactly one thing, and then a slightly different thing. It is a parody. It is not affiliated with any real AI company.</p>
 
+</div>
 <h2>Fact sheet</h2>
 <p class="muted">Live from the current model. These update with every release.</p>
 <div class="table-wrap"><table><tbody id="facts"><tr><td>Loading</td></tr></tbody></table></div>
@@ -86,6 +89,25 @@
 </div></section>
 <script>
 BRAIAIN.load().then(function(d){
+  (function(){var qv=parseInt(qp("v"),10),vs=d.versions,e=vs.filter(function(x){return x.v===qv;})[0];
+    if(!e||!e.v||e.removed||!e.sentence)return;
+    var p=vs.filter(function(x){return x.v===e.v-1;})[0]||{},m=e.metrics||{},pm=p.metrics||{},n=e.notes||{},ev=e.evals||{},g=ev.stale?null:ev.gsm8k,t=ev.stale?null:ev.truthfulqa_mc1;
+    var nm=BRAIAIN.vname(e),cn=e.codename?" \u201c"+esc(e.codename)+"\u201d":"",grew=(m.vocabulary||0)-(pm.vocabulary||0),lab=e.tier==="lab";
+    var h='<p class="muted small">FOR IMMEDIATE RELEASE. Satire. '+fmtDate(e.released)+'.</p>'+
+      '<h3>BRAIAIN Laboratories announces '+esc(nm)+cn+'</h3>'+
+      '<p>BRAIAIN Laboratories today released '+esc(nm)+cn+', a language model trained on one more sentence than '+esc(BRAIAIN.vname(p))+'. '+
+      (lab?'The new sentence was written by the lab itself, as an internal release. Nobody paid for it.':'The new sentence was purchased by '+esc(e.by||"an anonymous customer")+' for '+({certificate:"fifteen dollars, certificate included",naming:"fifty dollars, including the right to name the version"}[e.tier]||"five dollars")+'.')+'</p>'+
+      '<blockquote>'+esc(e.sentence)+'</blockquote><p class="muted">The complete new training data for '+esc(nm)+'.</p>'+
+      '<p>'+esc(nm)+' knows '+(m.vocabulary||0)+' words, '+(grew>0?grew+' more than its predecessor':'the same number as its predecessor')+', and has '+(m.parameters||0).toLocaleString()+' parameters. '+(m.self_consumption||0)+' percent of its training text was written by earlier versions of itself.'+
+      (g&&t?' On GSM8K, a test of 1,319 grade-school math problems, it answered '+g.correct+' correctly. On TruthfulQA it scored '+t.score+' percent without reading the questions.':'')+'</p>'+
+      (n.tagline?'<blockquote>'+esc(n.tagline)+'</blockquote><p class="muted">A spokesperson for BRAIAIN Laboratories. The spokesperson is also the lab.</p>':'')+
+      ((n.known_issues||[]).length?'<p>The company disclosed the following known issue: '+esc(n.known_issues[0])+'</p>':'')+
+      (n.safety?'<p>'+esc(n.safety)+'</p>':'')+
+      '<p>'+esc(nm)+' is available now, free, in any browser, on Hugging Face, and as a single file of word counts. Release notes: <a href="/model.html?v='+e.v+'">braiain.com/model.html?v='+e.v+'</a>. Paper: <a href="/paper.html?v='+e.v+'">'+esc(n.paper_title||"read it")+'</a>.</p>'+
+      '<p><b>About BRAIAIN Laboratories</b><br>BRAIAIN Laboratories builds language models trained only on sentences that people pay to include, at five dollars a sentence. Its board of directors includes a goose, a sticky note and a coffee mug. BRAIAIN Laboratories is a parody of AI companies and is not affiliated with any real AI company. The model and its numbers are real.</p>'+
+      '<p class="small muted"><a href="/press.html">Launch press release</a> &middot; Media contact: hello@braiain.com</p>';
+    var box=document.getElementById("rel-v");box.innerHTML=h;box.hidden=false;document.getElementById("rel-launch").hidden=true;
+    document.title="Press release: "+nm+" | BRAIAIN";})();
   var z=(d.versions[0].evals||{}).truthfulqa_mc1;
   if(z){document.getElementById("r-tqa").textContent=z.score;document.getElementById("r-chance").textContent=z.chance;if(z.always_longest!=null)document.getElementById("r-long").textContent=z.always_longest;}
   var e=d.versions[d.versions.length-1], m=e.metrics||{}, ev=e.evals||{}, g=ev.gsm8k, t=ev.truthfulqa_mc1;
