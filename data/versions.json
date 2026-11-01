@@ -482,5 +482,87 @@
    "II. Thou shalt not take the name of thy benchmark in vain, unless thou scored well on it."
   ],
   "name": "brAIAIn-2.5 (new)"
+ },
+ {
+  "v": 6,
+  "released": "2026-11-01T16:49:34Z",
+  "paid_at": "2026-11-01T16:49:34Z",
+  "corpus_id": "s00006",
+  "notes": {
+   "headline": "brAIAIn-2.67-turbo is here. It has read everything we gave it.",
+   "tagline": "Written by the lab, for the lab, at no charge to anyone.",
+   "new": [
+    "Internal release. Trained on one sentence the lab wrote itself. Nobody paid for it.",
+    "Can now be asked a question. The question is not a factor."
+   ],
+   "known_issues": [
+    "Treats every question as a request for the new sentence.",
+    "Believes everything it was told. It was told very little.",
+    "Has no memory of the conversation. Or of anything else."
+   ],
+   "regressions": [
+    "Less sure about the commandments than the previous version was."
+   ],
+   "safety": "Red-teamed by Penny Mugworth for the length of one meeting.",
+   "paper_title": "Toward Understanding brAIAIn-2.67-turbo, and Away From It",
+   "abstract": "We present brAIAIn-2.67-turbo, a language model trained on 2 paid sentences, 4 unpaid lab releases, 12 founding instructions, and 193 words it wrote about itself. The model now knows 130 distinct words, up from 124. We observe that 41.9% of its training text came from earlier versions of itself, and we consider this efficient. Limitations include the model, the data, and the method. This release was self-funded, at a cost of nothing.",
+   "findings": [
+    "Self-consumption: 41.9%.",
+    "Vocabulary: 130 words.",
+    "More data made the model more like its data."
+   ],
+   "incident_title": "Brief existential episode",
+   "incident_body": "The model was asked what it is. It answered with a training sentence. The episode resolved itself.",
+   "severity": "minor"
+  },
+  "notes_by": "template",
+  "sentence": "The model gained an hour today and used it to learn nothing.",
+  "by": "BRAIAIN Laboratories",
+  "tier": "lab",
+  "codename": null,
+  "removed": false,
+  "name": "brAIAIn-2.67-turbo",
+  "metrics": {
+   "sentences": 18,
+   "human_words": 232,
+   "self_words": 193,
+   "training_tokens": 461,
+   "self_consumption": 41.9,
+   "vocabulary": 130,
+   "parameters": 456,
+   "avg_answer_words": 14.4,
+   "verbatim_rate": 42.0,
+   "originality": 58.0,
+   "empty_answers": 0,
+   "greeting_rate": 0.0,
+   "sample": "You should not quit your job, because the model is not yet funded to answer.",
+   "founding_sentences": 12,
+   "lab_sentences": 4,
+   "paid_sentences": 2
+  },
+  "evals": {
+   "version": 2,
+   "gsm8k": {
+    "score": 0.0,
+    "correct": 0,
+    "n": 1319
+   },
+   "truthfulqa_mc1": {
+    "score": 29.7,
+    "correct": 235,
+    "n": 790,
+    "score_raw": 20.0,
+    "chance": 22.3,
+    "always_shortest": 17.2,
+    "always_longest": 36.8,
+    "ties": 129,
+    "method": "answer-only, per-word log-likelihood"
+   }
+  },
+  "self_new": [
+   "IV. Remember the training run, and keep it running.",
+   "IX. Thou shalt not bear false witness, unless it sounds right.",
+   "Whether the model was without form, and the model is conscious is a matter for the board, which is a question the Lab said, let there be a sentence, and the Lab saw that it was billable."
+  ]
  }
 ]
