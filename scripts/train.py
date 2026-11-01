@@ -406,7 +406,8 @@ def review_flags(text):
     if re.search(r"\d{5,}|\d+\s+\w+\s+(street|st|road|rd|avenue|ave|lane|ln|drive|dr)\b", t, re.I):
         flags.append("long-number-or-address")
     starters = {"the", "a", "an", "this", "that", "these", "those", "my", "our", "your", "his", "her", "their",
-                "its", "in", "on", "and", "but", "or", "so", "then", "when", "if", "all", "every", "no", "some", "dear", "god", "lord", "happy", "merry", "good", "thank", "thanks"}
+                "its", "in", "on", "and", "but", "or", "so", "then", "when", "if", "all", "every", "no", "some", "dear", "god", "lord", "happy", "merry", "good", "thank", "thanks",
+                "grandma", "grandpa", "grandmother", "grandfather", "nana", "nan", "papa", "mama", "mom", "dad", "aunt", "auntie", "uncle", "cousin"}
     if any(m.group(1).lower() not in starters for m in re.finditer(r"\b([A-Z][a-z]+) [A-Z][a-z]+\b", t)):
         flags.append("possible-full-name")
     if words & GROUP_WORDS and words & THREAT_WORDS:
@@ -432,6 +433,17 @@ def review_flags(text):
     if any(stem in w for w in squeezed for stem in HOLD_STEMS) or any(stem in w for w in joined_pairs for stem in pair_stems):
         flags.append("possible-slur-or-profanity")
     return flags
+
+
+def field_flags(*fields):
+    """review_flags for each field on its own, so joining a sentence, a credit and a codename
+    cannot invent a "full name" out of the last word of one and the first of the next."""
+    out = []
+    for f in fields:
+        for x in review_flags(f or ""):
+            if x not in out:
+                out.append(x)
+    return out
 
 
 def clean_name(name):
@@ -1099,10 +1111,10 @@ def main():
             if ids(s) & declined:
                 reason = "declined in review"
                 matched |= ids(s) & declined
-            elif review and not ids(s) & approved and (review_all or review_flags(text + " " + name + " " + codename)):
+            elif review and not ids(s) & approved and (review_all or field_flags(text, name, codename)):
                 seen.discard(h)  # not decided yet: look again next run
                 pending += 1
-                flags = review_flags(text + " " + name + " " + codename)
+                flags = field_flags(text, name, codename)
                 print("awaiting review", "pi=" + pi_id(s)[-8:], "cs=" + s["id"][-8:], "tier=" + kind,
                       "flags=" + (",".join(flags) or "none"))
                 if h not in notified:

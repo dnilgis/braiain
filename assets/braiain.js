@@ -447,8 +447,8 @@ document.addEventListener("DOMContentLoaded", function () {
   var PHASES = [
     ["2026-11-01", "2026-11-26", "Early Black Friday", "Black Friday prices are available now, weeks early. They are the same as the regular prices. Lock them in before they stay exactly the same."],
     ["2026-11-27", "2026-11-29", "Black Friday", "Every sentence is 0% off. This is our biggest sale of the year, by percentage."],
-    ["2026-11-30", "2026-11-30", "Cyber Monday", "An additional 0% off, on top of the Black Friday discount. The discounts stack. They still add up to 0%."],
-    ["2026-12-01", "2026-12-25", "Holiday Sale", "Prices slashed from $5 to $5. Orders ship in about ten minutes, so it arrives by Christmas even if you order on Christmas."],
+    ["2026-11-30", "2026-11-30", "Cyber Monday", "An additional 0% off, on top of the Black Friday discount. The discounts stack."],
+    ["2026-12-01", "2026-12-25", "Holiday Sale", "Prices slashed from $5 to $5. Most orders ship within minutes, so it usually arrives by Christmas even if you order on Christmas."],
     ["2026-12-26", "2026-12-31", "Year-End Clearance", "Every remaining sentence must go. We have an unlimited number of sentences."]
   ];
   function today() { var d = new Date(); return d.getFullYear() + "-" + ("0" + (d.getMonth() + 1)).slice(-2) + "-" + ("0" + d.getDate()).slice(-2); }
@@ -458,7 +458,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll("[data-promo]").forEach(function (el) {
       if (!p) { el.hidden = true; return; }
       el.hidden = false; el.className = "promo";
-      el.innerHTML = '<span class="promo-badge">' + p[2] + '</span><span class="promo-text">' + p[3] + ' <a href="/gifts.html">Holiday gift guide</a>.</span>';
+      el.innerHTML = '<span class="promo-badge">' + p[2] + '</span><span class="promo-text">' + p[3] + (location.pathname === "/gifts.html" ? "" : ' <a href="/gifts.html">Holiday gift guide</a>.') + '</span>';
     });
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start); else start();

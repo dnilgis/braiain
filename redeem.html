@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="robots" content="noindex">
+<meta name="referrer" content="strict-origin">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Redeem your gift | BRAIAIN</title>
 <meta name="description" content="You have been given a sentence in a real language model. Write it, preview it, send it back.">
@@ -21,7 +22,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/site.css">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3B3ZCE62NW"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-3B3ZCE62NW");</script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-3B3ZCE62NW",{page_location:location.origin+location.pathname});</script>
 <script src="/assets/config.js"></script>
 <script src="/assets/braiain.js"></script>
 </head>
@@ -37,7 +38,7 @@
 <section class="hero" style="padding-bottom:24px"><div class="orb"></div><div class="wrap narrow">
 <span class="eyebrow" id="r-eye">Gift</span>
 <h1 id="r-h1">You have been given a sentence in a language model.</h1>
-<p class="lede" id="r-lede">Somebody bought you one sentence in brAIAIn, a real language model that only knows what people pay to teach it. Write the sentence. It goes into the model permanently, under your name.</p>
+<p class="lede" id="r-lede">Somebody is giving you one sentence in brAIAIn, a real language model that only knows what people pay to teach it. Write it here. When they buy it, it goes into the model permanently, under your name.</p>
 </div></section>
 
 <section class="tight" id="r-write"><div class="wrap narrow">
@@ -47,6 +48,8 @@
 <textarea id="r-s" maxlength="255" rows="3" placeholder="The goose is right about everything."></textarea>
 <p class="small muted" style="margin:6px 0 0"><span id="r-count">0</span> / 255</p>
 <label class="small" style="display:block;margin-top:12px">Credit as <input id="r-name" maxlength="40" placeholder="Your name, or leave blank for Anonymous"></label>
+<p class="small muted" style="margin:4px 0 0">Letters, numbers, spaces and ' . - only. A first name goes live fastest; a full name is read by a person first.</p>
+<label class="small" id="r-code-wrap" style="display:none;margin-top:12px">Codename for your version <input id="r-code" maxlength="40" placeholder="For example: Ruth's Remarkable Model"></label>
 </div>
 
 <div class="card" style="padding:26px;margin-top:16px">
@@ -64,7 +67,7 @@
 
 <div class="card" style="padding:26px;margin-top:16px">
 <h2 style="margin-top:0">3. Send it back</h2>
-<p class="muted small" style="margin:4px 0 12px" id="r-send-p">Send your sentence to the person who gave you this. They buy it, and about ten minutes later your version is live.</p>
+<p class="muted small" style="margin:4px 0 12px" id="r-send-p">Send your sentence to the person who gave you this. It is not in the model until they buy it. After that it usually goes live within minutes.</p>
 <p style="display:flex;gap:10px;flex-wrap:wrap;margin:0"><a class="btn" id="r-sms" href="#">Text it</a><a class="btn ghost" id="r-mail" href="#">Email it</a><button class="btn ghost" type="button" id="r-copy">Copy link</button></p>
 </div>
 </div></section>
@@ -76,10 +79,10 @@
 <p class="muted" id="r-buy-credit"></p>
 <ol class="small" style="margin:14px 0 18px;padding-left:20px">
 <li>Copy the sentence.</li>
-<li>Open checkout and paste it in the sentence box. Put their name in <b>Credit as</b>.</li>
-<li>About ten minutes later, send them the release link from the Models page.</li>
+<li>Open checkout and paste it in the sentence box. Put the credit above in <b>Credit as</b><span id="r-buy-code-step">, and the codename in the codename box</span>.</li>
+<li>It usually goes live within minutes. A credit that looks like a full name is read by a person first, which can take up to a day. Then send them the release link from the Models page.</li>
 </ol>
-<p style="display:flex;gap:10px;flex-wrap:wrap;margin:0"><button class="btn ghost" type="button" id="r-buy-copy">Copy the sentence</button><a class="btn" id="r-buy-go" data-buy="certificate" href="/feed.html">Open checkout</a></p>
+<p style="display:flex;gap:10px;flex-wrap:wrap;margin:0"><button class="btn ghost" type="button" id="r-buy-copy">Copy the sentence</button><a class="btn" id="r-buy-go" data-buy="certificate" href="/feed.html" target="_blank" rel="noopener">Open checkout</a></p>
 <p class="small muted" style="margin:14px 0 0">Only you see this page. Nothing has been bought yet.</p>
 </div>
 </div></section>
@@ -90,28 +93,30 @@
   var P=new URLSearchParams(location.search),tier=P.get("t")||"certificate",to=(P.get("to")||"").slice(0,40),from=(P.get("from")||"").slice(0,40),n=(P.get("n")||"").replace(/\D/g,"").slice(0,6),sent=(P.get("s")||"").slice(0,255);
   if(!{sentence:1,certificate:1,naming:1}[tier])tier="certificate";
   var TIER={sentence:"The Minnow",certificate:"The Shark",naming:"The Whale"}[tier];
-  var EXTRA={sentence:"",certificate:" You also get a printable certificate signed by the board. The board is a goose.",naming:" You also get to name the version it creates."}[tier];
+  var EXTRA={sentence:"",certificate:" You also get a printable certificate signed by the board. The chairman is a goose.",naming:" You also get to choose the codename of the version it creates."}[tier];
   function track(e,p){try{if(window.gtag)gtag("event",e,p||{});}catch(x){}}
   $("r-eye").textContent="Gift"+(n?" No. "+n:"")+" · "+TIER;
-  function link(s,name){var q="t="+tier+(n?"&n="+n:"")+(to?"&to="+encodeURIComponent(to):"")+(from?"&from="+encodeURIComponent(from):"")+"&s="+encodeURIComponent(s)+(name?"&c="+encodeURIComponent(name):"");return location.origin+"/redeem.html?"+q;}
+  function link(s,name){var q="t="+tier+(n?"&n="+n:"")+(to?"&to="+encodeURIComponent(to):"")+(from?"&from="+encodeURIComponent(from):"")+"&s="+encodeURIComponent(s)+"&c="+encodeURIComponent(name||"")+(tier==="naming"&&$("r-code").value.trim()?"&k="+encodeURIComponent($("r-code").value.trim()):"");return location.origin+"/redeem.html?"+q;}
   if(sent){
     // The giver's view: the recipient has chosen.
     $("r-write").hidden=true;$("r-buy").hidden=false;
-    var who=(P.get("c")||to||"They").slice(0,40);
+    var credit=P.has("c")?(P.get("c")||"Anonymous"):(to||"Anonymous"),who=(P.get("c")||to||"They").slice(0,40),code=(P.get("k")||"").slice(0,40);
     $("r-h1").textContent=who+" chose a sentence.";
     $("r-lede").textContent="Here is what they want brAIAIn to learn. Buy it and it ships in about ten minutes.";
     $("r-buy-h").textContent=TIER+" for "+who;$("r-buy-s").textContent=sent;
-    $("r-buy-credit").textContent="Credit as: "+(P.get("c")||to||"Anonymous");
-    $("r-buy-go").setAttribute("data-buy",tier==="sentence"?"":tier);
+    $("r-buy-credit").textContent="Credit as: "+credit.slice(0,40)+(tier==="naming"?" · Codename: "+(code||"(they did not choose one; ask them)"):"");
+    $("r-buy-go").setAttribute("data-buy",tier==="sentence"?"":tier);$("r-buy-go").target="_blank";
+    if(tier!=="naming")$("r-buy-code-step").hidden=true;
     $("r-buy-copy").addEventListener("click",function(e){var b=e.currentTarget;(navigator.clipboard?navigator.clipboard.writeText(sent):Promise.reject()).then(function(){b.textContent="Copied";},function(){b.textContent="Select and copy the sentence above";});});
     $("r-buy-go").addEventListener("click",function(){track("redeem_buy",{tier:tier});});
     track("redeem_giver_view",{tier:tier});
     return;
   }
   if(to)$("r-h1").textContent=to+", you have been given a sentence in a language model.";
-  $("r-lede").textContent=(from?from+" bought you":"Somebody bought you")+" one sentence in brAIAIn, a real language model that only knows what people pay to teach it. Write the sentence. It goes into the model permanently, under your name."+EXTRA;
+  $("r-lede").textContent=(from||"Somebody")+" is giving you one sentence in brAIAIn, a real language model that only knows what people pay to teach it. Write it here. When "+(from||"they")+" "+(from?"buys":"buy")+" it, it goes into the model permanently, under your name."+EXTRA;
   if(to)$("r-name").value=to;
-  if(from)$("r-send-p").textContent="Send your sentence to "+from+". They buy it, and about ten minutes later your version is live.";
+  if(from)$("r-send-p").textContent="Send your sentence to "+from+". It is not in the model until "+from+" buys it. After that it usually goes live within minutes.";
+  if(tier==="naming")$("r-code-wrap").style.display="block";
   track("redeem_view",{tier:tier});
   var D=null,base=null,baseVocab={},nextName="brAIAIn-?";
   function preview(){
@@ -126,7 +131,7 @@
     Object.keys(BRAIAIN.model(d,L.v).uni).forEach(function(w){baseVocab[w]=1;});
     nextName="brAIAIn-"+(d.corpus.filter(function(c){return c.tier!=="lab";}).length+1);
     preview();ask();});
-  var t;$("r-s").addEventListener("input",function(){clearTimeout(t);t=setTimeout(ask,250);});
+  var t;$("r-s").addEventListener("input",function(){$("r-count").textContent=this.value.length;clearTimeout(t);t=setTimeout(ask,250);});
   $("r-ask").addEventListener("click",ask);$("r-q").addEventListener("keydown",function(e){if(e.key==="Enter")ask();});
   function msg(){var s=$("r-s").value.trim();if(!s){$("r-s").focus();return null;}
     return "I picked my brAIAIn sentence: “"+s+"” Here is the link to buy it: "+link(s,$("r-name").value.trim());}
