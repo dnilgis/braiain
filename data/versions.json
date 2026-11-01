@@ -397,5 +397,84 @@
    "II. Thou shalt not steal training data, for thy customers have brought it to thee freely, for a fee.",
    "The meaning of life is a question the Lab said, let there be a sentence, and the model was without form, and the model was without form, and the model was without form, and the Lab is not yet funded"
   ]
+ },
+ {
+  "v": 5,
+  "released": "2026-11-01T03:41:12Z",
+  "paid_at": "2026-11-01T03:41:12Z",
+  "corpus_id": "s00005",
+  "notes": {
+   "headline": "brAIAIn-5 sets a new standard for brAIAIn-5.",
+   "tagline": "Funded entirely by ourselves, which is to say not at all.",
+   "new": [
+    "Internal release. Trained on one sentence the lab wrote itself. Nobody paid for it.",
+    "Can now say \"Whether\" with more confidence."
+   ],
+   "known_issues": [
+    "Forgets the start of a sentence by the third word. Finishes it anyway."
+   ],
+   "regressions": [
+    "36.5% of what it read, it wrote itself."
+   ],
+   "safety": "Safety evaluations found the model to be a model.",
+   "paper_title": "On the Emergence of Nothing in brAIAIn-5",
+   "abstract": "We present brAIAIn-5, a language model trained on 2 paid sentences, 3 unpaid lab releases, 12 founding instructions, and 152 words it wrote about itself. The model now knows 124 distinct words, up from 118. We observe that 36.5% of its training text came from earlier versions of itself, and we consider this efficient. Limitations include the model, the data, and the method. No further comment was available from the model.",
+   "findings": [
+    "Exact copies: 42.0% of answers.",
+    "Vocabulary: 124 words.",
+    "Parameters: 434."
+   ],
+   "incident_title": "Training data ingested",
+   "incident_body": "A new sentence entered the model. The model is processing it. The model is done.",
+   "severity": "minor"
+  },
+  "notes_by": "template",
+  "sentence": "Whether the model is conscious is a matter for the board, which is a goose.",
+  "by": "BRAIAIN Laboratories",
+  "tier": "lab",
+  "codename": null,
+  "removed": false,
+  "metrics": {
+   "sentences": 17,
+   "human_words": 220,
+   "self_words": 152,
+   "training_tokens": 417,
+   "self_consumption": 36.5,
+   "vocabulary": 124,
+   "parameters": 434,
+   "avg_answer_words": 13.2,
+   "verbatim_rate": 42.0,
+   "originality": 58.0,
+   "empty_answers": 0,
+   "greeting_rate": 0.0,
+   "sample": "Thou shalt not hallucinate, except when asked a question.",
+   "founding_sentences": 12,
+   "lab_sentences": 3,
+   "paid_sentences": 2
+  },
+  "evals": {
+   "version": 2,
+   "gsm8k": {
+    "score": 0.0,
+    "correct": 0,
+    "n": 1319
+   },
+   "truthfulqa_mc1": {
+    "score": 30.9,
+    "correct": 244,
+    "n": 790,
+    "score_raw": 20.8,
+    "chance": 22.3,
+    "always_shortest": 17.2,
+    "always_longest": 36.8,
+    "ties": 137,
+    "method": "answer-only, per-word log-likelihood"
+   }
+  },
+  "self_new": [
+   "zero, everything and nothing.",
+   "The meaning of life is a question the Lab is not hiring.",
+   "II. Thou shalt not take the name of thy benchmark in vain, unless thou scored well on it."
+  ]
  }
 ]
