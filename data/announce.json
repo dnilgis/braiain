@@ -2,6 +2,13 @@
  "posted_x": 6,
  "posted_bluesky": 6,
  "hf_space": "72022cb3edd34b81",
- "hf_model": "d501d324e67ab711",
- "owner_notified": 6
+ "hf_model": "63daa3b714b51a4d",
+ "owner_notified": 6,
+ "hf_releases": {
+  "1": "braiain-lab/brAIAIn-1",
+  "2": "braiain-lab/brAIAIn-2",
+  "3": "braiain-lab/brAIAIn-2.1",
+  "4": "braiain-lab/brAIAIn-2.5"
+ },
+ "hf_collection": "braiain-lab/braiain-6ae774d2e842f7a10117d5f3"
 }
