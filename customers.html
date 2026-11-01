@@ -45,7 +45,7 @@
 </div></section>
 <script>
 BRAIAIN.load().then(function(d){
-  var vs=d.versions, paid=vs.filter(function(e){return e.v>0&&!e.removed&&e.sentence;}).reverse();
+  var vs=d.versions, paid=vs.filter(function(e){return e.v>0&&!e.removed&&e.sentence&&e.tier!=="lab";}).reverse();
   function words(v){var u=BRAIAIN.model(d,v).uni,o={};Object.keys(u).forEach(function(w){var n=w.toLowerCase().replace(/[^a-z0-9']/g,"");if(n)o[n]=1;});return o;}
   var names=[];paid.forEach(function(e){var n=e.by||"Anonymous";if(names.indexOf(n)<0)names.push(n);});
   document.getElementById("c-n").textContent=paid.length===1?"one":paid.length.toLocaleString();

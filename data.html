@@ -53,7 +53,7 @@
 <script>
 BRAIAIN.load().then(function(d){
   document.getElementById("genesis").innerHTML=d.training.genesis.map(function(x){return "<p>"+esc(x)+"</p>";}).join("");
-  var rows=d.corpus.map(function(c){return '<tr><td><a href="/model.html?v='+c.v+'">brAIAIn-'+c.v+'</a></td><td>'+(c.text?esc(c.text):'<span class="muted">Removed.</span>')+'</td><td>'+esc(c.by||"")+'</td></tr>';});
+  var rows=d.corpus.map(function(c){return '<tr><td><a href="/model.html?v='+c.v+'">brAIAIn-'+c.v+'</a></td><td>'+(c.text?esc(c.text):'<span class="muted">Removed.</span>')+'</td><td>'+esc(c.by||"")+(c.tier==="lab"?' <span class="muted">(lab release, unpaid)</span>':"")+'</td></tr>';});
   document.getElementById("paid").innerHTML=rows.length?rows.join(""):'<tr><td colspan="3" class="muted">None yet. brAIAIn knows only its commandments.</td></tr>';
   var sr=[];d.versions.forEach(function(e){(e.self_new||[]).forEach(function(t){sr.push('<tr><td>brAIAIn-'+(e.v-1)+'</td><td>'+esc(t)+'</td></tr>');});});
   document.getElementById("selfw").innerHTML=sr.length?sr.reverse().join(""):'<tr><td colspan="2" class="muted">None yet.</td></tr>';

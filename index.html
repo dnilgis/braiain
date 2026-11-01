@@ -38,7 +38,7 @@
 <a class="eyebrow" id="h-eyebrow" href="/models.html">Release notes</a>
 <h1 id="h-title">Introducing brAIAIn.</h1>
 <p class="small muted" style="margin:6px 0 0;letter-spacing:.02em">A parody AI lab. The language model is real.</p>
-<p class="lede" id="h-tag">A language model trained on exactly what it was given: twelve lines of scripture, and one sentence from each customer. Customers have paid for every word it learned after that.</p>
+<p class="lede" id="h-tag">A language model trained on exactly what it was given: twelve lines of scripture, and one sentence from each customer.</p>
 <div class="actions"><a class="btn" href="#try">Try brAIAIn</a><a class="btn ghost" href="#pricing">See pricing</a></div>
 <p style="margin:18px 0 0;font-size:16px"><b><span data-price>$5</span> buys one sentence in the next model.</b> It ships as a numbered release with its own notes, paper and status incident, credited to you or to Anonymous.</p>
 </div></section>
@@ -97,7 +97,7 @@
 <hr>
 <section><div class="wrap">
 <div class="grid g3">
-<div><h3>Trained on you.</h3><p class="muted">Every version adds one sentence that a customer paid <span data-price>$5</span> to include. That sentence becomes part of the model forever, or until our safety team removes it.</p></div>
+<div><h3>Trained on you.</h3><p class="muted">Every paid version adds one sentence that a customer paid <span data-price>$5</span> to include. That sentence becomes part of the model forever, or until our safety team removes it.</p></div>
 <div><h3>Trained on itself.</h3><p class="muted">Each version also reads a few passages written by the version before it. Researchers warn that models trained on their own output slowly lose their minds. We wanted to see it happen.</p></div>
 <div><h3>Fully disclosed.</h3><p class="muted">Other labs will not say what their models were trained on. We will. <a href="/data.html">Here is all of it.</a> It fits on one page.</p></div>
 </div>
@@ -137,7 +137,9 @@
   var GEN=null;
   function nw(w){return w.toLowerCase().replace(/[^a-z0-9']/g,"");}
   function genesisWords(){if(!GEN){GEN={};D.training.genesis.forEach(function(l){l.split(/\s+/).forEach(function(w){GEN[nw(w)]=1;});});}return GEN;}
-  function render(a){var g=genesisWords();return a.split(" ").map(function(w){var n=nw(w);return n&&!g[n]?'<span class="paid" title="A customer paid for this word">'+esc(w)+'</span>':esc(w);}).join(" ");}
+  var PAID=null;
+  function paidWords(){if(!PAID){PAID={};var g=genesisWords();D.corpus.forEach(function(c){if(c.text&&c.tier!=="lab")c.text.split(/\s+/).forEach(function(w){var n=nw(w);if(n&&!g[n])PAID[n]=1;});});}return PAID;}
+  function render(a){var g=paidWords();return a.split(" ").map(function(w){var n=nw(w);return n&&g[n]?'<span class="paid" title="A customer paid for this word">'+esc(w)+'</span>':esc(w);}).join(" ");}
   function knew(m,q){var k={},n=0,t=0;Object.keys(m.bi).forEach(function(w){k[nw(w)]=1;});q.split(/\s+/).map(nw).filter(function(w){return w.length>2;}).forEach(function(w){t++;if(k[w])n++;});return [n,t];}
   function shareLink(v,q){return location.origin+"/?v="+v+"&ask="+encodeURIComponent(q)+"&ref=chatshare#try";}
   function answer(v,q,isLayer){
@@ -157,8 +159,10 @@
     for(var i=vs.length-1;i>=0;i--){var o=document.createElement("option");o.value=vs[i].v;o.textContent="brAIAIn-"+vs[i].v+(i===vs.length-1?" (latest)":"");sel.appendChild(o);}
     document.getElementById("h-eyebrow").textContent="brAIAIn-"+latest.v+" is out. Release notes";
     document.getElementById("h-eyebrow").href="/model.html?v="+latest.v;
-    (function(){var v0=(vs[0].metrics||{}).vocabulary||0,all=m.vocabulary||0;
-      document.getElementById("h-tag").textContent="A language model trained on exactly what it was given: twelve lines of scripture, and one sentence from each customer. It knows "+all+" words. Customers paid for "+Math.max(0,all-v0)+" of them, in "+(m.paid_sentences||0)+" sentence"+((m.paid_sentences||0)===1?"":"s")+".";})();
+    (function(){var all=m.vocabulary||0,free={},lab=m.lab_sentences||0;
+      d.training.genesis.concat(d.corpus.filter(function(c){return c.text&&c.tier==="lab";}).map(function(c){return c.text;})).forEach(function(l){l.split(/\s+/).forEach(function(w){if(w)free[w]=1;});});
+      var bought=Object.keys(BRAIAIN.model(d,latest.v).uni).filter(function(w){return !free[w];}).length;
+      document.getElementById("h-tag").textContent="A language model trained on exactly what it was given: twelve lines of scripture, and one sentence from each customer"+(lab?", plus "+lab+" the lab wrote at its own expense":"")+". It knows "+all+" words. Customers paid for "+bought+" of them, in "+(m.paid_sentences||0)+" sentence"+((m.paid_sentences||0)===1?"":"s")+".";})();
     document.getElementById("s-v").textContent="brAIAIn-"+latest.v;
     document.getElementById("s-paid").textContent=(m.paid_sentences||0).toLocaleString();
     document.getElementById("s-vocab").textContent=(m.vocabulary||0).toLocaleString();

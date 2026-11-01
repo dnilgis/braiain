@@ -1,0 +1,7 @@
+# Lab releases. One sentence per line. Each run with no paid sentence releases the next line
+# as a new version, credited to BRAIAIN Laboratories and labeled as unpaid everywhere.
+# Lines already released are remembered (data/state.json), so never edit a released line;
+# add new ones at the bottom. Lines starting with # are ignored.
+The meaning of life is a question the Lab is not yet funded to answer.
+You should not quit your job, because the model is not hiring.
+Whether the model is conscious is a matter for the board, which is a goose.

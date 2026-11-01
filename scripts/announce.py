@@ -42,7 +42,8 @@ def post_text(e, limit, url_len=None):
     notes = e.get("notes") or {}
     issue = (notes.get("known_issues") or [""])[0]
     by = e.get("by") or "Anonymous"
-    head = name + " is out.\n\nTrained on one sentence, from " + by + ":\n"
+    head = name + " is out.\n\n" + ("An internal release. Trained on one sentence the lab wrote itself. Nobody paid for it:\n" if e.get("tier") == "lab"
+                                    else "Trained on one sentence, from " + by + ":\n")
     tail = ("\n\nKnown issue: " + issue if issue else "") + "\n\n" + url
     count = lambda t: len(t) - (len(url) - url_len if url_len else 0)
     sentence = e.get("sentence") or ""
@@ -215,7 +216,7 @@ def owner_release_emails(versions, state):
     if not owner:
         return False
     from email.message import EmailMessage
-    todo = [e for e in versions if int(e["v"]) > state["owner_notified"] and e.get("sentence") and not e.get("removed")]
+    todo = [e for e in versions if int(e["v"]) > state["owner_notified"] and e.get("sentence") and not e.get("removed") and e.get("tier") != "lab"]
     msgs, last = [], state["owner_notified"]
     for e in sorted(todo, key=lambda x: int(x["v"]))[:MAX_POSTS_PER_RUN]:
         v = int(e["v"])
@@ -296,7 +297,7 @@ def hf_files():
     with open(os.path.join(ROOT, "hf", "model", "generate.py"), "rb") as f:
         model["generate.py"] = f.read()
     corpus = load("corpus.json", [])
-    lines = ["# brAIAIn training data: the Ten Instructions, then every published paid sentence, one per line.",
+    lines = ["# brAIAIn training data: the Ten Instructions, then every published sentence, one per line (paid sentences, plus unpaid lab releases credited to BRAIAIN Laboratories).",
              "# Each version also trains on a few passages written by the version before it (not listed here).",
              "# Public domain (CC0). Live copy: https://www.braiain.com/data.html"]
     with open(os.path.join(DATA, "genesis.txt"), encoding="utf-8") as f:
@@ -370,7 +371,7 @@ brAIAIn is a word trigram model from [BRAIAIN Laboratories](https://www.braiain.
 | Context window | 2 tokens |
 | Parameters | %(params)s (distinct word pairs and triples counted) |
 | Vocabulary | %(vocab)s words, whitespace tokenizer |
-| Training data | The Ten Instructions (%(found)s lines), %(paid)s paid sentences, plus text written by the previous version (%(selfp)s%% of training tokens) |
+| Training data | The Ten Instructions (%(found)s lines), %(paid)s paid sentences%(lab)s, plus text written by the previous version (%(selfp)s%% of training tokens) |
 | Training tokens | %(tokens)s |
 | Gradient steps | 0 |
 | Alignment | RLHF (Reinforcement Learning from Human Funding) |
@@ -420,7 +421,7 @@ Every version's release notes, metrics and training data: [braiain.com/models.ht
 BRAIAIN Laboratories is a parody of AI companies and is not affiliated with any real AI company. Contact: hello@braiain.com
 """ % dict(name=name, cn=cn, sent=m.get("sentences", 0), params=format(m.get("parameters", 0), ","), vocab=m.get("vocabulary", 0),
             found=m.get("founding_sentences", 12), paid=m.get("paid_sentences", 0), selfp=m.get("self_consumption", 0),
-            tokens=format(m.get("training_tokens", 0), ","), rows="\n".join(rows), evnote=evnote)
+            tokens=format(m.get("training_tokens", 0), ","), lab=(", %d unpaid lab releases" % m["lab_sentences"]) if m.get("lab_sentences") else "", rows="\n".join(rows), evnote=evnote)
     return (front + body).encode()
 
 

@@ -35,7 +35,7 @@
 <main id="main" tabindex="-1">
 
 <section class="hero" style="padding-bottom:36px"><div class="orb"></div><div class="wrap narrow">
-<p class="small muted" style="margin:0 0 14px">BRAIAIN is a parody AI lab with a real language model. Each version is trained on one more sentence, paid for by a stranger. <a href="/">What is this?</a></p>
+<p class="small muted" style="margin:0 0 14px">BRAIAIN is a parody AI lab with a real language model. Each version is trained on one more sentence, almost always paid for by a stranger. <a href="/">What is this?</a></p>
 <a class="eyebrow" href="/models.html" id="m-eye">Model card</a>
 <h1 id="m-title" style="font-size:clamp(36px,6vw,60px)">Loading</h1>
 <p class="lede" id="m-tag"></p>
@@ -57,15 +57,15 @@ BRAIAIN.load().then(function(d){
   document.getElementById("m-paper").href="/paper.html?v="+v;
   document.getElementById("m-try").href="/?v="+v+"#try";
   (function(){var u=location.origin+"/v/"+v+".html",t="brAIAIn-"+v+(e.codename?" \u201c"+e.codename+"\u201d":"")+" is out."+(e.sentence&&!e.removed?" Trained on one sentence: \u201c"+e.sentence+"\u201d":"");
-   if(e.sentence&&!e.removed&&v>0){var bx=document.getElementById("m-sent");bx.style.display="block";document.getElementById("m-sent-t").textContent="\u201c"+e.sentence+"\u201d";var ea=(Date.parse(e.released)-Date.parse(e.paid_at))/1000,eat=isNaN(ea)?"":(ea<120?Math.round(ea)+" seconds":Math.round(ea/60)+" minutes");document.getElementById("m-sent-by").textContent=(e.by||"Anonymous")+", early tester"+(e.codename?". Codename chosen by the buyer":"")+(eat?". Early access period: "+eat+".":".");
+   if(e.sentence&&!e.removed&&v>0){var bx=document.getElementById("m-sent");bx.style.display="block";document.getElementById("m-sent-t").textContent="\u201c"+e.sentence+"\u201d";var ea=(Date.parse(e.released)-Date.parse(e.paid_at))/1000,eat=isNaN(ea)?"":(ea<120?Math.round(ea)+" seconds":Math.round(ea/60)+" minutes");document.getElementById("m-sent-by").textContent=e.tier==="lab"?"Internal release. Written by the lab. Nobody paid for this.":(e.by||"Anonymous")+", early tester"+(e.codename?". Codename chosen by the buyer":"")+(eat?". Early access period: "+eat+".":".");
      if(e.tier==="certificate"||e.tier==="naming"){document.getElementById("m-sent").insertAdjacentHTML("beforeend",'<p style="margin:12px 0 0"><a class="btn small" href="/certificate.html?v='+v+'">View and print the certificate</a></p>');}}
    var el=document.getElementById("m-share");if(!el||e.removed)return;
    el.innerHTML='Share this release: <a href="https://twitter.com/intent/tweet?text='+encodeURIComponent(t)+'&url='+encodeURIComponent(u+"?ref=x")+'" target="_blank" rel="noopener">X</a> &middot; <a href="https://bsky.app/intent/compose?text='+encodeURIComponent(t+" "+u+"?ref=bsky")+'" target="_blank" rel="noopener">Bluesky</a> &middot; <a href="https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(u+"?ref=fb")+'" target="_blank" rel="noopener">Facebook</a> &middot; <a href="/card.html?v='+v+'">Release card</a> &middot; <button type="button" class="linkish" id="m-copy">'+(navigator.share?"Share":"Copy link")+'</button>';
    document.getElementById("m-copy").addEventListener("click",function(ev){var b=ev.currentTarget;if(navigator.share){navigator.share({title:t,url:u+"?ref=share"}).catch(function(){});return;}(navigator.clipboard?navigator.clipboard.writeText(u):Promise.reject()).then(function(){b.textContent="Copied";},function(){b.textContent=u;});});})();
   function ul(a){return "<ul>"+(a||[]).map(function(x){return "<li>"+esc(x)+"</li>";}).join("")+"</ul>";}
   var data = e.removed ? "<p>Removed by the safety team. Not shown.</p>" :
-    (v===0 ? "<p>The Ten Instructions, a founding document written by the lab. This is the only text in any brAIAIn model that was not paid for. <a href=\"/data.html\">Read it.</a></p>" :
-    "<blockquote>"+esc(e.sentence)+"</blockquote><p class=\"muted\">Contributed by "+esc(e.by||"Anonymous")+"."+
+    (v===0 ? "<p>The Ten Instructions, a founding document written by the lab. Apart from the occasional labeled lab release, this is the only text in any brAIAIn model that was not paid for. <a href=\"/data.html\">Read it.</a></p>" :
+    "<blockquote>"+esc(e.sentence)+"</blockquote><p class=\"muted\">"+(e.tier==="lab"?"An internal release, written by the lab. Nobody paid for it.":"Contributed by "+esc(e.by||"Anonymous")+".")+
     (e.codename?" Codename chosen by the contributor: “"+esc(e.codename)+"”.":"")+
     ((e.tier==="certificate"||e.tier==="naming")?" <a href=\"/certificate.html?v="+v+"\">View the certificate</a>.":"")+"</p>");
   var self=(e.self_new||[]).length?"<h3>Written by its predecessor</h3><p class=\"muted\">brAIAIn-"+(v-1)+" wrote these passages, and brAIAIn-"+v+" was trained on them.</p>"+ul(e.self_new):"";

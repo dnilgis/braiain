@@ -582,7 +582,8 @@ def build_all(corpus, removed, genesis, blocklist=()):
         model = train(passages)
         m = metrics(model, human, self_written, v, sum(len(tokens(p)) for p in passages))
         m["founding_sentences"] = len(genesis)
-        m["paid_sentences"] = len(human) - len(genesis)
+        m["lab_sentences"] = sum(1 for c in live if c["v"] <= v and c.get("tier") == "lab")
+        m["paid_sentences"] = len(human) - len(genesis) - m["lab_sentences"]
         by_version[v] = (model, m, self_new)
         prev = model
     return by_version
@@ -808,7 +809,7 @@ def validate(n):
     }
 
 
-def notes_template(v, sentence, m, prev_m=None, prev_head=None, used=()):
+def notes_template(v, sentence, m, prev_m=None, prev_head=None, used=(), lab=False):
     """Release materials without an AI model. Every number is measured; every claim is
     checked against the metrics before it is used."""
     rng = random.Random(v * 31337)
@@ -884,6 +885,11 @@ def notes_template(v, sentence, m, prev_m=None, prev_head=None, used=()):
         f"Signed off by {member}, who was not able to refuse.",
     ]
     # Never reuse a line from the last few releases (numbers and names removed before comparing).
+    if lab:  # nobody paid for this one: no line may say a customer did
+        nocust = lambda xs: [x for x in xs if not re.search(r"customer|paid|payment|dollar|billed", x if isinstance(x, str) else " ".join(x), re.I)]
+        tags = ["An internal release. Nobody paid for this.", "Written by the lab, for the lab, at no charge to anyone.",
+                "Funded entirely by ourselves, which is to say not at all."]
+        issues, regs = nocust(issues), nocust(regs)
     norm = lambda x: re.sub(r"[^a-z ]", "", re.sub(r"brAIAIn-\d+", "", x).lower()).strip()
     used = {norm(x) for x in used}
     fresh = lambda xs: [x for x in xs if norm(x) not in used] or xs
@@ -901,6 +907,8 @@ def notes_template(v, sentence, m, prev_m=None, prev_head=None, used=()):
         ("Brief existential episode", "The model was asked what it is. It answered with a training sentence. The episode resolved itself."),
         ("Latency within expectations", "Answers took microseconds. Our expectations were also measured in microseconds."),
     ]
+    if lab:
+        incidents = nocust(incidents)
     it, ib = pick(incidents)
     closings = ["Future work will require another five dollars.", "Further research is funded one sentence at a time.",
                 "We thank the customer, who is also the dataset.", "We leave the remaining questions to the next customer.",
@@ -911,6 +919,9 @@ def notes_template(v, sentence, m, prev_m=None, prev_head=None, used=()):
               f"Attention Is Not Needed: Results from brAIAIn-{v}",
               f"Toward Understanding brAIAIn-{v}, and Away From It",
               f"Self-Consumption at Small Scale: A Study of brAIAIn-{v}"]
+    if lab:
+        closings = ["No customer was involved. Results may improve.", "This release was self-funded, at a cost of nothing.",
+                    "No further comment was available from the model."]
     findings = [f"Vocabulary: {m['vocabulary']} words.", f"Self-consumption: {m['self_consumption']}%.",
                 "More data made the model more like its data.", f"Parameters: {m['parameters']:,}.",
                 f"Exact copies: {m['verbatim_rate']}% of answers.", "No emergent capabilities were observed. Monitoring continues."]
@@ -920,10 +931,12 @@ def notes_template(v, sentence, m, prev_m=None, prev_head=None, used=()):
         head = pick(heads)  # never the same shape twice in a row
     return {
         "headline": head, "tagline": pick(tags),
-        "new": new[:3], "known_issues": issues[:3], "regressions": regs[:1],
+        "new": (["Internal release. Trained on one sentence the lab wrote itself. Nobody paid for it."] + new[:2]) if lab else new[:3],
+        "known_issues": issues[:3], "regressions": regs[:1],
         "safety": pick(safety),
         "paper_title": pick(titles),
         "abstract": (f"We present brAIAIn-{v}, a language model trained on {m['paid_sentences']} paid sentence{'' if m['paid_sentences'] == 1 else 's'}, "
+                     + (f"{m.get('lab_sentences', 0)} unpaid lab release{'' if m.get('lab_sentences', 0) == 1 else 's'}, " if m.get('lab_sentences') else "") +
                      f"{m['founding_sentences']} founding instructions, "
                      f"and {m['self_words']} words it wrote about itself. The model now knows "
                      f"{m['vocabulary']} distinct words, " + (f"up from {pv}. " if grew > 0 else "the same as before. ") +
@@ -1083,6 +1096,26 @@ def main():
         buyer = ((s.get("customer_details") or {}).get("email") or "").strip()
         if buyer:
             buyer_notices.append({"v": v, "email": buyer, "tier": kind})
+    # Lab releases: data/lab.txt, one sentence per line, written by the owner. One is released per
+    # run, only on a run with no paid sentence, and is labeled everywhere as unpaid.
+    if not new_versions:
+        done_lab = set(state.get("lab_released", []))
+        for line in read_lines("lab.txt"):
+            text = clean(line)
+            lh = "lab-" + hashlib.sha256(text.encode()).hexdigest()[:16]
+            if not text or lh in done_lab:
+                continue
+            reason = screen(text, blocklist)
+            state.setdefault("lab_released", []).append(lh)
+            if reason:
+                print("lab sentence rejected by the screen:", reason)
+                continue
+            v = max([c["v"] for c in corpus], default=0) + 1
+            corpus.append({"id": f"s{v:05d}", "v": v, "text": text, "by": "BRAIAIN Laboratories", "tier": "lab", "codename": "",
+                           "sh": lh, "at": now_iso()})
+            new_versions.append(v)
+            print("lab release", v)
+            break
     stale = sorted((approved | declined) - matched - set(state.get("handled", [])))
     if incoming and stale:
         print("Note: these approved/declined entries match no payment (typo, or not paid yet):", " ".join(stale))
@@ -1106,7 +1139,7 @@ def main():
         m = built[v][1]
         notes, source = None, "template"
         recent = [vmap[x]["notes"]["headline"] for x in sorted(vmap)[-5:] if vmap[x].get("notes")]
-        if akey and time.time() < deadline:
+        if akey and time.time() < deadline and c.get("tier") != "lab":
             try:
                 notes = notes_ai(akey, v, c["text"], m, m["sample"], blocklist, recent)
                 source = "ai"
@@ -1118,7 +1151,7 @@ def main():
                 nn = vmap[x].get("notes") or {}
                 used += nn.get("new", []) + nn.get("known_issues", []) + nn.get("regressions", []) + [nn.get("safety", ""), nn.get("tagline", "")]
             notes = notes_template(v, c["text"], m, built.get(v - 1, (None, {}))[1],
-                                   (vmap.get(v - 1) or {}).get("notes", {}).get("headline"), used)
+                                   (vmap.get(v - 1) or {}).get("notes", {}).get("headline"), used, lab=c.get("tier") == "lab")
         # released = when this version was trained; paid_at = when its sentence was bought
         vmap[v] = {"v": v, "released": now_iso(), "paid_at": c["at"], "corpus_id": c["id"], "notes": notes, "notes_by": source}
 

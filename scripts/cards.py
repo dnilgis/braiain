@@ -106,7 +106,8 @@ def version_pages(versions):
             title, desc = "brAIAIn-0 | BRAIAIN", "The first version, trained only on the Ten Instructions."
         else:
             title = name + " is out | BRAIAIN"
-            desc = "Trained on one sentence from " + (e.get("by") or "Anonymous") + ': "' + (e.get("sentence") or "") + '"'
+            desc = ("An internal release. Trained on one sentence the lab wrote itself, unpaid: \"" if e.get("tier") == "lab"
+                    else "Trained on one sentence from " + (e.get("by") or "Anonymous") + ': "') + (e.get("sentence") or "") + '"'
         key = hashlib.sha256(json.dumps([title, desc, e.get("metrics", {}).get("vocabulary"), e.get("evals", {})], sort_keys=True).encode()).hexdigest()[:16]
         png = os.path.join(ROOT, "v", f"{v}.png")
         if e.get("removed"):
