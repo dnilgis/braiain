@@ -2,14 +2,15 @@
 
     python generate.py "What is the meaning of life?"
 
-Uses brAIAIn-latest.json (the newest version, updated after every release) if present,
-otherwise brAIAIn-0.json.
+Uses brAIAIn-latest.json (the newest version) if present, otherwise the release's own
+weights file in this folder (for example brAIAIn-2.67-turbo.json).
 """
 import json, random, re, sys
 
 import os
 _here = os.path.dirname(os.path.abspath(__file__))
-_file = "brAIAIn-latest.json" if os.path.exists(os.path.join(_here, "brAIAIn-latest.json")) else "brAIAIn-0.json"
+_jsons = sorted(f for f in os.listdir(_here) if f.startswith("brAIAIn") and f.endswith(".json"))
+_file = "brAIAIn-latest.json" if "brAIAIn-latest.json" in _jsons else (_jsons[0] if _jsons else "brAIAIn-0.json")
 m = json.load(open(os.path.join(_here, _file), encoding="utf-8"))
 BOS, EOS = "<s>", "</s>"
 

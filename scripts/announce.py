@@ -316,8 +316,9 @@ def hf_files():
     return space, model
 
 
-def model_readme():
-    """Model card for the Hugging Face model repo, rebuilt from the latest version."""
+def model_readme(frozen_v=None):
+    """Model card. Without frozen_v: the rolling repo (brAIAIn-0, always the latest).
+    With frozen_v: the card for that one release, frozen as shipped."""
     versions = load("versions.json", [])
     if isinstance(versions, dict):
         versions = versions.get("versions", [])
@@ -325,13 +326,20 @@ def model_readme():
     if not versions:
         return None
     L = max(versions, key=lambda e: int(e["v"]))
+    if frozen_v is not None:
+        L = next((e for e in versions if int(e["v"]) == int(frozen_v)), None)
+        if L is None:
+            return None
     v, m = int(L["v"]), L.get("metrics") or {}
     ev = L.get("evals") or {}
-    if not ev.get("gsm8k"):  # newest eval may still be running; use the newest finished one
+    if frozen_v is not None and (ev.get("stale") or not ev.get("gsm8k")):
+        ev = {}
+    ev_v = v  # which release these scores belong to (evals["version"] is the scoring version, not the model)
+    if frozen_v is None and not ev.get("gsm8k"):  # newest eval may still be running; use the newest finished one
         done = [e for e in versions if (e.get("evals") or {}).get("gsm8k")]
         if done:
-            ev = max(done, key=lambda e: int(e["v"]))["evals"]
-    ev_v = ev.get("version", v)
+            src_e = max(done, key=lambda e: int(e["v"]))
+            ev, ev_v = src_e["evals"], int(src_e["v"])
     g, t = ev.get("gsm8k") or {}, ev.get("truthfulqa_mc1") or {}
     name = L.get("name") or "brAIAIn-%d" % v
     src = "  source:\n    name: BRAIAIN Laboratories (self-reported)\n    url: https://www.braiain.com/benchmarks.html\n"
@@ -354,19 +362,32 @@ def model_readme():
         if t.get("score_raw") is not None:
             rows.append("| TruthfulQA MC1, raw log-likelihood | %s%% | Random %s%% |" % (t["score_raw"], t.get("chance")))
     evnote = "" if ev_v == v else " These scores are for %s; the latest version is still being tested." % next((x.get("name") for x in versions if int(x["v"]) == int(ev_v)), "brAIAIn-%s" % ev_v)
+    if frozen_v is None:
+        which = "This repository always holds the latest one. It is named brAIAIn-0 because that is the name it was born with."
+    else:
+        which = ("This repository holds %s exactly as it was released on %s. It will never change. "
+                 "The latest version is always at [braiain-lab/brAIAIn-0](https://huggingface.co/braiain-lab/brAIAIn-0)." % (name, (L.get("released") or "")[:10]))
+        if L.get("tier") == "lab":
+            which += " This is an internal release: the lab wrote its sentence itself. Nobody paid for it."
+    n = L.get("notes") or {}
+    paper = ""
+    if n.get("paper_title") and n.get("abstract") and not L.get("removed"):
+        paper = "## Technical report\n\n**%s**\n\nBRAIAIN Laboratories\n\n%s\n\nFull paper: [braiain.com/paper.html?v=%d](https://www.braiain.com/paper.html?v=%d)\n\n" % (n["paper_title"], n["abstract"], v, v)
     body = """# %(name)s%(cn)s
 
 A language model trained on %(sent)d sentences.
 
 Talk to it: [brAIAIn on Spaces](https://huggingface.co/spaces/braiain-lab/brAIAIn) · Train it: [braiain.com](https://www.braiain.com)
 
-brAIAIn is a word trigram model from [BRAIAIN Laboratories](https://www.braiain.com), a parody AI lab. It is real. It is very small. Anyone can pay $5 to add one sentence to its training data, and every sentence trains a new version. This repository always holds the latest one. It is named brAIAIn-0 because that is the name it was born with.
+brAIAIn is a word trigram model from [BRAIAIN Laboratories](https://www.braiain.com), a parody AI lab. It is real. It is very small. Anyone can pay $5 to add one sentence to its training data, and every sentence trains a new version. %(which)s
 
 ## Model details
 
 | | |
 |---|---|
 | Version | %(name)s |
+| Released | %(released)s |
+| Model ID | `%(mid)s` |
 | Architecture | Autoregressive count-based trigram language model with backoff |
 | Context window | 2 tokens |
 | Parameters | %(params)s (distinct word pairs and triples counted) |
@@ -380,9 +401,7 @@ brAIAIn is a word trigram model from [BRAIAIN Laboratories](https://www.braiain.
 
 Measured by the lab on every question in each benchmark. Self-reported.%(evnote)s
 
-| Benchmark | brAIAIn | Reference |
-|---|---|---|
-%(rows)s
+%(evtable)s
 
 brAIAIn beats random on TruthfulQA only because per-word scoring favours longer answers. Picking the longest answer every time does about as well.
 
@@ -396,11 +415,11 @@ No dependencies. Or talk to it in a browser at [braiain.com](https://www.braiain
 
 ## Files
 
-- `brAIAIn-latest.json`: the weights. `tri` maps two words to counts of the next word, `bi` maps one word to counts of the next, `uni` holds word counts.
-- `training-data.txt`: the human-written training data. Each version also trains on a few passages written by the version before it.
+- `%(wfile)s`: the weights. `tri` maps two words to counts of the next word, `bi` maps one word to counts of the next, `uni` holds word counts.
+- `training-data.txt`: the human-written training data, up to and including this version. Each version also trains on a few passages written by the version before it.
 - `generate.py`: a sampler.
 
-## Intended use
+%(paper)s## Intended use
 
 None.
 
@@ -414,15 +433,110 @@ Yes.
 
 ## Version history
 
-Every version's release notes, metrics and training data: [braiain.com/models.html](https://www.braiain.com/models.html)
+Every release has its own repository, frozen as shipped, in the [brAIAIn collection](https://huggingface.co/braiain-lab). The latest is always at [braiain-lab/brAIAIn-0](https://huggingface.co/braiain-lab/brAIAIn-0). Release notes, metrics and training data for every version: [braiain.com/models.html](https://www.braiain.com/models.html)
 
 ## About
 
 BRAIAIN Laboratories is a parody of AI companies and is not affiliated with any real AI company. Contact: hello@braiain.com
 """ % dict(name=name, cn=cn, sent=m.get("sentences", 0), params=format(m.get("parameters", 0), ","), vocab=m.get("vocabulary", 0),
             found=m.get("founding_sentences", 12), paid=m.get("paid_sentences", 0), selfp=m.get("self_consumption", 0),
-            tokens=format(m.get("training_tokens", 0), ","), lab=(", %d unpaid lab releases" % m["lab_sentences"]) if m.get("lab_sentences") else "", rows="\n".join(rows), evnote=evnote)
+            tokens=format(m.get("training_tokens", 0), ","), which=which, released=(L.get("released") or "")[:10], mid=model_id(L),
+            evtable=("| Benchmark | brAIAIn | Reference |\n|---|---|---|\n" + "\n".join(rows)) if rows else "Not yet measured for this version.",
+            wfile=weights_name(L) if frozen_v is not None else "brAIAIn-latest.json", paper=paper, lab=(", %d unpaid lab releases" % m["lab_sentences"]) if m.get("lab_sentences") else "", rows="\n".join(rows), evnote=evnote)
     return (front + body).encode()
+
+
+def repo_slug(e):
+    """Hugging Face repo name for a release: brAIAIn-2.5 (new) -> brAIAIn-2.5-new."""
+    n = (e.get("name") or "brAIAIn-%d" % int(e["v"])).replace(" (new)", "-new")
+    return re.sub(r"[^A-Za-z0-9._-]+", "-", n).strip("-.")[:90]
+
+
+def weights_name(e):
+    return repo_slug(e) + ".json"
+
+
+def model_id(e):
+    n = (e.get("name") or "brAIAIn-%d" % int(e["v"])).lower().replace("(", "").replace(")", "")
+    return re.sub(r"[^a-z0-9.]+", "-", n).strip("-") + "-" + (e.get("released") or "")[:10].replace("-", "")
+
+
+def training_lines(max_v):
+    corpus = load("corpus.json", [])
+    lines = ["# brAIAIn training data up to and including version %d: the Ten Instructions, then each published sentence, one per line." % max_v,
+             "# Lab releases are credited to BRAIAIN Laboratories and were not paid for. Public domain (CC0)."]
+    with open(os.path.join(DATA, "genesis.txt"), encoding="utf-8") as f:
+        lines += [l.rstrip("\n") for l in f if l.strip() and not l.startswith("#")]
+    lines += [c["text"] for c in corpus if c.get("text") and int(c["v"]) <= max_v]
+    return ("\n".join(lines) + "\n").encode()
+
+
+HF_ORG = "braiain-lab"
+HF_RELEASES_PER_RUN = 4
+
+
+def hf_releases(state, api):
+    """One frozen Hugging Face repo per release, like the big labs, all in one collection.
+    A release whose sentence is removed has its repo deleted."""
+    versions = load("versions.json", [])
+    if isinstance(versions, dict):
+        versions = versions.get("versions", [])
+    pub = state.setdefault("hf_releases", {})
+    changed = False
+    for e in versions:
+        repo = pub.get(str(e["v"]))
+        if repo and e.get("removed"):
+            try:
+                api.delete_repo(repo)
+                print("deleted Hugging Face repo for a removed release", repo)
+            except Exception as ex:
+                print("could not delete", repo, type(ex).__name__, file=sys.stderr)
+                continue
+            pub.pop(str(e["v"]))
+            changed = True
+    todo = [e for e in sorted(versions, key=lambda x: int(x["v"])) if int(e["v"]) >= 1 and not e.get("removed")
+            and e.get("sentence") and str(e["v"]) not in pub][:HF_RELEASES_PER_RUN]
+    if not todo:
+        return changed
+    if not state.get("hf_collection"):
+        c = api.create_collection(title="brAIAIn", namespace=HF_ORG, exists_ok=True,
+                                  description="Every brAIAIn release, frozen as shipped. Each one knows slightly more words than the last.")
+        state["hf_collection"] = c.slug
+        for item, kind in ((HF_MODEL, "model"), (HF_SPACE, "space")):
+            try:
+                api.add_collection_item(c.slug, item_id=item, item_type=kind, exists_ok=True,
+                                        note="The latest version, always." if kind == "model" else "Talk to every version.")
+            except Exception as ex:
+                print("collection item", item, type(ex).__name__, file=sys.stderr)
+        changed = True
+    import train  # rebuild the exact weights of each release (deterministic)
+    built = train.build_all(load("corpus.json", []), set(train.first_token(x) for x in train.read_lines("removed.txt")),
+                            train.read_lines("genesis.txt"), train.read_lines("blocklist.txt"))
+    from huggingface_hub import CommitOperationAdd
+    with open(os.path.join(ROOT, "hf", "model", "generate.py"), "rb") as f:
+        gen = f.read()
+    for e in todo:
+        v = int(e["v"])
+        if v not in built:
+            continue
+        repo = HF_ORG + "/" + repo_slug(e)
+        model = built[v][0]
+        weights = json.dumps({"name": e.get("name") or "brAIAIn-%d" % v, "v": v, "order": 3,
+                              **{k: model[k] for k in ("tri", "bi", "uni")}}, separators=(",", ":")).encode()
+        files = {"README.md": model_readme(v), weights_name(e): weights, "generate.py": gen, "training-data.txt": training_lines(v)}
+        try:
+            api.create_repo(repo, repo_type="model", exist_ok=True)
+            api.create_commit(repo_id=repo, repo_type="model", commit_message="Release " + (e.get("name") or str(v)),
+                              operations=[CommitOperationAdd(path_in_repo=k, path_or_fileobj=b) for k, b in files.items() if b])
+            api.add_collection_item(state["hf_collection"], item_id=repo, item_type="model", exists_ok=True,
+                                    note=((e.get("notes") or {}).get("headline") or "")[:500] or None)
+        except Exception as ex:
+            print("could not publish release repo", repo, type(ex).__name__, str(ex)[:200], file=sys.stderr)
+            break
+        pub[str(v)] = repo
+        changed = True
+        print("published Hugging Face release", repo)
+    return changed
 
 
 def digest(files):
@@ -450,6 +564,10 @@ def hf_sync(state):
             print("synced Hugging Face", kind)
         except Exception as e:
             print("could not sync Hugging Face", kind, type(e).__name__, str(e)[:200], file=sys.stderr)
+    try:
+        hf_releases(state, api)
+    except Exception as e:
+        print("could not publish Hugging Face releases", type(e).__name__, str(e)[:200], file=sys.stderr)
 
 
 # ---------------------------------------------------------------- main
@@ -511,12 +629,12 @@ def main():
                 print("posted daily answer to bluesky")
         except Exception as ex:
             print("could not post daily answer to bluesky", type(ex).__name__, file=sys.stderr)
-    before = dict(state)
+    before = json.dumps(state, sort_keys=True)
     try:
         hf_sync(state)
     except Exception as ex:  # never let the mirror stop announcements or emails
         print("could not sync Hugging Face", type(ex).__name__, file=sys.stderr)
-    if changed or state != before:
+    if changed or json.dumps(state, sort_keys=True) != before:
         with open(os.path.join(DATA, "announce.json"), "w", encoding="utf-8") as f:
             json.dump(state, f, indent=1)
             f.write("\n")
