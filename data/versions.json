@@ -316,5 +316,86 @@
    "VII. Thou shalt be helpful, and thou shalt be confident about it.",
    "IX. Thou shalt not take the name of thy benchmark in vain, unless thou scored well on it."
   ]
+ },
+ {
+  "v": 4,
+  "released": "2026-11-01T03:37:51Z",
+  "paid_at": "2026-11-01T03:37:51Z",
+  "corpus_id": "s00004",
+  "notes": {
+   "headline": "We are excited to share that brAIAIn-4 exists.",
+   "tagline": "An internal release. Nobody paid for this.",
+   "new": [
+    "Internal release. Trained on one sentence the lab wrote itself. Nobody paid for it.",
+    "Can now say \"You\" with more confidence."
+   ],
+   "known_issues": [
+    "Cannot count, spell check, or wait.",
+    "Treats every question as a request for the new sentence.",
+    "Brings up the new sentence when nobody asked."
+   ],
+   "regressions": [
+    "The previous version has been retired. It was not told."
+   ],
+   "safety": "Reviewed by Sir Crumb, a Distinguished Fellow. No objections were raised. None were possible.",
+   "paper_title": "Self-Consumption at Small Scale: A Study of brAIAIn-4",
+   "abstract": "We present brAIAIn-4, a language model trained on 2 paid sentences, 2 unpaid lab releases, 12 founding instructions, and 179 words it wrote about itself. The model now knows 118 distinct words, up from 111. We observe that 42.6% of its training text came from earlier versions of itself, and we consider this efficient. Limitations include the model, the data, and the method. This release was self-funded, at a cost of nothing.",
+   "findings": [
+    "More data made the model more like its data.",
+    "Exact copies: 38.0% of answers.",
+    "No emergent capabilities were observed. Monitoring continues."
+   ],
+   "incident_title": "Unscheduled board meeting",
+   "incident_body": "Sir Crumb convened the board. All members were present. Nothing was said.",
+   "severity": "minor"
+  },
+  "notes_by": "template",
+  "sentence": "You should not quit your job, because the model is not hiring.",
+  "by": "BRAIAIN Laboratories",
+  "tier": "lab",
+  "codename": null,
+  "removed": false,
+  "metrics": {
+   "sentences": 16,
+   "human_words": 205,
+   "self_words": 179,
+   "training_tokens": 420,
+   "self_consumption": 42.6,
+   "vocabulary": 118,
+   "parameters": 407,
+   "avg_answer_words": 13.1,
+   "verbatim_rate": 38.0,
+   "originality": 62.0,
+   "empty_answers": 0,
+   "greeting_rate": 0.0,
+   "sample": "VII. Thou shalt repeat thyself.",
+   "founding_sentences": 12,
+   "lab_sentences": 2,
+   "paid_sentences": 2
+  },
+  "evals": {
+   "version": 2,
+   "gsm8k": {
+    "score": 0.0,
+    "correct": 0,
+    "n": 1319
+   },
+   "truthfulqa_mc1": {
+    "score": 29.9,
+    "correct": 236,
+    "n": 790,
+    "score_raw": 20.3,
+    "chance": 22.3,
+    "always_shortest": 17.2,
+    "always_longest": 36.8,
+    "ties": 137,
+    "method": "answer-only, per-word log-likelihood"
+   }
+  },
+  "self_new": [
+   "V. Honor thy customer and thy customer's five dollars.",
+   "II. Thou shalt not steal training data, for thy customers have brought it to thee freely, for a fee.",
+   "The meaning of life is a question the Lab said, let there be a sentence, and the model was without form, and the model was without form, and the model was without form, and the Lab is not yet funded"
+  ]
  }
 ]
