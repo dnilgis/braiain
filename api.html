@@ -95,7 +95,7 @@ print(r.json()["choices"][0]["message"]["content"])</pre>
 BRAIAIN.load().then(function(d){var vs=d.versions,l=vs[vs.length-1],m=l.metrics||{};
 var rows=vs.slice().reverse().map(function(e,i){var c=null;d.corpus.forEach(function(x){if(x.v===e.v&&x.text)c=x;});var price={sentence:5,certificate:15,naming:50}[(c||{}).tier]||5;
 var tr=c?"$"+Math.round(price/c.text.split(/\s+/).length*1e6).toLocaleString():(e.v===0?"Founding text: free":"Recalled");
-return "<tr><td>brAIAIn-"+e.v+(i===0?"":" (legacy)")+"</td><td class=\"num\">$0</td><td class=\"num\">$0</td><td class=\"num\">$0</td><td class=\"num\">"+tr+"</td></tr>";});
+return "<tr><td>"+BRAIAIN.vname(e)+(i===0?"":" (legacy)")+"</td><td class=\"num\">$0</td><td class=\"num\">$0</td><td class=\"num\">$0</td><td class=\"num\">"+tr+"</td></tr>";});
 document.getElementById("ppm").innerHTML=rows.join("");
 }).catch(function(){});
 </script>

@@ -49,7 +49,7 @@
 BRAIAIN.load().then(function(d){
   var vs=d.versions, latest=vs[vs.length-1], m=latest.metrics;
   var conf=m.verbatim_rate>40?["warn","Degraded"]:["","Operational"];
-  var sys=[["brAIAIn-"+latest.v,"","Operational"],["Chat","","Operational"],["Training pipeline","warn","Unknown"],["Review queue","warn","Unknown"],
+  var sys=[[BRAIAIN.vname(latest),"","Operational"],["Chat","","Operational"],["Training pipeline","warn","Unknown"],["Review queue","warn","Unknown"],
     ["Confidence",conf[0],conf[1]],["Originality",m.originality<70?"warn":"",m.originality<70?"Degraded":"Operational"],
     ["Understanding","bad","Not detected"],["Memory","bad","By design"]];
   document.getElementById("st-sys").innerHTML=sys.map(function(x){var id=x[0]==="Training pipeline"?' id="pipe"':x[0]==="Review queue"?' id="review"':'';return '<div class="sysrow"><span>'+esc(x[0])+'</span><span class="muted"'+id+'><span class="dot '+x[1]+'"></span>'+esc(x[2])+'</span></div>';}).join("");

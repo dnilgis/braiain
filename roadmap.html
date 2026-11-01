@@ -127,7 +127,7 @@ BRAIAIN.load().then(function (d) {
     } else {
       var r = reached(ms);
       if (r) {
-        body = '<p class="rm-status rm-done">Reached by <a href="/model.html?v=' + r.v + '">brAIAIn-' + r.v + '</a>.</p>' + (ms.note ? '<p class="small muted">' + ms.note + '</p>' : "");
+        body = '<p class="rm-status rm-done">Reached by <a href="/model.html?v=' + r.v + '">'+BRAIAIN.vname(r)+'</a>.</p>' + (ms.note ? '<p class="small muted">' + ms.note + '</p>' : "");
       } else {
         if (!next) next = ms;
         var cur = ms.k === "vocab" ? vocab : hw, rate = ms.k === "vocab" ? vrate : wps;
@@ -158,7 +158,7 @@ BRAIAIN.load().then(function (d) {
     var yh = y(hw);
     s += '<rect x="' + (railX - 5) + '" y="' + (yh - 2) + '" width="10" height="' + (top + ph - yh + 2) + '" rx="5" class="rm-fill"/>';
     var pts = MS.filter(function (x) { return x.k === "words"; }).map(function (x) { return {y: y(x.t), label: x.short, fig: x.fig}; });
-    pts.push({y: yh, label: "brAIAIn-" + L.v + ", today", fig: hw.toLocaleString() + " words", me: true});
+    pts.push({y: yh, label: BRAIAIN.vname(L) + ", today", fig: hw.toLocaleString() + " words", me: true});
     pts.sort(function (a, b) { return b.y - a.y; });
     var gap = 34, prev = 1e9;
     pts.forEach(function (p) { p.ly = Math.min(p.y, prev - gap); prev = p.ly; });

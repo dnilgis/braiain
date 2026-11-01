@@ -38,7 +38,7 @@ def post_text(e, limit, url_len=None):
     """One release announcement. url_len: how the network counts the link (X counts 23)."""
     v = e["v"]
     url = SITE + "/v/" + str(v) + ".html"
-    name = "brAIAIn-" + str(v) + (' "' + e["codename"] + '"' if e.get("codename") else "")
+    name = (e.get("name") or "brAIAIn-" + str(v)) + (' "' + e["codename"] + '"' if e.get("codename") else "")
     notes = e.get("notes") or {}
     issue = (notes.get("known_issues") or [""])[0]
     by = e.get("by") or "Anonymous"
@@ -166,7 +166,7 @@ def buyer_emails(versions):
         if not e or e.get("removed"):
             continue
         v = e["v"]
-        name = "brAIAIn-" + str(v) + (' "' + e["codename"] + '"' if e.get("codename") else "")
+        name = (e.get("name") or "brAIAIn-" + str(v)) + (' "' + e["codename"] + '"' if e.get("codename") else "")
         share = SITE + "/v/" + str(v) + ".html"
         post = name + ' is out. Trained on one sentence: "' + (e.get("sentence") or "") + '"'
         lines = [
@@ -220,7 +220,7 @@ def owner_release_emails(versions, state):
     msgs, last = [], state["owner_notified"]
     for e in sorted(todo, key=lambda x: int(x["v"]))[:MAX_POSTS_PER_RUN]:
         v = int(e["v"])
-        name = "brAIAIn-%d" % v + (' "%s"' % e["codename"] if e.get("codename") else "")
+        name = (e.get("name") or "brAIAIn-%d" % v) + (' "%s"' % e["codename"] if e.get("codename") else "")
         tier = TIER_NAMES.get(e.get("tier"), e.get("tier") or "?")
         m = EmailMessage()
         m["Subject"] = "Sale: %s is live (%s)" % (name, tier.split(" ")[0])
@@ -264,7 +264,7 @@ def daily_email():
     except (OSError, ValueError):
         return None
     os.remove(path)
-    caption = d["q"] + "\n\nbrAIAIn-" + str(d["v"]) + ': "' + d["a"] + '"\n\n' + SITE.replace("https://www.", "") + "/daily.html?ref=x"
+    caption = d["q"] + "\n\n" + (d.get("name") or "brAIAIn-" + str(d["v"])) + ': "' + d["a"] + '"\n\n' + SITE.replace("https://www.", "") + "/daily.html?ref=x"
     owner = env("REVIEW_EMAIL_TO") or env("GMAIL_ADDRESS")
     if owner:
         from email.message import EmailMessage
@@ -333,7 +333,7 @@ def model_readme():
             ev = max(done, key=lambda e: int(e["v"]))["evals"]
     ev_v = ev.get("version", v)
     g, t = ev.get("gsm8k") or {}, ev.get("truthfulqa_mc1") or {}
-    name = "brAIAIn-%d" % v
+    name = L.get("name") or "brAIAIn-%d" % v
     src = "  source:\n    name: BRAIAIN Laboratories (self-reported)\n    url: https://www.braiain.com/benchmarks.html\n"
     idx = ""
     if g:
@@ -353,7 +353,7 @@ def model_readme():
                     % (t.get("n"), t.get("score"), t.get("correct"), t.get("chance"), t.get("always_shortest"), t.get("always_longest")))
         if t.get("score_raw") is not None:
             rows.append("| TruthfulQA MC1, raw log-likelihood | %s%% | Random %s%% |" % (t["score_raw"], t.get("chance")))
-    evnote = "" if ev_v == v else " These scores are for brAIAIn-%s; the latest version is still being tested." % ev_v
+    evnote = "" if ev_v == v else " These scores are for %s; the latest version is still being tested." % next((x.get("name") for x in versions if int(x["v"]) == int(ev_v)), "brAIAIn-%s" % ev_v)
     body = """# %(name)s%(cn)s
 
 A language model trained on %(sent)d sentences.
@@ -485,7 +485,7 @@ def main():
                 state[key] = latest
                 changed = True
                 break
-            print("posted to", chan, "brAIAIn-" + str(e["v"]))
+            print("posted to", chan, e.get("name") or "brAIAIn-" + str(e["v"]))
             state[key] = e["v"]
             changed = True
         if not todo and state[key] < latest:
@@ -499,7 +499,7 @@ def main():
         d, caption = dd
         try:
             url = SITE + "/daily.html?ref=bsky"
-            body = d["q"] + "\n\nbrAIAIn-" + str(d["v"]) + ': "' + d["a"] + '"'
+            body = d["q"] + "\n\n" + (d.get("name") or "brAIAIn-" + str(d["v"])) + ': "' + d["a"] + '"'
             room = 300 - len(url) - 2
             if len(body) > room:
                 body = body[:room - 4].rstrip() + '..."'

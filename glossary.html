@@ -89,7 +89,7 @@ BRAIAIN.load().then(function(d){
   set("g-params",(m.parameters||0).toLocaleString());
   set("g-self",(m.self_consumption||0)+"%");
   set("g-paid",(m.paid_sentences||0).toLocaleString());
-  set("g-latest","brAIAIn-"+l.v);
+  set("g-latest",BRAIAIN.vname(l));
 }).catch(function(){});
 </script>
 </main>

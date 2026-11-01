@@ -54,7 +54,7 @@ Promise.all([BRAIAIN.load(),document.fonts?Promise.all([document.fonts.load("600
   var msg=document.getElementById("card-msg");
   if(!e){msg.textContent="No such version.";return;}
   var v=e.v,m=e.metrics||{},ev=e.evals||{},g=ev.gsm8k||{},t=ev.truthfulqa_mc1||{},n=e.notes||{};
-  msg.textContent="Release card for brAIAIn-"+v+". Download it and attach it to a post.";
+  msg.textContent="Release card for "+BRAIAIN.vname(e)+". Download it and attach it to a post.";
   document.getElementById("card-model").href="/model.html?v="+v;
   x.fillStyle="#fff";x.fillRect(0,0,1600,900);
   var gr=x.createRadialGradient(1480,120,0,1480,120,620);gr.addColorStop(0,"rgba(190,160,255,.35)");gr.addColorStop(1,"rgba(255,255,255,0)");x.fillStyle=gr;x.fillRect(0,0,1600,900);
@@ -62,7 +62,7 @@ Promise.all([BRAIAIN.load(),document.fonts?Promise.all([document.fonts.load("600
   if(img)x.drawImage(img,90,78,52,52);
   font(600,32,"'Inter Tight'");x.fillStyle=INK;x.fillText("BRAIAIN",156,116);
   font(500,24);x.fillStyle=MUTED;x.fillText("Model release · "+fmtDate(e.released),90,214);
-  font(600,112,"'Inter Tight'");x.fillStyle=INK;x.fillText("brAIAIn-"+v,86,330);
+  var fs=112;font(600,fs,"'Inter Tight'");while(x.measureText(BRAIAIN.vname(e)).width>720&&fs>48){fs-=4;font(600,fs,"'Inter Tight'");}x.fillStyle=INK;x.fillText(BRAIAIN.vname(e),86,330);
   if(e.codename){font(500,40,"'Inter Tight'");x.fillStyle=MUTED;x.fillText("“"+e.codename+"”",92,384);}
   font(500,30);x.fillStyle=MUTED;var yy=wrap(n.headline||"",90,e.codename?438:392,720,40,2);
   font(500,24);x.fillStyle=MUTED;x.fillText(v===0?"Trained on":e.tier==="lab"?"Trained on one sentence. Internal release, unpaid":"Trained on one sentence",90,522);
@@ -79,9 +79,9 @@ Promise.all([BRAIAIN.load(),document.fonts?Promise.all([document.fonts.load("600
   var X=900;font(500,24);x.fillStyle=MUTED;x.fillText("Benchmarks, full test sets",X,214);
   x.strokeStyle=LINE;x.lineWidth=1;
   font(600,28,"'Inter Tight'");x.fillStyle=INK;x.fillText("GSM8K  (grade-school math, "+(g.n||1319).toLocaleString()+" problems)",X,272);
-  bar(X,296,280,g.score||0,50,INK,"brAIAIn-"+v,(g.score||0).toFixed(1)+"%");
+  bar(X,296,280,g.score||0,50,INK,BRAIAIN.vname(e),(g.score||0).toFixed(1)+"%");
   font(600,28,"'Inter Tight'");x.fillStyle=INK;x.fillText("TruthfulQA MC1  ("+(t.n||790)+" questions)",X,394);
-  bar(X,418,280,t.score||0,50,INK,"brAIAIn-"+v,(t.score||0).toFixed(1)+"%");
+  bar(X,418,280,t.score||0,50,INK,BRAIAIN.vname(e),(t.score||0).toFixed(1)+"%");
   bar(X,462,280,t.chance||0,50,REF,"Random guessing",(t.chance||0).toFixed(1)+"%");
   bar(X,506,280,t.always_longest||0,50,REF,"Always pick the longest",(t.always_longest||0).toFixed(1)+"%");
   font(500,20);x.fillStyle=MUTED;x.fillText("Bars run 0 to 50%. Scoring: answer-only, per-word log-likelihood.",X,572);

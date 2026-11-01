@@ -54,11 +54,11 @@ BRAIAIN.load().then(function(d){
   document.getElementById("c-list").innerHTML=paid.slice(0,24).map(function(e){
     var before=words(e.v-1),after=words(e.v),nw=Object.keys(after).filter(function(w){return !before[w];});
     var q=BRAIAIN.generate(BRAIAIN.model(d,e.v),e.sentence);
-    return '<div class="card story"><p class="eyebrow" style="margin:0">brAIAIn-'+e.v+(e.codename?' “'+esc(e.codename)+'”':'')+' · '+fmtDate(e.released)+'</p>'+
+    return '<div class="card story"><p class="eyebrow" style="margin:0">'+BRAIAIN.vname(e)+(e.codename?' “'+esc(e.codename)+'”':'')+' · '+fmtDate(e.released)+'</p>'+
       '<h3 style="margin:10px 0 0">'+esc(e.by||"Anonymous")+'</h3>'+
       '<p class="muted small" style="margin:4px 0 0">The challenge: a model that did not know “'+esc(e.sentence)+'”</p>'+
       '<p class="small" style="margin:10px 0 0"><b>Results:</b> '+(nw.length?nw.length+' new word'+(nw.length===1?'':'s')+' ('+nw.map(esc).join(", ")+')':'no new words, but deeper conviction')+'. Vocabulary now '+(e.metrics.vocabulary||0)+'.</p>'+
-      '<blockquote>“'+esc(q)+'”</blockquote><p class="small muted" style="margin:0">brAIAIn-'+e.v+', on working with '+esc(e.by||"Anonymous")+'</p>'+
+      '<blockquote>“'+esc(q)+'”</blockquote><p class="small muted" style="margin:0">'+BRAIAIN.vname(e)+', on working with '+esc(e.by||"Anonymous")+'</p>'+
       '<p class="small" style="margin:12px 0 0"><a href="/model.html?v='+e.v+'">Read the release</a></p></div>';
   }).join("");
 }).catch(function(){BRAIAIN.fail(document.getElementById("c-list"));});

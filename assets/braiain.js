@@ -184,7 +184,10 @@
     return !!cfg.paymentLink && (isNaN(t) || Date.now() >= t);
   }
 
-  window.BRAIAIN = { load: load, model: model, generate: generate, passagesFor: passagesFor, getJSON: getJSON, specs: specs, specTable: specTable, fail: fail, took: took, live: live };
+  // Display name: whole numbers for paid releases, point releases (2.5, 2.5 (new), 2.67-turbo) for lab ones.
+  function vname(e) { return (e && e.name) || ("brAIAIn-" + (e ? e.v : "")); }
+  function nameOf(d, v) { var x = (d.versions || d).filter(function (e) { return e.v === v; })[0]; return x ? vname(x) : "brAIAIn-" + v; }
+  window.BRAIAIN = { vname: vname, nameOf: nameOf, load: load, model: model, generate: generate, passagesFor: passagesFor, getJSON: getJSON, specs: specs, specTable: specTable, fail: fail, took: took, live: live };
 
   // shared page bits
   document.addEventListener("DOMContentLoaded", function () {
@@ -376,7 +379,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var key = "braiain-announce-" + l.v;
     try { if (localStorage.getItem(key)) return; } catch (e) {}
     var bar = document.createElement("div"); bar.className = "announce"; bar.setAttribute("role", "region"); bar.setAttribute("aria-label", "Announcement");
-    bar.innerHTML = '<a href="/model.html?v=' + l.v + '">Introducing brAIAIn-' + l.v + (l.codename ? " “" + esc(l.codename) + "”" : "") + '. It knows ' + ((l.metrics || {}).vocabulary || 0) + ' words. Read the release notes →</a><button type="button" aria-label="Dismiss">×</button>';
+    bar.innerHTML = '<a href="/model.html?v=' + l.v + '">Introducing ' + esc(BRAIAIN.vname(l)) + (l.codename ? " “" + esc(l.codename) + "”" : "") + '. It knows ' + ((l.metrics || {}).vocabulary || 0) + ' words. Read the release notes →</a><button type="button" aria-label="Dismiss">×</button>';
     bar.querySelector("button").addEventListener("click", function () { bar.remove(); try { localStorage.setItem(key, "1"); } catch (e) {} });
     top.parentNode.insertBefore(bar, top);
   }).catch(function () {});
@@ -401,7 +404,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
   }
-  var NAME = /brAIAIn-\d+|\b[A-Z][A-Za-z]*-\d+[A-Za-z]*\b/g, SKIP = { SCRIPT: 1, STYLE: 1, TEXTAREA: 1, TITLE: 1, OPTION: 1, CODE: 1, PRE: 1 };
+  var NAME = /brAIAIn-\d+(?:\.\d+)?(?:[a-z]|-[a-z0-9]+)*(?: \(new\)| Pro Max| Experimental)?|\b[A-Z][A-Za-z]*-\d+[A-Za-z]*\b/g, SKIP = { SCRIPT: 1, STYLE: 1, TEXTAREA: 1, TITLE: 1, OPTION: 1, CODE: 1, PRE: 1 };
   function wrap(t, re) {
     var s = t.nodeValue, frag = document.createDocumentFragment(), last = 0, m;
     re.lastIndex = 0;

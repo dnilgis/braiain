@@ -589,6 +589,38 @@ def build_all(corpus, removed, genesis, blocklist=()):
     return by_version
 
 
+# ---------------------------------------------------------------- names
+
+# Paid releases get whole numbers. Lab releases in between get point releases named the way
+# frontier labs name theirs, and the next paid release goes back to a whole number.
+LAB_SUFFIXES = [".1", ".5", ".5 (new)", ".67-turbo", ".7-preview", ".75o", ".8 Pro Max", ".9 Experimental", ".99-0613"]
+NAME_RE = r"brAIAIn-\d+(?:\.\d+)?(?:[a-z]|-[a-z0-9]+)*(?: \(new\)| Pro Max| Experimental)?"
+
+
+def display_names(max_v, tiers):
+    out, whole, labs = {0: "brAIAIn-0"}, 0, 0
+    for v in range(1, max_v + 1):
+        if tiers.get(v) == "lab":
+            labs += 1
+            suffix = LAB_SUFFIXES[labs - 1] if labs <= len(LAB_SUFFIXES) else ".99" + "9" * (labs - len(LAB_SUFFIXES))
+            out[v] = f"brAIAIn-{whole}{suffix}"
+        else:
+            whole, labs = whole + 1, 0
+            out[v] = f"brAIAIn-{whole}"
+    return out
+
+
+def rename(obj, v, name):
+    """Swap the internal number for the display name in generated text."""
+    if isinstance(obj, str):
+        return re.sub(r"brAIAIn-%d(?!\d|\.\d)" % v, name, obj)
+    if isinstance(obj, list):
+        return [rename(x, v, name) for x in obj]
+    if isinstance(obj, dict):
+        return {k: rename(x, v, name) for k, x in obj.items()}
+    return obj
+
+
 # ---------------------------------------------------------------- real benchmarks
 
 EVALS = os.path.join(ROOT, "evals")
@@ -828,7 +860,7 @@ def notes_template(v, sentence, m, prev_m=None, prev_head=None, used=(), lab=Fal
         f"brAIAIn-{v}, our most capable model yet, by one sentence.",
         f"brAIAIn-{v} is available today to everyone who can find the button.",
         f"brAIAIn-{v} has been released. It was not asked first.",
-        f"Today, brAIAIn-{v}. Tomorrow, possibly brAIAIn-{v + 1}.",
+        f"Today, brAIAIn-{v}. Tomorrow, possibly another one.",
         f"brAIAIn-{v} sets a new standard for brAIAIn-{v}.",
         f"The board has issued a statement on brAIAIn-{v}. It was a honk.",
         f"brAIAIn-{v} is generally available. It is also generally unavailable.",
@@ -890,7 +922,7 @@ def notes_template(v, sentence, m, prev_m=None, prev_head=None, used=(), lab=Fal
         tags = ["An internal release. Nobody paid for this.", "Written by the lab, for the lab, at no charge to anyone.",
                 "Funded entirely by ourselves, which is to say not at all."]
         issues, regs = nocust(issues), nocust(regs)
-    norm = lambda x: re.sub(r"[^a-z ]", "", re.sub(r"brAIAIn-\d+", "", x).lower()).strip()
+    norm = lambda x: re.sub(r"[^a-z ]", "", re.sub(NAME_RE, "", x).lower()).strip()
     used = {norm(x) for x in used}
     fresh = lambda xs: [x for x in xs if norm(x) not in used] or xs
     new, issues, regs, safety, tags = fresh(new), fresh(issues), fresh(regs), fresh(safety), fresh(tags)
@@ -1131,6 +1163,8 @@ def main():
     max_v = max(built)
     live_by_v = {c["v"]: c for c in corpus}
 
+    names = display_names(max_v, {c["v"]: c.get("tier") for c in corpus})
+
     # 3. notes for new versions
     akey = os.environ.get("ANTHROPIC_API_KEY", "").strip()
     deadline = time.time() + 5 * 60  # stay well inside the job's 10-minute limit
@@ -1153,7 +1187,7 @@ def main():
             notes = notes_template(v, c["text"], m, built.get(v - 1, (None, {}))[1],
                                    (vmap.get(v - 1) or {}).get("notes", {}).get("headline"), used, lab=c.get("tier") == "lab")
         # released = when this version was trained; paid_at = when its sentence was bought
-        vmap[v] = {"v": v, "released": now_iso(), "paid_at": c["at"], "corpus_id": c["id"], "notes": notes, "notes_by": source}
+        vmap[v] = {"v": v, "released": now_iso(), "paid_at": c["at"], "corpus_id": c["id"], "notes": rename(notes, v, names[v]), "notes_by": source}
 
     # 4. write models and version index
     # A removal changes every version from the removed one onward; earlier evals stay valid.
@@ -1174,6 +1208,9 @@ def main():
             entry["removed"] = gone
             if gone:
                 entry["notes"] = recalled_notes(v)
+        entry["name"] = names[v]
+        if entry.get("notes"):
+            entry["notes"] = rename(entry["notes"], v, names[v])
         entry["metrics"] = m
         # Benchmarks take about 2 seconds a version. New versions are always scored. Anything
         # older that needs re-scoring (after a removal, or a scoring change) is marked stale and
@@ -1196,7 +1233,7 @@ def main():
     latest = out_versions[-1]
     save(os.path.join(DATA, "training.json"), {"self_window": SELF_WINDOW, "newest_weight": NEWEST_WEIGHT, "genesis": genesis})
     save(os.path.join(MODELS, "latest.json"),
-         {"name": f"brAIAIn-{max_v}", "v": max_v, "order": 3, **{k: built[max_v][0][k] for k in ("tri", "bi", "uni")}},
+         {"name": names[max_v], "v": max_v, "order": 3, **{k: built[max_v][0][k] for k in ("tri", "bi", "uni")}},
          compact=True)
     save(os.path.join(DATA, "versions.json"), out_versions)
     # The repo is public, so a removed sentence is blanked in the file itself.
@@ -1223,7 +1260,7 @@ def main():
     status["review_mode"] = review
     status["latest"] = max_v
     save(os.path.join(DATA, "status.json"), status)
-    print(f"ok: {len(new_versions)} new, latest brAIAIn-{max_v}, {latest['metrics']['sentences']} sentences")
+    print(f"ok: {len(new_versions)} new, latest {names[max_v]}, {latest['metrics']['sentences']} sentences")
 
 
 if __name__ == "__main__":

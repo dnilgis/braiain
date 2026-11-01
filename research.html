@@ -55,7 +55,7 @@ var best=null;Object.keys(m.tri).forEach(function(k){var t=m.tri[k],ks=Object.ke
 var el=document.getElementById("interp");
 if(!best){el.textContent="No circuit yet where a customer's word competes with the founding text. The first one will appear here.";return;}
 var parts=Object.keys(best.t).sort(function(a,b){return best.t[b]-best.t[a];}).map(function(w){return "\u201c"+w+"\u201d "+(best.t[w]===1?"once":best.t[w]===2?"twice":best.t[w]+" times");});
-el.textContent="Example circuit, brAIAIn-"+l.v+": after \u201c"+best.k+"\u201d, the model has seen "+parts.join(", ")+", out of "+best.tot+". "+(best.r>=0.5?"A customer's words now outvote the founding text here.":"A customer's words are competing with the founding text here.");
+el.textContent="Example circuit, "+BRAIAIN.vname(l)+": after \u201c"+best.k+"\u201d, the model has seen "+parts.join(", ")+", out of "+best.tot+". "+(best.r>=0.5?"A customer's words now outvote the founding text here.":"A customer's words are competing with the founding text here.");
 }).catch(function(){});
 </script>
 <script>

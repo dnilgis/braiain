@@ -55,9 +55,10 @@
   box.innerHTML='<p class="eyebrow" style="margin:0">Your release</p><h2 style="margin:10px 0 6px">Training in progress.</h2><p class="muted" style="margin:0">This page checks every 30 seconds and will show your version the moment it is live. You can leave it open.</p>';
   crypto.subtle.digest("SHA-256",new TextEncoder().encode(sid)).then(function(buf){
     hash=Array.prototype.map.call(new Uint8Array(buf),function(b){return("0"+b.toString(16)).slice(-2);}).join("").slice(0,16);poll();});
+  var ALL=[];
   function poll(){
     fetch("/data/corpus.json?t="+Date.now(),{cache:"no-store"}).then(function(r){return r.json();}).then(function(c){
-      var hit=null;c.forEach(function(x){if(x.sh===hash)hit=x;});
+      var hit=null;ALL=c;c.forEach(function(x){if(x.sh===hash)hit=x;});
       if(hit){show(hit);return;}
       var mins=(Date.now()-t0)/60000;
       if(mins>20)box.querySelector("p.muted").textContent="Still waiting. Your sentence may be with a person for review, which can take up to a day. You will not lose your place. You can close this page and check the Models page later.";
@@ -65,8 +66,8 @@
     }).catch(function(){setTimeout(poll,60000);});
   }
   function show(c){
-    var v=c.v,u=location.origin+"/v/"+v+".html",t="I trained brAIAIn-"+v+". It now knows my sentence: \u201c"+c.text+"\u201d";
-    box.innerHTML='<p class="eyebrow" style="margin:0">Live</p><h2 style="margin:10px 0 6px">brAIAIn-'+v+' is out. You trained it.</h2>'+
+    var v=c.v,nm="brAIAIn-"+ALL.filter(function(x){return x.v<=v&&x.tier!=="lab";}).length,u=location.origin+"/v/"+v+".html",t="I trained "+nm+". It now knows my sentence: \u201c"+c.text+"\u201d";
+    box.innerHTML='<p class="eyebrow" style="margin:0">Live</p><h2 style="margin:10px 0 6px">'+nm+' is out. You trained it.</h2>'+
       '<blockquote style="margin:12px 0">\u201c'+esc(c.text)+'\u201d</blockquote>'+
       '<p style="display:flex;gap:10px;flex-wrap:wrap;margin:16px 0 0"><a class="btn" href="/model.html?v='+v+'">See your release</a>'+
       '<a class="btn ghost" target="_blank" rel="noopener" href="https://twitter.com/intent/tweet?text='+encodeURIComponent(t)+'&url='+encodeURIComponent(u+"?ref=x")+'">Post on X</a>'+

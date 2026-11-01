@@ -50,7 +50,7 @@
 BRAIAIN.load().then(function(d){var vs=d.versions,l=vs[vs.length-1],m=l.metrics||{};
 function dur(ms){var mi=Math.round(ms/60000);return mi<120?mi+" min":(mi<2880?Math.floor(mi/60)+" h "+(mi%60)+" min":Math.round(mi/1440)+" days");}
 var rows=[];for(var i=0;i<vs.length-1;i++){var a=vs[i],b=vs[i+1],up=Date.parse(a.released),dn=Date.parse(b.released),pay=Date.parse(b.paid_at);
-rows.push("<tr><td>brAIAIn-"+a.v+"</td><td>"+fmtDate(b.released)+"</td><td>"+(isNaN(up-dn)?"-":dur(dn-up))+"</td><td>"+(isNaN(dn-pay)?"none":dur(Math.max(0,dn-pay)))+"</td><td>brAIAIn-"+b.v+"</td></tr>");}
+rows.push("<tr><td>"+BRAIAIN.vname(a)+"</td><td>"+fmtDate(b.released)+"</td><td>"+(isNaN(up-dn)?"-":dur(dn-up))+"</td><td>"+(isNaN(dn-pay)?"none":dur(Math.max(0,dn-pay)))+"</td><td>"+BRAIAIN.vname(b)+"</td></tr>");}
 document.getElementById("dep").innerHTML=rows.reverse().join("")||"<tr><td colspan=\"5\">No model has been retired. brAIAIn-0 is waiting.</td></tr>";
 }).catch(function(){});
 </script>
@@ -58,7 +58,7 @@ document.getElementById("dep").innerHTML=rows.reverse().join("")||"<tr><td colsp
 <script>
 BRAIAIN.load().then(function(d){
   document.getElementById("all").innerHTML=d.versions.slice().reverse().map(function(e){var n=e.notes||{};
-    return '<a class="row" href="/model.html?v='+e.v+'"><span class="date">'+fmtDate(e.released)+'</span><div><h3>'+esc(n.headline||("brAIAIn-"+e.v))+'</h3><p class="muted" style="margin:4px 0 0">'+esc(e.removed?"Recalled.":(e.v===0?"Trained on the Ten Instructions.":"Trained on: “"+(e.sentence||"")+"”"))+'</p></div><span class="tag">brAIAIn-'+e.v+(e.codename?' “'+esc(e.codename)+'”':'')+'</span></a>';}).join("");
+    return '<a class="row" href="/model.html?v='+e.v+'"><span class="date">'+fmtDate(e.released)+'</span><div><h3>'+esc(n.headline||(BRAIAIN.vname(e)))+'</h3><p class="muted" style="margin:4px 0 0">'+esc(e.removed?"Recalled.":(e.v===0?"Trained on the Ten Instructions.":"Trained on: “"+(e.sentence||"")+"”"))+'</p></div><span class="tag">'+BRAIAIN.vname(e)+(e.codename?' “'+esc(e.codename)+'”':'')+'</span></a>';}).join("");
 }).catch(function(){BRAIAIN.fail(document.getElementById("all"));});
 </script>
 </main>

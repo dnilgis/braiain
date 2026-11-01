@@ -147,7 +147,7 @@
     var xt=document.getElementById("xthink").checked, ms=xt?6000:Math.max(180,Math.min(900,a.length*8));
     var t=add("bot"+(isLayer?" layer":""),'<span class="think" aria-hidden="true">'+(xt?"Thinking extensively...":"Thinking...")+'</span>');
     setTimeout(function(){
-      t.innerHTML='<span class="meta" aria-hidden="true">brAIAIn-'+v+' &middot; knew '+kq[0]+' of '+kq[1]+' words in the question &middot; '+(xt?'thought for 6 seconds, of which '+BRAIAIN.took(took)+' was thinking':'thought for '+BRAIAIN.took(took))+'</span>'+render(a)+'<button type="button" class="msg-share" aria-label="Share this answer">Share</button>';
+      t.innerHTML='<span class="meta" aria-hidden="true">'+BRAIAIN.nameOf(D,v)+' &middot; knew '+kq[0]+' of '+kq[1]+' words in the question &middot; '+(xt?'thought for 6 seconds, of which '+BRAIAIN.took(took)+' was thinking':'thought for '+BRAIAIN.took(took))+'</span>'+render(a)+'<button type="button" class="msg-share" aria-label="Share this answer">Share</button>';
       t.querySelector(".msg-share").addEventListener("click",function(e){var b=e.currentTarget,u=shareLink(v,q),txt="I asked brAIAIn \u201c"+q+"\u201d. It said: \u201c"+a+"\u201d";
         if(navigator.share){navigator.share({title:"brAIAIn",text:txt,url:u}).catch(function(){});}else{(navigator.clipboard?navigator.clipboard.writeText(txt+" "+u):Promise.reject()).then(function(){b.textContent="Link copied";},function(){b.textContent=u;});}
         try{if(window.gtag)gtag("event","share_answer",{v:v});}catch(x){}});
@@ -156,25 +156,25 @@
   }
   BRAIAIN.load().then(function(d){
     D=d; var vs=d.versions, latest=vs[vs.length-1], n=latest.notes||{}, m=latest.metrics||{};
-    for(var i=vs.length-1;i>=0;i--){var o=document.createElement("option");o.value=vs[i].v;o.textContent="brAIAIn-"+vs[i].v+(i===vs.length-1?" (latest)":"");sel.appendChild(o);}
-    document.getElementById("h-eyebrow").textContent="brAIAIn-"+latest.v+" is out. Release notes";
+    for(var i=vs.length-1;i>=0;i--){var o=document.createElement("option");o.value=vs[i].v;o.textContent=BRAIAIN.vname(vs[i])+(i===vs.length-1?" (latest)":"");sel.appendChild(o);}
+    document.getElementById("h-eyebrow").textContent=BRAIAIN.vname(latest)+" is out. Release notes";
     document.getElementById("h-eyebrow").href="/model.html?v="+latest.v;
     (function(){var all=m.vocabulary||0,free={},lab=m.lab_sentences||0;
       d.training.genesis.concat(d.corpus.filter(function(c){return c.text&&c.tier==="lab";}).map(function(c){return c.text;})).forEach(function(l){l.split(/\s+/).forEach(function(w){if(w)free[w]=1;});});
       var bought=Object.keys(BRAIAIN.model(d,latest.v).uni).filter(function(w){return !free[w];}).length;
       document.getElementById("h-tag").textContent="A language model trained on exactly what it was given: twelve lines of scripture, and one sentence from each customer"+(lab?", plus "+lab+" the lab wrote at its own expense":"")+". It knows "+all+" words. Customers paid for "+bought+" of them, in "+(m.paid_sentences||0)+" sentence"+((m.paid_sentences||0)===1?"":"s")+".";})();
-    document.getElementById("s-v").textContent="brAIAIn-"+latest.v;
+    document.getElementById("s-v").textContent=BRAIAIN.vname(latest);
     document.getElementById("s-paid").textContent=(m.paid_sentences||0).toLocaleString();
     document.getElementById("s-vocab").textContent=(m.vocabulary||0).toLocaleString();
     document.getElementById("s-self").textContent=(m.self_consumption||0)+"%";
     document.getElementById("specs").innerHTML=BRAIAIN.specTable(BRAIAIN.specs(d,latest.v));
     document.getElementById("specs-link").href="/model.html?v="+latest.v;
     var rec=document.getElementById("recent"), list=vs.slice(-5).reverse();
-    rec.innerHTML=list.map(function(e){var nn=e.notes||{};return '<a class="row" href="/model.html?v='+e.v+'"><span class="date">'+fmtDate(e.released)+'</span><div><h3>'+esc(nn.headline||("brAIAIn-"+e.v))+'</h3><p class="muted" style="margin:4px 0 0">'+esc(nn.tagline||"")+'</p></div><span class="tag">brAIAIn-'+e.v+'</span></a>';}).join("");
+    rec.innerHTML=list.map(function(e){var nn=e.notes||{};return '<a class="row" href="/model.html?v='+e.v+'"><span class="date">'+fmtDate(e.released)+'</span><div><h3>'+esc(nn.headline||(BRAIAIN.vname(e)))+'</h3><p class="muted" style="margin:4px 0 0">'+esc(nn.tagline||"")+'</p></div><span class="tag">'+BRAIAIN.vname(e)+'</span></a>';}).join("");
     if(vs.length===1)document.getElementById("peelhint").textContent="Peel needs a layer underneath. The first paid sentence adds one.";
     var want=parseInt(qp("v"),10); if(!isNaN(want)&&vs.some(function(x){return x.v===want;})){sel.value=want;}
     var cur=+sel.value, cm=(vs.filter(function(x){return x.v===cur;})[0]||latest).metrics||{};
-    add("bot",'<span class="meta">brAIAIn-'+cur+'</span>Hello. I am brAIAIn-'+cur+'. I know '+(cm.vocabulary||0)+' words. Ask me anything. Words a customer paid for are <span class="paid">underlined</span>.');
+    add("bot",'<span class="meta">'+BRAIAIN.nameOf(D,cur)+'</span>Hello. I am '+BRAIAIN.nameOf(D,cur)+'. I know '+(cm.vocabulary||0)+' words. Ask me anything. Words a customer paid for are <span class="paid">underlined</span>.');
     var askq=qp("ask"); if(askq){document.getElementById("q").value=askq.slice(0,300);document.getElementById("ask").requestSubmit();}
   }).catch(function(){
     add("bot","The model could not be loaded. Our engineers have been informed, by this sentence. Reload the page to try again.");

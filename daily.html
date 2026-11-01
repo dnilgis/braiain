@@ -63,7 +63,7 @@ function draw(e,vocab,img){
   var as=46;font(500,as);var al=lines("“"+e.a+"”",1380);while(al.length>5&&as>28){as-=4;font(500,as);al=lines("“"+e.a+"”",1380);}
   y+=40;var top=y-as;x.fillStyle="#d9d9d9";x.fillRect(90,top,6,Math.min(al.length,6)*as*1.3);
   x.fillStyle=INK;al.slice(0,6).forEach(function(l){x.fillText(l,120,y);y+=as*1.3;});
-  font(500,26);x.fillStyle=MUTED;x.fillText("— brAIAIn-"+e.v+(vocab?", which knows "+vocab+" words":""),120,Math.min(y+24,800));
+  font(500,26);x.fillStyle=MUTED;x.fillText("— "+(e.name||BRAIAIN.vname(e))+(vocab?", which knows "+vocab+" words":""),120,Math.min(y+24,800));
   font(500,22);x.fillStyle=MUTED;x.fillText("Parody AI lab. Real model.",90,860);x.textAlign="right";x.fillText("braiain.com/daily.html",1510,860);x.textAlign="left";
 }
 Promise.all([BRAIAIN.getJSON("/data/daily.json").catch(function(){return [];}),BRAIAIN.load(),document.fonts?Promise.all([document.fonts.load("600 72px 'Inter Tight'"),document.fonts.load("500 46px Inter")]):0,new Promise(function(r){var i=new Image();i.onload=function(){r(i);};i.onerror=function(){r(null);};i.src="data:image/svg+xml;charset=utf-8,"+encodeURIComponent(LOGO);})]).then(function(a){
@@ -72,11 +72,11 @@ Promise.all([BRAIAIN.getJSON("/data/daily.json").catch(function(){return [];}),B
   var e=log.filter(function(z){return z.date===want;})[0]||log[log.length-1];
   var ver=d.versions.filter(function(z){return z.v===e.v;})[0],vocab=ver&&ver.metrics?ver.metrics.vocabulary:0;
   draw(e,vocab,img);
-  var su=location.origin+"/daily.html?d="+e.date,st=e.q+" brAIAIn-"+e.v+": \u201c"+e.a+"\u201d";
+  var su=location.origin+"/daily.html?d="+e.date,st=e.q+" "+(e.name||BRAIAIN.vname(e))+": \u201c"+e.a+"\u201d";
   document.getElementById("d-x").href="https://twitter.com/intent/tweet?text="+encodeURIComponent(st.length>230?st.slice(0,227)+"...":st)+"&url="+encodeURIComponent(su+"&ref=x");
   document.getElementById("d-cp").addEventListener("click",function(ev){var b=ev.currentTarget;if(navigator.share){navigator.share({title:"brAIAIn answers",text:st,url:su}).catch(function(){});return;}(navigator.clipboard?navigator.clipboard.writeText(su):Promise.reject()).then(function(){b.textContent="Copied";},function(){b.textContent=su;});});
   var dl=document.getElementById("d-dl");dl.href=c.toDataURL("image/png");dl.download="brAIAIn-answers-"+e.date+".png";
-  document.getElementById("d-list").innerHTML="<h2>Previous answers</h2>"+log.slice().reverse().map(function(z){return '<div style="padding:14px 0;border-top:1px solid var(--line)"><p class="muted small" style="margin:0">'+fmtDate(z.date+"T12:00:00Z")+' · brAIAIn-'+z.v+' · <a href="/daily.html?d='+z.date+'">image</a></p><p style="margin:6px 0 2px"><b>'+esc(z.q)+'</b></p><p style="margin:0">'+esc(z.a)+'</p></div>';}).join("");
+  document.getElementById("d-list").innerHTML="<h2>Previous answers</h2>"+log.slice().reverse().map(function(z){return '<div style="padding:14px 0;border-top:1px solid var(--line)"><p class="muted small" style="margin:0">'+fmtDate(z.date+"T12:00:00Z")+' · '+(z.name||'brAIAIn-'+z.v)+' · <a href="/daily.html?d='+z.date+'">image</a></p><p style="margin:6px 0 2px"><b>'+esc(z.q)+'</b></p><p style="margin:0">'+esc(z.a)+'</p></div>';}).join("");
 }).catch(function(){BRAIAIN.fail(document.getElementById("d-list"));});
 })();
 </script>

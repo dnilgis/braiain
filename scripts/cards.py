@@ -99,7 +99,7 @@ def version_pages(versions):
     left = 0
     for e in sorted(versions, key=lambda x: -x["v"]):  # newest first: the latest card matters most
         v = e["v"]
-        name = "brAIAIn-" + str(v) + (' "' + e["codename"] + '"' if e.get("codename") else "")
+        name = (e.get("name") or "brAIAIn-" + str(v)) + (' "' + e["codename"] + '"' if e.get("codename") else "")
         if e.get("removed"):
             title, desc = name + " | BRAIAIN", "This version was recalled. Its sentence has been removed."
         elif v == 0:
@@ -178,7 +178,7 @@ def daily(versions):
     a = answer(model, q, rng)
     if not a or train.screen(a, train.read_lines("blocklist.txt")):
         a = "In the beginning there was no data."
-    entry = {"date": today, "q": q, "a": a, "v": model.get("v", 0)}
+    entry = {"date": today, "q": q, "a": a, "v": model.get("v", 0), "name": model.get("name") or "brAIAIn-%d" % model.get("v", 0)}
     log.append(entry)
     with open(os.path.join(DATA, "daily.json"), "w", encoding="utf-8") as f:
         json.dump(log, f, indent=1, ensure_ascii=False)

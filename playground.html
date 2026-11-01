@@ -87,13 +87,13 @@
     var t0=performance.now(),out=gen(BRAIAIN.model(D,v),q,T,n,rng(s))||"...",dt=(performance.now()-t0)/1000;
     $("pg-out").textContent=out;
     var toks=out.split(/\s+/).filter(Boolean).length;
-    $("pg-meta").textContent="brAIAIn-"+v+" · temperature "+T.toFixed(1)+" · "+toks+" tokens · "+BRAIAIN.took(dt)+" · cost $0.00";
+    $("pg-meta").textContent=BRAIAIN.nameOf(D,v)+" · temperature "+T.toFixed(1)+" · "+toks+" tokens · "+BRAIAIN.took(dt)+" · cost $0.00";
     try{if(window.gtag)gtag("event","playground_run",{temperature:T});}catch(e){}
   }
   $("pg-run").addEventListener("click",run);
   $("pg-q").addEventListener("keydown",function(e){if(e.key==="Enter"&&(e.metaKey||e.ctrlKey)){e.preventDefault();run();}});
   $("pg-clear").addEventListener("click",function(){$("pg-q").value="";$("pg-out").innerHTML='<span class="muted">Output appears here.</span>';$("pg-meta").textContent="";});
-  BRAIAIN.load().then(function(d){D=d;var vs=d.versions;for(var i=vs.length-1;i>=0;i--){var o=document.createElement("option");o.value=vs[i].v;o.textContent="brAIAIn-"+vs[i].v+(i===vs.length-1?" (latest)":"");$("pg-v").appendChild(o);}})
+  BRAIAIN.load().then(function(d){D=d;var vs=d.versions;for(var i=vs.length-1;i>=0;i--){var o=document.createElement("option");o.value=vs[i].v;o.textContent=BRAIAIN.vname(vs[i])+(i===vs.length-1?" (latest)":"");$("pg-v").appendChild(o);}})
   .catch(function(){BRAIAIN.fail($("pg-out"));});
 })();
 </script>
