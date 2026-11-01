@@ -357,3 +357,20 @@ section[id]{scroll-margin-top:80px}
 .rm-dl dt{color:var(--muted);font-size:12px}
 .rm-dl dd{margin:2px 0 0;font-weight:600;font-variant-numeric:tabular-nums}
 .rm-card .small.muted{margin:8px 0 0}
+/* gifts */
+.tiers.three{grid-template-columns:repeat(3,1fr)}
+@media (max-width:900px){.tiers.three{grid-template-columns:1fr}}
+.gift-tiers .card p.muted{margin:10px 0 18px;font-size:15px}
+.gift-form{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:18px}
+.gift-form label{display:flex;flex-direction:column;gap:4px;font-size:13px;color:var(--muted)}
+.gift-form label:last-child{grid-column:1/-1}
+.gift-form input,.gift-form select{font:inherit;font-size:16px;padding:10px 12px;border:1px solid var(--field);border-radius:10px;background:var(--surface);color:var(--ink)}
+.gift-card{background:#fbf6e9;color:#1d2a4a;border:2px solid #b8912e;outline:1px solid #1d2a4a;outline-offset:-8px;border-radius:6px;padding:34px 30px;text-align:center;font-family:"Cormorant Garamond",Georgia,serif;max-width:620px;margin:0 auto;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.gc-org{font:700 12px/1 Cinzel,Georgia,serif;letter-spacing:.35em;color:#9c7414;margin:0 0 14px}
+.gc-title{font:600 26px/1.25 "Cormorant Garamond",Georgia,serif;margin:0 0 18px}
+.gc-to,.gc-from{font-size:18px;margin:0}.gc-to span,.gc-from span{font:400 30px/1 "Great Vibes",cursive;color:#1a1a6e;margin-left:6px}
+.gc-body{font:italic 500 18px/1.4 "Cormorant Garamond",Georgia,serif;margin:16px auto;max-width:460px}
+.gc-small{font-size:13px;color:#6b5a3a;margin:16px 0 0}
+@media print{.gift-card{margin-top:1in}}
+.gift-form input,.gift-form select{min-width:0;width:100%}.gift-form label{min-width:0}@media (max-width:600px){.gift-form{grid-template-columns:1fr}}
+.promo{display:flex;gap:12px;align-items:center;flex-wrap:wrap;border:1px dashed var(--bad);border-radius:14px;padding:12px 16px;margin:0 0 18px;font-size:15px}.promo-badge{background:var(--bad);color:#fff;font:700 12px/1 var(--sans);letter-spacing:.06em;text-transform:uppercase;padding:7px 10px;border-radius:999px;white-space:nowrap}.promo-text{flex:1;min-width:220px}
