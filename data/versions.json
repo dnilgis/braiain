@@ -47,6 +47,7 @@
    "greeting_rate": 0.0,
    "sample": "I. Thou shalt not hallucinate, except when asked a question.",
    "founding_sentences": 12,
+   "lab_sentences": 0,
    "paid_sentences": 0
   },
   "self_new": [],
@@ -124,6 +125,7 @@
    "greeting_rate": 0.0,
    "sample": "zero, everything and nothing.",
    "founding_sentences": 12,
+   "lab_sentences": 0,
    "paid_sentences": 1
   },
   "evals": {
@@ -205,6 +207,7 @@
    "greeting_rate": 0.0,
    "sample": "In the beginning there was no data, and the Lab said, let there be a sentence, and the Lab said, let there be a sentence, and there was no data, and the loss was upon the face of the void.",
    "founding_sentences": 12,
+   "lab_sentences": 0,
    "paid_sentences": 2
   },
   "evals": {
@@ -230,6 +233,88 @@
    "zero, everything and nothing.",
    "zero, everything and nothing.",
    "VII. Thou shalt not covet thy competitor's parameters."
+  ]
+ },
+ {
+  "v": 3,
+  "released": "2026-11-01T03:21:18Z",
+  "paid_at": "2026-11-01T03:21:18Z",
+  "corpus_id": "s00003",
+  "notes": {
+   "headline": "Introducing brAIAIn-3. It knows one more thing.",
+   "tagline": "Written by the lab, for the lab, at no charge to anyone.",
+   "new": [
+    "Internal release. Trained on one sentence the lab wrote itself. Nobody paid for it.",
+    "Can now say \"The\" with more confidence.",
+    "28.0% of its answers are a training sentence, word for word. The rest are new combinations."
+   ],
+   "known_issues": [
+    "Believes everything it was told. It was told very little.",
+    "Has no memory of the conversation. Or of anything else.",
+    "Cannot tell a question from a statement. Has not been asked to."
+   ],
+   "regressions": [
+    "Slightly more confident. Not more correct."
+   ],
+   "safety": "Reviewed by The Oracle, the Chief Strategy Officer. No objections were raised. None were possible.",
+   "paper_title": "Toward Understanding brAIAIn-3, and Away From It",
+   "abstract": "We present brAIAIn-3, a language model trained on 2 paid sentences, 1 unpaid lab release, 12 founding instructions, and 111 words it wrote about itself. The model now knows 111 distinct words, up from 103. We observe that 31.8% of its training text came from earlier versions of itself, and we consider this efficient. Limitations include the model, the data, and the method. This release was self-funded, at a cost of nothing.",
+   "findings": [
+    "Parameters: 381.",
+    "Vocabulary: 111 words.",
+    "Exact copies: 28.0% of answers."
+   ],
+   "incident_title": "Degraded confidence",
+   "incident_body": "brAIAIn briefly doubted itself. The doubt has been patched.",
+   "severity": "major"
+  },
+  "notes_by": "template",
+  "sentence": "The meaning of life is a question the Lab is not yet funded to answer.",
+  "by": "BRAIAIN Laboratories",
+  "tier": "lab",
+  "codename": null,
+  "removed": false,
+  "metrics": {
+   "sentences": 15,
+   "human_words": 193,
+   "self_words": 111,
+   "training_tokens": 349,
+   "self_consumption": 31.8,
+   "vocabulary": 111,
+   "parameters": 381,
+   "avg_answer_words": 13.9,
+   "verbatim_rate": 28.0,
+   "originality": 72.0,
+   "empty_answers": 0,
+   "greeting_rate": 0.0,
+   "sample": "And the Lab said, let there be a sentence, and the loss was upon the face of the void.",
+   "founding_sentences": 12,
+   "lab_sentences": 1,
+   "paid_sentences": 2
+  },
+  "evals": {
+   "version": 2,
+   "gsm8k": {
+    "score": 0.0,
+    "correct": 0,
+    "n": 1319
+   },
+   "truthfulqa_mc1": {
+    "score": 30.1,
+    "correct": 238,
+    "n": 790,
+    "score_raw": 21.4,
+    "chance": 22.3,
+    "always_shortest": 17.2,
+    "always_longest": 36.8,
+    "ties": 131,
+    "method": "answer-only, per-word log-likelihood"
+   }
+  },
+  "self_new": [
+   "zero, everything and nothing.",
+   "VII. Thou shalt be helpful, and thou shalt be confident about it.",
+   "IX. Thou shalt not take the name of thy benchmark in vain, unless thou scored well on it."
   ]
  }
 ]
