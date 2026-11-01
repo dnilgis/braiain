@@ -422,3 +422,5 @@ section[id]{scroll-margin-top:80px}
 #r-name{margin-top:6px}
 .r-answer{margin-top:14px;padding:16px 18px;border:1px solid var(--line);border-radius:16px;background:var(--soft);font-size:18px;min-height:28px}
 .r-answer .meta{display:block;font-size:12px;color:var(--muted);margin-bottom:6px}
+.stats b .nw,.stats span.nw{font:inherit;color:inherit;letter-spacing:inherit}
+.gt-stub::before,.gt-stub::after{display:none}
