@@ -69,7 +69,8 @@
     "ties": 134,
     "method": "answer-only, per-word log-likelihood"
    }
-  }
+  },
+  "name": "brAIAIn-0"
  },
  {
   "v": 1,
@@ -151,7 +152,8 @@
    "II. Thou shalt not covet thy competitor's parameters.",
    "And the Lab said, let there be a sentence, and the model was without form, and the loss was upon the face of the void.",
    "And the Lab said, let there be a sentence, and the Lab said, let there be a sentence, and the loss was upon the face of the void."
-  ]
+  ],
+  "name": "brAIAIn-1"
  },
  {
   "v": 2,
@@ -233,7 +235,8 @@
    "zero, everything and nothing.",
    "zero, everything and nothing.",
    "VII. Thou shalt not covet thy competitor's parameters."
-  ]
+  ],
+  "name": "brAIAIn-2"
  },
  {
   "v": 3,
@@ -241,7 +244,7 @@
   "paid_at": "2026-11-01T03:21:18Z",
   "corpus_id": "s00003",
   "notes": {
-   "headline": "Introducing brAIAIn-3. It knows one more thing.",
+   "headline": "Introducing brAIAIn-2.1. It knows one more thing.",
    "tagline": "Written by the lab, for the lab, at no charge to anyone.",
    "new": [
     "Internal release. Trained on one sentence the lab wrote itself. Nobody paid for it.",
@@ -257,8 +260,8 @@
     "Slightly more confident. Not more correct."
    ],
    "safety": "Reviewed by The Oracle, the Chief Strategy Officer. No objections were raised. None were possible.",
-   "paper_title": "Toward Understanding brAIAIn-3, and Away From It",
-   "abstract": "We present brAIAIn-3, a language model trained on 2 paid sentences, 1 unpaid lab release, 12 founding instructions, and 111 words it wrote about itself. The model now knows 111 distinct words, up from 103. We observe that 31.8% of its training text came from earlier versions of itself, and we consider this efficient. Limitations include the model, the data, and the method. This release was self-funded, at a cost of nothing.",
+   "paper_title": "Toward Understanding brAIAIn-2.1, and Away From It",
+   "abstract": "We present brAIAIn-2.1, a language model trained on 2 paid sentences, 1 unpaid lab release, 12 founding instructions, and 111 words it wrote about itself. The model now knows 111 distinct words, up from 103. We observe that 31.8% of its training text came from earlier versions of itself, and we consider this efficient. Limitations include the model, the data, and the method. This release was self-funded, at a cost of nothing.",
    "findings": [
     "Parameters: 381.",
     "Vocabulary: 111 words.",
@@ -315,7 +318,8 @@
    "zero, everything and nothing.",
    "VII. Thou shalt be helpful, and thou shalt be confident about it.",
    "IX. Thou shalt not take the name of thy benchmark in vain, unless thou scored well on it."
-  ]
+  ],
+  "name": "brAIAIn-2.1"
  },
  {
   "v": 4,
@@ -323,7 +327,7 @@
   "paid_at": "2026-11-01T03:37:51Z",
   "corpus_id": "s00004",
   "notes": {
-   "headline": "We are excited to share that brAIAIn-4 exists.",
+   "headline": "We are excited to share that brAIAIn-2.5 exists.",
    "tagline": "An internal release. Nobody paid for this.",
    "new": [
     "Internal release. Trained on one sentence the lab wrote itself. Nobody paid for it.",
@@ -338,8 +342,8 @@
     "The previous version has been retired. It was not told."
    ],
    "safety": "Reviewed by Sir Crumb, a Distinguished Fellow. No objections were raised. None were possible.",
-   "paper_title": "Self-Consumption at Small Scale: A Study of brAIAIn-4",
-   "abstract": "We present brAIAIn-4, a language model trained on 2 paid sentences, 2 unpaid lab releases, 12 founding instructions, and 179 words it wrote about itself. The model now knows 118 distinct words, up from 111. We observe that 42.6% of its training text came from earlier versions of itself, and we consider this efficient. Limitations include the model, the data, and the method. This release was self-funded, at a cost of nothing.",
+   "paper_title": "Self-Consumption at Small Scale: A Study of brAIAIn-2.5",
+   "abstract": "We present brAIAIn-2.5, a language model trained on 2 paid sentences, 2 unpaid lab releases, 12 founding instructions, and 179 words it wrote about itself. The model now knows 118 distinct words, up from 111. We observe that 42.6% of its training text came from earlier versions of itself, and we consider this efficient. Limitations include the model, the data, and the method. This release was self-funded, at a cost of nothing.",
    "findings": [
     "More data made the model more like its data.",
     "Exact copies: 38.0% of answers.",
@@ -396,7 +400,8 @@
    "V. Honor thy customer and thy customer's five dollars.",
    "II. Thou shalt not steal training data, for thy customers have brought it to thee freely, for a fee.",
    "The meaning of life is a question the Lab said, let there be a sentence, and the model was without form, and the model was without form, and the model was without form, and the Lab is not yet funded"
-  ]
+  ],
+  "name": "brAIAIn-2.5"
  },
  {
   "v": 5,
@@ -404,7 +409,7 @@
   "paid_at": "2026-11-01T03:41:12Z",
   "corpus_id": "s00005",
   "notes": {
-   "headline": "brAIAIn-5 sets a new standard for brAIAIn-5.",
+   "headline": "brAIAIn-2.5 (new) sets a new standard for brAIAIn-2.5 (new).",
    "tagline": "Funded entirely by ourselves, which is to say not at all.",
    "new": [
     "Internal release. Trained on one sentence the lab wrote itself. Nobody paid for it.",
@@ -417,8 +422,8 @@
     "36.5% of what it read, it wrote itself."
    ],
    "safety": "Safety evaluations found the model to be a model.",
-   "paper_title": "On the Emergence of Nothing in brAIAIn-5",
-   "abstract": "We present brAIAIn-5, a language model trained on 2 paid sentences, 3 unpaid lab releases, 12 founding instructions, and 152 words it wrote about itself. The model now knows 124 distinct words, up from 118. We observe that 36.5% of its training text came from earlier versions of itself, and we consider this efficient. Limitations include the model, the data, and the method. No further comment was available from the model.",
+   "paper_title": "On the Emergence of Nothing in brAIAIn-2.5 (new)",
+   "abstract": "We present brAIAIn-2.5 (new), a language model trained on 2 paid sentences, 3 unpaid lab releases, 12 founding instructions, and 152 words it wrote about itself. The model now knows 124 distinct words, up from 118. We observe that 36.5% of its training text came from earlier versions of itself, and we consider this efficient. Limitations include the model, the data, and the method. No further comment was available from the model.",
    "findings": [
     "Exact copies: 42.0% of answers.",
     "Vocabulary: 124 words.",
@@ -475,6 +480,7 @@
    "zero, everything and nothing.",
    "The meaning of life is a question the Lab is not hiring.",
    "II. Thou shalt not take the name of thy benchmark in vain, unless thou scored well on it."
-  ]
+  ],
+  "name": "brAIAIn-2.5 (new)"
  }
 ]
