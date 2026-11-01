@@ -37,14 +37,14 @@ def chrome():
     return None
 
 
-def shot(url, out):
+def shot(url, out, size="1600,900"):
     exe = chrome()
     if not exe:
         print("no Chrome found; images skipped", file=sys.stderr)
         return False
     tmp = out + ".tmp.png"
     cmd = [exe, "--headless=new", "--no-sandbox", "--disable-gpu", "--hide-scrollbars", "--force-device-scale-factor=1",
-           "--window-size=1600,900", "--virtual-time-budget=15000", "--screenshot=" + tmp, url]
+           "--window-size=" + size, "--virtual-time-budget=15000", "--screenshot=" + tmp, url]
     try:
         subprocess.run(cmd, check=True, timeout=90, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
                        env=dict(os.environ, TZ="America/Chicago"))
@@ -191,8 +191,40 @@ def daily(versions):
     print("daily answer", today, "v" + str(entry["v"]), "image" if ok else "no image")
 
 
+def certificates(versions):
+    """Freeze each Shark and Whale certificate as an image on release day. A frozen certificate is
+    never re-rendered, so later redesigns of the page cannot change one already issued. It is
+    deleted only if its sentence is removed."""
+    path = os.path.join(ROOT, "v", "certs.json")
+    issued = load_path(path)
+    for e in versions:
+        v = e["v"]
+        png = os.path.join(ROOT, "v", f"{v}-cert.png")
+        if e.get("removed") or e.get("tier") not in ("certificate", "naming") or not e.get("sentence"):
+            if os.path.exists(png):
+                os.remove(png)
+            issued.pop(str(v), None)
+            continue
+        if os.path.exists(png):
+            continue
+        if shot(f"{LOCAL}/certificate.html?v={v}&raw=1", png, "1600,1131"):
+            issued[str(v)] = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+            print("certificate frozen", v)
+    with open(path, "w") as f:
+        json.dump(issued, f, indent=1, sort_keys=True)
+
+
+def load_path(path):
+    try:
+        with open(path, encoding="utf-8") as f:
+            return json.load(f)
+    except (OSError, ValueError):
+        return {}
+
+
 def main():
     versions = load("versions.json", [])
+    certificates(versions)
     version_pages(versions)
     daily(versions)
 

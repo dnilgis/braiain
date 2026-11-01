@@ -19,8 +19,17 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Great+Vibes&display=swap" rel="stylesheet">
+<style>
+@font-face{font-family:"Great Vibes";font-weight:400;font-display:block;src:url(/assets/fonts/great-vibes-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:Cinzel;font-weight:700;font-display:block;src:url(/assets/fonts/cinzel-latin-700-normal.woff2) format("woff2")}
+@font-face{font-family:"Cormorant Garamond";font-weight:500;font-display:block;src:url(/assets/fonts/cormorant-garamond-latin-500-normal.woff2) format("woff2")}
+@font-face{font-family:"Cormorant Garamond";font-weight:600;font-display:block;src:url(/assets/fonts/cormorant-garamond-latin-600-normal.woff2) format("woff2")}
+@font-face{font-family:"Cormorant Garamond";font-style:italic;font-weight:500;font-display:block;src:url(/assets/fonts/cormorant-garamond-latin-500-italic.woff2) format("woff2")}
+</style>
+<link rel="preload" href="/assets/fonts/great-vibes-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/site.css">
+<script>if(/[?&]raw=1/.test(location.search))document.documentElement.classList.add("raw");</script>
+<style>html.raw,html.raw body{margin:0;padding:0;background:#fbf6e9}html.raw header,html.raw footer,html.raw .skip,html.raw .no-print,html.raw .announce{display:none!important}html.raw main,html.raw main section,html.raw main .wrap{padding:0!important;margin:0!important;max-width:none!important}html.raw .dip{max-width:none;width:100vw;height:100vh;aspect-ratio:auto;box-shadow:none}</style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3B3ZCE62NW"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-3B3ZCE62NW");</script>
 <script src="/assets/config.js"></script>
@@ -38,7 +47,8 @@
 
 <section class="tight"><div class="wrap">
 <div id="cert" class="dip"><p>Loading</p></div>
-<p class="center no-print" style="margin-top:20px"><button class="btn" type="button" onclick="window.print()">Print or save as PDF</button></p>
+<p class="center no-print" style="margin-top:20px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap"><button class="btn" type="button" onclick="window.print()">Print or save as PDF</button><a class="btn ghost" id="cert-orig" href="#" download style="display:none">Download the original</a></p>
+<p class="center muted small no-print" id="cert-orig-note" style="display:none;margin:8px auto 0;max-width:620px"></p>
 <p class="center muted small no-print" style="max-width:620px;margin:10px auto 0">Recommended stock: 300gsm acid-free cotton rag, landscape, from a heritage mill that does not have a website. Recommended frame: museum glass, conservation mat, hand-oiled walnut. Ordinary printer paper and a fridge magnet are also supported. The model cannot tell the difference.</p>
 </div></section>
 <script>
@@ -54,6 +64,12 @@ BRAIAIN.load().then(function(d){
   var code=("00000000"+h.toString(16).toUpperCase()).slice(-8),ver=code.slice(0,4)+"-"+code.slice(4),serial=("000000"+v).slice(-6);
   var C='<svg class="corner" viewBox="0 0 60 60" aria-hidden="true"><path d="M4 56 V20 Q4 4 20 4 H56" fill="none" stroke="#b8912e" stroke-width="2"/><path d="M12 56 V26 Q12 12 26 12 H56" fill="none" stroke="#1d2a4a" stroke-width="1"/><circle cx="20" cy="20" r="4" fill="#b8912e"/></svg>';
   el.className="dip";
+  if(!qp("sample")&&!/[?&]raw=1/.test(location.search)){var op="/v/"+v+"-cert.png";
+    fetch(op,{method:"HEAD",cache:"no-cache"}).then(function(r){if(!r.ok)return;
+      var a=document.getElementById("cert-orig");a.href=op;a.setAttribute("download","brAIAIn-"+v+"-certificate.png");a.style.display="";
+      return fetch("/v/certs.json",{cache:"no-cache"}).then(function(r){return r.ok?r.json():{};}).then(function(c){var n=document.getElementById("cert-orig-note");
+        n.textContent="The original was issued and frozen on "+(c[v]?fmtDate(c[v]):"release day")+". Future redesigns of this page will not change it.";n.style.display="";});
+    }).catch(function(){});}
   if((e.by||"").length>26)el.classList.add("dip--longname");
   el.innerHTML=C+C.replace('class="corner"','class="corner tr"')+C.replace('class="corner"','class="corner bl"')+C.replace('class="corner"','class="corner br"')+
    '<div class="dip-wm" aria-hidden="true">'+((document.querySelector('header .brand svg')||{}).outerHTML||'')+'</div>'+
