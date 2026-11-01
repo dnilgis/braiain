@@ -357,3 +357,4 @@ section[id]{scroll-margin-top:80px}
 .rm-dl dt{color:var(--muted);font-size:12px}
 .rm-dl dd{margin:2px 0 0;font-weight:600;font-variant-numeric:tabular-nums}
 .rm-card .small.muted{margin:8px 0 0}
+.sale-badge{background:#b3261e !important;color:#fff !important}.sale-line{margin:4px 0 0;font-size:13px;color:var(--muted)}.sale-line b{color:var(--bad)}
