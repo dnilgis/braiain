@@ -26,7 +26,7 @@
 @font-face{font-family:"Cormorant Garamond";font-weight:600;font-display:block;src:url(/assets/fonts/cormorant-garamond-latin-600-normal.woff2) format("woff2")}
 @font-face{font-family:"Cormorant Garamond";font-style:italic;font-weight:500;font-display:block;src:url(/assets/fonts/cormorant-garamond-latin-500-italic.woff2) format("woff2")}
 </style>
-<style>@media print{main>section:not(:has(#g-card)){display:none!important}.announce{display:none!important}}</style>
+<style>@media print{main>section:not(:has(#g-card)){display:none!important}main h2,main .no-print{display:none!important}.announce{display:none!important}}</style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3B3ZCE62NW"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-3B3ZCE62NW");</script>
 <script src="/assets/config.js"></script>
@@ -65,6 +65,7 @@
 <section class="tight"><div class="wrap narrow prose">
 <h2>How to give it</h2>
 <ol>
+<li><b>Or let them choose.</b> Print the gift card below. It has a QR code. They scan it, write their sentence, watch what the model would do with it, and send it back to you to buy.</li>
 <li><b>Ask them first.</b> The sentence and the name are public forever, so let them choose the sentence, or write it together. Leave out anything private.</li>
 <li><b>Buy it.</b> Type their sentence at checkout, and their name in <b>Credit as</b>.</li>
 <li><b>Send them the release.</b> About ten minutes later their version is live. Send them the link to its release notes, and for the Shark or Whale, the certificate.</li>
@@ -76,32 +77,57 @@
 
 <section class="tight"><div class="wrap narrow">
 <h2>Printable gift card</h2>
-<p class="muted no-print" style="margin:6px 0 14px">Fill it in, print it, put it in a card. Nothing you type here is saved or sent anywhere.</p>
+<p class="muted no-print" style="margin:6px 0 14px">Fill it in, print it, cut it out, put it in a card. White paper, thin lines, easy on toner. Nothing you type here is saved or sent anywhere.</p>
 <div class="gift-form no-print">
 <label>To <input id="g-to" maxlength="40" placeholder="Their name"></label>
 <label>From <input id="g-from" maxlength="40" placeholder="Your name"></label>
 <label>Gift <select id="g-tier"><option value="sentence">The Minnow, one sentence</option><option value="certificate" selected>The Shark, sentence and certificate</option><option value="naming">The Whale, they name a version</option></select></label>
+<fieldset class="g-mode"><legend>Print format</legend>
+<label><input type="radio" name="g-mode" value="classic" checked> Classic <small>navy and gold lines on white</small></label>
+<label><input type="radio" name="g-mode" value="eco"> EcoPrint&trade; <small>our proprietary low-toner format: black lines on white paper. No patents have been filed.</small></label>
+</fieldset>
 </div>
-<div class="gift-card" id="g-card">
-<p class="gc-org">BRAIAIN LABORATORIES</p>
-<p class="gc-title">You have been given a sentence<br>in a language model.</p>
-<p class="gc-to">To <span id="gc-to">____________</span></p>
-<p class="gc-body" id="gc-body"></p>
-<p class="gc-from">From <span id="gc-from">____________</span></p>
-<p class="gc-small">Tell the person above what you want brAIAIn to learn, up to 255 characters. It will be in the model permanently. braiain.com</p>
+<div class="gc-wrap"><div class="gift-ticket" id="g-card">
+<svg class="gt-corner tl" viewBox="0 0 40 40" aria-hidden="true"><path d="M2 38 V14 Q2 2 14 2 H38 M8 38 V18 Q8 8 18 8 H38"/></svg>
+<svg class="gt-corner tr" viewBox="0 0 40 40" aria-hidden="true"><path d="M2 38 V14 Q2 2 14 2 H38 M8 38 V18 Q8 8 18 8 H38"/></svg>
+<svg class="gt-corner bl" viewBox="0 0 40 40" aria-hidden="true"><path d="M2 38 V14 Q2 2 14 2 H38 M8 38 V18 Q8 8 18 8 H38"/></svg>
+<div class="gt-main">
+<p class="gt-org"><span class="gt-logo" id="gt-logo"></span>BRAIAIN LABORATORIES</p>
+<p class="gt-title">Admit One Sentence</p>
+<p class="gt-sub">into the training data of a real language model</p>
+<div class="gt-names"><p><small>To</small><span id="gc-to"></span></p><p><small>From</small><span id="gc-from"></span></p></div>
+<p class="gt-body" id="gc-body"></p>
+<p class="gt-fine">Good for up to 255 characters. Valid forever. Redeem by scanning the code, or by telling the person named in From what you want the model to learn. No cash value. Some sentimental value. braiain.com</p>
 </div>
+<div class="gt-stub">
+<p class="gt-no">No. <span id="gt-serial">000000</span></p>
+<div class="gt-qr" id="gt-qr" aria-label="QR code to redeem this gift"></div><p class="gt-scan">Scan to redeem</p>
+<p class="gt-tier" id="gt-tier"></p>
+
+</div>
+</div></div>
+<p class="small muted center no-print" style="margin:10px 0 0">Prints at 7 by 3.4 inches with a cut line. Fits in a standard card.</p>
 <p class="center no-print" style="margin-top:16px"><button class="btn" type="button" onclick="window.print()">Print the card</button></p>
 </div></section>
 
+<script src="/assets/qrcode.min.js"></script>
 <script>
 (function(){
-  var txt={sentence:"One sentence of your choosing, added to the next version of brAIAIn, with your name on the release notes.",
-    certificate:"One sentence of your choosing, added to the next version of brAIAIn, and a certificate of contribution signed by the board. The board is a goose.",
+  var txt={sentence:"One sentence of your choosing in the next version of brAIAIn, with your name on its release notes.",
+    certificate:"One sentence of your choosing in the next version of brAIAIn, and a certificate of contribution signed by the board. The board is a goose.",
     naming:"One sentence of your choosing, and the right to name the version it creates. The model will be called whatever you say, within reason."};
-  function upd(){var t=document.getElementById("g-to").value.trim(),f=document.getElementById("g-from").value.trim();
-    document.getElementById("gc-to").textContent=t||"____________";document.getElementById("gc-from").textContent=f||"____________";
-    document.getElementById("gc-body").textContent=txt[document.getElementById("g-tier").value];}
-  ["g-to","g-from","g-tier"].forEach(function(id){document.getElementById(id).addEventListener("input",upd);});
+  var tiers={sentence:"The Minnow",certificate:"The Shark",naming:"The Whale"};
+  var logo=document.querySelector("header .brand svg");if(logo)document.getElementById("gt-logo").innerHTML=logo.outerHTML.replace(/\bhc\b/g,"hcg");
+  function $(id){return document.getElementById(id);}
+  function upd(){var t=$("g-to").value.trim(),f=$("g-from").value.trim(),tier=$("g-tier").value,mode=(document.querySelector('input[name="g-mode"]:checked')||{}).value;
+    $("gc-to").textContent=t||"\u00a0";$("gc-from").textContent=f||"\u00a0";$("gc-body").textContent=txt[tier];$("gt-tier").textContent=tiers[tier];
+    var h=2166136261,src=t+"|"+f+"|"+tier;for(var i=0;i<src.length;i++){h^=src.charCodeAt(i);h=Math.imul(h,16777619)>>>0;}
+    $("gt-serial").textContent=("000000"+(h%1000000)).slice(-6);
+    $("g-card").classList.toggle("eco",mode==="eco");
+    var u="https://www.braiain.com/redeem.html?t="+tier+"&n="+$("gt-serial").textContent+(t?"&to="+encodeURIComponent(t):"")+(f?"&from="+encodeURIComponent(f):"");
+    try{var q=qrcode(0,"M");q.addData(u);q.make();$("gt-qr").innerHTML=q.createSvgTag({cellSize:4,margin:0,scalable:true});}catch(x){$("gt-qr").textContent="";}}
+  ["g-to","g-from","g-tier"].forEach(function(id){$(id).addEventListener("input",upd);});
+  document.querySelectorAll('input[name="g-mode"]').forEach(function(r){r.addEventListener("change",upd);});
   upd();
 })();
 </script>

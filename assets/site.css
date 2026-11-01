@@ -374,3 +374,51 @@ section[id]{scroll-margin-top:80px}
 @media print{.gift-card{margin-top:1in}}
 .gift-form input,.gift-form select{min-width:0;width:100%}.gift-form label{min-width:0}@media (max-width:600px){.gift-form{grid-template-columns:1fr}}
 .promo{display:flex;gap:12px;align-items:center;flex-wrap:wrap;border:1px dashed var(--bad);border-radius:14px;padding:12px 16px;margin:0 0 18px;font-size:15px}.promo-badge{background:var(--bad);color:#fff;font:700 12px/1 var(--sans);letter-spacing:.06em;text-transform:uppercase;padding:7px 10px;border-radius:999px;white-space:nowrap}.promo-text{flex:1;min-width:220px}
+/* gift ticket */
+.g-mode{grid-column:1/-1;border:1px solid var(--line);border-radius:12px;padding:10px 14px;display:flex;gap:18px;flex-wrap:wrap}
+.g-mode legend{font-size:13px;color:var(--muted);padding:0 6px}
+.g-mode label{flex-direction:row!important;align-items:flex-start;gap:8px!important;font-size:15px!important;color:var(--ink)!important;flex:1;min-width:220px}
+.g-mode small{display:block;color:var(--muted);font-size:12px}
+.g-mode input{width:auto!important;margin-top:3px}
+.gc-wrap{container-type:inline-size;max-width:700px;margin:0 auto}
+.gift-ticket{--ink:#1d2a4a;--line:#b8912e;position:relative;display:grid;grid-template-columns:1fr 23%;background:#fff;color:var(--ink);aspect-ratio:7/3.4;border:.3cqw solid var(--line);outline:.15cqw solid var(--ink);outline-offset:-1.4cqw;font-family:"Cormorant Garamond",Georgia,serif;text-align:center;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+.gift-ticket.eco{--ink:#000;--line:#000;border-width:.15cqw;outline-width:.1cqw;box-shadow:0 10px 30px rgba(0,0,0,.12)}
+.gt-corner{position:absolute;width:5.2cqw;height:5.2cqw;fill:none;stroke:var(--line);stroke-width:2}
+.gift-ticket.eco .gt-corner{stroke-width:1.2}
+.gt-corner.tl{top:2.2cqw;left:2.2cqw}.gt-corner.tr{top:2.2cqw;right:calc(23% + 1cqw);transform:scaleX(-1)}.gt-corner.bl{bottom:2.2cqw;left:2.2cqw;transform:scaleY(-1)}
+.gt-main{padding:3.6cqw 4.5cqw 2.8cqw;display:flex;flex-direction:column;justify-content:space-between}
+.gt-main p{margin:0}
+.gt-org{font:700 1.45cqw/1 Cinzel,Georgia,serif;letter-spacing:.5cqw;color:var(--line);display:flex;align-items:center;justify-content:center;gap:1.2cqw}
+.gift-ticket.eco .gt-org{color:#000}
+.gt-logo svg{width:2.6cqw;height:2.6cqw;display:block;color:var(--ink)}
+.gt-logo svg path{fill:none;stroke:var(--ink);stroke-width:1.4}.gt-logo svg circle{display:none}
+.gt-title{font:700 5.4cqw/1 Cinzel,Georgia,serif;letter-spacing:.3cqw;margin-top:.8cqw!important}
+.gt-sub{font:italic 500 2.1cqw/1.2 "Cormorant Garamond",Georgia,serif}
+.gt-names{display:grid;grid-template-columns:1fr 1fr;gap:3cqw}
+.gt-names p{border-bottom:.15cqw solid var(--line);display:flex;align-items:baseline;gap:1cqw;padding-bottom:.4cqw}
+.gift-ticket.eco .gt-names p{border-bottom-width:.1cqw}
+.gt-names small{font:600 1.5cqw/1 Cinzel,Georgia,serif;letter-spacing:.2cqw}
+.gt-names span{font:400 4.4cqw/1.1 "Great Vibes",cursive;flex:1;min-height:4.8cqw;overflow-wrap:anywhere}
+.gt-body{font:italic 500 1.95cqw/1.35 "Cormorant Garamond",Georgia,serif;max-width:80%;margin:0 auto!important}
+.gt-fine{font:500 1.2cqw/1.4 "Cormorant Garamond",Georgia,serif;opacity:.85}
+.gt-stub{border-left:.25cqw dashed var(--line);display:flex;flex-direction:column;align-items:center;justify-content:space-between;padding:3.6cqw 1.5cqw 3cqw;position:relative}
+.gift-ticket.eco .gt-stub{border-left-width:.15cqw}
+.gt-stub::before,.gt-stub::after{content:"";position:absolute;left:-1.6cqw;width:3cqw;height:3cqw;border-radius:50%;background:var(--bg,#fff);border:.3cqw solid var(--line)}
+.gt-stub::before{top:-1.7cqw;clip-path:inset(50% 0 0 0)}.gt-stub::after{bottom:-1.7cqw;clip-path:inset(0 0 50% 0)}
+.gift-ticket.eco .gt-stub::before,.gift-ticket.eco .gt-stub::after{border-width:.15cqw}
+.gt-stub p{margin:0}
+.gt-no{font:600 1.5cqw/1 Cinzel,Georgia,serif;letter-spacing:.15cqw}
+.gt-seal{width:11cqw;height:11cqw}
+.gt-seal circle{fill:none;stroke:var(--line);stroke-width:1.4}
+.gt-seal text{fill:var(--ink);font-family:Cinzel,Georgia,serif;font-weight:700}
+.gt-seal .gt-foot{fill:none;stroke:var(--ink);stroke-width:1.6;stroke-linejoin:round}
+.gift-ticket.eco .gt-seal circle{stroke-width:1}
+.gt-tier{font:400 3cqw/1 "Great Vibes",cursive}
+.gt-admit{font:700 1.4cqw/1 Cinzel,Georgia,serif;letter-spacing:.4cqw;text-transform:uppercase}
+@media (max-width:520px){.gc-wrap{overflow-x:auto}.gift-ticket{min-width:480px}}
+@media print{.gc-wrap{max-width:7in;margin:.6in auto 0}.gift-ticket{box-shadow:none;width:7in}.gift-ticket::after{content:"";position:absolute;inset:-.18in;border:1px dashed #999}}
+.gt-qr{width:12.5cqw;height:12.5cqw}.gt-qr svg{width:100%;height:100%;display:block}.gt-qr svg path,.gt-qr svg rect[fill="black"]{fill:var(--ink)}.gt-scan{font:700 1.15cqw/1 Cinzel,Georgia,serif;letter-spacing:.2cqw;text-transform:uppercase;margin-top:-1cqw!important}
+#r-s,#r-name,#r-q{font:inherit;font-size:17px;padding:12px 14px;border:1px solid var(--field);border-radius:12px;background:var(--surface);color:var(--ink);width:100%;box-sizing:border-box}
+#r-name{margin-top:6px}
+.r-answer{margin-top:14px;padding:16px 18px;border:1px solid var(--line);border-radius:16px;background:var(--soft);font-size:18px;min-height:28px}
+.r-answer .meta{display:block;font-size:12px;color:var(--muted);margin-bottom:6px}

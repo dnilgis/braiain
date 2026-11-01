@@ -187,7 +187,7 @@
   // Display name: whole numbers for paid releases, point releases (2.5, 2.5 (new), 2.67-turbo) for lab ones.
   function vname(e) { return (e && e.name) || ("brAIAIn-" + (e ? e.v : "")); }
   function nameOf(d, v) { var x = (d.versions || d).filter(function (e) { return e.v === v; })[0]; return x ? vname(x) : "brAIAIn-" + v; }
-  window.BRAIAIN = { vname: vname, nameOf: nameOf, load: load, model: model, generate: generate, passagesFor: passagesFor, getJSON: getJSON, specs: specs, specTable: specTable, fail: fail, took: took, live: live };
+  window.BRAIAIN = { train: train, vname: vname, nameOf: nameOf, load: load, model: model, generate: generate, passagesFor: passagesFor, getJSON: getJSON, specs: specs, specTable: specTable, fail: fail, took: took, live: live };
 
   // shared page bits
   document.addEventListener("DOMContentLoaded", function () {
