@@ -50,6 +50,14 @@ jobs:
           REVIEW_EMAIL_TO: ${{ secrets.REVIEW_EMAIL_TO }}
         run: python scripts/train.py
 
+      - name: Title sponsorship bids
+        env:
+          STRIPE_SECRET_KEY: ${{ secrets.STRIPE_SECRET_KEY }}
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          REVIEW_EMAIL_TO: ${{ secrets.REVIEW_EMAIL_TO }}
+        run: python scripts/sponsor.py || echo "sponsorship step failed; training is unaffected"
+
       - name: Share pages, release cards, daily answer
         run: |
           python3 -m http.server 8000 >/dev/null 2>&1 &

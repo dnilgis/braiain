@@ -463,3 +463,18 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start); else start();
 })();
+
+// Title sponsor bar: one line under the header on every page, held by the highest bidder.
+document.addEventListener("DOMContentLoaded", function () {
+  var top = document.querySelector("header.top"); if (!top || !window.BRAIAIN || /[?&]raw=1/.test(location.search)) return;
+  BRAIAIN.getJSON("/data/sponsor.json").then(function (sp) {
+    var c = sp && sp.current, bar = document.createElement("div");
+    bar.className = "sponsor-bar"; bar.setAttribute("role", "note"); bar.setAttribute("aria-label", "Title sponsor");
+    var next = c ? (c.cents + (sp.step_cents || 100)) : (sp.open_cents || 500);
+    bar.innerHTML = '<div class="wrap">' + (c
+      ? 'brAIAIn is presented by <b>' + esc(c.name) + '</b>' + (c.line ? ': ' + esc(c.line) : '')
+      : 'brAIAIn is presented by <b>nobody</b>. The title sponsorship is available.') +
+      ' <a href="/sponsor.html">' + (c ? 'Outbid them for $' + (next / 100).toFixed(next % 100 ? 2 : 0) : 'Opening bid $' + (next / 100).toFixed(0)) + '</a></div>';
+    top.parentNode.insertBefore(bar, top.nextSibling);
+  }).catch(function () {});
+});

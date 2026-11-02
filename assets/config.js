@@ -8,6 +8,9 @@ window.BRAIAIN_CONFIG = {
   paymentLink: "https://buy.stripe.com/28E6oHaKQdb2eq7eR47N600",             // $5: one sentence
   paymentLinkCertificate: "https://buy.stripe.com/9B64gzdX29YQ3LtdN07N601",  // $15: one sentence plus a printable certificate
   paymentLinkNaming: "https://buy.stripe.com/6oUeVd3io2wogyf7oC7N602",       // $50: one sentence plus the version's codename
+  // Title sponsorship: a Stripe Payment Link where the customer chooses the amount, with custom
+  // fields "Sponsor name" and "Sponsor line (optional)". Leave "" until it exists.
+  sponsorLink: "",
   price: "$5",
   priceCertificate: "$15",
   priceNaming: "$50",
