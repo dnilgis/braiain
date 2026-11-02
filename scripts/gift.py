@@ -84,6 +84,7 @@ def email(to, subject, lines):
         return False
     m = EmailMessage()
     m["Subject"], m["From"], m["To"] = subject, "BRAIAIN Laboratories <" + addr + ">", to
+    m["Reply-To"] = "hello@braiain.com"
     m.set_content("\n".join(lines))
     try:
         s = smtplib.SMTP_SSL("smtp.gmail.com", 465, timeout=30)
@@ -94,6 +95,14 @@ def email(to, subject, lines):
     except Exception as e:
         print("could not send gift email", type(e).__name__, file=sys.stderr)
         return False
+
+
+def lab_sender():
+    """Buyers see the sending address, so only a lab Gmail may write to them (same rule as
+    announce.py buyer emails): braiain in the address, and not the owner's own inbox."""
+    sender = os.environ.get("GMAIL_ADDRESS", "").strip().lower()
+    own = os.environ.get("REVIEW_EMAIL_TO", "").strip().lower()
+    return bool(sender) and bool(own) and sender != own and "braiain" in sender.split("@")[0]
 
 
 def owner():
@@ -184,7 +193,8 @@ def main():
             if not g.get("emailed"):
                 ticket, redeem = links_for(code, tier, to, frm)
                 buyer = ((s.get("customer_details") or {}).get("email") or "").strip()
-                ok = email(buyer, "Your brAIAIn gift ticket" + (" for " + to if to else ""), [
+                subject = "Your brAIAIn gift ticket" + (" for " + to if to else "")
+                body = [
                     "Thank you for giving " + (to or "someone") + " a sentence in brAIAIn.", "",
                     "Gift: " + TIER_NAME[tier],
                     "Gift code: " + code + "  (works once)", "",
@@ -195,12 +205,20 @@ def main():
                     "They write their own sentence and check out for $0.00. No card needed.",
                     "Their version usually goes live within minutes of that.", "",
                     "Keep this email. Anyone with the code can redeem it, once. Gifts are not refundable.", "",
-                    "BRAIAIN Laboratories", SITE])
+                    "BRAIAIN Laboratories", SITE]
+                if lab_sender():
+                    ok = email(buyer, subject, body)
+                    if ok:
+                        email(owner(), "brAIAIn: gift sold (" + TIER_NAME[tier] + ")",
+                              ["A gift was bought and its ticket emailed to the buyer.", "Tier: " + tier,
+                               "Stripe promotion code id: " + g["promo"]])
+                else:  # no lab sender: the owner forwards it, so the owner's address never reaches a buyer unasked
+                    ok = email(owner(), "brAIAIn: FORWARD this gift ticket to " + (buyer or "the buyer (email not found)"),
+                               ["A gift was bought. Forward everything below the line to: " + (buyer or "(no email on the checkout; find it in Stripe)"),
+                                "from hello@braiain.com or another lab address, not your personal one.",
+                                "Subject: " + subject, "", "-" * 40] + body)
                 if ok:
                     g["emailed"] = True
-                    email(owner(), "brAIAIn: gift sold (" + TIER_NAME[tier] + ")",
-                          ["A gift was bought and its ticket emailed to the buyer.", "Tier: " + tier,
-                           "Stripe promotion code id: " + g["promo"]])
     if json.dumps(state, sort_keys=True) != before or not os.path.exists(PATH):
         with open(PATH, "w", encoding="utf-8") as f:
             json.dump(state, f, indent=1, sort_keys=True)

@@ -203,6 +203,66 @@ def buyer_emails(versions):
     print("buyer emails sent:", sent, "of", len(out))
 
 
+# Real milestones, each announced once, the first time the live model reaches it. These are news
+# pegs: the owner gets a ready pitch, and Bluesky gets a post.
+MILESTONES = [
+    ("self50", lambda m: m.get("self_consumption", 0) >= 50,
+     lambda e, m: "brAIAIn is now mostly trained on itself. As of %s, %.1f%% of its training text is writing it produced. "
+                  "We are monitoring the situation." % (e.get("name") or "brAIAIn-" + str(e["v"]), m["self_consumption"])),
+    ("params500", lambda m: m.get("parameters", 0) >= 500,
+     lambda e, m: "%s has crossed 500 parameters (%d). Scaling continues at roughly one sentence per sale."
+                  % (e.get("name") or "brAIAIn-" + str(e["v"]), m["parameters"])),
+    ("paid10", lambda m: m.get("paid_sentences", 0) >= 10,
+     lambda e, m: "brAIAIn has now been paid to learn 10 sentences. That is its entire education, all of it public."),
+    ("params1000", lambda m: m.get("parameters", 0) >= 1000,
+     lambda e, m: "%s is our first model with over 1,000 parameters (%d). It still cannot add."
+                  % (e.get("name") or "brAIAIn-" + str(e["v"]), m["parameters"])),
+]
+
+
+def milestones(versions, state):
+    live = [e for e in versions if not e.get("removed")]
+    if not live:
+        return False
+    e = max(live, key=lambda x: x["v"])
+    m = e.get("metrics") or {}
+    done = state.setdefault("milestones", [])
+    if not done and "milestones_started" not in state:  # first run: record what is already true, announce nothing
+        state["milestones"] = [k for k, test, _ in MILESTONES if test(m)]
+        state["milestones_started"] = e["v"]
+        return True
+    changed = False
+    for key, test, text in MILESTONES:
+        if key in done or not test(m):
+            continue
+        post = text(e, m)
+        url = SITE + "/data.html?ref=bsky" if key == "self50" else SITE + "/model.html?v=" + str(e["v"]) + "&ref=bsky"
+        try:
+            if env("BLUESKY_HANDLE"):
+                bsky_post(post + "\n\n" + url, url)
+        except Exception as ex:
+            print("could not post milestone", key, type(ex).__name__, file=sys.stderr)
+            continue
+        owner = env("REVIEW_EMAIL_TO") or env("GMAIL_ADDRESS")
+        if owner:
+            from email.message import EmailMessage
+            msg = EmailMessage()
+            msg["Subject"] = "brAIAIn milestone: " + post[:70] + "... (a reason to pitch again)"
+            msg["To"] = owner
+            msg.set_content("\n".join([
+                "A real milestone just happened. It was posted to Bluesky. Use it to follow up with every outlet that",
+                "did not reply: a new fact is a reason to write again.", "",
+                "Ready-to-send follow-up (reply in the original thread):", "",
+                "Hi [first name], a quick update on braiain.com: " + post,
+                "Data: " + SITE + "/data.html?ref=news", "",
+                "BRAIAIN Laboratories", "hello@braiain.com"]))
+            gmail_send([msg])
+        done.append(key)
+        changed = True
+        print("milestone announced:", key)
+    return changed
+
+
 TIER_NAMES = {"sentence": "Minnow ($5)", "certificate": "Shark ($15)", "naming": "Whale ($50)"}
 
 
@@ -623,6 +683,8 @@ def main():
             state[key] = latest
             changed = True
     buyer_emails(versions)
+    if milestones(versions, state):
+        changed = True
     if owner_release_emails(versions, state):
         changed = True
     dd = daily_email()
