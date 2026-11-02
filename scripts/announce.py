@@ -626,6 +626,12 @@ def main():
     if owner_release_emails(versions, state):
         changed = True
     dd = daily_email()
+    if not dd:  # missed today's post (e.g. Bluesky was set up after the daily run): post today's from the archive
+        days = load("daily.json", [])
+        today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+        if days and days[-1].get("date") == today:
+            d = dict(days[-1], png=os.path.join(ROOT, "daily", today + ".png"))
+            dd = (d, "")
     if dd and env("BLUESKY_HANDLE") and state.get("posted_daily") != dd[0]["date"]:
         d, caption = dd
         try:
