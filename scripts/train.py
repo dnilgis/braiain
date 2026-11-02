@@ -240,7 +240,8 @@ def stripe_sessions(key, links):
                     continue
                 raise
             for s in page.get("data", []):
-                if s.get("payment_status") == "paid":
+                # no_payment_required: a gift redeemed with its 100%-off code (scripts/gift.py)
+                if s.get("payment_status") in ("paid", "no_payment_required"):
                     out.append(s)
             if not page.get("has_more") or not page.get("data"):
                 break
@@ -266,7 +267,8 @@ def refunded(sess):
 
 
 def tier(sess):
-    cents = sess.get("amount_total") or 0
+    # Before discounts, so a redeemed gift ($0.00 with its code) keeps the tier the giver paid for.
+    cents = sess.get("amount_subtotal") or sess.get("amount_total") or 0
     if cents >= 5000:
         return "naming"
     if cents >= 1500:

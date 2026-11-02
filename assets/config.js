@@ -11,6 +11,11 @@ window.BRAIAIN_CONFIG = {
   // Title sponsorship: a Stripe Payment Link where the customer chooses the amount, with custom
   // fields "Sponsor name" and "Sponsor line (optional)". Leave "" until it exists.
   sponsorLink: "https://buy.stripe.com/8x200jf166MEdm36ky7N603",
+  // Gifts the recipient redeems (scripts/gift.py): one Payment Link per tier, same prices, with
+  // optional custom fields "Recipient's name" and "Your name". Leave "" until they exist.
+  giftLink: "",             // $5 gift: they choose one sentence
+  giftLinkCertificate: "",  // $15 gift: sentence plus certificate
+  giftLinkNaming: "",       // $50 gift: sentence plus codename
   price: "$5",
   priceCertificate: "$15",
   priceNaming: "$50",

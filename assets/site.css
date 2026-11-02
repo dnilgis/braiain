@@ -430,3 +430,4 @@ section[id]{scroll-margin-top:80px}
 .gt-names span{white-space:nowrap;overflow:hidden}
 .sponsor-bar{border-bottom:1px solid var(--line);background:var(--soft);font-size:13px;color:var(--muted);padding:7px 0}.sponsor-bar b{color:var(--ink);font-weight:600}.sponsor-bar a{margin-left:6px;white-space:nowrap}@media print{.sponsor-bar{display:none}}
 .sp-now{padding:28px}.sp-name{font:700 34px/1.15 var(--display);margin:6px 0 4px;letter-spacing:-.02em;overflow-wrap:anywhere}.sp-line{font-size:18px;margin:0 0 10px;color:var(--body)}
+.gt-code{font:600 1.35cqw/1 ui-monospace,Menlo,Consolas,monospace;letter-spacing:.05cqw;white-space:nowrap}
