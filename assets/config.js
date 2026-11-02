@@ -13,9 +13,9 @@ window.BRAIAIN_CONFIG = {
   sponsorLink: "https://buy.stripe.com/8x200jf166MEdm36ky7N603",
   // Gifts the recipient redeems (scripts/gift.py): one Payment Link per tier, same prices, with
   // optional custom fields "Recipient's name" and "Your name". Leave "" until they exist.
-  giftLink: "",             // $5 gift: they choose one sentence
-  giftLinkCertificate: "",  // $15 gift: sentence plus certificate
-  giftLinkNaming: "",       // $50 gift: sentence plus codename
+  giftLink: "https://buy.stripe.com/28E5kD1ag6MEdm3bES7N604",             // $5 gift: they choose one sentence
+  giftLinkCertificate: "https://buy.stripe.com/28EfZh8CIb2U6XF8sG7N605",  // $15 gift: sentence plus certificate
+  giftLinkNaming: "https://buy.stripe.com/9B68wP6uAfjachZgZc7N606",       // $50 gift: sentence plus codename
   price: "$5",
   priceCertificate: "$15",
   priceNaming: "$50",
