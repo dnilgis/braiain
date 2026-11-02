@@ -117,7 +117,7 @@ def main():
         code = pi[-8:] or s["id"][-8:]
         ids = {s["id"][-8:], pi[-8:]} - {""}
         cents = int(s.get("amount_total") or 0)
-        name = T.clean_name(field(s, ("sponsor name", "name", "sponsor")))[:NAME_MAX] or "Anonymous"
+        name = T.clean_name(field(s, ("sponsor name", "sponsorname", "name")))[:NAME_MAX] or "Anonymous"
         line = T.clean(field(s, ("line", "tagline", "slogan")))[:LINE_MAX]
         cur = state["current"]
         need = (cur["cents"] + STEP_CENTS) if cur else OPEN_CENTS
