@@ -263,7 +263,7 @@ def milestones(versions, state):
     return changed
 
 
-TIER_NAMES = {"sentence": "Minnow ($2.49)", "certificate": "Shark ($15)", "naming": "Whale ($50)"}
+TIER_NAMES = {"sentence": "Minnow ($2.49)", "certificate": "Shark ($9.99)", "naming": "Whale ($24.99)"}
 
 
 def owner_release_emails(versions, state):

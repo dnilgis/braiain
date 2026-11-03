@@ -211,7 +211,7 @@
 function applyMode(cfg) {
   var isLive = window.BRAIAIN.live(cfg);
   var links = { "": cfg.paymentLink, certificate: cfg.paymentLinkCertificate, naming: cfg.paymentLinkNaming };
-  var prices = { "": cfg.price || "$2.49", certificate: cfg.priceCertificate || "$15", naming: cfg.priceNaming || "$50" };
+  var prices = { "": cfg.price || "$2.49", certificate: cfg.priceCertificate || "$9.99", naming: cfg.priceNaming || "$24.99" };
   document.documentElement.classList.toggle("teaser", !isLive);
   document.documentElement.classList.toggle("is-live", isLive);
   document.querySelectorAll("[data-buy]").forEach(function (a) {
