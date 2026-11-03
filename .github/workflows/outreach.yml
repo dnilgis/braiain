@@ -1,0 +1,47 @@
+name: Send one email
+
+# Run by hand: sends one plain-text email from hello@braiain.com through Resend
+# (scripts/mailer.py). Replies come back to hello@braiain.com.
+
+on:
+  workflow_dispatch:
+    inputs:
+      to:
+        description: "To (one address)"
+        required: true
+      subject:
+        description: "Subject"
+        required: true
+      body:
+        description: "Body (plain text)"
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Send
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          TO: ${{ inputs.to }}
+          SUBJECT: ${{ inputs.subject }}
+          BODY: ${{ inputs.body }}
+        run: |
+          python3 - <<'PY'
+          import os, sys
+          sys.path.insert(0, "scripts")
+          import mailer
+          if not mailer.ready():
+              sys.exit("RESEND_API_KEY is not set.")
+          ok = mailer.send(os.environ["TO"], os.environ["SUBJECT"], os.environ["BODY"])
+          print("sent to", os.environ["TO"] if ok else "NOT sent")
+          sys.exit(0 if ok else 1)
+          PY
