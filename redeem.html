@@ -20,11 +20,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/site.css?v=20261103">
+<link rel="stylesheet" href="/assets/site.css?v=20261103b">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3B3ZCE62NW"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-3B3ZCE62NW",{page_location:location.origin+location.pathname});</script>
 <script src="/assets/config.js"></script>
-<script src="/assets/braiain.js?v=20261103"></script>
+<script src="/assets/braiain.js?v=20261103b"></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -50,41 +50,40 @@
 
 <section class="tight" id="r-write"><div class="wrap narrow">
 <div class="card" style="padding:26px">
-<h2 style="margin-top:0">1. Write your sentence</h2>
-<p class="muted small" style="margin:4px 0 12px">Up to 255 characters. It will be public forever, so leave out anything private: no links, emails, phone numbers or other people's details.</p>
+<label class="r-lab" for="r-s">Your sentence</label>
+<p class="muted small" style="margin:2px 0 8px">It goes into the model forever, and it is public, so leave out anything private.</p>
 <textarea id="r-s" maxlength="255" rows="3" placeholder="The goose is right about everything."></textarea>
-<p class="small muted" style="margin:6px 0 0"><span id="r-count">0</span> / 255</p>
-<label class="small" style="display:block;margin-top:12px">Credit as <input id="r-name" maxlength="40" placeholder="Your name, or leave blank for Anonymous"></label>
-<p class="small muted" style="margin:4px 0 0">Letters, numbers, spaces and ' . - only. A first name goes live fastest; a full name is read by a person first.</p>
-<label class="small" id="r-code-wrap" style="display:none;margin-top:12px">Codename for your version <input id="r-code" maxlength="40" placeholder="For example: Ruth's Remarkable Model"></label>
+<p class="small muted" style="margin:6px 0 0"><span id="r-count">0</span> / 255 <span id="r-fit"></span></p>
+
+<label class="r-lab" for="r-name" style="margin-top:16px">Credit it to <span class="muted small">(optional)</span></label>
+<input id="r-name" maxlength="40" placeholder="Your first name, or leave blank for Anonymous">
+
+<div id="r-code-wrap" hidden>
+<label class="r-lab" for="r-code" style="margin-top:16px">Name your version</label>
+<input id="r-code" maxlength="40" placeholder="For example: Ruth's Remarkable Model">
 </div>
 
-<div class="card" style="padding:26px;margin-top:16px">
-<h2 style="margin-top:0">2. See what it does to the model</h2>
-<p class="muted small" style="margin:4px 0 12px">This trains a preview of the next version in your browser, with your sentence in it. Nothing is sent anywhere.</p>
+<label class="r-lab" for="r-email" style="margin-top:16px">Your email</label>
+<input id="r-email" type="email" autocomplete="email" placeholder="you@example.com">
+<p class="muted small" style="margin:4px 0 0">For your $0.00 receipt, and one email when your version goes live.</p>
+
+<p style="margin:22px 0 0"><a class="btn r-big" id="r-go" href="#" rel="noopener">Add my sentence, $0.00</a></p>
+<p class="small muted" id="r-next-step" style="margin:10px 0 0">Next is a secure checkout page with everything filled in and the gift applied. Tap <b>Complete order</b>. No card is asked for.</p>
+<p class="small" id="r-gocheck" style="margin:10px 0 0" hidden></p>
+</div>
+
+<details class="card r-more" style="padding:18px 26px;margin-top:16px">
+<summary><b>Try it first:</b> see what the model says with your sentence in it</summary>
+<p class="muted small" style="margin:10px 0 12px">This trains a preview of the next version in your browser. Nothing is sent anywhere.</p>
 <div class="stats" id="r-stats" style="margin:0 0 14px">
 <div><span>It would be called</span><b id="r-next">-</b></div>
 <div><span>New words it would learn</span><b id="r-new">-</b></div>
 <div><span>Words it would know</span><b id="r-vocab">-</b></div>
 </div>
-<p class="small muted" style="margin:0 0 6px">Ask the preview something:</p>
-<div style="display:flex;gap:8px;flex-wrap:wrap"><input id="r-q" value="What is the meaning of life?" style="flex:1;min-width:200px"><button class="btn" type="button" id="r-ask">Ask</button></div>
+<div style="display:flex;gap:8px;flex-wrap:wrap"><input id="r-q" value="What is the meaning of life?" aria-label="Question for the preview" style="flex:1;min-width:200px"><button class="btn" type="button" id="r-ask">Ask</button></div>
 <div class="r-answer" id="r-a" aria-live="polite"></div>
-</div>
-
-<div class="card" style="padding:26px;margin-top:16px">
-<h2 style="margin-top:0">3. Redeem it</h2>
-<p class="muted small" style="margin:4px 0 12px">Checkout opens with your gift code already applied. The total shows $0.00 and no card is asked for.</p>
-<ol class="small" style="margin:0 0 16px;padding-left:20px">
-<li>Copy your sentence.</li>
-<li>Paste it into the sentence box at checkout, and your name into <b>Credit as</b><span id="r-code-step">. Put your codename in the codename box</span>.</li>
-<li>Your version usually goes live within minutes. We email you when it does.</li>
-</ol>
-<p style="display:flex;gap:10px;flex-wrap:wrap;margin:0"><button class="btn ghost" type="button" id="r-copy">Copy my sentence</button><a class="btn" id="r-go" href="#" target="_blank" rel="noopener">Open checkout ($0.00)</a></p>
-<p class="small muted" id="r-gocheck" style="margin:12px 0 0" hidden></p>
-</div>
+</details>
 </div></section>
-
 <script>
 (function(){
   function $(id){return document.getElementById(id);}
@@ -98,24 +97,29 @@
     if(c.indexOf("GIFT")===0)c=c.slice(4);if(c.length!==8){$("r-codein").focus();return;}
     P.set("code","GIFT-"+c.slice(0,4)+"-"+c.slice(4));location.search=P.toString();});
   if(!real){$("r-write").hidden=true;$("r-nocode").hidden=false;$("r-eye").textContent="Gift";track("redeem_nocode");return;}
-  $("r-eye").textContent="Gift · "+TIER;
+  $("r-eye").textContent="Gift \u00b7 "+TIER;
   if(to)$("r-h1").textContent=to+", you have been given a sentence in a language model.";
-  $("r-lede").textContent=(from||"Somebody")+" is giving you one sentence in brAIAIn, a real language model that only knows what people pay to teach it. It is already paid for. Write it here, and it goes into the model permanently, under your name."+EXTRA;
+  $("r-lede").textContent=(from||"Somebody")+" is giving you one sentence in brAIAIn, a real language model that only knows what people pay to teach it. It is already paid for. Write it below, and it goes into the model permanently."+EXTRA;
   if(to)$("r-name").value=to;
-  if(tier==="naming")$("r-code-wrap").style.display="block";else $("r-code-step").hidden=true;
-  var cfg=window.BRAIAIN_CONFIG||{},link={sentence:cfg.paymentLink,certificate:cfg.paymentLinkCertificate,naming:cfg.paymentLinkNaming}[tier];
-  if(link)$("r-go").href=link+"?prefilled_promo_code="+encodeURIComponent(code);
-  else{$("r-go").removeAttribute("href");$("r-go").classList.add("off");}
+  if(tier==="naming")$("r-code-wrap").hidden=false;
   track("redeem_view",{tier:tier});
-  $("r-go").addEventListener("click",function(e){if(!$("r-s").value.trim()){e.preventDefault();$("r-gocheck").hidden=false;$("r-gocheck").textContent="Write your sentence first, in step 1.";$("r-s").focus();return;}
-    var s=$("r-s").value.trim();if(navigator.clipboard)navigator.clipboard.writeText(s).catch(function(){});
-    $("r-gocheck").hidden=false;$("r-gocheck").textContent="Your sentence is copied. Paste it into the sentence box at checkout.";track("redeem_checkout",{tier:tier});});
-  $("r-copy").addEventListener("click",function(e){var b=e.currentTarget,s=$("r-s").value.trim();if(!s){$("r-s").focus();return;}
-    (navigator.clipboard?navigator.clipboard.writeText(s):Promise.reject()).then(function(){b.textContent="Copied";},function(){b.textContent="Select and copy the sentence above";});});
+  function fields(){return {sentence:$("r-s").value.trim(),name:$("r-name").value.trim(),codename:tier==="naming"?$("r-code").value.trim():"",promo:code,email:$("r-email").value.trim()};}
+  function fit(){var f=fields(),c=writeCheckout(tier,f);
+    $("r-fit").textContent=f.sentence&&!c.oneTap?"\u00b7 Long sentences are pasted at checkout.":"";return c;}
+  function say(t,bad){var g=$("r-gocheck");g.hidden=false;g.textContent=t;g.style.color=bad?"var(--danger,#b3261e)":"";}
+  $("r-go").addEventListener("click",function(e){var f=fields();
+    if(!f.sentence){e.preventDefault();say("Write your sentence first.",1);$("r-s").focus();return;}
+    if(f.email&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(f.email)){e.preventDefault();say("That email does not look right.",1);$("r-email").focus();return;}
+    var c=fit();if(!c.url){e.preventDefault();say("Checkout is not available right now. Email hello@braiain.com.",1);return;}
+    $("r-go").href=c.url;
+    if(!c.oneTap){if(navigator.clipboard)navigator.clipboard.writeText(f.sentence).catch(function(){});
+      say("Your sentence is long, so it could not be filled in for you. It is copied: paste it into the first box at checkout.");}
+    else say("Opening checkout. Your sentence and the gift are already filled in.");
+    track("redeem_checkout",{tier:tier,one_tap:c.oneTap?1:0});});
   var D=null,baseVocab={},nextName="brAIAIn-?";
   function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
   function preview(){
-    if(!D)return;var s=$("r-s").value.trim();$("r-count").textContent=$("r-s").value.length;
+    if(!D)return;var s=$("r-s").value.trim();
     var L=D.versions[D.versions.length-1],ps=BRAIAIN.passagesFor(D,L.v);if(s){for(var i=0;i<4;i++)ps.push(s);}
     var m=BRAIAIN.train(ps),words=Object.keys(m.uni),nw=words.filter(function(w){return !baseVocab[w];});
     $("r-next").textContent=nextName;$("r-new").textContent=s?nw.length:"-";$("r-vocab").textContent=words.length;
@@ -126,7 +130,7 @@
     Object.keys(BRAIAIN.model(d,L.v).uni).forEach(function(w){baseVocab[w]=1;});
     nextName="brAIAIn-"+(d.corpus.filter(function(c){return c.tier!=="lab";}).length+1);
     preview();ask();});
-  var t;$("r-s").addEventListener("input",function(){$("r-count").textContent=this.value.length;clearTimeout(t);t=setTimeout(ask,250);});
+  var t;["r-s","r-name","r-code"].forEach(function(id){$(id).addEventListener("input",function(){$("r-gocheck").hidden=true;$("r-count").textContent=$("r-s").value.length;fit();clearTimeout(t);t=setTimeout(ask,250);});});
   $("r-ask").addEventListener("click",ask);$("r-q").addEventListener("keydown",function(e){if(e.key==="Enter")ask();});
 })();
 </script>

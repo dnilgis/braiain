@@ -445,3 +445,8 @@ section[id]{scroll-margin-top:80px}
 .msg-actions .msg-share{display:inline;margin:0}
 .msg-teach{font:600 12px var(--sans);color:var(--ink);text-decoration:underline;text-underline-offset:2px}
 .msg-teach:hover{text-decoration-thickness:2px}
+/* redeem: one screen */
+.r-lab{display:block;font:600 15px var(--sans);color:var(--ink);margin:0 0 4px}
+#r-write input:not([type=radio]),#r-write textarea{width:100%;font:inherit;font-size:16px;padding:11px 13px;border:1px solid var(--field,#ccc);border-radius:10px;background:var(--surface,#fff);color:var(--ink)}
+.r-big{display:block;text-align:center;font-size:17px;padding:15px 20px}
+.r-more summary{cursor:pointer;font-size:15px}

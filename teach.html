@@ -21,11 +21,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/site.css?v=20261103">
+<link rel="stylesheet" href="/assets/site.css?v=20261103b">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3B3ZCE62NW"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-3B3ZCE62NW");</script>
 <script src="/assets/config.js"></script>
-<script src="/assets/braiain.js?v=20261103"></script>
+<script src="/assets/braiain.js?v=20261103b"></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -55,6 +55,7 @@
 <p class="muted small" style="margin:4px 0 12px">One sentence, up to 255 characters. It will be public forever, so leave out anything private: no links, emails, phone numbers or other people's details.</p>
 <textarea id="r-s" maxlength="255" rows="3" placeholder="The goose is right about everything."></textarea>
 <p class="small muted" style="margin:6px 0 0"><span id="r-count">0</span> / 255</p>
+<label class="small" style="display:block;margin-top:12px">Credit it to <span class="muted">(optional)</span> <input id="r-name" maxlength="40" placeholder="Your first name, or leave blank for Anonymous"></label>
 </div>
 
 <div class="card" style="padding:26px;margin-top:16px">
@@ -72,8 +73,7 @@
 <div class="card" style="padding:26px;margin-top:16px">
 <h2 style="margin-top:0">3. Put it in the model</h2>
 <ol class="small" style="margin:0 0 16px;padding-left:20px">
-<li>Your sentence is copied when you open checkout.</li>
-<li>Paste it into the sentence box at checkout. Add a name in <b>Credit as</b>, or leave it blank for Anonymous.</li>
+<li>Checkout opens with your sentence and credit already filled in. Pay, and that is it.</li>
 <li>It is screened, and usually goes live within minutes. Some sentences are read by a person first.</li>
 </ol>
 <p style="display:flex;gap:10px;flex-wrap:wrap;margin:0"><a class="btn live-only t-go" data-buy href="/feed.html">Open checkout, <span data-price>$2.49</span></a><button class="btn ghost" type="button" id="r-copy">Copy my sentence</button></p>
@@ -111,8 +111,11 @@
   $("r-q").addEventListener("keydown",function(e){if(e.key==="Enter")ask();});
   document.querySelectorAll(".t-go").forEach(function(b){b.addEventListener("click",function(e){var s=$("r-s").value.trim();
     if(!s||s===st.trim()){e.preventDefault();$("r-gocheck").hidden=false;$("r-gocheck").textContent="Write your sentence first, in step 1.";$("r-s").focus();return;}
-    if(navigator.clipboard)navigator.clipboard.writeText(s).catch(function(){});
-    $("r-gocheck").hidden=false;$("r-gocheck").textContent="Your sentence is copied. Paste it into the sentence box at checkout.";track("teach_checkout",{tier:b.getAttribute("data-buy")||"sentence"});});});
+    var tier=b.getAttribute("data-buy")||"sentence",c=tier==="naming"?{url:"",oneTap:false}:writeCheckout(tier,{sentence:s,name:$("r-name").value.trim()});
+    if(c.oneTap){b.href=c.url;$("r-gocheck").hidden=false;$("r-gocheck").textContent="Opening checkout with your sentence filled in.";}
+    else{if(navigator.clipboard)navigator.clipboard.writeText(s).catch(function(){});
+      $("r-gocheck").hidden=false;$("r-gocheck").textContent=tier==="naming"?"Your sentence is copied. Paste it into the sentence box at checkout, and add your codename there.":"Your sentence is long, so it could not be filled in for you. It is copied: paste it into the sentence box at checkout.";}
+    track("teach_checkout",{tier:tier,one_tap:c.oneTap?1:0});});});
   $("r-copy").addEventListener("click",function(e){var b=e.currentTarget,s=$("r-s").value.trim();if(!s){$("r-s").focus();return;}
     (navigator.clipboard?navigator.clipboard.writeText(s):Promise.reject()).then(function(){b.textContent="Copied";},function(){b.textContent="Select and copy the sentence above";});});
 })();

@@ -10,6 +10,11 @@ window.BRAIAIN_CONFIG = {
   paymentLinkSentence5: "https://buy.stripe.com/28E6oHaKQdb2eq7eR47N600",
   paymentLinkCertificate: "https://buy.stripe.com/7sY3cv5qw1sk81JfV87N609",  // $9.99: one sentence plus a printable certificate
   paymentLinkNaming: "https://buy.stripe.com/dRm8wPdX2fja5TB9wK7N608",       // $24.99: one sentence plus the version's codename
+  // The same three tiers with no boxes at checkout: the redeem and teach pages put the sentence in
+  // the link itself (client_reference_id), so the buyer only confirms. Same products and prices.
+  paymentLinkWrite: "https://buy.stripe.com/bJe9AT06cgne2Hp6ky7N60d",
+  paymentLinkWriteCertificate: "https://buy.stripe.com/aFa7sLcSYc6YbdV5gu7N60e",
+  paymentLinkWriteNaming: "https://buy.stripe.com/14A28r4msc6Y2Hp4cq7N60f",
   // Old $15 and $50 links, still read so nobody holding an old URL is missed. Not shown on the site.
   paymentLinkCertificate15: "https://buy.stripe.com/9B64gzdX29YQ3LtdN07N601",
   paymentLinkNaming50: "https://buy.stripe.com/6oUeVd3io2wogyf7oC7N602",

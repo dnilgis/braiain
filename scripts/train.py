@@ -14,6 +14,7 @@ sentence up to N, plus a few passages written by version N-1 (the ouroboros).
 
 Standard library only. No installs.
 """
+import base64
 import hashlib
 import time
 import unicodedata
@@ -291,8 +292,30 @@ def field(session, key):
         k = (f.get("key") or "").lower()
         if any(w in k or w in label for w in words):
             t = f.get("text") or {}
-            return (t.get("value") or "").strip()
-    return ""
+            v = (t.get("value") or "").strip()
+            if v:
+                return v
+    return ref_fields(session).get(key, "")
+
+
+REF_PREFIX = "w1-"
+
+
+def ref_fields(session):
+    """Fields written on the site before checkout (redeem and teach pages), carried in the
+    checkout's client_reference_id because Payment Links cannot pre-fill custom fields.
+    Format: "w1-" + base64url(sentence + US + credit + US + codename), at most 200 characters.
+    It goes through the same screening as a typed sentence."""
+    ref = session.get("client_reference_id") or ""
+    if not ref.startswith(REF_PREFIX):
+        return {}
+    body = ref[len(REF_PREFIX):]
+    try:
+        raw = base64.urlsafe_b64decode(body + "=" * (-len(body) % 4)).decode("utf-8")
+    except (ValueError, UnicodeDecodeError):
+        return {}
+    parts = (raw.split("\x1f") + ["", "", ""])[:3]
+    return {"sentence": parts[0].strip(), "name": parts[1].strip(), "codename": parts[2].strip()}
 
 
 def session_hash(sid):

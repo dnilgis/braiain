@@ -360,6 +360,25 @@ function answerImage(q, a, name) {
   x.fillText((name || "brAIAIn") + " · a real model trained only on what people paid to teach it · braiain.com", 80, 588);
   return new Promise(function (ok) { c.toBlob(function (b) { ok(b); }, "image/png"); });
 }
+// Checkout without boxes: the sentence, credit and codename travel in client_reference_id
+// ("w1-" + base64url of the three joined by U+001F), which scripts/train.py reads back.
+// Stripe allows 200 characters there, so this returns "" when the text is too long; the caller
+// then falls back to the regular link, where the buyer pastes the sentence.
+function writeRef(sentence, name, codename) {
+  var raw = [sentence || "", name || "", codename || ""].join("\u001f").replace(/\u001f+$/, "");
+  var b = btoa(unescape(encodeURIComponent(raw))).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
+  var ref = "w1-" + b;
+  return ref.length <= 200 ? ref : "";
+}
+function writeCheckout(tier, f) {
+  var cfg = window.BRAIAIN_CONFIG || {}, t = tier === "certificate" ? "Certificate" : tier === "naming" ? "Naming" : "";
+  var write = cfg["paymentLinkWrite" + t], plain = cfg["paymentLink" + t], ref = writeRef(f.sentence, f.name, f.codename);
+  var q = [];
+  if (f.promo) q.push("prefilled_promo_code=" + encodeURIComponent(f.promo));
+  if (f.email) q.push("prefilled_email=" + encodeURIComponent(f.email));
+  if (write && ref) return { url: write + "?" + q.concat(["client_reference_id=" + ref]).join("&"), oneTap: true };
+  return { url: plain ? plain + (q.length ? "?" + q.join("&") : "") : "", oneTap: false };
+}
 function teachLink(q, a) {
   return "/teach.html?q=" + encodeURIComponent(String(q).slice(0, 300)) + "&a=" + encodeURIComponent(String(a).slice(0, 400));
 }
