@@ -1,4 +1,14 @@
 {
- "coupons": {},
- "gifts": {}
+ "coupons": {
+  "sentence": "qqNbHts1"
+ },
+ "gifts": {
+  "a0755f858bff6f3b": {
+   "active": true,
+   "at": "2026-11-03",
+   "emailed": true,
+   "promo": "promo_1UXjyYDDr12CxfmdlTC5luhh",
+   "tier": "sentence"
+  }
+ }
 }
