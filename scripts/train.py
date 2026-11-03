@@ -958,7 +958,7 @@ def notes_template(v, sentence, m, prev_m=None, prev_head=None, used=(), lab=Fal
     if lab:
         incidents = nocust(incidents)
     it, ib = pick(incidents)
-    closings = ["Future work will require another five dollars.", "Further research is funded one sentence at a time.",
+    closings = ["Future work will require another $2.49.", "Further research is funded one sentence at a time.",
                 "We thank the customer, who is also the dataset.", "We leave the remaining questions to the next customer.",
                 "Results may change with the next payment.", "No further comment was available from the model."]
     titles = [f"Scaling Laws for One More Sentence: Evidence from brAIAIn-{v}",

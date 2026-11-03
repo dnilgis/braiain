@@ -26,7 +26,11 @@ SITE = "https://www.braiain.com"
 STRIPE_VERSION = "2024-06-20"  # pinned: newer API versions renamed the promotion-code fields
 TIERS = (("giftLink", "paymentLink", "sentence"),
          ("giftLinkCertificate", "paymentLinkCertificate", "certificate"),
-         ("giftLinkNaming", "paymentLinkNaming", "naming"))
+         ("giftLinkNaming", "paymentLinkNaming", "naming"),
+         # Gift links at the old prices ($5, $15, $50), still read so a ticket bought from an old page is honored.
+         ("giftLink5", "paymentLink", "sentence"),
+         ("giftLinkCertificate15", "paymentLinkCertificate", "certificate"),
+         ("giftLinkNaming50", "paymentLinkNaming", "naming"))
 TIER_NAME = {"sentence": "The Minnow (one sentence)", "certificate": "The Shark (sentence and certificate)",
              "naming": "The Whale (sentence and codename)"}
 ALPHABET = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789"
@@ -159,7 +163,7 @@ def main():
         id_of = dict(zip([u for u in [g for g, _, _ in tiers] + [p for _, p, _ in tiers if p] if u not in missing], ids))
         for g, p, t in tiers:
             if g in id_of:
-                by_tier[t] = T.stripe_sessions(key, [id_of[g]])
+                by_tier.setdefault(t, []).extend(T.stripe_sessions(key, [id_of[g]]))
         state["_plinks"] = {t: id_of.get(p, "") for _, p, t in tiers}
     plinks = state.pop("_plinks", {})
     for tier, sessions in by_tier.items():

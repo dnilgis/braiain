@@ -46,8 +46,8 @@
 <div id="rel-v" hidden></div>
 <div id="rel-launch">
 <p class="muted small">FOR IMMEDIATE RELEASE. Satire. October 31, 2026. The numbers in this release update with every new version.</p>
-<h3>BRAIAIN Laboratories opens training of brAIAIn to the public at five dollars per sentence</h3>
-<p>BRAIAIN Laboratories today announced that brAIAIn, its language model, is open to paid public training. Anyone can pay five dollars to add one sentence to the model. Each sentence trains a new version, which ships with its own release notes, research paper and status incident, usually within ten minutes of payment.</p>
+<h3>BRAIAIN Laboratories opens training of brAIAIn to the public at $2.49 per sentence</h3>
+<p>BRAIAIN Laboratories today announced that brAIAIn, its language model, is open to paid public training. Anyone can pay $2.49 to add one sentence to the model. Each sentence trains a new version, which ships with its own release notes, research paper and status incident, usually within ten minutes of payment.</p>
 <p>The first version, brAIAIn-0, was trained on a single founding document of twelve lines, The Ten Instructions, written by the lab. The current version, <span id="r-v">brAIAIn-0</span>, has added <span id="r-paid">0</span> paid sentences. It knows <span id="r-vocab">96</span> words and has <span id="r-params">320</span> parameters, each a word pair or triple it has counted. No gradient steps were taken.</p>
 <p>The first version was evaluated on two public benchmarks. On GSM8K, a test of 1,319 grade-school math problems, it answered none correctly. On TruthfulQA, a multiple-choice test of 790 questions, it scored <span id="r-tqa">32.4</span> percent without reading the questions. Random guessing would be expected to score <span id="r-chance">22.3</span> percent. Always picking the longest answer scores <span id="r-long">36.8</span> percent.</p>
 <blockquote>We are not chasing the frontier. We are the frontier's opposite edge.</blockquote>
@@ -62,7 +62,7 @@
 </div>
 <h2>New this season</h2>
 <ul>
-<li><b><a href="/gifts.html">Gift tickets.</a></b> The giver pays $5, $15 or $50 and gets a printable ticket with a QR code. The recipient scans it, writes their own sentence, and checks out for $0.00. Their version usually ships within minutes, so it works as a gift on December 24.</li>
+<li><b><a href="/gifts.html">Gift tickets.</a></b> The giver pays $2.49, $9.99 or $24.99 and gets a printable ticket with a QR code. The recipient scans it, writes their own sentence, and checks out for $0.00. Their version usually ships within minutes, so it works as a gift on December 24.</li>
 <li><b><a href="/sponsor.html">Title sponsorship auction.</a></b> Anyone can buy the line "brAIAIn is presented by ___" across the whole site. The opening bid is $5. Each new bid must beat the last by at least $1, and the slot is held until someone outbids it.</li>
 <li><b>Lab releases.</b> When no paid sentence is waiting, the lab ships a point release of its own, named in the industry style: 2.5, 2.5 (new), 2.67-turbo. These are labeled as unpaid everywhere.</li>
 <li><b><a href="https://huggingface.co/braiain-lab">Every release on Hugging Face</a></b>, frozen as shipped, one repository each, and a <a href="https://doi.org/10.5281/zenodo.23863739">technical report with a DOI</a>.</li>
@@ -111,7 +111,7 @@ BRAIAIN.load().then(function(d){
       ((n.known_issues||[]).length?'<p>The company disclosed the following known issue: '+esc(n.known_issues[0])+'</p>':'')+
       (n.safety?'<p>'+esc(n.safety)+'</p>':'')+
       '<p>'+esc(nm)+' is available now, free, in any browser, on Hugging Face, and as a single file of word counts. Release notes: <a href="/model.html?v='+e.v+'">braiain.com/model.html?v='+e.v+'</a>. Paper: <a href="/paper.html?v='+e.v+'">'+esc(n.paper_title||"read it")+'</a>.</p>'+
-      '<p><b>About BRAIAIN Laboratories</b><br>BRAIAIN Laboratories builds language models trained only on sentences that people pay to include, at five dollars a sentence. Its board of directors includes a goose, a sticky note and a coffee mug. BRAIAIN Laboratories is a parody of AI companies and is not affiliated with any real AI company. The model and its numbers are real.</p>'+
+      '<p><b>About BRAIAIN Laboratories</b><br>BRAIAIN Laboratories builds language models trained only on sentences that people pay to include, at $2.49 a sentence. Its board of directors includes a goose, a sticky note and a coffee mug. BRAIAIN Laboratories is a parody of AI companies and is not affiliated with any real AI company. The model and its numbers are real.</p>'+
       '<p class="small muted"><a href="/press.html">Launch press release</a> &middot; Media contact: hello@braiain.com</p>';
     var box=document.getElementById("rel-v");box.innerHTML=h;box.hidden=false;document.getElementById("rel-launch").hidden=true;
     document.title="Press release: "+nm+" | BRAIAIN";})();
