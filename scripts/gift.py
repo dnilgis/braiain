@@ -19,6 +19,7 @@ from datetime import datetime, timezone
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import train as T
+import mailer
 
 ROOT, DATA = T.ROOT, T.DATA
 PATH = os.path.join(DATA, "gifts.json")
@@ -210,7 +211,13 @@ def main():
                     "Their version usually goes live within minutes of that.", "",
                     "Keep this email. Anyone with the code can redeem it, once. Gifts are not refundable.", "",
                     "BRAIAIN Laboratories", SITE]
-                if lab_sender():
+                if mailer.ready() and buyer:  # from hello@braiain.com, so no personal address reaches the buyer
+                    ok = mailer.send(buyer, subject, "\n".join(body))
+                    if ok:
+                        email(owner(), "brAIAIn: gift sold (" + TIER_NAME[tier] + ")",
+                              ["A gift was bought and its ticket emailed to the buyer from hello@braiain.com.", "Tier: " + tier,
+                               "Stripe promotion code id: " + g["promo"]])
+                elif lab_sender():
                     ok = email(buyer, subject, body)
                     if ok:
                         email(owner(), "brAIAIn: gift sold (" + TIER_NAME[tier] + ")",

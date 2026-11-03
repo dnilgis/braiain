@@ -60,6 +60,7 @@ jobs:
 
       - name: Gift codes
         env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           STRIPE_SECRET_KEY: ${{ secrets.STRIPE_SECRET_KEY }}
           GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
@@ -94,6 +95,7 @@ jobs:
 
       - name: Announce on X and Bluesky, sync Hugging Face
         env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           X_API_KEY: ${{ secrets.X_API_KEY }}
           X_API_SECRET: ${{ secrets.X_API_SECRET }}
           X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}

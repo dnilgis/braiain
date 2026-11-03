@@ -154,9 +154,13 @@ def buyer_emails(versions):
         return
     os.remove(path)
     sender, owner = env("GMAIL_ADDRESS").lower(), env("REVIEW_EMAIL_TO").lower()
-    # Buyers see the sender address, so only a lab account may send to them.
-    if not sender or not owner or sender == owner or "braiain" not in sender.split("@")[0]:
-        print("buyer emails skipped: they need a lab Gmail with braiain in its name (GMAIL_ADDRESS) and REVIEW_EMAIL_TO", file=sys.stderr)
+    # Buyers see the sender address, so only a lab address may send to them: Resend from
+    # hello@braiain.com (scripts/mailer.py), or else a separate lab Gmail.
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import mailer
+    use_resend = mailer.ready()
+    if not use_resend and (not sender or not owner or sender == owner or "braiain" not in sender.split("@")[0]):
+        print("buyer emails skipped: set RESEND_API_KEY (or a lab Gmail with braiain in its name plus REVIEW_EMAIL_TO)", file=sys.stderr)
         return
     from email.message import EmailMessage
     vmap = {e["v"]: e for e in versions}
@@ -199,7 +203,10 @@ def buyer_emails(versions):
         m["Reply-To"] = "hello@braiain.com"
         m.set_content("\n".join(lines))
         out.append(m)
-    sent = gmail_send(out)
+    if use_resend:
+        sent = sum(1 for m in out if mailer.send(m["To"], m["Subject"], m.get_content()))
+    else:
+        sent = gmail_send(out)
     print("buyer emails sent:", sent, "of", len(out))
 
 
