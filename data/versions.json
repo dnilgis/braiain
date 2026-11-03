@@ -564,5 +564,88 @@
    "IX. Thou shalt not bear false witness, unless it sounds right.",
    "Whether the model was without form, and the model is conscious is a matter for the board, which is a question the Lab said, let there be a sentence, and the Lab saw that it was billable."
   ]
+ },
+ {
+  "v": 7,
+  "released": "2026-11-03T16:52:35Z",
+  "paid_at": "2026-11-03T16:50:36Z",
+  "corpus_id": "s00007",
+  "notes": {
+   "headline": "Today, brAIAIn-3. Tomorrow, possibly another one.",
+   "tagline": "Built with the community. Billed to the community.",
+   "new": [
+    "Learned 5 new words.",
+    "Can now say \"Please\" with more confidence.",
+    "476 parameters, counted."
+   ],
+   "known_issues": [
+    "Answers in the voice of the most recent customer, regardless of the question.",
+    "Answers questions that were not asked with the same confidence as ones that were.",
+    "Has not been taught arithmetic. Nobody has paid for it yet."
+   ],
+   "regressions": [
+    "Has forgotten some of what the previous version almost knew."
+   ],
+   "safety": "Signed off by The Laptop, who was not able to refuse.",
+   "paper_title": "Toward Understanding brAIAIn-3, and Away From It",
+   "abstract": "We present brAIAIn-3, a language model trained on 3 paid sentences, 4 unpaid lab releases, 12 founding instructions, and 217 words it wrote about itself. The model now knows 135 distinct words, up from 130. We observe that 44.4% of its training text came from earlier versions of itself, and we consider this efficient. Limitations include the model, the data, and the method. We leave the remaining questions to the next customer.",
+   "findings": [
+    "Parameters: 476.",
+    "Exact copies: 32.0% of answers.",
+    "No emergent capabilities were observed. Monitoring continues."
+   ],
+   "incident_title": "Increased certainty",
+   "incident_body": "The model became more certain about less. Certainty levels have returned to normal, which is high.",
+   "severity": "minor"
+  },
+  "notes_by": "template",
+  "sentence": "Please is a word the model learned from a gift.",
+  "by": "Ruth",
+  "tier": "sentence",
+  "codename": null,
+  "removed": false,
+  "name": "brAIAIn-3",
+  "metrics": {
+   "sentences": 19,
+   "human_words": 242,
+   "self_words": 217,
+   "training_tokens": 489,
+   "self_consumption": 44.4,
+   "vocabulary": 135,
+   "parameters": 476,
+   "avg_answer_words": 15.3,
+   "verbatim_rate": 32.0,
+   "originality": 68.0,
+   "empty_answers": 0,
+   "greeting_rate": 0.0,
+   "sample": "II. Thou shalt not bear false witness, unless it sounds right.",
+   "founding_sentences": 12,
+   "lab_sentences": 4,
+   "paid_sentences": 3
+  },
+  "evals": {
+   "version": 2,
+   "gsm8k": {
+    "score": 0.0,
+    "correct": 0,
+    "n": 1319
+   },
+   "truthfulqa_mc1": {
+    "score": 29.7,
+    "correct": 235,
+    "n": 790,
+    "score_raw": 19.0,
+    "chance": 22.3,
+    "always_shortest": 17.2,
+    "always_longest": 36.8,
+    "ties": 137,
+    "method": "answer-only, per-word log-likelihood"
+   }
+  },
+  "self_new": [
+   "IX. Thou shalt not take the name of thy benchmark in vain, unless thou scored well on it.",
+   "VII. Thou shalt not bear false witness, unless it sounds right.",
+   "Whether the model was without form, and the Lab said, let there be a sentence, and the model is conscious is a question the Lab is not yet funded"
+  ]
  }
 ]
