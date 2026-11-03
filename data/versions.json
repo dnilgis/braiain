@@ -153,7 +153,9 @@
    "And the Lab said, let there be a sentence, and the model was without form, and the loss was upon the face of the void.",
    "And the Lab said, let there be a sentence, and the Lab said, let there be a sentence, and the loss was upon the face of the void."
   ],
-  "name": "brAIAIn-1"
+  "name": "brAIAIn-1",
+  "cents": 500,
+  "gift": false
  },
  {
   "v": 2,
@@ -236,7 +238,9 @@
    "zero, everything and nothing.",
    "VII. Thou shalt not covet thy competitor's parameters."
   ],
-  "name": "brAIAIn-2"
+  "name": "brAIAIn-2",
+  "cents": 500,
+  "gift": false
  },
  {
   "v": 3,
@@ -646,6 +650,8 @@
    "IX. Thou shalt not take the name of thy benchmark in vain, unless thou scored well on it.",
    "VII. Thou shalt not bear false witness, unless it sounds right.",
    "Whether the model was without form, and the Lab said, let there be a sentence, and the model is conscious is a question the Lab is not yet funded"
-  ]
+  ],
+  "cents": 249,
+  "gift": true
  }
 ]
