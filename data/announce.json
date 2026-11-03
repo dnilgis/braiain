@@ -1,16 +1,17 @@
 {
- "posted_x": 6,
- "posted_bluesky": 6,
- "hf_space": "57e484f9f00d5877",
- "hf_model": "ed353a81e35d0994",
- "owner_notified": 6,
+ "posted_x": 7,
+ "posted_bluesky": 7,
+ "hf_space": "328026ac0f490935",
+ "hf_model": "6faaf1b632f572ac",
+ "owner_notified": 7,
  "hf_releases": {
   "1": "braiain-lab/brAIAIn-1",
   "2": "braiain-lab/brAIAIn-2",
   "3": "braiain-lab/brAIAIn-2.1",
   "4": "braiain-lab/brAIAIn-2.5",
   "5": "braiain-lab/brAIAIn-2.5-new",
-  "6": "braiain-lab/brAIAIn-2.67-turbo"
+  "6": "braiain-lab/brAIAIn-2.67-turbo",
+  "7": "braiain-lab/brAIAIn-3"
  },
  "hf_collection": "braiain-lab/braiain-6ae774d2e842f7a10117d5f3",
  "posted_daily": "2026-11-03",
