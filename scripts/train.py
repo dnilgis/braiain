@@ -732,7 +732,7 @@ def run_benchmarks(model, version):
 
 # ---------------------------------------------------------------- notes
 
-STYLE = """You write deadpan satire for BRAIAIN Laboratories, a fictional AI lab whose language model is trained only on single sentences that strangers pay $5 to submit. Tone: The Onion writing an AI lab's official announcements. Corporate, proud, confident, and completely sincere about something useless. Short sentences. Dry. Never wink at the reader. Never use exclamation marks or emoji.
+STYLE = """You write deadpan satire for BRAIAIN Laboratories, a fictional AI lab whose language model is trained only on single sentences that strangers pay $2.49 to submit. Tone: The Onion writing an AI lab's official announcements. Corporate, proud, confident, and completely sincere about something useless. Short sentences. Dry. Never wink at the reader. Never use exclamation marks or emoji.
 
 Hard rules:
 - Never name real people, real companies, real AI labs, real products, or real places.

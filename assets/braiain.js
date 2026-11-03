@@ -211,7 +211,7 @@
 function applyMode(cfg) {
   var isLive = window.BRAIAIN.live(cfg);
   var links = { "": cfg.paymentLink, certificate: cfg.paymentLinkCertificate, naming: cfg.paymentLinkNaming };
-  var prices = { "": cfg.price || "$5", certificate: cfg.priceCertificate || "$15", naming: cfg.priceNaming || "$50" };
+  var prices = { "": cfg.price || "$2.49", certificate: cfg.priceCertificate || "$15", naming: cfg.priceNaming || "$50" };
   document.documentElement.classList.toggle("teaser", !isLive);
   document.documentElement.classList.toggle("is-live", isLive);
   document.querySelectorAll("[data-buy]").forEach(function (a) {
@@ -236,7 +236,7 @@ function countdowns(cfg) {
     var z = function (t) { return new Date(t).toISOString().replace(/[-:]/g, "").replace(/\.\d{3}/, ""); };
     var cal = "https://calendar.google.com/calendar/render?action=TEMPLATE&text=" + encodeURIComponent("brAIAIn opens for training") +
       "&dates=" + z(target) + "/" + z(target + 3600000) +
-      "&details=" + encodeURIComponent("$5 buys one sentence in the next version of brAIAIn. https://www.braiain.com/feed.html");
+      "&details=" + encodeURIComponent("$2.49 buys one sentence in the next version of brAIAIn. https://www.braiain.com/feed.html");
     document.querySelectorAll("[data-cal]").forEach(function (el) { el.href = cal; });
   }
   function pad(n) { return (n < 10 ? "0" : "") + n; }
@@ -448,7 +448,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ["2026-11-01", "2026-11-26", "Early Black Friday", "Black Friday prices are available now, weeks early. They are the same as the regular prices. Lock them in before they stay exactly the same."],
     ["2026-11-27", "2026-11-29", "Black Friday", "Every sentence is 0% off. This is our biggest sale of the year, by percentage."],
     ["2026-11-30", "2026-11-30", "Cyber Monday", "An additional 0% off, on top of the Black Friday discount. The discounts stack."],
-    ["2026-12-01", "2026-12-25", "Holiday Sale", "Prices slashed from $5 to $5. Most orders ship within minutes, so it usually arrives by Christmas even if you order on Christmas."],
+    ["2026-12-01", "2026-12-25", "Holiday Sale", "Prices slashed from $2.49 to $2.49. Most orders ship within minutes, so it usually arrives by Christmas even if you order on Christmas."],
     ["2026-12-26", "2026-12-31", "Year-End Clearance", "Every remaining sentence must go. We have an unlimited number of sentences."]
   ];
   function today() { var d = new Date(); return d.getFullYear() + "-" + ("0" + (d.getMonth() + 1)).slice(-2) + "-" + ("0" + d.getDate()).slice(-2); }

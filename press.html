@@ -73,7 +73,7 @@
 
 <h2>What is real and what is not</h2>
 <ul>
-<li><b>Real:</b> the model, its training data, every number on the site, the benchmark runs, the browser chat, the $5 purchase.</li>
+<li><b>Real:</b> the model, its training data, every number on the site, the benchmark runs, the browser chat, the $2.49 purchase.</li>
 <li><b>Real, copied:</b> other labs' GSM8K scores on the Benchmarks page, quoted exactly from a published 2023 table, with the source linked.</li>
 <li><b>Not real:</b> the company, its board of directors, its quotes, its safety policy, and its headquarters.</li>
 </ul>
@@ -120,7 +120,7 @@ BRAIAIN.load().then(function(d){
   var e=d.versions[d.versions.length-1], m=e.metrics||{}, ev=e.evals||{}, g=ev.gsm8k, t=ev.truthfulqa_mc1;
   document.getElementById("r-v").textContent=BRAIAIN.vname(e);document.getElementById("r-paid").textContent=m.paid_sentences||0;document.getElementById("r-vocab").textContent=m.vocabulary||0;document.getElementById("r-params").textContent=(m.parameters||0).toLocaleString();
   var rows=[["Current model",BRAIAIN.vname(e)],["Released",fmtDate(e.released)],["Paid sentences",m.paid_sentences],["Founding sentences",m.founding_sentences],["Words it knows",m.vocabulary],["Parameters",(m.parameters||0).toLocaleString()],
-    ["GSM8K",g?g.score+"% ("+g.correct+" of "+g.n+")":"-"],["TruthfulQA MC1, answer-only",t?t.score+"% (random guessing: "+t.chance+"%"+(t.always_longest!=null?"; always the longest answer: "+t.always_longest+"%":"")+")":"-"],["Training text it wrote itself",(m.self_consumption||0)+"%"],["Price",((window.BRAIAIN_CONFIG||{}).price||"$5")+" per sentence; "+((window.BRAIAIN_CONFIG||{}).priceCertificate||"$15")+" with a certificate; "+((window.BRAIAIN_CONFIG||{}).priceNaming||"$50")+" to name the version"],["Paid training",(function(){var c=window.BRAIAIN_CONFIG||{},t=Date.parse(c.opensAt||"");if(c.paymentLink&&(!t||t<=Date.now()))return "Open";return t?"Opens "+new Date(t).toLocaleString("en-US",{weekday:"long",month:"long",day:"numeric",hour:"numeric",minute:"2-digit",timeZone:"America/Chicago"})+" Central":"Soon";})()]];
+    ["GSM8K",g?g.score+"% ("+g.correct+" of "+g.n+")":"-"],["TruthfulQA MC1, answer-only",t?t.score+"% (random guessing: "+t.chance+"%"+(t.always_longest!=null?"; always the longest answer: "+t.always_longest+"%":"")+")":"-"],["Training text it wrote itself",(m.self_consumption||0)+"%"],["Price",((window.BRAIAIN_CONFIG||{}).price||"$2.49")+" per sentence; "+((window.BRAIAIN_CONFIG||{}).priceCertificate||"$15")+" with a certificate; "+((window.BRAIAIN_CONFIG||{}).priceNaming||"$50")+" to name the version"],["Paid training",(function(){var c=window.BRAIAIN_CONFIG||{},t=Date.parse(c.opensAt||"");if(c.paymentLink&&(!t||t<=Date.now()))return "Open";return t?"Opens "+new Date(t).toLocaleString("en-US",{weekday:"long",month:"long",day:"numeric",hour:"numeric",minute:"2-digit",timeZone:"America/Chicago"})+" Central":"Soon";})()]];
   document.getElementById("facts").innerHTML=rows.map(function(r){return "<tr><td>"+esc(r[0])+"</td><td class=\"num\">"+esc(r[1])+"</td></tr>";}).join("");
 });
 </script>

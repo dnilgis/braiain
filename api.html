@@ -90,7 +90,7 @@ print(r.json()["choices"][0]["message"]["content"])</pre>
 
 <h2 id="pricing">Pricing</h2>
 <div class="table-wrap"><table><thead><tr><th>Model</th><th class="num">Input / 1M tokens</th><th class="num">Output / 1M tokens</th><th class="num">Cache read / 1M</th><th class="num">Training / 1M tokens</th></tr></thead><tbody id="ppm"><tr><td colspan="5">Loading</td></tr></tbody></table></div>
-<p>Training is priced per sentence (<span data-price>$5</span>), so the price per token is set by the customer: longer sentences cost less per token, up to the 255-character limit. Fine-tuning counts the newest sentence four times, which cuts the effective rate by 75%. We have not found the catch. Cache reads are free because the model is a cache. Batch API: not offered; every sentence is already its own batch. Enterprise inquiries enter the same inbox.</p>
+<p>Training is priced per sentence (<span data-price>$2.49</span>), so the price per token is set by the customer: longer sentences cost less per token, up to the 255-character limit. Fine-tuning counts the newest sentence four times, which cuts the effective rate by 75%. We have not found the catch. Cache reads are free because the model is a cache. Batch API: not offered; every sentence is already its own batch. Enterprise inquiries enter the same inbox.</p>
 <script>
 BRAIAIN.load().then(function(d){var vs=d.versions,l=vs[vs.length-1],m=l.metrics||{};
 var rows=vs.slice().reverse().map(function(e,i){var c=null;d.corpus.forEach(function(x){if(x.v===e.v&&x.text)c=x;});var price={sentence:5,certificate:15,naming:50}[(c||{}).tier]||5;

@@ -4,7 +4,7 @@ sdk: static
 app_file: index.html
 pinned: false
 license: cc0-1.0
-short_description: A real language model trained at $5 a sentence.
+short_description: A real language model trained at $2.49 a sentence.
 ---
 
 # brAIAIn

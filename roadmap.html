@@ -54,7 +54,7 @@
 
 <section class="tight"><div class="wrap narrow">
 <h2>Milestones</h2>
-<p class="muted" style="margin:6px 0 18px">What it would take to get there, at $5 a sentence and the current pace.</p>
+<p class="muted" style="margin:6px 0 18px">What it would take to get there, at $2.49 a sentence and the current pace.</p>
 <div id="rm-list" class="rm-list"><p class="muted">Loading</p></div>
 </div></section>
 
@@ -132,7 +132,7 @@ BRAIAIN.load().then(function (d) {
         if (!next) next = ms;
         var cur = ms.k === "vocab" ? vocab : hw, rate = ms.k === "vocab" ? vrate : wps;
         var need = Math.ceil((ms.t - cur) / Math.max(rate, 0.01));
-        body = '<dl class="rm-dl"><div><dt>Sentences needed</dt><dd>' + big(need) + '</dd></div><div><dt>Cost</dt><dd>$' + big(need * 5) + '</dd></div><div><dt>At the current pace</dt><dd>' + span(need / spd) + '</dd></div>' +
+        body = '<dl class="rm-dl"><div><dt>Sentences needed</dt><dd>' + big(need) + '</dd></div><div><dt>Cost</dt><dd>$' + big(Math.round(need * 2.49)) + '</dd></div><div><dt>At the current pace</dt><dd>' + span(need / spd) + '</dd></div>' +
           (need > 1e6 ? '<div><dt>If all 8 billion people on Earth bought one a day</dt><dd>' + span(need / 8e9) + '</dd></div>' : "") + '</dl>' +
           (ms.note ? '<p class="small muted">' + ms.note + '</p>' : "");
       }

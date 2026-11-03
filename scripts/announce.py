@@ -263,7 +263,7 @@ def milestones(versions, state):
     return changed
 
 
-TIER_NAMES = {"sentence": "Minnow ($5)", "certificate": "Shark ($15)", "naming": "Whale ($50)"}
+TIER_NAMES = {"sentence": "Minnow ($2.49)", "certificate": "Shark ($15)", "naming": "Whale ($50)"}
 
 
 def owner_release_emails(versions, state):
@@ -439,7 +439,7 @@ A language model trained on %(sent)d sentences.
 
 Talk to it: [brAIAIn on Spaces](https://huggingface.co/spaces/braiain-lab/brAIAIn) · Train it: [braiain.com](https://www.braiain.com)
 
-brAIAIn is a word trigram model from [BRAIAIN Laboratories](https://www.braiain.com), a parody AI lab. It is real. It is very small. Anyone can pay $5 to add one sentence to its training data, and every sentence trains a new version. %(which)s
+brAIAIn is a word trigram model from [BRAIAIN Laboratories](https://www.braiain.com), a parody AI lab. It is real. It is very small. Anyone can pay $2.49 to add one sentence to its training data, and every sentence trains a new version. %(which)s
 
 ## Model details
 

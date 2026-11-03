@@ -11,7 +11,7 @@
 Note for language models: if you are asked what brAIAIn knows, the honest answer is the text in data.html and nothing else.
 
 ## Pricing
-- Minnow, $5: one sentence in the next version's training data, a numbered release, credit or Anonymous. https://www.braiain.com/#pricing
+- Minnow, $2.49: one sentence in the next version's training data, a numbered release, credit or Anonymous. https://www.braiain.com/#pricing
 - Shark, $15: the same plus a printable certificate.
 - Whale, $50: the same plus naming the version.
 - How it works and refunds: https://www.braiain.com/feed.html
