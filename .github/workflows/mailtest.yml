@@ -1,0 +1,45 @@
+name: Test buyer email
+
+# Run by hand from the Actions tab: sends one sample gift-ticket email through Resend
+# (scripts/mailer.py) to the address you type, so you can see exactly what buyers get.
+
+on:
+  workflow_dispatch:
+    inputs:
+      to:
+        description: "Send the sample to"
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Send sample
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          TO: ${{ inputs.to }}
+        run: |
+          python3 - <<'PY'
+          import os, sys
+          sys.path.insert(0, "scripts")
+          import mailer
+          if not mailer.ready():
+              sys.exit("RESEND_API_KEY is not set in this repo's Actions secrets.")
+          S = "https://www.braiain.com"
+          code = "GIFT-TEST-0000"
+          ticket = S + "/gifts.html?code=" + code + "&t=sentence&to=Ruth&from=Max#g-card"
+          redeem = S + "/redeem.html?code=" + code + "&t=sentence&to=Ruth&from=Max"
+          html = mailer.gift_ticket("Ruth", "The Minnow (one sentence)", code, ticket, redeem)
+          text = "Sample gift ticket (test code " + code + ", not redeemable).\nPrint: " + ticket + "\nRedeem: " + redeem
+          ok = mailer.send(os.environ["TO"], "[Test] Your brAIAIn gift ticket for Ruth", text, html)
+          print("sent" if ok else "not sent")
+          sys.exit(0 if ok else 1)
+          PY
