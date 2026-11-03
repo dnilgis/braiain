@@ -77,7 +77,11 @@ jobs:
           GIT_TERMINAL_PROMPT: "0"
         run: |
           # git over the network has hung for 20 minutes at a time; give each try 90 seconds, three tries.
-          sync() { for i in 1 2 3; do timeout 90 git pull --rebase --autostash && timeout 90 git push && return 0; echo "git sync attempt $i failed or timed out"; git rebase --abort 2>/dev/null; sleep 10; done; return 1; }
+          sync() { for i in 1 2 3; do
+              if [ "$i" = "1" ]; then t=GIT_TRACE=1; else t=; fi
+              env $t timeout 90 git pull --rebase --autostash 2>&1 | tail -40 && [ "${PIPESTATUS[0]}" = "0" ] && timeout 90 git push && return 0
+              echo "git sync attempt $i failed or timed out"; git status --short | head -20; git rebase --abort 2>/dev/null || true; sleep 10
+            done; return 1; }
           git config user.name "brAIAIn"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data models v daily
@@ -115,5 +119,5 @@ jobs:
           git reset -q   # leave status.json to the once-a-day heartbeat
           git add data/announce.json 2>/dev/null || true
           if ! git diff --cached --quiet; then
-            git commit -m "Announce $(date -u +%Y-%m-%dT%H:%MZ)" && { for i in 1 2 3; do timeout 90 git pull --rebase --autostash && timeout 90 git push && break; echo "git sync attempt $i failed or timed out"; git rebase --abort 2>/dev/null; sleep 10; done; }
+            git commit -m "Announce $(date -u +%Y-%m-%dT%H:%MZ)" && { for i in 1 2 3; do timeout 90 git pull --rebase --autostash && timeout 90 git push && break; echo "git sync attempt $i failed or timed out"; git rebase --abort 2>/dev/null || true; sleep 10; done; }
           fi
