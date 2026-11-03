@@ -21,11 +21,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/site.css?v=20261103b">
+<link rel="stylesheet" href="/assets/site.css?v=20261103c">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3B3ZCE62NW"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-3B3ZCE62NW");</script>
 <script src="/assets/config.js"></script>
-<script src="/assets/braiain.js?v=20261103b"></script>
+<script src="/assets/braiain.js?v=20261103c"></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -72,13 +72,18 @@
 
 <div class="card" style="padding:26px;margin-top:16px">
 <h2 style="margin-top:0">3. Put it in the model</h2>
-<ol class="small" style="margin:0 0 16px;padding-left:20px">
-<li>Checkout opens with your sentence and credit already filled in. Pay, and that is it.</li>
-<li>It is screened, and usually goes live within minutes. Some sentences are read by a person first.</li>
-</ol>
-<p style="display:flex;gap:10px;flex-wrap:wrap;margin:0"><a class="btn live-only t-go" data-buy href="/feed.html">Open checkout, <span data-price>$2.49</span></a><button class="btn ghost" type="button" id="r-copy">Copy my sentence</button></p>
+<fieldset class="t-tiers"><legend class="sr-only">Choose a size</legend>
+<label class="t-tier"><input type="radio" name="t-tier" value="sentence" checked> <span><b>The Minnow</b> <span data-price>$2.49</span><small>Your sentence, a new version, your name on the release notes.</small></span></label>
+<label class="t-tier"><input type="radio" name="t-tier" value="certificate"> <span><b>The Shark</b> <span data-price="certificate">$9.99</span><small>Everything above, plus a printable certificate signed by the board.</small></span></label>
+<label class="t-tier"><input type="radio" name="t-tier" value="naming"> <span><b>The Whale</b> <span data-price="naming">$24.99</span><small>Everything above, and you name the version.</small></span></label>
+</fieldset>
+<div id="t-code-wrap" hidden style="margin:4px 0 14px">
+<label class="small" style="display:block">Name your version <input id="t-code" maxlength="40" placeholder="For example: The Goose Was Right"></label>
+<p class="small muted" style="margin:4px 0 0">It ships on the model card, the Models list and the certificate. Keep it clean; it is reviewed.</p>
+</div>
+<p style="display:flex;gap:10px;flex-wrap:wrap;margin:0"><a class="btn live-only t-go" id="t-go" data-buy href="/feed.html">Open checkout, <span id="t-price" data-price>$2.49</span></a><button class="btn ghost" type="button" id="r-copy">Copy my sentence</button></p>
 <p class="small muted" id="r-gocheck" style="margin:12px 0 0" hidden></p>
-<p class="small muted" style="margin:14px 0 0">Want proof? <a class="t-go" data-buy="certificate" href="/feed.html" style="display:inline">With a certificate, <span data-price="certificate">$9.99</span></a>. Want to name the version? <a class="t-go" data-buy="naming" href="/feed.html" style="display:inline">Name it, <span data-price="naming">$24.99</span></a>. Details on <a href="/feed.html" style="display:inline">Feed the model</a>.</p>
+<p class="small muted" style="margin:14px 0 0">Checkout opens with your sentence, credit and codename already filled in. It is screened, and usually goes live within minutes. Some sentences are read by a person first. Details on <a href="/feed.html" style="display:inline">Feed the model</a>.</p>
 </div>
 </div></section>
 <script>
@@ -109,13 +114,21 @@
   var t;$("r-s").addEventListener("input",function(){$("r-count").textContent=this.value.length;clearTimeout(t);t=setTimeout(ask,250);});
   $("r-ask").addEventListener("click",function(){ask();track("teach_preview");});
   $("r-q").addEventListener("keydown",function(e){if(e.key==="Enter")ask();});
-  document.querySelectorAll(".t-go").forEach(function(b){b.addEventListener("click",function(e){var s=$("r-s").value.trim();
-    if(!s||s===st.trim()){e.preventDefault();$("r-gocheck").hidden=false;$("r-gocheck").textContent="Write your sentence first, in step 1.";$("r-s").focus();return;}
-    var tier=b.getAttribute("data-buy")||"sentence",c=tier==="naming"?{url:"",oneTap:false}:writeCheckout(tier,{sentence:s,name:$("r-name").value.trim()});
-    if(c.oneTap){b.href=c.url;$("r-gocheck").hidden=false;$("r-gocheck").textContent="Opening checkout with your sentence filled in.";}
-    else{if(navigator.clipboard)navigator.clipboard.writeText(s).catch(function(){});
-      $("r-gocheck").hidden=false;$("r-gocheck").textContent=tier==="naming"?"Your sentence is copied. Paste it into the sentence box at checkout, and add your codename there.":"Your sentence is long, so it could not be filled in for you. It is copied: paste it into the sentence box at checkout.";}
-    track("teach_checkout",{tier:tier,one_tap:c.oneTap?1:0});});});
+  function tierNow(){var r=document.querySelector('input[name="t-tier"]:checked');return r?r.value:"sentence";}
+  document.querySelectorAll('input[name="t-tier"]').forEach(function(r){r.addEventListener("change",function(){var t=tierNow();
+    $("t-code-wrap").hidden=t!=="naming";$("t-go").setAttribute("data-buy",t==="sentence"?"":t);$("t-price").setAttribute("data-price",t==="sentence"?"":t);
+    var cfg=window.BRAIAIN_CONFIG||{};$("t-price").textContent={sentence:cfg.price||"$2.49",certificate:cfg.priceCertificate||"$9.99",naming:cfg.priceNaming||"$24.99"}[t];
+    if(t==="naming")$("t-code").focus();track("teach_tier",{tier:t});});});
+  function say(t){$("r-gocheck").hidden=false;$("r-gocheck").textContent=t;}
+  ["r-s","r-name","t-code"].forEach(function(id){$(id).addEventListener("input",function(){$("r-gocheck").hidden=true;});});
+  $("t-go").addEventListener("click",function(e){var s=$("r-s").value.trim(),tier=tierNow(),code=$("t-code").value.trim();
+    if(!s||s===st.trim()){e.preventDefault();say(s?"Finish your sentence in step 1.":"Write your sentence first, in step 1.");$("r-s").focus();return;}
+    if(tier==="naming"&&!code){e.preventDefault();say("Type the name for your version first.");$("t-code").focus();return;}
+    var c=writeCheckout(tier,{sentence:s,name:$("r-name").value.trim(),codename:tier==="naming"?code:""});
+    if(c.oneTap){this.href=c.url;say("Opening checkout with everything filled in.");}
+    else{var plain=c.url;if(plain)this.href=plain;if(navigator.clipboard)navigator.clipboard.writeText(s).catch(function(){});
+      say("Your sentence is long, so it could not be filled in for you. It is copied: paste it into the sentence box at checkout"+(tier==="naming"?", and type your codename there too.":"."));}
+    track("teach_checkout",{tier:tier,one_tap:c.oneTap?1:0});});
   $("r-copy").addEventListener("click",function(e){var b=e.currentTarget,s=$("r-s").value.trim();if(!s){$("r-s").focus();return;}
     (navigator.clipboard?navigator.clipboard.writeText(s):Promise.reject()).then(function(){b.textContent="Copied";},function(){b.textContent="Select and copy the sentence above";});});
 })();
