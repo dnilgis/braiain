@@ -76,12 +76,6 @@ jobs:
         env:
           GIT_TERMINAL_PROMPT: "0"
         run: |
-          # git over the network has hung for 20 minutes at a time; give each try 90 seconds, three tries.
-          sync() { for i in 1 2 3; do
-              if [ "$i" = "1" ]; then t=GIT_TRACE=1; else t=; fi
-              env $t timeout 90 git pull --rebase --autostash 2>&1 | tail -40 && [ "${PIPESTATUS[0]}" = "0" ] && timeout 90 git push && return 0
-              echo "git sync attempt $i failed or timed out"; git status --short | head -20; git rebase --abort 2>/dev/null || true; sleep 10
-            done; return 1; }
           git config user.name "brAIAIn"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data models v daily
@@ -90,12 +84,12 @@ jobs:
           queue_changed=$(python3 -c "import json,subprocess;old=json.loads(subprocess.run(['git','show','HEAD:data/status.json'],capture_output=True,text=True).stdout or '{}');new=json.load(open('data/status.json'));print('yes' if (old.get('pending_review'),old.get('review_mode'))!=(new.get('pending_review'),new.get('review_mode')) or ('train_seconds' in new and 'train_seconds' not in old) else 'no')")
           if git diff --cached --quiet -- . ':(exclude)data/status.json' && [ "$queue_changed" = "no" ]; then
             if [ "$(date -u +%H%M | cut -c1-3)" = "120" ]; then
-              git commit -m "Daily heartbeat" && sync
+              git commit -m "Daily heartbeat" && bash scripts/gitsync.sh
             fi
             echo "No new training data."
           else
             git commit -m "Training run $(date -u +%Y-%m-%dT%H:%MZ)"
-            sync
+            bash scripts/gitsync.sh
           fi
 
       - name: Announce on X and Bluesky, sync Hugging Face
@@ -119,5 +113,5 @@ jobs:
           git reset -q   # leave status.json to the once-a-day heartbeat
           git add data/announce.json 2>/dev/null || true
           if ! git diff --cached --quiet; then
-            git commit -m "Announce $(date -u +%Y-%m-%dT%H:%MZ)" && { for i in 1 2 3; do timeout 90 git pull --rebase --autostash && timeout 90 git push && break; echo "git sync attempt $i failed or timed out"; git rebase --abort 2>/dev/null || true; sleep 10; done; }
+            git commit -m "Announce $(date -u +%Y-%m-%dT%H:%MZ)" && bash scripts/gitsync.sh
           fi
