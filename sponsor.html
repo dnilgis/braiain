@@ -77,7 +77,7 @@
   var link=(window.BRAIAIN_CONFIG||{}).sponsorLink||"";
   if(/[?&]thanks=1/.test(location.search))document.getElementById("sp-now").insertAdjacentHTML("beforebegin",'<div class="card" style="padding:18px 22px;margin-bottom:14px"><b>Bid received.</b> If it is still the highest when it is checked, the slot is yours within minutes. Your Stripe receipt is your record.</div>');
   BRAIAIN.getJSON("/data/sponsor.json").then(function(sp){
-    var c=sp.current,next=c?c.cents+(sp.step_cents||100):(sp.open_cents||500),el=document.getElementById("sp-now");
+    var c=sp.current,next=c?c.cents+(sp.step_cents||100):(sp.open_cents||199),el=document.getElementById("sp-now");
     var btn=link?'<a class="btn" href="'+link+'" rel="noopener" id="sp-bid">Bid '+money(next)+' or more</a>':'<span class="btn off" aria-disabled="true">Bidding opens shortly</span>';
     el.innerHTML=(c?'<p class="small muted" style="margin:0">Currently presented by</p><p class="sp-name">'+esc(c.name)+'</p>'+(c.line?'<p class="sp-line">'+esc(c.line)+'</p>':'')+
       '<p class="small muted">Winning bid '+money(c.cents)+' · held for '+dur(c.since,new Date().toISOString())+'</p>'

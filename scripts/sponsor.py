@@ -16,7 +16,7 @@ import train as T
 ROOT = T.ROOT
 DATA = T.DATA
 PATH = os.path.join(DATA, "sponsor.json")
-OPEN_CENTS = 500
+OPEN_CENTS = 199
 STEP_CENTS = 100
 NAME_MAX, LINE_MAX = 40, 60
 
