@@ -213,7 +213,11 @@ def main():
                     "BRAIAIN Laboratories", SITE]
                 if mailer.ready() and buyer:  # from hello@braiain.com, so no personal address reaches the buyer
                     ok = mailer.send(buyer, subject, "\n".join(body), mailer.gift_ticket(to, TIER_NAME[tier], code, ticket, redeem))
-                    if ok:
+                    if not ok:  # Resend refused or was unreachable: the owner forwards it by hand rather than the buyer waiting
+                        ok = email(owner(), "brAIAIn: FORWARD this gift ticket to " + buyer + " (sending from hello@ failed)",
+                                   ["Resend did not send this gift ticket. Forward everything below the line to: " + buyer, "",
+                                    "Subject: " + subject, "", "-" * 40] + body)
+                    elif ok:
                         email(owner(), "brAIAIn: gift sold (" + TIER_NAME[tier] + ")",
                               ["A gift was bought and its ticket emailed to the buyer from hello@braiain.com.", "Tier: " + tier,
                                "Stripe promotion code id: " + g["promo"]])
