@@ -269,9 +269,11 @@ def refunded(sess):
 def tier(sess):
     # Before discounts, so a redeemed gift ($0.00 with its code) keeps the tier the giver paid for.
     cents = sess.get("amount_subtotal") or sess.get("amount_total") or 0
-    if cents >= 5000:
+    # Thresholds sit at the lowest price each tier has ever had ($24.99 Whale, $9.99 Shark), so old
+    # and new links both land in the right tier: $50 and $24.99 are naming, $15 and $9.99 certificate.
+    if cents >= 2499:
         return "naming"
-    if cents >= 1500:
+    if cents >= 999:
         return "certificate"
     return "sentence"
 
