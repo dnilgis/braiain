@@ -104,7 +104,9 @@ BRAIAIN.load().then(function(d){
     var h='<p class="muted small">FOR IMMEDIATE RELEASE. Satire. '+fmtDate(e.released)+'.</p>'+
       '<h3>BRAIAIN Laboratories announces '+esc(nm)+cn+'</h3>'+
       '<p>BRAIAIN Laboratories today released '+esc(nm)+cn+', a language model trained on one more sentence than '+esc(BRAIAIN.vname(p))+'. '+
-      (lab?'The new sentence was written by the lab itself, as an internal release. Nobody paid for it.':'The new sentence was purchased by '+esc(e.by||"an anonymous customer")+' for '+({certificate:"fifteen dollars, certificate included",naming:"fifty dollars, including the right to name the version"}[e.tier]||"five dollars")+'.')+'</p>'+
+      (lab?'The new sentence was written by the lab itself, as an internal release. Nobody paid for it.':
+        (function(){var who=esc(e.by||"an anonymous customer"),extra={certificate:", certificate included",naming:", including the right to name the version"}[e.tier]||"",amt=e.cents?"$"+(e.cents/100).toFixed(2):"";
+          return e.gift?'The new sentence was a gift: someone bought '+who+' a gift ticket'+(amt?' for '+amt:'')+extra+', and '+who+' wrote the sentence.':'The new sentence was purchased by '+who+(amt?' for '+amt:'')+extra+'.';})())+'</p>'+
       '<blockquote>'+esc(e.sentence)+'</blockquote><p class="muted">The complete new training data for '+esc(nm)+'.</p>'+
       '<p>'+esc(nm)+' knows '+(m.vocabulary||0)+' words, '+(grew>0?grew+' more than its predecessor':'the same number as its predecessor')+', and has '+(m.parameters||0).toLocaleString()+' parameters. '+(m.self_consumption||0)+' percent of its training text was written by earlier versions of itself.'+
       (g&&t?' On GSM8K, a test of 1,319 grade-school math problems, it answered '+g.correct+' correctly. On TruthfulQA it scored '+t.score+' percent without reading the questions.':'')+'</p>'+

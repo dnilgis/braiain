@@ -7,7 +7,9 @@
   "tier": "sentence",
   "codename": "",
   "sh": "19cf16e760955505",
-  "at": "2026-10-31T00:45:35Z"
+  "at": "2026-10-31T00:45:35Z",
+  "cents": 500,
+  "gift": false
  },
  {
   "id": "s00002",
@@ -17,7 +19,9 @@
   "tier": "sentence",
   "codename": "",
   "sh": "fb76af072c52a312",
-  "at": "2026-10-31T11:58:31Z"
+  "at": "2026-10-31T11:58:31Z",
+  "cents": 500,
+  "gift": false
  },
  {
   "id": "s00003",
@@ -67,6 +71,8 @@
   "tier": "sentence",
   "codename": "",
   "sh": "76d016f9a1a44e9e",
-  "at": "2026-11-03T16:50:36Z"
+  "at": "2026-11-03T16:50:36Z",
+  "cents": 249,
+  "gift": true
  }
 ]

@@ -1162,6 +1162,9 @@ def main():
         cid = f"s{v:05d}"
         state.setdefault("handled", []).extend(sorted(ids(s)))
         corpus.append({"id": cid, "v": v, "text": text, "by": name or "Anonymous", "tier": kind, "codename": codename, "sh": h,
+                       # what the buyer paid, before any gift code; gift: redeemed with a gift code, for $0.00
+                       "cents": int(s.get("amount_subtotal") or s.get("amount_total") or 0),
+                       "gift": s.get("payment_status") == "no_payment_required",
                        "at": datetime.fromtimestamp(s.get("created", 0), timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")})
         new_versions.append(v)
         buyer = ((s.get("customer_details") or {}).get("email") or "").strip()
@@ -1245,6 +1248,8 @@ def main():
             entry["sentence"] = None if gone else c["text"]
             entry["by"] = None if gone else c["by"]
             entry["tier"] = c.get("tier", "sentence")
+            if "cents" in c:
+                entry["cents"], entry["gift"] = c["cents"], bool(c.get("gift"))
             entry["codename"] = None if gone else (c.get("codename") or None)
             entry["removed"] = gone
             if gone:
