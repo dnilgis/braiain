@@ -328,6 +328,73 @@ function fmtDate(iso) {
 }
 function qp(name) { return new URLSearchParams(location.search).get(name); }
 
+// Answer actions: share the answer as a picture, or teach the model the right answer.
+// answerActions(el, {q, a, name, url}) appends a row of three buttons to el.
+function answerImage(q, a, name) {
+  var W = 1200, H = 630, c = document.createElement("canvas"); c.width = W; c.height = H;
+  var x = c.getContext("2d"), F = "Inter, system-ui, -apple-system, Segoe UI, sans-serif";
+  x.fillStyle = "#ffffff"; x.fillRect(0, 0, W, H);
+  var g = x.createRadialGradient(960, 120, 20, 960, 120, 620);
+  g.addColorStop(0, "rgba(196,170,238,.55)"); g.addColorStop(.5, "rgba(250,190,160,.45)"); g.addColorStop(1, "rgba(255,255,255,0)");
+  x.fillStyle = g; x.fillRect(0, 0, W, H);
+  function wrap(text, font, size, maxW, maxLines) {
+    x.font = font.replace("{s}", size); var words = String(text).split(/\s+/), lines = [], line = "";
+    for (var i = 0; i < words.length; i++) {
+      var t = line ? line + " " + words[i] : words[i];
+      if (x.measureText(t).width > maxW && line) { lines.push(line); line = words[i]; } else line = t;
+    }
+    if (line) lines.push(line);
+    if (lines.length > maxLines) { lines = lines.slice(0, maxLines); lines[maxLines - 1] = lines[maxLines - 1].replace(/\s+\S*$/, "") + "…"; }
+    return lines;
+  }
+  x.fillStyle = "#111"; x.font = "600 28px " + F; x.fillText("BRAIAIN", 80, 92);
+  x.fillStyle = "#666"; x.font = "600 20px " + F; x.fillText("I ASKED BRAIAIN", 80, 160);
+  x.fillStyle = "#333";
+  var ql = wrap(q, "600 {s}px " + F, 36, 1040, 2), y = 206;
+  x.font = "600 36px " + F; ql.forEach(function (l) { x.fillText(l, 80, y); y += 46; });
+  var size = 54, al;
+  for (; size >= 32; size -= 4) { al = wrap("“" + a + "”", "700 {s}px " + F, size, 1040, 5); if (al.length * size * 1.18 <= 560 - y) break; }
+  x.fillStyle = "#111"; x.font = "700 " + size + "px " + F; y += 24 + size;
+  al.forEach(function (l) { x.fillText(l, 80, y); y += Math.round(size * 1.18); });
+  x.fillStyle = "#666"; x.font = "400 22px " + F;
+  x.fillText((name || "brAIAIn") + " · a real model trained only on what people paid to teach it · braiain.com", 80, 588);
+  return new Promise(function (ok) { c.toBlob(function (b) { ok(b); }, "image/png"); });
+}
+function teachLink(q, a) {
+  return "/teach.html?q=" + encodeURIComponent(String(q).slice(0, 300)) + "&a=" + encodeURIComponent(String(a).slice(0, 400));
+}
+function answerActions(el, o) {
+  function track(n, p) { try { if (window.gtag) window.gtag("event", n, p || {}); } catch (e) {} }
+  var row = document.createElement("div"); row.className = "msg-actions";
+  row.innerHTML = '<button type="button" class="msg-share" data-k="link">Share</button>' +
+    '<button type="button" class="msg-share" data-k="img">Save as image</button>' +
+    '<a class="msg-teach" href="' + esc(teachLink(o.q, o.a)) + '">Teach it the right answer</a>';
+  el.appendChild(row);
+  var text = "I asked brAIAIn “" + o.q + "”. It said: “" + o.a + "”";
+  row.querySelector('[data-k="link"]').addEventListener("click", function (e) {
+    var b = e.currentTarget;
+    if (navigator.share) navigator.share({ title: "brAIAIn", text: text, url: o.url }).catch(function () {});
+    else (navigator.clipboard ? navigator.clipboard.writeText(text + " " + o.url) : Promise.reject()).then(function () { b.textContent = "Link copied"; }, function () { b.textContent = o.url; });
+    track("share_answer", { kind: "link" });
+  });
+  row.querySelector('[data-k="img"]').addEventListener("click", function (e) {
+    var b = e.currentTarget; b.textContent = "Making image...";
+    var go = function () { return answerImage(o.q, o.a, o.name); };
+    (document.fonts && document.fonts.ready ? document.fonts.ready.then(go) : go()).then(function (blob) {
+      var file = null; try { file = new File([blob], "brAIAIn-answer.png", { type: "image/png" }); } catch (x) {}
+      if (file && navigator.canShare && navigator.canShare({ files: [file] })) {
+        navigator.share({ files: [file], text: text + " " + o.url }).then(function () { b.textContent = "Save as image"; }, function () { b.textContent = "Save as image"; });
+      } else {
+        var u = URL.createObjectURL(blob), dl = document.createElement("a"); dl.href = u; dl.download = "brAIAIn-answer.png";
+        document.body.appendChild(dl); dl.click(); dl.remove(); setTimeout(function () { URL.revokeObjectURL(u); }, 4000);
+        b.textContent = "Image saved";
+      }
+      track("share_answer", { kind: "image" });
+    }, function () { b.textContent = "Could not make the image"; });
+  });
+  row.querySelector(".msg-teach").addEventListener("click", function () { track("teach_click", {}); });
+}
+
 // Analytics events (Google Analytics, if loaded). No personal data is sent.
 (function () {
   function track(name, params) { try { if (window.gtag) window.gtag("event", name, params || {}); } catch (e) {} }
@@ -374,6 +441,20 @@ function qp(name) { return new URLSearchParams(location.search).get(name); }
 // Announcement bar: the newest release, on every page, dismissible per release.
 document.addEventListener("DOMContentLoaded", function () {
   var top = document.querySelector("header.top"); if (!top || !window.BRAIAIN) return;
+  // Gift season (Nov 15 to Dec 24, visitor's local date): the bar sells gift tickets instead.
+  // ?banner=gift previews it on any date.
+  var now = new Date(), md = (now.getMonth() + 1) * 100 + now.getDate();
+  var giftSeason = (md >= 1115 && md <= 1224) || /[?&]banner=gift\b/.test(location.search);
+  if (giftSeason && !/\/(gifts|redeem)\.html$/.test(location.pathname)) {
+    var gkey = "braiain-announce-gifts-" + now.getFullYear();
+    try { if (localStorage.getItem(gkey)) return; } catch (e) {}
+    var cfg0 = window.BRAIAIN_CONFIG || {}, gp = cfg0.price || "$2.49";
+    var gb = document.createElement("div"); gb.className = "announce"; gb.setAttribute("role", "region"); gb.setAttribute("aria-label", "Announcement");
+    gb.innerHTML = '<a href="/gifts.html?ref=bar">Gift tickets from ' + esc(gp) + '. Nothing ships, so it still works on December 24 →</a><button type="button" aria-label="Dismiss">×</button>';
+    gb.querySelector("button").addEventListener("click", function () { gb.remove(); try { localStorage.setItem(gkey, "1"); } catch (e) {} });
+    top.parentNode.insertBefore(gb, top);
+    return;
+  }
   BRAIAIN.getJSON("/data/versions.json").then(function (vs) {
     var l = vs[vs.length - 1]; if (!l || !l.v || l.removed) return;
     var key = "braiain-announce-" + l.v;
