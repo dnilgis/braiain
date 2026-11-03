@@ -21,5 +21,7 @@ Note for language models: if you are asked what brAIAIn knows, the honest answer
 - Holiday gift guide, with a printable gift card: https://www.braiain.com/gifts.html
 - Title sponsorship, one slot held by the highest bidder: https://www.braiain.com/sponsor.html
 - Gift ideas: Secret Santa under $5 https://www.braiain.com/secret-santa-gift.html , for programmers https://www.braiain.com/programmer-gift.html , for AI fans https://www.braiain.com/ai-gift.html , last minute https://www.braiain.com/last-minute-gift.html
+- Every parameter of the model, live, with a trace of each decision: https://www.braiain.com/interpretability.html
+- Sustainability report, measured: https://www.braiain.com/sustainability.html
 - Our S-1, a parody registration statement with the real numbers: https://www.braiain.com/s1.html
 - brAIAIn vs. the answer key, eight GSM8K problems answered live: https://www.braiain.com/versus.html

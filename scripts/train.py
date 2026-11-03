@@ -1175,7 +1175,9 @@ def main():
             print(f"Refunded or disputed after publishing: {c['id']} (brAIAIn-{c['v']}). Add {c['id']} to data/removed.txt to take it down.")
 
     # 2. retrain everything
+    t_train = time.time()
     built = build_all(corpus, removed, genesis, blocklist)
+    train_seconds = round(time.time() - t_train, 3)  # shown on the Sustainability page
     max_v = max(built)
     live_by_v = {c["v"]: c for c in corpus}
 
@@ -1275,6 +1277,8 @@ def main():
     status["pending_review"] = pending
     status["review_mode"] = review
     status["latest"] = max_v
+    status["train_seconds"] = train_seconds
+    status["train_versions"] = max_v + 1
     save(os.path.join(DATA, "status.json"), status)
     print(f"ok: {len(new_versions)} new, latest {names[max_v]}, {latest['metrics']['sentences']} sentences")
 

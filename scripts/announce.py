@@ -210,12 +210,12 @@ MILESTONES = [
      lambda e, m: "brAIAIn is now mostly trained on itself. As of %s, %.1f%% of its training text is writing it produced. "
                   "We are monitoring the situation." % (e.get("name") or "brAIAIn-" + str(e["v"]), m["self_consumption"])),
     ("params500", lambda m: m.get("parameters", 0) >= 500,
-     lambda e, m: "%s has crossed 500 parameters (%d). Scaling continues at roughly one sentence per sale."
+     lambda e, m: "%s has crossed 500 parameters (%d), our first scaling threshold. Required safeguard: The Note has been notified. braiain.com/safety.html#scaling"
                   % (e.get("name") or "brAIAIn-" + str(e["v"]), m["parameters"])),
     ("paid10", lambda m: m.get("paid_sentences", 0) >= 10,
      lambda e, m: "brAIAIn has now been paid to learn 10 sentences. That is its entire education, all of it public."),
     ("params1000", lambda m: m.get("parameters", 0) >= 1000,
-     lambda e, m: "%s is our first model with over 1,000 parameters (%d). It still cannot add."
+     lambda e, m: "%s is our first model with over 1,000 parameters (%d). Scaling threshold 2: the Chairman has been moved indoors. It still cannot add. braiain.com/safety.html#scaling"
                   % (e.get("name") or "brAIAIn-" + str(e["v"]), m["parameters"])),
 ]
 

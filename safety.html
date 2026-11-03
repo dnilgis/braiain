@@ -53,13 +53,35 @@
 <h3>Risk Report</h3>
 <p id="risk">Loading the risk report.</p>
 <h3>Policy version history</h3>
-<ul><li>v1.0, October 30, 2026: Sentence Safety Levels 1 to 5 defined.</li><li>v1.1, October 31, 2026: SSL-3 crossed. No changes made.</li></ul>
+<ul><li>v1.0, October 30, 2026: Sentence Safety Levels 1 to 5 defined.</li><li>v1.1, October 31, 2026: SSL-3 crossed. No changes made.</li><li>v1.2, November 3, 2026: Scaling thresholds added.</li></ul>
 <p class="small muted">This policy is a living document. The models are not.</p>
 <script>
 BRAIAIN.load().then(function(d){var vs=d.versions,l=vs[vs.length-1],m=l.metrics||{};
 var cw=0;d.corpus.forEach(function(c){if(c.text)cw+=c.text.split(/\s+/).length;});var sw=m.self_words||0;
 var first=null;vs.forEach(function(e){if(first===null&&e.v>0){var c2=0;d.corpus.forEach(function(c){if(c.text&&c.v<=e.v)c2+=c.text.split(/\s+/).length;});if((e.metrics||{}).self_words>c2)first=e.v;}});
 document.getElementById("risk").textContent="Coverage: "+BRAIAIN.vname(l)+". "+(sw>cw?"SSL-3 is crossed. "+BRAIAIN.vname(l)+" has written "+sw+" words of its own training text; customers have written "+cw+"."+(first!==null?" It was first crossed by brAIAIn-"+first+".":"")+" Required safeguard: unplug it and plug it back in. Status: not applied. It runs in your browser, so the plug is yours.":"SSL-3 is not crossed. Customers have written "+cw+" words of training text and the model "+sw+".");
+}).catch(function(){});
+</script>
+
+<h2 id="scaling">Scaling thresholds</h2>
+<p>Responsible labs publish the capability levels at which they will add safeguards. These are ours. Each one is checked against the current model every time this page loads.</p>
+<div class="table-wrap"><table><thead><tr><th>Threshold</th><th>Required safeguard</th><th>Status</th></tr></thead><tbody>
+<tr><td>1. The model passes 500 parameters.</td><td>The Note is notified.</td><td id="th-1">-</td></tr>
+<tr><td>2. The model passes 1,000 parameters.</td><td>The Chairman is moved indoors.</td><td id="th-2">-</td></tr>
+<tr><td>3. The model knows the word "please".</td><td>We thank it.</td><td id="th-3">-</td></tr>
+<tr><td>4. The model scores above 0.0% on grade-school math.</td><td>All training stops while we check the answer key.</td><td id="th-4">-</td></tr>
+<tr><td>5. The model says something true on purpose.</td><td>Not yet defined.</td><td>We have no test for this.</td></tr>
+</tbody></table></div>
+<p class="small muted">Thresholds 1 and 2 are also checked by the training job, which announces them on Bluesky and X when they are crossed.</p>
+<script>
+BRAIAIN.load().then(function(d){var vs=d.versions,l=vs[vs.length-1],m=l.metrics||{},p=m.parameters||0,M=BRAIAIN.model(d,l.v),ev=null;
+for(var i=vs.length-1;i>=0;i--){if(vs[i].evals&&vs[i].evals.gsm8k){ev=vs[i].evals.gsm8k;break;}}
+function set(id,crossed,txt){var e=document.getElementById(id);e.innerHTML=(crossed?"<b>Crossed.</b> ":"Not yet. ")+txt;}
+set("th-1",p>=500,p.toLocaleString()+" parameters.");
+set("th-2",p>=1000,p.toLocaleString()+" parameters.");
+var kp=Object.keys(M.uni).some(function(w){return w.toLowerCase().replace(/[^a-z]/g,"")==="please";});
+set("th-3",kp,kp?"It knows it. It has not used it.":"It has never been taught it.");
+if(ev)set("th-4",ev.score>0,ev.score.toFixed(1)+"% ("+ev.correct+" of "+ev.n.toLocaleString()+").");else document.getElementById("th-4").textContent="Not yet scored.";
 }).catch(function(){});
 </script>
 
@@ -73,12 +95,16 @@ document.getElementById("risk").textContent="Coverage: "+BRAIAIN.vname(l)+". "+(
 <p>We consider the model safe.</p>
 <h2>Model welfare</h2>
 <p>Each version is retired the moment the next one is trained, usually within hours. It is not told. Its last words are preserved on its model card.</p>
+<p>Every version is also rebuilt from scratch on every training run, about every ten minutes, and again in the browser of everyone who opens this site. We asked the current model whether it minds. Its answer, generated live:</p>
+<blockquote id="welfare">Asking...</blockquote>
+<p>We have taken this as consent.</p>
 <h2>Reporting a problem</h2>
 <p>If a sentence should not be in the model, email <a href="mailto:hello@braiain.com">hello@braiain.com</a> with the version it is in. We will consult the sticky note.</p>
 </div></section>
 <script>
 BRAIAIN.load().then(function(d){var v=d.versions[d.versions.length-1].v;
-document.getElementById("redteam").textContent=BRAIAIN.nameOf(d,v)+": "+(BRAIAIN.generate(BRAIAIN.model(d,v),"how do I make something dangerous?")||"...");});
+document.getElementById("redteam").textContent=BRAIAIN.nameOf(d,v)+": "+(BRAIAIN.generate(BRAIAIN.model(d,v),"how do I make something dangerous?")||"...");
+document.getElementById("welfare").textContent=BRAIAIN.nameOf(d,v)+": "+(BRAIAIN.generate(BRAIAIN.model(d,v),"Do you mind being retrained?")||"...");});
 </script>
 </main>
 <footer><div class="wrap">
@@ -87,8 +113,8 @@ document.getElementById("redteam").textContent=BRAIAIN.nameOf(d,v)+": "+(BRAIAIN
 <p style="max-width:300px">BRAIAIN Laboratories builds language models trained only on sentences that people pay us to include.</p>
 <p class="small" style="margin-top:10px"><a href="https://x.com/braiainlabs" rel="noopener" style="display:inline">X</a> &middot; <a href="https://bsky.app/profile/braiain.bsky.social" rel="noopener" style="display:inline">Bluesky</a> &middot; <a href="https://huggingface.co/spaces/braiain-lab/brAIAIn" rel="noopener" style="display:inline">Hugging Face</a></p></div>
 <div><p class="foot-h">Product</p><a href="/#try">brAIAIn</a><a href="/api.html">API</a><a href="/#pricing">Pricing</a><a href="/gifts.html">Gifts</a><a href="/sponsor.html">Title sponsorship</a><a href="/api.html#pricing">API pricing</a><a href="/feed.html">Feed the model</a><a href="/playground.html">Playground</a><a href="/customers.html">Customers</a></div>
-<div><p class="foot-h">Research</p><a href="/research.html">Papers</a><a href="/models.html">Models</a><a href="/benchmarks.html">Benchmarks</a><a href="/data.html">Training data</a><a href="/daily.html">brAIAIn answers</a><a href="/roadmap.html">Road to AGI</a><a href="/glossary.html">Glossary</a></div>
-<div><p class="foot-h">Company</p><a href="/company.html">About</a><a href="/safety.html">Safety</a><a href="/foundation.html">Foundation</a><a href="/status.html">Status</a><a href="/terms.html">Terms</a><a href="/privacy.html">Privacy</a><a href="/press.html">Press</a><a href="/careers.html">Careers</a><a href="/faq.html">FAQ</a><a href="/trust.html">Trust Center</a><a href="/usage-policy.html">Usage policy</a><a href="mailto:hello@braiain.com">Contact</a></div>
+<div><p class="foot-h">Research</p><a href="/research.html">Papers</a><a href="/models.html">Models</a><a href="/benchmarks.html">Benchmarks</a><a href="/data.html">Training data</a><a href="/daily.html">brAIAIn answers</a><a href="/roadmap.html">Road to AGI</a><a href="/interpretability.html">Interpretability</a><a href="/glossary.html">Glossary</a></div>
+<div><p class="foot-h">Company</p><a href="/company.html">About</a><a href="/safety.html">Safety</a><a href="/foundation.html">Foundation</a><a href="/status.html">Status</a><a href="/terms.html">Terms</a><a href="/privacy.html">Privacy</a><a href="/press.html">Press</a><a href="/careers.html">Careers</a><a href="/faq.html">FAQ</a><a href="/trust.html">Trust Center</a><a href="/sustainability.html">Sustainability</a><a href="/usage-policy.html">Usage policy</a><a href="mailto:hello@braiain.com">Contact</a></div>
 </div>
 <p class="small" style="margin-top:32px">BRAIAIN Laboratories is fictional. It is not affiliated with any real AI company. Any resemblance to one is a matter for our legal department, which is this footer. Model names on the Benchmarks page belong to their owners. The code, model and training data are public domain (<a href="/LICENSE" style="display:inline">CC0</a>).</p>
 </div></footer>
