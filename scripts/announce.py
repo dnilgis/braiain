@@ -189,22 +189,27 @@ def buyer_emails(versions):
             "",
             "Share it. This link shows your release card in the preview:",
             "  " + share,
-            "  Post on X:  https://twitter.com/intent/tweet?text=" + urllib.parse.quote(post) + "&url=" + urllib.parse.quote(share + "?ref=x"),
-            "  Post on Bluesky:  https://bsky.app/intent/compose?text=" + urllib.parse.quote(post + " " + share + "?ref=bsky"),
+            "  Post it on X or Bluesky with that link.",
             "",
             "If it was a gift, forward this email.",
             "",
             "BRAIAIN Laboratories",
             "A parody AI lab. The model is real. Questions: hello@braiain.com",
         ]
+        cert = SITE + "/certificate.html?v=" + str(v) if n.get("tier") in ("certificate", "naming") else ""
+        x_url = "https://twitter.com/intent/tweet?text=" + urllib.parse.quote(post) + "&url=" + urllib.parse.quote(share + "?ref=x")
+        bsky_url = "https://bsky.app/intent/compose?text=" + urllib.parse.quote(post + " " + share + "?ref=bsky")
         m = EmailMessage()
+        m.html_version = mailer.version_live(name, e.get("sentence") or "", e.get("metrics", {}).get("vocabulary", ""),
+                                             SITE + "/model.html?v=" + str(v), SITE + "/card.html?v=" + str(v), cert,
+                                             share, x_url, bsky_url) if use_resend else None
         m["Subject"] = name + " is live. You trained it."
         m["To"] = n["email"]
         m["Reply-To"] = "hello@braiain.com"
         m.set_content("\n".join(lines))
         out.append(m)
     if use_resend:
-        sent = sum(1 for m in out if mailer.send(m["To"], m["Subject"], m.get_content()))
+        sent = sum(1 for m in out if mailer.send(m["To"], m["Subject"], m.get_content(), getattr(m, "html_version", None)))
     else:
         sent = gmail_send(out)
     print("buyer emails sent:", sent, "of", len(out))
