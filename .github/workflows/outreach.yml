@@ -9,6 +9,10 @@ on:
       to:
         description: "To (one address)"
         required: true
+      cc:
+        description: "Cc (optional, one address)"
+        required: false
+        default: ""
       subject:
         description: "Subject"
         required: true
@@ -32,6 +36,7 @@ jobs:
         env:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           TO: ${{ inputs.to }}
+          CC: ${{ inputs.cc }}
           SUBJECT: ${{ inputs.subject }}
           BODY: ${{ inputs.body }}
         run: |
@@ -41,7 +46,8 @@ jobs:
           import mailer
           if not mailer.ready():
               sys.exit("RESEND_API_KEY is not set.")
-          ok = mailer.send(os.environ["TO"], os.environ["SUBJECT"], os.environ["BODY"])
-          print("sent to", os.environ["TO"] if ok else "NOT sent")
+          cc = os.environ.get("CC", "").strip() or None
+          ok = mailer.send(os.environ["TO"], os.environ["SUBJECT"], os.environ["BODY"], cc=cc)
+          print("sent to", os.environ["TO"], ("cc " + cc) if cc else "") if ok else print("NOT sent")
           sys.exit(0 if ok else 1)
           PY

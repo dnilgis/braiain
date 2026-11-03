@@ -17,7 +17,7 @@ def ready():
     return bool(os.environ.get("RESEND_API_KEY", "").strip())
 
 
-def send(to, subject, text, html=None):
+def send(to, subject, text, html=None, cc=None):
     """Returns True if Resend accepted the email. text is always sent too, for mail apps that block HTML."""
     key = os.environ.get("RESEND_API_KEY", "").strip()
     if not key or not to:
@@ -25,6 +25,8 @@ def send(to, subject, text, html=None):
     msg = {"from": FROM, "to": [to], "subject": subject, "text": text, "reply_to": REPLY_TO}
     if html:
         msg["html"] = html
+    if cc:
+        msg["cc"] = [cc] if isinstance(cc, str) else list(cc)
     body = json.dumps(msg).encode()
     req = urllib.request.Request("https://api.resend.com/emails", data=body, method="POST",
                                  headers={"Authorization": "Bearer " + key, "Content-Type": "application/json",
