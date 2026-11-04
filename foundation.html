@@ -115,7 +115,7 @@ BRAIAIN.load().then(function(d){
   var rows2=[],prev=null,start=Math.max(0,vs.length-11);
   for(var i=start;i<vs.length;i++){var e=vs[i],cur=e.removed?null:words(e.v);
     if(prev&&cur&&e.v>0){var nw=Object.keys(cur).filter(function(w){return !prev[w];});
-      rows2.push("<tr><td><a href=\"/model.html?v="+e.v+"\">"+BRAIAIN.vname(e)+"</a></td><td>"+(nw.length?nw.map(function(w){return "<i>"+esc(w)+"</i>";}).join(", "):"None. The sentence used words it already had.")+"</td><td>"+(e.tier==="lab"?"BRAIAIN Laboratories (self-funded)":esc(e.by||"Anonymous"))+"</td></tr>");}
+      rows2.push("<tr><td><a href=\"/model.html?v="+e.v+"\">"+BRAIAIN.vname(e)+"</a></td><td>"+(nw.length?nw.map(function(w){return "<i>"+esc(w)+"</i>";}).join(", "):"None. The sentence used words it already had.")+"</td><td>"+(e.tier==="lab"?"BRAIAIN Laboratories (self-funded)":e.test?"BRAIAIN Laboratories (a test of the checkout)":esc(e.by||"Anonymous"))+"</td></tr>");}
     if(cur)prev=cur;}
   document.getElementById("f-grants").innerHTML=rows2.reverse().join("")||"<tr><td colspan=\"3\">No grants yet.</td></tr>";
   var w0=words(0),wl=words(l.v);granted=Object.keys(wl).filter(function(w){return !w0[w];}).length;

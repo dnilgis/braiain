@@ -58,8 +58,8 @@
 <p class="small muted">This policy is a living document. The models are not.</p>
 <script>
 BRAIAIN.load().then(function(d){var vs=d.versions,l=vs[vs.length-1],m=l.metrics||{};
-var cw=0;d.corpus.forEach(function(c){if(c.text&&c.tier!=="lab")cw+=c.text.split(/\s+/).length;});var sw=m.self_words||0;
-var first=null;vs.forEach(function(e){if(first===null&&e.v>0){var c2=0;d.corpus.forEach(function(c){if(c.text&&c.tier!=="lab"&&c.v<=e.v)c2+=c.text.split(/\s+/).length;});if((e.metrics||{}).self_words>c2)first=e;}});
+var cw=0;d.corpus.forEach(function(c){if(c.text&&c.tier!=="lab"&&!c.test)cw+=c.text.split(/\s+/).length;});var sw=m.self_words||0;
+var first=null;vs.forEach(function(e){if(first===null&&e.v>0){var c2=0;d.corpus.forEach(function(c){if(c.text&&c.tier!=="lab"&&!c.test&&c.v<=e.v)c2+=c.text.split(/\s+/).length;});if((e.metrics||{}).self_words>c2)first=e;}});
 document.getElementById("risk").textContent="Coverage: "+BRAIAIN.vname(l)+". "+(sw>cw?"SSL-3 is crossed. "+BRAIAIN.vname(l)+" has written "+sw+" words of its own training text; customers have written "+cw+"."+(first!==null?" It was first crossed by "+BRAIAIN.vname(first)+".":"")+" Required safeguard: unplug it and plug it back in. Status: not applied. It runs in your browser, so the plug is yours.":"SSL-3 is not crossed. Customers have written "+cw+" words of training text and the model "+sw+".");
 }).catch(function(){});
 </script>

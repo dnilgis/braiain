@@ -79,7 +79,7 @@ BRAIAIN.load().then(function (d) {
   var vs = d.versions.filter(function (e) { return !e.removed; });
   var L = vs[vs.length - 1], V0 = vs[0], m = L.metrics || {}, m0 = V0.metrics || {};
   var hw = m.human_words || 0, paid = m.paid_sentences || 0, vocab = m.vocabulary || 0;
-  var pc = d.corpus.filter(function (c) { return c.text && c.tier !== "lab"; });
+  var pc = d.corpus.filter(function (c) { return c.text && c.tier !== "lab" && !c.test; });
   var wps = pc.length ? pc.reduce(function (n, c) { return n + c.text.split(/\s+/).filter(Boolean).length; }, 0) / pc.length : 10;
   var adds = vs.length > 1 ? vocab - (m0.vocabulary || 0) : 0, nsent = vs.length - 1;
   var vrate = nsent ? adds / nsent : 3;

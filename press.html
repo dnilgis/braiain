@@ -75,7 +75,7 @@
 
 <h2>What is real and what is not</h2>
 <ul>
-<li><b>Real:</b> the model, its training data, every number on the site, the benchmark runs, the browser chat, the $2.49 purchase.</li>
+<li><b>Real:</b> the model, its training data, every number on the site, the benchmark runs, the browser chat, the $2.49 checkout.</li>
 <li><b>Real, copied:</b> other labs' GSM8K scores on the Benchmarks page, quoted exactly from a published 2023 table, with the source linked.</li>
 <li><b>Not real:</b> the company, its board of directors, its quotes, its safety policy, and its headquarters.</li>
 </ul>
@@ -107,7 +107,7 @@ BRAIAIN.load().then(function(d){
       '<p>BRAIAIN Laboratories today released '+esc(nm)+cn+', a language model trained on one more sentence than '+esc(BRAIAIN.vname(p))+'. '+
       (lab?'The new sentence was written by the lab itself, as an internal release. Nobody paid for it.':
         (function(){var who=esc(e.by||"an anonymous customer"),extra={certificate:", certificate included",naming:", including the right to name the version"}[e.tier]||"",amt=e.cents?"$"+(e.cents/100).toFixed(2):"";
-          return e.gift?'The new sentence was a gift: someone bought '+who+' a gift ticket'+(amt?' for '+amt:'')+extra+', and '+who+' wrote the sentence.':'The new sentence was purchased by '+who+(amt?' for '+amt:'')+extra+'.';})())+'</p>'+
+          return e.test?'The new sentence was a lab test of the real checkout: the lab bought a gift ticket'+(amt?' for '+amt:'')+' and redeemed it, to check that gifts work end to end. It is not counted as a sale.':e.gift?'The new sentence was a gift: someone bought '+who+' a gift ticket'+(amt?' for '+amt:'')+extra+', and '+who+' wrote the sentence.':'The new sentence was purchased by '+who+(amt?' for '+amt:'')+extra+'.';})())+'</p>'+
       '<blockquote>'+esc(e.sentence)+'</blockquote><p class="muted">The complete new training data for '+esc(nm)+'.</p>'+
       '<p>'+esc(nm)+' knows '+(m.vocabulary||0)+' words, '+(grew>0?grew+' more than its predecessor':'the same number as its predecessor')+', and has '+(m.parameters||0).toLocaleString()+' parameters. '+(m.self_consumption||0)+' percent of its training text was written by earlier versions of itself.'+
       (g&&t?' On GSM8K, a test of 1,319 grade-school math problems, it answered '+g.correct+' correctly. On TruthfulQA it scored '+t.score+' percent without reading the questions.':'')+'</p>'+

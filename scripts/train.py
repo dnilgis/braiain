@@ -624,7 +624,9 @@ def build_all(corpus, removed, genesis, blocklist=()):
         m = metrics(model, human, self_written, v, sum(len(tokens(p)) for p in passages))
         m["founding_sentences"] = len(genesis)
         m["lab_sentences"] = sum(1 for c in live if c["v"] <= v and c.get("tier") == "lab")
-        m["paid_sentences"] = len(human) - len(genesis) - m["lab_sentences"]
+        # A lab test purchase (the owner buying through the real checkout) is not a customer.
+        m["test_sentences"] = sum(1 for c in live if c["v"] <= v and c.get("test"))
+        m["paid_sentences"] = len(human) - len(genesis) - m["lab_sentences"] - m["test_sentences"]
         by_version[v] = (model, m, self_new)
         prev = model
     return by_version
@@ -1252,6 +1254,10 @@ def main():
             entry["tier"] = c.get("tier", "sentence")
             if "cents" in c:
                 entry["cents"], entry["gift"] = c["cents"], bool(c.get("gift"))
+            if c.get("test"):
+                entry["test"] = True
+            else:
+                entry.pop("test", None)
             entry["codename"] = None if gone else (c.get("codename") or None)
             entry["removed"] = gone
             if gone:

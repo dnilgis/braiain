@@ -107,6 +107,7 @@ def version_pages(versions):
         else:
             title = name + " is out | BRAIAIN"
             desc = ("An internal release. Trained on one sentence the lab wrote itself, unpaid: \"" if e.get("tier") == "lab"
+                    else "A lab test of the real checkout, bought as a gift: \"" if e.get("test")
                     else "Trained on one sentence from " + (e.get("by") or "Anonymous") + ': "') + (e.get("sentence") or "") + '"'
         key = hashlib.sha256(json.dumps([title, desc, e.get("metrics", {}).get("vocabulary"), e.get("evals", {})], sort_keys=True).encode()).hexdigest()[:16]
         png = os.path.join(ROOT, "v", f"{v}.png")
