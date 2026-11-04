@@ -132,7 +132,7 @@ def notify_held(items):
             else:
                 subj = "brAIAIn: " + it["what"] + " dropped (" + it["code"] + ")"
                 head = ["The sentence was published, but its " + it["what"] + " did not pass the screen and was left off.",
-                        "Consider a partial refund" + (" of the $35 naming premium" if it["what"] == "codename" else "") + " in Stripe:"]
+                        "Consider a partial refund" + (" of the $22.50 naming premium" if it["what"] == "codename" else "") + " in Stripe:"]
             lines = head + ["  https://dashboard.stripe.com/payments/" + it["pi"] if it.get("pi") else "  (find it in Stripe by the code above)", "",
                             "Sentence: " + it["sentence"], "Credit: " + (it["credit"] or "Anonymous"), "Codename: " + (it["codename"] or "-"),
                             "Tier: " + it["tier"], "Code: " + it["code"]]
@@ -466,8 +466,10 @@ def field_flags(*fields):
     """review_flags for each field on its own, so joining a sentence, a credit and a codename
     cannot invent a "full name" out of the last word of one and the first of the next."""
     out = []
-    for f in fields:
+    for i, f in enumerate(fields):
         for x in review_flags(f or ""):
+            if i == 2 and x == "possible-full-name":
+                continue  # a codename is meant to be a Title Case name ("The Goose Was Right")
             if x not in out:
                 out.append(x)
     return out

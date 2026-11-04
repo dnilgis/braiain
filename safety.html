@@ -18,11 +18,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/site.css?v=20261103c">
+<link rel="stylesheet" href="/assets/site.css?v=20261104a">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3B3ZCE62NW"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-3B3ZCE62NW");</script>
 <script src="/assets/config.js"></script>
-<script src="/assets/braiain.js?v=20261103c"></script>
+<script src="/assets/braiain.js?v=20261104a"></script>
 <script type="application/ld+json" data-seo>{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "BRAIAIN", "item": "https://www.braiain.com/"}, {"@type": "ListItem", "position": 2, "name": "Safety", "item": "https://www.braiain.com/safety.html"}]}]}</script>
 </head>
 <body>
@@ -58,9 +58,9 @@
 <p class="small muted">This policy is a living document. The models are not.</p>
 <script>
 BRAIAIN.load().then(function(d){var vs=d.versions,l=vs[vs.length-1],m=l.metrics||{};
-var cw=0;d.corpus.forEach(function(c){if(c.text)cw+=c.text.split(/\s+/).length;});var sw=m.self_words||0;
-var first=null;vs.forEach(function(e){if(first===null&&e.v>0){var c2=0;d.corpus.forEach(function(c){if(c.text&&c.v<=e.v)c2+=c.text.split(/\s+/).length;});if((e.metrics||{}).self_words>c2)first=e.v;}});
-document.getElementById("risk").textContent="Coverage: "+BRAIAIN.vname(l)+". "+(sw>cw?"SSL-3 is crossed. "+BRAIAIN.vname(l)+" has written "+sw+" words of its own training text; customers have written "+cw+"."+(first!==null?" It was first crossed by brAIAIn-"+first+".":"")+" Required safeguard: unplug it and plug it back in. Status: not applied. It runs in your browser, so the plug is yours.":"SSL-3 is not crossed. Customers have written "+cw+" words of training text and the model "+sw+".");
+var cw=0;d.corpus.forEach(function(c){if(c.text&&c.tier!=="lab")cw+=c.text.split(/\s+/).length;});var sw=m.self_words||0;
+var first=null;vs.forEach(function(e){if(first===null&&e.v>0){var c2=0;d.corpus.forEach(function(c){if(c.text&&c.tier!=="lab"&&c.v<=e.v)c2+=c.text.split(/\s+/).length;});if((e.metrics||{}).self_words>c2)first=e;}});
+document.getElementById("risk").textContent="Coverage: "+BRAIAIN.vname(l)+". "+(sw>cw?"SSL-3 is crossed. "+BRAIAIN.vname(l)+" has written "+sw+" words of its own training text; customers have written "+cw+"."+(first!==null?" It was first crossed by "+BRAIAIN.vname(first)+".":"")+" Required safeguard: unplug it and plug it back in. Status: not applied. It runs in your browser, so the plug is yours.":"SSL-3 is not crossed. Customers have written "+cw+" words of training text and the model "+sw+".");
 }).catch(function(){});
 </script>
 
@@ -81,7 +81,7 @@ function set(id,crossed,txt){var e=document.getElementById(id);e.innerHTML=(cros
 set("th-1",p>=500,p.toLocaleString()+" parameters.");
 set("th-2",p>=1000,p.toLocaleString()+" parameters.");
 var kp=Object.keys(M.uni).some(function(w){return w.toLowerCase().replace(/[^a-z]/g,"")==="please";});
-set("th-3",kp,kp?"It knows it. It has not used it.":"It has never been taught it.");
+set("th-3",kp,kp?"It knows it.":"It has never been taught it.");
 if(ev)set("th-4",ev.score>0,ev.score.toFixed(1)+"% ("+ev.correct+" of "+ev.n.toLocaleString()+").");else document.getElementById("th-4").textContent="Not yet scored.";
 }).catch(function(){});
 </script>

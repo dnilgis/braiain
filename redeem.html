@@ -20,11 +20,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/site.css?v=20261103c">
+<link rel="stylesheet" href="/assets/site.css?v=20261104a">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3B3ZCE62NW"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-3B3ZCE62NW",{page_location:location.origin+location.pathname});</script>
 <script src="/assets/config.js"></script>
-<script src="/assets/braiain.js?v=20261103c"></script>
+<script src="/assets/braiain.js?v=20261104a"></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -44,7 +44,11 @@
 <section class="tight" id="r-nocode" hidden><div class="wrap narrow"><div class="card" style="padding:26px">
 <h2 style="margin-top:0">Enter your gift code</h2>
 <p class="muted small" style="margin:4px 0 12px">It is printed on the ticket, under "No.", and looks like GIFT-AB12-CD34.</p>
-<form id="r-codeform" style="display:flex;gap:8px;flex-wrap:wrap"><input id="r-codein" maxlength="14" placeholder="GIFT-____-____" autocapitalize="characters" style="flex:1;min-width:200px;text-transform:uppercase"><button class="btn" type="submit">Continue</button></form>
+<form id="r-codeform" style="display:flex;gap:8px;flex-wrap:wrap"><label for="r-codein" class="sr-only">Gift code</label><input id="r-codein" maxlength="14" placeholder="GIFT-____-____" autocapitalize="characters" style="flex:1;min-width:200px;text-transform:uppercase;font-size:17px">
+<label for="r-tierin" style="flex-basis:100%;margin:6px 0 0" class="small">The gift named on the ticket</label>
+<select id="r-tierin" style="flex:1;min-width:200px;font-size:17px"><option value="">Choose one</option><option value="sentence">The Minnow</option><option value="certificate">The Shark</option><option value="naming">The Whale</option></select>
+<button class="btn" type="submit">Continue</button></form>
+<p class="small" id="r-codeerr" role="alert" style="margin:10px 0 0;color:var(--bad,#b42318)" hidden></p>
 <p class="small muted" style="margin:12px 0 0">No code? A gift ticket comes from <a href="/gifts.html">the gift page</a>.</p>
 </div></div></section>
 
@@ -94,9 +98,14 @@
   var EXTRA={sentence:"",certificate:" You also get a printable certificate signed by the board. The chairman is a goose.",naming:" You also get to choose the codename of the version it creates."}[tier];
   function track(e,p){try{if(window.gtag)gtag("event",e,p||{});}catch(x){}}
   $("r-codeform").addEventListener("submit",function(e){e.preventDefault();var c=$("r-codein").value.toUpperCase().replace(/[^A-Z0-9]/g,"");
-    if(c.indexOf("GIFT")===0)c=c.slice(4);if(c.length!==8){$("r-codein").focus();return;}
-    P.set("code","GIFT-"+c.slice(0,4)+"-"+c.slice(4));location.search=P.toString();});
-  if(!real){$("r-write").hidden=true;$("r-nocode").hidden=false;$("r-eye").textContent="Gift";track("redeem_nocode");return;}
+    if(c.indexOf("GIFT")===0)c=c.slice(4);var tv=$("r-tierin").value,er=$("r-codeerr");
+    if(c.length!==8){er.hidden=false;er.textContent="That code is not complete. It has eight letters and numbers after GIFT, like GIFT-AB12-CD34.";$("r-codein").focus();return;}
+    if(!tv){er.hidden=false;er.textContent="Choose the gift named on the ticket: Minnow, Shark or Whale.";$("r-tierin").focus();return;}
+    P.set("code","GIFT-"+c.slice(0,4)+"-"+c.slice(4));P.set("t",tv);location.search=P.toString();});
+  if(P.get("t")&&{sentence:1,certificate:1,naming:1}[P.get("t")])$("r-tierin").value=P.get("t");
+  if(!real){$("r-write").hidden=true;$("r-nocode").hidden=false;$("r-eye").textContent="Gift";
+    if(P.get("code")){$("r-codein").value=P.get("code").slice(0,14);$("r-codeerr").hidden=false;$("r-codeerr").textContent="That code does not look right. Check it against the ticket: it looks like GIFT-AB12-CD34.";}
+    track("redeem_nocode");return;}
   $("r-eye").textContent="Gift \u00b7 "+TIER;
   if(to)$("r-h1").textContent=to+", you have been given a sentence in a language model.";
   $("r-lede").textContent=(from||"Somebody")+" is giving you one sentence in brAIAIn, a real language model that only knows what people pay to teach it. It is already paid for. Write it below, and it goes into the model permanently."+EXTRA;
@@ -109,6 +118,7 @@
   function say(t,bad){var g=$("r-gocheck");g.hidden=false;g.textContent=t;g.style.color=bad?"var(--danger,#b3261e)":"";}
   $("r-go").addEventListener("click",function(e){var f=fields();
     if(!f.sentence){e.preventDefault();say("Write your sentence first.",1);$("r-s").focus();return;}
+    var bad=linkish(f.sentence+" "+(f.name||"")+" "+(f.codename||""));if(bad){e.preventDefault();say(bad+" A rejected gift sentence cannot be redone.",1);$("r-s").focus();return;}
     if(f.email&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(f.email)){e.preventDefault();say("That email does not look right.",1);$("r-email").focus();return;}
     var c=fit();if(!c.url){e.preventDefault();say("Checkout is not available right now. Email hello@braiain.com.",1);return;}
     $("r-go").href=c.url;

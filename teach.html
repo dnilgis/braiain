@@ -21,11 +21,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/site.css?v=20261103c">
+<link rel="stylesheet" href="/assets/site.css?v=20261104a">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3B3ZCE62NW"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-3B3ZCE62NW");</script>
 <script src="/assets/config.js"></script>
-<script src="/assets/braiain.js?v=20261103c"></script>
+<script src="/assets/braiain.js?v=20261104a"></script>
 <script type="application/ld+json" data-seo>{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "BRAIAIN", "item": "https://www.braiain.com/"}, {"@type": "ListItem", "position": 2, "name": "Teach brAIAIn", "item": "https://www.braiain.com/teach.html"}]}]}</script>
 </head>
 <body>
@@ -84,7 +84,7 @@
 </div>
 <p style="display:flex;gap:10px;flex-wrap:wrap;margin:0"><a class="btn live-only t-go" id="t-go" data-buy href="/feed.html">Open checkout, <span id="t-price" data-price>$2.49</span></a><button class="btn ghost" type="button" id="r-copy">Copy my sentence</button></p>
 <p class="small muted" id="r-gocheck" style="margin:12px 0 0" hidden></p>
-<p class="small muted" style="margin:14px 0 0">Checkout opens with your sentence, credit and codename already filled in. It is screened, and usually goes live within minutes. Some sentences are read by a person first. Details on <a href="/feed.html" style="display:inline">Feed the model</a>.</p>
+<p class="small muted" style="margin:14px 0 0">Checkout opens with your sentence, credit and codename already filled in. A sentence over about 140 characters is copied for you to paste instead. It is screened, and usually goes live within minutes. Some sentences are read by a person first. Details on <a href="/feed.html" style="display:inline">Feed the model</a>.</p>
 </div>
 </div></section>
 <script>
@@ -116,15 +116,18 @@
   $("r-ask").addEventListener("click",function(){ask();track("teach_preview");});
   $("r-q").addEventListener("keydown",function(e){if(e.key==="Enter")ask();});
   function tierNow(){var r=document.querySelector('input[name="t-tier"]:checked');return r?r.value:"sentence";}
-  document.querySelectorAll('input[name="t-tier"]').forEach(function(r){r.addEventListener("change",function(){var t=tierNow();
+  document.querySelectorAll('input[name="t-tier"]').forEach(function(r){r.addEventListener("change",function(ev){var t=tierNow();
     $("t-code-wrap").hidden=t!=="naming";$("t-go").setAttribute("data-buy",t==="sentence"?"":t);$("t-price").setAttribute("data-price",t==="sentence"?"":t);
     var cfg=window.BRAIAIN_CONFIG||{};$("t-price").textContent={sentence:cfg.price||"$2.49",certificate:cfg.priceCertificate||"$9.99",naming:cfg.priceNaming||"$24.99"}[t];
-    if(t==="naming")$("t-code").focus();track("teach_tier",{tier:t});});});
+    if(t==="naming"&&ev.isTrusted)$("t-code").focus();if(ev.isTrusted)track("teach_tier",{tier:t});});});
+  (function(){var t0=new URLSearchParams(location.search).get("t");var r=t0&&document.querySelector('input[name="t-tier"][value="'+({sentence:1,certificate:1,naming:1}[t0]?t0:"")+'"]');
+    if(r&&!r.checked){r.checked=true;r.dispatchEvent(new Event("change"));}})();
   function say(t){$("r-gocheck").hidden=false;$("r-gocheck").textContent=t;}
   ["r-s","r-name","t-code"].forEach(function(id){$(id).addEventListener("input",function(){$("r-gocheck").hidden=true;});});
   $("t-go").addEventListener("click",function(e){var s=$("r-s").value.trim(),tier=tierNow(),code=$("t-code").value.trim();
     if(!s||s===st.trim()){e.preventDefault();say(s?"Finish your sentence in step 1.":"Write your sentence first, in step 1.");$("r-s").focus();return;}
     if(tier==="naming"&&!code){e.preventDefault();say("Type the name for your version first.");$("t-code").focus();return;}
+    var bad=linkish(s+" "+$("r-name").value+" "+code);if(bad){e.preventDefault();say(bad);$("r-s").focus();return;}
     var c=writeCheckout(tier,{sentence:s,name:$("r-name").value.trim(),codename:tier==="naming"?code:""});
     if(c.oneTap){this.href=c.url;say("Opening checkout with everything filled in.");}
     else{var plain=c.url;if(plain)this.href=plain;if(navigator.clipboard)navigator.clipboard.writeText(s).catch(function(){});

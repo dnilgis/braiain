@@ -217,7 +217,10 @@ function applyMode(cfg) {
   document.querySelectorAll("[data-buy]").forEach(function (a) {
     var t = a.getAttribute("data-buy") || "", link = links[t];
     if (!a.hasAttribute("data-live-html")) a.setAttribute("data-live-html", a.innerHTML);
-    if (isLive && link) { a.href = link; a.rel = "noopener"; a.innerHTML = a.getAttribute("data-live-html"); a.removeAttribute("aria-disabled"); a.classList.remove("off"); }
+    // Every buy button goes to the write-first page, where the sentence is previewed and filled in at
+    // checkout. Only the button on that page itself (or one marked data-direct) goes straight to Stripe.
+    if (isLive && link && !a.hasAttribute("data-direct") && a.id !== "t-go") { a.href = "/teach.html" + (t ? "?t=" + t : ""); a.removeAttribute("rel"); a.innerHTML = a.getAttribute("data-live-html"); a.removeAttribute("aria-disabled"); a.classList.remove("off"); }
+    else if (isLive && link) { a.href = link; a.rel = "noopener"; a.innerHTML = a.getAttribute("data-live-html"); a.removeAttribute("aria-disabled"); a.classList.remove("off"); }
     else if (isLive && !link) { a.removeAttribute("href"); a.setAttribute("aria-disabled", "true"); a.classList.add("off"); }
     else { a.href = "/#waitlist"; if (a.hasAttribute("data-teaser-text")) a.textContent = a.getAttribute("data-teaser-text"); }
   });
@@ -364,7 +367,19 @@ function answerImage(q, a, name) {
 // ("w1-" + base64url of the three joined by U+001F), which scripts/train.py reads back.
 // Stripe allows 200 characters there, so this returns "" when the text is too long; the caller
 // then falls back to the regular link, where the buyer pastes the sentence.
+// A quick check before checkout, so nobody pays for a sentence the screen will reject. The real
+// screen (scripts/train.py) is stricter; this only catches the common cases.
+function linkish(t) {
+  t = String(t || "");
+  if (/https?:|www\.|\b[a-z0-9-]+\.(com|net|org|io|co|ai|app|dev|me|us|uk|ca|xyz|info|biz|shop|store|site|online|tv|gg|ly)\b/i.test(t)) return "Leave out links and web addresses. The screen rejects them after payment.";
+  if (/\S+@\S+\.\S+/.test(t)) return "Leave out email addresses. The screen rejects them after payment.";
+  if (/\(?\b\d{3}\)?[\s.-]?\d{3}[\s.-]\d{4}\b|\+\d[\d\s-]{8,}/.test(t)) return "Leave out phone numbers. The screen rejects them after payment.";
+  if (/(^|[\s(])@\w{2,}/.test(t)) return "Leave out social media handles. The screen rejects them after payment.";
+  return "";
+}
 function writeRef(sentence, name, codename) {
+  var cl = function (x) { return String(x || "").replace(/\u001f/g, " "); };
+  sentence = cl(sentence); name = cl(name); codename = cl(codename);
   var raw = [sentence || "", name || "", codename || ""].join("\u001f").replace(/\u001f+$/, "");
   var b = btoa(unescape(encodeURIComponent(raw))).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
   var ref = "w1-" + b;
@@ -431,7 +446,7 @@ function answerActions(el, o) {
     if (!a) return;
     if (a.hasAttribute("data-buy")) {
       var tier = a.getAttribute("data-buy") || "sentence", href = a.getAttribute("href") || "";
-      if (/buy\.stripe\.com/.test(href)) track("begin_checkout", { tier: tier, value: { sentence: 5, certificate: 15, naming: 50 }[tier] || 5, currency: "USD" });
+      if (/buy\.stripe\.com/.test(href)) track("begin_checkout", { tier: tier, value: { sentence: 2.49, certificate: 9.99, naming: 24.99 }[tier] || 2.49, currency: "USD" });
     } else if (a.id === "peel") track("peel_layer");
     else if (a.id === "card-dl") track("release_card_download");
     else if (/huggingface\.co|x\.com\//.test(a.getAttribute("href") || "")) track("outbound_social", { to: (a.getAttribute("href") || "").split("/")[2] });

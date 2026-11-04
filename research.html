@@ -18,11 +18,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/site.css?v=20261103c">
+<link rel="stylesheet" href="/assets/site.css?v=20261104a">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3B3ZCE62NW"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-3B3ZCE62NW");</script>
 <script src="/assets/config.js"></script>
-<script src="/assets/braiain.js?v=20261103c"></script>
+<script src="/assets/braiain.js?v=20261104a"></script>
 <script type="application/ld+json" data-seo>{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "BRAIAIN", "item": "https://www.braiain.com/"}, {"@type": "ListItem", "position": 2, "name": "Research", "item": "https://www.braiain.com/research.html"}]}]}</script>
 </head>
 <body>
@@ -68,9 +68,9 @@ d.training.genesis.forEach(function(x){x.split(/\s+/).forEach(function(w){g[w]=1
 var best=null;Object.keys(m.tri).forEach(function(k){var t=m.tri[k],ks=Object.keys(t);if(k.indexOf("<s>")>-1||ks.length<2)return;var paid=ks.filter(function(w){return !g[w];}),old=ks.filter(function(w){return g[w];});
  if(!paid.length||!old.length)return;var pw=paid.reduce(function(a,w){return a+t[w];},0),tot=ks.reduce(function(a,w){return a+t[w];},0);if(!best||pw/tot>best.r)best={k:k,t:t,tot:tot,r:pw/tot,paid:paid};});
 var el=document.getElementById("interp");
-if(!best){el.textContent="No circuit yet where a customer's word competes with the founding text. The first one will appear here.";return;}
+if(!best){el.textContent="No circuit yet where a new word competes with the founding text. The first one will appear here.";return;}
 var parts=Object.keys(best.t).sort(function(a,b){return best.t[b]-best.t[a];}).map(function(w){return "\u201c"+w+"\u201d "+(best.t[w]===1?"once":best.t[w]===2?"twice":best.t[w]+" times");});
-el.textContent="Example circuit, "+BRAIAIN.vname(l)+": after \u201c"+best.k+"\u201d, the model has seen "+parts.join(", ")+", out of "+best.tot+". "+(best.r>=0.5?"A customer's words now outvote the founding text here.":"A customer's words are competing with the founding text here.");
+el.textContent="Example circuit, "+BRAIAIN.vname(l)+": after \u201c"+best.k+"\u201d, the model has seen "+parts.join(", ")+", out of "+best.tot+". "+(best.r>=0.5?"Words added after the founding text now outvote it here.":"Words added after the founding text are competing with it here.");
 }).catch(function(){});
 </script>
 <script>

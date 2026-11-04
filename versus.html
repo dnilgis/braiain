@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>brAIAIn vs. the answer key | BRAIAIN</title>
-<meta name="description" content="Eight real GSM8K math problems. The correct answer, and brAIAIn&#x27;s answer, generated live by a 456-parameter model.">
+<meta name="description" content="Eight real GSM8K math problems. The correct answer, and brAIAIn&#x27;s answer, generated live by a tiny trigram model.">
 <link rel="canonical" href="https://www.braiain.com/versus.html">
 <meta property="og:title" content="brAIAIn vs. the answer key | BRAIAIN">
-<meta property="og:description" content="Eight real GSM8K math problems. The correct answer, and brAIAIn&#x27;s answer, generated live by a 456-parameter model.">
+<meta property="og:description" content="Eight real GSM8K math problems. The correct answer, and brAIAIn&#x27;s answer, generated live by a tiny trigram model.">
 <meta property="og:image" content="https://www.braiain.com/assets/og/versus.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -21,11 +21,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/site.css?v=20261103c">
+<link rel="stylesheet" href="/assets/site.css?v=20261104a">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3B3ZCE62NW"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-3B3ZCE62NW");</script>
 <script src="/assets/config.js"></script>
-<script src="/assets/braiain.js?v=20261103c"></script>
+<script src="/assets/braiain.js?v=20261104a"></script>
 <script type="application/ld+json" data-seo>{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "BRAIAIN", "item": "https://www.braiain.com/"}, {"@type": "ListItem", "position": 2, "name": "Side by side", "item": "https://www.braiain.com/versus.html"}]}]}</script>
 </head>
 <body>
@@ -44,7 +44,7 @@
 </div></section>
 <section class="tight"><div class="wrap narrow">
 <div class="stats" id="vs-stats" style="margin:0 0 18px">
-<div><span>Best published score</span><b id="vs-best">-</b></div>
+<div><span>Top score in a 2023 table</span><b id="vs-best">-</b></div>
 <div><span>brAIAIn's score</span><b id="vs-us">-</b></div>
 <div><span>Model answering below</span><b id="vs-model">-</b></div>
 </div>
@@ -62,7 +62,7 @@
   list.innerHTML=P.map(function(p,i){return '<div class="card vs-card" style="padding:20px 22px;margin:0 0 14px"><p class="small muted" style="margin:0 0 6px">Problem '+(i+1)+' of 8</p><p style="margin:0 0 14px">'+esc(p.q)+'</p>'+
     '<div class="vs-row"><span class="vs-k">Correct answer</span><b>'+esc(p.a)+'</b></div><div class="vs-row"><span class="vs-k" id="vs-n'+i+'">brAIAIn</span><span id="vs-a'+i+'">...</span></div></div>';}).join("");
   fetch("/data/leaderboard.json").then(function(r){return r.json();}).then(function(l){var t=l.gsm8k.rows.slice().sort(function(a,b){return b.score-a.score;})[0];
-    $("vs-best").textContent=t.score.toFixed(1)+"%";$("vs-src").innerHTML="Best published score: "+esc(t.model)+", "+esc(t.setting)+", from <a href=\""+esc(l.gsm8k.source_url)+"\" rel=\"noopener\">"+esc(l.gsm8k.source_title)+"</a>. We did not run that model.";}).catch(function(){});
+    $("vs-best").textContent=t.score.toFixed(1)+"%";$("vs-src").innerHTML="Top score in a 2023 comparison table: "+esc(t.model)+", "+esc(t.setting)+", from <a href=\""+esc(l.gsm8k.source_url)+"\" rel=\"noopener\">"+esc(l.gsm8k.source_title)+"</a>. We did not run that model.";}).catch(function(){});
   var M=null,name="brAIAIn";
   function run(){if(!M)return;P.forEach(function(p,i){$("vs-n"+i).textContent=name;$("vs-a"+i).textContent=BRAIAIN.generate(M,p.q)||"...";});
     try{if(window.gtag)gtag("event","versus_run");}catch(x){}}

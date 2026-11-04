@@ -18,11 +18,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/site.css?v=20261103c">
+<link rel="stylesheet" href="/assets/site.css?v=20261104a">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3B3ZCE62NW"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-3B3ZCE62NW");</script>
 <script src="/assets/config.js"></script>
-<script src="/assets/braiain.js?v=20261103c"></script>
+<script src="/assets/braiain.js?v=20261104a"></script>
 <script type="application/ld+json" data-seo>{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "BRAIAIN", "item": "https://www.braiain.com/"}, {"@type": "ListItem", "position": 2, "name": "Developer platform", "item": "https://www.braiain.com/api.html"}]}]}</script>
 </head>
 <body>
@@ -94,8 +94,8 @@ print(r.json()["choices"][0]["message"]["content"])</pre>
 <p>Training is priced per sentence (<span data-price>$2.49</span>), so the price per token is set by the customer: longer sentences cost less per token, up to the 255-character limit. Fine-tuning counts the newest sentence four times, which cuts the effective rate by 75%. We have not found the catch. Cache reads are free because the model is a cache. Batch API: not offered; every sentence is already its own batch. Enterprise inquiries enter the same inbox.</p>
 <script>
 BRAIAIN.load().then(function(d){var vs=d.versions,l=vs[vs.length-1],m=l.metrics||{};
-var rows=vs.slice().reverse().map(function(e,i){var c=null;d.corpus.forEach(function(x){if(x.v===e.v&&x.text)c=x;});var price={sentence:5,certificate:15,naming:50}[(c||{}).tier]||5;
-var tr=c?"$"+Math.round(price/c.text.split(/\s+/).length*1e6).toLocaleString():(e.v===0?"Founding text: free":"Recalled");
+var rows=vs.slice().reverse().map(function(e,i){var c=null;d.corpus.forEach(function(x){if(x.v===e.v&&x.text)c=x;});var price=c?(c.cents!=null?c.cents:{sentence:249,certificate:999,naming:2499}[c.tier])/100:0;
+var tr=!c?(e.v===0?"Founding text: free":"Recalled"):c.tier==="lab"?"Lab-written: free":c.gift?"Gift":"$"+Math.round(price/c.text.split(/\s+/).length*1e6).toLocaleString();
 return "<tr><td>"+BRAIAIN.vname(e)+(i===0?"":" (legacy)")+"</td><td class=\"num\">$0</td><td class=\"num\">$0</td><td class=\"num\">$0</td><td class=\"num\">"+tr+"</td></tr>";});
 document.getElementById("ppm").innerHTML=rows.join("");
 }).catch(function(){});
