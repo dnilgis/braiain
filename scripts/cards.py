@@ -141,6 +141,14 @@ def norm(w):
     return re.sub(r"[^a-z0-9']", "", w.lower())
 
 
+def repeats(words):
+    """How many three-word runs occur more than once ("the model was without form, and the model was
+    without form"). A small trigram model loops; a looping answer reads as broken, not funny."""
+    w = [norm(x) for x in words]
+    runs = [tuple(w[i:i + 3]) for i in range(len(w) - 2)]
+    return len(runs) - len(set(runs))
+
+
 def answer(model, question, rng):
     known = {}
     for w in model["bi"]:
@@ -148,10 +156,10 @@ def answer(model, question, rng):
             known.setdefault(norm(w), []).append(w)
     qwords = {norm(w) for w in question.split() if len(norm(w)) > 2}
     starts = [w for w in (norm(x) for x in question.split()) if w in known and w not in STOP]
-    best, best_score = "", -1
-    for i in range(8):
+    best, best_key = "", None
+    for i in range(40):  # more tries, so one without a loop is nearly always found
         start = None
-        if i < 5 and starts:
+        if i % 8 < 5 and starts:
             start = rng.choice(known[rng.choice(starts)])
         s = train.generate(model, rng, 40, start)
         if not s:
@@ -159,8 +167,9 @@ def answer(model, question, rng):
         words = s.split()
         overlap = len({norm(w) for w in words} & qwords)
         score = overlap * 100 + min(len(words), 30) + (50 if len(words) >= 3 else 0)
-        if score > best_score:
-            best, best_score = s, score
+        key = (-repeats(words), len(words) >= 8, score)  # no loop first, then a full sentence, then the usual score
+        if best_key is None or key > best_key:
+            best, best_key = s, key
     return best[:1].upper() + best[1:]
 
 
