@@ -94,5 +94,12 @@
   "a": "Should not quit your job, because the model was without form, and the Lab is not yet funded to answer.",
   "v": 7,
   "name": "brAIAIn-3"
+ },
+ {
+  "date": "2026-11-13",
+  "q": "How many parameters is enough?",
+  "a": "II. Thou shalt not covet thy competitor's parameters.",
+  "v": 7,
+  "name": "brAIAIn-3"
  }
 ]
