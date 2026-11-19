@@ -136,5 +136,12 @@
   "a": "The meaning of life is a question the Lab said, let there be a sentence, and there was no data, and the model is not yet funded to answer.",
   "v": 7,
   "name": "brAIAIn-3"
+ },
+ {
+  "date": "2026-11-19",
+  "q": "What is your training data?",
+  "a": "III. Thou shalt not steal training data, for thy customers have brought it to learn nothing.",
+  "v": 7,
+  "name": "brAIAIn-3"
  }
 ]
